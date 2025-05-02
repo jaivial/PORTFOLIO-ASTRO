@@ -75,7 +75,7 @@ Replace `your_vps_user` with your actual VPS username.
     ```
 5.  **Set Permissions (Optional but Recommended):** Allow your user to write to this directory without `sudo` constantly. Replace `your_vps_user` with your VPS username.
     ```bash
-    sudo chown -R your_vps_user:your_vps_user /var/www/jaimedigitalstudio.com
+    sudo chown -R root:root /var/www/jaimedigitalstudio.com
     sudo chmod -R 755 /var/www
     ```
 
@@ -94,7 +94,9 @@ Replace `your_vps_user` with your actual VPS username.
 
         server_name jaimedigitalstudio.com www.jaimedigitalstudio.com;
 
-        root /var/www/jaimedigitalstudio.com;
+        # IMPORTANT: This root assumes you copied the *entire* 'dist' folder
+        # from your local machine into /var/www/jaimedigitalstudio.com
+        root /var/www/jaimedigitalstudio.com/dist;
         index index.html index.htm;
 
         location / {
@@ -154,20 +156,33 @@ Replace `your_vps_user` with your actual VPS username.
 
 ## Step 5: Deploy Your Project Files
 
-From your **local machine's terminal** (in the project root directory), use `rsync` to efficiently transfer the built files to the VPS. `rsync` is generally preferred over `scp` for repeated deployments as it only transfers changed files.
+From your **local machine's terminal** (in the project root directory), use `rsync` to efficiently transfer the built files to the VPS.
+
+**Choose ONE of the following `rsync` commands based on your Nginx configuration:**
+
+**Option 1: If your Nginx `root` is `/var/www/jaimedigitalstudio.com/dist` (as updated above):**
+This command copies the *entire* `dist` folder into the destination.
 
 ```bash
+# Note: No trailing slash after 'dist'
+rsync -avz --delete dist your_vps_user@178.16.130.178:/var/www/jaimedigitalstudio.com/
+```
+
+**Option 2: If your Nginx `root` is `/var/www/jaimedigitalstudio.com` (original guide):**
+This command copies *only the contents* of the `dist` folder into the destination.
+
+```bash
+# Note: Trailing slash after 'dist/'
 rsync -avz --delete dist/ your_vps_user@178.16.130.178:/var/www/jaimedigitalstudio.com/
 ```
 
+**Command Flags:**
 *   `-a`: Archive mode (preserves permissions, ownership, etc.)
 *   `-v`: Verbose output
 *   `-z`: Compress file data during transfer
-*   `--delete`: Deletes files on the destination that don't exist in the source (`dist/`) - ensures a clean deployment.
-*   `dist/`: The source directory (the trailing slash is important - it means copy the *contents* of `dist`).
-*   `your_vps_user@178.16.130.178:/var/www/jaimedigitalstudio.com/`: The destination.
+*   `--delete`: Deletes files on the destination that don't exist in the source - ensures a clean deployment.
 
-Enter your VPS password when prompted.
+Enter your VPS password when prompted. Make sure you use the `rsync` command that matches how you've set your Nginx `root` directory.
 
 ## Step 6: Set Up HTTPS with Let's Encrypt (Highly Recommended)
 
@@ -207,9 +222,11 @@ For subsequent updates:
 
 1.  Make changes to your project locally.
 2.  Run `npm run build` locally.
-3.  Run the `rsync` command again from your local machine:
+3.  Run the `rsync` command again from your local machine (using the command corresponding to your Nginx `root` setting - typically Option 1 after the recent change):
     ```bash
-    rsync -avz --delete dist/ your_vps_user@178.16.130.178:/var/www/jaimedigitalstudio.com/
+    # Use this if your Nginx root is /var/www/jaimedigitalstudio.com/dist
+    rsync -avz --delete dist your_vps_user@178.16.130.178:/var/www/jaimedigitalstudio.com/
     ```
+    *(Or use `rsync -avz --delete dist/ ...` if you reverted Nginx root to `/var/www/jaimedigitalstudio.com`)*
 
 Your site will be updated with the latest build.
