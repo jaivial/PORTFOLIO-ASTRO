@@ -7,7 +7,7 @@ import "rsuite/dist/rsuite.min.css";
 // Import video-react styles
 import "video-react/dist/video-react.css";
 
-export default function VideoCarousel({ videos, className = "", height = "h-72 md:h-96", width = "w-full", carouselStyle = {} }) {
+export default function VideoCarousel({ videos, className = "", height = "h-auto md:h-auto", width = "w-full", carouselStyle = {} }) {
   const playerRefs = useRef([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const carouselId = `video-carousel-${Math.random().toString(36).substr(2, 9)}`;
@@ -58,7 +58,7 @@ export default function VideoCarousel({ videos, className = "", height = "h-72 m
       <style>{customStyles}</style>
 
       <div className={`relative ${height}`} style={carouselStyle}>
-        <Carousel className="h-full custom-carousel" autoplay={false} activeIndex={activeIndex} onSelect={handleSelect} shape="bar">
+        <Carousel className="h-full custom-carousel" autoplay={false} activeIndex={activeIndex} onSelect={handleSelect} shape="bar" style={{ objectFit: "cover !important" }}>
           {videos.map((video, index) => (
             <div key={index} className="w-full h-full flex items-center justify-center video-container">
               <Player
