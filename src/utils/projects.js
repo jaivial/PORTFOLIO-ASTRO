@@ -7,6 +7,10 @@ import Carhub from "../assets/images/carhub.webp";
 import AlqueriaVillacarmen from "../assets/images/villacarmendoble.webp";
 import Portfolio from "../assets/images/portfolioweb.webp"
 import GuillermoFernandezNutricion from "../assets/images/guillermofernandeznutricion.webp"
+import GuilleImg1 from "../assets/images/guilleromofernandeznutricion/guille1.png"
+import GuilleImg2 from "../assets/images/guilleromofernandeznutricion/guille2.png"
+import GuilleImg3 from "../assets/images/guilleromofernandeznutricion/guille3.png"
+import GuilleVideo from "../assets/videos/guillermofernandeznutricion/videoguille.mov"
 
 // Placeholder para imágenes y videos
 // En un entorno real, estas URLs apuntarían a recursos reales
@@ -127,6 +131,25 @@ const portfolioFeatures = [
     }
 ];
 
+// Funcionalidades para Guillermo Fernández Nutrición
+const guillermoFernandezFeatures = [
+    {
+        title: "Servicios Nutricionales Especializados",
+        description: "Presentación de servicios específicos (Nutrición Clínica, Pérdida de Peso, Nutrición Deportiva, Hábitos Alimentarios) con descripciones detalladas y llamadas a la acción claras, permitiendo a los usuarios encontrar fácilmente la especialidad que necesitan.",
+        image: GuilleImg1
+    },
+    {
+        title: "Solicitud de Consulta Online",
+        description: "Sistema de formulario de contacto personalizado que permite a los usuarios solicitar información o agendar una primera consulta nutricional, facilitando la captación de nuevos clientes con campos específicos para el motivo de consulta y tipo de servicio.",
+        image: GuilleImg2
+    },
+    {
+        title: "Presentación Profesional del Nutricionista",
+        description: "Sección detallada sobre la formación, experiencia y enfoque profesional de Guillermo Fernández, nutricionista colegiado, generando confianza en los visitantes al mostrar sus credenciales y filosofía de trabajo personalizado.",
+        image: GuilleImg3
+    }
+];
+
 const data = [
     {
         name: "Guillermo Fernandez Nutrición",
@@ -137,11 +160,17 @@ const data = [
         slug: "guillermo-fernandez-nutricion",
         description: "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes. Permite que los clientes realicen una primera consulta por un formulario de contacto. Diseño responsivo adaptable a tamaños de escritorio, tablet y móviles. Desarrollado con Astro para el front end y PHP para el backend del formulario de contacto. Las fotos y el contenido creativo fue elaborado por mi.",
         tech: ['HTML', 'Javascript', 'Css', 'Astro', 'PHP', 'NodeJS'],
-        // Imágenes adicionales y videos (placeholder para demostración)
-        images: placeholderImages,
-        videos: placeholderVideos,
+        // Galería de imágenes del proyecto
+        images: [
+            { url: GuilleImg1.src, alt: 'Servicios Nutricionales Especializados' },
+            { url: GuilleImg2.src, alt: 'Solicitud de Consulta Online' },
+            { url: GuilleImg3.src, alt: 'Presentación Profesional del Nutricionista' },
+        ],
+        videos: [
+            { url: GuilleVideo, poster: GuilleImg1.src }
+        ],
         // Funcionalidades del proyecto con imágenes o videos explicativos
-        features: placeholderFeatures
+        features: guillermoFernandezFeatures
     },
     {
         name: "Alqueria Villa Carmen",

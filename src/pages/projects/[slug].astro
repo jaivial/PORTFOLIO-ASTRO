@@ -19,9 +19,9 @@ const { project } = Astro.props;
 ---
 
 <Layout title={`${project.name} | Jaime Villanueva`}>
-  <main class="relative w-5/6 mx-auto" transition:persist>
+  <main class="relative w-5/6 mx-auto min-h-screen overflow-x-hidden">
     <PageNav title="PROYECTO" previousLink="/projects" client:load />
-    <section class="mt-16 mb-20">
+    <section class="mt-16 mb-20 content-visibility-auto">
       <div class="grid md:grid-cols-2 gap-8 mb-12">
         <div>
           <h1 class="text-primary text-3xl font-extrabold text-center md:text-left mb-2">
@@ -30,6 +30,10 @@ const { project } = Astro.props;
           <p class="text-primary text-lg font-medium text-center md:text-left mb-4">
             {project.type}
           </p>
+          <!-- Imagen principal del proyecto -->
+          <div class="mb-8 rounded-lg overflow-hidden">
+            <Image src={project.image} alt={project.name} class="w-full h-auto object-cover rounded-lg" width={800} height={500} loading="eager" />
+          </div>
           <div class="bg-primary bg-opacity-10 p-4 rounded-lg mb-6">
             <p class="text-gray-400 leading-relaxed">{project.description}</p>
           </div>
@@ -69,11 +73,6 @@ const { project } = Astro.props;
         </div>
 
         <div>
-          <!-- Imagen principal del proyecto -->
-          <div class="mb-8 rounded-lg overflow-hidden">
-            <Image src={project.image} alt={project.name} class="w-full h-auto object-cover rounded-lg" width={800} height={500} />
-          </div>
-
           <!-- Sección de Funcionalidades -->
           {
             project.features && project.features.length > 0 && (
@@ -87,13 +86,13 @@ const { project } = Astro.props;
 
                       {feature.image && (
                         <div class="mb-3 rounded-md overflow-hidden">
-                          <Image src={feature.image} alt={feature.title} class="w-full h-auto" width={600} height={400} />
+                          <Image src={feature.image} alt={feature.title} class="w-full h-auto object-cover" width={600} height={400} />
                         </div>
                       )}
 
                       {feature.video && (
                         <div class="rounded-md overflow-hidden">
-                          <video src={feature.video} controls class="w-full h-auto" poster={feature.videoPoster || ""}>
+                          <video src={feature.video} controls class="w-full h-auto" poster={feature.videoPoster || ""} preload="metadata">
                             Tu navegador no soporta la reproducción de videos.
                           </video>
                         </div>
@@ -110,7 +109,7 @@ const { project } = Astro.props;
             project.images && project.images.length > 0 && (
               <div class="mb-8">
                 <h2 class="text-xl font-bold text-primary mb-4">Galería de imágenes</h2>
-                <ImageCarousel images={project.images} client:load />
+                <ImageCarousel images={project.images} client:visible />
               </div>
             )
           }
@@ -120,7 +119,7 @@ const { project } = Astro.props;
             project.videos && project.videos.length > 0 && (
               <div class="mb-8">
                 <h2 class="text-xl font-bold text-primary mb-4">Videos del proyecto</h2>
-                <VideoCarousel videos={project.videos} client:load />
+                <VideoCarousel videos={project.videos} client:visible />
               </div>
             )
           }
