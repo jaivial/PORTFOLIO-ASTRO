@@ -1,0 +1,1 @@
+document.documentElement.style.setProperty("--primary","{primaryColor}");window.addEventListener("load",()=>{const e=document.getElementById("preloader");e&&setTimeout(()=>{e.style.opacity="0",setTimeout(()=>{e.style.display="none"},500)},500)});

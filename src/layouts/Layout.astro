@@ -13,10 +13,7 @@ import "@fontsource/poppins/900.css";
 
 import { SEO } from "astro-seo";
 const canonicalURL = new URL(Astro.url.pathname, Astro.url.origin).toString();
-const resolvedImageWithDomain = new URL(
-  "/image.jpeg",
-  Astro.url.origin
-).toString();
+const resolvedImageWithDomain = new URL("/image.jpeg", Astro.url.origin).toString();
 
 interface Props {
   title: string;
@@ -35,7 +32,7 @@ const makeTitle = title ? title : "Jaime Digital Studio";
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content= "Jaime Villanueva Alcon - Desarrollador Web Full Stack. Descubre mi portafolio que muestra mi experiencia en Astro, React.js y Tailwind CSS. Especializado en código limpio, diseño responsive y experiencias centradas en el usuario. Con un sólido dominio de JavaScript, HTML, CSS y Node.js, cuento con un historial probado en la entrega de soluciones de software de alta calidad. Conéctate conmigo y discutamos cómo puedo elevar tus proyectos de desarrollo web."
+      content="Jaime Villanueva Alcon - Desarrollador Web Full Stack. Descubre mi portafolio que muestra mi experiencia en Astro, React.js y Tailwind CSS. Especializado en código limpio, diseño responsive y experiencias centradas en el usuario. Con un sólido dominio de JavaScript, HTML, CSS y Node.js, cuento con un historial probado en la entrega de soluciones de software de alta calidad. Conéctate conmigo y discutamos cómo puedo elevar tus proyectos de desarrollo web."
     />
     <meta
       name="keywords"
@@ -45,10 +42,7 @@ const makeTitle = title ? title : "Jaime Digital Studio";
     <meta name="theme-color" content="#0a0a0a" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta
-      name="google-site-verification"
-      content="AuMlxg6HJG3Rwtp1H81O3OmPVW4WaI5jrk1X4Onm0hU"
-    />
+    <meta name="google-site-verification" content="AuMlxg6HJG3Rwtp1H81O3OmPVW4WaI5jrk1X4Onm0hU" />
     <meta name="generator" content={Astro.generator} />
     <SEO
       title={makeTitle}
@@ -74,9 +68,7 @@ const makeTitle = title ? title : "Jaime Digital Studio";
         },
       }}
     />
-    <script
-      type="text/partytown"
-      src="https://www.googletagmanager.com/gtag/js?id=G-S9TKKTL84G"></script>
+    <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-S9TKKTL84G"></script>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
       function gtag() {

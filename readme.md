@@ -1,4 +1,3 @@
-
 # Portfolio Website
 
   
@@ -152,3 +151,72 @@ Feel free to reach out if you have any questions or suggestions!
 
 
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/large.svg)](https://astro.build)
+
+# Portfolio Astro
+
+Este repositorio contiene mi portfolio web personal construido con Astro y Tailwind CSS.
+
+## Estructura de datos de proyectos
+
+Los proyectos se definen en `src/utils/projects.js`. Cada proyecto puede tener los siguientes campos:
+
+### Campos básicos
+
+- `name`: Nombre del proyecto
+- `type`: Tipo de proyecto (ej. "Página Web", "Tienda Online")
+- `url`: URL del proyecto desplegado
+- `github`: URL del repositorio (usar "/" si no está disponible públicamente)
+- `image`: Imagen principal del proyecto (importada directamente)
+- `slug`: Identificador único para la URL
+- `description`: Descripción detallada del proyecto
+- `tech`: Array de tecnologías utilizadas
+
+### Galería multimedia
+
+- `images`: Array de imágenes adicionales con formato `{url: '/ruta/imagen.jpg', alt: 'Texto alternativo'}`
+- `videos`: Array de videos con formato `{url: '/ruta/video.mp4', poster: '/ruta/poster.jpg'}`
+
+### Funcionalidades
+
+La sección de funcionalidades permite mostrar características específicas del proyecto con imágenes o videos explicativos:
+
+```javascript
+features: [
+    {
+        title: "Nombre de la funcionalidad",
+        description: "Descripción detallada de cómo funciona esta característica",
+        image: "/ruta/a/imagen-explicativa.jpg" // Opcional: imagen que muestra la funcionalidad
+    },
+    {
+        title: "Otra funcionalidad con video",
+        description: "Explicación de la funcionalidad con demostración en video",
+        video: "/ruta/al/video-demo.mp4", // Opcional: video que demuestra la funcionalidad
+        videoPoster: "/ruta/a/poster.jpg" // Opcional: imagen de portada para el video
+    }
+]
+```
+
+Cada funcionalidad puede incluir:
+- Título descriptivo
+- Explicación detallada
+- Una imagen explicativa (opcional) usando el campo `image`
+- O un video demostrativo (opcional) usando los campos `video` y `videoPoster`
+
+Puedes añadir tantas funcionalidades como necesites y cada una aparecerá como una subsección individual en la página de detalles del proyecto.
+
+## Desarrollo
+
+1. Instala las dependencias:
+```bash
+npm install
+```
+
+2. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+```
+
+3. Construye el sitio para producción:
+```bash
+npm run build
+```
