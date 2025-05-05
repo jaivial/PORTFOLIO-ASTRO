@@ -1,67 +1,84 @@
 import { useState, useRef, useEffect } from "react";
+import { Carousel } from "rsuite";
+import { Player } from "video-react";
 
-export default function VideoCarousel({ videos }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const videoRefs = useRef([]);
+// Import rsuite styles
+import "rsuite/dist/rsuite.min.css";
+// Import video-react styles
+import "video-react/dist/video-react.css";
+
+export default function VideoCarousel({ videos, className = "", height = "h-72 md:h-96", width = "w-full", carouselStyle = {} }) {
+  const playerRefs = useRef([]);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const carouselId = `video-carousel-${Math.random().toString(36).substr(2, 9)}`;
 
   // Si no hay videos, no mostrar nada
   if (!videos || videos.length === 0) {
     return <div className="text-gray-400 py-4">No hay videos disponibles</div>;
   }
 
+  // Pausar todos los videos excepto el actual cuando cambia el índice
   useEffect(() => {
-    // Pausar todos los videos cuando cambia el índice actual
-    videoRefs.current.forEach((videoRef, index) => {
-      if (videoRef && index !== currentIndex) {
-        videoRef.pause();
+    playerRefs.current.forEach((player, index) => {
+      if (player && index !== activeIndex) {
+        // Acceder al API del player para pausar
+        if (player.actions && player.actions.pause) {
+          player.actions.pause();
+        }
       }
     });
-  }, [currentIndex]);
+  }, [activeIndex]);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === videos.length - 1 ? 0 : prevIndex + 1));
+  // Manejar el cambio de slide
+  const handleSelect = (index) => {
+    setActiveIndex(index);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? videos.length - 1 : prevIndex - 1));
-  };
-
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
-  };
+  // Estilos personalizados específicos para este carrusel
+  const customStyles = `
+    #${carouselId} .rs-carousel-slider-item {
+      padding: 0 !important;
+    }
+    #${carouselId} .rs-carousel {
+      background-color: transparent !important;
+    }
+    /* Ajustes para video-react dentro del carrusel */
+    #${carouselId} .video-container .video-react {
+      width: 100%;
+      height: 100%;
+    }
+    #${carouselId} .video-container .video-react-video {
+      object-fit: contain;
+    }
+  `;
 
   return (
-    <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
-      {/* Carousel container */}
-      <div className="relative h-72 md:h-96">
-        {videos.map((video, index) => (
-          <div key={index} className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${index === currentIndex ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
-            <video ref={(el) => (videoRefs.current[index] = el)} src={video.url} className="w-full h-full object-cover object-center" controls poster={video.poster || ""} playsInline>
-              Tu navegador no soporta videos HTML5.
-            </video>
-          </div>
-        ))}
-      </div>
+    <div id={carouselId} className={`relative overflow-hidden rounded-lg shadow-lg ${width} ${className}`}>
+      {/* Estilos personalizados */}
+      <style>{customStyles}</style>
 
-      {/* Controles de navegación */}
-      <button className="absolute left-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-75 focus:outline-none" onClick={prevSlide} aria-label="Video anterior">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-75 focus:outline-none" onClick={nextSlide} aria-label="Video siguiente">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-
-      {/* Indicadores */}
-      <div className="absolute bottom-4 left-0 right-0">
-        <div className="flex items-center justify-center gap-2">
-          {videos.map((_, index) => (
-            <button key={index} onClick={() => goToSlide(index)} className={`h-2 w-2 rounded-full ${index === currentIndex ? "bg-white" : "bg-white bg-opacity-50"}`} aria-label={`Ir a video ${index + 1}`} />
+      <div className={`relative ${height}`} style={carouselStyle}>
+        <Carousel className="h-full custom-carousel" autoplay={false} activeIndex={activeIndex} onSelect={handleSelect} shape="bar">
+          {videos.map((video, index) => (
+            <div key={index} className="w-full h-full flex items-center justify-center video-container">
+              <Player
+                ref={(player) => (playerRefs.current[index] = player)}
+                poster={video.poster || ""}
+                src={video.url}
+                playsInline
+                fluid={false}
+                width="100%"
+                height="100%"
+                onPlay={() => {
+                  // Cuando un video se reproduce, actualizar el índice activo
+                  if (activeIndex !== index) {
+                    setActiveIndex(index);
+                  }
+                }}
+              />
+            </div>
           ))}
-        </div>
+        </Carousel>
       </div>
     </div>
   );

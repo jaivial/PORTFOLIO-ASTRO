@@ -7,9 +7,9 @@ import Carhub from "../assets/images/carhub.webp";
 import AlqueriaVillacarmen from "../assets/images/villacarmendoble.webp";
 import Portfolio from "../assets/images/portfolioweb.webp"
 import GuillermoFernandezNutricion from "../assets/images/guillermofernandeznutricion.webp"
-import GuilleImg1 from "../assets/images/guilleromofernandeznutricion/guille1.png"
-import GuilleImg2 from "../assets/images/guilleromofernandeznutricion/guille2.png"
-import GuilleImg3 from "../assets/images/guilleromofernandeznutricion/guille3.png"
+import GuilleImg1 from "../assets/images/guilleromofernandeznutricion/guille1.jpg"
+import GuilleImg2 from "../assets/images/guilleromofernandeznutricion/guille2.jpg"
+import GuilleImg3 from "../assets/images/guilleromofernandeznutricion/guille3.jpg"
 import GuilleVideo from "../assets/videos/guillermofernandeznutricion/videoguille.mov"
 
 // Placeholder para imágenes y videos
