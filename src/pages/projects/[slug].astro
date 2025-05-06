@@ -6,6 +6,7 @@ import { getData } from "../../utils/projects";
 import Footer from "../../components/Footer.astro";
 import ImageCarousel from "../../components/ImageCarousel.jsx";
 import VideoCarousel from "../../components/VideoCarousel.jsx";
+import FeatureImageModal from "../../components/FeatureImageModal.jsx";
 
 export async function getStaticPaths() {
   const projects = getData();
@@ -86,7 +87,7 @@ const { project } = Astro.props;
 
                       {feature.image && (
                         <div class="mb-3 rounded-md overflow-hidden">
-                          <Image src={feature.image} alt={feature.title} class="w-full h-auto object-cover" width={600} height={400} />
+                          <FeatureImageModal image={feature.image} title={feature.title} client:visible />
                         </div>
                       )}
 
