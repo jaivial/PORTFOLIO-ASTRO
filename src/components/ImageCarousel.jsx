@@ -14,10 +14,16 @@ const customStyles = `
     background-color: transparent !important;
   }
   
+  /* Clase específica para ajustar altura */
+  .h-full.w-full.rs-carousel.rs-carousel-placement-bottom.rs-carousel-shape-bar {
+    height: auto !important;
+  }
+  
   /* Estilos para el modal */
   .modal-container .rs-modal-content {
     background-color: transparent;
     box-shadow: none;
+    padding: 0;
   }
   
   .modal-container .rs-modal {
@@ -83,16 +89,23 @@ function ImageModal({ isOpen, onClose, images, initialIndex }) {
 
   return (
     <Modal open={isOpen} onClose={onClose} className="modal-container" size="full" backdrop={true}>
-      <div className="relative w-full h-full bg-black bg-opacity-90 flex items-center justify-center">
+      <div className="relative w-full h-full bg-black bg-opacity-90 flex items-center justify-center" onClick={onClose}>
         {/* Botón de cierre */}
-        <button className="absolute right-4 top-4 z-10 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-75 transition-all" onClick={onClose} aria-label="Cerrar">
+        <button
+          className="absolute right-4 top-4 z-10 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-75 transition-all"
+          onClick={(e) => {
+            e.stopPropagation();
+            onClose();
+          }}
+          aria-label="Cerrar"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
 
         {/* Carousel dentro del modal - centrado */}
-        <div className="w-full max-w-5xl mx-auto h-[80vh] flex items-center justify-center">
+        <div className="w-full max-w-5xl mx-auto h-auto flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
           <Carousel className="h-full w-full" autoplay={false} activeIndex={currentIndex} onSelect={(index) => setCurrentIndex(index)} shape="bar">
             {images.map((image, index) => (
               <div key={index} className="flex items-center justify-center h-full">
@@ -103,12 +116,26 @@ function ImageModal({ isOpen, onClose, images, initialIndex }) {
         </div>
 
         {/* Controles de navegación personalizados */}
-        <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-75 focus:outline-none z-10" onClick={prevSlide} aria-label="Imagen anterior">
+        <button
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-75 focus:outline-none z-10"
+          onClick={(e) => {
+            e.stopPropagation();
+            prevSlide();
+          }}
+          aria-label="Imagen anterior"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-75 focus:outline-none z-10" onClick={nextSlide} aria-label="Imagen siguiente">
+        <button
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black bg-opacity-50 rounded-full p-2 text-white hover:bg-opacity-75 focus:outline-none z-10"
+          onClick={(e) => {
+            e.stopPropagation();
+            nextSlide();
+          }}
+          aria-label="Imagen siguiente"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
