@@ -1,222 +1,177 @@
-# Portfolio Website
+# Alquería Villa Carmen
 
-  
+![Alquería Villa Carmen](https://alqueriavillacarmen.com/assets/img/logo.png)
 
-![GitHub](https://img.shields.io/github/license/DevRohit06/Portfolio-website) ![GitHub stars](https://img.shields.io/github/stars/DevRohit06/Portfolio-website) ![GitHub forks](https://img.shields.io/github/forks/DevRohit06/Portfolio-website) ![GitHub last commit](https://img.shields.io/github/last-commit/DevRohit06/Portfolio-website)
+## 📝 Descripción
 
-  
+Sitio web completo para "Alquería Villa Carmen", un restaurante y salón de eventos ubicado en Valencia. El proyecto incluye:
 
-This is my personal portfolio website built using Tailwind CSS and Astro. It showcases my projects, skills, and contact information.
+- Página web promocional para mostrar el restaurante, sus servicios y ambiente
+- Sistema de gestión de reservas online con límite diario y confirmación por email
+- Cartas y menús dinámicos (diario, fin de semana y carta de vinos) editables en tiempo real
+- Panel de administración completo para gestionar reservas, aforo, menús y más
 
-  
+La implementación del sistema de reservas online ha logrado un aumento del 300% en la clientela del restaurante, optimizando la gestión interna y mejorando la experiencia del cliente.
 
-## Preview
+## 🔗 Enlaces
 
-  
+- **Web en producción:** [https://alqueriavillacarmen.com/](https://alqueriavillacarmen.com/)
+- **Repositorio:** [https://github.com/jaivial/villacarmen.git](https://github.com/jaivial/villacarmen.git)
 
-![Portfolio Website Preview](https://pbs.twimg.com/media/F6iOZw3WAAAtoqK?format=jpg&name=medium)
+## ✨ Características Principales
 
-  
+### 🗓️ Gestor de Reservas Online
+- Sistema avanzado de reservas con calendario visual que muestra días disponibles, cerrados y completos
+- Límite de comensales condicional según capacidad diaria y reservas existentes
+- Proceso de reserva en 4 pasos intuitivos:
+  1. Selección de fecha y número de personas
+  2. Opción para pre-reservar arroces (conectado a base de datos)
+  3. Formulario de datos personales con envío automático de confirmación por email y WhatsApp
+  4. Confirmación final con opciones para tronas/carros y aceptación de condiciones
 
-You can check out the live website [here](https://rohitk06.vercel.app).
+### 🍽️ Carta Dinámica de Platos
+- Menú digital conectado a base de datos que genera la presentación de platos dinámicamente
+- Muestra solo los platos activos con descripciones, precios e información de alérgenos
+- Actualización en tiempo real sin necesidad de modificar el código
 
-  
+### 🍷 Carta de Vinos Dinámica
+- Sistema conectado a base de datos que muestra dinámicamente solo los vinos disponibles
+- Facilita la actualización constante de la bodega sin intervención técnica
 
-## Features
+### 👨‍💼 Panel de Administración Completo
+- Calendario visual con codificación por colores según porcentaje de ocupación
+- Gestión avanzada de reservas:
+  - Tabla completa con información detallada por día
+  - Opciones para editar y borrar reservas individuales
+  - Exportación de datos en Excel o PDF para gestión interna
+  - Control de aforo personalizado por día
+  - Gestión de horarios con límites personalizables por franja horaria
+  - Sistema de reservas manuales sin restricciones para el personal
 
-  
+### 🍕 Gestión de Menús y Platos
+- Panel para añadir, activar/desactivar y editar platos por categorías
+- Selección personalizada de alérgenos para cada plato
+- Gestión integral de carta de vinos con opciones para añadir, editar y desactivar referencias
 
-- Responsive design
+## 🛠️ Tecnologías Utilizadas
 
-- Projects showcase
+- **Frontend:** 
+  - HTML5, CSS3, JavaScript
+  - Diseño responsive para todos los dispositivos
+  - AJAX para interacciones dinámicas sin recargar la página
 
-- Contact form
+- **Backend:**
+  - PHP para la lógica de negocio y gestión de datos
+  - API RESTful para comunicación entre frontend y backend
 
-- Blog Page
+- **Base de Datos:**
+  - MySQL para almacenamiento de datos:
+    - Reservas y gestión de clientes
+    - Inventario de platos y vinos
+    - Configuración de aforo y horarios
 
-  
+- **Servidor:**
+  - Nginx como servidor web
+  - Configuración optimizada para rendimiento y seguridad
 
-## Technologies Used
+- **Herramientas Adicionales:**
+  - Sistema de envío de emails automáticos
+  - Integración con WhatsApp para notificaciones
+  - Exportación a PDF/Excel para informes
 
-  
+## 🚀 Instalación y Configuración
 
-- [Tailwind CSS](https://tailwindcss.com/)
+### Requisitos Previos
+- Servidor web con soporte para PHP 7.4+
+- MySQL 5.7+
+- Servidor SMTP para envío de emails
+- Acceso vía SSH para despliegue
 
-- [Astro](https://astro.build/)
+### Pasos de Instalación
 
-- [React](https://react.dev/)
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/jaivial/villacarmen.git
+   cd villacarmen
+   ```
 
-  
+2. Configurar la base de datos:
+   - Importar el archivo `database.sql` a tu servidor MySQL
+   - Configurar las credenciales de conexión en `config/database.php`
 
-## Installation
+3. Configurar el envío de emails:
+   - Editar `config/mail.php` con los datos del servidor SMTP
 
-  
+4. Configuración del servidor web:
+   - Apuntar el dominio al directorio `/public`
+   - Asegurar que los permisos de archivos sean correctos:
+     ```bash
+     chmod -R 755 public/
+     chmod -R 777 storage/
+     ```
 
-To run this project locally, follow these steps:
+5. Acceso al panel de administración:
+   - Navegar a `https://tudominio.com/admin`
+   - Usuario por defecto: admin
+   - Contraseña por defecto: cambiar_inmediatamente
 
-  
+## 📷 Capturas de Pantalla
 
-1. Clone the repository:
+### Sistema de Reservas
+![Reservas - Calendario](https://alqueriavillacarmen.com/assets/img/github/reservas-calendario.jpg)
+*Sistema de reservas con calendario interactivo*
 
-  
+![Gestión de Reservas](https://alqueriavillacarmen.com/assets/img/github/admin-reservas.jpg)
+*Panel de administración de reservas*
 
-```bash
+### Cartas y Menús
+![Carta Dinámica](https://alqueriavillacarmen.com/assets/img/github/carta-dinamica.jpg)
+*Carta de platos dinámica conectada a base de datos*
 
-git clone https://github.com/DevRohit06/Portfolio-website.git
+![Edición de Platos](https://alqueriavillacarmen.com/assets/img/github/edicion-platos.jpg)
+*Panel de edición de platos y alérgenos*
+
+## 📁 Estructura del Proyecto
 
 ```
-
-  
-
-2. Navigate to the project directory:
-
-  
-
-```bash
-
-cd Portfolio-website
-
+alqueria-villacarmen/
+├── public/                  # Directorio web público
+│   ├── assets/              # Recursos estáticos
+│   │   ├── css/             # Hojas de estilo
+│   │   ├── js/              # Scripts JavaScript
+│   │   └── img/             # Imágenes e iconos
+│   ├── admin/               # Panel de administración
+│   └── index.php            # Punto de entrada principal
+├── app/                     # Lógica de la aplicación
+│   ├── Controllers/         # Controladores MVC
+│   ├── Models/              # Modelos de datos
+│   ├── Views/               # Plantillas de vistas
+│   └── Helpers/             # Funciones auxiliares
+├── config/                  # Configuración
+│   ├── database.php         # Conexión a base de datos
+│   └── mail.php             # Configuración de email
+├── database/                # Gestión de base de datos
+│   └── database.sql         # Esquema inicial
+└── README.md                # Esta documentación
 ```
 
+## 📞 Contacto e Información
 
-3. Change the Google Analytics Key Code to your own Key
+### Desarrollador
+- **Nombre:** Jaime Villanueva
+- **Email:** jaimevillanuevapro@gmail.com
+- **Portfolio:** [https://jaimevillanueva.es](https://jaimevillanueva.es)
 
-Change the Key inside 
-```
-Portfolio-website/src/layouts/Layout.astro & BlogLayout.astro
-```
+### Cliente
+- **Alquería Villa Carmen**
+- **Web:** [https://alqueriavillacarmen.com](https://alqueriavillacarmen.com)
+- **Dirección:** Carrer de València, 96, Albal, Valencia
+- **Teléfono:** +34 606 33 56 93
 
+## 📄 Licencia
 
-4. Install the dependencies:
-
-  
-
-```bash
-
-npm install
-
-```
-
-  
-
-5. Start the development server:
-
-  
-
-```bash
-
-npm run dev
-
-```
-
-  
-
-6. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the website locally.
-
-  
-
-## Usage
-
-  
-
-You can use this project as a template for your own portfolio website. Customize it by adding your own projects, skills, and contact information.
-
-  
-
-## Contributing
-
-  
-
-If you'd like to contribute to this project, please open an issue or submit a pull request.
-
-  
-
-## License
-
-  
-
-This project is open source and available under the [MIT License](LICENSE).
-
-  
+Este proyecto está bajo licencia privada para uso exclusivo del cliente Alquería Villa Carmen. Todos los derechos reservados.
 
 ---
 
-  
-
-Icons made by [FontAwesome](https://fontawesome.com/).
-
-  
-
-Feel free to reach out if you have any questions or suggestions!
-
-
-[![Built with Astro](https://astro.badg.es/v2/built-with-astro/large.svg)](https://astro.build)
-
-# Portfolio Astro
-
-Este repositorio contiene mi portfolio web personal construido con Astro y Tailwind CSS.
-
-## Estructura de datos de proyectos
-
-Los proyectos se definen en `src/utils/projects.js`. Cada proyecto puede tener los siguientes campos:
-
-### Campos básicos
-
-- `name`: Nombre del proyecto
-- `type`: Tipo de proyecto (ej. "Página Web", "Tienda Online")
-- `url`: URL del proyecto desplegado
-- `github`: URL del repositorio (usar "/" si no está disponible públicamente)
-- `image`: Imagen principal del proyecto (importada directamente)
-- `slug`: Identificador único para la URL
-- `description`: Descripción detallada del proyecto
-- `tech`: Array de tecnologías utilizadas
-
-### Galería multimedia
-
-- `images`: Array de imágenes adicionales con formato `{url: '/ruta/imagen.jpg', alt: 'Texto alternativo'}`
-- `videos`: Array de videos con formato `{url: '/ruta/video.mp4', poster: '/ruta/poster.jpg'}`
-
-### Funcionalidades
-
-La sección de funcionalidades permite mostrar características específicas del proyecto con imágenes o videos explicativos:
-
-```javascript
-features: [
-    {
-        title: "Nombre de la funcionalidad",
-        description: "Descripción detallada de cómo funciona esta característica",
-        image: "/ruta/a/imagen-explicativa.jpg" // Opcional: imagen que muestra la funcionalidad
-    },
-    {
-        title: "Otra funcionalidad con video",
-        description: "Explicación de la funcionalidad con demostración en video",
-        video: "/ruta/al/video-demo.mp4", // Opcional: video que demuestra la funcionalidad
-        videoPoster: "/ruta/a/poster.jpg" // Opcional: imagen de portada para el video
-    }
-]
-```
-
-Cada funcionalidad puede incluir:
-- Título descriptivo
-- Explicación detallada
-- Una imagen explicativa (opcional) usando el campo `image`
-- O un video demostrativo (opcional) usando los campos `video` y `videoPoster`
-
-Puedes añadir tantas funcionalidades como necesites y cada una aparecerá como una subsección individual en la página de detalles del proyecto.
-
-## Desarrollo
-
-1. Instala las dependencias:
-```bash
-npm install
-```
-
-2. Inicia el servidor de desarrollo:
-```bash
-npm run dev
-```
-
-3. Construye el sitio para producción:
-```bash
-npm run build
-```
+© 2022-2023 Jaime Villanueva | Alquería Villa Carmen

@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import PageNav from "../../components/PageNav.jsx";
+import NavBar from "../../components/NavBar";
 import { getData } from "../../utils/projects";
 import Footer from "../../components/Footer.astro";
 const data = getData();
@@ -9,7 +10,7 @@ const data = getData();
 // Extraer todas las tecnologías únicas de los proyectos
 const allTechnologies = [...new Set(data.flatMap((project) => project.tech))].sort();
 // Extraer todos los tipos de proyectos únicos
-const allTypes = [...new Set(data.map((project) => project.type))].sort();
+// const allTypes = [...new Set(data.map((project) => project.type))].sort();
 
 // Crear un resumen corto para cada proyecto (primeras 120 caracteres)
 const getShortDescription = (description) => {
@@ -32,12 +33,12 @@ const getTechCategory = (tech) => {
   return "other";
 };
 
-// Categorizar proyectos por destacados
-const featuredProjects = data.slice(0, 2); // Los primeros 2 proyectos como destacados
-const regularProjects = data.slice(2);
+// Ya no hay categorización por proyectos destacados
+// const featuredProjects = data.slice(0, 2); // Los primeros 2 proyectos como destacados
+// const regularProjects = data.slice(2);
 ---
 
-<Layout title="Projectos | Jaime Villanueva">
+<Layout title="Proyectos | Jaime Villanueva">
   <main class="relative w-5/6 mx-auto" transition:persist>
     <!-- Indicador de carga de página -->
     <div id="page-loader" class="fixed inset-0 bg-gray-900 bg-opacity-80 z-50 flex items-center justify-center transition-opacity duration-500">
@@ -47,7 +48,8 @@ const regularProjects = data.slice(2);
       </div>
     </div>
 
-    <PageNav title="PROJECTOS" previousLink="/#projects" client:load />
+    <NavBar client:load />
+    <PageNav title="PROYECTOS" previousLink="/#projects" client:load />
 
     <!-- Migas de pan para mejor navegación -->
     <nav aria-label="Breadcrumb" class="mt-6">
@@ -64,25 +66,12 @@ const regularProjects = data.slice(2);
       <h1 class="text-primary text-3xl font-extrabold mt-8 text-center sm:text-start" id="projects-title">Explora mis proyectos</h1>
       <p class="text-gray-400 text-lg py-4 text-center sm:text-start">¡Bienvenido a mi portfolio de proyectos de desarrollo web! Cada proyecto exhibe mis habilidades, creatividad y dedicación para ofrecer soluciones web de calidad.</p>
 
-      <!-- Filtros con mejoras de accesibilidad -->
+      <!-- Filtros con mejoras de accesibilidad - Solo tecnologías -->
       <div class="my-8 bg-gray-800 p-6 rounded-xl bg-opacity-30 backdrop-blur-sm">
         <h2 class="text-xl text-primary font-bold mb-4">Filtrar proyectos</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Filtro por tipo de proyecto -->
-          <div>
-            <h3 class="text-gray-300 font-semibold mb-2" id="type-filter-heading">Tipo de proyecto</h3>
-            <div class="flex flex-wrap gap-2" role="group" aria-labelledby="type-filter-heading">
-              <button id="all-types-btn" class="px-3 py-1 rounded-md text-sm bg-primary text-white transition-all hover:bg-opacity-80 active" aria-pressed="true">Todos</button>
-              {
-                allTypes.map((type) => (
-                  <button class="type-filter px-3 py-1 rounded-md text-sm bg-gray-700 text-gray-300 hover:bg-gray-600 transition-all" data-type={type} aria-pressed="false">
-                    {type}
-                  </button>
-                ))
-              }
-            </div>
-          </div>
+        <div class="grid grid-cols-1 gap-6">
+          <!-- Eliminado filtro por tipo de proyecto -->
 
           <!-- Filtro por tecnologías -->
           <div>
@@ -109,107 +98,16 @@ const regularProjects = data.slice(2);
       <!-- Feedback de filtrado -->
       <div id="filter-feedback" class="fixed top-24 right-8 bg-primary text-white px-4 py-2 rounded-md shadow-lg transform translate-y-[-20px] opacity-0 invisible transition-all duration-300 z-40">Filtro aplicado</div>
 
-      <!-- Proyectos Destacados -->
-      {
-        featuredProjects.length > 0 && (
-          <div class="mb-12">
-            <h2 class="text-2xl text-primary font-bold mb-6 inline-flex items-center" id="featured-projects-heading">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 fill-primary" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
-              </svg>
-              Proyectos Destacados
-            </h2>
-            <div class="grid grid-cols-1 gap-8" aria-labelledby="featured-projects-heading">
-              {featuredProjects.map((item) => (
-                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="project-card featured-card flex md:flex-row flex-col bg-gray-800 bg-opacity-20 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:transform hover:scale-[1.01] border-l-4 border-primary" data-type={item.type} data-techs={item.tech.join(",")}>
-                  <a href={`/projects/${item.slug}`} class="block md:w-2/5 overflow-hidden">
-                    <Image class:list={"w-full object-cover h-full hover:opacity-90 transition-opacity"} src={item.image} alt={item.name} transition:name={item.name} />
-                  </a>
+      <!-- Ya no se muestran proyectos destacados, todos los proyectos se muestran en una sola sección -->
 
-                  <div class="flex flex-col gap-3 p-5 md:w-3/5">
-                    <div class="flex justify-between items-start">
-                      <div>
-                        <a href={`/projects/${item.slug}`} class="inline-block hover:text-gray-300 transition-colors">
-                          <h2 class="text-3xl font-bold text-primary mb-1">{item.name}</h2>
-                        </a>
-                        <p class="text-gray-400 text-sm mb-2 flex items-center">
-                          <span class="inline-block mr-2 w-2 h-2 rounded-full bg-primary" />
-                          {item.type}
-                        </p>
-                      </div>
-                      <span class="bg-primary bg-opacity-20 text-primary px-2 py-1 rounded-md text-xs font-semibold">Destacado</span>
-                    </div>
-
-                    <p class="text-gray-400 mb-4">{item.description}</p>
-
-                    <div class="mt-2">
-                      <h3 class="text-sm font-semibold text-gray-300 mb-2">Tecnologías</h3>
-                      <div class="flex flex-col gap-2">
-                        {["frontend", "backend", "database", "other"].map((category) => {
-                          const techsInCategory = item.tech.filter((tech) => getTechCategory(tech) === category);
-                          if (techsInCategory.length === 0) return null;
-
-                          return (
-                            <div class="flex items-center">
-                              <span class="text-xs text-gray-400 w-20">{category.charAt(0).toUpperCase() + category.slice(1)}:</span>
-                              <div class="flex flex-wrap gap-2">
-                                {techsInCategory.map((tech) => (
-                                  <span
-                                    class={`px-2 text-xs font-semibold py-1 rounded-md 
-                                    ${category === "frontend" ? "bg-blue-500 bg-opacity-20 text-blue-400" : category === "backend" ? "bg-green-500 bg-opacity-20 text-green-400" : category === "database" ? "bg-yellow-500 bg-opacity-20 text-yellow-400" : "bg-purple-500 bg-opacity-20 text-purple-400"}`}
-                                  >
-                                    {tech}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-
-                    <div class="flex gap-2 mt-auto pt-4">
-                      <a href={`/projects/${item.slug}`} class="flex items-center gap-2 rounded-md font-bold px-3 py-2 bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-primary" height="1em" viewBox="0 0 576 512">
-                          <path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
-                        </svg>
-                        Ver detalles
-                      </a>
-
-                      {item.github && item.github !== "/" && (
-                        <a class="flex items-center gap-2 rounded-md font-bold px-3 py-2 bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-all" href={item.github} target="_blank" rel="noopener noreferrer">
-                          <svg class="fill-primary text-lg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
-                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                          </svg>
-                          Repo
-                        </a>
-                      )}
-
-                      {item.url && (
-                        <a class="flex items-center gap-2 rounded-md font-bold px-3 py-2 bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-all" href={item.url} target="_blank" rel="noopener noreferrer">
-                          <svg class="fill-primary" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.5,12c0,1,0,2,.12,3L8.39,15a12.36,12.36,0,0,0-3.08,1.35,10.06,10.06,0,0,0-1.61,1.2,10,10,0,0,1,0-11.14,10.06,10.06,0,0,0,1.61,1.2A12.29,12.29,0,0,0,8.38,9L8.62,9C8.54,10,8.5,11,8.5,12ZM4.3,5.62A9.55,9.55,0,0,0,5.91,6.83,11.11,11.11,0,0,0,8.66,8h0a24.72,24.72,0,0,1,.6-3.55,11,11,0,0,1,.79-2.3A10.05,10.05,0,0,0,4.3,5.62Zm9.61-3.44a11,11,0,0,1,.79,2.3A24.72,24.72,0,0,1,15.3,8h0a11.18,11.18,0,0,0,2.76-1.19A9.55,9.55,0,0,0,19.7,5.62,10.05,10.05,0,0,0,13.91,2.18ZM9.68,15.73a24.3,24.3,0,0,0,.74,4.12A7.82,7.82,0,0,0,11.31,22L12,22l.69,0a7.82,7.82,0,0,0,.89-2.13,24.3,24.3,0,0,0,.74-4.12A11.69,11.69,0,0,0,9.68,15.73ZM14.4,9.27A12.6,12.6,0,0,1,12,9.5a12.6,12.6,0,0,1-2.4-.23c-.07.85-.1,1.77-.1,2.73s0,1.88.1,2.74a12.7,12.7,0,0,1,4.8,0c.07-.85.1-1.77.1-2.73S14.47,10.12,14.4,9.27Zm-.82-5.12A7.82,7.82,0,0,0,12.69,2L12,2l-.69,0a7.82,7.82,0,0,0-.89,2.13,24.3,24.3,0,0,0-.74,4.12,11.69,11.69,0,0,0,4.64,0A24.3,24.3,0,0,0,13.58,4.15ZM20.3,6.43a10.06,10.06,0,0,1-1.61,1.2A12.36,12.36,0,0,1,15.61,9L15.38,9c.08,1,.12,2,.12,3s0,2-.12,3l.24.06a12.29,12.29,0,0,1,3.07,1.35,10.06,10.06,0,0,1,1.61,1.2,10,10,0,0,0,0-11.14ZM18.09,17.17A11.11,11.11,0,0,0,15.34,16h0a24.72,24.72,0,0,1-.6,3.55,11,11,0,0,1-.79,2.3,10.05,10.05,0,0,0,5.79-3.44A9.55,9.55,0,0,0,18.09,17.17ZM9.3,19.52A24.72,24.72,0,0,1,8.7,16h0a11.18,11.18,0,0,0-2.76,1.19A9.55,9.55,0,0,0,4.3,18.38a10.05,10.05,0,0,0,5.79,3.44A11,11,0,0,1,9.3,19.52Z" />
-                          </svg>
-                          Demo
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )
-      }
-
-      <!-- Grid de proyectos regulares -->
+      <!-- Grid de todos los proyectos -->
       <div class="mb-8">
         <h2 class="text-2xl text-primary font-bold mb-6" id="all-projects-heading">Todos los proyectos</h2>
         <div id="projects-container" class="grid grid-cols-1 lg:grid-cols-2 gap-8" aria-labelledby="all-projects-heading">
           {
-            regularProjects.map((item) => {
+            data.map((item) => {
               return (
-                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="project-card flex flex-col bg-gray-800 bg-opacity-20 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:transform hover:scale-[1.01]" data-type={item.type} data-techs={item.tech.join(",")}>
+                <div class="project-card flex flex-col bg-gray-800 bg-opacity-20 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:transform hover:scale-[1.01]" data-type={item.type} data-techs={item.tech.join(",")}>
                   <a href={`/projects/${item.slug}`} class="block overflow-hidden">
                     <Image class:list={"w-full object-cover h-64 hover:opacity-90 transition-opacity"} src={item.image} alt={item.name} transition:name={item.name} />
                   </a>
@@ -237,17 +135,17 @@ const regularProjects = data.slice(2);
                       })}
                     </div>
 
-                    <div class="flex gap-2 mt-auto pt-4">
-                      <a href={`/projects/${item.slug}`} class="flex items-center gap-2 rounded-md font-bold px-3 py-2 bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-primary" height="1em" viewBox="0 0 576 512">
+                    <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                      <a href={`/projects/${item.slug}`} class="flex items-center gap-1 rounded-md font-bold px-2 py-1 sm:px-3 sm:py-2 text-sm sm:text-base bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-primary h-4 w-4 sm:h-5 sm:w-5" height="1em" viewBox="0 0 576 512">
                           <path d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
                         </svg>
                         Ver detalles
                       </a>
 
                       {item.github && item.github !== "/" && (
-                        <a class="flex items-center gap-2 rounded-md font-bold px-3 py-2 bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-all" href={item.github} target="_blank" rel="noopener noreferrer">
-                          <svg class="fill-primary text-lg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
+                        <a class="flex items-center gap-1 rounded-md font-bold px-2 py-1 sm:px-3 sm:py-2 text-sm sm:text-base bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-all" href={item.github} target="_blank" rel="noopener noreferrer">
+                          <svg class="fill-primary h-4 w-4 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
                             <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                           </svg>
                           Repo
@@ -255,8 +153,8 @@ const regularProjects = data.slice(2);
                       )}
 
                       {item.url && (
-                        <a class="flex items-center gap-2 rounded-md font-bold px-3 py-2 bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-all" href={item.url} target="_blank" rel="noopener noreferrer">
-                          <svg class="fill-primary" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <a class="flex items-center gap-1 rounded-md font-bold px-2 py-1 sm:px-3 sm:py-2 text-sm sm:text-base bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-all" href={item.url} target="_blank" rel="noopener noreferrer">
+                          <svg class="fill-primary h-4 w-4 sm:h-5 sm:w-5" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.5,12c0,1,0,2,.12,3L8.39,15a12.36,12.36,0,0,0-3.08,1.35,10.06,10.06,0,0,0-1.61,1.2,10,10,0,0,1,0-11.14,10.06,10.06,0,0,0,1.61,1.2A12.29,12.29,0,0,0,8.38,9L8.62,9C8.54,10,8.5,11,8.5,12ZM4.3,5.62A9.55,9.55,0,0,0,5.91,6.83,11.11,11.11,0,0,0,8.66,8h0a24.72,24.72,0,0,1,.6-3.55,11,11,0,0,1,.79-2.3A10.05,10.05,0,0,0,4.3,5.62Zm9.61-3.44a11,11,0,0,1,.79,2.3A24.72,24.72,0,0,1,15.3,8h0a11.18,11.18,0,0,0,2.76-1.19A9.55,9.55,0,0,0,19.7,5.62,10.05,10.05,0,0,0,13.91,2.18ZM9.68,15.73a24.3,24.3,0,0,0,.74,4.12A7.82,7.82,0,0,0,11.31,22L12,22l.69,0a7.82,7.82,0,0,0,.89-2.13,24.3,24.3,0,0,0,.74-4.12A11.69,11.69,0,0,0,9.68,15.73ZM14.4,9.27A12.6,12.6,0,0,1,12,9.5a12.6,12.6,0,0,1-2.4-.23c-.07.85-.1,1.77-.1,2.73s0,1.88.1,2.74a12.7,12.7,0,0,1,4.8,0c.07-.85.1-1.77.1-2.73S14.47,10.12,14.4,9.27Zm-.82-5.12A7.82,7.82,0,0,0,12.69,2L12,2l-.69,0a7.82,7.82,0,0,0-.89,2.13,24.3,24.3,0,0,0-.74,4.12,11.69,11.69,0,0,0,4.64,0A24.3,24.3,0,0,0,13.58,4.15ZM20.3,6.43a10.06,10.06,0,0,1-1.61,1.2A12.36,12.36,0,0,1,15.61,9L15.38,9c.08,1,.12,2,.12,3s0,2-.12,3l.24.06a12.29,12.29,0,0,1,3.07,1.35,10.06,10.06,0,0,1,1.61,1.2,10,10,0,0,0,0-11.14ZM18.09,17.17A11.11,11.11,0,0,0,15.34,16h0a24.72,24.72,0,0,1-.6,3.55,11,11,0,0,1-.79,2.3,10.05,10.05,0,0,0,5.79-3.44A9.55,9.55,0,0,0,18.09,17.17ZM9.3,19.52A24.72,24.72,0,0,1,8.7,16h0a11.18,11.18,0,0,0-2.76,1.19A9.55,9.55,0,0,0,4.3,18.38a10.05,10.05,0,0,0,5.79,3.44A11,11,0,0,1,9.3,19.52Z" />
                           </svg>
                           Demo
@@ -297,7 +195,12 @@ const regularProjects = data.slice(2);
       }, 600);
     }
 
-    // Rest of existing code...
+    // Variables para filtros
+    const techFilters = document.querySelectorAll(".tech-filter");
+    const allTechBtn = document.getElementById("all-tech-btn");
+    const projectCards = document.querySelectorAll(".project-card");
+    const noResults = document.getElementById("no-results");
+    const resetFiltersBtn = document.getElementById("reset-filters");
 
     // Actualizar contador de proyectos al filtrar
     function updateProjectCount() {
@@ -328,55 +231,151 @@ const regularProjects = data.slice(2);
       }
     }
 
-    // Mejorar la función filterProjects
+    // Función para filtrar proyectos - solo por tecnología
     function filterProjects() {
-      // Existing filtering code...
+      // Obtener tecnologías activas
+      const activeTechs = Array.from(techFilters)
+        .filter((filter) => filter.classList.contains("active"))
+        .map((filter) => {
+          const tech = filter.getAttribute("data-tech");
+          return tech || ""; // Asegurar que nunca sea null
+        });
 
-      // Call new functions after filtering
+      // Si no hay tecnologías activas o está activo "Todas", mostrar todos
+      const showAllTechs = activeTechs.length === 0 || (allTechBtn && allTechBtn.classList.contains("active"));
+
+      let visibleCount = 0;
+
+      // Filtrar proyectos
+      projectCards.forEach((card) => {
+        const cardTechsAttr = card.getAttribute("data-techs") || "";
+        const cardTechs = cardTechsAttr.split(",");
+
+        // Verificar si el proyecto tiene al menos una de las tecnologías activas o si mostramos todos
+        // Usar comparación insensible a mayúsculas/minúsculas
+        const matchesTech = showAllTechs || activeTechs.some((tech) => cardTechs.some((cardTech) => cardTech.toLowerCase() === tech.toLowerCase()));
+
+        if (matchesTech) {
+          card.classList.remove("hidden");
+          visibleCount++;
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+
+      // Mostrar mensaje si no hay resultados
+      if (noResults) {
+        if (visibleCount === 0) {
+          noResults.classList.remove("hidden");
+        } else {
+          noResults.classList.add("hidden");
+        }
+      }
+
+      // Actualizar contador y mostrar feedback
       updateProjectCount();
       showFilterFeedback();
     }
 
     // Update ARIA pressed states
     function updateAriaPressed(button, isPressed) {
-      button.setAttribute("aria-pressed", isPressed.toString());
+      if (button) {
+        button.setAttribute("aria-pressed", isPressed.toString());
+      }
     }
 
-    // Mejorar manejadores de eventos para filtros de tipo
-    typeFilters.forEach((filter) => {
-      filter.addEventListener("click", () => {
-        // Existing type filter handling...
-
-        // Update ARIA states
-        updateAriaPressed(filter, filter.classList.contains("active"));
-        if (allTypesBtn) {
-          updateAriaPressed(allTypesBtn, allTypesBtn.classList.contains("active"));
-        }
-      });
-    });
-
-    // Mejorar manejadores de eventos para filtros de tecnología
+    // Manejar eventos para filtros de tecnología
     techFilters.forEach((filter) => {
       filter.addEventListener("click", () => {
-        // Existing tech filter handling...
+        if (allTechBtn && allTechBtn.classList.contains("active")) {
+          allTechBtn.classList.remove("active", "bg-primary", "text-white");
+          allTechBtn.classList.add("bg-gray-700", "text-gray-300");
+        }
+
+        filter.classList.toggle("active");
+
+        if (filter.classList.contains("active")) {
+          filter.classList.remove("bg-gray-700", "text-gray-300");
+          filter.classList.add("bg-primary", "text-white");
+        } else {
+          filter.classList.remove("bg-primary", "text-white");
+          filter.classList.add("bg-gray-700", "text-gray-300");
+        }
+
+        // Si no hay filtros activos, activar "Todas"
+        const anyActive = Array.from(techFilters).some((f) => f.classList.contains("active"));
+        if (!anyActive && allTechBtn) {
+          allTechBtn.classList.add("active", "bg-primary", "text-white");
+          allTechBtn.classList.remove("bg-gray-700", "text-gray-300");
+        }
 
         // Update ARIA states
         updateAriaPressed(filter, filter.classList.contains("active"));
         if (allTechBtn) {
           updateAriaPressed(allTechBtn, allTechBtn.classList.contains("active"));
         }
+
+        filterProjects();
       });
     });
+
+    // Manejar evento para el botón "Todas las tecnologías"
+    if (allTechBtn) {
+      allTechBtn.addEventListener("click", () => {
+        if (!allTechBtn.classList.contains("active")) {
+          // Desactivar otros filtros
+          techFilters.forEach((filter) => {
+            filter.classList.remove("active", "bg-primary", "text-white");
+            filter.classList.add("bg-gray-700", "text-gray-300");
+            updateAriaPressed(filter, false);
+          });
+
+          // Activar "Todas"
+          allTechBtn.classList.add("active", "bg-primary", "text-white");
+          allTechBtn.classList.remove("bg-gray-700", "text-gray-300");
+          updateAriaPressed(allTechBtn, true);
+
+          filterProjects();
+        }
+      });
+    }
+
+    // Manejar reset de filtros
+    if (resetFiltersBtn) {
+      resetFiltersBtn.addEventListener("click", () => {
+        // Activar "Todas las tecnologías"
+        if (allTechBtn) {
+          allTechBtn.classList.add("active", "bg-primary", "text-white");
+          allTechBtn.classList.remove("bg-gray-700", "text-gray-300");
+          updateAriaPressed(allTechBtn, true);
+        }
+
+        // Desactivar otros filtros
+        techFilters.forEach((filter) => {
+          filter.classList.remove("active", "bg-primary", "text-white");
+          filter.classList.add("bg-gray-700", "text-gray-300");
+          updateAriaPressed(filter, false);
+        });
+
+        filterProjects();
+        if (noResults) {
+          noResults.classList.add("hidden");
+        }
+      });
+    }
 
     // Inicializar contador de proyectos
     updateProjectCount();
 
     // Añadir manejo de teclado para mejorar accesibilidad
-    document.querySelectorAll("button.type-filter, button.tech-filter, #all-types-btn, #all-tech-btn, #reset-filters").forEach((button) => {
+    document.querySelectorAll("button.tech-filter, #all-tech-btn, #reset-filters").forEach((button) => {
       button.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") {
+        // Tratar el evento como KeyboardEvent
+        if (e instanceof KeyboardEvent && (e.key === "Enter" || e.key === " ")) {
           e.preventDefault();
-          button.click();
+          if (button instanceof HTMLElement && typeof button.click === "function") {
+            button.click();
+          }
         }
       });
     });

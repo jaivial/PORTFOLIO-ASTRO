@@ -60,7 +60,7 @@ export default function ImageCarousel({ images }) {
       <style>{customStyles}</style>
 
       <div className="relative w-full aspect-[4/3] md:aspect-[16/9]">
-        <Carousel className="h-full custom-carousel" autoplay={false} shape="bar">
+        <Carousel className="h-full custom-carousel" autoplay={true} autoplayInterval={2000} shape="bar">
           {images.map((image, index) => (
             <div key={index} className="w-full h-full" onClick={() => openModal(index)}>
               <img src={image.url} alt={image.alt || `Imagen ${index + 1}`} className="w-full h-full object-cover md:object-cover object-center cursor-pointer" />
@@ -106,7 +106,7 @@ function ImageModal({ isOpen, onClose, images, initialIndex }) {
 
         {/* Carousel dentro del modal - centrado */}
         <div className="w-full max-w-5xl mx-auto h-auto flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
-          <Carousel className="h-full w-full" autoplay={false} activeIndex={currentIndex} onSelect={(index) => setCurrentIndex(index)} shape="bar">
+          <Carousel className="h-full w-full" autoplay={true} autoplayInterval={1000} activeIndex={currentIndex} onSelect={(index) => setCurrentIndex(index)} shape="bar">
             {images.map((image, index) => (
               <div key={index} className="flex items-center justify-center h-full">
                 <img src={image.url} alt={image.alt || `Imagen ${index + 1}`} className="max-w-full max-h-[80vh] object-contain" />
