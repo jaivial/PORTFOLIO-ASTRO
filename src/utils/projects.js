@@ -33,6 +33,32 @@ import VillacarmenImg17 from "../assets/images/villacarmen/villacarmen-17.jpg"
 import VillacarmenImg18 from "../assets/images/villacarmen/villacarmen-18.jpg"
 import VillacarmenVideo from "../assets/videos/villacarmen/villacarmen-video.mov"
 
+// Importaciones para Tour To Valencia
+import TourToValencia from "../assets/images/tourtovalencia/tourtovalencia11.jpg";
+import TourToValenciaImg1 from "../assets/images/tourtovalencia/tourtovalencia1.jpg";
+import TourToValenciaImg2 from "../assets/images/tourtovalencia/tourtovalencia2.jpg";
+import TourToValenciaImg3 from "../assets/images/tourtovalencia/tourtovalencia3.jpg";
+import TourToValenciaImg4 from "../assets/images/tourtovalencia/tourtovalencia4.jpg";
+import TourToValenciaImg5 from "../assets/images/tourtovalencia/tourtovalencia5.jpg";
+import TourToValenciaImg6 from "../assets/images/tourtovalencia/tourtovalencia6.jpg";
+import TourToValenciaImg7 from "../assets/images/tourtovalencia/tourtovalencia7.jpg";
+import TourToValenciaImg8 from "../assets/images/tourtovalencia/tourtovalencia8.jpg";
+import TourToValenciaImg9 from "../assets/images/tourtovalencia/tourtovalencia9.jpg";
+import TourToValenciaImg10 from "../assets/images/tourtovalencia/tourtovalencia10.jpg";
+import TourToValenciaImg11 from "../assets/images/tourtovalencia/tourtovalencia11.jpg";
+import TourToValenciaImg12 from "../assets/images/tourtovalencia/tourtovalencia12.jpg";
+import TourToValenciaImg13 from "../assets/images/tourtovalencia/tourtovalencia13.jpg";
+import TourToValenciaImg14 from "../assets/images/tourtovalencia/tourtovalencia14.jpg";
+import TourToValenciaImg15 from "../assets/images/tourtovalencia/tourtovalencia15.jpg";
+import TourToValenciaVideo1 from "../assets/videos/tourtovalencia/tourtovalencia1.mov";
+import TourToValenciaVideo2 from "../assets/videos/tourtovalencia/tourtovalencia2.mov";
+import TourToValenciaVideo3 from "../assets/videos/tourtovalencia/tourtovalencia3.mov";
+import TourToValenciaVideo4 from "../assets/videos/tourtovalencia/tourtovalencia4.mov";
+import TourToValenciaVideo5 from "../assets/videos/tourtovalencia/tourtovalencia5.mov";
+import TourToValenciaVideo6 from "../assets/videos/tourtovalencia/tourtovalencia6.mov";
+import TourToValenciaVideo7 from "../assets/videos/tourtovalencia/tourtovalencia7.mov";
+import TourToValenciaVideo8 from "../assets/videos/tourtovalencia/tourtovalencia8.mov";
+
 // Placeholder para imágenes y videos
 // En un entorno real, estas URLs apuntarían a recursos reales
 const placeholderImages = [
@@ -253,7 +279,114 @@ const todoListFeatures = [
     }
 ];
 
+// Funcionalidades para Tour To Valencia
+const tourToValenciaFeatures = [
+    {
+        title: "Diseño Responsive y Multilingüe",
+        description: "Diseño web responsive adaptado a todas las pantallas con un estilo elegante implementado con Tailwind CSS. La página inicial incluye un hero section moderno con imágenes intuitivas relacionadas con excursiones. El sitio está configurado con i18n para soporte multilingüe completo (español e inglés) mediante archivos JSON, ofreciendo una experiencia de usuario intuitiva y bien estructurada.",
+        video: TourToValenciaVideo1,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Páginas de Tour Detalladas",
+        description: "Páginas individuales para cada tour con UI/UX de alto estándar para captar clientes. Incluyen información sintetizada pero informativa, imágenes de alta calidad, y una sección con diseño excepcional que muestra el itinerario de la excursión etapa por etapa. Finaliza con una tarjeta resumen de características y un botón de llamada a la acción para reservar.",
+        video: TourToValenciaVideo2,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Sistema de Reservas Avanzado",
+        description: "Sistema de reservas en 4 pasos más pasarela de pago con PayPal. El proceso incluye: 1) Selección de tour y fecha (con fechas sin disponibilidad bloqueadas), 2) Elección del número de personas (actualizado dinámicamente según disponibilidad), 3) Recogida de datos personales, y 4) Resumen de compra. Tras confirmar, se procede al pago mediante PayPal, se registra la reserva en base de datos y se envían emails de confirmación al cliente y al negocio.",
+        video: TourToValenciaVideo3,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Optimización SEO",
+        description: "Página con diseño UI optimizada para cumplir con los estándares SEO, asegurando que las palabras clave relevantes para el negocio aparezcan correctamente posicionadas para mejorar la visibilidad en motores de búsqueda.",
+        video: TourToValenciaVideo4,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Panel de Administración - Gestión de Reservas",
+        description: "Área de administración protegida por usuario y contraseña para gestionar reservas y tours. Incluye un calendario para seleccionar fechas, opciones de filtrado por tour y fecha, y ajuste de límites de reservas para adaptarse a fluctuaciones de aforo. Muestra una tabla detallada con información de reservas, estado de pago y método de pago, con opción de filtrado por nombre.",
+        video: TourToValenciaVideo5,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Gestión de Cancelaciones y Reembolsos",
+        description: "Sistema para cancelar reservas con opción de reembolso automático a través de PayPal mediante ID de transacción. Incluye una pestaña específica para visualizar reservas canceladas, facilitando el seguimiento y evitando errores de cancelación o malentendidos con los clientes.",
+        video: TourToValenciaVideo6,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Gestor de Tours",
+        description: "Sección de administración para crear nuevos tours o editar los existentes. Incluye un editor de páginas que permite activar/desactivar disponibilidad de tours, cambiar precios, actualizar imágenes y GIFs animados, y editar textos de todas las secciones directamente haciendo clic en ellos.",
+        video: TourToValenciaVideo7,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Sistema de Edición con IA",
+        description: "Sistema avanzado para editar/crear páginas que optimiza automáticamente las imágenes subidas a formato WebP con tamaño máximo de 100KB. Además, procesa textos mediante inteligencia artificial con API de OpenRouter a un modelo de Gemini, permitiendo al dueño del negocio crear contenido en un solo idioma (español) y traducirlo automáticamente al inglés.",
+        video: TourToValenciaVideo8,
+        autoplay: true,
+        muted: true,
+        loop: true
+    }
+];
+
 const data = [
+    {
+        name: "Tour To Valencia",
+        type: "Página Web + Sistema de Reservas + Back Office",
+        url: "https://www.tourtovalencia.com",
+        github: "https://github.com/jaivial/tourtovalencia.git",
+        image: TourToValencia,
+        slug: "tour-to-valencia",
+        description: "Tour To Valencia es una aplicación web moderna y multilingüe (inglés/español) construida con Remix y React que permite a los usuarios descubrir, explorar y reservar tours y experiencias en Valencia, España. La plataforma ofrece una experiencia de reserva fluida con procesamiento de pagos integrado a través de PayPal y Stripe, confirmaciones por correo electrónico y un completo panel de administración para gestionar reservas y contenido de tours.",
+        tech: ["React", "Remix", "TypeScript", "TailwindCSS", "MongoDB", "PayPal", "Stripe", "Nodemailer", "Shadcn UI", "Framer Motion", "i18n", "PM2", "Nginx", "OpenAI"],
+        date: "2024-06-01",
+        images: [
+            { url: TourToValenciaImg1.src, alt: 'Página principal de Tour To Valencia' },
+            { url: TourToValenciaImg2.src, alt: 'Detalle de tour' },
+            { url: TourToValenciaImg3.src, alt: 'Sistema de reservas' },
+            { url: TourToValenciaImg4.src, alt: 'Página SEO optimizada' },
+            { url: TourToValenciaImg5.src, alt: 'Panel de administración' },
+            { url: TourToValenciaImg6.src, alt: 'Gestión de cancelaciones' },
+            { url: TourToValenciaImg7.src, alt: 'Editor de tours' },
+            { url: TourToValenciaImg8.src, alt: 'Sistema de edición con IA' },
+            { url: TourToValenciaImg9.src, alt: 'Vista adicional 1' },
+            { url: TourToValenciaImg10.src, alt: 'Vista adicional 2' },
+            { url: TourToValenciaImg11.src, alt: 'Vista adicional 3' },
+            { url: TourToValenciaImg12.src, alt: 'Vista adicional 4' },
+            { url: TourToValenciaImg13.src, alt: 'Vista adicional 5' },
+            { url: TourToValenciaImg14.src, alt: 'Vista adicional 6' },
+            { url: TourToValenciaImg15.src, alt: 'Vista adicional 7' }
+        ],
+        videos: [
+            { url: TourToValenciaVideo1, poster: TourToValenciaImg1.src },
+            { url: TourToValenciaVideo2, poster: TourToValenciaImg2.src },
+            { url: TourToValenciaVideo3, poster: TourToValenciaImg3.src },
+            { url: TourToValenciaVideo4, poster: TourToValenciaImg4.src },
+            { url: TourToValenciaVideo5, poster: TourToValenciaImg5.src },
+            { url: TourToValenciaVideo6, poster: TourToValenciaImg6.src },
+            { url: TourToValenciaVideo7, poster: TourToValenciaImg7.src },
+            { url: TourToValenciaVideo8, poster: TourToValenciaImg8.src }
+        ],
+        features: tourToValenciaFeatures
+    },
     {
         name: "Guillermo Fernandez Nutrición",
         type: "Página Web + Email",
