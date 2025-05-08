@@ -186,6 +186,15 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
 };
+"projects": {
+"cat-store.md": {
+	id: "cat-store.md";
+  slug: "cat-store";
+  body: string;
+  collection: "projects";
+  data: InferEntrySchema<"projects">
+} & { render(): Render[".md"] };
+};
 "team": {
 };
 

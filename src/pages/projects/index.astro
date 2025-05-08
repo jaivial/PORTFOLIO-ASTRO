@@ -109,7 +109,7 @@ const getTechCategory = (tech) => {
               return (
                 <div class="project-card flex flex-col bg-gray-800 bg-opacity-20 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:transform hover:scale-[1.01]" data-type={item.type} data-techs={item.tech.join(",")}>
                   <a href={`/projects/${item.slug}`} class="block overflow-hidden">
-                    <Image class:list={"w-full object-cover h-64 hover:opacity-90 transition-opacity"} src={item.image} alt={item.name} transition:name={item.name} />
+                    <Image class:list={"w-full object-cover h-64 hover:opacity-90 transition-opacity object-top"} src={item.image} alt={item.name} transition:name={item.name} />
                   </a>
 
                   <div class="flex flex-col gap-3 p-5">

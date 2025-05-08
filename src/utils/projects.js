@@ -2,7 +2,6 @@ import ras from "../assets/images/ras.webp";
 import joke from "../assets/images/joke.webp";
 import lofi from "../assets/images/lofi.webp";
 import blog from "../assets/images/blog.webp";
-import FloridaCats from "../assets/images/floridacats.webp";
 import Carhub from "../assets/images/carhub.webp";
 import AlqueriaVillacarmen from "../assets/images/villacarmendoble.webp";
 import Portfolio from "../assets/images/portfolioweb.webp"
@@ -11,6 +10,36 @@ import GuilleImg1 from "../assets/images/guilleromofernandeznutricion/guille1.jp
 import GuilleImg2 from "../assets/images/guilleromofernandeznutricion/guille2.jpg"
 import GuilleImg3 from "../assets/images/guilleromofernandeznutricion/guille3.jpg"
 import GuilleVideo from "../assets/videos/guillermofernandeznutricion/videoguille.mov"
+
+// Importaciones para Frases Marcos Alcón
+import FrasesMarcosAlcon from "../assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg";
+import FrasesMarcosAlconImg1 from "../assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg";
+import FrasesMarcosAlconImg2 from "../assets/images/frasesmarcosalcon/frasesmarcosalcon2.jpg";
+import FrasesMarcosAlconImg3 from "../assets/images/frasesmarcosalcon/frasesmarcosalcon3.jpg";
+import FrasesMarcosAlconImg4 from "../assets/images/frasesmarcosalcon/frasesmarcosalcon4.jpg";
+import FrasesMarcosAlconVideo1 from "../assets/videos/frasesmarcosalcon/frasesmarcosalcon1.mov";
+
+// Importaciones para Cat Store
+import CatStore from "../assets/images/catstore/catstore1.jpg";
+import CatStoreImg1 from "../assets/images/catstore/catstore1.jpg";
+import CatStoreImg2 from "../assets/images/catstore/catstore2.jpg";
+import CatStoreImg3 from "../assets/images/catstore/catstore3.jpg";
+import CatStoreImg4 from "../assets/images/catstore/catstore4.jpg";
+import CatStoreImg5 from "../assets/images/catstore/catstore5.jpg";
+import CatStoreImg6 from "../assets/images/catstore/catstore6.jpg";
+import CatStoreImg7 from "../assets/images/catstore/catstore7.jpg";
+import CatStoreImg8 from "../assets/images/catstore/catstore8.jpg";
+import CatStoreImg9 from "../assets/images/catstore/catstore9.jpg";
+import CatStoreImg10 from "../assets/images/catstore/catstore10.jpg";
+import CatStoreImg11 from "../assets/images/catstore/catstore11.jpg";
+import CatStoreImg12 from "../assets/images/catstore/catstore12.jpg";
+import CatStoreImg13 from "../assets/images/catstore/catstore13.jpg";
+import CatStoreImg14 from "../assets/images/catstore/catstore14.jpg";
+import CatStoreVideo1 from "../assets/videos/catstore/catstore1.mov";
+import CatStoreVideo2 from "../assets/videos/catstore/catstore2.mov";
+import CatStoreVideo3 from "../assets/videos/catstore/catstore3.mov";
+import CatStoreVideo4 from "../assets/videos/catstore/catstore4.mov";
+import CatStoreVideo5 from "../assets/videos/catstore/catstore5.mov";
 
 // Importaciones para Alqueria Villacarmen
 import VillacarmenImg1 from "../assets/images/villacarmen/villacarmen-1.jpg"
@@ -164,31 +193,6 @@ const carHubFeatures = [
         description: "Sistema de contacto directo con el equipo de desarrollo mediante un formulario que envía las consultas por email para una rápida respuesta.",
         video: "/videos/features/carhub-contact.mp4",
         videoPoster: "/img/features/carhub-poster.jpg"
-    }
-];
-
-// Funcionalidades para Florida Cats
-const floridaCatsFeatures = [
-    {
-        title: "Sistema de Autenticación",
-        description: "Sistema completo de registro e inicio de sesión con almacenamiento seguro de datos de usuario y gestión de cookies de sesión.",
-        image: "/img/features/floridacats-auth.jpg"
-    },
-    {
-        title: "Carrito de Compras Personalizado",
-        description: "Carrito de compras único para cada usuario que permite añadir, eliminar y gestionar los productos seleccionados de forma intuitiva.",
-        video: "/videos/features/floridacats-cart.mp4",
-        videoPoster: "/img/features/floridacats-poster.jpg"
-    },
-    {
-        title: "Filtrado de Productos",
-        description: "Sistema de filtrado avanzado que permite ordenar los productos por precio, nombre y antigüedad para facilitar la búsqueda al cliente.",
-        image: "/img/features/floridacats-filter.jpg"
-    },
-    {
-        title: "Panel de Administración",
-        description: "Área exclusiva para administradores que permite añadir o eliminar productos del catálogo sin necesidad de acceder al código.",
-        image: "/img/features/floridacats-admin.jpg"
     }
 ];
 
@@ -347,7 +351,84 @@ const tourToValenciaFeatures = [
     }
 ];
 
+// Funcionalidades para Cat Store
+const catStoreFeatures = [
+    {
+        title: "Página Principal y Carrito de Compra",
+        description: "Se muestra la página inical de la tienda tras haber iniciado sesión. Se muesta un navbar con las opciones para navegar, el hero section y un grid con los productos (gatos) en la tienda. También se muestra como los productos se añaden al carrito conforme los seleccionas y como al hacer click en el navegador del carrito se abre un drawer para previsualizar el carrito de compra.",
+        video: CatStoreVideo1,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Sistema de Filtros de Productos",
+        description: "Se muestra la funcionalidad de aplicar filtros a los productos del grid de la página incial. Cuando se hace click en el icono de filtro se abre un drawer con las diferentes opciones de filtros, los cuales hacen que se actualice el listado de productos. También se pueden ordenar los productos por criterios como nombre, precio y antiguedad.",
+        video: CatStoreVideo2,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Perfil de Usuario",
+        description: "Se muestra el area de perfil de usuario. Donde se pueden modificar los datos personales y cambiar la contraseña. También se muestra las estadísticas de compra del usuario y se permite ver el historial de compras del usuario, abriendo una pagina con una tabla del historial de compras de ese usuario.",
+        video: CatStoreVideo3,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Panel de Administración",
+        description: "Se muestra el área de administración donde el administrador puede gestionar los productos de la tienda. Se puede ver los productos existentes en una tabla a la cual se le pueden aplicar filtros de búsqueda. También se puede editar un producto existente, añadir un producto o eliminar un producto.",
+        video: CatStoreVideo4,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Proceso de Compra",
+        description: "Se muestra el flujo para finalizar una compra. Se hace click en el carrito de la compra, el cual abre el drawer del carrito de compra. Accedemos al area de checkout y vemos el resumen de nuestro carrito de compra con la opción de modificar los elementos de nuestro carrito o vaciar el carrito. Cuando se procede a completar la compra se simula una compra exitosa sin necesidad de pago. Aparece una pantalla de exito.",
+        video: CatStoreVideo5,
+        autoplay: true,
+        muted: true,
+        loop: true
+    }
+];
+
+// Funcionalidades para Frases Marcos Alcón
+const frasesMarcosAlconFeatures = [
+    {
+        title: "Lector de libro interactivo",
+        description: "Se muestra la página de frases de Marcos Alcón. Un proyecto hecho para mi abuelo por su 95 cumpleaños recopilando las frases que ha ido escribiendo. Se ha creado una app web para crear un lector de libro con animación de pase de páginas. El sitio es responsive y con una UI y UX excepcional.",
+        video: FrasesMarcosAlconVideo1,
+        autoplay: true,
+        muted: true,
+        loop: true
+    }
+];
+
 const data = [
+    {
+        name: "Frases Marcos Alcón",
+        type: "Aplicación Web Interactiva",
+        url: "https://frasesmarcosalcon.com",
+        github: "https://github.com/jaivial/frasesmarcosalcon.git",
+        image: FrasesMarcosAlcon,
+        slug: "frases-marcos-alcon",
+        description: "MarcosGoWeb es una elegante aplicación web construida con Go que muestra una colección de frases y poemas de Marcos Alcón. La aplicación presenta el contenido en un hermoso formato de libro interactivo con animaciones de paso de página, creando una experiencia de lectura inmersiva. Desarrollada como un regalo especial para el 95 cumpleaños de mi abuelo.",
+        tech: ["Go", "HTML", "Javascript", "CSS", "StPageFlip"],
+        date: "2024-07-01",
+        images: [
+            { url: FrasesMarcosAlconImg1.src, alt: 'Página principal de Frases Marcos Alcón' },
+            { url: FrasesMarcosAlconImg2.src, alt: 'Vista del libro interactivo' },
+            { url: FrasesMarcosAlconImg3.src, alt: 'Detalle de frases y poemas' },
+            { url: FrasesMarcosAlconImg4.src, alt: 'Vista responsiva en dispositivo móvil' }
+        ],
+        videos: [
+            { url: FrasesMarcosAlconVideo1, poster: FrasesMarcosAlconImg1.src }
+        ],
+        features: frasesMarcosAlconFeatures
+    },
     {
         name: "Tour To Valencia",
         type: "Página Web + Sistema de Reservas + Back Office",
@@ -459,20 +540,6 @@ const data = [
         features: carHubFeatures
     },
     {
-        name: "Florida Cats",
-        type: "Tienda Online",
-        url: "https://floridacats.000webhostapp.com/",
-        github: '/',
-        image: FloridaCats,
-        slug: "florida-cats",
-        description: "Prototipo de tienda online con acceso de usuario y contraseña y registro de nuevos usuarios. Almacenamiento de datos de sesión en cookies. Es una tienda online en la que se pueden añadir gatos al carrito. Permite aplicar filtros de orden por precio, nombre y antiguedad. Cada usuario tiene un carrito y un historial de pedidos independiente. Permite la adición o eliminación de gatos cuando inicias sesión como administrador en el área de administrador.",
-        tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'MySQL', 'Nginx'],
-        date: "2021-09-03",
-        images: placeholderImages,
-        videos: placeholderVideos,
-        features: floridaCatsFeatures
-    },
-    {
         name: "Todo List",
         type: "Aplicación Web Full-Stack",
         url: "https://todolist.jaimedigitalstudio.com/",
@@ -496,15 +563,50 @@ const data = [
             { url: TodoListVideo4, poster: TodoListImg4.src }
         ],
         features: todoListFeatures
+    },
+    {
+        name: "Cat Store",
+        type: "Tienda Online",
+        url: "https://catstore.jaimedigitalstudio.com",
+        github: "https://github.com/jaivial/CATSTORE.git",
+        image: CatStore,
+        slug: "cat-store",
+        description: "Aplicación web para una tienda online de gatos desarrollada con PHP, MySQL, HTML, CSS y JavaScript. Incluye sistema de autenticación, persistencia de sesión mediante cookies, catálogo de productos con filtros, carrito de compra, gestión de perfil de usuario, historial de compras, panel de administración y diseño responsive.",
+        tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'MySQL'],
+        date: "2021-05-15",
+        images: [
+            { url: CatStoreImg1.src, alt: 'Página principal de Cat Store' },
+            { url: CatStoreImg2.src, alt: 'Sistema de filtros' },
+            { url: CatStoreImg3.src, alt: 'Perfil de usuario' },
+            { url: CatStoreImg4.src, alt: 'Panel de administración' },
+            { url: CatStoreImg5.src, alt: 'Proceso de compra' },
+            { url: CatStoreImg6.src, alt: 'Vista adicional 1' },
+            { url: CatStoreImg7.src, alt: 'Vista adicional 2' },
+            { url: CatStoreImg8.src, alt: 'Vista adicional 3' },
+            { url: CatStoreImg9.src, alt: 'Vista adicional 4' },
+            { url: CatStoreImg10.src, alt: 'Vista adicional 5' },
+            { url: CatStoreImg11.src, alt: 'Vista adicional 6' },
+            { url: CatStoreImg12.src, alt: 'Vista adicional 7' },
+            { url: CatStoreImg13.src, alt: 'Vista adicional 8' },
+            { url: CatStoreImg14.src, alt: 'Vista adicional 9' }
+        ],
+        videos: [
+            { url: CatStoreVideo1, poster: CatStoreImg1.src },
+            { url: CatStoreVideo2, poster: CatStoreImg2.src },
+            { url: CatStoreVideo3, poster: CatStoreImg3.src },
+            { url: CatStoreVideo4, poster: CatStoreImg4.src },
+            { url: CatStoreVideo5, poster: CatStoreImg5.src }
+        ],
+        features: catStoreFeatures
     }
 ]
 
 // Organizar tecnologías por categorías para mejor visualización
 const techCategories = {
     frontend: ["HTML", "Javascript", "CSS", "Tailwind CSS", "Astro", "React", "Vue", "Angular", "Next.js", "TypeScript"],
-    backend: ["PHP", "NodeJS", "Express", "Express js", "Python", "Java", "Ruby", "Prisma", "NextAuth.js"],
+    backend: ["PHP", "NodeJS", "Express", "Express js", "Python", "Java", "Ruby", "Prisma", "NextAuth.js", "Go"],
     database: ["MySQL", "MongoDB", "PostgreSQL"],
-    other: ["Nginx", "next-intl"],
+    other: ["Nginx", "next-intl", "StPageFlip"],
 };
 
 export function getData() {

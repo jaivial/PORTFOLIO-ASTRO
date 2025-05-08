@@ -23,7 +23,7 @@ const data = getData();
             return (
               <a data-aos="fade-up" data-aos-anchor-placement="center-bottom" href={`/projects/${item.slug}`} class="relative mx-auto overflow-hidden rounded-xl bg-transparent border border-1 border-primary border-opacity-25 shadow-xl group transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] w-full">
                 <div class="bg-transparent relative overflow-hidden h-48 sm:h-56 md:h-64 w-full">
-                  <Image src={item.image} class="object-cover w-full h-full bg-cover rounded-t-xl transition-transform duration-500 group-hover:scale-105" alt={`Imagen del proyecto ${item.name}`} transition:name={item.name} />
+                  <Image src={item.image} class="object-cover object-top w-full h-full bg-cover rounded-t-xl transition-transform duration-500 group-hover:scale-105" alt={`Imagen del proyecto ${item.name}`} transition:name={item.name} />
                   <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                     <div class="p-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                       <p class="font-medium text-sm mb-2">{item.description ? item.description.substring(0, 120) + "..." : "Ver detalles del proyecto"}</p>
