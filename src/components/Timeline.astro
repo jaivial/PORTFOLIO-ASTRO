@@ -188,7 +188,7 @@ import TimelineInteractive from "./TimelineInteractive";
         <div class="bg-primary bg-opacity-5 rounded-xl p-6 border border-primary border-opacity-10 transition-all hover:bg-opacity-10 md:col-span-2 mt-2">
           <div class="flex items-center gap-3 mb-4">
             <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21.71,4.29a1,1,0,0,0-1.42,0L15.76,8.82A9,9,0,0,0,6.54,21.46h0A1,1,0,0,0,7.59,20,7,7,0,0,1,15,7.41L10.5,12l1.41,1.41,4.95-5a7,7,0,0,1-4.95,12,1,1,0,1,0,0,2,9,9,0,0,0,4.85-16.59L20.29,5.71A1,1,0,0,0,21.71,4.29Z"></path>
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
             </svg>
             <h3 class="text-xl font-bold text-primary">Herramientas</h3>
           </div>
@@ -229,12 +229,12 @@ import TimelineInteractive from "./TimelineInteractive";
 
       <!-- Enlace a CV -->
       <div class="flex justify-center mt-10">
-        <a href="/cv.pdf" target="_blank" class="inline-flex items-center gap-2 bg-primary bg-opacity-10 text-primary px-6 py-3 rounded-lg hover:bg-opacity-20 transition-all">
+        <button id="open-cv-button" class="inline-flex items-center gap-2 bg-primary bg-opacity-10 text-primary px-6 py-3 rounded-lg hover:bg-opacity-20 transition-all">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
           </svg>
           Descargar CV
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -252,3 +252,18 @@ import TimelineInteractive from "./TimelineInteractive";
     }
   }
 </style>
+
+<script>
+  // Interacción para abrir el CV modal
+  document.addEventListener("DOMContentLoaded", () => {
+    const cvButton = document.getElementById("open-cv-button");
+
+    if (cvButton) {
+      cvButton.addEventListener("click", () => {
+        // Disparar un evento personalizado que será capturado por el componente NavBar
+        const event = new CustomEvent("open-cv-modal");
+        document.dispatchEvent(event);
+      });
+    }
+  });
+</script>
