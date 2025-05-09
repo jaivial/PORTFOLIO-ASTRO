@@ -1,8 +1,6 @@
 // Importar imágenes de los proyectos profesionales
-import AlqueriaVillacarmen from "../assets/images/alqueriavillacarmen.webp";
-import GuillermoFernandezNutricion from "../assets/images/guillermofernandeznutricion.webp";
-import CentroNeuroExpresion from "../assets/images/centroneuroexpresion/centroneuroexpresion1.jpg";
-import TourToValencia from "../assets/images/tourtovalencia/tourtovalencia11.jpg";
+// Ya no necesitamos importar las imágenes como módulos
+// porque ahora estamos usando rutas públicas
 
 /**
  * Datos de experiencia profesional y proyectos para la sección de trayectoria
@@ -17,7 +15,7 @@ export const careerData = [
         period: "2022-2024",
         description: "Formación en desarrollo de aplicaciones multiplataforma, adquiriendo conocimientos de programación, bases de datos, interfaces y desarrollo móvil.",
         link: "https://www.floridauniversitaria.es/",
-        image: "https://www.floridauniversitaria.es/wp-content/uploads/2019/04/FLORIDA-UNIVERSITARIA-EDIFICIO-CENTRAL-1.jpg",
+        image: "https://docenzia.com/docs/64757/976d2f7c9a08073fcbfabdff5e44ba06",
         skills: ["React Native", "Java", "SQL", "Android", "C#", "PHP", "MySQL", "MongoDB", "Git", "Bash"],
         highlights: [
             "Desarrollo de aplicaciones móviles con React Native y Android Studio",
@@ -37,7 +35,7 @@ export const careerData = [
         period: "2022",
         description: "Gestión de contenido y presencia en redes sociales para este negocio local, mejorando su visibilidad online y captación de clientes. Implementación de sistema de reservas online y carta digital.",
         link: "https://alqueriavillacarmen.com/",
-        image: AlqueriaVillacarmen,
+        image: "/images/alqueriavillacarmen.webp",
         skills: ["Gestión de Contenido", "Redes Sociales", "Marketing Digital", "SEO", "WordPress", "PHP", "JavaScript"],
         highlights: [
             "Aumenté la visibilidad online en un 40%",
@@ -57,7 +55,7 @@ export const careerData = [
         period: "2023",
         description: "Desarrollo de sitio web profesional para nutricionista con formulario de consulta y blog de contenido nutricional.",
         link: "https://guillermofernandezcalvet.com/",
-        image: GuillermoFernandezNutricion,
+        image: "/images/guillermofernandeznutricion.webp",
         skills: ["HTML/CSS", "JavaScript", "WordPress", "SEO", "Diseño Responsivo"],
         highlights: [
             "Diseño responsive adaptado a móviles y tablets",
@@ -77,7 +75,7 @@ export const careerData = [
         period: "2025",
         description: "Desarrollo de plataforma de turismo local con enfoque en experiencias personalizadas y reservas online.",
         link: "/",
-        image: TourToValencia,
+        image: "/images/tourtovalencia/tourtovalencia11.jpg",
         skills: ["React", "Tailwind CSS", "Firebase", "Next.js", "OpenRouter API", "PayPal API"],
         highlights: [
             "Gestor de reservas dinámico para tours",
@@ -98,7 +96,7 @@ export const careerData = [
         period: "2025",
         description: "Desarrollo de sitio web informativo para centro de psicopedagogía con formulario de contacto integrado.",
         link: "/",
-        image: CentroNeuroExpresion,
+        image: "/images/centroneuroexpresion/centroneuroexpresion1.jpg",
         skills: ["React", "Tailwind CSS", "Responsive Design", "Email API"],
         highlights: [
             "Página informativa sobre servicios de psicopedagogía",

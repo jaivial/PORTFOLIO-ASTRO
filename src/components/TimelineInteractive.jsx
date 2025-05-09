@@ -160,12 +160,14 @@ export default function TimelineInteractive() {
     };
   }, [visibleItems]);
 
-  // Añado comprobación para mostrar imagen de placeholder si la imagen no está disponible
+  // Función simplificada para gestionar las imágenes
   const getImageUrl = (item) => {
-    // Si la imagen no existe o es una ruta relativa, mostrar una imagen de placeholder
-    if (!item.image || item.image === "/" || (typeof item.image === "string" && item.image.startsWith("../assets"))) {
+    // Si no hay imagen o es una ruta "/", usar un placeholder
+    if (!item.image || item.image === "/") {
       return "https://via.placeholder.com/800x450?text=Imagen+no+disponible";
     }
+
+    // Si es una URL externa o una ruta pública, usarla directamente
     return item.image;
   };
 
