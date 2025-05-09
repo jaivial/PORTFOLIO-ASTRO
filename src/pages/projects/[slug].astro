@@ -41,7 +41,7 @@ const { project } = Astro.props;
     </nav>
 
     <section class="mt-16 mb-20 content-visibility-auto">
-      <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <div class="grid grid-cols-1 gap-8 mb-12">
         <div>
           <h1 class="text-primary text-3xl font-extrabold text-center md:text-left mb-2">
             {project.name}
@@ -91,64 +91,62 @@ const { project } = Astro.props;
           </div>
         </div>
 
-        <div>
-          <!-- Sección de Funcionalidades -->
-          {
-            project.features && project.features.length > 0 && (
-              <div class="mb-8">
-                <h2 class="text-xl font-bold text-primary mb-4">Funcionalidades principales</h2>
-                <div class="space-y-6">
-                  {project.features.map((feature, index) => (
-                    <div class="bg-primary bg-opacity-5 p-4 rounded-lg">
-                      <h3 class="font-bold text-primary text-lg mb-2">{feature.title}</h3>
-                      <p class="text-gray-400 mb-3">{feature.description}</p>
+        <!-- Sección de Funcionalidades -->
+        {
+          project.features && project.features.length > 0 && (
+            <div class="mb-8">
+              <h2 class="text-xl font-bold text-primary mb-4">Funcionalidades principales</h2>
+              <div class="space-y-6">
+                {project.features.map((feature, index) => (
+                  <div class="bg-primary bg-opacity-5 p-4 rounded-lg">
+                    <h3 class="font-bold text-primary text-lg mb-2">{feature.title}</h3>
+                    <p class="text-gray-400 mb-3">{feature.description}</p>
 
-                      {feature.image && (
-                        <div class="mb-3 rounded-md overflow-hidden">
-                          <FeatureImageModal image={feature.image} title={feature.title} client:visible />
-                        </div>
-                      )}
+                    {feature.image && (
+                      <div class="mb-3 rounded-md overflow-hidden">
+                        <FeatureImageModal image={feature.image} title={feature.title} client:visible />
+                      </div>
+                    )}
 
-                      {feature.carousel && (
-                        <div class="mb-3 rounded-md overflow-hidden">
-                          <ImageCarousel images={feature.carousel.map((img) => ({ url: img.src, alt: feature.title }))} client:visible />
-                        </div>
-                      )}
+                    {feature.carousel && (
+                      <div class="mb-3 rounded-md overflow-hidden">
+                        <ImageCarousel images={feature.carousel.map((img) => ({ url: img.src, alt: feature.title }))} client:visible />
+                      </div>
+                    )}
 
-                      {feature.video && (
-                        <div class="rounded-md overflow-hidden">
-                          <video src={feature.video} controls={!feature.autoplay} class="w-full h-auto" poster={feature.videoPoster || ""} preload="metadata" autoplay={feature.autoplay || false} muted={feature.muted || false} loop={feature.loop || false} playsinline>
-                            Tu navegador no soporta la reproducción de videos.
-                          </video>
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
+                    {feature.video && (
+                      <div class="rounded-md overflow-hidden">
+                        <video src={feature.video} controls={!feature.autoplay} class="w-full h-auto" poster={feature.videoPoster || ""} preload="metadata" autoplay={feature.autoplay || false} muted={feature.muted || false} loop={feature.loop || false} playsinline>
+                          Tu navegador no soporta la reproducción de videos.
+                        </video>
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
-            )
-          }
+            </div>
+          )
+        }
 
-          <!-- Carousel de imágenes adicionales (si existen) -->
-          {
-            project.images && project.images.length > 0 && (
-              <div class="mb-8">
-                <h2 class="text-xl font-bold text-primary mb-4">Galería de imágenes</h2>
-                <ImageCarousel images={project.images} client:visible />
-              </div>
-            )
-          }
+        <!-- Carousel de imágenes adicionales (si existen) -->
+        {
+          project.images && project.images.length > 0 && (
+            <div class="mb-8">
+              <h2 class="text-xl font-bold text-primary mb-4">Galería de imágenes</h2>
+              <ImageCarousel images={project.images} client:visible />
+            </div>
+          )
+        }
 
-          <!-- Carousel de videos (si existen) -->
-          {
-            project.videos && project.videos.length > 0 && (
-              <div class="mb-8">
-                <h2 class="text-xl font-bold text-primary mb-4">Videos del proyecto</h2>
-                <VideoCarousel videos={project.videos} client:visible />
-              </div>
-            )
-          }
-        </div>
+        <!-- Carousel de videos (si existen) -->
+        {
+          project.videos && project.videos.length > 0 && (
+            <div class="mb-8">
+              <h2 class="text-xl font-bold text-primary mb-4">Videos del proyecto</h2>
+              <VideoCarousel videos={project.videos} client:visible />
+            </div>
+          )
+        }
       </div>
     </section>
   </main>

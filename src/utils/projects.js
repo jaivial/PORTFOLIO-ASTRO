@@ -88,6 +88,28 @@ import TourToValenciaVideo6 from "../assets/videos/tourtovalencia/tourtovalencia
 import TourToValenciaVideo7 from "../assets/videos/tourtovalencia/tourtovalencia7.mov";
 import TourToValenciaVideo8 from "../assets/videos/tourtovalencia/tourtovalencia8.mov";
 
+// Importaciones para Centro Neuro Expresion
+import CentroNeuroExpresion from "../assets/images/centroneuroexpresion/centroneuroexpresion1.jpg";
+import CentroNeuroExpresionImg1 from "../assets/images/centroneuroexpresion/centroneuroexpresion1.jpg";
+import CentroNeuroExpresionImg2 from "../assets/images/centroneuroexpresion/centroneuroexpresion2.jpg";
+import CentroNeuroExpresionImg3 from "../assets/images/centroneuroexpresion/centroneuroexpresion3.jpg";
+import CentroNeuroExpresionImg4 from "../assets/images/centroneuroexpresion/centroneuroexpresion4.jpg";
+import CentroNeuroExpresionImg5 from "../assets/images/centroneuroexpresion/centroneuroexpresion5.jpg";
+import CentroNeuroExpresionImg6 from "../assets/images/centroneuroexpresion/centroneuroexpresion6.jpg";
+import CentroNeuroExpresionImg7 from "../assets/images/centroneuroexpresion/centroneuroexpresion7.jpg";
+import CentroNeuroExpresionImg8 from "../assets/images/centroneuroexpresion/centroneuroexpresion8.jpg";
+import CentroNeuroExpresionImg9 from "../assets/images/centroneuroexpresion/centroneuroexpresion9.jpg";
+import CentroNeuroExpresionImg10 from "../assets/images/centroneuroexpresion/centroneuroexpresion10.jpg";
+import CentroNeuroExpresionImg11 from "../assets/images/centroneuroexpresion/centroneuroexpresion11.jpg";
+import CentroNeuroExpresionImg12 from "../assets/images/centroneuroexpresion/centroneuroexpresion12.jpg";
+import CentroNeuroExpresionImg13 from "../assets/images/centroneuroexpresion/centroneuroexpresion13.jpg";
+import CentroNeuroExpresionImg14 from "../assets/images/centroneuroexpresion/centroneuroexpresion14.jpg";
+import CentroNeuroExpresionImg15 from "../assets/images/centroneuroexpresion/centroneuroexpresion15.jpg";
+import CentroNeuroExpresionVideo1 from "../assets/videos/centroneuroexpresion/centroneuroexpresion1.mov";
+import CentroNeuroExpresionVideo2 from "../assets/videos/centroneuroexpresion/centroneuroexpresion2.mov";
+import CentroNeuroExpresionVideo3 from "../assets/videos/centroneuroexpresion/centroneuroexpresion3.mov";
+import CentroNeuroExpresionVideo4 from "../assets/videos/centroneuroexpresion/centroneuroexpresion4.mov";
+
 // Placeholder para imágenes y videos
 // En un entorno real, estas URLs apuntarían a recursos reales
 const placeholderImages = [
@@ -407,6 +429,46 @@ const frasesMarcosAlconFeatures = [
     }
 ];
 
+// Funcionalidades para Centro Neuro Expresion
+const centroNeuroExpresionFeatures = [
+    {
+        title: "Landing Page Optimizada",
+        description: "Interfaz de usuario y experiencia de usuario perfectamente diseñadas para publicitar el centro de Intervención Temprana para niños. Incluye secciones esenciales como el enfoque de la empresa, servicios ofrecidos, testimonios de casos de éxito y llamadas a la acción para contacto.",
+        video: CentroNeuroExpresionVideo1,
+        videoPoster: CentroNeuroExpresionImg1,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Página 'Sobre Nosotros'",
+        description: "Sección fundamental para empresas de atención al público como este centro de psicopedagogía. Presenta de manera clara y atractiva la misión del centro, su enfoque profesional, el equipo de especialistas y las instalaciones donde se realizan las intervenciones.",
+        video: CentroNeuroExpresionVideo2,
+        videoPoster: CentroNeuroExpresionImg2,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Página de Contacto",
+        description: "Página indispensable que incluye un formulario de contacto intuitivo para los clientes, información detallada sobre la localización del negocio, horario de atención, teléfono, email y un formulario de contacto para consultas específicas.",
+        video: CentroNeuroExpresionVideo3,
+        videoPoster: CentroNeuroExpresionImg3,
+        autoplay: true,
+        muted: true,
+        loop: true
+    },
+    {
+        title: "Página de Servicio Especializado",
+        description: "Una de las cuatro páginas dedicadas a explicar los servicios especializados del centro. Este ejemplo muestra el servicio de Intervención Cognitiva Temprana, presentado de forma visual con imágenes representativas de los servicios para familias y niños, explicando en qué consiste y sus beneficios.",
+        video: CentroNeuroExpresionVideo4,
+        videoPoster: CentroNeuroExpresionImg4,
+        autoplay: true,
+        muted: true,
+        loop: true
+    }
+];
+
 const data = [
     {
         name: "Frases Marcos Alcón",
@@ -598,6 +660,42 @@ const data = [
             { url: CatStoreVideo5, poster: CatStoreImg5.src }
         ],
         features: catStoreFeatures
+    },
+    {
+        id: 1,
+        name: "Centro Neuro Expresión",
+        slug: "centro-neuro-expresion",
+        image: CentroNeuroExpresion,
+        description: "Sitio web moderno y accesible para un centro de intervención temprana enfocado en niños desde el nacimiento hasta los seis años. Proporciona información completa sobre servicios especializados en cuatro áreas clave del desarrollo: Intervención Cognitiva, Lingüística, Prenatal y Sensoriomotora.",
+        type: "Sitio Web Corporativo",
+        tech: ["Astro", "Tailwind CSS", "JavaScript", "Responsive Design", "SEO"],
+        github: "https://github.com/jaivial/centroneuroexpresion",
+        url: "https://centroneuroexpresion.com",
+        features: centroNeuroExpresionFeatures,
+        date: "2024-05-01",
+        images: [
+            { url: CentroNeuroExpresionImg1.src, alt: 'Landing Page' },
+            { url: CentroNeuroExpresionImg2.src, alt: 'Sobre Nosotros' },
+            { url: CentroNeuroExpresionImg3.src, alt: 'Página de Contacto' },
+            { url: CentroNeuroExpresionImg4.src, alt: 'Intervención Cognitiva' },
+            { url: CentroNeuroExpresionImg5.src, alt: 'Servicios Especializados' },
+            { url: CentroNeuroExpresionImg6.src, alt: 'Equipo Profesional' },
+            { url: CentroNeuroExpresionImg7.src, alt: 'Instalaciones' },
+            { url: CentroNeuroExpresionImg8.src, alt: 'Testimonios' },
+            { url: CentroNeuroExpresionImg9.src, alt: 'Intervención Lingüística' },
+            { url: CentroNeuroExpresionImg10.src, alt: 'Intervención Prenatal' },
+            { url: CentroNeuroExpresionImg11.src, alt: 'Intervención Sensoriomotora' },
+            { url: CentroNeuroExpresionImg12.src, alt: 'Enfoque Terapéutico' },
+            { url: CentroNeuroExpresionImg13.src, alt: 'Metodología' },
+            { url: CentroNeuroExpresionImg14.src, alt: 'Recursos Educativos' },
+            { url: CentroNeuroExpresionImg15.src, alt: 'Vista General' }
+        ],
+        videos: [
+            { url: CentroNeuroExpresionVideo1, poster: CentroNeuroExpresionImg1.src },
+            { url: CentroNeuroExpresionVideo2, poster: CentroNeuroExpresionImg2.src },
+            { url: CentroNeuroExpresionVideo3, poster: CentroNeuroExpresionImg3.src },
+            { url: CentroNeuroExpresionVideo4, poster: CentroNeuroExpresionImg4.src }
+        ]
     }
 ]
 
