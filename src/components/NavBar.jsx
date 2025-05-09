@@ -29,7 +29,9 @@ export default function NavBar() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-primary font-bold text-xl">Jaime Digital Studio</span>
+            <a href="/" className="hover:opacity-80 transition-opacity">
+              <span className="text-primary font-bold text-xl">Jaime Digital Studio</span>
+            </a>
           </div>
 
           {/* Hamburger button */}
