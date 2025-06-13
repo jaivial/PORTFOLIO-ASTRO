@@ -168,7 +168,7 @@ const cvData = {
             {
                 title: "Guillermo Fernandez Nutrición",
                 description: "Website to advertise nutritional consultation services and increase customer acquisition with responsive design adaptable to desktop, tablet, and mobile sizes.",
-                technologies: ["HTML", "Javascript", "CSS", "Astro", "Express.js"],
+                technologies: ["Javascript", "CSS", "Astro", "Express.js"],
                 link: "https://guillermofernandeznutricion.es/",
                 thumbnail: "/images/guillermofernandeznutricion.webp"
             },
@@ -373,7 +373,7 @@ const cvData = {
             {
                 title: "Guillermo Fernandez Nutrición",
                 description: "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes con diseño responsivo adaptable a tamaños de escritorio, tablet y móviles.",
-                technologies: ["HTML", "Javascript", "CSS", "Astro", "Express.js"],
+                technologies: ["Javascript", "CSS", "Astro", "Express.js"],
                 link: "https://guillermofernandeznutricion.es/",
                 thumbnail: "/images/guillermofernandeznutricion.webp"
             },

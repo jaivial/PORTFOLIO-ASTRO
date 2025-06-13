@@ -207,7 +207,7 @@
         </div>
       </div>
     </section>
-    <div class="flex flex-col sm:flex-row gap-4 mt-8 items-center">
+    <!-- <div class="flex flex-col sm:flex-row gap-4 mt-8 items-center">
       <a href="#contact" class="bg-primary hover:bg-primary/80 text-white px-6 py-3 rounded-full font-semibold transition-colors shadow-lg"> Contáctame </a>
 
       <button id="view-cv-button" class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-full font-semibold transition-colors shadow-lg flex items-center">
@@ -217,14 +217,15 @@
         </svg>
       </button>
     </div>
+  </div> -->
   </div>
+
+  <script>
+    import { openCVModalToSection } from "../utils/cvUtils";
+
+    // Add event listener to the View CV button
+    document.getElementById("view-cv-button")?.addEventListener("click", () => {
+      openCVModalToSection("personal", "es"); // Open CV modal to personal section in Spanish
+    });
+  </script>
 </section>
-
-<script>
-  import { openCVModalToSection } from "../utils/cvUtils";
-
-  // Add event listener to the View CV button
-  document.getElementById("view-cv-button")?.addEventListener("click", () => {
-    openCVModalToSection("personal", "es"); // Open CV modal to personal section in Spanish
-  });
-</script>

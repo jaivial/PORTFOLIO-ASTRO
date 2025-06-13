@@ -1,0 +1,181 @@
+# Language and Framework Icons Reference
+
+Extracted from `src/components/About.astro`
+
+```json
+{
+    "languageIcons": {
+        "externalImages": {
+            "reactNative": {
+                "name": "React Native",
+                "url": "https://jaimedigitalstudio.com/assets/images/React-Native-Logo.png",
+                "classes": "fill-primary h-[3.5rem] mr-2 brightness-[500]"
+            },
+            "prisma": {
+                "name": "Prisma",
+                "url": "https://jaimedigitalstudio.com/assets/images/prismalogo.png",
+                "classes": "fill-primary h-[3.5rem] mr-2 brightness-[500]"
+            },
+            "nextjs": {
+                "name": "Next.js",
+                "url": "https://jaimedigitalstudio.com/assets/images/nextjs-logo.png",
+                "classes": "fill-primary h-16 mr-2"
+            },
+            "php": {
+                "name": "PHP",
+                "url": "https://jaimedigitalstudio.com/assets/images/PHP-logo.svg.png",
+                "classes": "fill-primary h-12 mr-2"
+            },
+            "mongodb": {
+                "name": "MongoDB",
+                "url": "https://jaimedigitalstudio.com/assets/images/mongodb-icon-1.svg",
+                "classes": "fill-primary h-16 brightness-150"
+            },
+            "mysql": {
+                "name": "MySQL",
+                "url": "https://jaimedigitalstudio.com/assets/images/mysql-logo.png",
+                "classes": "fill-primary h-[5rem] mr-2 brightness-200"
+            },
+            "go": {
+                "name": "GO",
+                "url": "https://jaimedigitalstudio.com/assets/images/go-logo.png",
+                "classes": "fill-primary h-[3rem] mr-2 brightness-200"
+            },
+            "postgresql": {
+                "name": "PostgreSQL",
+                "url": "https://jaimedigitalstudio.com/assets/images/POSTGRESQL-LOGO.png",
+                "classes": "fill-primary h-[3.5rem] mr-2 brightness-200"
+            },
+            "flutter": {
+                "name": "Flutter",
+                "url": "https://jaimedigitalstudio.com/assets/images/flutter-logo.png",
+                "classes": "fill-primary h-[3.5rem] mr-2 brightness-200"
+            },
+            "vercel": {
+                "name": "Vercel",
+                "url": "https://jaimedigitalstudio.com/assets/images/logo-vercel-svgrepo-com.svg",
+                "classes": "fill-primary h-12 text-primary"
+            },
+            "netlify": {
+                "name": "Netlify",
+                "url": "https://jaimedigitalstudio.com/assets/images/netlify-original.svg",
+                "classes": "fill-primary h-12 text-primary brightness-200"
+            },
+            "postman": {
+                "name": "Postman",
+                "url": "https://jaimedigitalstudio.com/assets/images/postman.svg",
+                "classes": "fill-primary h-14"
+            },
+            "api": {
+                "name": "API",
+                "url": "https://jaimedigitalstudio.com/assets/images/api-logo.png",
+                "classes": "h-16 fill-primary brightness-200"
+            },
+            "htmx": {
+                "name": "HTMX",
+                "url": "https://jaimedigitalstudio.com/assets/images/htmx-logo-png_seeklogo-554504.png",
+                "classes": "fill-primary h-14 brightness-200"
+            },
+            "remix": {
+                "name": "REMIX",
+                "url": "https://jaimedigitalstudio.com/assets/images/remix-letter-glowing.svg",
+                "classes": "fill-primary h-14 brightness-200"
+            },
+            "pm2": {
+                "name": "PM2",
+                "url": "https://jaimedigitalstudio.com/assets/images/pm2-logo-1-1.png",
+                "classes": "fill-primary h-14 brightness-200"
+            }
+        },
+        "inlineSVGs": {
+            "javascript": {
+                "name": "JavaScript",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12 w-12",
+                "description": "Font Awesome Free 6.4.2"
+            },
+            "typescript": {
+                "name": "TypeScript",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12 w-12",
+                "description": "TypeScript logo SVG"
+            },
+            "nodejs": {
+                "name": "Node.js",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12",
+                "description": "Font Awesome Free 6.4.2"
+            },
+            "css": {
+                "name": "CSS",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12",
+                "description": "Font Awesome Free 6.4.2"
+            },
+            "react": {
+                "name": "React",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12",
+                "description": "Font Awesome Free 6.4.2"
+            },
+            "tailwind": {
+                "name": "Tailwind",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12",
+                "description": "Custom TailwindCSS SVG"
+            },
+            "html": {
+                "name": "HTML",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12",
+                "description": "Font Awesome Free 6.4.2"
+            },
+            "astro": {
+                "name": "Astro",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12 brightness-[500]",
+                "description": "Astro.js logo SVG"
+            },
+            "vscode": {
+                "name": "VS Code",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12",
+                "description": "VS Code logo SVG"
+            },
+            "figma": {
+                "name": "Figma",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12",
+                "description": "Figma logo SVG"
+            },
+            "nginx": {
+                "name": "NGINX",
+                "type": "inline-svg",
+                "classes": "fill-primary h-12 brightness-200",
+                "description": "NGINX logo SVG"
+            }
+        }
+    },
+    "metadata": {
+        "extractedFrom": "src/components/About.astro",
+        "totalTechnologies": 27,
+        "externalImagesCount": 16,
+        "inlineSVGsCount": 11,
+        "extractedAt": "2024-12-19",
+        "notes": [
+            "All external images are hosted on jaimedigitalstudio.com",
+            "Inline SVGs are embedded directly in the component",
+            "Most images use CSS classes for styling (brightness, fill-primary, sizing)"
+        ]
+    }
+}
+```
+
+## Summary
+
+This file contains all the image references and SVG icons used in the About component for displaying programming languages, frameworks, and development tools. The icons are categorized into:
+
+1. **External Images (16 items)**: Referenced via URLs from jaimedigitalstudio.com
+2. **Inline SVGs (11 items)**: Embedded directly in the component code
+
+All icons are styled with CSS classes for consistent appearance and theming. 

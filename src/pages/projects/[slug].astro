@@ -6,7 +6,7 @@ import { getData } from "../../utils/projects";
 import Footer from "../../components/Footer.astro";
 import ProjectHeader from "../../components/ProjectHeader.astro";
 import ProjectLinks from "../../components/ProjectLinks.astro";
-import ProjectTech from "../../components/ProjectTech.astro";
+import ProjectTechCategories from "../../components/ProjectTechCategories.astro";
 import ProjectFeatures from "../../components/ProjectFeatures.astro";
 import ProjectGallery from "../../components/ProjectGallery.astro";
 
@@ -30,10 +30,14 @@ const { project } = Astro.props;
 
       <ProjectHeader project={project} />
 
-      <!-- Enlaces y tecnologías debajo de la descripción -->
-      <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <!-- Enlaces solo visibles en pantallas pequeñas y medianas -->
+      <div class="mt-8 lg:hidden">
         <ProjectLinks project={project} />
-        <ProjectTech project={project} />
+      </div>
+
+      <!-- Tecnologías categorizadas con todo el ancho -->
+      <div class="mt-8">
+        <ProjectTechCategories project={project} />
       </div>
 
       <!-- Layout principal responsive -->

@@ -1,6 +1,6 @@
 ---
 import FeatureImageModal from "./FeatureImageModal.jsx";
-import ImageCarousel from "./ImageCarousel.jsx";
+import ImageCarouselModal from "./ImageCarouselModal.jsx";
 
 const { project } = Astro.props;
 ---
@@ -29,7 +29,7 @@ const { project } = Astro.props;
 
                 {feature.carousel && (
                   <div class="rounded-md overflow-hidden">
-                    <ImageCarousel images={feature.carousel.map((img) => ({ url: img.src, alt: feature.title }))} client:visible />
+                    <ImageCarouselModal images={feature.carousel.map((img) => ({ url: img.src, alt: feature.title }))} title={feature.title} client:visible />
                   </div>
                 )}
 
