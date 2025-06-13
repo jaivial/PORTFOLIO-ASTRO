@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+
+const { project } = Astro.props;
+---
+
+<!-- Migas de pan para mejor navegación -->
+<nav aria-label="Breadcrumb" class="mt-6">
+  <ol class="flex text-sm text-gray-400">
+    <li>
+      <a href="/" class="hover:text-primary transition-colors text-gray-400" style="text-decoration: none;">Inicio</a>
+    </li>
+    <li class="mx-2">/</li>
+    <li>
+      <a href="/projects" class="hover:text-primary transition-colors text-gray-400">Proyectos</a>
+    </li>
+    <li class="mx-2">/</li>
+    <li aria-current="page" class="text-primary">{project.name}</li>
+  </ol>
+</nav>
+
+<div class="mt-8 lg:mt-16">
+  <!-- Layout responsive para header -->
+  <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-12 items-start">
+    <!-- Contenido del proyecto -->
+    <div class="order-2 lg:order-1 lg:col-span-2 space-y-4">
+      <h1 class="text-primary text-2xl sm:text-3xl lg:text-4xl font-extrabold text-center lg:text-left">
+        {project.name}
+      </h1>
+      <p class="text-primary text-base sm:text-lg font-medium text-center lg:text-left">
+        {project.type}
+      </p>
+
+      <div class="bg-primary bg-opacity-10 p-4 lg:p-6 rounded-lg">
+        <p class="text-gray-400 leading-relaxed text-sm sm:text-base">{project.description}</p>
+      </div>
+    </div>
+
+    <!-- Imagen principal del proyecto -->
+    <div class="order-1 lg:order-2 lg:col-span-3">
+      <div class="rounded-lg overflow-hidden shadow-lg">
+        <Image src={project.image} alt={project.name} class="w-full h-auto object-cover rounded-lg transition-transform duration-300 hover:scale-105" width={600} height={400} loading="eager" />
+      </div>
+    </div>
+  </div>
+</div>
