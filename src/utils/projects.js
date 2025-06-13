@@ -478,7 +478,7 @@ const data = [
         image: FrasesMarcosAlcon,
         slug: "frases-marcos-alcon",
         description: "MarcosGoWeb es una elegante aplicación web construida con Go que muestra una colección de frases y poemas de Marcos Alcón. La aplicación presenta el contenido en un hermoso formato de libro interactivo con animaciones de paso de página, creando una experiencia de lectura inmersiva. Desarrollada como un regalo especial para el 95 cumpleaños de mi abuelo.",
-        tech: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "VPS", "Nginx"],
+        tech: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "VPS", "Nginx", "Responsive Design"],
         date: "2024-07-01",
         images: [
             { url: FrasesMarcosAlconImg1.src, alt: 'Página principal de Frases Marcos Alcón' },
@@ -499,7 +499,7 @@ const data = [
         image: TourToValencia,
         slug: "tour-to-valencia",
         description: "Tour To Valencia es una aplicación web moderna y multilingüe (inglés/español) construida con Remix y React que permite a los usuarios descubrir, explorar y reservar tours y experiencias en Valencia, España. La plataforma ofrece una experiencia de reserva fluida con procesamiento de pagos integrado a través de PayPal y Stripe, confirmaciones por correo electrónico y un completo panel de administración para gestionar reservas y contenido de tours.",
-        tech: ["React", "Remix", "TypeScript", "TailwindCSS", "MongoDB", "PayPal", "Stripe", "Nodemailer", "Shadcn UI", "Framer Motion", "i18n", "PM2", "VPS", "Nginx", "OpenAI"],
+        tech: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Nodemailer", "Shadcn UI", "Framer Motion", "i18n", "PM2", "VPS", "Nginx", "OpenAI", "Responsive Design"],
         date: "2024-06-01",
         images: [
             { url: TourToValenciaImg1.src, alt: 'Página principal de Tour To Valencia' },
@@ -538,7 +538,7 @@ const data = [
         image: GuillermoFernandezNutricion,
         slug: "guillermo-fernandez-nutricion",
         description: "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes. Permite que los clientes realicen una primera consulta por un formulario de contacto. Diseño responsivo adaptable a tamaños de escritorio, tablet y móviles. Desarrollado con Astro para el front end y PHP para el backend del formulario de contacto. Las fotos y el contenido creativo fue elaborado por mi.",
-        tech: ['Javascript', 'CSS', 'Astro', 'Express js', 'VPS', 'Nginx'],
+        tech: ['Javascript', 'CSS', 'Astro', 'Express js', 'VPS', 'Nginx', 'Responsive Design'],
         date: "2023-08-15",
         // Galería de imágenes del proyecto
         images: [
@@ -560,7 +560,7 @@ const data = [
         image: VillacarmenImg18,
         slug: "alqueria-villacarmen",
         description: "Creación de página web para promocionar Alqueria Villa Carmen, un restaurante y salón de eventos. Destaca por mostrar los Menús del Día, de Fin de Semana y la carta de vinos, además de permitir reservas online. Incluye un gestor de reservas con funciones como límite diario de reservas, confirmación por correo electrónico y administración de reservas. La reserva online aumenta en un 300% la clientela. Además, las cartas son editables en tiempo real y desde dispositivos móviles, permitiendo cambios en fotos, descripciones y platos.",
-        tech: ['PHP', 'HTML', 'Javascript', 'CSS', 'MySQL', 'VPS', 'Nginx'],
+        tech: ['PHP', 'HTML', 'Javascript', 'CSS', 'MySQL', 'VPS', 'Nginx', 'Responsive Design'],
         date: "2022-11-10",
         images: [
             { url: VillacarmenImg1.src, alt: 'Gestor de Reservas - Selección Fecha y Personas' },
@@ -595,7 +595,7 @@ const data = [
         image: Carhub,
         slug: "car-hub",
         description: "Descubre nuestro sitio web dedicado a presentar el software Car Hub, un portal de compra y venta de coches. Se destacan las funcionalidades del software, resaltando sus virtudes y su utilidad para nuestros clientes. Desarrollada con las últimas tecnologías en HTML y PHP, ofrece un diseño responsive que se adapta a cualquier dispositivo. Además, facilitamos la comunicación mediante un formulario de contacto vía email con nuestro equipo de desarrolladores.",
-        tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'VPS', 'Nginx'],
+        tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'VPS', 'Nginx', 'Responsive Design'],
         date: "2022-05-22",
         images: placeholderImages,
         videos: [],
@@ -609,7 +609,7 @@ const data = [
         image: TodoList,
         slug: "todo-list",
         description: "Aplicación completa de gestión de tareas desarrollada con Next.js 15, TypeScript, Tailwind CSS 4 y PostgreSQL. Ofrece autenticación de usuarios, gestión de tareas con un sistema de arrastrar y soltar (drag & drop), integración con calendario, y soporte multilingüe. La aplicación permite crear, editar, eliminar y marcar tareas como completadas, con una visualización clara del estado de las tareas por día en el calendario.",
-        tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "NextAuth.js", "next-intl", "VPS", "Nginx"],
+        tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "NextAuth.js", "next-intl", "VPS", "Nginx", "Responsive Design"],
         date: "2023-10-15",
         images: [
             { url: TodoListImg1.src, alt: 'Pantalla de inicio de sesión' },
@@ -634,7 +634,7 @@ const data = [
         image: CatStore,
         slug: "cat-store",
         description: "Aplicación web para una tienda online de gatos desarrollada con PHP, MySQL, HTML, CSS y JavaScript. Incluye sistema de autenticación, persistencia de sesión mediante cookies, catálogo de productos con filtros, carrito de compra, gestión de perfil de usuario, historial de compras, panel de administración y diseño responsive.",
-        tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'MySQL', 'VPS', 'Nginx'],
+        tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'MySQL', 'VPS', 'Nginx', 'Responsive Design'],
         date: "2021-05-15",
         images: [
             { url: CatStoreImg1.src, alt: 'Página principal de Cat Store' },

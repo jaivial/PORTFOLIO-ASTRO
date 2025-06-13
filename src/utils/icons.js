@@ -75,77 +75,77 @@ export const getIcon = (tech) => {
         // Local images (nuevos iconos)
         "next.js": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/nextjs-icon.svg",
+            src: "/images/newlanguagesicons/nextjs-icon.svg",
             classes: "h-8 w-auto",
         },
         "tailwind css": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/tailwind-css-seeklogo.png",
+            src: "/images/newlanguagesicons/tailwind-css-seeklogo.png",
             classes: "h-8 w-auto",
         },
         "stripe": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/stripe.png",
+            src: "/images/newlanguagesicons/stripe.png",
             classes: "h-8 w-auto brightness-200",
         },
         "shadcn ui": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/shadcnui.png",
+            src: "/images/newlanguagesicons/shadcnui.png",
             classes: "h-8 w-auto brightness-150",
         },
         "seo": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/seo.png",
+            src: "/images/newlanguagesicons/seo.png",
             classes: "h-8 w-auto brightness-150",
         },
         "responsive design": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/responsivedesign.png",
+            src: "/images/newlanguagesicons/responsivedesign.png",
             classes: "h-8 w-auto brightness-150",
         },
         "paypal": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/paypal.png",
+            src: "/images/newlanguagesicons/paypal.png",
             classes: "h-8 w-auto brightness-150",
         },
         "openai": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/openai.png",
+            src: "/images/newlanguagesicons/openai.png",
             classes: "h-8 w-auto brightness-150",
         },
         "nodemailer": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/nodemailer.png",
+            src: "/images/newlanguagesicons/nodemailer.png",
             classes: "h-8 w-auto brightness-150",
         },
         "nextauth.js": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/nextauth.png",
+            src: "/images/newlanguagesicons/nextauth.png",
             classes: "h-8 w-auto brightness-150",
         },
         "next-intl": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/next-intl.svg",
+            src: "/images/newlanguagesicons/next-intl.svg",
             classes: "h-8 w-auto brightness-150",
         },
         "i18n": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/i18n.png",
+            src: "/images/newlanguagesicons/i18n.png",
             classes: "h-8 w-auto brightness-150",
         },
         "framer motion": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/framermotion.svg",
+            src: "/images/newlanguagesicons/framermotion.svg",
             classes: "h-8 w-auto brightness-150",
         },
         "express js": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/expressjs.png",
+            src: "/images/newlanguagesicons/expressjs.png",
             classes: "h-8 w-auto brightness-150",
         },
         "vps": {
             type: "img",
-            src: "/src/assets/images/newlanguagesicons/vps.png",
+            src: "/images/newlanguagesicons/vps.png",
             classes: "h-8 w-auto brightness-150",
         },
         // External images (del language-icons.json)

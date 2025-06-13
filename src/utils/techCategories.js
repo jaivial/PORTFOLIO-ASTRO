@@ -2,8 +2,8 @@
 export const techCategories = {
     frameworks: ["Astro", "Next.js", "Remix"],
     frontend: ["React", "React Native", "Tailwind CSS", "Javascript", "Responsive Design", "TypeScript", "Shadcn UI", "Framer Motion", "CSS", "HTML", "Tailwind", "Flutter"],
-    backend: ["MongoDB", "Nodemailer", "i18n", "PostgreSQL", "Prisma", "Express js", "PHP", "MySQL", "Go", "NextAuth.js", "Node.js", "API"],
-    integrations: ["PayPal", "Stripe", "OpenAI", "SEO", "next-intl", "HTMX"],
+    backend: ["MongoDB", "Nodemailer", "PostgreSQL", "Prisma", "Express js", "PHP", "MySQL", "Go", "NextAuth.js", "Node.js", "API"],
+    integrations: ["PayPal", "Stripe", "OpenAI", "SEO", "next-intl", "HTMX", "i18n"],
     devops: ["PM2", "Nginx", "VPS", "Vercel", "Netlify"],
     tools: ["VS Code", "Figma", "Postman"],
 };

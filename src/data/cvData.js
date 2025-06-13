@@ -147,42 +147,42 @@ const cvData = {
             {
                 title: "Frases Marcos Alcón",
                 description: "Interactive web application built with Go that displays a collection of phrases and poems by Marcos Alcón in an elegant book format with page flip animations.",
-                technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip"],
+                technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
                 link: "https://frasesmarcosalcon.com",
                 thumbnail: "/images/frasesmarcosalcon/frasesmarcosalcon1.jpg"
             },
             {
                 title: "Tour To Valencia",
                 description: "Modern, multilingual web application built with Remix and React for discovering, exploring, and booking tours and experiences in Valencia, Spain.",
-                technologies: ["React", "Remix", "TypeScript", "TailwindCSS", "MongoDB", "PayPal", "Stripe"],
+                technologies: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Responsive Design"],
                 link: "https://www.tourtovalencia.com",
                 thumbnail: "/images/tourtovalencia/tourtovalencia11.jpg"
             },
             {
                 title: "Todo List",
                 description: "Complete task management application developed with Next.js 15, TypeScript, Tailwind CSS 4 and PostgreSQL with user authentication, drag & drop task management, and multilingual support.",
-                technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma"],
+                technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Responsive Design"],
                 link: "https://todolist.jaimedigitalstudio.com/",
                 thumbnail: "/images/todolist/todolist6.jpg"
             },
             {
                 title: "Guillermo Fernandez Nutrición",
                 description: "Website to advertise nutritional consultation services and increase customer acquisition with responsive design adaptable to desktop, tablet, and mobile sizes.",
-                technologies: ["Javascript", "CSS", "Astro", "Express.js"],
+                technologies: ["Javascript", "CSS", "Astro", "Express.js", "Responsive Design"],
                 link: "https://guillermofernandeznutricion.es/",
                 thumbnail: "/images/guillermofernandeznutricion.webp"
             },
             {
                 title: "Alqueria Villa Carmen",
                 description: "Website creation to promote Alqueria Villa Carmen, a restaurant and event hall, featuring daily menus, weekend menus and wine list, plus online reservation capability.",
-                technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL"],
+                technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL", "Responsive Design"],
                 link: "https://alqueriavillacarmen.com/",
                 thumbnail: "/images/villacarmen/villacarmen-18.jpg"
             },
             {
                 title: "Cat Store",
                 description: "Web application for an online cat store developed with PHP, MySQL, HTML, CSS and JavaScript with authentication system, session persistence through cookies, and mobile-responsive design.",
-                technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL"],
+                technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL", "Responsive Design"],
                 link: "https://catstore.jaimedigitalstudio.com",
                 thumbnail: "/images/catstore/catstore1.jpg"
             }
@@ -352,42 +352,42 @@ const cvData = {
             {
                 title: "Frases Marcos Alcón",
                 description: "Aplicación web interactiva construida con Go que muestra una colección de frases y poemas de Marcos Alcón en un elegante formato de libro con animaciones de paso de página.",
-                technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip"],
+                technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
                 link: "https://frasesmarcosalcon.com",
                 thumbnail: "/images/frasesmarcosalcon/frasesmarcosalcon1.jpg"
             },
             {
                 title: "Tour To Valencia",
                 description: "Aplicación web moderna y multilingüe construida con Remix y React para descubrir, explorar y reservar tours y experiencias en Valencia, España.",
-                technologies: ["React", "Remix", "TypeScript", "TailwindCSS", "MongoDB", "PayPal", "Stripe"],
+                technologies: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Responsive Design"],
                 link: "https://www.tourtovalencia.com",
                 thumbnail: "/images/tourtovalencia/tourtovalencia11.jpg"
             },
             {
                 title: "Todo List",
                 description: "Aplicación completa de gestión de tareas desarrollada con Next.js 15, TypeScript, Tailwind CSS 4 y PostgreSQL con autenticación de usuarios, gestión de tareas con sistema de arrastrar y soltar, y soporte multilingüe.",
-                technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma"],
+                technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Responsive Design"],
                 link: "https://todolist.jaimedigitalstudio.com/",
                 thumbnail: "/images/todolist/todolist6.jpg"
             },
             {
                 title: "Guillermo Fernandez Nutrición",
                 description: "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes con diseño responsivo adaptable a tamaños de escritorio, tablet y móviles.",
-                technologies: ["Javascript", "CSS", "Astro", "Express.js"],
+                technologies: ["Javascript", "CSS", "Astro", "Express.js", "Responsive Design"],
                 link: "https://guillermofernandeznutricion.es/",
                 thumbnail: "/images/guillermofernandeznutricion.webp"
             },
             {
                 title: "Alqueria Villa Carmen",
                 description: "Creación de página web para promocionar Alqueria Villa Carmen, un restaurante y salón de eventos, mostrando los Menús del Día, de Fin de Semana y la carta de vinos, además de permitir reservas online.",
-                technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL"],
+                technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL", "Responsive Design"],
                 link: "https://alqueriavillacarmen.com/",
                 thumbnail: "/images/villacarmen/villacarmen-18.jpg"
             },
             {
                 title: "Cat Store",
                 description: "Aplicación web para una tienda online de gatos desarrollada con PHP, MySQL, HTML, CSS y JavaScript con sistema de autenticación, persistencia de sesión mediante cookies y diseño adaptable a dispositivos móviles.",
-                technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL"],
+                technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL", "Responsive Design"],
                 link: "https://catstore.jaimedigitalstudio.com",
                 thumbnail: "/images/catstore/catstore1.jpg"
             }
