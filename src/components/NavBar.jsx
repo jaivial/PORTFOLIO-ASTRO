@@ -10,7 +10,8 @@ import {
 import { useTranslations } from "../utils/translations";
 
 function NavBar() {
-  const [isNavVisible, setIsNavVisible] = useState(true);
+  const [isIndexPage, setIsIndexPage] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(true); // Will be updated based on page
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCVOpen, setIsCVOpen] = useState(false);
   const [isLanguageSelectorOpen, setIsLanguageSelectorOpen] = useState(false);
@@ -24,16 +25,32 @@ function NavBar() {
   const t = useTranslations();
 
   useEffect(() => {
+    // Check if we're on the index page
+    const checkIndexPage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+    setIsIndexPage(checkIndexPage);
+    
+    // Set initial visibility - hidden on index page, visible on other pages
+    setIsNavVisible(!checkIndexPage);
+    
     // Initialize current language
     const lang = getCurrentLanguage();
     setCurrentLanguageState(lang);
 
     const handleScroll = () => {
-      // NavBar is always visible, but becomes fixed after scrolling
       const scrollPosition = window.scrollY;
       const headerHeight = 150;
 
-      // Always keep visible, but close menu when scrolling to top
+      if (checkIndexPage) {
+        // On index page: show navbar when scrolling down, hide when at top
+        if (scrollPosition > headerHeight) {
+          setIsNavVisible(true);
+        } else {
+          setIsNavVisible(false);
+        }
+      }
+      // On other pages: navbar is always visible (no change needed)
+
+      // Close menu when scrolling to top
       if (scrollPosition <= headerHeight && isMenuOpen) {
         setIsMenuOpen(false);
       }
@@ -108,7 +125,9 @@ function NavBar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm transition-all duration-500 translate-y-0 opacity-100">
+      <nav className={`fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm transition-all duration-500 ${
+        isNavVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+      }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}

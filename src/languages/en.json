@@ -223,7 +223,12 @@
   "footer": {
     "rights": "All rights reserved.",
     "built_with": "Built with",
-    "social_links": "Social links"
+    "social_links": "Social links",
+    "company_name": "Jaime Digital Studio",
+    "description": "Web developer focused on frontend programming user interfaces of websites and web applications that contribute to client success, also collaborating in backend functions and as a community manager.",
+    "links_title": "Links",
+    "developed_by": "Developed by",
+    "studio_name": "Jaime Digital Studios"
   },
   "breadcrumb": {
     "home": "Home",

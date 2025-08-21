@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import PageNav from "../../components/PageNav.jsx";
 import LanguageProvider from "../../components/LanguageProvider";
 import { getData } from "../../utils/projects";
-import Footer from "../../components/Footer.astro";
+import Footer from "../../components/Footer.jsx";
 import ProjectHeader from "../../components/ProjectHeader.jsx";
 import ProjectLinks from "../../components/ProjectLinks.jsx";
 import ProjectTechCategories from "../../components/ProjectTechCategories.jsx";
@@ -52,7 +52,7 @@ const { project } = Astro.props;
         </section>
       </div>
     </main>
-    <Footer />
+    <Footer client:load />
   </LanguageProvider>
 </Layout>
 

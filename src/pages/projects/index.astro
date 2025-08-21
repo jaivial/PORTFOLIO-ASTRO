@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import LanguageProvider from "../../components/LanguageProvider";
 import ProjectsIndex from "../../components/ProjectsIndex.jsx";
 import { getData } from "../../utils/projects";
-import Footer from "../../components/Footer.astro";
+import Footer from "../../components/Footer.jsx";
 
 const data = getData();
 
@@ -54,7 +54,7 @@ const getTechCategory = (tech) => {
 <Layout title="Projects | Jaime Villanueva">
   <LanguageProvider client:load>
     <ProjectsIndex projects={translatedData} allTechnologies={allTechnologies} client:load />
-    <Footer />
+    <Footer client:load />
   </LanguageProvider>
 </Layout>
 

@@ -223,7 +223,12 @@
   "footer": {
     "rights": "Alle Rechte vorbehalten.",
     "built_with": "Erstellt mit",
-    "social_links": "Soziale Links"
+    "social_links": "Soziale Links",
+    "company_name": "Jaime Digital Studio",
+    "description": "Webentwickler mit Fokus auf Frontend-Programmierung von Benutzeroberflächen für Websites und Webanwendungen, die zum Erfolg der Kunden beitragen, sowie Zusammenarbeit in Backend-Funktionen und als Community Manager.",
+    "links_title": "Links",
+    "developed_by": "Entwickelt von",
+    "studio_name": "Jaime Digital Studios"
   },
   "breadcrumb": {
     "home": "Startseite",
