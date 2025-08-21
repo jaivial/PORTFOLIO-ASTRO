@@ -1,5 +1,6 @@
 import React from "react";
 import { Document, Page, Text, View, StyleSheet, Image, Font } from "@react-pdf/renderer";
+import { getTranslationFunction } from "../../utils/translations";
 
 // Register standard PDF fonts that are always available
 Font.registerHyphenationCallback((word) => [word]);
@@ -158,7 +159,10 @@ const styles = StyleSheet.create({
 });
 
 // CV PDF Document Component
-const CVPdfDocument = ({ data }) => (
+const CVPdfDocument = ({ data }) => {
+  const t = getTranslationFunction();
+  
+  return (
   <Document title={`${data.personal.name} - ${data.personal.title} - CV`} author={data.personal.name} subject="Curriculum Vitae" keywords="cv, resume, curriculum, portfolio" producer="Jaime Digital Studio CV Generator" creator="Jaime Digital Studio">
     <Page size="A4" style={styles.page}>
       {/* Header Section with Personal Info */}
@@ -175,13 +179,13 @@ const CVPdfDocument = ({ data }) => (
 
       {/* Summary Section */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>{data.language === "en" ? "Professional Summary" : "Resumen Profesional"}</Text>
+        <Text style={styles.sectionTitle}>{t('cv.pdf.professional_summary')}</Text>
         <Text style={styles.description}>{data.personal.summary}</Text>
       </View>
 
       {/* Experience Section */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>{data.language === "en" ? "Professional Experience" : "Experiencia Profesional"}</Text>
+        <Text style={styles.sectionTitle}>{t('cv.sections.experience')}</Text>
         {data.experience.map((exp, index) => (
           <View key={`exp-${index}`} style={styles.experienceItem}>
             <View style={styles.row}>
@@ -205,7 +209,7 @@ const CVPdfDocument = ({ data }) => (
 
       {/* Education Section */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>{data.language === "en" ? "Education" : "Formación Académica"}</Text>
+        <Text style={styles.sectionTitle}>{t('cv.sections.education')}</Text>
         {data.education.map((edu, index) => (
           <View key={`edu-${index}`} style={styles.experienceItem}>
             <View style={styles.row}>
@@ -223,12 +227,12 @@ const CVPdfDocument = ({ data }) => (
 
       {/* Skills Section */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>{data.language === "en" ? "Skills & Expertise" : "Habilidades y Competencias"}</Text>
+        <Text style={styles.sectionTitle}>{t('cv.sections.skills')}</Text>
 
         <View style={styles.row}>
           {/* Technical Skills */}
           <View style={styles.column}>
-            <Text style={styles.skillCategory}>{data.language === "en" ? "Technical Skills" : "Habilidades Técnicas"}</Text>
+            <Text style={styles.skillCategory}>{t('cv.skills_categories.technical')}</Text>
             <View style={styles.skillRow}>
               {data.skills.technical.map((skill, index) => (
                 <Text key={`tech-${index}`} style={styles.skill}>
@@ -240,7 +244,7 @@ const CVPdfDocument = ({ data }) => (
 
           {/* Languages */}
           <View style={styles.column}>
-            <Text style={styles.skillCategory}>{data.language === "en" ? "Languages" : "Idiomas"}</Text>
+            <Text style={styles.skillCategory}>{t('cv.skills_categories.languages')}</Text>
             {data.skills.languages.map((lang, index) => (
               <Text key={`lang-${index}`} style={styles.skillItem}>
                 {lang.name}: {lang.level}
@@ -251,7 +255,7 @@ const CVPdfDocument = ({ data }) => (
 
         {/* Soft Skills */}
         <View style={{ marginTop: 10 }}>
-          <Text style={styles.skillCategory}>{data.language === "en" ? "Soft Skills" : "Habilidades Personales"}</Text>
+          <Text style={styles.skillCategory}>{t('cv.skills_categories.soft')}</Text>
           <View style={styles.skillRow}>
             {data.skills.soft.map((skill, index) => (
               <Text key={`soft-${index}`} style={styles.skill}>
@@ -264,7 +268,7 @@ const CVPdfDocument = ({ data }) => (
 
       {/* Certifications */}
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>{data.language === "en" ? "Certifications" : "Certificaciones"}</Text>
+        <Text style={styles.sectionTitle}>{t('cv.sections.certifications')}</Text>
         {data.certifications.map((cert, index) => (
           <View key={`cert-${index}`} style={[styles.row, { marginBottom: 5 }]}>
             <Text style={[styles.description, styles.bold]}>{cert.name}</Text>
@@ -274,9 +278,10 @@ const CVPdfDocument = ({ data }) => (
       </View>
 
       {/* Footer */}
-      <Text style={styles.footer}>{data.language === "en" ? `${data.personal.name} - CV - Generated on ${new Date().toLocaleDateString()}` : `${data.personal.name} - CV - Generado el ${new Date().toLocaleDateString()}`}</Text>
+      <Text style={styles.footer}>{`${data.personal.name} - ${t('cv.pdf.footer_text')} ${new Date().toLocaleDateString()}`}</Text>
     </Page>
   </Document>
-);
+  );
+};
 
 export default CVPdfDocument;

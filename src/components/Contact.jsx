@@ -2,17 +2,20 @@ import Toast from "./Toast.jsx";
 import { useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
+import { useTranslations } from "../utils/translations";
 
 import backgroundImg from "../assets/images/background.webp";
 export default function Contact() {
+  const t = useTranslations();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState("");
   const [isToast, setisToast] = useState(false);
+  
   function Check() {
     if (!message || !email || !name) {
-      toast.error("Invalid inputs", {
+      toast.error(t("contact.invalid_inputs"), {
         style: { backgroundColor: "#303030", color: "#fff" },
       });
     }
@@ -20,9 +23,6 @@ export default function Contact() {
   function handleForm(e) {
     e.preventDefault();
 
-    toast.success("¡Mensaje enviado con éxito!", {
-      style: { backgroundColor: "#303030", color: "#fff" },
-    });
     axios.defaults.headers.post["Content-Type"] = "application/json";
     axios
       .post("https://formsubmit.co/ajax/jaimevillalcon@hotmail.com", {
@@ -33,13 +33,13 @@ export default function Contact() {
       })
       .then((response) => {
         if (response.status == 200) {
-          toast.success("¡Mensaje enviado con éxito!", {
+          toast.success(t("contact.success_message"), {
             style: { backgroundColor: "#303030", color: "#fff" },
           });
         }
       })
       .catch((error) =>
-        toast.error("Se ha producido un error enviando el mensaje. :(", {
+        toast.error(t("contact.error_message"), {
           style: { backgroundColor: "#303030", color: "#fff" },
         })
       );
@@ -53,7 +53,7 @@ export default function Contact() {
         id="contact"
         className="mb-8 font-extrabold text-center text-4xl text-transparent bg-clip-text bg-gradient-to-tr from-[#d7d7d7] to-[#616161]"
       >
-        Contacto
+        {t("contact.title")}
       </h1>
       <section
         className="w-5/6 rounded-xl mx-auto bg-fit"
@@ -62,10 +62,10 @@ export default function Contact() {
         <div className="sm:p-24 p-8 mx-auto mb-24">
           <div className="pb-8 text-center">
             <h1 className="text-primary sm:text-5xl text-3xl font-bold">
-             No lo dudes
+              {t("contact.contact_cta_title")}
             </h1>
             <h1 className="text-primary sm:text-5xl text-3xl font-bold">
-              Envíame un mensaje 👋
+              {t("contact.contact_cta_subtitle")}
             </h1>
           </div>
           <form
@@ -77,7 +77,7 @@ export default function Contact() {
             <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-4 w-full justify-center">
               <div>
                 <label className="text-primary font-semibold">
-                  Tu Nombre
+                  {t("contact.name_label")}
                   <input
                     onChange={(e) => setName(e.target.value)}
                     required
@@ -85,12 +85,13 @@ export default function Contact() {
                     type="text"
                     name="name"
                     id="name"
+                    placeholder={t("contact.name_placeholder")}
                   />
                 </label>
               </div>
               <div>
                 <label className="text-primary font-semibold">
-                  Dirección E-mail
+                  {t("contact.email_label")}
                   <input
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -98,12 +99,13 @@ export default function Contact() {
                     type="email"
                     name="email"
                     id="email"
+                    placeholder={t("contact.email_placeholder")}
                   />
                 </label>
               </div>
               <div>
                 <label className="text-primary font-semibold">
-                  Número de teléfono
+                  {t("contact.phone_label")}
                   <input
                     onChange={(e) => setPhone(e.target.value)}
                     required
@@ -117,13 +119,14 @@ export default function Contact() {
             </div>
             <div className="py-4">
               <label className="text-primary font-semibold">
-                Mensaje
+                {t("contact.message_label")}
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   className="w-full text-black rounded-md h-28 p-2"
                   name="message"
                   id="message"
                   required
+                  placeholder={t("contact.message_placeholder")}
                 ></textarea>
               </label>
             </div>
@@ -131,7 +134,7 @@ export default function Contact() {
               <input
                 onClick={Check}
                 type="submit"
-                value="Enviar  :)"
+                value={t("contact.send_button")}
                 className="px-4 py-2 rounded-md bg-white font-bold"
               />
             </div>

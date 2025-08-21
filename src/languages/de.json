@@ -1,0 +1,328 @@
+{
+  "navigation": {
+    "inicio": "Startseite",
+    "proyectos": "Projekte",
+    "sobre_mi": "Über mich",
+    "contacto": "Kontakt",
+    "descargar_cv": "Lebenslauf herunterladen",
+    "idioma_language": "Sprache / Language"
+  },
+  "hero": {
+    "greeting": "Hallo! 👋 Ich bin",
+    "name": "Jaime Villanueva",
+    "title": "Full Stack Web Entwickler",
+    "description": "Spezialisiert auf die Erstellung moderner und skalierbarer Web-Erfahrungen mit den neuesten Technologien",
+    "cta_projects": "Projekte ansehen",
+    "cta_contact": "Kontakt"
+  },
+  "about": {
+    "title": "Lerne mich kennen!",
+    "description_p1": "Ich bin Jaime Villanueva, ein FullStack-Entwickler, der sich auf Webdesign und -entwicklung spezialisiert hat. Mein Ansatz kombiniert solide Frontend-Erfahrung zur Erstellung attraktiver Benutzeroberflächen mit Backend-Fähigkeiten zum Aufbau funktionaler und dynamischer Lösungen.",
+    "description_p2": "Ich biete komplette Lösungen, die dynamische Menüs, Verwaltungssysteme, ERPs, Kundenbereiche, E-Commerce und Zahlungsgateways umfassen. Ich verwalte auch Inhalte für soziale Medien und verbessere die Online-Sichtbarkeit von Unternehmen.",
+    "description_p3": "Mein Ziel ist es, Ideen in erfolgreiche digitale Produkte zu verwandeln. Erkunden Sie meine Projekte und kontaktieren Sie mich, um Ihre Vision auf die nächste Stufe zu heben.",
+    "technologies_title": "Sprachen und Frameworks",
+    "experience_years": "Jahre Erfahrung",
+    "projects_completed": "abgeschlossene Projekte",
+    "technologies": "beherrschte Technologien"
+  },
+  "projects": {
+    "title": "Projekte",
+    "subtitle": "Meine neuesten Arbeiten",
+    "description": "Eine Auswahl meiner herausragendsten Projekte",
+    "view_all": "Alle Projekte ansehen",
+    "view_details": "Details ansehen",
+    "github_repo": "Repo",
+    "live_demo": "Demo",
+    "page_title": "Erkunden Sie meine Projekte",
+    "page_description": "Willkommen in meinem Webentwicklungs-Projektportfolio! Jedes Projekt zeigt meine Fähigkeiten, Kreativität und mein Engagement für qualitativ hochwertige Web-Lösungen.",
+    "recent_projects": "Aktuelle Projekte",
+    "description_full": "Erkunden Sie meine Projekte und entdecken Sie die große Vielfalt an Websites, die ich erstellt und entwickelt habe. Jedes Projekt hat eine detaillierte Beschreibung und Links, damit Sie weiter erkunden können.",
+    "description_cta": "Lassen Sie sich von dem überraschen, was ich für Sie tun kann!",
+    "filter_title": "Projekte filtern",
+    "filter_technologies": "Technologien",
+    "filter_all": "Alle",
+    "showing_all": "Alle Projekte anzeigen",
+    "showing_filtered": "{count} von {total} Projekten anzeigen",
+    "all_projects": "Alle Projekte",
+    "no_results": "Keine Projekte gefunden, die den ausgewählten Filtern entsprechen.",
+    "reset_filters": "Filter zurücksetzen",
+    "loading": "Projekte werden geladen...",
+    "filter_applied": "Filter angewendet",
+    "page_title_full": "Projekte | Jaime Villanueva",
+    "project_links": "Projekt-Links",
+    "main_features": "Hauptfunktionen",
+    "project_videos": "Projekt-Videos",
+    "image_gallery": "Bildergalerie",
+    "video_not_supported": "Ihr Browser unterstützt die Videowiedergabe nicht.",
+    "technologies_used": "Verwendete Technologien",
+    "tech_categories": {
+      "frameworks": "Frameworks",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "integrations": "Integrationen",
+      "devops": "DevOps",
+      "tools": "Werkzeuge"
+    },
+    "frases-marcos-alcon": {
+      "description": "MarcosGoWeb ist eine elegante Webanwendung, die mit Go erstellt wurde und eine Sammlung von Phrasen und Gedichten von Marcos Alcón zeigt. Die Anwendung präsentiert den Inhalt in einem schönen interaktiven Buchformat mit Seitenumblätterungsanimationen und schafft so ein immersives Leseerlebnis. Entwickelt als besonderes Geschenk zum 95. Geburtstag meines Großvaters.",
+      "type": "Interaktive Webanwendung",
+      "features": {
+        "0": {
+          "title": "Interaktiver Buchleser",
+          "description": "Eine Webanwendung, die die Phrasen und Gedichte von Marcos Alcón zeigt. Ein Projekt für meinen Großvater zu seinem 95. Geburtstag, das die Phrasen sammelt, die er geschrieben hat. Die Web-App verfügt über einen interaktiven Buchleser mit Seitenumblätterungsanimationen. Die Seite ist responsiv mit außergewöhnlichem UI- und UX-Design."
+        }
+      }
+    },
+    "tour-to-valencia": {
+      "description": "Tour To Valencia ist eine moderne mehrsprachige (Englisch/Spanisch) Webanwendung, die mit Remix und React erstellt wurde und es Benutzern ermöglicht, Touren und Erlebnisse in Valencia, Spanien zu entdecken, zu erkunden und zu buchen. Die Plattform bietet ein reibungsloses Buchungserlebnis mit integrierter Zahlungsabwicklung über PayPal und Stripe, E-Mail-Bestätigungen und ein vollständiges Administrationspanel zur Verwaltung von Buchungen und Tour-Inhalten.",
+      "type": "Website + Buchungssystem + Back Office",
+      "features": {
+        "0": {
+          "title": "Mehrsprachiges Buchungssystem",
+          "description": "Vollständige Buchungsplattform in Englisch und Spanisch, die es Benutzern ermöglicht, Touren intuitiv zu erkunden und zu buchen. Enthält erweiterte Filtersysteme, Suche nach Daten und Kategorien und vollständige Verwaltung des Buchungsprozesses."
+        },
+        "1": {
+          "title": "Integrierte Zahlungsabwicklung",
+          "description": "Vollständige Integration mit PayPal und Stripe für sichere Zahlungsabwicklung. Unterstützung für mehrere Zahlungsmethoden, automatische E-Mail-Bestätigungen und Rückerstattungsverwaltung vom Administrationspanel aus."
+        },
+        "2": {
+          "title": "Vollständiges Administrationspanel",
+          "description": "Verwaltungssystem, das das Erstellen, Bearbeiten und Verwalten von Touren, das Anzeigen von Buchungsstatistiken, die Verwaltung von Kunden, die Konfiguration von Preisen und Verfügbarkeit sowie die Generierung detaillierter Verkaufsberichte ermöglicht."
+        }
+      }
+    },
+    "guillermo-fernandez-nutricion": {
+      "description": "Website zur Bewerbung von Ernährungsberatungsdienstleistungen und zur Steigerung der Kundenakquise. Ermöglicht es Kunden, eine erste Beratung über ein Kontaktformular durchzuführen. Responsives Design, das sich an Desktop-, Tablet- und Mobilgrößen anpasst. Entwickelt mit Astro für das Frontend und PHP für das Backend des Kontaktformulars.",
+      "type": "Website + E-Mail",
+      "features": {
+        "0": {
+          "title": "Professionelle Website für Ernährungsberater",
+          "description": "Moderne und professionelle Website, die speziell für Ernährungsdienstleistungen entwickelt wurde. Enthält informative Bereiche über Dienstleistungen, Methodik, Kundenbewertungen und Kontaktinformationen. Optimiert, um Besucher in potenzielle Kunden zu verwandeln."
+        },
+        "1": {
+          "title": "Integriertes Kontaktsystem",
+          "description": "Benutzerdefiniertes Kontaktformular, das es Kunden ermöglicht, eine erste Beratung anzufordern. Enthält Datenvalidierung, automatische Bestätigungs-E-Mails und Benachrichtigungen an den Fachmann für schnelle Nachverfolgung."
+        },
+        "2": {
+          "title": "Responsives und optimiertes Design",
+          "description": "Vollständig responsives Design, das sich perfekt an mobile Geräte, Tablets und Desktop anpasst. Optimiert für Ladegeschwindigkeit und SEO zur Verbesserung der Suchmaschinenvisibilität und Benutzererfahrung."
+        }
+      }
+    },
+    "alqueria-villacarmen": {
+      "description": "Erstellung einer Website zur Bewerbung von Alqueria Villa Carmen, einem Restaurant und Veranstaltungsort. Sie zeichnet sich durch die Anzeige der Tagesmenüs, Wochenendmenüs und Weinkarte aus und ermöglicht zusätzlich Online-Reservierungen. Enthält einen Reservierungsmanager mit Funktionen wie täglichem Reservierungslimit, E-Mail-Bestätigung und Reservierungsverwaltung.",
+      "type": "Website + Reservierungsmanager + Back Office",
+      "features": {
+        "0": {
+          "title": "Online-Reservierungssystem",
+          "description": "Integrierte Reservierungsplattform, die es Kunden ermöglicht, online Tische zu reservieren. Enthält Auswahl von Datum, Uhrzeit, Anzahl der Gäste und spezielle Wünsche. Automatisches E-Mail-Bestätigungssystem und Echtzeit-Verfügbarkeitsverwaltung."
+        },
+        "1": {
+          "title": "Dynamische Menüverwaltung",
+          "description": "Verwaltungssystem, das es ermöglicht, Tagesmenüs, Wochenendmenüs und Weinkarte von einem Administrationspanel aus zu aktualisieren. Änderungen werden automatisch auf der Website reflektiert, ohne technische Kenntnisse zu erfordern."
+        },
+        "2": {
+          "title": "Reservierungsadministrationspanel",
+          "description": "Vollständiges Tool für die Reservierungsverwaltung mit Kalenderansicht, konfigurierbaren täglichen Limits, Tisch- und Zeitplanverwaltung, Auslastungsstatistiken und Benachrichtigungssystem für das Restaurantpersonal."
+        }
+      }
+    },
+    "car-hub": {
+      "description": "Entdecken Sie unsere Website, die der Präsentation der Car Hub-Software gewidmet ist, einem Portal für den Kauf und Verkauf von Autos. Die Softwarefunktionalitäten werden hervorgehoben und ihre Vorzüge und Nützlichkeit für unsere Kunden betont. Entwickelt mit den neuesten Technologien in HTML und PHP, bietet sie ein responsives Design, das sich an jedes Gerät anpasst.",
+      "type": "Website",
+      "features": {
+        "0": {
+          "title": "Software-Präsentationswebsite",
+          "description": "Professionelle Website zur Präsentation der Car Hub-Software-Features und -Funktionalitäten. Enthält detaillierte Beschreibungen der Software-Fähigkeiten, Screenshots und Informationen über Vorteile für Händler und Endbenutzer."
+        }
+      }
+    },
+    "todo-list": {
+      "description": "Vollständige Aufgabenverwaltungsanwendung, entwickelt mit Next.js 15, TypeScript, Tailwind CSS 4 und PostgreSQL. Bietet Benutzerauthentifizierung, Aufgabenverwaltung mit einem Drag & Drop-System, Kalenderintegration und mehrsprachige Unterstützung. Die Anwendung ermöglicht das Erstellen, Bearbeiten, Löschen und Markieren von Aufgaben als erledigt.",
+      "type": "Full-Stack-Webanwendung",
+      "features": {
+        "0": {
+          "title": "Erweiterte Aufgabenverwaltung",
+          "description": "Vollständiges Aufgabenverwaltungssystem, das das einfache Erstellen, Bearbeiten, Löschen und Organisieren von Aufgaben ermöglicht. Enthält Drag & Drop-Funktionalität zum Umordnen von Aufgaben, Prioritätszuweisung, Fälligkeitsdaten und anpassbare Kategorisierung."
+        },
+        "1": {
+          "title": "Benutzerauthentifizierung und Profile",
+          "description": "Sicheres Authentifizierungssystem mit Registrierung, Anmeldung und personalisierten Profilverwaltung. Jeder Benutzer hat seinen eigenen privaten Arbeitsbereich mit anpassbaren Einstellungen und gespeicherten Präferenzen."
+        },
+        "2": {
+          "title": "Integrierte Kalenderansicht",
+          "description": "Vollständige Kalenderintegration, die es ermöglicht, Aufgaben nach Daten zu visualisieren, langfristige Projekte zu planen und einen Überblick über die Arbeitsbelastung zu erhalten. Enthält Benachrichtigungen für anstehende fällige Aufgaben."
+        },
+        "3": {
+          "title": "Mehrsprachige Unterstützung",
+          "description": "Die Anwendung ist in mehreren Sprachen verfügbar und ermöglicht es Benutzern aus verschiedenen Regionen, die Plattform in ihrer Muttersprache zu verwenden. Der Sprachwechsel ist sofort und die Benutzerpräferenz wird gespeichert."
+        }
+      }
+    },
+    "cat-store": {
+      "description": "Webanwendung für einen Online-Katzenshop, entwickelt mit PHP, MySQL, HTML, CSS und JavaScript. Enthält Authentifizierungssystem, Sitzungspersistenz durch Cookies, Produktkatalog mit Filtern, Warenkorb, Benutzerprofilverwaltung, Kaufhistorie, Administrationspanel und responsives Design.",
+      "type": "Online-Shop",
+      "features": {
+        "0": {
+          "title": "Vollständiger Online-Shop",
+          "description": "E-Commerce-Plattform spezialisiert auf Katzenprodukte mit vollständigem Katalog, Kategoriesystem, erweiterte Suchfilter, persistenter Warenkorb und optimierter Checkout-Prozess zur Maximierung der Konversionen."
+        },
+        "1": {
+          "title": "Benutzerverwaltung und Profile",
+          "description": "Vollständiges Benutzerregistrierungs- und Authentifizierungssystem mit anpassbaren Profilen, Kaufhistorie, Wunschlisten, Verwaltung von Versandadressen und Kontoeinstellungen. Enthält Passwort-Wiederherstellung und E-Mail-Verifizierung."
+        },
+        "2": {
+          "title": "Administrationspanel",
+          "description": "Vollständiges Administrationstool zur Verwaltung von Produkten, Kategorien, Bestellungen, Benutzern und Verkaufsstatistiken. Ermöglicht das Hinzufügen, Bearbeiten und Löschen von Produkten, Bestandsverwaltung, Bestellungsbearbeitung und Generierung detaillierter Berichte."
+        },
+        "3": {
+          "title": "Persistenter Warenkorb und Checkout",
+          "description": "Warenkorb-System, das ausgewählte Produkte zwischen Sitzungen mit Cookies beibehält. Vereinfachter Checkout-Prozess mit automatischer Versandberechnung, Rabattanwendung und Bestellbestätigung per E-Mail."
+        }
+      }
+    },
+    "centro-neuro-expresion": {
+      "description": "Moderne und zugängliche Website für ein Frühinterventionszentrum, das sich auf Kinder von der Geburt bis zum sechsten Lebensjahr konzentriert. Bietet umfassende Informationen über spezialisierte Dienstleistungen in vier Schlüsselbereichen der Entwicklung: Kognitive, Sprachliche, Pränatale und Sensomotorische Intervention.",
+      "type": "Unternehmenswebsite",
+      "features": {
+        "0": {
+          "title": "Professionelle Website für Frühinterventionszentrum",
+          "description": "Moderne und professionelle Website, die speziell für ein Frühinterventionszentrum entwickelt wurde. Enthält detaillierte Informationen über Dienstleistungen, Arbeitsmethodiken, professionelles Team und Spezialisierungsbereiche in der Kindheitsentwicklung."
+        },
+        "1": {
+          "title": "Informationen zu spezialisierten Dienstleistungen",
+          "description": "Vollständiger Bereich zur Erklärung der Interventionsdienstleistungen in den vier Hauptbereichen: kognitiv, sprachlich, pränatal und sensomotorisch. Jeder Dienst enthält detaillierte Beschreibung, Methodik und Vorteile für die Kindheitsentwicklung."
+        },
+        "2": {
+          "title": "Barrierefreies und responsives Design",
+          "description": "Website, die mit Web-Accessibility-Prinzipien entwickelt wurde, um sicherzustellen, dass alle Familien leicht auf Informationen zugreifen können. Enthält intuitive Navigation, angemessenen Kontrast und responsives Design für alle Geräte."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Lass uns sprechen!",
+    "description": "Haben Sie ein Projekt im Kopf? Ich würde gerne davon hören.",
+    "name_label": "Name",
+    "name_placeholder": "Ihr Name",
+    "email_label": "E-Mail",
+    "email_placeholder": "ihre@email.com",
+    "phone_label": "Telefonnummer",
+    "message_label": "Nachricht",
+    "message_placeholder": "Erzählen Sie mir von Ihrem Projekt...",
+    "send_button": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success_message": "Nachricht erfolgreich gesendet!",
+    "error_message": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.",
+    "required_field": "Pflichtfeld",
+    "invalid_inputs": "Ungültige Eingaben",
+    "contact_cta_title": "Zögern Sie nicht",
+    "contact_cta_subtitle": "Senden Sie mir eine Nachricht 👋"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "built_with": "Erstellt mit",
+    "social_links": "Soziale Links",
+    "company_name": "Jaime Digital Studio",
+    "description": "Webentwickler mit Fokus auf Frontend-Programmierung von Benutzeroberflächen für Websites und Webanwendungen, die zum Erfolg der Kunden beitragen, sowie Zusammenarbeit in Backend-Funktionen und als Community Manager.",
+    "links_title": "Links",
+    "developed_by": "Entwickelt von",
+    "studio_name": "Jaime Digital Studios"
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "project": "Projekt"
+  },
+  "language_modal": {
+    "title": "🌍 Wähle deine Sprache",
+    "subtitle": "Choose your language / Elige tu idioma",
+    "confirm_button": "Bestätigen",
+    "footer_text": "Ihre Präferenz wird automatisch gespeichert. Sie können sie jederzeit über das obere Menü ändern"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "retry": "Wiederholen",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Vorherige"
+  },
+  "timeline": {
+    "title": "Mein Werdegang",
+    "description": "Eine Reise durch meinen Bildungs- und Berufsweg, die die Projekte zeigt, an denen ich gearbeitet habe, und die Fähigkeiten, die ich im Laufe der Zeit erworben habe.",
+    "skills_title": "Technische Fähigkeiten",
+    "frontend": "Frontend",
+    "backend_frameworks": "Backend & Frameworks",
+    "backend": "Backend",
+    "frameworks": "Frameworks",
+    "tools": "Werkzeuge",
+    "download_cv": "Lebenslauf herunterladen",
+    "cv_section_title": "Professioneller Lebenslauf",
+    "cv_section_description": "Laden Sie meinen vollständigen beruflichen Lebenslauf herunter",
+    "interactive": {
+      "filter_all": "Alle",
+      "filter_projects": "Projekte",
+      "filter_work": "Arbeit",
+      "filter_education": "Bildung",
+      "search_placeholder": "Erfahrung oder Fähigkeit suchen...",
+      "no_results": "Keine Ergebnisse gefunden für",
+      "reset_filters": "Filter zurücksetzen",
+      "tooltip_skill": "Erfahrung in",
+      "highlights": "Höhepunkte:",
+      "visit_project": "Projekt besuchen",
+      "visit_institution": "Institution besuchen",
+      "visit_company": "Unternehmen besuchen"
+    }
+  },
+  "cv": {
+    "title": "Lebenslauf",
+    "sections": {
+      "personal": "Persönliche Informationen",
+      "experience": "Berufserfahrung",
+      "education": "Bildung",
+      "skills": "Fähigkeiten & Kompetenzen",
+      "projects": "Projekte",
+      "certifications": "Zertifizierungen",
+      "interests": "Interessen"
+    },
+    "navigation": {
+      "personal": "Persönlich",
+      "experience": "Erfahrung",
+      "education": "Bildung",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte",
+      "certifications": "Zertifizierungen",
+      "interests": "Interessen"
+    },
+    "skills_categories": {
+      "technical": "Technische Fähigkeiten",
+      "languages": "Sprachen",
+      "soft": "Soft Skills"
+    },
+    "actions": {
+      "view_project": "Projekt ansehen",
+      "view_certificate": "Zertifikat ansehen",
+      "download_pdf": "PDF herunterladen",
+      "generating": "Generieren...",
+      "back": "Zurück",
+      "close": "Schließen"
+    },
+    "achievements": "Wichtige Erfolge:",
+    "footer_download_reminder": "Vergessen Sie nicht, diesen Lebenslauf mit der Schaltfläche oben auf der Seite herunterzuladen.",
+    "pdf": {
+      "professional_summary": "Berufszusammenfassung",
+      "footer_text": "Lebenslauf - Generiert am"
+    },
+    "viewer": {
+      "show_sidebar": "Seitenleiste anzeigen",
+      "hide_sidebar": "Seitenleiste ausblenden",
+      "switch_dark_mode": "Zu Dunklem Modus wechseln",
+      "switch_light_mode": "Zu Hellem Modus wechseln",
+      "pdf_error": "Beim Generieren des PDFs ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      "select_language": "Sprache auswählen"
+    }
+  }
+}

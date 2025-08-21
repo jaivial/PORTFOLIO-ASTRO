@@ -2,27 +2,31 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
-import Project from "../components/Project.astro";
-import Timeline from "../components/Timeline.astro";
+import About from "../components/About.jsx";
+import Project from "../components/Project.jsx";
+import { getData } from "../utils/projects";
+import Timeline from "../components/Timeline.jsx";
 import Contact from "../components/Contact.jsx";
-import Footer from "../components/Footer.astro";
+import Footer from "../components/Footer.jsx";
 import Blogcard from "../components/Blogcard.astro";
 import NavBar from "../components/NavBar";
+import LanguageProvider from "../components/LanguageProvider";
 ---
 
 <Layout title="Jaime Digital Studio">
-  <main class="relative">
-    <NavBar client:load />
-    <Header transition:animate="fade" />
-    <Hero />
-    <About />
-    <Timeline />
-    <Project />
-    <Contact client:load />
-    <Footer />
-    <!-- <Education/> -->
-  </main>
+  <LanguageProvider client:load>
+    <main class="relative">
+      <NavBar client:only="react" />
+      <Header transition:animate="fade" />
+      <Hero />
+      <About client:load />
+      <Timeline client:only="react" />
+      <Project data={getData()} client:load />
+      <Contact client:load />
+      <Footer client:load />
+      <!-- <Education/> -->
+    </main>
+  </LanguageProvider>
 </Layout>
 
 <style>
@@ -40,3 +44,8 @@ import NavBar from "../components/NavBar";
     --animate-duration: 0s;
   }
 </style>
+
+<script>
+  // Initialize client-side language handling
+  import { initClientLanguage } from "../utils/clientLanguageInit.js";
+</script>

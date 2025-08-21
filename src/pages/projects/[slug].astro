@@ -1,14 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PageNav from "../../components/PageNav.jsx";
-import NavBar from "../../components/NavBar";
+import LanguageProvider from "../../components/LanguageProvider";
 import { getData } from "../../utils/projects";
-import Footer from "../../components/Footer.astro";
-import ProjectHeader from "../../components/ProjectHeader.astro";
-import ProjectLinks from "../../components/ProjectLinks.astro";
-import ProjectTechCategories from "../../components/ProjectTechCategories.astro";
-import ProjectFeatures from "../../components/ProjectFeatures.astro";
-import ProjectGallery from "../../components/ProjectGallery.astro";
+import Footer from "../../components/Footer.jsx";
+import ProjectHeader from "../../components/ProjectHeader.jsx";
+import ProjectLinks from "../../components/ProjectLinks.jsx";
+import ProjectTechCategories from "../../components/ProjectTechCategories.jsx";
+import ProjectFeatures from "../../components/ProjectFeatures.jsx";
+import ProjectGallery from "../../components/ProjectGallery.jsx";
 
 export async function getStaticPaths() {
   const projects = getData();
@@ -22,35 +22,41 @@ const { project } = Astro.props;
 ---
 
 <Layout title={`${project.name} | Jaime Villanueva`}>
-  <main class="relative min-h-screen overflow-x-hidden">
-    <!-- Container principal responsive -->
-    <div class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <NavBar client:load />
-      <PageNav title="PROYECTO" previousLink="/projects" client:load />
+  <LanguageProvider client:load>
+    <main class="relative min-h-screen overflow-x-hidden pt-16">
+      <!-- Container principal responsive -->
+      <div class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <!-- <PageNav title="PROYECTO" previousLink="/projects" client:load /> -->
 
-      <ProjectHeader project={project} />
+        <ProjectHeader project={project} client:load />
 
-      <!-- Enlaces solo visibles en pantallas pequeñas y medianas -->
-      <div class="mt-8 lg:hidden">
-        <ProjectLinks project={project} />
-      </div>
-
-      <!-- Tecnologías categorizadas con todo el ancho -->
-      <div class="mt-8">
-        <ProjectTechCategories project={project} />
-      </div>
-
-      <!-- Layout principal responsive -->
-      <section class="mt-8 lg:mt-16 mb-20 content-visibility-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-10 gap-6 lg:gap-8">
-          <!-- Contenido principal más ancho -->
-          <div class="lg:col-span-10 space-y-6">
-            <ProjectFeatures project={project} />
-            <ProjectGallery project={project} />
-          </div>
+        <!-- Enlaces solo visibles en pantallas pequeñas y medianas -->
+        <div class="mt-8 lg:hidden">
+          <ProjectLinks project={project} client:load />
         </div>
-      </section>
-    </div>
-  </main>
-  <Footer />
+
+        <!-- Tecnologías categorizadas con todo el ancho -->
+        <div class="mt-8">
+          <ProjectTechCategories project={project} client:load />
+        </div>
+
+        <!-- Layout principal responsive -->
+        <section class="mt-8 lg:mt-16 mb-20 content-visibility-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-10 gap-6 lg:gap-8">
+            <!-- Contenido principal más ancho -->
+            <div class="lg:col-span-10 space-y-6">
+              <ProjectFeatures project={project} client:load />
+              <ProjectGallery project={project} client:load />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <Footer client:load />
+  </LanguageProvider>
 </Layout>
+
+<script>
+  // Initialize client-side language handling
+  import { initClientLanguage } from "../../utils/clientLanguageInit.js";
+</script>

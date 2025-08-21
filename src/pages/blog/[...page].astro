@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PageNav from "../../components/PageNav";
-import Footer from "../../components/Footer.astro";
+import Footer from "../../components/Footer.jsx";
 import { getCollection } from "astro:content";
 import { getFormattedDate } from "../../utils/all";
 const post = await getCollection("blog");
@@ -146,5 +146,5 @@ const nextPagination = page.url.next ? "cursor-pointer" : "cursor-not-allowed";
       </div>
     </div>
   </section>
-  <Footer />
+  <Footer client:load />
 </Layout>

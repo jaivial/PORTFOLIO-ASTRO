@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaGlobe, FaCode, FaBookmark, FaAward, FaInstagram } from "react-icons/fa";
+import { useTranslations } from "../../utils/translations";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -9,6 +10,7 @@ const fadeInUp = {
 
 const CVContent = ({ data, activeSection }) => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
+  const t = useTranslations();
 
   // Map icon names to components
   const getIcon = (iconName) => {
@@ -20,31 +22,6 @@ const CVContent = ({ data, activeSection }) => {
     };
     return icons[iconName] || null;
   };
-
-  // Translations for section titles
-  const sectionTitles = {
-    en: {
-      personal: "Personal Information",
-      experience: "Professional Experience",
-      education: "Education",
-      skills: "Skills & Expertise",
-      projects: "Projects",
-      certifications: "Certifications",
-      interests: "Interests",
-    },
-    es: {
-      personal: "Información Personal",
-      experience: "Experiencia Profesional",
-      education: "Formación Académica",
-      skills: "Habilidades y Competencias",
-      projects: "Proyectos",
-      certifications: "Certificaciones",
-      interests: "Intereses",
-    },
-  };
-
-  const language = data.personal.location.includes("Spain") ? "en" : "es";
-  const titles = sectionTitles[language];
 
   return (
     <div className="cv-content text-gray-800 dark:text-gray-200">
@@ -102,7 +79,7 @@ const CVContent = ({ data, activeSection }) => {
       <motion.section id="cv-section-experience" className={`mb-10 ${activeSection === "experience" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700 flex items-center">
           <FaBookmark className="mr-2 sm:mr-3 text-primary" />
-          {titles.experience}
+          {t('cv.sections.experience')}
         </h2>
 
         <div className="space-y-0">
@@ -131,7 +108,7 @@ const CVContent = ({ data, activeSection }) => {
 
                 {exp.achievements && exp.achievements.length > 0 && (
                   <div className="mt-5">
-                    <h4 className="font-semibold mb-3 text-gray-800 dark:text-gray-200">Key Achievements:</h4>
+                    <h4 className="font-semibold mb-3 text-gray-800 dark:text-gray-200">{t('cv.achievements')}</h4>
                     <ul className="list-none space-y-3">
                       {exp.achievements.map((achievement, i) => (
                         <li key={i} className="flex items-start">
@@ -152,7 +129,7 @@ const CVContent = ({ data, activeSection }) => {
       <motion.section id="cv-section-education" className={`mb-10 ${activeSection === "education" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700 flex items-center">
           <FaAward className="mr-2 sm:mr-3 text-primary" />
-          {titles.education}
+          {t('cv.sections.education')}
         </h2>
 
         <div className="grid grid-cols-1 gap-6">
@@ -172,7 +149,7 @@ const CVContent = ({ data, activeSection }) => {
 
                 {edu.achievements && edu.achievements.length > 0 && (
                   <div className="mt-5 border-t border-gray-200 dark:border-gray-700 pt-5">
-                    <h4 className="font-semibold mb-3 text-gray-800 dark:text-gray-100">Achievements:</h4>
+                    <h4 className="font-semibold mb-3 text-gray-800 dark:text-gray-100">{t('cv.achievements')}</h4>
                     <ul className="list-disc list-inside space-y-2 text-gray-800 dark:text-gray-200 text-sm sm:text-base">
                       {edu.achievements.map((achievement, i) => (
                         <li key={i}>{achievement}</li>
@@ -190,14 +167,14 @@ const CVContent = ({ data, activeSection }) => {
       <motion.section id="cv-section-skills" className={`mb-10 ${activeSection === "skills" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700 flex items-center">
           <FaCode className="mr-2 sm:mr-3 text-primary" />
-          {titles.skills}
+          {t('cv.sections.skills')}
         </h2>
 
         <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-8 shadow-md">
           <div className="grid grid-cols-1 gap-8">
             {/* Technical Skills */}
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-800 dark:text-gray-100 border-b border-gray-300 dark:border-gray-700 pb-2">{language === "en" ? "Technical Skills" : "Habilidades Técnicas"}</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-800 dark:text-gray-100 border-b border-gray-300 dark:border-gray-700 pb-2">{t('cv.skills_categories.technical')}</h3>
               <div className="space-y-4 sm:space-y-5">
                 {data.skills.technical.map((skill, index) => (
                   <motion.div key={index} className="w-full" onHoverStart={() => setHoveredSkill(skill.name)} onHoverEnd={() => setHoveredSkill(null)}>
@@ -219,7 +196,7 @@ const CVContent = ({ data, activeSection }) => {
             <div>
               {/* Languages */}
               <div className="mb-8 sm:mb-10">
-                <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-800 dark:text-gray-100 border-b border-gray-300 dark:border-gray-700 pb-2">{language === "en" ? "Languages" : "Idiomas"}</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-800 dark:text-gray-100 border-b border-gray-300 dark:border-gray-700 pb-2">{t('cv.skills_categories.languages')}</h3>
                 <div className="grid grid-cols-1 gap-3 sm:gap-4">
                   {data.skills.languages.map((lang, index) => (
                     <motion.div key={index} className="bg-white dark:bg-gray-900 rounded-lg p-3 sm:p-4 shadow-sm hover:shadow-md transition-all" whileHover={{ x: 5 }}>
@@ -234,7 +211,7 @@ const CVContent = ({ data, activeSection }) => {
 
               {/* Soft Skills */}
               <div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-800 dark:text-gray-100 border-b border-gray-300 dark:border-gray-700 pb-2">{language === "en" ? "Soft Skills" : "Habilidades Personales"}</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-800 dark:text-gray-100 border-b border-gray-300 dark:border-gray-700 pb-2">{t('cv.skills_categories.soft')}</h3>
                 <div className="flex flex-wrap gap-2 sm:gap-3">
                   {data.skills.soft.map((skill, index) => (
                     <motion.span key={index} className="bg-white dark:bg-gray-900 px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm text-gray-800 dark:text-gray-100 shadow-sm hover:shadow-md cursor-default" whileHover={{ scale: 1.05, backgroundColor: "#f3f4f6" }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
@@ -250,7 +227,7 @@ const CVContent = ({ data, activeSection }) => {
 
       {/* Projects Section - Card Grid */}
       <motion.section id="cv-section-projects" className={`mb-10 ${activeSection === "projects" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{titles.projects}</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{t('cv.sections.projects')}</h2>
 
         <div className="grid grid-cols-1 gap-6 sm:gap-8">
           {data.projects.map((project, index) => (
@@ -271,7 +248,7 @@ const CVContent = ({ data, activeSection }) => {
                 </div>
 
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary hover:underline font-medium text-sm sm:text-base">
-                  {language === "en" ? "View Project" : "Ver Proyecto"}
+                  {t('cv.actions.view_project')}
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -284,7 +261,7 @@ const CVContent = ({ data, activeSection }) => {
 
       {/* Certifications Section - Modern List */}
       <motion.section id="cv-section-certifications" className={`mb-10 ${activeSection === "certifications" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{titles.certifications}</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{t('cv.sections.certifications')}</h2>
 
         <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-8 shadow-md">
           <div className="grid grid-cols-1 gap-4 sm:gap-6">
@@ -304,7 +281,7 @@ const CVContent = ({ data, activeSection }) => {
                     <span className="bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded text-xs">{cert.date}</span>
                   </div>
                   <a href={cert.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary hover:underline text-xs sm:text-sm font-medium">
-                    {language === "en" ? "View Certificate" : "Ver Certificado"}
+                    {t('cv.actions.view_certificate')}
                     <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
                       <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
@@ -319,7 +296,7 @@ const CVContent = ({ data, activeSection }) => {
 
       {/* Interests Section - Interactive Bubbles */}
       <motion.section id="cv-section-interests" className={`mb-10 ${activeSection === "interests" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{titles.interests}</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{t('cv.sections.interests')}</h2>
 
         <div className="flex flex-wrap justify-center gap-3 sm:gap-5 p-4 sm:p-6 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-md">
           {data.interests.map((interest, index) => (
@@ -348,7 +325,7 @@ const CVContent = ({ data, activeSection }) => {
 
       {/* Footer with download reminder */}
       <motion.div className="mt-12 sm:mt-16 text-center p-5 sm:p-7 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-inner" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}>
-        <p className="text-gray-800 dark:text-gray-200 font-medium text-sm sm:text-base">{language === "en" ? "Don't forget to download this CV using the button at the top of the page." : "No olvides descargar este CV utilizando el botón en la parte superior de la página."}</p>
+        <p className="text-gray-800 dark:text-gray-200 font-medium text-sm sm:text-base">{t('cv.footer_download_reminder')}</p>
       </motion.div>
     </div>
   );
