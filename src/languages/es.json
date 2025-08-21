@@ -88,6 +88,27 @@
   },
   "timeline": {
     "title": "Mi Trayectoria",
-    "description": "Un recorrido por mi carrera profesional y educativa"
+    "description": "Un recorrido por mi camino formativo y profesional, mostrando los proyectos en los que he trabajado y las habilidades que he adquirido a lo largo del tiempo.",
+    "skills_title": "Habilidades Técnicas",
+    "frontend": "Frontend",
+    "backend_frameworks": "Backend & Frameworks",
+    "backend": "Backend",
+    "frameworks": "Frameworks",
+    "tools": "Herramientas",
+    "download_cv": "Descargar CV",
+    "interactive": {
+      "filter_all": "Todos",
+      "filter_projects": "Proyectos",
+      "filter_work": "Trabajo",
+      "filter_education": "Formación",
+      "search_placeholder": "Buscar experiencia o habilidad...",
+      "no_results": "No se encontraron resultados para",
+      "reset_filters": "Restablecer filtros",
+      "tooltip_skill": "Experiencia en",
+      "highlights": "Aspectos destacados:",
+      "visit_project": "Visitar proyecto",
+      "visit_institution": "Visitar institución",
+      "visit_company": "Visitar empresa"
+    }
   }
 }

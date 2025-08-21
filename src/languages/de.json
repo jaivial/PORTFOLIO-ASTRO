@@ -88,6 +88,27 @@
   },
   "timeline": {
     "title": "Mein Werdegang",
-    "description": "Eine Reise durch meine berufliche und Bildungslaufbahn"
+    "description": "Eine Reise durch meinen Bildungs- und Berufsweg, die die Projekte zeigt, an denen ich gearbeitet habe, und die Fähigkeiten, die ich im Laufe der Zeit erworben habe.",
+    "skills_title": "Technische Fähigkeiten",
+    "frontend": "Frontend",
+    "backend_frameworks": "Backend & Frameworks",
+    "backend": "Backend",
+    "frameworks": "Frameworks",
+    "tools": "Werkzeuge",
+    "download_cv": "Lebenslauf herunterladen",
+    "interactive": {
+      "filter_all": "Alle",
+      "filter_projects": "Projekte",
+      "filter_work": "Arbeit",
+      "filter_education": "Bildung",
+      "search_placeholder": "Erfahrung oder Fähigkeit suchen...",
+      "no_results": "Keine Ergebnisse gefunden für",
+      "reset_filters": "Filter zurücksetzen",
+      "tooltip_skill": "Erfahrung in",
+      "highlights": "Höhepunkte:",
+      "visit_project": "Projekt besuchen",
+      "visit_institution": "Institution besuchen",
+      "visit_company": "Unternehmen besuchen"
+    }
   }
 }

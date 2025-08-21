@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.jsx";
 import Project from "../components/Project.astro";
-import Timeline from "../components/Timeline.astro";
+import Timeline from "../components/Timeline.jsx";
 import Contact from "../components/Contact.jsx";
 import Footer from "../components/Footer.astro";
 import Blogcard from "../components/Blogcard.astro";
@@ -19,7 +19,7 @@ import LanguageProvider from "../components/LanguageProvider";
       <Header transition:animate="fade" />
       <Hero />
       <About client:load />
-      <Timeline />
+      <Timeline client:load />
       <Project />
       <Contact client:load />
       <Footer />

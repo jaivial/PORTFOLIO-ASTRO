@@ -88,6 +88,27 @@
   },
   "timeline": {
     "title": "My Journey",
-    "description": "A journey through my professional and educational career"
+    "description": "A journey through my educational and professional path, showcasing the projects I have worked on and the skills I have acquired over time.",
+    "skills_title": "Technical Skills",
+    "frontend": "Frontend",
+    "backend_frameworks": "Backend & Frameworks",
+    "backend": "Backend",
+    "frameworks": "Frameworks",
+    "tools": "Tools",
+    "download_cv": "Download CV",
+    "interactive": {
+      "filter_all": "All",
+      "filter_projects": "Projects",
+      "filter_work": "Work",
+      "filter_education": "Education",
+      "search_placeholder": "Search experience or skill...",
+      "no_results": "No results found for",
+      "reset_filters": "Reset filters",
+      "tooltip_skill": "Experience in",
+      "highlights": "Highlights:",
+      "visit_project": "Visit project",
+      "visit_institution": "Visit institution",
+      "visit_company": "Visit company"
+    }
   }
 }
