@@ -35,15 +35,170 @@
     "live_demo": "Demo",
     "page_title": "Explora mis proyectos",
     "page_description": "¡Bienvenido a mi portfolio de proyectos de desarrollo web! Cada proyecto exhibe mis habilidades, creatividad y dedicación para ofrecer soluciones web de calidad.",
+    "recent_projects": "Proyectos recientes",
+    "description_full": "Explora mis proyectos y descubre la amplia variedad de sitios web que he creado y desarrollado. Cada proyecto cuenta con una descripción detallada y enlaces para que puedas explorar más a fondo.",
+    "description_cta": "¡Déjate sorprender por lo que puedo hacer por ti!",
     "filter_title": "Filtrar proyectos",
     "filter_technologies": "Tecnologías",
     "filter_all": "Todas",
     "showing_all": "Mostrando todos los proyectos",
     "showing_filtered": "Mostrando {count} de {total} proyectos",
-    "all_projects": "Todos los proyectos",
+    "all_projects": "Todos los Proyectos",
     "no_results": "No se encontraron proyectos que coincidan con los filtros seleccionados.",
     "reset_filters": "Restablecer filtros",
-    "loading": "Cargando proyectos..."
+    "loading": "Cargando proyectos...",
+    "filter_applied": "Filtro aplicado",
+    "page_title_full": "Proyectos | Jaime Villanueva",
+    "project_links": "Enlaces del proyecto",
+    "main_features": "Funcionalidades principales",
+    "project_videos": "Videos del proyecto",
+    "image_gallery": "Galería de imágenes",
+    "video_not_supported": "Tu navegador no soporta la reproducción de videos.",
+    "technologies_used": "Tecnologías utilizadas",
+    "tech_categories": {
+      "frameworks": "Frameworks",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "integrations": "Integraciones",
+      "devops": "DevOps",
+      "tools": "Herramientas"
+    },
+    "frases-marcos-alcon": {
+      "description": "MarcosGoWeb es una elegante aplicación web construida con Go que muestra una colección de frases y poemas de Marcos Alcón. La aplicación presenta el contenido en un hermoso formato de libro interactivo con animaciones de paso de página, creando una experiencia de lectura inmersiva. Desarrollada como un regalo especial para el 95 cumpleaños de mi abuelo.",
+      "type": "Aplicación Web Interactiva",
+      "features": {
+        "0": {
+          "title": "Lector de libro interactivo",
+          "description": "Se muestra la página de frases de Marcos Alcón. Un proyecto hecho para mi abuelo por su 95 cumpleaños recopilando las frases que ha ido escribiendo. Se ha creado una app web para crear un lector de libro con animación de pase de páginas. El sitio es responsive y con una UI y UX excepcional."
+        }
+      }
+    },
+    "tour-to-valencia": {
+      "description": "Tour To Valencia es una aplicación web moderna y multilingüe (inglés/español) construida con Remix y React que permite a los usuarios descubrir, explorar y reservar tours y experiencias en Valencia, España. La plataforma ofrece una experiencia de reserva fluida con procesamiento de pagos integrado a través de PayPal y Stripe, confirmaciones por correo electrónico y un completo panel de administración para gestionar reservas y contenido de tours.",
+      "type": "Página Web + Sistema de Reservas + Back Office",
+      "features": {
+        "0": {
+          "title": "Sistema de reservas multilingüe",
+          "description": "Plataforma completa de reservas en inglés y español que permite a los usuarios explorar y reservar tours de manera intuitiva. Incluye sistema de filtros avanzados, búsqueda por fechas y categorías, y gestión completa del proceso de reserva."
+        },
+        "1": {
+          "title": "Procesamiento de pagos integrado",
+          "description": "Integración completa con PayPal y Stripe para procesamiento seguro de pagos. Soporte para múltiples métodos de pago, confirmaciones automáticas por email y gestión de reembolsos desde el panel administrativo."
+        },
+        "2": {
+          "title": "Panel de administración completo",
+          "description": "Sistema de gestión administrativo que permite crear, editar y gestionar tours, ver estadísticas de reservas, gestionar clientes, configurar precios y disponibilidad, y generar reportes detallados de ventas."
+        }
+      }
+    },
+    "guillermo-fernandez-nutricion": {
+      "description": "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes. Permite que los clientes realicen una primera consulta por un formulario de contacto. Diseño responsivo adaptable a tamaños de escritorio, tablet y móviles. Desarrollado con Astro para el front end y PHP para el backend del formulario de contacto.",
+      "type": "Página Web + Email",
+      "features": {
+        "0": {
+          "title": "Página web profesional para nutricionista",
+          "description": "Sitio web moderno y profesional diseñado específicamente para servicios de nutrición. Incluye secciones informativas sobre servicios, metodología, testimonios de clientes y información de contacto. Optimizado para convertir visitantes en clientes potenciales."
+        },
+        "1": {
+          "title": "Sistema de contacto integrado",
+          "description": "Formulario de contacto personalizado que permite a los clientes solicitar una primera consulta. Incluye validación de datos, envío automático de emails de confirmación y notificaciones al profesional para un seguimiento rápido."
+        },
+        "2": {
+          "title": "Diseño responsive y optimizado",
+          "description": "Diseño completamente responsive que se adapta perfectamente a dispositivos móviles, tablets y escritorio. Optimizado para velocidad de carga y SEO para mejorar la visibilidad en buscadores y la experiencia del usuario."
+        }
+      }
+    },
+    "alqueria-villacarmen": {
+      "description": "Creación de página web para promocionar Alqueria Villa Carmen, un restaurante y salón de eventos. Destaca por mostrar los Menús del Día, de Fin de Semana y la carta de vinos, además de permitir reservas online. Incluye un gestor de reservas con funciones como límite diario de reservas, confirmación por correo electrónico y administración de reservas.",
+      "type": "Página Web + Gestor de Reservas + Back Office",
+      "features": {
+        "0": {
+          "title": "Sistema de reservas online",
+          "description": "Plataforma de reservas integrada que permite a los clientes reservar mesa online. Incluye selección de fecha, hora, número de comensales y preferencias especiales. Sistema de confirmación automática por email y gestión de disponibilidad en tiempo real."
+        },
+        "1": {
+          "title": "Gestión de menús dinámicos",
+          "description": "Sistema de gestión que permite actualizar los menús del día, menús de fin de semana y carta de vinos desde un panel administrativo. Los cambios se reflejan automáticamente en el sitio web sin necesidad de conocimientos técnicos."
+        },
+        "2": {
+          "title": "Panel de administración de reservas",
+          "description": "Herramienta completa para la gestión de reservas que incluye vista de calendario, límites diarios configurable, gestión de mesas y horarios, estadísticas de ocupación y sistema de notificaciones para el personal del restaurante."
+        }
+      }
+    },
+    "car-hub": {
+      "description": "Descubre nuestro sitio web dedicado a presentar el software Car Hub, un portal de compra y venta de coches. Se destacan las funcionalidades del software, resaltando sus virtudes y su utilidad para nuestros clientes. Desarrollada con las últimas tecnologías en HTML y PHP, ofrece un diseño responsive que se adapta a cualquier dispositivo.",
+      "type": "Página Web",
+      "features": {
+        "0": {
+          "title": "Página de presentación del software",
+          "description": "Sitio web profesional diseñado para mostrar las características y funcionalidades del software Car Hub. Incluye descripciones detalladas de las funcionalidades, capturas de pantalla del software y información sobre los beneficios para concesionarios y usuarios finales."
+        }
+      }
+    },
+    "todo-list": {
+      "description": "Aplicación completa de gestión de tareas desarrollada con Next.js 15, TypeScript, Tailwind CSS 4 y PostgreSQL. Ofrece autenticación de usuarios, gestión de tareas con un sistema de arrastrar y soltar (drag & drop), integración con calendario, y soporte multilingüe. La aplicación permite crear, editar, eliminar y marcar tareas como completadas.",
+      "type": "Aplicación Web Full-Stack",
+      "features": {
+        "0": {
+          "title": "Gestión avanzada de tareas",
+          "description": "Sistema completo de gestión de tareas que permite crear, editar, eliminar y organizar tareas con facilidad. Incluye funcionalidad de arrastrar y soltar para reorganizar tareas, asignación de prioridades, fechas de vencimiento y categorización personalizable."
+        },
+        "1": {
+          "title": "Autenticación y perfiles de usuario",
+          "description": "Sistema de autenticación seguro con registro, inicio de sesión y gestión de perfiles personalizados. Cada usuario tiene su propio espacio de trabajo privado con configuraciones personalizables y preferencias guardadas."
+        },
+        "2": {
+          "title": "Vista de calendario integrada",
+          "description": "Integración completa con calendario que permite visualizar tareas por fechas, planificar proyectos a largo plazo y obtener una vista general de la carga de trabajo. Incluye notificaciones de tareas próximas a vencer."
+        },
+        "3": {
+          "title": "Soporte multilingüe",
+          "description": "La aplicación está disponible en múltiples idiomas, permitiendo a usuarios de diferentes regiones utilizar la plataforma en su idioma nativo. El cambio de idioma es instantáneo y se guarda la preferencia del usuario."
+        }
+      }
+    },
+    "cat-store": {
+      "description": "Aplicación web para una tienda online de gatos desarrollada con PHP, MySQL, HTML, CSS y JavaScript. Incluye sistema de autenticación, persistencia de sesión mediante cookies, catálogo de productos con filtros, carrito de compra, gestión de perfil de usuario, historial de compras, panel de administración y diseño responsive.",
+      "type": "Tienda Online",
+      "features": {
+        "0": {
+          "title": "Tienda online completa",
+          "description": "Plataforma de e-commerce especializada en productos para gatos con catálogo completo, sistema de categorías, filtros avanzados de búsqueda, carrito de compras persistente y proceso de compra optimizado para maximizar las conversiones."
+        },
+        "1": {
+          "title": "Gestión de usuarios y perfiles",
+          "description": "Sistema completo de registro y autenticación de usuarios con perfiles personalizables, historial de compras, lista de deseos, gestión de direcciones de envío y preferencias de cuenta. Incluye recuperación de contraseña y verificación por email."
+        },
+        "2": {
+          "title": "Panel de administración",
+          "description": "Herramienta administrativa completa para gestionar productos, categorías, pedidos, usuarios y estadísticas de ventas. Permite añadir, editar y eliminar productos, gestionar inventario, procesar pedidos y generar reportes detallados."
+        },
+        "3": {
+          "title": "Carrito persistente y checkout",
+          "description": "Sistema de carrito de compras que mantiene los productos seleccionados entre sesiones usando cookies. Proceso de checkout simplificado con cálculo automático de envíos, aplicación de descuentos y confirmación de pedidos por email."
+        }
+      }
+    },
+    "centro-neuro-expresion": {
+      "description": "Sitio web moderno y accesible para un centro de intervención temprana enfocado en niños desde el nacimiento hasta los seis años. Proporciona información completa sobre servicios especializados en cuatro áreas clave del desarrollo: Intervención Cognitiva, Lingüística, Prenatal y Sensoriomotora.",
+      "type": "Sitio Web Corporativo",
+      "features": {
+        "0": {
+          "title": "Sitio web profesional para centro de intervención temprana",
+          "description": "Página web moderna y profesional diseñada específicamente para un centro de intervención temprana. Incluye información detallada sobre servicios, metodologías de trabajo, equipo profesional y áreas de especialización en desarrollo infantil."
+        },
+        "1": {
+          "title": "Información de servicios especializados",
+          "description": "Sección completa dedicada a explicar los servicios de intervención en las cuatro áreas principales: cognitiva, lingüística, prenatal y sensoriomotora. Cada servicio incluye descripción detallada, metodología y beneficios para el desarrollo infantil."
+        },
+        "2": {
+          "title": "Diseño accesible y responsive",
+          "description": "Sitio web desarrollado con principios de accesibilidad web para garantizar que todas las familias puedan acceder fácilmente a la información. Incluye navegación intuitiva, contraste adecuado y diseño responsive para todos los dispositivos."
+        }
+      }
+    }
   },
   "contact": {
     "title": "Contacto",
@@ -53,13 +208,17 @@
     "name_placeholder": "Tu nombre",
     "email_label": "Email",
     "email_placeholder": "tu@email.com",
+    "phone_label": "Número de teléfono",
     "message_label": "Mensaje",
     "message_placeholder": "Cuéntame sobre tu proyecto...",
     "send_button": "Enviar Mensaje",
     "sending": "Enviando...",
     "success_message": "¡Mensaje enviado correctamente!",
     "error_message": "Error al enviar el mensaje. Inténtalo de nuevo.",
-    "required_field": "Campo requerido"
+    "required_field": "Campo requerido",
+    "invalid_inputs": "Datos inválidos",
+    "contact_cta_title": "No lo dudes",
+    "contact_cta_subtitle": "Envíame un mensaje 👋"
   },
   "footer": {
     "rights": "Todos los derechos reservados.",

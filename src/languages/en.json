@@ -35,15 +35,170 @@
     "live_demo": "Demo",
     "page_title": "Explore my projects",
     "page_description": "Welcome to my web development project portfolio! Each project showcases my skills, creativity and dedication to deliver quality web solutions.",
+    "recent_projects": "Recent Projects",
+    "description_full": "Explore my projects and discover the wide variety of websites I have created and developed. Each project has a detailed description and links so you can explore further.",
+    "description_cta": "Let yourself be surprised by what I can do for you!",
     "filter_title": "Filter projects",
     "filter_technologies": "Technologies",
     "filter_all": "All",
     "showing_all": "Showing all projects",
     "showing_filtered": "Showing {count} of {total} projects",
-    "all_projects": "All projects",
+    "all_projects": "All Projects",
     "no_results": "No projects found matching the selected filters.",
     "reset_filters": "Reset filters",
-    "loading": "Loading projects..."
+    "loading": "Loading projects...",
+    "filter_applied": "Filter applied",
+    "page_title_full": "Projects | Jaime Villanueva",
+    "project_links": "Project Links",
+    "main_features": "Main Features",
+    "project_videos": "Project Videos",
+    "image_gallery": "Image Gallery",
+    "video_not_supported": "Your browser does not support video playback.",
+    "technologies_used": "Technologies Used",
+    "tech_categories": {
+      "frameworks": "Frameworks",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "integrations": "Integrations",
+      "devops": "DevOps",
+      "tools": "Tools"
+    },
+    "frases-marcos-alcon": {
+      "description": "MarcosGoWeb is an elegant web application built with Go that displays a collection of phrases and poems by Marcos Alcón. The application presents the content in a beautiful interactive book format with page-turning animations, creating an immersive reading experience. Developed as a special gift for my grandfather's 95th birthday.",
+      "type": "Interactive Web Application",
+      "features": {
+        "0": {
+          "title": "Interactive book reader",
+          "description": "A web application showcasing Marcos Alcón's phrases and poems. A project created for my grandfather's 95th birthday, compiling the phrases he has been writing. The web app features an interactive book reader with page-turning animations. The site is responsive with exceptional UI and UX design."
+        }
+      }
+    },
+    "tour-to-valencia": {
+      "description": "Tour To Valencia is a modern multilingual (English/Spanish) web application built with Remix and React that allows users to discover, explore and book tours and experiences in Valencia, Spain. The platform offers a smooth booking experience with integrated payment processing through PayPal and Stripe, email confirmations and a complete administration panel to manage bookings and tour content.",
+      "type": "Website + Booking System + Back Office",
+      "features": {
+        "0": {
+          "title": "Multilingual booking system",
+          "description": "Complete booking platform in English and Spanish that allows users to intuitively explore and book tours. Includes advanced filter system, search by dates and categories, and complete management of the booking process."
+        },
+        "1": {
+          "title": "Integrated payment processing",
+          "description": "Complete integration with PayPal and Stripe for secure payment processing. Support for multiple payment methods, automatic email confirmations, and refund management from the administrative panel."
+        },
+        "2": {
+          "title": "Complete administration panel",
+          "description": "Administrative management system that allows creating, editing and managing tours, viewing booking statistics, managing clients, configuring prices and availability, and generating detailed sales reports."
+        }
+      }
+    },
+    "guillermo-fernandez-nutricion": {
+      "description": "Website to advertise nutritional consultation services and increase client acquisition. Allows clients to make an initial consultation through a contact form. Responsive design adaptable to desktop, tablet and mobile sizes. Developed with Astro for the front end and PHP for the contact form backend.",
+      "type": "Website + Email",
+      "features": {
+        "0": {
+          "title": "Professional website for nutritionist",
+          "description": "Modern and professional website designed specifically for nutrition services. Includes informative sections about services, methodology, client testimonials, and contact information. Optimized to convert visitors into potential clients."
+        },
+        "1": {
+          "title": "Integrated contact system",
+          "description": "Custom contact form that allows clients to request an initial consultation. Includes data validation, automatic confirmation emails, and notifications to the professional for quick follow-up."
+        },
+        "2": {
+          "title": "Responsive and optimized design",
+          "description": "Fully responsive design that perfectly adapts to mobile devices, tablets, and desktop. Optimized for loading speed and SEO to improve search engine visibility and user experience."
+        }
+      }
+    },
+    "alqueria-villacarmen": {
+      "description": "Creation of website to promote Alqueria Villa Carmen, a restaurant and event venue. It stands out for displaying the Day Menus, Weekend Menus and wine list, in addition to allowing online reservations. Includes a reservation manager with functions such as daily reservation limit, email confirmation and reservation administration.",
+      "type": "Website + Reservation Manager + Back Office",
+      "features": {
+        "0": {
+          "title": "Online reservation system",
+          "description": "Integrated reservation platform that allows customers to book tables online. Includes date, time, number of guests selection and special preferences. Automatic email confirmation system and real-time availability management."
+        },
+        "1": {
+          "title": "Dynamic menu management",
+          "description": "Management system that allows updating daily menus, weekend menus and wine list from an administrative panel. Changes are automatically reflected on the website without requiring technical knowledge."
+        },
+        "2": {
+          "title": "Reservation administration panel",
+          "description": "Complete tool for reservation management including calendar view, configurable daily limits, table and schedule management, occupancy statistics, and notification system for restaurant staff."
+        }
+      }
+    },
+    "car-hub": {
+      "description": "Discover our website dedicated to presenting the Car Hub software, a car buying and selling portal. The software functionalities are highlighted, emphasizing their virtues and utility for our clients. Developed with the latest technologies in HTML and PHP, it offers a responsive design that adapts to any device.",
+      "type": "Website",
+      "features": {
+        "0": {
+          "title": "Software presentation website",
+          "description": "Professional website designed to showcase the Car Hub software features and functionalities. Includes detailed descriptions of software capabilities, screenshots, and information about benefits for dealerships and end users."
+        }
+      }
+    },
+    "todo-list": {
+      "description": "Complete task management application developed with Next.js 15, TypeScript, Tailwind CSS 4 and PostgreSQL. Offers user authentication, task management with a drag & drop system, calendar integration, and multilingual support. The application allows creating, editing, deleting and marking tasks as completed.",
+      "type": "Full-Stack Web Application",
+      "features": {
+        "0": {
+          "title": "Advanced task management",
+          "description": "Complete task management system that allows creating, editing, deleting and organizing tasks with ease. Includes drag & drop functionality to rearrange tasks, priority assignment, due dates, and customizable categorization."
+        },
+        "1": {
+          "title": "User authentication and profiles",
+          "description": "Secure authentication system with registration, login, and personalized profile management. Each user has their own private workspace with customizable settings and saved preferences."
+        },
+        "2": {
+          "title": "Integrated calendar view",
+          "description": "Complete calendar integration that allows visualizing tasks by dates, planning long-term projects, and getting an overview of workload. Includes notifications for upcoming due tasks."
+        },
+        "3": {
+          "title": "Multilingual support",
+          "description": "The application is available in multiple languages, allowing users from different regions to use the platform in their native language. Language switching is instant and user preference is saved."
+        }
+      }
+    },
+    "cat-store": {
+      "description": "Web application for an online cat store developed with PHP, MySQL, HTML, CSS and JavaScript. Includes authentication system, session persistence through cookies, product catalog with filters, shopping cart, user profile management, purchase history, administration panel and responsive design.",
+      "type": "Online Store",
+      "features": {
+        "0": {
+          "title": "Complete online store",
+          "description": "E-commerce platform specialized in cat products with complete catalog, category system, advanced search filters, persistent shopping cart, and optimized checkout process to maximize conversions."
+        },
+        "1": {
+          "title": "User management and profiles",
+          "description": "Complete user registration and authentication system with customizable profiles, purchase history, wish lists, shipping address management, and account preferences. Includes password recovery and email verification."
+        },
+        "2": {
+          "title": "Administration panel",
+          "description": "Complete administrative tool to manage products, categories, orders, users, and sales statistics. Allows adding, editing and deleting products, managing inventory, processing orders, and generating detailed reports."
+        },
+        "3": {
+          "title": "Persistent cart and checkout",
+          "description": "Shopping cart system that maintains selected products between sessions using cookies. Simplified checkout process with automatic shipping calculation, discount application, and order confirmation via email."
+        }
+      }
+    },
+    "centro-neuro-expresion": {
+      "description": "Modern and accessible website for an early intervention center focused on children from birth to six years old. Provides comprehensive information about specialized services in four key areas of development: Cognitive, Linguistic, Prenatal and Sensorimotor Intervention.",
+      "type": "Corporate Website",
+      "features": {
+        "0": {
+          "title": "Professional website for early intervention center",
+          "description": "Modern and professional website designed specifically for an early intervention center. Includes detailed information about services, work methodologies, professional team, and specialization areas in child development."
+        },
+        "1": {
+          "title": "Specialized services information",
+          "description": "Complete section dedicated to explaining intervention services in the four main areas: cognitive, linguistic, prenatal, and sensorimotor. Each service includes detailed description, methodology, and benefits for child development."
+        },
+        "2": {
+          "title": "Accessible and responsive design",
+          "description": "Website developed with web accessibility principles to ensure all families can easily access information. Includes intuitive navigation, adequate contrast, and responsive design for all devices."
+        }
+      }
+    }
   },
   "contact": {
     "title": "Contact",
@@ -53,13 +208,17 @@
     "name_placeholder": "Your name",
     "email_label": "Email",
     "email_placeholder": "your@email.com",
+    "phone_label": "Phone Number",
     "message_label": "Message",
     "message_placeholder": "Tell me about your project...",
     "send_button": "Send Message",
     "sending": "Sending...",
     "success_message": "Message sent successfully!",
     "error_message": "Error sending message. Please try again.",
-    "required_field": "Required field"
+    "required_field": "Required field",
+    "invalid_inputs": "Invalid inputs",
+    "contact_cta_title": "Don't hesitate",
+    "contact_cta_subtitle": "Send me a message 👋"
   },
   "footer": {
     "rights": "All rights reserved.",

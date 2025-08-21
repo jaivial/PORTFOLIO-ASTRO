@@ -10,7 +10,7 @@ import {
 import { useTranslations } from "../utils/translations";
 
 function NavBar() {
-  const [isNavVisible, setIsNavVisible] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCVOpen, setIsCVOpen] = useState(false);
   const [isLanguageSelectorOpen, setIsLanguageSelectorOpen] = useState(false);
@@ -29,16 +29,13 @@ function NavBar() {
     setCurrentLanguageState(lang);
 
     const handleScroll = () => {
-      // Aparecer después de pasar la sección del header (ajustar valor según sea necesario)
+      // NavBar is always visible, but becomes fixed after scrolling
       const scrollPosition = window.scrollY;
-      const headerHeight = 150; // Ajustar según la altura real del header
+      const headerHeight = 150;
 
-      if (scrollPosition > headerHeight) {
-        setIsNavVisible(true);
-      } else {
-        setIsNavVisible(false);
-        // Cerrar el menú si está abierto y volvemos arriba
-        if (isMenuOpen) setIsMenuOpen(false);
+      // Always keep visible, but close menu when scrolling to top
+      if (scrollPosition <= headerHeight && isMenuOpen) {
+        setIsMenuOpen(false);
       }
     };
 
@@ -111,7 +108,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm transition-all duration-500 ${isNavVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}`}>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm transition-all duration-500 translate-y-0 opacity-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
@@ -187,47 +184,79 @@ function NavBar() {
           </div>
         </div>
 
-        {/* Mobile menu */}
-        <div className={`${isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"} transition-all duration-300 ease-in-out overflow-hidden bg-black bg-opacity-90`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="/" className="text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsMenuOpen(false)}>
-              {t('navigation.inicio')}
-            </a>
-            <a href="/projects" className="text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsMenuOpen(false)}>
-              {t('navigation.proyectos')}
-            </a>
-            <a href="/#about" className="text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsMenuOpen(false)}>
-              {t('navigation.sobre_mi')}
-            </a>
-            <a href="/#contact" className="text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsMenuOpen(false)}>
-              {t('navigation.contacto')}
-            </a>
-            <button onClick={handleOpenCV} className="w-full text-left text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium transition-colors">
-              {t('navigation.descargar_cv')}
-            </button>
-            
-            {/* Language selector for mobile */}
-            <div className="border-t border-gray-700 mt-2 pt-2">
-              <div className="px-3 py-2 text-primary text-sm font-medium">{t('navigation.idioma_language')}</div>
-              {Object.entries(AVAILABLE_LANGUAGES).map(([code, { name, flag }]) => (
-                <button
-                  key={code}
-                  onClick={() => handleLanguageChange(code)}
-                  className={`w-full flex items-center gap-3 px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                    currentLanguage === code
-                      ? 'bg-primary bg-opacity-10 text-primary'
-                      : 'text-primary hover:bg-gray-800'
-                  }`}
-                >
-                  <span className="text-lg">{flag}</span>
-                  <span>{name}</span>
-                  {currentLanguage === code && (
-                    <svg className="ml-auto w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  )}
-                </button>
-              ))}
+        {/* Side menu overlay - behind the menu */}
+        {isMenuOpen && (
+          <div 
+            className="fixed inset-0 h-screen w-screen bg-black bg-opacity-75 z-40" 
+            onClick={() => setIsMenuOpen(false)}
+          ></div>
+        )}
+
+        {/* Side menu - full height with solid background */}
+        <div className={`fixed top-0 right-0 h-screen w-80 transform transition-transform duration-300 ease-in-out z-50 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}>
+          {/* Full height solid background */}
+          <div className="absolute inset-0 bg-black"></div>
+          
+          {/* Menu content */}
+          <div className="relative flex flex-col h-full">
+            {/* Header */}
+            <div className="flex items-center justify-between p-4 border-b border-gray-700 bg-black">
+              <span className="text-primary font-bold text-xl">Menu</span>
+              <button 
+                onClick={() => setIsMenuOpen(false)}
+                className="text-primary hover:text-white transition-colors p-1"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Menu items */}
+            <div className="flex-1 p-4 space-y-2 bg-black">
+              <a href="/" className="text-primary hover:bg-gray-800 flex items-center px-3 py-3 rounded-md text-base font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
+                <span>{t('navigation.inicio')}</span>
+              </a>
+              <a href="/projects" className="text-primary hover:bg-gray-800 flex items-center px-3 py-3 rounded-md text-base font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
+                <span>{t('navigation.proyectos')}</span>
+              </a>
+              <a href="/#about" className="text-primary hover:bg-gray-800 flex items-center px-3 py-3 rounded-md text-base font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
+                <span>{t('navigation.sobre_mi')}</span>
+              </a>
+              <a href="/#contact" className="text-primary hover:bg-gray-800 flex items-center px-3 py-3 rounded-md text-base font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
+                <span>{t('navigation.contacto')}</span>
+              </a>
+              <button onClick={handleOpenCV} className="w-full text-left text-primary hover:bg-gray-800 flex items-center px-3 py-3 rounded-md text-base font-medium transition-colors">
+                <span>{t('navigation.descargar_cv')}</span>
+              </button>
+              
+              {/* Language selector */}
+              <div className="border-t border-gray-700 mt-4 pt-4">
+                <div className="px-3 py-2 text-primary text-sm font-medium">{t('navigation.idioma_language')}</div>
+                <div className="space-y-1">
+                  {Object.entries(AVAILABLE_LANGUAGES).map(([code, { name, flag }]) => (
+                    <button
+                      key={code}
+                      onClick={() => handleLanguageChange(code)}
+                      className={`w-full flex items-center gap-3 px-3 py-3 rounded-md text-base font-medium transition-colors ${
+                        currentLanguage === code
+                          ? 'bg-primary bg-opacity-20 text-primary'
+                          : 'text-primary hover:bg-gray-800'
+                      }`}
+                    >
+                      <span className="text-lg">{flag}</span>
+                      <span>{name}</span>
+                      {currentLanguage === code && (
+                        <svg className="ml-auto w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
