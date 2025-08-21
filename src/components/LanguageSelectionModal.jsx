@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { AVAILABLE_LANGUAGES, setCurrentLanguage, getBrowserLanguage } from '../utils/languageManager';
+import { useTranslations } from '../utils/translations';
 
-export default function LanguageSelectionModal({ onClose }) {
+function LanguageSelectionModal({ onClose }) {
   const [selectedLanguage, setSelectedLanguage] = useState(getBrowserLanguage());
+  const t = useTranslations();
 
   const handleLanguageSelect = (languageCode) => {
     setSelectedLanguage(languageCode);
@@ -17,8 +19,8 @@ export default function LanguageSelectionModal({ onClose }) {
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-80 backdrop-blur-sm">
       <div className="bg-gray-900 rounded-xl p-8 max-w-md w-full mx-4 border border-gray-700 shadow-2xl">
         <div className="text-center mb-6">
-          <h2 className="text-2xl font-bold text-white mb-2">🌍 Selecciona tu idioma</h2>
-          <p className="text-gray-300 text-sm">Choose your language / Wähle deine Sprache</p>
+          <h2 className="text-2xl font-bold text-white mb-2">{t('language_modal.title')}</h2>
+          <p className="text-gray-300 text-sm">{t('language_modal.subtitle')}</p>
         </div>
 
         <div className="space-y-3 mb-8">
@@ -56,14 +58,16 @@ export default function LanguageSelectionModal({ onClose }) {
             onClick={handleConfirm}
             className="flex-1 bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-6 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 shadow-lg"
           >
-            Confirmar
+            {t('language_modal.confirm_button')}
           </button>
         </div>
 
         <p className="text-xs text-gray-500 text-center mt-4">
-          Puedes cambiar el idioma en cualquier momento desde el menú superior
+          {t('language_modal.footer_text')}
         </p>
       </div>
     </div>
   );
 }
+
+export default LanguageSelectionModal;

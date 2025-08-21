@@ -1,0 +1,93 @@
+{
+  "navigation": {
+    "inicio": "Home",
+    "proyectos": "Projects",
+    "sobre_mi": "About Me",
+    "contacto": "Contact",
+    "descargar_cv": "Download CV",
+    "idioma_language": "Language / Idioma"
+  },
+  "hero": {
+    "greeting": "Hello! 👋 I'm",
+    "name": "Jaime Villanueva",
+    "title": "Full Stack Web Developer",
+    "description": "Specialized in creating modern and scalable web experiences using the latest technologies",
+    "cta_projects": "View Projects",
+    "cta_contact": "Contact"
+  },
+  "about": {
+    "title": "Get to know me!",
+    "description_p1": "I'm Jaime Villanueva, a FullStack developer specialized in web design and development. My approach combines solid front-end experience to create attractive interfaces, with back-end skills to build functional and dynamic solutions.",
+    "description_p2": "I offer complete solutions that include dynamic menus, management systems, ERPs, client areas, e-commerce and payment gateways. I also manage content for social media, improving companies' online visibility.",
+    "description_p3": "My goal is to transform ideas into successful digital products. Explore my projects and contact me to take your vision to the next level.",
+    "technologies_title": "Languages and Frameworks",
+    "experience_years": "years of experience",
+    "projects_completed": "projects completed",
+    "technologies": "technologies mastered"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "My Recent Work",
+    "description": "A selection of my most outstanding projects",
+    "view_all": "View All Projects",
+    "view_details": "View details",
+    "github_repo": "Repo",
+    "live_demo": "Demo",
+    "page_title": "Explore my projects",
+    "page_description": "Welcome to my web development project portfolio! Each project showcases my skills, creativity and dedication to deliver quality web solutions.",
+    "filter_title": "Filter projects",
+    "filter_technologies": "Technologies",
+    "filter_all": "All",
+    "showing_all": "Showing all projects",
+    "showing_filtered": "Showing {count} of {total} projects",
+    "all_projects": "All projects",
+    "no_results": "No projects found matching the selected filters.",
+    "reset_filters": "Reset filters",
+    "loading": "Loading projects..."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk!",
+    "description": "Do you have a project in mind? I'd love to hear about it.",
+    "name_label": "Name",
+    "name_placeholder": "Your name",
+    "email_label": "Email",
+    "email_placeholder": "your@email.com",
+    "message_label": "Message",
+    "message_placeholder": "Tell me about your project...",
+    "send_button": "Send Message",
+    "sending": "Sending...",
+    "success_message": "Message sent successfully!",
+    "error_message": "Error sending message. Please try again.",
+    "required_field": "Required field"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built_with": "Built with",
+    "social_links": "Social links"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "projects": "Projects",
+    "project": "Project"
+  },
+  "language_modal": {
+    "title": "🌍 Select your language",
+    "subtitle": "Elige tu idioma / Wähle deine Sprache",
+    "confirm_button": "Confirm",
+    "footer_text": "Your preference will be saved automatically. You can change it anytime from the top menu"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "timeline": {
+    "title": "My Journey",
+    "description": "A journey through my professional and educational career"
+  }
+}

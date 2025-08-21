@@ -1,0 +1,93 @@
+{
+  "navigation": {
+    "inicio": "Startseite",
+    "proyectos": "Projekte",
+    "sobre_mi": "Über mich",
+    "contacto": "Kontakt",
+    "descargar_cv": "Lebenslauf herunterladen",
+    "idioma_language": "Sprache / Language"
+  },
+  "hero": {
+    "greeting": "Hallo! 👋 Ich bin",
+    "name": "Jaime Villanueva",
+    "title": "Full Stack Web Entwickler",
+    "description": "Spezialisiert auf die Erstellung moderner und skalierbarer Web-Erfahrungen mit den neuesten Technologien",
+    "cta_projects": "Projekte ansehen",
+    "cta_contact": "Kontakt"
+  },
+  "about": {
+    "title": "Lerne mich kennen!",
+    "description_p1": "Ich bin Jaime Villanueva, ein FullStack-Entwickler, der sich auf Webdesign und -entwicklung spezialisiert hat. Mein Ansatz kombiniert solide Frontend-Erfahrung zur Erstellung attraktiver Benutzeroberflächen mit Backend-Fähigkeiten zum Aufbau funktionaler und dynamischer Lösungen.",
+    "description_p2": "Ich biete komplette Lösungen, die dynamische Menüs, Verwaltungssysteme, ERPs, Kundenbereiche, E-Commerce und Zahlungsgateways umfassen. Ich verwalte auch Inhalte für soziale Medien und verbessere die Online-Sichtbarkeit von Unternehmen.",
+    "description_p3": "Mein Ziel ist es, Ideen in erfolgreiche digitale Produkte zu verwandeln. Erkunden Sie meine Projekte und kontaktieren Sie mich, um Ihre Vision auf die nächste Stufe zu heben.",
+    "technologies_title": "Sprachen und Frameworks",
+    "experience_years": "Jahre Erfahrung",
+    "projects_completed": "abgeschlossene Projekte",
+    "technologies": "beherrschte Technologien"
+  },
+  "projects": {
+    "title": "Projekte",
+    "subtitle": "Meine neuesten Arbeiten",
+    "description": "Eine Auswahl meiner herausragendsten Projekte",
+    "view_all": "Alle Projekte ansehen",
+    "view_details": "Details ansehen",
+    "github_repo": "Repo",
+    "live_demo": "Demo",
+    "page_title": "Erkunden Sie meine Projekte",
+    "page_description": "Willkommen in meinem Webentwicklungs-Projektportfolio! Jedes Projekt zeigt meine Fähigkeiten, Kreativität und mein Engagement für qualitativ hochwertige Web-Lösungen.",
+    "filter_title": "Projekte filtern",
+    "filter_technologies": "Technologien",
+    "filter_all": "Alle",
+    "showing_all": "Alle Projekte anzeigen",
+    "showing_filtered": "{count} von {total} Projekten anzeigen",
+    "all_projects": "Alle Projekte",
+    "no_results": "Keine Projekte gefunden, die den ausgewählten Filtern entsprechen.",
+    "reset_filters": "Filter zurücksetzen",
+    "loading": "Projekte werden geladen..."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Lass uns sprechen!",
+    "description": "Haben Sie ein Projekt im Kopf? Ich würde gerne davon hören.",
+    "name_label": "Name",
+    "name_placeholder": "Ihr Name",
+    "email_label": "E-Mail",
+    "email_placeholder": "ihre@email.com",
+    "message_label": "Nachricht",
+    "message_placeholder": "Erzählen Sie mir von Ihrem Projekt...",
+    "send_button": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success_message": "Nachricht erfolgreich gesendet!",
+    "error_message": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.",
+    "required_field": "Pflichtfeld"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "built_with": "Erstellt mit",
+    "social_links": "Soziale Links"
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "project": "Projekt"
+  },
+  "language_modal": {
+    "title": "🌍 Wähle deine Sprache",
+    "subtitle": "Choose your language / Elige tu idioma",
+    "confirm_button": "Bestätigen",
+    "footer_text": "Ihre Präferenz wird automatisch gespeichert. Sie können sie jederzeit über das obere Menü ändern"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "retry": "Wiederholen",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Vorherige"
+  },
+  "timeline": {
+    "title": "Mein Werdegang",
+    "description": "Eine Reise durch meine berufliche und Bildungslaufbahn"
+  }
+}

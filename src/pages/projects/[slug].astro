@@ -27,7 +27,7 @@ const { project } = Astro.props;
     <main class="relative min-h-screen overflow-x-hidden">
     <!-- Container principal responsive -->
     <div class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <NavBar client:load />
+      <NavBar client:only="react" />
       <PageNav title="PROYECTO" previousLink="/projects" client:load />
 
       <ProjectHeader project={project} />
@@ -57,3 +57,8 @@ const { project } = Astro.props;
     <Footer />
   </LanguageProvider>
 </Layout>
+
+<script>
+  // Initialize client-side language handling
+  import { initClientLanguage } from "../../utils/clientLanguageInit.js";
+</script>

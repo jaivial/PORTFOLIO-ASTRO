@@ -1,0 +1,93 @@
+{
+  "navigation": {
+    "inicio": "Inicio",
+    "proyectos": "Proyectos",
+    "sobre_mi": "Sobre Mi",
+    "contacto": "Contacto",
+    "descargar_cv": "Descargar CV",
+    "idioma_language": "Idioma / Language"
+  },
+  "hero": {
+    "greeting": "¡Hola! 👋 Soy",
+    "name": "Jaime Villanueva",
+    "title": "Desarrollador Web Full Stack",
+    "description": "Especializado en crear experiencias web modernas y escalables utilizando las últimas tecnologías",
+    "cta_projects": "Ver Proyectos",
+    "cta_contact": "Contactar"
+  },
+  "about": {
+    "title": "¡Conóceme!",
+    "description_p1": "Soy Jaime Villanueva, desarrollador FullStack especializado en diseño y desarrollo web. Mi enfoque combina una sólida experiencia en front-end para crear interfaces atractivas, con habilidades de back-end para construir soluciones funcionales y dinámicas.",
+    "description_p2": "Ofrezco soluciones completas que incluyen menús dinámicos, sistemas de gestión, ERPs, áreas de clientes, e-commerce y pasarelas de pago. También gestiono contenido para redes sociales, mejorando la visibilidad online de las empresas.",
+    "description_p3": "Mi objetivo es transformar ideas en productos digitales exitosos. Explora mis proyectos y contáctame para llevar tu visión al siguiente nivel.",
+    "technologies_title": "Lenguajes y Frameworks",
+    "experience_years": "años de experiencia",
+    "projects_completed": "proyectos completados",
+    "technologies": "tecnologías dominadas"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Mis Trabajos Recientes",
+    "description": "Una selección de mis proyectos más destacados",
+    "view_all": "Ver Todos los Proyectos",
+    "view_details": "Ver detalles",
+    "github_repo": "Repo",
+    "live_demo": "Demo",
+    "page_title": "Explora mis proyectos",
+    "page_description": "¡Bienvenido a mi portfolio de proyectos de desarrollo web! Cada proyecto exhibe mis habilidades, creatividad y dedicación para ofrecer soluciones web de calidad.",
+    "filter_title": "Filtrar proyectos",
+    "filter_technologies": "Tecnologías",
+    "filter_all": "Todas",
+    "showing_all": "Mostrando todos los proyectos",
+    "showing_filtered": "Mostrando {count} de {total} proyectos",
+    "all_projects": "Todos los proyectos",
+    "no_results": "No se encontraron proyectos que coincidan con los filtros seleccionados.",
+    "reset_filters": "Restablecer filtros",
+    "loading": "Cargando proyectos..."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¡Hablemos!",
+    "description": "¿Tienes un proyecto en mente? Me encantaría escuchar sobre él.",
+    "name_label": "Nombre",
+    "name_placeholder": "Tu nombre",
+    "email_label": "Email",
+    "email_placeholder": "tu@email.com",
+    "message_label": "Mensaje",
+    "message_placeholder": "Cuéntame sobre tu proyecto...",
+    "send_button": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success_message": "¡Mensaje enviado correctamente!",
+    "error_message": "Error al enviar el mensaje. Inténtalo de nuevo.",
+    "required_field": "Campo requerido"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "built_with": "Construido con",
+    "social_links": "Enlaces sociales"
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "project": "Proyecto"
+  },
+  "language_modal": {
+    "title": "🌍 Selecciona tu idioma",
+    "subtitle": "Choose your language / Wähle deine Sprache",
+    "confirm_button": "Confirmar",
+    "footer_text": "Tu preferencia se guardará automáticamente. Puedes cambiarla en cualquier momento desde el menú superior"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar",
+    "close": "Cerrar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior"
+  },
+  "timeline": {
+    "title": "Mi Trayectoria",
+    "description": "Un recorrido por mi carrera profesional y educativa"
+  }
+}

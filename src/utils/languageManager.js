@@ -6,50 +6,65 @@ export const AVAILABLE_LANGUAGES = {
 
 export const DEFAULT_LANGUAGE = 'es';
 
-export const LANGUAGE_COOKIE_NAME = 'site-language';
-export const LANGUAGE_COOKIE_EXPIRES = 365; // days
+export const LANGUAGE_STORAGE_KEY = 'site-language';
 
-export function setCookie(name, value, days) {
-  const expires = new Date();
-  expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
-  document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/;SameSite=Lax`;
-}
-
-export function getCookie(name) {
-  if (typeof document === 'undefined') return null;
-  
-  const nameEQ = name + "=";
-  const ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+export function setLocalStorage(key, value) {
+  if (typeof localStorage === 'undefined') return;
+  try {
+    localStorage.setItem(key, value);
+    console.log('🔧 localStorage SET:', key, '=', value);
+  } catch (error) {
+    console.warn('Failed to save to localStorage:', error);
   }
-  return null;
 }
 
-export function deleteCookie(name) {
-  document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+export function getLocalStorage(key) {
+  if (typeof localStorage === 'undefined') return null;
+  try {
+    const value = localStorage.getItem(key);
+    console.log('📖 localStorage GET:', key, '=', value);
+    return value;
+  } catch (error) {
+    console.warn('Failed to read from localStorage:', error);
+    return null;
+  }
+}
+
+export function removeLocalStorage(key) {
+  if (typeof localStorage === 'undefined') return;
+  try {
+    localStorage.removeItem(key);
+  } catch (error) {
+    console.warn('Failed to remove from localStorage:', error);
+  }
 }
 
 export function getCurrentLanguage() {
-  return getCookie(LANGUAGE_COOKIE_NAME) || DEFAULT_LANGUAGE;
+  const storedLang = getLocalStorage(LANGUAGE_STORAGE_KEY);
+  const currentLang = storedLang || DEFAULT_LANGUAGE;
+  console.log('🌐 getCurrentLanguage() returning:', currentLang);
+  return currentLang;
 }
 
 export function setCurrentLanguage(languageCode) {
+  console.log('🔄 setCurrentLanguage() called with:', languageCode);
   if (languageCode in AVAILABLE_LANGUAGES) {
-    setCookie(LANGUAGE_COOKIE_NAME, languageCode, LANGUAGE_COOKIE_EXPIRES);
+    setLocalStorage(LANGUAGE_STORAGE_KEY, languageCode);
     // Trigger language change event
-    window.dispatchEvent(new CustomEvent('language-changed', { 
-      detail: { language: languageCode } 
-    }));
+    if (typeof window !== 'undefined') {
+      console.log('📢 Dispatching language-changed event for:', languageCode);
+      window.dispatchEvent(new CustomEvent('language-changed', { 
+        detail: { language: languageCode } 
+      }));
+    }
     return true;
   }
+  console.warn('❌ Invalid language code:', languageCode);
   return false;
 }
 
-export function hasLanguageCookie() {
-  return getCookie(LANGUAGE_COOKIE_NAME) !== null;
+export function hasLanguageStorage() {
+  return getLocalStorage(LANGUAGE_STORAGE_KEY) !== null;
 }
 
 export function getLanguageInfo(languageCode) {

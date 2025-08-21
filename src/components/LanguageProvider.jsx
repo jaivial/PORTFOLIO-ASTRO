@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react';
-import { hasLanguageCookie, getCurrentLanguage } from '../utils/languageManager';
+import { hasLanguageStorage, getCurrentLanguage } from '../utils/languageManager';
 import LanguageSelectionModal from './LanguageSelectionModal';
 
-export default function LanguageProvider({ children }) {
+function LanguageProvider({ children }) {
   const [showLanguageModal, setShowLanguageModal] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Check if language cookie exists
-    const hasLangCookie = hasLanguageCookie();
+    // Check if language is stored in localStorage
+    const hasLangStorage = hasLanguageStorage();
     
-    if (!hasLangCookie) {
+    if (!hasLangStorage) {
       // Show modal if no language is set
       setShowLanguageModal(true);
     }
@@ -36,3 +36,5 @@ export default function LanguageProvider({ children }) {
     </>
   );
 }
+
+export default LanguageProvider;

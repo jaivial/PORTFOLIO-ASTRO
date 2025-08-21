@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
+import About from "../components/About.jsx";
 import Project from "../components/Project.astro";
 import Timeline from "../components/Timeline.astro";
 import Contact from "../components/Contact.jsx";
@@ -15,10 +15,10 @@ import LanguageProvider from "../components/LanguageProvider";
 <Layout title="Jaime Digital Studio">
   <LanguageProvider client:load>
     <main class="relative">
-      <NavBar client:load />
+      <NavBar client:only="react" />
       <Header transition:animate="fade" />
       <Hero />
-      <About />
+      <About client:load />
       <Timeline />
       <Project />
       <Contact client:load />
@@ -43,3 +43,8 @@ import LanguageProvider from "../components/LanguageProvider";
     --animate-duration: 0s;
   }
 </style>
+
+<script>
+  // Initialize client-side language handling
+  import { initClientLanguage } from "../utils/clientLanguageInit.js";
+</script>

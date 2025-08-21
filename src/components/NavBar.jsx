@@ -7,15 +7,21 @@ import {
   AVAILABLE_LANGUAGES, 
   getLanguageInfo 
 } from "../utils/languageManager";
+import { useTranslations } from "../utils/translations";
 
-export default function NavBar() {
+function NavBar() {
   const [isNavVisible, setIsNavVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCVOpen, setIsCVOpen] = useState(false);
   const [isLanguageSelectorOpen, setIsLanguageSelectorOpen] = useState(false);
-  const [currentLanguage, setCurrentLanguageState] = useState('es');
+  const [currentLanguage, setCurrentLanguageState] = useState(() => {
+    // Initialize with stored language immediately
+    return typeof window !== 'undefined' ? getCurrentLanguage() : 'es';
+  });
   // Keep track of requested language and section
   const [cvParams, setCvParams] = useState({ language: null, section: null });
+  
+  const t = useTranslations();
 
   useEffect(() => {
     // Initialize current language
@@ -185,24 +191,24 @@ export default function NavBar() {
         <div className={`${isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"} transition-all duration-300 ease-in-out overflow-hidden bg-black bg-opacity-90`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="/" className="text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsMenuOpen(false)}>
-              Inicio
+              {t('navigation.inicio')}
             </a>
             <a href="/projects" className="text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsMenuOpen(false)}>
-              Proyectos
+              {t('navigation.proyectos')}
             </a>
             <a href="/#about" className="text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsMenuOpen(false)}>
-              Sobre Mi
+              {t('navigation.sobre_mi')}
             </a>
             <a href="/#contact" className="text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium" onClick={() => setIsMenuOpen(false)}>
-              Contacto
+              {t('navigation.contacto')}
             </a>
             <button onClick={handleOpenCV} className="w-full text-left text-primary hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium transition-colors">
-              Descargar CV
+              {t('navigation.descargar_cv')}
             </button>
             
             {/* Language selector for mobile */}
             <div className="border-t border-gray-700 mt-2 pt-2">
-              <div className="px-3 py-2 text-primary text-sm font-medium">Idioma / Language</div>
+              <div className="px-3 py-2 text-primary text-sm font-medium">{t('navigation.idioma_language')}</div>
               {Object.entries(AVAILABLE_LANGUAGES).map(([code, { name, flag }]) => (
                 <button
                   key={code}
@@ -232,3 +238,5 @@ export default function NavBar() {
     </>
   );
 }
+
+export default NavBar;
