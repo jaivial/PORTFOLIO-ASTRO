@@ -408,6 +408,184 @@ const cvData = {
             "Fotografía",
             "Viajes"
         ]
+    },
+    de: {
+        personal: {
+            name: "Jaime Digital Studio",
+            title: "Full Stack Entwickler",
+            summary: "Leidenschaftlicher Full-Stack-Entwickler mit umfangreicher Erfahrung in modernen Webtechnologien. Spezialisiert auf die Entwicklung interaktiver und leistungsstarker Anwendungen mit React, Next.js und Astro. Starker Fokus auf Benutzererfahrung und sauberen, wartbaren Code.",
+            email: "jaimevillalcon@hotmail.com",
+            phone: "+34 692747052",
+            location: "Valencia, Spanien",
+            website: "jaimedigitalstudio.com",
+            socials: [
+                {
+                    name: "LinkedIn",
+                    url: "https://linkedin.com/in/jaimedigitalstudio",
+                    icon: "linkedin"
+                },
+                {
+                    name: "GitHub",
+                    url: "https://github.com/jaivial",
+                    icon: "github"
+                },
+                {
+                    name: "Instagram",
+                    url: "https://instagram.com/jaimedigitalstudio",
+                    icon: "instagram"
+                }
+            ]
+        },
+        experience: [
+            {
+                position: "Frontend React Entwickler",
+                company: "Knowmad Mood",
+                location: "Remote",
+                period: "2023 - Gegenwart",
+                description: "Frontend-Entwicklung mit React, Implementierung bewährter Praktiken und Code-Skalierbarkeit.",
+                achievements: [
+                    "Entwicklung wiederverwendbarer Komponenten",
+                    "Testen mit Jest und React Testing Library",
+                    "Implementierung reaktiver Datenflüsse mit RxJS",
+                    "Performance-Optimierung in Webanwendungen"
+                ]
+            },
+            {
+                position: "Web Entwickler",
+                company: "Centro Neuro Expresión",
+                location: "Valencia, Spanien",
+                period: "2024",
+                description: "Entwicklung einer informativen Website für ein psychopädagogisches Zentrum mit integriertem Kontaktformular.",
+                achievements: [
+                    "Informative Seite über psychopädagogische Dienstleistungen",
+                    "Kontaktformular mit E-Mail-Integration",
+                    "Responsive Design für alle Geräte",
+                    "SEO-Optimierung für bessere Sichtbarkeit"
+                ]
+            },
+            {
+                position: "Full Stack Entwickler",
+                company: "Freelance",
+                location: "Valencia, Spanien",
+                period: "2020 - 2023",
+                description: "Vollständige Web-Entwicklung für verschiedene Unternehmen und persönliche Projekte.",
+                achievements: [
+                    "Entwicklung von mehr als 20 kompletten Web-Projekten",
+                    "Integration von Zahlungssystemen (PayPal, Stripe)",
+                    "Entwicklung responsiver und benutzerfreundlicher Designs",
+                    "Implementierung von Content-Management-Systemen"
+                ]
+            }
+        ],
+        education: [
+            {
+                degree: "Höhere Berufsbildung in Multiplattform-Anwendungsentwicklung",
+                institution: "Florida Universitaria",
+                location: "Valencia, Spanien",
+                period: "2022-2024",
+                description: "Spezialisierung auf die Entwicklung von Anwendungen für mehrere Plattformen mit Schwerpunkt auf Web- und Mobile-Technologien.",
+                achievements: [
+                    "Durchschnittsnote: 8.5/10",
+                    "Abschlussprojekt mit Auszeichnung bewertet",
+                    "Spezialisierung auf React und Node.js"
+                ]
+            }
+        ],
+        skills: {
+            technical: [
+                { name: "React", level: 95 },
+                { name: "JavaScript", level: 90 },
+                { name: "TypeScript", level: 85 },
+                { name: "Next.js", level: 90 },
+                { name: "Astro", level: 88 },
+                { name: "Node.js", level: 85 },
+                { name: "Express.js", level: 80 },
+                { name: "MongoDB", level: 75 },
+                { name: "PostgreSQL", level: 70 },
+                { name: "Git", level: 85 },
+                { name: "Docker", level: 70 },
+                { name: "Tailwind CSS", level: 90 },
+                { name: "HTML5", level: 95 },
+                { name: "CSS3", level: 90 },
+                { name: "PHP", level: 75 },
+                { name: "MySQL", level: 75 }
+            ],
+            languages: [
+                { name: "Spanisch", level: "Muttersprache" },
+                { name: "Englisch", level: "Fließend (C1)" },
+                { name: "Deutsch", level: "Grundkenntnisse (A2)" }
+            ],
+            soft: [
+                "Problemlösung",
+                "Teamarbeit",
+                "Effektive Kommunikation",
+                "Anpassungsfähigkeit",
+                "Kontinuierliches Lernen",
+                "Kritisches Denken",
+                "Projektmanagement",
+                "Kundenorientierung"
+            ]
+        },
+        projects: [
+            {
+                title: "Marcos Alcón Frases",
+                description: "Digitales Buchprojekt mit interaktiven Seiten und responsivem Design.",
+                technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
+                link: "https://frasesmarcosalcon.com",
+                thumbnail: "/images/frasesmarcosalcon/frasesmarcosalcon1.jpg"
+            },
+            {
+                title: "Tour To Valencia",
+                description: "Tourismusplattform mit Zahlungsintegration und Buchungssystem.",
+                technologies: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Responsive Design"],
+                link: "https://www.tourtovalencia.com",
+                thumbnail: "/images/tourtovalencia/tourtovalencia11.jpg"
+            },
+            {
+                title: "Todo List",
+                description: "Aufgabenverwaltungsanwendung mit Benutzerauthentifizierung und Datenbank.",
+                technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Responsive Design"],
+                link: "https://todolist.jaimedigitalstudio.com/",
+                thumbnail: "/images/todolist/todolist6.jpg"
+            },
+            {
+                title: "Guillermo Fernandez Ernährung",
+                description: "Informative Website für Ernährungsberatung mit Kontaktformular.",
+                technologies: ["Javascript", "CSS", "Astro", "Express.js", "Responsive Design"],
+                link: "https://guillermofernandeznutricion.es/",
+                thumbnail: "/images/guillermofernandeznutricion.webp"
+            },
+            {
+                title: "Alqueria Villa Carmen",
+                description: "Website für ein ländliches Tourismusunternehmen mit Buchungssystem.",
+                technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL", "Responsive Design"],
+                link: "https://alqueriavillacarmen.com/",
+                thumbnail: "/images/villacarmen/villacarmen-18.jpg"
+            },
+            {
+                title: "Cat Store",
+                description: "E-Commerce-Plattform für Katzenprodukte mit Warenkorb und Zahlungssystem.",
+                technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL", "Responsive Design"],
+                link: "https://catstore.jaimedigitalstudio.com",
+                thumbnail: "/images/catstore/catstore1.jpg"
+            }
+        ],
+        certifications: [
+            {
+                name: "Höhere Berufsbildung in Multiplattform-Anwendungsentwicklung",
+                issuer: "Florida Universitaria",
+                date: "2024",
+                url: "https://www.floridauniversitaria.es/"
+            }
+        ],
+        interests: [
+            "Webentwicklung",
+            "Open-Source-Beiträge",
+            "UX/UI-Design",
+            "KI-Integration",
+            "Fotografie",
+            "Reisen"
+        ]
     }
 };
 

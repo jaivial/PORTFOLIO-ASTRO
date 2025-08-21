@@ -1,6 +1,163 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslations } from '../utils/translations';
 import TimelineInteractive from './TimelineInteractive';
+import ReactApexChart from 'react-apexcharts';
+import { getIcon } from '../utils/icons';
+
+// Component for individual skill radial chart
+const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) => {
+  const t = useTranslations();
+  const icon = getIcon(skillName.toLowerCase());
+  const [currentPercentage, setCurrentPercentage] = useState(0);
+
+  useEffect(() => {
+    if (isVisible) {
+      const animationDuration = 1;
+      const steps = 18;
+      const increment = percentage / steps;
+      let step = 0;
+
+      const timer = setInterval(() => {
+        step++;
+        setCurrentPercentage(Math.min(step * increment, percentage));
+        
+        if (step >= steps) {
+          clearInterval(timer);
+        }
+      }, animationDuration / steps);
+
+      return () => clearInterval(timer);
+    } else {
+      setCurrentPercentage(0);
+    }
+  }, [isVisible, percentage]);
+  
+  const chartOptions = {
+    chart: {
+      height: 120,
+      type: 'radialBar',
+      toolbar: {
+        show: false
+      },
+      sparkline: {
+        enabled: true
+      }
+    },
+    plotOptions: {
+      radialBar: {
+        startAngle: 0,
+        endAngle: 360,
+        hollow: {
+          margin: 0,
+          size: '60%',
+          background: 'transparent',
+        },
+        track: {
+          background: 'rgba(209, 213, 219, 0.1)',
+          strokeWidth: '100%',
+          margin: 0,
+        },
+        dataLabels: {
+          show: false
+        }
+      }
+    },
+    fill: {
+      type: 'gradient',
+      gradient: {
+        shade: 'dark',
+        type: 'horizontal',
+        shadeIntensity: 0.5,
+        gradientToColors: ['#818cf8'],
+        inverseColors: false,
+        opacityFrom: 1,
+        opacityTo: 1,
+        stops: [0, 100]
+      }
+    },
+    stroke: {
+      lineCap: 'round'
+    },
+    labels: [skillName],
+    colors: ['#6366f1']
+  };
+
+  const series = [currentPercentage];
+
+  return (
+    <div className="flex flex-col items-center p-1 xs:p-2 bg-primary bg-opacity-5 rounded-lg border border-primary border-opacity-10 hover:bg-opacity-10 transition-all">
+      <div className="text-xs xs:text-sm md:text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400 mb-1">
+        {Math.round(currentPercentage)}%
+      </div>
+      <div className="relative scale-75 xs:scale-100">
+        <ReactApexChart 
+          options={chartOptions} 
+          series={series} 
+          type="radialBar" 
+          height={120} 
+          width={120}
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="flex flex-col items-center">
+            {icon && (
+              <div>
+                {icon.type === 'svg' ? (
+                  <div className="w-3 h-3 xs:w-5 xs:h-5 md:w-6 md:h-6" dangerouslySetInnerHTML={{ __html: icon.content }} />
+                ) : (
+                  <img 
+                    src={icon.src} 
+                    alt={skillName}
+                    className={`${icon.classes} w-3 h-3 xs:w-5 xs:h-5 md:w-6 md:h-6`}
+                  />
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+      <h4 className="text-xs xs:text-xs md:text-sm font-semibold text-primary text-center mt-1">{skillName}</h4>
+    </div>
+  );
+};
+
+const SkillSection = ({ title, icon, skills, bgColor }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div ref={sectionRef} className={`${bgColor} p-6 rounded-xl border border-primary/20`}>
+      <div className="flex items-center gap-3 mb-6 justify-center">
+        {icon}
+        <h3 className="text-xl font-bold text-primary">{title}</h3>
+      </div>
+      
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-2 xs:gap-3">
+        {skills.map((skill) => (
+          <SkillRadialChart key={skill} skillName={skill} isVisible={isVisible} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 function Timeline() {
   const t = useTranslations();
@@ -33,233 +190,74 @@ function Timeline() {
         <TimelineInteractive />
 
         {/* Sección de habilidades */}
-        <div data-aos="fade-up" className="mt-20 max-w-4xl mx-auto">
+        <div data-aos="fade-up" className="mt-20 max-w-7xl mx-auto">
           <h2 className="text-2xl text-primary font-bold text-center mb-8">{t('timeline.skills_title')}</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Frontend */}
-            <div className="bg-primary bg-opacity-5 rounded-xl p-6 border border-primary border-opacity-10 transition-all hover:bg-opacity-10">
-              <div className="flex items-center gap-3 mb-4">
+          <div className="flex flex-col space-y-8">
+            {/* Frontend Section */}
+            <SkillSection
+              title={t('timeline.frontend')}
+              bgColor="bg-gradient-to-r from-blue-500/10 to-purple-500/10"
+              skills={["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Astro", "Next.js"]}
+              icon={
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16.5c2.5 0 4.5-2 4.5-4.5S14.5 7.5 12 7.5 7.5 9.5 7.5 12s2 4.5 4.5 4.5zm0-7c1.4 0 2.5 1.1 2.5 2.5S13.4 14.5 12 14.5 9.5 13.4 9.5 12 10.6 9.5 12 9.5z"></path>
                   <path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10zm0-18c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8z"></path>
                 </svg>
-                <h3 className="text-xl font-bold text-primary">{t('timeline.frontend')}</h3>
-              </div>
+              }
+            />
 
-              <div className="space-y-3">
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">React.js</span>
-                    <span className="text-primary">90%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '90%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">TypeScript</span>
-                    <span className="text-primary">85%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '85%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">Tailwind CSS</span>
-                    <span className="text-primary">88%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '88%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">JavaScript</span>
-                    <span className="text-primary">85%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '85%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">Astro</span>
-                    <span className="text-primary">80%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '80%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">HTML/CSS/SASS</span>
-                    <span className="text-primary">92%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '92%'}}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Backend y Frameworks */}
-            <div className="bg-primary bg-opacity-5 rounded-xl p-6 border border-primary border-opacity-10 transition-all hover:bg-opacity-10">
-              <div className="flex items-center gap-3 mb-4">
+            {/* Backend Section */}
+            <SkillSection
+              title={t('timeline.backend')}
+              bgColor="bg-gradient-to-r from-green-500/10 to-teal-500/10"
+              skills={["Node.js", "PHP", "Go", "MongoDB", "MySQL", "PostgreSQL", "Prisma", "API"]}
+              icon={
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 13h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6h-4v-4h4v4zM10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zM10 13H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4z"></path>
                 </svg>
-                <h3 className="text-xl font-bold text-primary">{t('timeline.backend_frameworks')}</h3>
-              </div>
+              }
+            />
 
-              <div className="space-y-3">
-                <h4 className="text-primary font-medium mb-1 border-b border-primary border-opacity-20 pb-1">{t('timeline.backend')}</h4>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">Node.js</span>
-                    <span className="text-primary">80%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '80%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">PHP</span>
-                    <span className="text-primary">70%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '70%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">Go</span>
-                    <span className="text-primary">60%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '60%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">Java</span>
-                    <span className="text-primary">65%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '65%'}}></div>
-                  </div>
-                </div>
-
-                <h4 className="text-primary font-medium mt-4 mb-1 border-b border-primary border-opacity-20 pb-1">{t('timeline.frameworks')}</h4>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">Next.js</span>
-                    <span className="text-primary">85%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '85%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">Remix</span>
-                    <span className="text-primary">70%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '70%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">React Native</span>
-                    <span className="text-primary">75%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '75%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">Flutter</span>
-                    <span className="text-primary">65%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '65%'}}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Herramientas */}
-            <div className="bg-primary bg-opacity-5 rounded-xl p-6 border border-primary border-opacity-10 transition-all hover:bg-opacity-10 md:col-span-2 mt-2">
-              <div className="flex items-center gap-3 mb-4">
+            {/* Tools & Others Section */}
+            <SkillSection
+              title={t('timeline.tools')}
+              bgColor="bg-gradient-to-r from-orange-500/10 to-red-500/10"
+              skills={["VSCode", "Figma", "Git", "VPS", "Vercel", "Netlify", "React Native", "Flutter"]}
+              icon={
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                 </svg>
-                <h3 className="text-xl font-bold text-primary">{t('timeline.tools')}</h3>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">Git</span>
-                    <span className="text-primary">90%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '90%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">VSCode</span>
-                    <span className="text-primary">95%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '95%'}}></div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-primary">VPS</span>
-                    <span className="text-primary">75%</span>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-indigo-400 h-2 rounded-full" style={{width: '75%'}}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              }
+            />
           </div>
 
-          {/* Enlace a CV */}
-          <div className="flex justify-center mt-10">
-            <button 
-              onClick={handleCVButtonClick}
-              className="inline-flex items-center gap-2 bg-primary bg-opacity-10 text-primary px-6 py-3 rounded-lg hover:bg-opacity-20 transition-all"
-            >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-              </svg>
-              {t('timeline.download_cv')}
-            </button>
+          {/* CV Download Section */}
+          <div data-aos="fade-up" className="mt-16">
+            <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-8 shadow-lg max-w-4xl mx-auto">
+              <div className="text-center">
+                {/* Title */}
+                <h3 className="text-2xl font-bold text-primary mb-3">
+                  {t('timeline.cv_section_title')}
+                </h3>
+                
+                {/* Description */}
+                <p className="text-gray-300 mb-6 text-base">
+                  {t('timeline.cv_section_description')}
+                </p>
+                
+                {/* Download button */}
+                <button 
+                  onClick={handleCVButtonClick}
+                  className="inline-flex items-center gap-2 bg-primary bg-opacity-10 text-primary px-8 py-4 rounded-lg hover:bg-opacity-20 transition-all font-semibold text-lg"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  {t('timeline.download_cv')}
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -96,6 +96,8 @@
     "frameworks": "Frameworks",
     "tools": "Werkzeuge",
     "download_cv": "Lebenslauf herunterladen",
+    "cv_section_title": "Professioneller Lebenslauf",
+    "cv_section_description": "Laden Sie meinen vollständigen beruflichen Lebenslauf herunter",
     "interactive": {
       "filter_all": "Alle",
       "filter_projects": "Projekte",
@@ -109,6 +111,54 @@
       "visit_project": "Projekt besuchen",
       "visit_institution": "Institution besuchen",
       "visit_company": "Unternehmen besuchen"
+    }
+  },
+  "cv": {
+    "title": "Lebenslauf",
+    "sections": {
+      "personal": "Persönliche Informationen",
+      "experience": "Berufserfahrung",
+      "education": "Bildung",
+      "skills": "Fähigkeiten & Kompetenzen",
+      "projects": "Projekte",
+      "certifications": "Zertifizierungen",
+      "interests": "Interessen"
+    },
+    "navigation": {
+      "personal": "Persönlich",
+      "experience": "Erfahrung",
+      "education": "Bildung",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte",
+      "certifications": "Zertifizierungen",
+      "interests": "Interessen"
+    },
+    "skills_categories": {
+      "technical": "Technische Fähigkeiten",
+      "languages": "Sprachen",
+      "soft": "Soft Skills"
+    },
+    "actions": {
+      "view_project": "Projekt ansehen",
+      "view_certificate": "Zertifikat ansehen",
+      "download_pdf": "PDF herunterladen",
+      "generating": "Generieren...",
+      "back": "Zurück",
+      "close": "Schließen"
+    },
+    "achievements": "Wichtige Erfolge:",
+    "footer_download_reminder": "Vergessen Sie nicht, diesen Lebenslauf mit der Schaltfläche oben auf der Seite herunterzuladen.",
+    "pdf": {
+      "professional_summary": "Berufszusammenfassung",
+      "footer_text": "Lebenslauf - Generiert am"
+    },
+    "viewer": {
+      "show_sidebar": "Seitenleiste anzeigen",
+      "hide_sidebar": "Seitenleiste ausblenden",
+      "switch_dark_mode": "Zu Dunklem Modus wechseln",
+      "switch_light_mode": "Zu Hellem Modus wechseln",
+      "pdf_error": "Beim Generieren des PDFs ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      "select_language": "Sprache auswählen"
     }
   }
 }

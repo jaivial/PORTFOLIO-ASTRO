@@ -48,8 +48,10 @@ export function getCurrentLanguage() {
 
 export function setCurrentLanguage(languageCode) {
   console.log('🔄 setCurrentLanguage() called with:', languageCode);
+  
   if (languageCode in AVAILABLE_LANGUAGES) {
     setLocalStorage(LANGUAGE_STORAGE_KEY, languageCode);
+    
     // Trigger language change event
     if (typeof window !== 'undefined') {
       console.log('📢 Dispatching language-changed event for:', languageCode);
@@ -59,7 +61,7 @@ export function setCurrentLanguage(languageCode) {
     }
     return true;
   }
-  console.warn('❌ Invalid language code:', languageCode);
+  console.warn('❌ Invalid language code:', languageCode, '- Available languages:', Object.keys(AVAILABLE_LANGUAGES));
   return false;
 }
 

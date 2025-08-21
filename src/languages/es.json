@@ -96,6 +96,8 @@
     "frameworks": "Frameworks",
     "tools": "Herramientas",
     "download_cv": "Descargar CV",
+    "cv_section_title": "CV Profesional",
+    "cv_section_description": "Descarga mi currículum vitae profesional completo",
     "interactive": {
       "filter_all": "Todos",
       "filter_projects": "Proyectos",
@@ -109,6 +111,54 @@
       "visit_project": "Visitar proyecto",
       "visit_institution": "Visitar institución",
       "visit_company": "Visitar empresa"
+    }
+  },
+  "cv": {
+    "title": "CV",
+    "sections": {
+      "personal": "Información Personal",
+      "experience": "Experiencia Profesional",
+      "education": "Formación Académica",
+      "skills": "Habilidades y Competencias",
+      "projects": "Proyectos",
+      "certifications": "Certificaciones",
+      "interests": "Intereses"
+    },
+    "navigation": {
+      "personal": "Personal",
+      "experience": "Experiencia",
+      "education": "Educación",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "certifications": "Certificaciones",
+      "interests": "Intereses"
+    },
+    "skills_categories": {
+      "technical": "Habilidades Técnicas",
+      "languages": "Idiomas",
+      "soft": "Habilidades Personales"
+    },
+    "actions": {
+      "view_project": "Ver Proyecto",
+      "view_certificate": "Ver Certificado",
+      "download_pdf": "Descargar PDF",
+      "generating": "Generando...",
+      "back": "Volver",
+      "close": "Cerrar"
+    },
+    "achievements": "Logros Principales:",
+    "footer_download_reminder": "No olvides descargar este CV utilizando el botón en la parte superior de la página.",
+    "pdf": {
+      "professional_summary": "Resumen Profesional",
+      "footer_text": "CV - Generado el"
+    },
+    "viewer": {
+      "show_sidebar": "Mostrar barra lateral",
+      "hide_sidebar": "Ocultar barra lateral",
+      "switch_dark_mode": "Cambiar a modo oscuro",
+      "switch_light_mode": "Cambiar a modo claro",
+      "pdf_error": "Hubo un error al generar el PDF. Por favor, inténtelo de nuevo.",
+      "select_language": "Seleccionar idioma"
     }
   }
 }

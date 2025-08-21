@@ -96,6 +96,8 @@
     "frameworks": "Frameworks",
     "tools": "Tools",
     "download_cv": "Download CV",
+    "cv_section_title": "Professional CV",
+    "cv_section_description": "Download my complete professional curriculum vitae",
     "interactive": {
       "filter_all": "All",
       "filter_projects": "Projects",
@@ -109,6 +111,54 @@
       "visit_project": "Visit project",
       "visit_institution": "Visit institution",
       "visit_company": "Visit company"
+    }
+  },
+  "cv": {
+    "title": "CV",
+    "sections": {
+      "personal": "Personal Information",
+      "experience": "Professional Experience",
+      "education": "Education",
+      "skills": "Skills & Expertise",
+      "projects": "Projects",
+      "certifications": "Certifications",
+      "interests": "Interests"
+    },
+    "navigation": {
+      "personal": "Personal",
+      "experience": "Experience",
+      "education": "Education",
+      "skills": "Skills",
+      "projects": "Projects",
+      "certifications": "Certifications",
+      "interests": "Interests"
+    },
+    "skills_categories": {
+      "technical": "Technical Skills",
+      "languages": "Languages",
+      "soft": "Soft Skills"
+    },
+    "actions": {
+      "view_project": "View Project",
+      "view_certificate": "View Certificate",
+      "download_pdf": "Download PDF",
+      "generating": "Generating...",
+      "back": "Back",
+      "close": "Close"
+    },
+    "achievements": "Key Achievements:",
+    "footer_download_reminder": "Don't forget to download this CV using the button at the top of the page.",
+    "pdf": {
+      "professional_summary": "Professional Summary",
+      "footer_text": "CV - Generated on"
+    },
+    "viewer": {
+      "show_sidebar": "Show sidebar",
+      "hide_sidebar": "Hide sidebar",
+      "switch_dark_mode": "Switch to dark mode",
+      "switch_light_mode": "Switch to light mode",
+      "pdf_error": "There was an error generating the PDF. Please try again.",
+      "select_language": "Select language"
     }
   }
 }
