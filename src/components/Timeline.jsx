@@ -101,6 +101,12 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
           <div className={`flex flex-col items-center ${
             ['react', 'javascript', 'html', 'css', 'astro', 'node.js'].includes(skillName.toLowerCase()) 
               ? 'transform translate-y-[-7px] translate-x-[-7px] xs:translate-y-[-1px] xs:translate-x-[-2px] md:translate-y-0 md:translate-x-0'
+              : ['figma', 'git'].includes(skillName.toLowerCase())
+                ? 'transform translate-y-0 translate-x-0 xs:translate-y-0 xs:translate-x-0 md:translate-y-0 md:translate-x-0'
+              : skillName.toLowerCase() === 'vscode'
+                ? 'transform translate-y-[-7px] translate-x-[-10px] xs:translate-y-[-11px] xs:translate-x-[-11px] md:translate-y-0 md:translate-x-[-10px]'
+              : ['vps', 'vercel', 'netlify', 'react native', 'flutter'].includes(skillName.toLowerCase()) 
+                ? 'transform translate-y-0 translate-x-0 xs:translate-y-[-1px] xs:translate-x-[-2px] md:translate-y-0 md:translate-x-0'
               : skillName.toLowerCase() === 'prisma'
                 ? 'transform translate-y-0 translate-x-[1px] xs:translate-y-0 xs:translate-x-[1px] md:translate-y-0 md:translate-x-0' 
               : ['php', 'go'].includes(skillName.toLowerCase())
@@ -124,8 +130,10 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                 {icon.type === 'svg' ? (
                   <div 
                     className={`${
-                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js'].includes(skillName.toLowerCase()) 
+                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js', 'vscode', 'vps', 'vercel', 'netlify', 'react native', 'flutter'].includes(skillName.toLowerCase()) 
                         ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8'
+                        : ['figma', 'git'].includes(skillName.toLowerCase())
+                          ? 'w-4 h-4 xs:w-[3.5rem] xs:h-[3.5rem] md:w-8 md:h-8'
                         : skillName.toLowerCase() === 'prisma'
                           ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8' 
                         : skillName.toLowerCase() === 'mysql'
@@ -151,8 +159,10 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                     src={icon.src} 
                     alt={skillName}
                     className={`${icon.classes} ${
-                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js'].includes(skillName.toLowerCase()) 
+                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js', 'vscode', 'vps', 'vercel', 'netlify', 'react native', 'flutter'].includes(skillName.toLowerCase()) 
                         ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8'
+                        : ['figma', 'git'].includes(skillName.toLowerCase())
+                          ? 'w-4 h-4 xs:w-[3.5rem] xs:h-[3.5rem] md:w-8 md:h-8'
                         : skillName.toLowerCase() === 'prisma'
                           ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8' 
                         : skillName.toLowerCase() === 'mysql'
@@ -262,7 +272,7 @@ function Timeline() {
             <SkillSection
               title={t('timeline.frontend')}
               bgColor="bg-gradient-to-r from-blue-500/10 to-purple-500/10"
-              skills={["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Astro", "Next.js"]}
+              skills={["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Astro", "Next.js", "React Native", "Flutter"]}
               icon={
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16.5c2.5 0 4.5-2 4.5-4.5S14.5 7.5 12 7.5 7.5 9.5 7.5 12s2 4.5 4.5 4.5zm0-7c1.4 0 2.5 1.1 2.5 2.5S13.4 14.5 12 14.5 9.5 13.4 9.5 12 10.6 9.5 12 9.5z"></path>
@@ -287,7 +297,7 @@ function Timeline() {
             <SkillSection
               title={t('timeline.tools')}
               bgColor="bg-gradient-to-r from-orange-500/10 to-red-500/10"
-              skills={["VSCode", "Figma", "Git", "VPS", "Vercel", "Netlify", "React Native", "Flutter"]}
+              skills={["VSCode", "Figma", "Git", "VPS", "Vercel", "Netlify"]}
               icon={
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
