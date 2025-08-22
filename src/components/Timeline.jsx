@@ -98,16 +98,44 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
           width={120}
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="flex flex-col items-center">
+          <div className={`flex flex-col items-center ${
+            ['react', 'javascript', 'html', 'css', 'astro'].includes(skillName.toLowerCase()) 
+              ? 'transform translate-y-[-7px] translate-x-[-7px] xs:translate-y-[-1px] xs:translate-x-[-2px] md:translate-y-0 md:translate-x-0' 
+              : skillName.toLowerCase() === 'typescript'
+                ? 'transform translate-y-0 translate-x-0 xs:translate-y-[-1px] xs:translate-x-[-2px] md:translate-y-0 md:translate-x-0'
+              : skillName.toLowerCase() === 'tailwind css' || skillName.toLowerCase() === 'next.js'
+                ? 'transform translate-y-0 translate-x-0 xs:translate-y-[-1px] xs:translate-x-[-2px] md:translate-y-0 md:translate-x-0'
+                : ''
+          }`}>
             {icon && (
               <div>
                 {icon.type === 'svg' ? (
-                  <div className="w-3 h-3 xs:w-5 xs:h-5 md:w-6 md:h-6" dangerouslySetInnerHTML={{ __html: icon.content }} />
+                  <div 
+                    className={`${
+                      ['react', 'javascript', 'html', 'css', 'astro'].includes(skillName.toLowerCase()) 
+                        ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8' 
+                        : skillName.toLowerCase() === 'typescript'
+                          ? 'xs:w-7 xs:h-7 md:w-8 md:h-8'
+                        : skillName.toLowerCase() === 'tailwind css'
+                          ? 'w-auto h-[1.4rem] xs:w-7 xs:h-7 md:w-8 md:h-8'
+                          : 'w-2 h-2 xs:w-5 xs:h-5 md:w-6 md:h-6'
+                    }`} 
+                    dangerouslySetInnerHTML={{ __html: icon.content }} 
+                  />
                 ) : (
                   <img 
                     src={icon.src} 
                     alt={skillName}
-                    className={`${icon.classes} w-3 h-3 xs:w-5 xs:h-5 md:w-6 md:h-6`}
+                    className={`${icon.classes} ${
+                      ['react', 'typescript', 'javascript', 'html', 'css', 'astro'].includes(skillName.toLowerCase()) 
+                        ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8' 
+                        : skillName.toLowerCase() === 'tailwind css'
+                          ? 'w-auto h-[1.4rem] xs:w-7 xs:h-7 md:w-8 md:h-8'
+                        : skillName.toLowerCase() === 'next.js' 
+                          ? 'w-auto h-[1.8rem] xs:w-8 xs:h-8 md:w-8 md:h-8 brightness-[500]' 
+                          : 'w-2 h-2 xs:w-5 xs:h-5 md:w-6 md:h-6'
+                    }`}
+                    style={skillName.toLowerCase() === 'next.js' ? { filter: 'brightness(5) invert(1)' } : {}}
                   />
                 )}
               </div>
