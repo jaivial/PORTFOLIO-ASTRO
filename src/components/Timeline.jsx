@@ -99,8 +99,20 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className={`flex flex-col items-center ${
-            ['react', 'javascript', 'html', 'css', 'astro'].includes(skillName.toLowerCase()) 
-              ? 'transform translate-y-[-7px] translate-x-[-7px] xs:translate-y-[-1px] xs:translate-x-[-2px] md:translate-y-0 md:translate-x-0' 
+            ['react', 'javascript', 'html', 'css', 'astro', 'node.js'].includes(skillName.toLowerCase()) 
+              ? 'transform translate-y-[-7px] translate-x-[-7px] xs:translate-y-[-1px] xs:translate-x-[-2px] md:translate-y-0 md:translate-x-0'
+              : skillName.toLowerCase() === 'prisma'
+                ? 'transform translate-y-0 translate-x-[1px] xs:translate-y-0 xs:translate-x-[1px] md:translate-y-0 md:translate-x-0' 
+              : ['php', 'go'].includes(skillName.toLowerCase())
+                ? 'transform translate-y-0 translate-x-0 xs:translate-y-0 xs:translate-x-0 md:translate-y-0 md:translate-x-0'
+              : skillName.toLowerCase() === 'mysql'
+                ? 'transform translate-y-[-1px] translate-x-[1px] xs:translate-y-[-1px] xs:translate-x-[1px] md:translate-y-0 md:translate-x-0'
+              : skillName.toLowerCase() === 'mongodb'
+                ? 'transform translate-y-[-1px] translate-x-[1px] xs:translate-y-[-1px] xs:translate-x-[1px] md:translate-y-[-2px] md:translate-x-[2px]'
+              : skillName.toLowerCase() === 'postgresql'
+                ? 'transform translate-y-[-1px] translate-x-[1px] xs:translate-y-[-1px] xs:translate-x-[1px] md:translate-y-0 md:translate-x-0'
+              : skillName.toLowerCase() === 'api'
+                ? 'transform translate-y-0 translate-x-[1px] xs:translate-y-0 xs:translate-x-[1px] md:translate-y-0 md:translate-x-0'
               : skillName.toLowerCase() === 'typescript'
                 ? 'transform translate-y-0 translate-x-0 xs:translate-y-[-1px] xs:translate-x-[-2px] md:translate-y-0 md:translate-x-0'
               : skillName.toLowerCase() === 'tailwind css' || skillName.toLowerCase() === 'next.js'
@@ -112,8 +124,20 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                 {icon.type === 'svg' ? (
                   <div 
                     className={`${
-                      ['react', 'javascript', 'html', 'css', 'astro'].includes(skillName.toLowerCase()) 
-                        ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8' 
+                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js'].includes(skillName.toLowerCase()) 
+                        ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8'
+                        : skillName.toLowerCase() === 'prisma'
+                          ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8' 
+                        : skillName.toLowerCase() === 'mysql'
+                          ? 'w-[2.5rem] h-[2.5rem] xs:w-[2.5rem] xs:h-[2.5rem] md:w-[3rem] md:h-[3rem]'
+                        : skillName.toLowerCase() === 'mongodb'
+                          ? 'w-[3rem] h-[3rem] xs:w-[3rem] xs:h-[3rem] md:w-[3.2rem] md:h-[3.2rem]'
+                        : skillName.toLowerCase() === 'postgresql'
+                          ? 'w-[2.5rem] h-[2.5rem] xs:w-[2.5rem] xs:h-[2.5rem] md:w-[3.2rem] md:h-[3.2rem]'
+                        : skillName.toLowerCase() === 'api'
+                          ? 'w-[4.2rem] h-[4.2rem] xs:w-[4.2rem] xs:h-[4.2rem] md:w-[3.2rem] md:h-[3.2rem]'
+                        : ['php', 'go'].includes(skillName.toLowerCase())
+                          ? 'w-[2.8rem] h-auto xs:w-[3.2rem] xs:h-auto md:w-[3rem] md:h-[2rem]'
                         : skillName.toLowerCase() === 'typescript'
                           ? 'xs:w-7 xs:h-7 md:w-8 md:h-8'
                         : skillName.toLowerCase() === 'tailwind css'
@@ -127,8 +151,20 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                     src={icon.src} 
                     alt={skillName}
                     className={`${icon.classes} ${
-                      ['react', 'typescript', 'javascript', 'html', 'css', 'astro'].includes(skillName.toLowerCase()) 
-                        ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8' 
+                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js'].includes(skillName.toLowerCase()) 
+                        ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8'
+                        : skillName.toLowerCase() === 'prisma'
+                          ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8' 
+                        : skillName.toLowerCase() === 'mysql'
+                          ? 'w-[2.5rem] h-[2.5rem] xs:w-[2.5rem] xs:h-[2.5rem] md:w-[3rem] md:h-[3rem]'
+                        : skillName.toLowerCase() === 'mongodb'
+                          ? 'w-[3rem] h-[3rem] xs:w-[3rem] xs:h-[3rem] md:w-[3.2rem] md:h-[3.2rem]'
+                        : skillName.toLowerCase() === 'postgresql'
+                          ? 'w-[2.5rem] h-[2.5rem] xs:w-[2.5rem] xs:h-[2.5rem] md:w-[3.2rem] md:h-[3.2rem]'
+                        : skillName.toLowerCase() === 'api'
+                          ? 'w-[4.2rem] h-[4.2rem] xs:w-[4.2rem] xs:h-[4.2rem] md:w-[3.2rem] md:h-[3.2rem]'
+                        : ['php', 'go'].includes(skillName.toLowerCase())
+                          ? 'w-[2.8rem] h-auto xs:w-[3.2rem] xs:h-auto md:w-[3rem] md:h-[2rem]'
                         : skillName.toLowerCase() === 'tailwind css'
                           ? 'w-auto h-[1.4rem] xs:w-7 xs:h-7 md:w-8 md:h-8'
                         : skillName.toLowerCase() === 'next.js' 
