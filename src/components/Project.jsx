@@ -43,7 +43,7 @@ function Project({ data }) {
                   href={`/projects/${item.slug}`} 
                   className="relative mx-auto overflow-hidden rounded-xl bg-transparent border border-1 border-primary border-opacity-25 shadow-xl group transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] w-full"
                 >
-                  <div className="bg-transparent relative overflow-hidden h-48 sm:h-56 md:h-64 w-full">
+                  <div className="bg-transparent relative overflow-hidden h-80 xl:h-[500px] w-full">
                     <img 
                       src={item.image.src} 
                       className="object-cover object-top w-full h-full bg-cover rounded-t-xl transition-transform duration-500 group-hover:scale-105" 
@@ -69,7 +69,7 @@ function Project({ data }) {
                         </p>
                         {item.tech && (
                           <div className="flex flex-wrap gap-1 mt-1">
-                            {item.tech.slice(0, 3).map((tech, techIndex) => (
+                            {item.tech.map((tech, techIndex) => (
                               <span 
                                 key={techIndex}
                                 className="inline-block text-xs py-1 px-2 rounded-full bg-primary bg-opacity-20 text-primary/80"
@@ -77,11 +77,6 @@ function Project({ data }) {
                                 {tech}
                               </span>
                             ))}
-                            {item.tech.length > 3 && (
-                              <span className="inline-block text-xs py-1 px-2 rounded-full bg-primary bg-opacity-10 text-primary/80">
-                                +{item.tech.length - 3}
-                              </span>
-                            )}
                           </div>
                         )}
                       </div>
