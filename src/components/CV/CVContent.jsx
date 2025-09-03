@@ -460,16 +460,43 @@ const CVContent = ({ data, activeSection }) => {
 
           {/* Languages */}
           <div className="mb-8 sm:mb-10">
-            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-800 dark:text-gray-100 border-b border-gray-300 dark:border-gray-700 pb-2">{t('cv.skills_categories.languages')}</h3>
+            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-900 dark:text-white border-b border-gray-400 dark:border-gray-600 pb-2">{t('cv.skills_categories.languages')}</h3>
             <div className="grid grid-cols-1 gap-3 sm:gap-4">
-              {data.skills.languages.map((lang, index) => (
-                <motion.div key={index} className="bg-white dark:bg-gray-900 rounded-lg p-3 sm:p-4 shadow-sm hover:shadow-md transition-all" whileHover={{ x: 5 }}>
-                  <div className="flex justify-between items-center">
-                    <span className="font-semibold text-sm sm:text-base text-gray-800 dark:text-gray-100">{lang.name}</span>
-                    <span className="text-primary font-bold text-xs sm:text-sm bg-primary bg-opacity-10 rounded-full px-2 sm:px-3 py-1">{lang.level}</span>
-                  </div>
-                </motion.div>
-              ))}
+              {data.skills.languages.map((lang, index) => {
+                // Function to get flag emoji based on language name
+                const getLanguageFlag = (languageName) => {
+                  const lowerName = languageName.toLowerCase();
+                  if (lowerName.includes('spanish') || lowerName.includes('español') || lowerName.includes('spanisch')) {
+                    return '🇪🇸';
+                  } else if (lowerName.includes('english') || lowerName.includes('inglés') || lowerName.includes('englisch')) {
+                    return '🇺🇸';
+                  } else if (lowerName.includes('german') || lowerName.includes('alemán') || lowerName.includes('deutsch')) {
+                    return '🇩🇪';
+                  }
+                  return '🌍'; // Default globe emoji for other languages
+                };
+
+                return (
+                  <motion.div 
+                    key={index} 
+                    className="bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 rounded-xl p-4 sm:p-5 shadow-md hover:shadow-lg transition-all border border-gray-200 dark:border-gray-700" 
+                    whileHover={{ x: 5, scale: 1.02 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <span className="text-2xl">{getLanguageFlag(lang.name)}</span>
+                        <span className="font-bold text-base sm:text-lg text-gray-900 dark:text-white">{lang.name}</span>
+                      </div>
+                      <span className="text-white font-bold text-xs sm:text-sm bg-gray-900 dark:bg-gray-700 rounded-full px-3 sm:px-4 py-2 shadow-sm">
+                        {lang.level}
+                      </span>
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
 
