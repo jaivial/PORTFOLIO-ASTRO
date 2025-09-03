@@ -199,7 +199,7 @@ const cvData = {
             {
                 name: "Higher Degree in Multiplatform Application Development",
                 issuer: "Florida Universitaria",
-                date: "2024",
+                timespan: "2022 - 2024",
                 url: "https://www.floridauniversitaria.es/"
             }
         ],
@@ -404,7 +404,7 @@ const cvData = {
             {
                 name: "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
                 issuer: "Florida Universitaria",
-                date: "2024",
+                timespan: "2022 - 2024",
                 url: "https://www.floridauniversitaria.es/"
             }
         ],
@@ -609,7 +609,7 @@ const cvData = {
             {
                 name: "Höhere Berufsbildung in Multiplattform-Anwendungsentwicklung",
                 issuer: "Florida Universitaria",
-                date: "2024",
+                timespan: "2022 - 2024",
                 url: "https://www.floridauniversitaria.es/"
             }
         ],

@@ -606,26 +606,20 @@ const CVContent = ({ data, activeSection }) => {
           <div className="grid grid-cols-1 gap-4 sm:gap-6">
             {data.certifications.map((cert, index) => (
               <motion.div key={index} className="flex items-start bg-white dark:bg-gray-900 p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-md transition-all" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: index * 0.1 }} whileHover={{ x: 5 }}>
-                <div className="min-w-10 sm:min-w-12 h-10 sm:h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mr-3 sm:mr-5 text-primary shrink-0">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                    <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                  </svg>
+                <div className="min-w-10 sm:min-w-12 h-10 sm:h-12 bg-white flex items-center justify-center mr-3 sm:mr-5 shrink-0">
+                  <img 
+                    src="https://florida.floridawp.florida.es/wp-content/uploads/sites/25/2017/04/logo.jpg" 
+                    alt="Florida Universitaria Logo" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-gray-800 dark:text-gray-100">{cert.name}</h3>
                   <div className="flex flex-wrap items-center text-xs sm:text-sm text-gray-700 dark:text-gray-300 mb-2 sm:mb-3">
                     <span className="font-medium">{cert.issuer}</span>
                     <span className="mx-2">•</span>
-                    <span className="bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded text-xs">{cert.date}</span>
+                    <span className="bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded text-xs">{cert.timespan}</span>
                   </div>
-                  <a href={cert.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary hover:underline text-xs sm:text-sm font-medium">
-                    {t('cv.actions.view_certificate')}
-                    <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                    </svg>
-                  </a>
                 </div>
               </motion.div>
             ))}
