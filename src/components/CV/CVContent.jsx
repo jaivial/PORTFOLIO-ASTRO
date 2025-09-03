@@ -514,34 +514,84 @@ const CVContent = ({ data, activeSection }) => {
         </div>
       </motion.section>
 
-      {/* Projects Section - Card Grid */}
+      {/* Projects Section - Enhanced Card Grid */}
       <motion.section id="cv-section-projects" className={`mb-10 ${activeSection === "projects" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{t('cv.sections.projects')}</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-400 dark:border-gray-600 text-gray-900 dark:text-white">{t('cv.sections.projects')}</h2>
 
-        <div className="grid grid-cols-1 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {data.projects.map((project, index) => (
-            <motion.div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all" whileHover={{ y: -8 }} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.2 }}>
-              <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-bold text-white">{project.title}</h3>
-              </div>
-
-              <div className="p-4 sm:p-6">
-                <p className="text-gray-800 dark:text-gray-200 mb-4 sm:mb-6 text-sm sm:text-base">{project.description}</p>
-
-                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
-                  {project.technologies.map((tech, i) => (
-                    <span key={i} className="bg-gray-200 dark:bg-gray-700 px-2 sm:px-3 py-1 rounded-lg text-xs font-medium text-gray-800 dark:text-gray-100">
-                      {tech}
+            <motion.div 
+              key={index} 
+              className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700" 
+              whileHover={{ y: -12, scale: 1.02 }} 
+              initial={{ opacity: 0, y: 30 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ delay: index * 0.15, duration: 0.5 }}
+            >
+              {/* Project Image */}
+              {project.thumbnail && (
+                <div className="relative h-48 sm:h-56 overflow-hidden">
+                  <img 
+                    src={project.thumbnail} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                      Proyecto {index + 1}
                     </span>
-                  ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Project Content */}
+              <div className="p-5 sm:p-6">
+                <div className="mb-4">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 leading-tight">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
 
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary hover:underline font-medium text-sm sm:text-base">
-                  {t('cv.actions.view_project')}
-                  <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </a>
+                {/* Technologies */}
+                <div className="mb-5">
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, i) => (
+                      <span 
+                        key={i} 
+                        className="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1.5 rounded-lg text-xs font-semibold border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Action Button */}
+                <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 bg-gray-900 dark:bg-gray-700 text-white px-4 py-2.5 rounded-lg font-semibold text-sm hover:bg-gray-800 dark:hover:bg-gray-600 transition-all duration-200 shadow-md hover:shadow-lg group"
+                  >
+                    <span>{t('cv.actions.view_project')}</span>
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </a>
+                  <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm">
+                    <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5z" clipRule="evenodd" />
+                      <path fillRule="evenodd" d="M7.414 15.414a2 2 0 01-2.828-2.828l3-3a2 2 0 012.828 0 1 1 0 001.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 00-1.414-1.414l-1.5 1.5z" clipRule="evenodd" />
+                    </svg>
+                    <span className="truncate">En vivo</span>
+                  </div>
+                </div>
               </div>
             </motion.div>
           ))}
