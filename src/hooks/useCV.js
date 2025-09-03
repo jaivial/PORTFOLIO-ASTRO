@@ -77,6 +77,11 @@ export default function useCV(initialLanguage = null, initialSection = null) {
         }
     }, []);
 
+    // Update active section without scrolling (for intersection observer)
+    const setActiveSection_ = useCallback((section) => {
+        setActiveSection(section);
+    }, []);
+
     // Start PDF generation process
     const startPdfGeneration = useCallback(() => {
         setIsPdfGenerating(true);
@@ -95,6 +100,7 @@ export default function useCV(initialLanguage = null, initialSection = null) {
         toggleLanguage,
         changeLanguage,
         navigateToSection,
+        setActiveSection: setActiveSection_,
         startPdfGeneration,
         completePdfGeneration,
     };

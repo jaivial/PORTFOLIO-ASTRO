@@ -9,7 +9,7 @@ import useCV from "../../hooks/useCV";
 import { useTranslations } from "../../utils/translations";
 
 const CVViewer = ({ onClose, initialLanguage = null, initialSection = null }) => {
-  const { language, data, activeSection, isPdfGenerating, changeLanguage, navigateToSection, startPdfGeneration, completePdfGeneration } = useCV(initialLanguage, initialSection);
+  const { language, data, activeSection, isPdfGenerating, changeLanguage, navigateToSection, setActiveSection, startPdfGeneration, completePdfGeneration } = useCV(initialLanguage, initialSection);
   const t = useTranslations();
 
   const [darkMode, setDarkMode] = useState(false);
@@ -57,6 +57,116 @@ const CVViewer = ({ onClose, initialLanguage = null, initialSection = null }) =>
     setOverlayVisible(isMobile && showSidebar);
   }, [isMobile, showSidebar]);
 
+  // Intersection Observer para detectar la sección activa al hacer scroll
+  useEffect(() => {
+    if (!contentRef.current) return;
+
+    const observerOptions = {
+      root: contentRef.current,
+      rootMargin: '-10% 0px -50% 0px', // Zona más controlada para evitar cambios bruscos
+      threshold: [0.1, 0.25, 0.5, 0.75]
+    };
+
+    const observerCallback = (entries) => {
+      // Usar debounce para suavizar los cambios
+      clearTimeout(window.sectionObserverTimeout);
+      
+      window.sectionObserverTimeout = setTimeout(() => {
+        // Obtener todas las secciones y sus posiciones actuales
+        const allSections = ['personal', 'experience', 'education', 'skills', 'projects', 'certifications'];
+        const sectionsStatus = [];
+
+        allSections.forEach(sectionId => {
+          const element = document.getElementById(`cv-section-${sectionId}`);
+          if (element && contentRef.current) {
+            const rect = element.getBoundingClientRect();
+            const containerRect = contentRef.current.getBoundingClientRect();
+            
+            // Verificar si la sección está intersectando
+            const isVisible = rect.bottom > containerRect.top && rect.top < containerRect.bottom;
+            
+            if (isVisible) {
+              // Calcular el área visible
+              const visibleTop = Math.max(rect.top, containerRect.top);
+              const visibleBottom = Math.min(rect.bottom, containerRect.bottom);
+              const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+              const visibilityRatio = visibleHeight / rect.height;
+              
+              // Solo considerar secciones con al menos 15% de visibilidad
+              if (visibilityRatio >= 0.15) {
+                sectionsStatus.push({
+                  id: sectionId,
+                  visibilityRatio,
+                  rect,
+                  distanceFromTop: Math.abs(rect.top - containerRect.top)
+                });
+              }
+            }
+          }
+        });
+
+        if (sectionsStatus.length > 0) {
+          // Ordenar las secciones por prioridad
+          sectionsStatus.sort((a, b) => {
+            // Caso especial: si personal tiene menos de 40% visible y experience está presente
+            if (a.id === 'personal' && a.visibilityRatio < 0.4 && sectionsStatus.some(s => s.id === 'experience')) {
+              return 1; // Bajar prioridad de personal
+            }
+            if (b.id === 'personal' && b.visibilityRatio < 0.4 && sectionsStatus.some(s => s.id === 'experience')) {
+              return -1; // Bajar prioridad de personal
+            }
+            
+            // Para secciones con más del 50% visible, priorizar la más cercana al top
+            if (a.visibilityRatio > 0.5 && b.visibilityRatio > 0.5) {
+              return a.distanceFromTop - b.distanceFromTop;
+            }
+            
+            // En general, priorizar por mayor visibilidad
+            return b.visibilityRatio - a.visibilityRatio;
+          });
+
+          const newActiveSection = sectionsStatus[0].id;
+          
+          if (newActiveSection !== activeSection) {
+            setActiveSection(newActiveSection);
+          }
+        }
+      }, 80); // Reducir debounce para mejor responsividad
+    };
+
+    // También agregar un listener de scroll como backup
+    const handleScroll = () => {
+      observerCallback([]);
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Observar todas las secciones del CV
+    const sections = ['personal', 'experience', 'education', 'skills', 'projects', 'certifications'];
+    sections.forEach((sectionId) => {
+      const element = document.getElementById(`cv-section-${sectionId}`);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    // Agregar listener de scroll para asegurar detección
+    if (contentRef.current) {
+      contentRef.current.addEventListener('scroll', handleScroll);
+    }
+
+    // Ejecutar una vez al inicio
+    handleScroll();
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(window.sectionObserverTimeout);
+      if (contentRef.current) {
+        contentRef.current.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [activeSection, setActiveSection]);
+
   // Section navigation items
   const sections = [
     { id: "personal", label: t('cv.navigation.personal'), icon: "👤" },
@@ -65,7 +175,6 @@ const CVViewer = ({ onClose, initialLanguage = null, initialSection = null }) =>
     { id: "skills", label: t('cv.navigation.skills'), icon: "🛠️" },
     { id: "projects", label: t('cv.navigation.projects'), icon: "🚀" },
     { id: "certifications", label: t('cv.navigation.certifications'), icon: "🏆" },
-    { id: "interests", label: t('cv.navigation.interests'), icon: "⭐" },
   ];
 
   const handleScrollNav = (sectionId) => {
@@ -126,7 +235,7 @@ const CVViewer = ({ onClose, initialLanguage = null, initialSection = null }) =>
   return (
     <AnimatePresence>
       <motion.div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 backdrop-blur-sm p-2 xs:p-4 sm:p-0" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose}>
-        <motion.div className={`relative w-full max-w-7xl h-[95vh] xs:h-[92vh] max-h-[95vh] xs:max-h-[92vh] ${darkMode ? "bg-gray-900" : "bg-white"} shadow-2xl rounded-xl sm:rounded-2xl flex flex-col overflow-hidden`} initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", damping: 20 }} onClick={(e) => e.stopPropagation()}>
+        <motion.div className={`relative w-full max-w-7xl h-[95vh] xs:h-[92vh] max-h-[95vh] xs:max-h-[92vh] ${darkMode ? "bg-gray-900" : "bg-white"} shadow-2xl rounded-xl sm:rounded-2xl flex flex-col overflow-hidden m-5`} initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", damping: 20 }} onClick={(e) => e.stopPropagation()}>
           {/* Decorative gradient circles */}
           <div className="absolute top-0 left-0 w-56 h-56 bg-primary opacity-10 rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-500 opacity-10 rounded-full filter blur-3xl translate-x-1/2 translate-y-1/2"></div>
@@ -162,10 +271,10 @@ const CVViewer = ({ onClose, initialLanguage = null, initialSection = null }) =>
               </div>
 
               <div className="flex items-center gap-1 xs:gap-2">
-                <button onClick={handleDownloadPDF} disabled={isPdfGenerating} className="inline-flex items-center px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 bg-primary text-white rounded-lg text-xs xs:text-sm hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                <button onClick={handleDownloadPDF} disabled={isPdfGenerating} className="inline-flex items-center px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 bg-primary text-black rounded-lg text-xs xs:text-sm hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
                   {isPdfGenerating ? (
                     <span className="flex items-center">
-                      <svg className="animate-spin -ml-0.5 mr-1.5 h-3 w-3 xs:h-4 xs:w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <svg className="animate-spin -ml-0.5 mr-1.5 h-3 w-3 xs:h-4 xs:w-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
@@ -241,7 +350,7 @@ const CVViewer = ({ onClose, initialLanguage = null, initialSection = null }) =>
             {/* Main content with custom scrollbar */}
             <div
               ref={contentRef}
-              className={`flex-grow p-3 xs:p-4 sm:p-6 md:p-8 overflow-y-auto ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}
+              className={`w-fit p-3 xs:p-4 sm:p-6 md:p-8 overflow-y-auto ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}
               style={{
                 scrollbarWidth: "thin",
                 scrollbarColor: darkMode ? "#4B5563 #1F2937" : "#CBD5E0 #F3F4F6",

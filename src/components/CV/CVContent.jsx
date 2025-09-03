@@ -273,17 +273,31 @@ const CVContent = ({ data, activeSection }) => {
   return (
     <div className="cv-content text-gray-800 dark:text-gray-200">
       {/* Personal Information Section - Modern Header Card */}
-      <motion.section id="cv-section-personal" className={`mb-10 ${activeSection === "personal" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
+      <motion.section id="cv-section-personal" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
         <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-4 sm:p-8 shadow-lg relative overflow-hidden">
           {/* Background animated gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-indigo-500/20 opacity-20"></div>
           <div className="absolute -right-10 -top-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
 
-          <div className="relative z-10">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2">{data.personal.name}</h1>
-            <h2 className="text-xl sm:text-2xl text-primary font-bold mb-4 sm:mb-6">{data.personal.title}</h2>
+          <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-8 mb-6">
+            {/* Profile Image */}
+            <div className="flex-shrink-0">
+              <img 
+                src="/profilephoto.webp" 
+                alt="Profile Photo" 
+                className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-none object-contain shadow-2xl"
+              />
+            </div>
+            
+            {/* Content */}
+            <div className="flex-1">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2">{data.personal.name}</h1>
+              <h2 className="text-xl sm:text-2xl text-primary font-bold mb-4 sm:mb-6">{data.personal.title}</h2>
+              <p className="text-base sm:text-lg mb-0 text-gray-300 max-w-3xl">{data.personal.summary}</p>
+            </div>
+          </div>
 
-            <p className="text-base sm:text-lg mb-6 sm:mb-8 text-gray-300 max-w-3xl">{data.personal.summary}</p>
+          <div className="relative z-10">
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-6 items-start sm:items-center mb-6">
               <div className="flex items-center bg-gray-800/50 px-3 sm:px-4 py-2 rounded-lg backdrop-blur-sm w-full sm:w-auto">
@@ -323,7 +337,7 @@ const CVContent = ({ data, activeSection }) => {
       </motion.section>
 
       {/* Experience Section - Timeline Style */}
-      <motion.section id="cv-section-experience" className={`mb-10 ${activeSection === "experience" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
+      <motion.section id="cv-section-experience" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700 flex items-center">
           <FaBookmark className="mr-2 sm:mr-3 text-primary" />
           {t('cv.sections.experience')}
@@ -373,7 +387,7 @@ const CVContent = ({ data, activeSection }) => {
       </motion.section>
 
       {/* Education Section - Card Style */}
-      <motion.section id="cv-section-education" className={`mb-10 ${activeSection === "education" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
+      <motion.section id="cv-section-education" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700 flex items-center">
           <FaAward className="mr-2 sm:mr-3 text-primary" />
           {t('cv.sections.education')}
@@ -411,7 +425,7 @@ const CVContent = ({ data, activeSection }) => {
       </motion.section>
 
       {/* Skills Section - Interactive */}
-      <motion.section id="cv-section-skills" className={`mb-10 ${activeSection === "skills" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
+      <motion.section id="cv-section-skills" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700 flex items-center">
           <FaCode className="mr-2 sm:mr-3 text-primary" />
           {t('cv.sections.skills')}
@@ -515,7 +529,7 @@ const CVContent = ({ data, activeSection }) => {
       </motion.section>
 
       {/* Projects Section - Enhanced Card Grid */}
-      <motion.section id="cv-section-projects" className={`mb-10 ${activeSection === "projects" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
+      <motion.section id="cv-section-projects" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-400 dark:border-gray-600 text-gray-900 dark:text-white">{t('cv.sections.projects')}</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
@@ -599,7 +613,7 @@ const CVContent = ({ data, activeSection }) => {
       </motion.section>
 
       {/* Certifications Section - Modern List */}
-      <motion.section id="cv-section-certifications" className={`mb-10 ${activeSection === "certifications" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
+      <motion.section id="cv-section-certifications" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{t('cv.sections.certifications')}</h2>
 
         <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-8 shadow-md">
