@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import cvData from '../data/cvData';
-import { getCurrentLanguage } from '../utils/languageManager';
+import { getCurrentLanguage, setCurrentLanguage } from '../utils/languageManager';
 
 export default function useCV(initialLanguage = null, initialSection = null) {
     // Use the provided initial values if available, otherwise use localStorage language
@@ -60,10 +60,10 @@ export default function useCV(initialLanguage = null, initialSection = null) {
         });
     }, []);
 
-    // Set language directly
+    // Set language directly and sync with global language state
     const changeLanguage = useCallback((lang) => {
         if (lang === 'en' || lang === 'es' || lang === 'de') {
-            setLanguage(lang);
+            setCurrentLanguage(lang); // This will trigger the global language-changed event
         }
     }, []);
 

@@ -104,9 +104,11 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
               : ['figma', 'git'].includes(skillName.toLowerCase())
                 ? 'transform translate-y-0 translate-x-0 xs:translate-y-0 xs:translate-x-0 md:translate-y-0 md:translate-x-0'
               : skillName.toLowerCase() === 'vscode'
-                ? 'transform translate-y-[-7px] translate-x-[-10px] xs:translate-y-[-11px] xs:translate-x-[-11px] md:translate-y-0 md:translate-x-[-10px]'
-              : ['vps', 'vercel', 'netlify', 'react native', 'flutter'].includes(skillName.toLowerCase()) 
+                ? 'transform translate-y-0 translate-x-0 xs:translate-y-0 xs:translate-x-0 md:translate-y-0 md:translate-x-0'
+              : ['vps', 'vercel', 'netlify', 'flutter'].includes(skillName.toLowerCase()) 
                 ? 'transform translate-y-0 translate-x-0 xs:translate-y-[-1px] xs:translate-x-[-2px] md:translate-y-0 md:translate-x-0'
+              : skillName.toLowerCase() === 'react native'
+                ? 'transform translate-y-0 translate-x-0'
               : skillName.toLowerCase() === 'prisma'
                 ? 'transform translate-y-0 translate-x-[1px] xs:translate-y-0 xs:translate-x-[1px] md:translate-y-0 md:translate-x-0' 
               : ['php', 'go'].includes(skillName.toLowerCase())
@@ -130,10 +132,12 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                 {icon.type === 'svg' ? (
                   <div 
                     className={`${
-                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js', 'vscode', 'vps', 'vercel', 'netlify', 'react native', 'flutter'].includes(skillName.toLowerCase()) 
+                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js', 'vps', 'vercel', 'netlify', 'react native', 'flutter'].includes(skillName.toLowerCase()) 
                         ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8'
+                        : skillName.toLowerCase() === 'vscode'
+                          ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8'
                         : ['figma', 'git'].includes(skillName.toLowerCase())
-                          ? 'w-4 h-4 xs:w-[3.5rem] xs:h-[3.5rem] md:w-8 md:h-8'
+                          ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8'
                         : skillName.toLowerCase() === 'prisma'
                           ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8' 
                         : skillName.toLowerCase() === 'mysql'
@@ -159,10 +163,14 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                     src={icon.src} 
                     alt={skillName}
                     className={`${icon.classes} ${
-                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js', 'vscode', 'vps', 'vercel', 'netlify', 'react native', 'flutter'].includes(skillName.toLowerCase()) 
+                      ['react', 'javascript', 'html', 'css', 'astro', 'node.js', 'vps', 'vercel', 'netlify', 'flutter'].includes(skillName.toLowerCase()) 
                         ? 'w-4 h-4 xs:w-7 xs:h-7 md:w-8 md:h-8'
+                        : skillName.toLowerCase() === 'vscode'
+                          ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8'
+                        : skillName.toLowerCase() === 'react native'
+                          ? 'w-[3.5rem] h-[2.5rem] xs:w-[3.5rem] xs:h-[2.5rem] md:w-[3.5rem] md:h-[2.5rem]'
                         : ['figma', 'git'].includes(skillName.toLowerCase())
-                          ? 'w-4 h-4 xs:w-[3.5rem] xs:h-[3.5rem] md:w-8 md:h-8'
+                          ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8'
                         : skillName.toLowerCase() === 'prisma'
                           ? 'w-[2rem] h-[2rem] xs:w-[2rem] xs:h-[2rem] md:w-8 md:h-8' 
                         : skillName.toLowerCase() === 'mysql'
