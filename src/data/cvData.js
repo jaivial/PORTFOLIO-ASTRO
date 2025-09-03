@@ -202,14 +202,6 @@ const cvData = {
                 timespan: "2022 - 2024",
                 url: "https://www.floridauniversitaria.es/"
             }
-        ],
-        interests: [
-            "Web development",
-            "Open source contribution",
-            "UX/UI design",
-            "AI integration",
-            "Photography",
-            "Travel"
         ]
     },
     es: {
@@ -407,14 +399,6 @@ const cvData = {
                 timespan: "2022 - 2024",
                 url: "https://www.floridauniversitaria.es/"
             }
-        ],
-        interests: [
-            "Desarrollo web",
-            "Contribución a código abierto",
-            "Diseño UX/UI",
-            "Integración de IA",
-            "Fotografía",
-            "Viajes"
         ]
     },
     de: {
@@ -612,14 +596,6 @@ const cvData = {
                 timespan: "2022 - 2024",
                 url: "https://www.floridauniversitaria.es/"
             }
-        ],
-        interests: [
-            "Webentwicklung",
-            "Open-Source-Beiträge",
-            "UX/UI-Design",
-            "KI-Integration",
-            "Fotografie",
-            "Reisen"
         ]
     }
 };

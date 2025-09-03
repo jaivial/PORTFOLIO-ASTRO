@@ -627,34 +627,6 @@ const CVContent = ({ data, activeSection }) => {
         </div>
       </motion.section>
 
-      {/* Interests Section - Interactive Bubbles */}
-      <motion.section id="cv-section-interests" className={`mb-10 ${activeSection === "interests" ? "border-l-4 border-primary pl-4" : ""}`} initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{t('cv.sections.interests')}</h2>
-
-        <div className="flex flex-wrap justify-center gap-3 sm:gap-5 p-4 sm:p-6 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-md">
-          {data.interests.map((interest, index) => (
-            <motion.div
-              key={index}
-              className="bg-gradient-to-r from-primary/80 to-indigo-500/80 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full cursor-default text-xs sm:text-sm"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                delay: index * 0.1,
-                type: "spring",
-                stiffness: 200,
-                damping: 10,
-              }}
-              whileHover={{
-                scale: 1.1,
-                boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-              }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {interest}
-            </motion.div>
-          ))}
-        </div>
-      </motion.section>
 
       {/* Footer with download reminder */}
       <motion.div className="mt-12 sm:mt-16 text-center p-5 sm:p-7 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-inner" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}>
