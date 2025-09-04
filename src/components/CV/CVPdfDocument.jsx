@@ -123,6 +123,14 @@ const styles = StyleSheet.create({
   contactIcon: {
     marginRight: 6,
   },
+  summaryContainer: {
+    backgroundColor: "#f8fafc",
+    padding: 15,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: "#e2e8f0",
+    marginBottom: 5,
+  },
   sectionTitle: {
     fontSize: 16,
     fontWeight: "bold",
@@ -336,7 +344,11 @@ const CVPdfDocument = ({ data }) => {
       {/* Summary Section */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>{t('cv.pdf.professional_summary')}</Text>
-        <Text style={styles.description}>{data.personal.summary}</Text>
+        <View style={styles.summaryContainer}>
+          <Text style={[styles.description, { textAlign: 'justify', lineHeight: 1.5 }]}>
+            {t('cv.pdf.professional_summary_text')}
+          </Text>
+        </View>
       </View>
 
       {/* Experience Section */}
