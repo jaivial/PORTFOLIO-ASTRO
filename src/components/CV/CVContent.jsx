@@ -216,7 +216,7 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
   );
 };
 
-const SkillSection = ({ title, icon, skills, bgColor }) => {
+const SkillSection = ({ title, icon, skills, bgColor, darkMode }) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -242,8 +242,8 @@ const SkillSection = ({ title, icon, skills, bgColor }) => {
   return (
     <div ref={sectionRef} className={`${bgColor} p-4 sm:p-6 rounded-xl border border-primary/30 mb-6 sm:mb-8 shadow-sm`}>
       <div className="flex items-center gap-3 mb-4 sm:mb-6 justify-center">
-        <div className="text-gray-900 drop-shadow-md">{icon}</div>
-        <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-100">{title}</h3>
+        <div className={`drop-shadow-md ${darkMode ? 'text-white' : 'text-gray-900'}`}>{icon}</div>
+        <h3 className={`text-lg sm:text-xl font-bold ${darkMode ? 'text-gray-100' : 'text-gray-800'}`}>{title}</h3>
       </div>
       
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 xs:gap-3">
@@ -255,7 +255,7 @@ const SkillSection = ({ title, icon, skills, bgColor }) => {
   );
 };
 
-const CVContent = ({ data, activeSection }) => {
+const CVContent = ({ data, activeSection, darkMode }) => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
   const t = useTranslations();
 
@@ -293,7 +293,7 @@ const CVContent = ({ data, activeSection }) => {
             <div className="flex-1">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2">{data.personal.name}</h1>
               <h2 className="text-xl sm:text-2xl text-primary font-bold mb-4 sm:mb-6">{data.personal.title}</h2>
-              <p className="text-base sm:text-lg mb-0 text-gray-300 max-w-3xl">{data.personal.summary}</p>
+              <p className="text-base sm:text-lg mb-0 text-gray-300 max-w-3xl text-justify">{t('cv.summary')}</p>
             </div>
           </div>
 
@@ -338,7 +338,7 @@ const CVContent = ({ data, activeSection }) => {
 
       {/* Experience Section - Timeline Style */}
       <motion.section id="cv-section-experience" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700 flex items-center">
+        <h2 className={`text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b ${darkMode ? 'border-gray-700 text-white' : 'border-gray-300 text-gray-900'} flex items-center`}>
           <FaBookmark className="mr-2 sm:mr-3 text-primary" />
           {t('cv.sections.experience')}
         </h2>
@@ -388,7 +388,7 @@ const CVContent = ({ data, activeSection }) => {
 
       {/* Education Section - Card Style */}
       <motion.section id="cv-section-education" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700 flex items-center">
+        <h2 className={`text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b ${darkMode ? 'border-gray-700 text-white' : 'border-gray-300 text-gray-900'} flex items-center`}>
           <FaAward className="mr-2 sm:mr-3 text-primary" />
           {t('cv.sections.education')}
         </h2>
@@ -426,7 +426,7 @@ const CVContent = ({ data, activeSection }) => {
 
       {/* Skills Section - Interactive */}
       <motion.section id="cv-section-skills" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700 flex items-center">
+        <h2 className={`text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b ${darkMode ? 'border-gray-700 text-white' : 'border-gray-300 text-gray-900'} flex items-center`}>
           <FaCode className="mr-2 sm:mr-3 text-primary" />
           {t('cv.sections.skills')}
         </h2>
@@ -439,8 +439,9 @@ const CVContent = ({ data, activeSection }) => {
               title={t('timeline.frontend')}
               bgColor="bg-gradient-to-r from-blue-500/10 to-purple-500/10"
               skills={["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Astro", "Next.js", "React Native"]}
+              darkMode={darkMode}
               icon={
-                <svg className="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`w-6 h-6 ${darkMode ? 'text-white' : 'text-gray-900'}`} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16.5c2.5 0 4.5-2 4.5-4.5S14.5 7.5 12 7.5 7.5 9.5 7.5 12s2 4.5 4.5 4.5zm0-7c1.4 0 2.5 1.1 2.5 2.5S13.4 14.5 12 14.5 9.5 13.4 9.5 12 10.6 9.5 12 9.5z"></path>
                   <path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10zm0-18c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8z"></path>
                 </svg>
@@ -452,8 +453,9 @@ const CVContent = ({ data, activeSection }) => {
               title={t('timeline.backend')}
               bgColor="bg-gradient-to-r from-green-500/10 to-teal-500/10"
               skills={["Node.js", "PHP", "Go", "MongoDB", "MySQL", "PostgreSQL", "Prisma", "API"]}
+              darkMode={darkMode}
               icon={
-                <svg className="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`w-6 h-6 ${darkMode ? 'text-white' : 'text-gray-900'}`} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 13h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6h-4v-4h4v4zM10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zM10 13H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4z"></path>
                 </svg>
               }
@@ -464,8 +466,9 @@ const CVContent = ({ data, activeSection }) => {
               title={t('timeline.tools')}
               bgColor="bg-gradient-to-r from-orange-500/10 to-red-500/10"
               skills={["VSCode", "Figma", "Git", "VPS", "Vercel", "Netlify"]}
+              darkMode={darkMode}
               icon={
-                <svg className="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className={`w-6 h-6 ${darkMode ? 'text-white' : 'text-gray-900'}`} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                 </svg>
               }
@@ -474,7 +477,7 @@ const CVContent = ({ data, activeSection }) => {
 
           {/* Languages */}
           <div className="mb-8 sm:mb-10">
-            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-900 dark:text-white border-b border-gray-400 dark:border-gray-600 pb-2">{t('cv.skills_categories.languages')}</h3>
+            <h3 className={`text-lg sm:text-xl font-semibold mb-4 sm:mb-6 ${darkMode ? 'text-white' : 'text-gray-900'} border-b ${darkMode ? 'border-gray-600' : 'border-gray-400'} pb-2`}>{t('cv.skills_categories.languages')}</h3>
             <div className="grid grid-cols-1 gap-3 sm:gap-4">
               {data.skills.languages.map((lang, index) => {
                 // Function to get flag emoji based on language name
@@ -516,7 +519,7 @@ const CVContent = ({ data, activeSection }) => {
 
           {/* Soft Skills */}
           <div>
-            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-gray-800 dark:text-gray-100 border-b border-gray-300 dark:border-gray-700 pb-2">{t('cv.skills_categories.soft')}</h3>
+            <h3 className={`text-lg sm:text-xl font-semibold mb-4 sm:mb-6 ${darkMode ? 'text-gray-100' : 'text-gray-800'} border-b ${darkMode ? 'border-gray-700' : 'border-gray-300'} pb-2`}>{t('cv.skills_categories.soft')}</h3>
             <div className="flex flex-wrap gap-2 sm:gap-3">
               {data.skills.soft.map((skill, index) => (
                 <motion.span key={index} className="bg-white dark:bg-gray-900 px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm text-gray-800 dark:text-gray-100 shadow-sm hover:shadow-md cursor-default" whileHover={{ scale: 1.05, backgroundColor: "#f3f4f6" }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
@@ -530,7 +533,7 @@ const CVContent = ({ data, activeSection }) => {
 
       {/* Projects Section - Enhanced Card Grid */}
       <motion.section id="cv-section-projects" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-400 dark:border-gray-600 text-gray-900 dark:text-white">{t('cv.sections.projects')}</h2>
+        <h2 className={`text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b ${darkMode ? 'border-gray-600 text-white' : 'border-gray-400 text-gray-900'}`}>{t('cv.sections.projects')}</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {data.projects.map((project, index) => (
@@ -614,7 +617,7 @@ const CVContent = ({ data, activeSection }) => {
 
       {/* Certifications Section - Modern List */}
       <motion.section id="cv-section-certifications" className="mb-10" initial="hidden" animate="visible" variants={fadeInUp}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b border-gray-300 dark:border-gray-700">{t('cv.sections.certifications')}</h2>
+        <h2 className={`text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 pb-2 border-b ${darkMode ? 'border-gray-700 text-white' : 'border-gray-300 text-gray-900'}`}>{t('cv.sections.certifications')}</h2>
 
         <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 sm:p-8 shadow-md">
           <div className="grid grid-cols-1 gap-4 sm:gap-6">

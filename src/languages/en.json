@@ -279,6 +279,7 @@
   },
   "cv": {
     "title": "CV",
+    "summary": "Experienced Full-Stack Software Engineer specializing in cross-platform application development, mobile app architecture, and scalable backend solutions. Proficient in developing robust microservice architectures, implementing DevOps practices, and managing server configurations with technologies like Nginx. Strong expertise in modern frameworks, cloud deployment strategies, and delivering high-performance applications across web and mobile platforms. Passionate about creating efficient, maintainable code and optimizing system performance through innovative technical solutions.",
     "sections": {
       "personal": "Personal Information",
       "experience": "Professional Experience",
@@ -308,7 +309,8 @@
       "download_pdf": "Download PDF",
       "generating": "Generating...",
       "back": "Back",
-      "close": "Close"
+      "close": "Close",
+      "visit_website": "Visit Website"
     },
     "achievements": "Key Achievements:",
     "footer_download_reminder": "Don't forget to download this CV using the button at the top of the page.",

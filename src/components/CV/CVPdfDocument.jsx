@@ -681,8 +681,7 @@ const CVPdfDocument = ({ data }) => {
           <Text style={styles.sectionTitle}>{t("cv.pdf.professional_summary")}</Text>
           <View style={styles.summaryContainer}>
             <Text style={[styles.description, { textAlign: "justify", lineHeight: 1.5 }]}>
-              Experienced Full-Stack Software Engineer specializing in cross-platform application development, mobile app architecture, and scalable backend solutions. Proficient in developing robust microservice architectures, implementing DevOps practices, and managing server configurations with technologies like Nginx. Strong expertise in modern frameworks, cloud deployment
-              strategies, and delivering high-performance applications across web and mobile platforms. Passionate about creating efficient, maintainable code and optimizing system performance through innovative technical solutions.
+              {t("cv.summary")}
             </Text>
           </View>
         </View>
@@ -716,7 +715,7 @@ const CVPdfDocument = ({ data }) => {
                 {getCompanyWebsite(exp.company) && (
                   <View style={{ alignItems: "center" }}>
                     <Link src={getCompanyWebsite(exp.company)} style={styles.companyWebsiteButton}>
-                      Visit Website
+                      {t("cv.actions.visit_website")}
                     </Link>
                     <Text style={styles.companyWebsiteUrl}>{getCompanyWebsite(exp.company)}</Text>
                   </View>
@@ -757,7 +756,7 @@ const CVPdfDocument = ({ data }) => {
                 {getCompanyWebsite(exp.company) && (
                   <View style={{ alignItems: "center" }}>
                     <Link src={getCompanyWebsite(exp.company)} style={styles.companyWebsiteButton}>
-                      Visit Website
+                      {t("cv.actions.visit_website")}
                     </Link>
                     <Text style={styles.companyWebsiteUrl}>{getCompanyWebsite(exp.company)}</Text>
                   </View>
