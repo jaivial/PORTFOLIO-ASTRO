@@ -131,6 +131,22 @@ const styles = StyleSheet.create({
     borderColor: "#e2e8f0",
     marginBottom: 5,
   },
+  experienceContainer: {
+    backgroundColor: "#f8fafc",
+    padding: 15,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: "#e2e8f0",
+    marginBottom: 5,
+  },
+  experienceCard: {
+    backgroundColor: "#ffffff",
+    padding: 12,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: "#d1d5db",
+    marginBottom: 10,
+  },
   sectionTitle: {
     fontSize: 16,
     fontWeight: "bold",
@@ -346,7 +362,10 @@ const CVPdfDocument = ({ data }) => {
         <Text style={styles.sectionTitle}>{t('cv.pdf.professional_summary')}</Text>
         <View style={styles.summaryContainer}>
           <Text style={[styles.description, { textAlign: 'justify', lineHeight: 1.5 }]}>
-            {t('cv.pdf.professional_summary_text')}
+            Experienced Full-Stack Software Engineer specializing in cross-platform application development, mobile app architecture, and scalable backend solutions. 
+            Proficient in developing robust microservice architectures, implementing DevOps practices, and managing server configurations with technologies like Nginx. 
+            Strong expertise in modern frameworks, cloud deployment strategies, and delivering high-performance applications across web and mobile platforms. 
+            Passionate about creating efficient, maintainable code and optimizing system performance through innovative technical solutions.
           </Text>
         </View>
       </View>
@@ -354,25 +373,58 @@ const CVPdfDocument = ({ data }) => {
       {/* Experience Section */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>{t('cv.sections.experience')}</Text>
-        {data.experience.map((exp, index) => (
-          <View key={`exp-${index}`} style={styles.experienceItem}>
-            <View style={styles.row}>
-              <Text style={styles.company}>{exp.company}</Text>
-              <Text style={styles.period}>{exp.period}</Text>
-            </View>
-            <View style={styles.row}>
-              <Text style={styles.position}>{exp.position}</Text>
-              <Text style={styles.location}>{exp.location}</Text>
-            </View>
-            <Text style={styles.description}>{exp.description}</Text>
-            {exp.achievements.map((achievement, i) => (
-              <View key={`exp-${index}-ach-${i}`} style={[styles.row, { alignItems: "center" }]}>
-                <View style={styles.bulletPoint} />
-                <Text style={styles.achievement}>{achievement}</Text>
+        <View style={styles.experienceContainer}>
+          {data.experience.slice(0, 2).map((exp, index) => (
+            <View key={`exp-${index}`} style={styles.experienceCard}>
+              <View style={styles.row}>
+                <Text style={styles.company}>{exp.company}</Text>
+                <Text style={styles.period}>{exp.period}</Text>
               </View>
-            ))}
-          </View>
-        ))}
+              <View style={styles.row}>
+                <Text style={styles.position}>{exp.position}</Text>
+                <Text style={styles.location}>{exp.location}</Text>
+              </View>
+              <Text style={styles.description}>{exp.description}</Text>
+              {exp.achievements.map((achievement, i) => (
+                <View key={`exp-${index}-ach-${i}`} style={[styles.row, { alignItems: "center" }]}>
+                  <View style={styles.bulletPoint} />
+                  <Text style={styles.achievement}>{achievement}</Text>
+                </View>
+              ))}
+            </View>
+          ))}
+        </View>
+      </View>
+
+      {/* Footer */}
+      <Text style={styles.footer}>{`${data.personal.name} - ${t('cv.pdf.footer_text')} ${new Date().toLocaleDateString()}`}</Text>
+    </Page>
+
+    {/* Second Page - Continuing Experience and Other Sections */}
+    <Page size="A4" style={styles.page}>
+      {/* Continuing Experience Section */}
+      <View style={styles.section}>
+        <View style={styles.experienceContainer}>
+          {data.experience.slice(2).map((exp, index) => (
+            <View key={`exp-${index + 2}`} style={styles.experienceCard}>
+              <View style={styles.row}>
+                <Text style={styles.company}>{exp.company}</Text>
+                <Text style={styles.period}>{exp.period}</Text>
+              </View>
+              <View style={styles.row}>
+                <Text style={styles.position}>{exp.position}</Text>
+                <Text style={styles.location}>{exp.location}</Text>
+              </View>
+              <Text style={styles.description}>{exp.description}</Text>
+              {exp.achievements.map((achievement, i) => (
+                <View key={`exp-${index + 2}-ach-${i}`} style={[styles.row, { alignItems: "center" }]}>
+                  <View style={styles.bulletPoint} />
+                  <Text style={styles.achievement}>{achievement}</Text>
+                </View>
+              ))}
+            </View>
+          ))}
+        </View>
       </View>
 
       {/* Education Section */}
@@ -471,8 +523,8 @@ const CVPdfDocument = ({ data }) => {
         ))}
       </View>
 
-      {/* Footer */}
-      <Text style={styles.footer}>{`${data.personal.name} - ${t('cv.pdf.footer_text')} ${new Date().toLocaleDateString()}`}</Text>
+      {/* Footer for second page */}
+      <Text style={styles.footer}>{`${data.personal.name} - ${t('cv.pdf.footer_text')} ${new Date().toLocaleDateString()} - Page 2`}</Text>
     </Page>
   </Document>
   );
