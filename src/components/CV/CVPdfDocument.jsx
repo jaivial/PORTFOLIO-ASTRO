@@ -864,38 +864,6 @@ const CVPdfDocument = ({ data }) => {
           </View>
         </View>
 
-        {/* Projects Section */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("cv.sections.projects")}</Text>
-          {data.projects.slice(0, 4).map((project, index) => (
-            <View key={`project-${index}`} style={styles.projectItem}>
-              <Text style={styles.projectTitle}>{project.title}</Text>
-              <Text style={styles.projectType}>{project.type || "Web Application"}</Text>
-              <Text style={styles.projectDescription}>{project.description.length > 120 ? `${project.description.substring(0, 120)}...` : project.description}</Text>
-              <View style={styles.techRow}>
-                {project.technologies.slice(0, 8).map((tech, techIndex) => (
-                  <Text key={`project-${index}-tech-${techIndex}`} style={styles.projectTech}>
-                    {tech}
-                  </Text>
-                ))}
-              </View>
-            </View>
-          ))}
-        </View>
-
-        {/* Certifications */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("cv.sections.certifications")}</Text>
-          {data.certifications.map((cert, index) => (
-            <View key={`cert-${index}`} style={styles.certificationItem}>
-              <View style={styles.certificationContent}>
-                <Text style={styles.certificationName}>{cert.name}</Text>
-                <Text style={styles.certificationIssuer}>{cert.issuer}</Text>
-              </View>
-              <Text style={styles.certificationPeriod}>{cert.timespan}</Text>
-            </View>
-          ))}
-        </View>
       </Page>
     </Document>
   );
