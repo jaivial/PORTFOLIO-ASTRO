@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
   },
   section: {
-    marginBottom: 20,
+    marginBottom: 15,
   },
   header: {
     flexDirection: "row",
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
   },
   experienceContainer: {
     backgroundColor: "#f8fafc",
-    padding: 15,
+    padding: 12,
     borderRadius: 6,
     borderWidth: 1,
     borderColor: "#e2e8f0",
@@ -141,11 +141,11 @@ const styles = StyleSheet.create({
   },
   experienceCard: {
     backgroundColor: "#ffffff",
-    padding: 12,
+    padding: 10,
     borderRadius: 4,
     borderWidth: 1,
     borderColor: "#d1d5db",
-    marginBottom: 10,
+    marginBottom: 8,
   },
   sectionTitle: {
     fontSize: 16,
@@ -170,13 +170,23 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   company: {
-    fontSize: 12,
+    fontSize: 16,
     fontWeight: "bold",
     fontFamily: "Helvetica",
   },
   period: {
     fontSize: 10,
     color: "#666",
+    marginLeft: "auto",
+  },
+  periodTag: {
+    backgroundColor: "#000000",
+    color: "#ffffff",
+    fontSize: 9,
+    fontWeight: "bold",
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
     marginLeft: "auto",
   },
   position: {
@@ -378,7 +388,7 @@ const CVPdfDocument = ({ data }) => {
             <View key={`exp-${index}`} style={styles.experienceCard}>
               <View style={styles.row}>
                 <Text style={styles.company}>{exp.company}</Text>
-                <Text style={styles.period}>{exp.period}</Text>
+                <Text style={styles.periodTag}>{exp.period}</Text>
               </View>
               <View style={styles.row}>
                 <Text style={styles.position}>{exp.position}</Text>
@@ -409,7 +419,7 @@ const CVPdfDocument = ({ data }) => {
             <View key={`exp-${index + 2}`} style={styles.experienceCard}>
               <View style={styles.row}>
                 <Text style={styles.company}>{exp.company}</Text>
-                <Text style={styles.period}>{exp.period}</Text>
+                <Text style={styles.periodTag}>{exp.period}</Text>
               </View>
               <View style={styles.row}>
                 <Text style={styles.position}>{exp.position}</Text>
