@@ -49,7 +49,7 @@ const cvData = {
                 ]
             },
             {
-                position: "Frontend Developer",
+                position: "Full-Stack Developer",
                 company: "Tour to Valencia",
                 location: "Valencia, Spain",
                 period: "2025",
@@ -89,7 +89,7 @@ const cvData = {
                 ]
             },
             {
-                position: "Community Manager and Web Developer",
+                position: "Full-Stack Developer",
                 company: "Alquería Villacarmen",
                 location: "Valencia, Spain",
                 period: "2022",
@@ -246,7 +246,7 @@ const cvData = {
                 ]
             },
             {
-                position: "Desarrollador Frontend",
+                position: "Desarrollador Full-Stack",
                 company: "Tour to Valencia",
                 location: "Valencia, España",
                 period: "2025",
@@ -286,7 +286,7 @@ const cvData = {
                 ]
             },
             {
-                position: "Community Manager y Desarrollador Web",
+                position: "Desarrollador Full-Stack",
                 company: "Alquería Villacarmen",
                 location: "Valencia, España",
                 period: "2022",
@@ -443,7 +443,7 @@ const cvData = {
                 ]
             },
             {
-                position: "Frontend Entwickler",
+                position: "Full-Stack Entwickler",
                 company: "Tour to Valencia",
                 location: "Valencia, Spanien",
                 period: "2025",
@@ -483,7 +483,7 @@ const cvData = {
                 ]
             },
             {
-                position: "Community Manager und Webentwickler",
+                position: "Full-Stack Entwickler",
                 company: "Alquería Villacarmen",
                 location: "Valencia, Spanien",
                 period: "2022",
