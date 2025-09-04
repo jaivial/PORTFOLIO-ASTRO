@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import markdownConfig from './markdown.config';
-import mdx from "@astrojs/mdx";
+// import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
 import robotsTxt from "astro-robots-txt";
@@ -20,13 +20,7 @@ export default defineConfig({
     config: {
       applyBaseStyles: false
     }
-  }), react(), mdx({
-    ...markdownConfig,
-    syntaxHighlight: "shiki",
-    shikiConfig: {
-      theme: "one-dark-pro"
-    }
-  }), sitemap(), partytown({
+  }), react(), sitemap(), partytown({
     config: {
       forward: ["dataLayer.push"]
     }

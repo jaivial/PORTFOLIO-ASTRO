@@ -14,7 +14,7 @@ interface Props {
   image: string;
   snippet: string;
 }
-import Footer from "../components/Footer.astro";
+import Footer from "../components/Footer.jsx";
 const { title, image, snippet } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.url.origin).toString();
 const resolvedImageWithDomain = image;
@@ -75,7 +75,7 @@ const makeTitle = title ? title : "Jaime Digital Studio";
   </head>
   <body>
     <slot />
-    <Footer />
+    <Footer client:load />
     <script src="../utils/aos.js"></script>
     <style is:global>
       * {

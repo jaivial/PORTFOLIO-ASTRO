@@ -147,6 +147,7 @@ const placeholderFeatures = [
 // Funcionalidades para Alqueria Villa Carmen
 const alqueriaFeatures = [
     {
+        key: "reservation_system",
         title: "Gestor de Reservas Online",
         description: "Sistema avanzado de reservas con calendario que muestra días cerrados, abiertos y completos. El número de personas es condicional según el límite y número de reservas para cada día. Proceso en 4 pasos: selección de fecha y personas, opción de reservar arroz de la base de datos, datos personales con envío de confirmación por email y WhatsApp, y confirmación final con selección de tronas/carros y aceptación de condiciones.",
         carousel: [VillacarmenImg1, VillacarmenImg2, VillacarmenImg3, VillacarmenImg4]
@@ -711,3 +712,4 @@ export function getData() {
     // Ordenar proyectos por fecha (del más reciente al más antiguo)
     return [...data].sort((a, b) => new Date(b.date) - new Date(a.date));
 }
+

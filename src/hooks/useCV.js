@@ -1,15 +1,23 @@
 import { useState, useCallback, useEffect } from 'react';
 import cvData from '../data/cvData';
+import { getCurrentLanguage, setCurrentLanguage } from '../utils/languageManager';
 
 export default function useCV(initialLanguage = null, initialSection = null) {
-    // Use the provided initial values if available, otherwise defaults
-    const [language, setLanguage] = useState(initialLanguage || 'en');
+    // Use the provided initial values if available, otherwise use localStorage language
+    const getInitialLanguage = () => {
+        if (initialLanguage) return initialLanguage;
+        const storedLanguage = getCurrentLanguage();
+        // Ensure the stored language is supported by CV
+        return ['en', 'es', 'de'].includes(storedLanguage) ? storedLanguage : 'en';
+    };
+    
+    const [language, setLanguage] = useState(getInitialLanguage());
     const [activeSection, setActiveSection] = useState(initialSection || 'personal');
     const [isPdfGenerating, setIsPdfGenerating] = useState(false);
 
     // Set initial values when props change
     useEffect(() => {
-        if (initialLanguage && (initialLanguage === 'en' || initialLanguage === 'es')) {
+        if (initialLanguage && (initialLanguage === 'en' || initialLanguage === 'es' || initialLanguage === 'de')) {
             setLanguage(initialLanguage);
         }
 
@@ -25,18 +33,37 @@ export default function useCV(initialLanguage = null, initialSection = null) {
         }
     }, [initialLanguage, initialSection]);
 
+    // Listen for site language changes and sync CV language
+    useEffect(() => {
+        const handleLanguageChange = (event) => {
+            const newLanguage = event.detail.language;
+            if (['en', 'es', 'de'].includes(newLanguage)) {
+                setLanguage(newLanguage);
+            }
+        };
+
+        if (typeof window !== 'undefined') {
+            window.addEventListener('language-changed', handleLanguageChange);
+            return () => window.removeEventListener('language-changed', handleLanguageChange);
+        }
+    }, []);
+
     // Get the CV data in the current language
     const data = cvData[language];
 
-    // Toggle between English and Spanish
+    // Toggle between English, Spanish and German
     const toggleLanguage = useCallback(() => {
-        setLanguage(prev => prev === 'en' ? 'es' : 'en');
+        setLanguage(prev => {
+            if (prev === 'en') return 'es';
+            if (prev === 'es') return 'de';
+            return 'en';
+        });
     }, []);
 
-    // Set language directly
+    // Set language directly and sync with global language state
     const changeLanguage = useCallback((lang) => {
-        if (lang === 'en' || lang === 'es') {
-            setLanguage(lang);
+        if (lang === 'en' || lang === 'es' || lang === 'de') {
+            setCurrentLanguage(lang); // This will trigger the global language-changed event
         }
     }, []);
 
@@ -48,6 +75,11 @@ export default function useCV(initialLanguage = null, initialSection = null) {
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
+    }, []);
+
+    // Update active section without scrolling (for intersection observer)
+    const setActiveSection_ = useCallback((section) => {
+        setActiveSection(section);
     }, []);
 
     // Start PDF generation process
@@ -68,6 +100,7 @@ export default function useCV(initialLanguage = null, initialSection = null) {
         toggleLanguage,
         changeLanguage,
         navigateToSection,
+        setActiveSection: setActiveSection_,
         startPdfGeneration,
         completePdfGeneration,
     };

@@ -1,15 +1,5 @@
 declare module 'astro:content' {
 	interface Render {
-		'.mdx': Promise<{
-			Content: import('astro').MarkdownInstance<{}>['Content'];
-			headings: import('astro').MarkdownHeading[];
-			remarkPluginFrontmatter: Record<string, any>;
-		}>;
-	}
-}
-
-declare module 'astro:content' {
-	interface Render {
 		'.md': Promise<{
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
@@ -136,55 +126,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"about-astro.mdx": {
-	id: "about-astro.mdx";
-  slug: "about-astro";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"evolution-of-web-development.mdx": {
-	id: "evolution-of-web-development.mdx";
-  slug: "evolution-of-web-development";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"guide-full-stack-web-development.mdx": {
-	id: "guide-full-stack-web-development.mdx";
-  slug: "guide-full-stack-web-development";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"optimizing-web-images.mdx": {
-	id: "optimizing-web-images.mdx";
-  slug: "optimizing-web-images";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"second-post.mdx": {
-	id: "second-post.mdx";
-  slug: "second-post";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"tailwind-css-beginners-guide.mdx": {
-	id: "tailwind-css-beginners-guide.mdx";
-  slug: "tailwind-css-beginners-guide";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"web-development-tools-and-ide.mdx": {
-	id: "web-development-tools-and-ide.mdx";
-  slug: "web-development-tools-and-ide";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
 };
 "projects": {
 "cat-store.md": {

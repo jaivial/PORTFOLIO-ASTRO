@@ -2,7 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tooltip } from "rsuite";
 import "rsuite/dist/rsuite.min.css";
-import { careerData } from "../utils/career";
+import { useTranslations } from "../utils/translations";
+import { getCurrentLanguage } from "../utils/languageManager";
+import { getTranslatedCareerData } from "../utils/careerTranslations";
 
 // Estilos adicionales para el componente
 const customStyles = `
@@ -93,8 +95,10 @@ const customStyles = `
 `;
 
 export default function TimelineInteractive() {
-  // Obtenemos los datos de la trayectoria directamente del array careerData
-  const timelineData = careerData;
+  const t = useTranslations();
+  const currentLanguage = getCurrentLanguage();
+  // Obtenemos los datos de la trayectoria con traducción
+  const timelineData = getTranslatedCareerData(currentLanguage);
 
   const [expandedItem, setExpandedItem] = useState(null);
   const [activeFilter, setActiveFilter] = useState("all");
@@ -179,21 +183,21 @@ export default function TimelineInteractive() {
       <div className="timeline-controls flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
         <div className="filter-buttons flex flex-wrap gap-2 justify-center sm:justify-start">
           <button onClick={() => setActiveFilter("all")} className={`px-4 py-2 rounded-full text-sm transition-all ${activeFilter === "all" ? "bg-primary text-black font-medium" : "bg-primary bg-opacity-10 text-primary hover:bg-opacity-20"}`}>
-            Todos
+            {t('timeline.interactive.filter_all')}
           </button>
           <button onClick={() => setActiveFilter("project")} className={`px-4 py-2 rounded-full text-sm transition-all ${activeFilter === "project" ? "bg-primary text-black font-medium" : "bg-primary bg-opacity-10 text-primary hover:bg-opacity-20"}`}>
-            Proyectos
+            {t('timeline.interactive.filter_projects')}
           </button>
           <button onClick={() => setActiveFilter("job")} className={`px-4 py-2 rounded-full text-sm transition-all ${activeFilter === "job" ? "bg-primary text-black font-medium" : "bg-primary bg-opacity-10 text-primary hover:bg-opacity-20"}`}>
-            Trabajo
+            {t('timeline.interactive.filter_work')}
           </button>
           <button onClick={() => setActiveFilter("education")} className={`px-4 py-2 rounded-full text-sm transition-all ${activeFilter === "education" ? "bg-primary text-black font-medium" : "bg-primary bg-opacity-10 text-primary hover:bg-opacity-20"}`}>
-            Formación
+            {t('timeline.interactive.filter_education')}
           </button>
         </div>
 
         <div className="search-box relative mt-4 sm:mt-0">
-          <input type="text" placeholder="Buscar experiencia o habilidad..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="px-4 py-2 pl-10 bg-primary bg-opacity-10 rounded-full text-primary text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-30 w-full sm:w-64" />
+          <input type="text" placeholder={t('timeline.interactive.search_placeholder')} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="px-4 py-2 pl-10 bg-primary bg-opacity-10 rounded-full text-primary text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-30 w-full sm:w-64" />
           <svg className="absolute left-3 top-2.5 h-4 w-4 text-primary opacity-70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
@@ -244,7 +248,7 @@ export default function TimelineInteractive() {
                   {/* Sección de habilidades */}
                   <div className="skills-container mt-3 flex flex-wrap">
                     {item.skills.map((skill, idx) => (
-                      <Tooltip key={idx} placement="top" content={`Experiencia en ${skill}`}>
+                      <Tooltip key={idx} placement="top" content={`${t('timeline.interactive.tooltip_skill')} ${skill}`}>
                         <span className="skill-tag">{skill}</span>
                       </Tooltip>
                     ))}
@@ -275,7 +279,7 @@ export default function TimelineInteractive() {
                         {/* Detalles adicionales */}
                         {item.details && <p className="text-gray-400 mb-3">{item.details}</p>}
 
-                        <h4 className="text-primary font-medium mb-2">Aspectos destacados:</h4>
+                        <h4 className="text-primary font-medium mb-2">{t('timeline.interactive.highlights')}</h4>
                         <ul className="list-disc list-inside text-gray-400">
                           {item.highlights.map((highlight, idx) => (
                             <motion.li key={idx} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.2, delay: idx * 0.1 }} className="mb-1">
@@ -291,7 +295,7 @@ export default function TimelineInteractive() {
                               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                               </svg>
-                              Visitar {item.category === "project" ? "proyecto" : item.category === "education" ? "institución" : "empresa"}
+                              {item.category === "project" ? t('timeline.interactive.visit_project') : item.category === "education" ? t('timeline.interactive.visit_institution') : t('timeline.interactive.visit_company')}
                             </a>
                           </div>
                         )}
@@ -307,7 +311,7 @@ export default function TimelineInteractive() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <p>
-                No se encontraron resultados para <span className="text-primary">"{searchTerm}"</span>
+                {t('timeline.interactive.no_results')} <span className="text-primary">"{searchTerm}"</span>
               </p>
               <button
                 onClick={() => {
@@ -316,7 +320,7 @@ export default function TimelineInteractive() {
                 }}
                 className="mt-2 text-indigo-300 hover:text-indigo-200"
               >
-                Restablecer filtros
+                {t('timeline.interactive.reset_filters')}
               </button>
             </motion.div>
           )}
