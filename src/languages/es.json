@@ -279,6 +279,7 @@
   },
   "cv": {
     "title": "CV",
+    "summary": "Ingeniero de Software Full-Stack experimentado especializado en desarrollo de aplicaciones multiplataforma, arquitectura de aplicaciones móviles y soluciones backend escalables. Competente en el desarrollo de arquitecturas de microservicios robustas, implementación de prácticas DevOps y gestión de configuraciones de servidores con tecnologías como Nginx. Sólida experiencia en frameworks modernos, estrategias de despliegue en la nube y entrega de aplicaciones de alto rendimiento en plataformas web y móviles. Apasionado por crear código eficiente y mantenible, optimizando el rendimiento del sistema a través de soluciones técnicas innovadoras.",
     "sections": {
       "personal": "Información Personal",
       "experience": "Experiencia Profesional",
@@ -308,7 +309,8 @@
       "download_pdf": "Descargar PDF",
       "generating": "Generando...",
       "back": "Volver",
-      "close": "Cerrar"
+      "close": "Cerrar",
+      "visit_website": "Visitar Sitio Web"
     },
     "achievements": "Logros Principales:",
     "footer_download_reminder": "No olvides descargar este CV utilizando el botón en la parte superior de la página.",

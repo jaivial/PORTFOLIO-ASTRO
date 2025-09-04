@@ -1,3 +1,11 @@
+// Import project images
+import FrasesMarcosAlcon from "../assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg";
+import TodoList from "../assets/images/todolist/todolist6.jpg";
+import AlqueriaVillaCarmen from "../assets/images/villacarmen/villacarmen-18.jpg";
+import CatStore from "../assets/images/catstore/catstore1.jpg";
+import GuillermoFernandezNutricion from "../assets/images/guillermofernandeznutricion.webp";
+import TourToValencia from "../assets/images/tourtovalencia/tourtovalencia11.jpg";
+
 const cvData = {
     en: {
         personal: {
@@ -31,7 +39,7 @@ const cvData = {
                 position: "Frontend React Developer",
                 company: "Knowmad Mood",
                 location: "Remote",
-                period: "2023 - Present",
+                period: "3 months in 2025",
                 description: "Frontend development with React, implementing best practices and code scalability.",
                 achievements: [
                     "Building reusable components",
@@ -41,38 +49,38 @@ const cvData = {
                 ]
             },
             {
+                position: "Full-Stack Developer",
+                company: "Tour to Valencia",
+                location: "Valencia, Spain",
+                period: "2025",
+                description: "Development of local tourism platform focused on personalized experiences and online bookings.",
+                achievements: [
+                    "Dynamic booking manager for tours",
+                    "Dynamic tour page generator",
+                    "AI connection via OpenRouter for page translation",
+                    "PayPal payment gateway integrated with client account",
+                    "Email system for booking confirmations"
+                ]
+            },
+            {
                 position: "Web Developer",
                 company: "Centro Neuro Expresión",
                 location: "Valencia, Spain",
-                period: "2024",
-                description: "Development of informative website for a psychopedagogy center with integrated contact form.",
+                period: "2025",
+                description: "Development of informational website for psychopedagogy center with integrated contact form.",
                 achievements: [
-                    "Informative page about psychopedagogy services",
-                    "Detailed sections on center specialties",
+                    "Informational page about psychopedagogy services",
+                    "Detailed sections about center specialties",
                     "Contact form integrated with email",
                     "Fully responsive design adapted to all devices"
                 ]
             },
             {
-                position: "Frontend Developer",
-                company: "Tour to Valencia",
-                location: "Valencia, Spain",
-                period: "2024",
-                description: "Development of local tourism platform with a focus on personalized experiences and online reservations.",
-                achievements: [
-                    "Dynamic reservation manager for tours",
-                    "Dynamic tour page generator",
-                    "Integration with OpenRouter API for page translation",
-                    "PayPal payment gateway integrated with client account",
-                    "Email system for reservation confirmation"
-                ]
-            },
-            {
                 position: "Web Developer",
-                company: "Guillermo Fernández Nutrición",
+                company: "Guillermo Fernández Nutrition",
                 location: "Valencia, Spain",
                 period: "2023",
-                description: "Professional website development for nutritionist with consultation form and nutritional content blog.",
+                description: "Development of professional website for nutritionist with consultation form and nutritional content blog.",
                 achievements: [
                     "Responsive design adapted to mobile and tablets",
                     "Consultation form integrated with email",
@@ -81,16 +89,16 @@ const cvData = {
                 ]
             },
             {
-                position: "Community Manager and Web Developer",
+                position: "Full-Stack Developer",
                 company: "Alquería Villacarmen",
                 location: "Valencia, Spain",
                 period: "2022",
-                description: "Content management and social media presence for this local business, improving its online visibility and customer acquisition. Implementation of online reservation system and digital menu.",
+                description: "Content management and social media presence for this local business, improving their online visibility and customer acquisition. Implementation of online booking system and digital menu.",
                 achievements: [
                     "Increased online visibility by 40%",
-                    "Development and implementation of online reservation system",
+                    "Development and implementation of online booking system",
                     "Creation of digital menu with dynamic dish management",
-                    "Custom administration panel for reservation management"
+                    "Custom administration panel for booking management"
                 ]
             }
         ],
@@ -149,59 +157,51 @@ const cvData = {
                 description: "Interactive web application built with Go that displays a collection of phrases and poems by Marcos Alcón in an elegant book format with page flip animations.",
                 technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
                 link: "https://frasesmarcosalcon.com",
-                thumbnail: "/images/frasesmarcosalcon/frasesmarcosalcon1.jpg"
+                thumbnail: FrasesMarcosAlcon.src
             },
             {
                 title: "Tour To Valencia",
                 description: "Modern, multilingual web application built with Remix and React for discovering, exploring, and booking tours and experiences in Valencia, Spain.",
                 technologies: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Responsive Design"],
                 link: "https://www.tourtovalencia.com",
-                thumbnail: "/images/tourtovalencia/tourtovalencia11.jpg"
+                thumbnail: TourToValencia.src
             },
             {
                 title: "Todo List",
                 description: "Complete task management application developed with Next.js 15, TypeScript, Tailwind CSS 4 and PostgreSQL with user authentication, drag & drop task management, and multilingual support.",
                 technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Responsive Design"],
                 link: "https://todolist.jaimedigitalstudio.com/",
-                thumbnail: "/images/todolist/todolist6.jpg"
+                thumbnail: TodoList.src
             },
             {
                 title: "Guillermo Fernandez Nutrición",
                 description: "Website to advertise nutritional consultation services and increase customer acquisition with responsive design adaptable to desktop, tablet, and mobile sizes.",
                 technologies: ["Javascript", "CSS", "Astro", "Express.js", "Responsive Design"],
                 link: "https://guillermofernandeznutricion.es/",
-                thumbnail: "/images/guillermofernandeznutricion.webp"
+                thumbnail: GuillermoFernandezNutricion.src
             },
             {
                 title: "Alqueria Villa Carmen",
                 description: "Website creation to promote Alqueria Villa Carmen, a restaurant and event hall, featuring daily menus, weekend menus and wine list, plus online reservation capability.",
                 technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL", "Responsive Design"],
                 link: "https://alqueriavillacarmen.com/",
-                thumbnail: "/images/villacarmen/villacarmen-18.jpg"
+                thumbnail: AlqueriaVillaCarmen.src
             },
             {
                 title: "Cat Store",
                 description: "Web application for an online cat store developed with PHP, MySQL, HTML, CSS and JavaScript with authentication system, session persistence through cookies, and mobile-responsive design.",
                 technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL", "Responsive Design"],
                 link: "https://catstore.jaimedigitalstudio.com",
-                thumbnail: "/images/catstore/catstore1.jpg"
+                thumbnail: CatStore.src
             }
         ],
         certifications: [
             {
                 name: "Higher Degree in Multiplatform Application Development",
                 issuer: "Florida Universitaria",
-                date: "2024",
+                timespan: "2022 - 2024",
                 url: "https://www.floridauniversitaria.es/"
             }
-        ],
-        interests: [
-            "Web development",
-            "Open source contribution",
-            "UX/UI design",
-            "AI integration",
-            "Photography",
-            "Travel"
         ]
     },
     es: {
@@ -236,7 +236,7 @@ const cvData = {
                 position: "Frontend React Developer",
                 company: "Knowmad Mood",
                 location: "Remoto",
-                period: "2023 - Presente",
+                period: "3 meses en 2025",
                 description: "Desarrollo frontend con React, implementando buenas prácticas y escalabilidad de código.",
                 achievements: [
                     "Construcción de componentes reutilizables",
@@ -246,23 +246,10 @@ const cvData = {
                 ]
             },
             {
-                position: "Desarrollador Web",
-                company: "Centro Neuro Expresión",
-                location: "Valencia, España",
-                period: "2024",
-                description: "Desarrollo de sitio web informativo para centro de psicopedagogía con formulario de contacto integrado.",
-                achievements: [
-                    "Página informativa sobre servicios de psicopedagogía",
-                    "Secciones detalladas sobre especialidades del centro",
-                    "Formulario de contacto integrado con email",
-                    "Diseño totalmente responsive adaptado a todos los dispositivos"
-                ]
-            },
-            {
-                position: "Desarrollador Frontend",
+                position: "Desarrollador Full-Stack",
                 company: "Tour to Valencia",
                 location: "Valencia, España",
-                period: "2024",
+                period: "2025",
                 description: "Desarrollo de plataforma de turismo local con enfoque en experiencias personalizadas y reservas online.",
                 achievements: [
                     "Gestor de reservas dinámico para tours",
@@ -270,6 +257,19 @@ const cvData = {
                     "Conexión a IA por OpenRouter para traducción de páginas",
                     "Pasarela de pago PayPal integrada con cuenta del cliente",
                     "Sistema de emails para confirmación de reservas"
+                ]
+            },
+            {
+                position: "Desarrollador Web",
+                company: "Centro Neuro Expresión",
+                location: "Valencia, España",
+                period: "2025",
+                description: "Desarrollo de sitio web informativo para centro de psicopedagogía con formulario de contacto integrado.",
+                achievements: [
+                    "Página informativa sobre servicios de psicopedagogía",
+                    "Secciones detalladas sobre especialidades del centro",
+                    "Formulario de contacto integrado con email",
+                    "Diseño totalmente responsive adaptado a todos los dispositivos"
                 ]
             },
             {
@@ -286,7 +286,7 @@ const cvData = {
                 ]
             },
             {
-                position: "Community Manager y Desarrollador Web",
+                position: "Desarrollador Full-Stack",
                 company: "Alquería Villacarmen",
                 location: "Valencia, España",
                 period: "2022",
@@ -354,59 +354,51 @@ const cvData = {
                 description: "Aplicación web interactiva construida con Go que muestra una colección de frases y poemas de Marcos Alcón en un elegante formato de libro con animaciones de paso de página.",
                 technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
                 link: "https://frasesmarcosalcon.com",
-                thumbnail: "/images/frasesmarcosalcon/frasesmarcosalcon1.jpg"
+                thumbnail: FrasesMarcosAlcon.src
             },
             {
                 title: "Tour To Valencia",
                 description: "Aplicación web moderna y multilingüe construida con Remix y React para descubrir, explorar y reservar tours y experiencias en Valencia, España.",
                 technologies: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Responsive Design"],
                 link: "https://www.tourtovalencia.com",
-                thumbnail: "/images/tourtovalencia/tourtovalencia11.jpg"
+                thumbnail: TourToValencia.src
             },
             {
                 title: "Todo List",
                 description: "Aplicación completa de gestión de tareas desarrollada con Next.js 15, TypeScript, Tailwind CSS 4 y PostgreSQL con autenticación de usuarios, gestión de tareas con sistema de arrastrar y soltar, y soporte multilingüe.",
                 technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Responsive Design"],
                 link: "https://todolist.jaimedigitalstudio.com/",
-                thumbnail: "/images/todolist/todolist6.jpg"
+                thumbnail: TodoList.src
             },
             {
                 title: "Guillermo Fernandez Nutrición",
                 description: "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes con diseño responsivo adaptable a tamaños de escritorio, tablet y móviles.",
                 technologies: ["Javascript", "CSS", "Astro", "Express.js", "Responsive Design"],
                 link: "https://guillermofernandeznutricion.es/",
-                thumbnail: "/images/guillermofernandeznutricion.webp"
+                thumbnail: GuillermoFernandezNutricion.src
             },
             {
                 title: "Alqueria Villa Carmen",
                 description: "Creación de página web para promocionar Alqueria Villa Carmen, un restaurante y salón de eventos, mostrando los Menús del Día, de Fin de Semana y la carta de vinos, además de permitir reservas online.",
                 technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL", "Responsive Design"],
                 link: "https://alqueriavillacarmen.com/",
-                thumbnail: "/images/villacarmen/villacarmen-18.jpg"
+                thumbnail: AlqueriaVillaCarmen.src
             },
             {
                 title: "Cat Store",
                 description: "Aplicación web para una tienda online de gatos desarrollada con PHP, MySQL, HTML, CSS y JavaScript con sistema de autenticación, persistencia de sesión mediante cookies y diseño adaptable a dispositivos móviles.",
                 technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL", "Responsive Design"],
                 link: "https://catstore.jaimedigitalstudio.com",
-                thumbnail: "/images/catstore/catstore1.jpg"
+                thumbnail: CatStore.src
             }
         ],
         certifications: [
             {
                 name: "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
                 issuer: "Florida Universitaria",
-                date: "2024",
+                timespan: "2022 - 2024",
                 url: "https://www.floridauniversitaria.es/"
             }
-        ],
-        interests: [
-            "Desarrollo web",
-            "Contribución a código abierto",
-            "Diseño UX/UI",
-            "Integración de IA",
-            "Fotografía",
-            "Viajes"
         ]
     },
     de: {
@@ -441,39 +433,66 @@ const cvData = {
                 position: "Frontend React Entwickler",
                 company: "Knowmad Mood",
                 location: "Remote",
-                period: "2023 - Gegenwart",
+                period: "3 Monate im Jahr 2025",
                 description: "Frontend-Entwicklung mit React, Implementierung bewährter Praktiken und Code-Skalierbarkeit.",
                 achievements: [
-                    "Entwicklung wiederverwendbarer Komponenten",
-                    "Testen mit Jest und React Testing Library",
+                    "Erstellung wiederverwendbarer Komponenten",
+                    "Testing mit Jest und React Testing Library",
                     "Implementierung reaktiver Datenflüsse mit RxJS",
-                    "Performance-Optimierung in Webanwendungen"
+                    "Leistungsoptimierung in Webanwendungen"
                 ]
             },
             {
-                position: "Web Entwickler",
+                position: "Full-Stack Entwickler",
+                company: "Tour to Valencia",
+                location: "Valencia, Spanien",
+                period: "2025",
+                description: "Entwicklung einer lokalen Tourismusplattform mit Fokus auf personalisierte Erlebnisse und Online-Buchungen.",
+                achievements: [
+                    "Dynamischer Buchungsmanager für Touren",
+                    "Dynamischer Tour-Seitengenerator",
+                    "KI-Verbindung über OpenRouter für Seitenübersetzung",
+                    "PayPal-Zahlungsgateway in Kundenkonto integriert",
+                    "E-Mail-System für Buchungsbestätigungen"
+                ]
+            },
+            {
+                position: "Webentwickler",
                 company: "Centro Neuro Expresión",
                 location: "Valencia, Spanien",
-                period: "2024",
-                description: "Entwicklung einer informativen Website für ein psychopädagogisches Zentrum mit integriertem Kontaktformular.",
+                period: "2025",
+                description: "Entwicklung einer Informationswebsite für ein Psychopädagogik-Zentrum mit integriertem Kontaktformular.",
                 achievements: [
-                    "Informative Seite über psychopädagogische Dienstleistungen",
+                    "Informationsseite über Psychopädagogik-Dienstleistungen",
+                    "Detaillierte Abschnitte über Zentrumspezialisierungen",
                     "Kontaktformular mit E-Mail-Integration",
-                    "Responsive Design für alle Geräte",
-                    "SEO-Optimierung für bessere Sichtbarkeit"
+                    "Vollständig responsives Design für alle Geräte"
                 ]
             },
             {
-                position: "Full Stack Entwickler",
-                company: "Freelance",
+                position: "Webentwickler",
+                company: "Guillermo Fernández Ernährung",
                 location: "Valencia, Spanien",
-                period: "2020 - 2023",
-                description: "Vollständige Web-Entwicklung für verschiedene Unternehmen und persönliche Projekte.",
+                period: "2023",
+                description: "Entwicklung einer professionellen Website für Ernährungsberater mit Beratungsformular und Ernährungsinhalts-Blog.",
                 achievements: [
-                    "Entwicklung von mehr als 20 kompletten Web-Projekten",
-                    "Integration von Zahlungssystemen (PayPal, Stripe)",
-                    "Entwicklung responsiver und benutzerfreundlicher Designs",
-                    "Implementierung von Content-Management-Systemen"
+                    "Responsives Design für Mobilgeräte und Tablets",
+                    "Beratungsformular mit E-Mail-Integration",
+                    "Blog mit Kategorien für Ernährungsinhalte",
+                    "Suchmaschinenoptimierung"
+                ]
+            },
+            {
+                position: "Full-Stack Entwickler",
+                company: "Alquería Villacarmen",
+                location: "Valencia, Spanien",
+                period: "2022",
+                description: "Content-Management und Social-Media-Präsenz für dieses lokale Unternehmen, Verbesserung der Online-Sichtbarkeit und Kundenakquise. Implementierung eines Online-Buchungssystems und digitaler Speisekarte.",
+                achievements: [
+                    "Online-Sichtbarkeit um 40% erhöht",
+                    "Entwicklung und Implementierung eines Online-Buchungssystems",
+                    "Erstellung einer digitalen Speisekarte mit dynamischem Gerichtmanagement",
+                    "Benutzerdefiniertes Administrationspanel für Buchungsverwaltung"
                 ]
             }
         ],
@@ -532,59 +551,51 @@ const cvData = {
                 description: "Digitales Buchprojekt mit interaktiven Seiten und responsivem Design.",
                 technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
                 link: "https://frasesmarcosalcon.com",
-                thumbnail: "/images/frasesmarcosalcon/frasesmarcosalcon1.jpg"
+                thumbnail: FrasesMarcosAlcon.src
             },
             {
                 title: "Tour To Valencia",
                 description: "Tourismusplattform mit Zahlungsintegration und Buchungssystem.",
                 technologies: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Responsive Design"],
                 link: "https://www.tourtovalencia.com",
-                thumbnail: "/images/tourtovalencia/tourtovalencia11.jpg"
+                thumbnail: TourToValencia.src
             },
             {
                 title: "Todo List",
                 description: "Aufgabenverwaltungsanwendung mit Benutzerauthentifizierung und Datenbank.",
                 technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Responsive Design"],
                 link: "https://todolist.jaimedigitalstudio.com/",
-                thumbnail: "/images/todolist/todolist6.jpg"
+                thumbnail: TodoList.src
             },
             {
                 title: "Guillermo Fernandez Ernährung",
                 description: "Informative Website für Ernährungsberatung mit Kontaktformular.",
                 technologies: ["Javascript", "CSS", "Astro", "Express.js", "Responsive Design"],
                 link: "https://guillermofernandeznutricion.es/",
-                thumbnail: "/images/guillermofernandeznutricion.webp"
+                thumbnail: GuillermoFernandezNutricion.src
             },
             {
                 title: "Alqueria Villa Carmen",
                 description: "Website für ein ländliches Tourismusunternehmen mit Buchungssystem.",
                 technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL", "Responsive Design"],
                 link: "https://alqueriavillacarmen.com/",
-                thumbnail: "/images/villacarmen/villacarmen-18.jpg"
+                thumbnail: AlqueriaVillaCarmen.src
             },
             {
                 title: "Cat Store",
                 description: "E-Commerce-Plattform für Katzenprodukte mit Warenkorb und Zahlungssystem.",
                 technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL", "Responsive Design"],
                 link: "https://catstore.jaimedigitalstudio.com",
-                thumbnail: "/images/catstore/catstore1.jpg"
+                thumbnail: CatStore.src
             }
         ],
         certifications: [
             {
                 name: "Höhere Berufsbildung in Multiplattform-Anwendungsentwicklung",
                 issuer: "Florida Universitaria",
-                date: "2024",
+                timespan: "2022 - 2024",
                 url: "https://www.floridauniversitaria.es/"
             }
-        ],
-        interests: [
-            "Webentwicklung",
-            "Open-Source-Beiträge",
-            "UX/UI-Design",
-            "KI-Integration",
-            "Fotografie",
-            "Reisen"
         ]
     }
 };

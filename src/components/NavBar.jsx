@@ -42,7 +42,8 @@ function NavBar() {
 
       if (checkIndexPage) {
         // On index page: show navbar when scrolling down, hide when at top
-        if (scrollPosition > headerHeight) {
+        // But keep navbar visible if menu is open
+        if (scrollPosition > headerHeight || isMenuOpen) {
           setIsNavVisible(true);
         } else {
           setIsNavVisible(false);
@@ -60,6 +61,10 @@ function NavBar() {
     const handleClickOutside = (event) => {
       if (!event.target.closest('.language-selector')) {
         setIsLanguageSelectorOpen(false);
+      }
+      // Don't close menu if clicking on hamburger button or menu itself
+      if (!event.target.closest('.hamburger-button') && !event.target.closest('.side-menu') && isMenuOpen) {
+        setIsMenuOpen(false);
       }
     };
 
@@ -97,6 +102,18 @@ function NavBar() {
       window.removeEventListener("language-changed", handleLanguageChange);
     };
   }, [isMenuOpen]);
+
+  // Additional effect to handle navbar visibility when menu opens/closes
+  useEffect(() => {
+    if (isIndexPage && isMenuOpen) {
+      setIsNavVisible(true);
+    } else if (isIndexPage && !isMenuOpen) {
+      // Check scroll position to determine if navbar should be visible
+      const scrollPosition = window.scrollY;
+      const headerHeight = 150;
+      setIsNavVisible(scrollPosition > headerHeight);
+    }
+  }, [isMenuOpen, isIndexPage]);
 
   const handleOpenCV = () => {
     setIsCVOpen(true);
@@ -186,7 +203,7 @@ function NavBar() {
               </div>
 
               {/* Hamburger button */}
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-primary focus:outline-none" aria-expanded={isMenuOpen} aria-label="Toggle navigation menu">
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="hamburger-button text-primary focus:outline-none" aria-expanded={isMenuOpen} aria-label="Toggle navigation menu">
                 {isMenuOpen ? (
                   // X icon
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -212,7 +229,7 @@ function NavBar() {
         )}
 
         {/* Side menu - full height with solid background */}
-        <div className={`fixed top-0 right-0 h-screen w-80 transform transition-transform duration-300 ease-in-out z-50 ${
+        <div className={`side-menu fixed top-0 right-0 h-screen w-80 transform transition-transform duration-300 ease-in-out z-50 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}>
           {/* Full height solid background */}

@@ -20,8 +20,8 @@ import LanguageProvider from "../components/LanguageProvider";
       <Header transition:animate="fade" />
       <Hero />
       <About client:load />
-      <Timeline client:only="react" />
       <Project data={getData()} client:load />
+      <Timeline client:only="react" />
       <Contact client:load />
       <Footer client:load />
       <!-- <Education/> -->

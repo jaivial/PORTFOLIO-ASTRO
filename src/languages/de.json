@@ -279,6 +279,7 @@
   },
   "cv": {
     "title": "Lebenslauf",
+    "summary": "Erfahrener Full-Stack-Softwareentwickler mit Spezialisierung auf plattformübergreifende Anwendungsentwicklung, mobile App-Architektur und skalierbare Backend-Lösungen. Versiert in der Entwicklung robuster Microservice-Architekturen, Implementierung von DevOps-Praktiken und Verwaltung von Serverkonfigurationen mit Technologien wie Nginx. Fundierte Expertise in modernen Frameworks, Cloud-Deployment-Strategien und der Bereitstellung leistungsstarker Anwendungen für Web- und Mobile-Plattformen. Leidenschaftlich für die Erstellung effizienten, wartbaren Codes und die Optimierung der Systemleistung durch innovative technische Lösungen.",
     "sections": {
       "personal": "Persönliche Informationen",
       "experience": "Berufserfahrung",
@@ -308,7 +309,8 @@
       "download_pdf": "PDF herunterladen",
       "generating": "Generieren...",
       "back": "Zurück",
-      "close": "Schließen"
+      "close": "Schließen",
+      "visit_website": "Website besuchen"
     },
     "achievements": "Wichtige Erfolge:",
     "footer_download_reminder": "Vergessen Sie nicht, diesen Lebenslauf mit der Schaltfläche oben auf der Seite herunterzuladen.",
