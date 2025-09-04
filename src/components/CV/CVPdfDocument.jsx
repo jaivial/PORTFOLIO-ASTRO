@@ -194,6 +194,22 @@ const styles = StyleSheet.create({
     borderColor: "#d1d5db",
     marginBottom: 6,
   },
+  educationContainer: {
+    backgroundColor: "#f8fafc",
+    padding: 10,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: "#e2e8f0",
+    marginBottom: 5,
+  },
+  educationCard: {
+    backgroundColor: "#ffffff",
+    padding: 8,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: "#d1d5db",
+    marginBottom: 6,
+  },
   sectionTitle: {
     fontSize: 16,
     fontWeight: "bold",
@@ -537,22 +553,40 @@ const CVPdfDocument = ({ data }) => {
           </View>
         </View>
 
+
+      </Page>
+
+      {/* Third Page - Education Section */}
+      <Page size="A4" style={styles.page}>
         {/* Education Section */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>{t("cv.sections.education")}</Text>
-          {data.education.map((edu, index) => (
-            <View key={`edu-${index}`} style={styles.experienceItem}>
-              <View style={styles.row}>
-                <Text style={styles.company}>{edu.institution}</Text>
-                <Text style={styles.period}>{edu.period}</Text>
+          <View style={styles.educationContainer}>
+            {data.education.map((edu, index) => (
+              <View key={`edu-${index}`} style={styles.educationCard}>
+                <View style={styles.row}>
+                  <Text style={styles.company}>{edu.institution}</Text>
+                  <Text style={styles.periodTag}>{edu.period}</Text>
+                </View>
+                <View style={styles.row}>
+                  <View style={{ flexDirection: "row", alignItems: "center", flex: 1 }}>
+                    <Text style={styles.position}>{edu.degree}</Text>
+                    <View style={[styles.locationContainer, { marginLeft: 8 }]}>
+                      <LocationIconSmall />
+                      <Text style={styles.location}>{edu.location}</Text>
+                    </View>
+                  </View>
+                </View>
+                <Text style={[styles.description, { lineHeight: 1.5 }]}>{edu.description}</Text>
+                {edu.achievements && edu.achievements.map((achievement, i) => (
+                  <View key={`edu-${index}-ach-${i}`} style={[styles.row, { alignItems: "center" }]}>
+                    <View style={styles.bulletPoint} />
+                    <Text style={styles.achievement}>{achievement}</Text>
+                  </View>
+                ))}
               </View>
-              <View style={styles.row}>
-                <Text style={styles.position}>{edu.degree}</Text>
-                <Text style={styles.location}>{edu.location}</Text>
-              </View>
-              <Text style={styles.description}>{edu.description}</Text>
-            </View>
-          ))}
+            ))}
+          </View>
         </View>
 
         {/* Skills Section */}
