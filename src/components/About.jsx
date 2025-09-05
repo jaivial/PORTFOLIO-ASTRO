@@ -29,7 +29,7 @@ function About() {
         </div>
         <section className="py-0 sm:py-10">
           <div className="container mx-auto">
-            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#d7d7d7] to-[#616161] font-extrabold py-3 text-center">
                 {t('about.technologies_title')}
               </h1>

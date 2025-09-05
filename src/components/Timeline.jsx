@@ -12,21 +12,35 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
 
   useEffect(() => {
     if (isVisible) {
-      const animationDuration = 1;
-      const steps = 18;
-      const increment = percentage / steps;
-      let step = 0;
+      const animationDuration = 800; // Reduced from 1000ms to 800ms
+      const startTime = Date.now();
+      let animationFrame;
 
-      const timer = setInterval(() => {
-        step++;
-        setCurrentPercentage(Math.min(step * increment, percentage));
+      // Easing function for smoother animation (ease-out-cubic)
+      const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+      const animate = () => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / animationDuration, 1);
         
-        if (step >= steps) {
-          clearInterval(timer);
-        }
-      }, animationDuration / steps);
+        // Apply easing function
+        const easedProgress = easeOutCubic(progress);
+        const currentValue = easedProgress * percentage;
+        
+        setCurrentPercentage(currentValue);
 
-      return () => clearInterval(timer);
+        if (progress < 1) {
+          animationFrame = requestAnimationFrame(animate);
+        }
+      };
+
+      animationFrame = requestAnimationFrame(animate);
+
+      return () => {
+        if (animationFrame) {
+          cancelAnimationFrame(animationFrame);
+        }
+      };
     } else {
       setCurrentPercentage(0);
     }
@@ -41,6 +55,9 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
       },
       sparkline: {
         enabled: true
+      },
+      animations: {
+        enabled: false // Disable ApexCharts built-in animation since we're handling it ourselves
       }
     },
     plotOptions: {
@@ -149,7 +166,7 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                         : skillName.toLowerCase() === 'api'
                           ? 'w-[4.2rem] h-[4.2rem] xs:w-[4.2rem] xs:h-[4.2rem] md:w-[3.2rem] md:h-[3.2rem]'
                         : ['php', 'go'].includes(skillName.toLowerCase())
-                          ? 'w-[2.8rem] h-auto xs:w-[3.2rem] xs:h-auto md:w-[3rem] md:h-[2rem]'
+                          ? 'w-[2.8rem] h-[1.5rem] xs:w-[3.2rem] xs:h-auto md:w-[3rem] md:h-[2rem]'
                         : skillName.toLowerCase() === 'typescript'
                           ? 'xs:w-7 xs:h-7 md:w-8 md:h-8'
                         : skillName.toLowerCase() === 'tailwind css'
@@ -182,7 +199,7 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                         : skillName.toLowerCase() === 'api'
                           ? 'w-[4.2rem] h-[4.2rem] xs:w-[4.2rem] xs:h-[4.2rem] md:w-[3.2rem] md:h-[3.2rem]'
                         : ['php', 'go'].includes(skillName.toLowerCase())
-                          ? 'w-[2.8rem] h-auto xs:w-[3.2rem] xs:h-auto md:w-[3rem] md:h-[2rem]'
+                          ? 'w-[2.8rem] h-[1.5rem] xs:w-[3.2rem] xs:h-auto md:w-[3rem] md:h-[2rem]'
                         : skillName.toLowerCase() === 'tailwind css'
                           ? 'w-auto h-[1.4rem] xs:w-7 xs:h-7 md:w-8 md:h-8'
                         : skillName.toLowerCase() === 'next.js' 
