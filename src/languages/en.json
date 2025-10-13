@@ -198,6 +198,60 @@
           "description": "Website developed with web accessibility principles to ensure all families can easily access information. Includes intuitive navigation, adequate contrast, and responsive design for all devices."
         }
       }
+    },
+    "hero-budget": {
+      "description": "Hero Budget is a comprehensive personal finance management mobile application built with React Native and TypeScript. The app provides users with powerful tools to track income, expenses, recurring bills, and savings goals with real-time synchronization across multiple devices. It features a modern, intuitive interface with support for both light and dark themes, multi-language localization (20+ languages), and offline-first architecture with automatic cloud sync. The backend is powered by a robust Go microservices architecture deployed on VPS with NGINX reverse proxy, ensuring high performance and reliability.",
+      "type": "Mobile Application - Personal Finance Management",
+      "features": {
+        "0": {
+          "title": "Multi-Language Support (20+ Languages)",
+          "description": "Full internationalization support with 20+ language translations including English (US, GB), Spanish (ES, MX, AR), Portuguese (PT, BR), French, German, Italian, Japanese, Chinese, Russian, Dutch, Danish, Norwegian, Greek, Hindi, and Catalan. Uses i18next for seamless language switching and localization with fallback support."
+        },
+        "1": {
+          "title": "Social Authentication Integration",
+          "description": "Seamless authentication via Google Sign-In and Apple Sign-In using OAuth 2.0 protocols. Supports traditional email/password registration with OTP verification for enhanced security. Implements secure token-based authentication with automatic session management and 'remember me' functionality."
+        },
+        "2": {
+          "title": "Real-Time Cross-Device Synchronization",
+          "description": "Advanced delta-sync protocol enables real-time data synchronization across multiple devices. Uses operation-based sync with device ID tracking to prevent duplicate operations. Background sync automatically runs when app returns to foreground, ensuring all devices stay up-to-date without user intervention."
+        },
+        "3": {
+          "title": "Offline-First Architecture",
+          "description": "Full offline functionality with SQLite local database supporting all CRUD operations without network connectivity. Automatic sync queue manages pending operations when connection is restored. Users can track finances seamlessly even without internet access."
+        },
+        "4": {
+          "title": "Comprehensive Dashboard Analytics",
+          "description": "Interactive dashboard displaying monthly financial summaries with income vs expenses visualization. Real-time balance tracking for both cash and bank accounts. Visual progress indicators for savings goals and budget adherence with color-coded status indicators."
+        },
+        "5": {
+          "title": "Income Tracking & Management",
+          "description": "Add and categorize income transactions with custom categories, payment methods (cash/bank), and detailed descriptions. View income history with filtering by date range, category, and payment method. Automatic balance updates and monthly income summaries with trend analysis."
+        },
+        "6": {
+          "title": "Expense Management & Categorization",
+          "description": "Track all expenses with custom categories, payment methods, and notes. Smart categorization system with emoji icons for visual identification. Expense history with comprehensive filtering and search capabilities. Automatic impact on cash/bank balances and monthly expense summaries."
+        },
+        "7": {
+          "title": "Recurring Bills Management",
+          "description": "Create and manage recurring bills with flexible payment schedules (monthly, weekly, quarterly). Set payment days, due dates, and duration in months. Track payment status for each period with quick pay functionality. Automatic reminders for upcoming bills and overdue notifications."
+        },
+        "8": {
+          "title": "Savings Goals & Progress Tracking",
+          "description": "Set personalized savings goals with target amounts and tracking periods. Visual progress indicators show percentage completion with color-coded status (on track, at risk, behind). Available balance vs goal comparison with detailed progress metrics and milestone celebrations."
+        },
+        "9": {
+          "title": "Custom Category Management",
+          "description": "Create unlimited custom categories for both income and expenses with emoji icons for visual distinction. Edit category names, types, and emojis at any time. Category type changes trigger automatic recalculation of all affected transactions and balances with cascade updates."
+        },
+        "10": {
+          "title": "Dark Mode & Light Mode",
+          "description": "Full support for both dark and light themes with smooth transitions. Theme preference persists across app sessions. Optimized color schemes for readability in all lighting conditions. Automatic theme application to all UI components and bottom sheets."
+        },
+        "11": {
+          "title": "Go Backend Microservices",
+          "description": "Backend built with Go using multi-module workspace (go.work) architecture. Separate microservices for budget management, savings, dashboard data, expenses, and incomes. RESTful API with structured error handling and context-based timeout management. Comprehensive logging for debugging and monitoring."
+        }
+      }
     }
   },
   "contact": {

@@ -1,0 +1,207 @@
+{
+  "name": "Hero Budget",
+  "type": "Mobile Application - Personal Finance Management",
+  "url": "https://apps.apple.com/es/app/hero-budget/id6746946502?l=en-GB",
+  "github": "https://github.com/jaivial/HerobudgetReact",
+  "image": "hero_budget_main_icon",
+  "slug": "hero-budget-mobile-app",
+  "description": "Hero Budget is a comprehensive personal finance management mobile application built with React Native and TypeScript. The app provides users with powerful tools to track income, expenses, bills, and savings goals with real-time synchronization across multiple devices. It features a modern, intuitive interface with support for both light and dark themes, multi-language localization (20+ languages), and offline-first architecture with automatic cloud sync. The backend is powered by a robust Go microservices architecture deployed on VPS with NGINX reverse proxy, ensuring high performance and reliability.",
+  "tech": [
+    "React Native 0.80.2",
+    "TypeScript 5.0.4",
+    "Go (Backend Microservices)",
+    "SQLite (Local Database)",
+    "React Navigation 7",
+    "Jotai (State Management)",
+    "i18next (Internationalization)",
+    "Axios (HTTP Client)",
+    "Jest & Detox (Testing)",
+    "OAuth 2.0 (Google & Apple Sign-In)",
+    "NGINX Reverse Proxy",
+    "VPS Deployment",
+    "Git Version Control",
+    "RESTful API Architecture",
+    "Delta Sync Protocol",
+    "Responsive Design (Phone & Tablet)"
+  ],
+  "date": "2024-11-15",
+  "images": [],
+  "videos": [],
+  "features": [
+    {
+      "title": "Multi-Language Support (30+ Languages)",
+      "description": "Full internationalization support with 30+ language translations including English (US, GB), Spanish (ES, MX, AR), Portuguese (PT, BR), French, German, Italian, Japanese, Chinese, Russian, Dutch, Danish, Norwegian, Greek, Hindi, and Catalan. Uses i18next for seamless language switching and localization with fallback support.",
+      "key": "i18n_multilang"
+    },
+    {
+      "title": "Social Authentication Integration",
+      "description": "Seamless authentication via Google Sign-In and Apple Sign-In using OAuth 2.0 protocols. Supports traditional email/password registration with OTP verification for enhanced security. Implements secure token-based authentication with automatic session management and 'remember me' functionality.",
+      "key": "social_auth"
+    },
+    {
+      "title": "Real-Time Cross-Device Synchronization",
+      "description": "Advanced delta-sync protocol enables real-time data synchronization across multiple devices. Uses operation-based sync with device ID tracking to prevent duplicate operations. Background sync automatically runs when app returns to foreground, ensuring all devices stay up-to-date without user intervention.",
+      "key": "delta_sync"
+    },
+    {
+      "title": "Offline-First Architecture",
+      "description": "Full offline functionality with SQLite local database supporting all CRUD operations without network connectivity. Automatic sync queue manages pending operations when connection is restored. Users can track finances seamlessly even without internet access.",
+      "key": "offline_first"
+    },
+    {
+      "title": "Comprehensive Dashboard Analytics",
+      "description": "Interactive dashboard displaying monthly financial summaries with income vs expenses visualization. Real-time balance tracking for both cash and bank accounts. Visual progress indicators for savings goals and budget adherence with color-coded status indicators.",
+      "key": "dashboard_analytics"
+    },
+    {
+      "title": "Income Tracking & Management",
+      "description": "Add and categorize income transactions with custom categories, payment methods (cash/bank), and detailed descriptions. View income history with filtering by date range, category, and payment method. Automatic balance updates and monthly income summaries with trend analysis.",
+      "key": "income_tracking"
+    },
+    {
+      "title": "Expense Management & Categorization",
+      "description": "Track all expenses with custom categories, payment methods, and notes. Smart categorization system with emoji icons for visual identification. Expense history with comprehensive filtering and search capabilities. Automatic impact on cash/bank balances and monthly expense summaries.",
+      "key": "expense_management"
+    },
+    {
+      "title": "Recurring Bills Management",
+      "description": "Create and manage recurring bills with flexible payment schedules (monthly, weekly, quarterly). Set payment days, due dates, and duration in months. Track payment status for each period with quick pay functionality. Automatic reminders for upcoming bills and overdue notifications.",
+      "key": "recurring_bills"
+    },
+    {
+      "title": "Bill Payment Tracking",
+      "description": "Mark bills as paid with specific payment dates and methods. View payment history for each bill across all periods. Automatic expense creation when bills are marked as paid. Year-month based tracking ensures accurate financial reporting.",
+      "key": "bill_payments"
+    },
+    {
+      "title": "Savings Goals & Progress Tracking",
+      "description": "Set personalized savings goals with target amounts and tracking periods. Visual progress indicators show percentage completion with color-coded status (on track, at risk, behind). Available balance vs goal comparison with detailed progress metrics and milestone celebrations.",
+      "key": "savings_goals"
+    },
+    {
+      "title": "Custom Category Management",
+      "description": "Create unlimited custom categories for both income and expenses with emoji icons for visual distinction. Edit category names, types, and emojis at any time. Category type changes trigger automatic recalculation of all affected transactions and balances with cascade updates.",
+      "key": "custom_categories"
+    },
+    {
+      "title": "Cash & Bank Account Management",
+      "description": "Separate tracking for cash and bank balances with real-time updates. Transfer functionality between cash and bank accounts with date tracking. Visual balance breakdown with interactive charts and historical balance trends.",
+      "key": "cash_bank_management"
+    },
+    {
+      "title": "Transaction History with Advanced Filtering",
+      "description": "Comprehensive transaction history for all incomes and expenses. Advanced filtering by date range, category, payment method, and transaction type. Search functionality for quick transaction lookup. Detailed transaction cards with edit and delete capabilities.",
+      "key": "transaction_history"
+    },
+    {
+      "title": "Top Categories Analysis",
+      "description": "Visual breakdown of spending by category with percentage distribution. Separate tabs for expense and income categories showing top contributors. Interactive charts with color-coded categories and spending patterns over time.",
+      "key": "top_categories"
+    },
+    {
+      "title": "Monthly Budget Navigation",
+      "description": "Intuitive month selector with arrow navigation and swipe gestures for quick navigation through financial history. Visual month/year display with smooth animations. Automatic data refresh when changing months ensuring accurate historical data.",
+      "key": "month_navigation"
+    },
+    {
+      "title": "Gesture-Based Navigation",
+      "description": "Horizontal swipe gestures for navigating between months on the dashboard. Smart gesture detection prevents interference with vertical scrolling. Smooth animations with visual feedback during navigation. Supports both touch gestures and arrow button navigation.",
+      "key": "gesture_navigation"
+    },
+    {
+      "title": "Dark Mode & Light Mode",
+      "description": "Full support for both dark and light themes with smooth transitions. Theme preference persists across app sessions. Optimized color schemes for readability in all lighting conditions. Automatic theme application to all UI components and bottom sheets.",
+      "key": "dark_light_mode"
+    },
+    {
+      "title": "User Profile Management",
+      "description": "Edit profile information including name, email, and profile picture. Support for profile image uploads with base64 encoding and storage. Profile picture synchronization across all devices. Change password functionality with secure validation.",
+      "key": "profile_management"
+    },
+    {
+      "title": "Password Reset Flow",
+      "description": "Secure password reset via email with token-based verification. Deep linking support for password reset links opening directly in the app (herobudget:// scheme). Enhanced iOS background deep link handling with multiple detection attempts. Success screens with automatic navigation to login.",
+      "key": "password_reset"
+    },
+    {
+      "title": "Responsive Design for Tablets",
+      "description": "Adaptive layout system with different configurations for phones and tablets. iPad layout features 2-column grid with optimized zone distribution for larger screens. Responsive dashboard container adjusts component placement based on screen size. Touch-optimized interfaces for all device sizes.",
+      "key": "responsive_tablet"
+    },
+    {
+      "title": "Real-Time Balance Updates",
+      "description": "Automatic balance recalculation when adding, editing, or deleting transactions. Multi-timeframe balance tracking: daily, weekly, monthly, quarterly, semi-annual, and annual. Cascade updates ensure historical balances remain accurate when past transactions are modified.",
+      "key": "realtime_balance"
+    },
+    {
+      "title": "Transaction Queue System",
+      "description": "Automatic queuing of operations when offline with intelligent retry mechanism. Operations execute in chronological order when connection is restored. Prevents data loss during network interruptions. Progress tracking for sync operations with step-by-step updates.",
+      "key": "transaction_queue"
+    },
+    {
+      "title": "Context-Based State Management",
+      "description": "Three-tier state management architecture: Global context for authentication and user state, Monthly data context for date-specific financial data, and Dashboard context for UI state and data fetching. Jotai atoms for navigation state synchronization across components.",
+      "key": "state_management"
+    },
+    {
+      "title": "Go Backend Microservices",
+      "description": "Backend built with Go using multi-module workspace (go.work) architecture. Separate microservices for budget management, savings, dashboard data, expenses, and incomes. RESTful API with structured error handling and context-based timeout management. Comprehensive logging for debugging and monitoring.",
+      "key": "go_backend"
+    },
+    {
+      "title": "SQLite Local Database",
+      "description": "Robust SQLite database schema with 30+ tables for comprehensive data storage. Optimized indexes for fast query performance. Foreign key constraints ensure data integrity. Schema versioning system for smooth database migrations. Supports both auto-increment and explicit IDs for optimistic UI updates.",
+      "key": "sqlite_database"
+    },
+    {
+      "title": "NGINX Reverse Proxy Configuration",
+      "description": "Production-ready NGINX configuration with SSL/TLS support. Load balancing across multiple backend service instances. Request routing based on URL paths to appropriate microservices. Compression and caching for optimal performance. Comprehensive security headers and rate limiting.",
+      "key": "nginx_proxy"
+    },
+    {
+      "title": "Bottom Sheet Modal System",
+      "description": "Native-feeling bottom sheet modals for transaction details, bill information, and action menus. Smooth animations with drag-to-dismiss functionality. Theme-aware styling matching light/dark mode preferences. Quick actions for edit, delete, and mark as paid operations.",
+      "key": "bottom_sheets"
+    },
+    {
+      "title": "Toast Notification System",
+      "description": "Non-intrusive toast notifications for user feedback on actions (success, error, info). Automatic dismissal with configurable duration. Queue system for multiple notifications. Consistent styling across all screens with theme support.",
+      "key": "toast_notifications"
+    },
+    {
+      "title": "Deep Linking Support",
+      "description": "Custom URL scheme (herobudget://) for deep linking into app screens. Handles password reset links, navigation to specific months, and direct screen access. iOS background deep link detection with multiple retry attempts. React Navigation integration for seamless navigation from deep links.",
+      "key": "deep_linking"
+    },
+    {
+      "title": "Comprehensive Testing Suite",
+      "description": "Jest unit tests for business logic and utility functions. Detox end-to-end tests for critical user flows. Backend test scripts for endpoint verification and NGINX routing validation. Testing configuration for both iOS simulator and Android emulator.",
+      "key": "testing_suite"
+    },
+    {
+      "title": "TypeScript Type Safety",
+      "description": "Fully typed codebase with strict TypeScript configuration. Type definitions for all props, state, and API responses. Navigation type safety with parameterized routes. Enhanced IDE support with autocomplete and error detection.",
+      "key": "typescript_safety"
+    },
+    {
+      "title": "VPS Deployment Infrastructure",
+      "description": "Complete deployment scripts for VPS setup and management. Service restart scripts for zero-downtime updates. Automated NGINX configuration application with validation. Diagnostic scripts for troubleshooting production issues. Comprehensive deployment documentation with step-by-step guides.",
+      "key": "vps_deployment"
+    },
+    {
+      "title": "Confetti Celebrations",
+      "description": "Delightful confetti animations when achieving savings milestones or completing goals. React Native Confetti Cannon integration with customizable colors and explosion effects. Enhances user engagement and celebrates financial achievements.",
+      "key": "confetti_animations"
+    },
+    {
+      "title": "Pull-to-Refresh Functionality",
+      "description": "Standard pull-to-refresh gesture on dashboard for manual data synchronization. Visual loading indicator with theme-aware colors. Triggers complete data refresh from server ensuring latest information is displayed.",
+      "key": "pull_to_refresh"
+    },
+    {
+      "title": "Calendar-Based Date Selection",
+      "description": "Interactive calendar widget for selecting transaction dates, bill due dates, and payment dates. React Native Calendars integration with localized date formats. Theme support with customizable colors matching app design.",
+      "key": "calendar_selection"
+    }
+  ]
+}

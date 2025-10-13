@@ -1,0 +1,222 @@
+{
+  "name": "Hero Budget",
+  "type": "Aplicación Móvil - Gestión de Finanzas Personales",
+  "url": "https://apps.apple.com/es/app/hero-budget/id6746946502?l=en-GB",
+  "github": "https://github.com/jaivial/HerobudgetReact",
+  "image": "HeroBudget",
+  "slug": "hero-budget",
+  "description": "Hero Budget es una aplicación móvil completa de gestión de finanzas personales desarrollada con React Native y TypeScript. La aplicación proporciona a los usuarios herramientas potentes para rastrear ingresos, gastos, facturas recurrentes y metas de ahorro con sincronización en tiempo real entre múltiples dispositivos. Presenta una interfaz moderna e intuitiva con soporte para temas claro y oscuro, localización multiidioma (más de 20 idiomas), y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad.",
+  "tech": [
+    "React Native",
+    "TypeScript",
+    "Go",
+    "SQLite",
+    "React Navigation",
+    "Jotai",
+    "i18next",
+    "OAuth 2.0",
+    "Jest",
+    "Detox",
+    "RESTful API",
+    "VPS",
+    "Nginx",
+    "Responsive Design"
+  ],
+  "date": "2024-11-15",
+  "images": [
+    { "url": "HeroBudgetImg1.src", "alt": "Pantalla principal con dashboard de Hero Budget" },
+    { "url": "HeroBudgetImg2.src", "alt": "Gestión de ingresos y gastos" },
+    { "url": "HeroBudgetImg3.src", "alt": "Sistema de facturas recurrentes" },
+    { "url": "HeroBudgetImg4.src", "alt": "Metas de ahorro y progreso" },
+    { "url": "HeroBudgetImg5.src", "alt": "Panel de administración de categorías" },
+    { "url": "HeroBudgetImg6.src", "alt": "Gestión de cuentas y balances" },
+    { "url": "HeroBudgetImg7.src", "alt": "Historial de transacciones" },
+    { "url": "HeroBudgetImg8.src", "alt": "Análisis de categorías principales" },
+    { "url": "HeroBudgetImg9.src", "alt": "Perfil de usuario" },
+    { "url": "HeroBudgetImg10.src", "alt": "Modo oscuro y claro" }
+  ],
+  "videos": [
+    { "url": "HeroBudgetVideo1", "poster": "HeroBudgetImg1.src" },
+    { "url": "HeroBudgetVideo2", "poster": "HeroBudgetImg2.src" },
+    { "url": "HeroBudgetVideo3", "poster": "HeroBudgetImg3.src" },
+    { "url": "HeroBudgetVideo4", "poster": "HeroBudgetImg4.src" },
+    { "url": "HeroBudgetVideo5", "poster": "HeroBudgetImg5.src" }
+  ],
+  "features": [
+    {
+      "title": "Soporte Multiidioma (20+ Idiomas)",
+      "description": "Soporte completo de internacionalización con más de 20 traducciones de idiomas incluyendo inglés (US, GB), español (ES, MX, AR), portugués (PT, BR), francés, alemán, italiano, japonés, chino, ruso, holandés, danés, noruego, griego, hindi y catalán. Utiliza i18next para cambio de idioma fluido y localización con soporte de respaldo.",
+      "key": "i18n_multilang"
+    },
+    {
+      "title": "Autenticación Social Integrada",
+      "description": "Autenticación sin problemas mediante Google Sign-In y Apple Sign-In utilizando protocolos OAuth 2.0. Soporta registro tradicional con email/contraseña y verificación OTP para mayor seguridad. Implementa autenticación basada en tokens con gestión automática de sesión y funcionalidad de 'recordarme'.",
+      "key": "social_auth"
+    },
+    {
+      "title": "Sincronización en Tiempo Real entre Dispositivos",
+      "description": "Protocolo avanzado de delta-sync que permite sincronización de datos en tiempo real entre múltiples dispositivos. Utiliza sincronización basada en operaciones con seguimiento de ID de dispositivo para prevenir operaciones duplicadas. La sincronización en segundo plano se ejecuta automáticamente cuando la aplicación vuelve al primer plano, asegurando que todos los dispositivos permanezcan actualizados sin intervención del usuario.",
+      "key": "delta_sync"
+    },
+    {
+      "title": "Arquitectura Offline-First",
+      "description": "Funcionalidad completa offline con base de datos local SQLite que soporta todas las operaciones CRUD sin conectividad de red. La cola de sincronización automática gestiona operaciones pendientes cuando se restaura la conexión. Los usuarios pueden rastrear sus finanzas sin problemas incluso sin acceso a internet.",
+      "key": "offline_first"
+    },
+    {
+      "title": "Dashboard con Analíticas Completas",
+      "description": "Dashboard interactivo que muestra resúmenes financieros mensuales con visualización de ingresos vs gastos. Seguimiento de balance en tiempo real para cuentas de efectivo y banco. Indicadores visuales de progreso para metas de ahorro y adherencia al presupuesto con indicadores de estado codificados por colores.",
+      "key": "dashboard_analytics"
+    },
+    {
+      "title": "Seguimiento y Gestión de Ingresos",
+      "description": "Añade y categoriza transacciones de ingresos con categorías personalizadas, métodos de pago (efectivo/banco) y descripciones detalladas. Visualiza el historial de ingresos con filtrado por rango de fechas, categoría y método de pago. Actualizaciones automáticas de balance y resúmenes mensuales de ingresos con análisis de tendencias.",
+      "key": "income_tracking"
+    },
+    {
+      "title": "Gestión y Categorización de Gastos",
+      "description": "Rastrea todos los gastos con categorías personalizadas, métodos de pago y notas. Sistema inteligente de categorización con iconos emoji para identificación visual. Historial de gastos con capacidades completas de filtrado y búsqueda. Impacto automático en balances de efectivo/banco y resúmenes mensuales de gastos.",
+      "key": "expense_management"
+    },
+    {
+      "title": "Gestión de Facturas Recurrentes",
+      "description": "Crea y gestiona facturas recurrentes con horarios de pago flexibles (mensual, semanal, trimestral). Establece días de pago, fechas de vencimiento y duración en meses. Rastrea el estado de pago para cada período con funcionalidad de pago rápido. Recordatorios automáticos para facturas próximas y notificaciones de vencimiento.",
+      "key": "recurring_bills"
+    },
+    {
+      "title": "Seguimiento de Pago de Facturas",
+      "description": "Marca las facturas como pagadas con fechas y métodos de pago específicos. Visualiza el historial de pagos para cada factura a través de todos los períodos. Creación automática de gastos cuando las facturas se marcan como pagadas. Seguimiento basado en año-mes asegura informes financieros precisos.",
+      "key": "bill_payments"
+    },
+    {
+      "title": "Metas de Ahorro y Seguimiento de Progreso",
+      "description": "Establece metas de ahorro personalizadas con cantidades objetivo y períodos de seguimiento. Los indicadores visuales de progreso muestran el porcentaje de finalización con estado codificado por colores (en camino, en riesgo, retrasado). Comparación de balance disponible vs meta con métricas detalladas de progreso y celebraciones de hitos.",
+      "key": "savings_goals"
+    },
+    {
+      "title": "Gestión de Categorías Personalizadas",
+      "description": "Crea categorías personalizadas ilimitadas para ingresos y gastos con iconos emoji para distinción visual. Edita nombres de categorías, tipos y emojis en cualquier momento. Los cambios de tipo de categoría activan el recálculo automático de todas las transacciones y balances afectados con actualizaciones en cascada.",
+      "key": "custom_categories"
+    },
+    {
+      "title": "Gestión de Cuentas de Efectivo y Banco",
+      "description": "Seguimiento separado de balances de efectivo y banco con actualizaciones en tiempo real. Funcionalidad de transferencia entre cuentas de efectivo y banco con seguimiento de fechas. Desglose visual de balance con gráficos interactivos y tendencias históricas de balance.",
+      "key": "cash_bank_management"
+    },
+    {
+      "title": "Historial de Transacciones con Filtrado Avanzado",
+      "description": "Historial completo de transacciones para todos los ingresos y gastos. Filtrado avanzado por rango de fechas, categoría, método de pago y tipo de transacción. Funcionalidad de búsqueda para consulta rápida de transacciones. Tarjetas de transacción detalladas con capacidades de edición y eliminación.",
+      "key": "transaction_history"
+    },
+    {
+      "title": "Análisis de Categorías Principales",
+      "description": "Desglose visual del gasto por categoría con distribución porcentual. Pestañas separadas para categorías de gastos e ingresos mostrando principales contribuyentes. Gráficos interactivos con categorías codificadas por colores y patrones de gasto a lo largo del tiempo.",
+      "key": "top_categories"
+    },
+    {
+      "title": "Navegación de Presupuesto Mensual",
+      "description": "Selector de mes intuitivo con navegación por flechas y gestos de deslizamiento para navegación rápida a través del historial financiero. Visualización de mes/año con animaciones suaves. Actualización automática de datos al cambiar meses asegurando datos históricos precisos.",
+      "key": "month_navigation"
+    },
+    {
+      "title": "Navegación Basada en Gestos",
+      "description": "Gestos de deslizamiento horizontal para navegar entre meses en el dashboard. Detección inteligente de gestos que previene interferencia con desplazamiento vertical. Animaciones suaves con retroalimentación visual durante la navegación. Soporta tanto gestos táctiles como navegación por botones de flecha.",
+      "key": "gesture_navigation"
+    },
+    {
+      "title": "Modo Oscuro y Modo Claro",
+      "description": "Soporte completo para temas oscuro y claro con transiciones suaves. La preferencia de tema persiste a través de sesiones de la aplicación. Esquemas de colores optimizados para legibilidad en todas las condiciones de iluminación. Aplicación automática del tema a todos los componentes de UI y hojas inferiores.",
+      "key": "dark_light_mode"
+    },
+    {
+      "title": "Gestión de Perfil de Usuario",
+      "description": "Edita información de perfil incluyendo nombre, email y foto de perfil. Soporte para cargas de imágenes de perfil con codificación y almacenamiento base64. Sincronización de foto de perfil a través de todos los dispositivos. Funcionalidad de cambio de contraseña con validación segura.",
+      "key": "profile_management"
+    },
+    {
+      "title": "Flujo de Restablecimiento de Contraseña",
+      "description": "Restablecimiento seguro de contraseña vía email con verificación basada en tokens. Soporte de deep linking para enlaces de restablecimiento de contraseña que se abren directamente en la aplicación (esquema herobudget://). Manejo mejorado de deep links en segundo plano en iOS con múltiples intentos de detección. Pantallas de éxito con navegación automática al inicio de sesión.",
+      "key": "password_reset"
+    },
+    {
+      "title": "Diseño Responsive para Tablets",
+      "description": "Sistema de diseño adaptativo con diferentes configuraciones para teléfonos y tablets. El diseño para iPad presenta una cuadrícula de 2 columnas con distribución de zonas optimizada para pantallas más grandes. El contenedor del dashboard ajusta la ubicación de componentes según el tamaño de pantalla. Interfaces optimizadas para táctil para todos los tamaños de dispositivo.",
+      "key": "responsive_tablet"
+    },
+    {
+      "title": "Actualizaciones de Balance en Tiempo Real",
+      "description": "Recálculo automático de balance al añadir, editar o eliminar transacciones. Seguimiento de balance en múltiples marcos temporales: diario, semanal, mensual, trimestral, semestral y anual. Las actualizaciones en cascada aseguran que los balances históricos permanezcan precisos cuando se modifican transacciones pasadas.",
+      "key": "realtime_balance"
+    },
+    {
+      "title": "Sistema de Cola de Transacciones",
+      "description": "Cola automática de operaciones cuando está offline con mecanismo inteligente de reintento. Las operaciones se ejecutan en orden cronológico cuando se restaura la conexión. Previene pérdida de datos durante interrupciones de red. Seguimiento de progreso para operaciones de sincronización con actualizaciones paso a paso.",
+      "key": "transaction_queue"
+    },
+    {
+      "title": "Gestión de Estado Basada en Contexto",
+      "description": "Arquitectura de gestión de estado de tres niveles: Contexto global para autenticación y estado de usuario, Contexto de datos mensuales para datos financieros específicos de fecha, y Contexto de dashboard para estado de UI y obtención de datos. Átomos Jotai para sincronización de estado de navegación a través de componentes.",
+      "key": "state_management"
+    },
+    {
+      "title": "Microservicios Backend en Go",
+      "description": "Backend construido con Go usando arquitectura de espacio de trabajo multi-módulo (go.work). Microservicios separados para gestión de presupuesto, ahorros, datos de dashboard, gastos e ingresos. API RESTful con manejo de errores estructurado y gestión de tiempo de espera basada en contexto. Registro completo para depuración y monitoreo.",
+      "key": "go_backend"
+    },
+    {
+      "title": "Base de Datos Local SQLite",
+      "description": "Esquema robusto de base de datos SQLite con más de 30 tablas para almacenamiento completo de datos. Índices optimizados para rendimiento rápido de consultas. Las restricciones de clave foránea aseguran integridad de datos. Sistema de versionado de esquema para migraciones suaves de base de datos. Soporta tanto IDs auto-incrementales como explícitos para actualizaciones optimistas de UI.",
+      "key": "sqlite_database"
+    },
+    {
+      "title": "Configuración de Proxy Inverso NGINX",
+      "description": "Configuración NGINX lista para producción con soporte SSL/TLS. Balanceo de carga a través de múltiples instancias de servicio backend. Enrutamiento de solicitudes basado en rutas URL a microservicios apropiados. Compresión y almacenamiento en caché para rendimiento óptimo. Cabeceras de seguridad completas y limitación de tasa.",
+      "key": "nginx_proxy"
+    },
+    {
+      "title": "Sistema de Modales Bottom Sheet",
+      "description": "Modales bottom sheet con sensación nativa para detalles de transacciones, información de facturas y menús de acción. Animaciones suaves con funcionalidad de arrastrar para descartar. Estilo consciente del tema que coincide con preferencias de modo claro/oscuro. Acciones rápidas para operaciones de editar, eliminar y marcar como pagado.",
+      "key": "bottom_sheets"
+    },
+    {
+      "title": "Sistema de Notificaciones Toast",
+      "description": "Notificaciones toast no intrusivas para retroalimentación del usuario sobre acciones (éxito, error, información). Descarte automático con duración configurable. Sistema de cola para múltiples notificaciones. Estilo consistente a través de todas las pantallas con soporte de tema.",
+      "key": "toast_notifications"
+    },
+    {
+      "title": "Soporte de Deep Linking",
+      "description": "Esquema de URL personalizado (herobudget://) para deep linking a pantallas de la aplicación. Maneja enlaces de restablecimiento de contraseña, navegación a meses específicos y acceso directo a pantallas. Detección de deep link en segundo plano en iOS con múltiples intentos de reintento. Integración con React Navigation para navegación sin problemas desde deep links.",
+      "key": "deep_linking"
+    },
+    {
+      "title": "Suite de Pruebas Completa",
+      "description": "Pruebas unitarias Jest para lógica de negocio y funciones de utilidad. Pruebas end-to-end Detox para flujos críticos de usuario. Scripts de prueba backend para verificación de endpoints y validación de enrutamiento NGINX. Configuración de pruebas tanto para simulador iOS como emulador Android.",
+      "key": "testing_suite"
+    },
+    {
+      "title": "Seguridad de Tipos TypeScript",
+      "description": "Código base completamente tipado con configuración estricta de TypeScript. Definiciones de tipo para todas las props, estado y respuestas de API. Seguridad de tipo de navegación con rutas parametrizadas. Soporte mejorado de IDE con autocompletado y detección de errores.",
+      "key": "typescript_safety"
+    },
+    {
+      "title": "Infraestructura de Despliegue en VPS",
+      "description": "Scripts completos de despliegue para configuración y gestión de VPS. Scripts de reinicio de servicio para actualizaciones sin tiempo de inactividad. Aplicación automatizada de configuración NGINX con validación. Scripts de diagnóstico para solución de problemas de producción. Documentación completa de despliegue con guías paso a paso.",
+      "key": "vps_deployment"
+    },
+    {
+      "title": "Celebraciones con Confeti",
+      "description": "Animaciones encantadoras de confeti al alcanzar hitos de ahorro o completar metas. Integración de React Native Confetti Cannon con colores personalizables y efectos de explosión. Mejora la participación del usuario y celebra logros financieros.",
+      "key": "confetti_animations"
+    },
+    {
+      "title": "Funcionalidad Pull-to-Refresh",
+      "description": "Gesto estándar de pull-to-refresh en el dashboard para sincronización manual de datos. Indicador visual de carga con colores conscientes del tema. Dispara actualización completa de datos desde el servidor asegurando que se muestre la última información.",
+      "key": "pull_to_refresh"
+    },
+    {
+      "title": "Selección de Fecha Basada en Calendario",
+      "description": "Widget de calendario interactivo para seleccionar fechas de transacciones, fechas de vencimiento de facturas y fechas de pago. Integración de React Native Calendars con formatos de fecha localizados. Soporte de tema con colores personalizables que coinciden con el diseño de la aplicación.",
+      "key": "calendar_selection"
+    }
+  ]
+}

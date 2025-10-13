@@ -198,6 +198,60 @@
           "description": "Website, die mit Web-Accessibility-Prinzipien entwickelt wurde, um sicherzustellen, dass alle Familien leicht auf Informationen zugreifen können. Enthält intuitive Navigation, angemessenen Kontrast und responsives Design für alle Geräte."
         }
       }
+    },
+    "hero-budget": {
+      "description": "Hero Budget ist eine umfassende mobile Anwendung zur Verwaltung persönlicher Finanzen, entwickelt mit React Native und TypeScript. Die App bietet Benutzern leistungsstarke Tools zur Verfolgung von Einnahmen, Ausgaben, wiederkehrenden Rechnungen und Sparzielen mit Echtzeit-Synchronisierung über mehrere Geräte hinweg. Sie verfügt über eine moderne, intuitive Benutzeroberfläche mit Unterstützung für helle und dunkle Themes, mehrsprachige Lokalisierung (20+ Sprachen) und Offline-First-Architektur mit automatischer Cloud-Synchronisierung. Das Backend wird von einer robusten Go-Microservice-Architektur angetrieben, die auf VPS mit NGINX Reverse Proxy bereitgestellt wird und hohe Leistung und Zuverlässigkeit gewährleistet.",
+      "type": "Mobile Anwendung - Verwaltung persönlicher Finanzen",
+      "features": {
+        "0": {
+          "title": "Mehrsprachige Unterstützung (20+ Sprachen)",
+          "description": "Vollständige Internationalisierungsunterstützung mit über 20 Sprachübersetzungen, einschließlich Englisch (US, GB), Spanisch (ES, MX, AR), Portugiesisch (PT, BR), Französisch, Deutsch, Italienisch, Japanisch, Chinesisch, Russisch, Niederländisch, Dänisch, Norwegisch, Griechisch, Hindi und Katalanisch. Verwendet i18next für nahtlosen Sprachwechsel und Lokalisierung mit Fallback-Unterstützung."
+        },
+        "1": {
+          "title": "Integration sozialer Authentifizierung",
+          "description": "Nahtlose Authentifizierung über Google Sign-In und Apple Sign-In mit OAuth 2.0-Protokollen. Unterstützt traditionelle E-Mail/Passwort-Registrierung mit OTP-Verifizierung für erhöhte Sicherheit. Implementiert sichere tokenbasierte Authentifizierung mit automatischer Sitzungsverwaltung und 'Angemeldet bleiben'-Funktionalität."
+        },
+        "2": {
+          "title": "Echtzeit-Geräteübergreifende Synchronisierung",
+          "description": "Fortgeschrittenes Delta-Sync-Protokoll ermöglicht Echtzeit-Datensynchronisierung über mehrere Geräte hinweg. Verwendet operationsbasierte Synchronisierung mit Geräte-ID-Tracking zur Vermeidung doppelter Operationen. Hintergrundsynchronisierung läuft automatisch, wenn die App in den Vordergrund zurückkehrt, und stellt sicher, dass alle Geräte ohne Benutzereingriff auf dem neuesten Stand bleiben."
+        },
+        "3": {
+          "title": "Offline-First-Architektur",
+          "description": "Volle Offline-Funktionalität mit lokaler SQLite-Datenbank, die alle CRUD-Operationen ohne Netzwerkverbindung unterstützt. Automatische Synchronisierungswarteschlange verwaltet ausstehende Operationen, wenn die Verbindung wiederhergestellt ist. Benutzer können ihre Finanzen nahtlos auch ohne Internetzugang verfolgen."
+        },
+        "4": {
+          "title": "Umfassendes Dashboard mit Analysen",
+          "description": "Interaktives Dashboard, das monatliche Finanzzusammenfassungen mit Visualisierung von Einnahmen vs. Ausgaben anzeigt. Echtzeit-Saldoverfolgung für Bargeld- und Bankkonten. Visuelle Fortschrittsindikatoren für Sparziele und Budgeteinhaltung mit farbcodierten Statusindikatoren."
+        },
+        "5": {
+          "title": "Einkommensverfolgung & -verwaltung",
+          "description": "Hinzufügen und Kategorisieren von Einkommenstransaktionen mit benutzerdefinierten Kategorien, Zahlungsmethoden (Bargeld/Bank) und detaillierten Beschreibungen. Anzeigen der Einkommenshistorie mit Filterung nach Datumsbereich, Kategorie und Zahlungsmethode. Automatische Saldoaktualisierungen und monatliche Einkommenszusammenfassungen mit Trendanalyse."
+        },
+        "6": {
+          "title": "Ausgabenverwaltung & Kategorisierung",
+          "description": "Verfolgen Sie alle Ausgaben mit benutzerdefinierten Kategorien, Zahlungsmethoden und Notizen. Intelligentes Kategorisierungssystem mit Emoji-Symbolen zur visuellen Identifizierung. Ausgabenhistorie mit umfassenden Filter- und Suchfunktionen. Automatische Auswirkung auf Bargeld-/Banksalden und monatliche Ausgabenzusammenfassungen."
+        },
+        "7": {
+          "title": "Verwaltung wiederkehrender Rechnungen",
+          "description": "Erstellen und verwalten Sie wiederkehrende Rechnungen mit flexiblen Zahlungsplänen (monatlich, wöchentlich, vierteljährlich). Legen Sie Zahlungstage, Fälligkeitsdaten und Dauer in Monaten fest. Verfolgen Sie den Zahlungsstatus für jeden Zeitraum mit Schnellzahlungsfunktion. Automatische Erinnerungen für anstehende Rechnungen und Benachrichtigungen über überfällige Zahlungen."
+        },
+        "8": {
+          "title": "Sparziele & Fortschrittsverfolgung",
+          "description": "Legen Sie personalisierte Sparziele mit Zielbetragungen und Verfolgungszeiträumen fest. Visuelle Fortschrittsindikatoren zeigen den Prozentsatz der Fertigstellung mit farbcodiertem Status (auf Kurs, gefährdet, im Rückstand). Vergleich des verfügbaren Guthabens mit dem Ziel mit detaillierten Fortschrittsmetriken und Meilenstein-Feierlichkeiten."
+        },
+        "9": {
+          "title": "Benutzerdefinierte Kategorienverwaltung",
+          "description": "Erstellen Sie unbegrenzte benutzerdefinierte Kategorien für Einnahmen und Ausgaben mit Emoji-Symbolen zur visuellen Unterscheidung. Bearbeiten Sie Kategorienamen, -typen und Emojis jederzeit. Änderungen des Kategorietyps lösen automatische Neuberechnung aller betroffenen Transaktionen und Salden mit Kaskaden-Updates aus."
+        },
+        "10": {
+          "title": "Dunkler Modus & Heller Modus",
+          "description": "Volle Unterstützung für dunkle und helle Themes mit sanften Übergängen. Theme-Präferenz bleibt über App-Sitzungen hinweg bestehen. Optimierte Farbschemata für Lesbarkeit unter allen Lichtbedingungen. Automatische Theme-Anwendung auf alle UI-Komponenten und Bottom-Sheets."
+        },
+        "11": {
+          "title": "Go Backend-Microservices",
+          "description": "Backend erstellt mit Go unter Verwendung einer Multi-Modul-Workspace-Architektur (go.work). Separate Microservices für Budgetverwaltung, Ersparnisse, Dashboard-Daten, Ausgaben und Einnahmen. RESTful API mit strukturierter Fehlerbehandlung und kontextbasiertem Timeout-Management. Umfassendes Logging für Debugging und Monitoring."
+        }
+      }
     }
   },
   "contact": {

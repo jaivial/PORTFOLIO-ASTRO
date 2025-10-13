@@ -1,0 +1,51 @@
+{
+  "name": "Project Name",
+  "type": "Project Type (e.g., Página Web, Aplicación Web Full-Stack, Tienda Online, etc.)",
+  "url": "https://project-url.com",
+  "github": "https://github.com/username/repo.git",
+  "image": "Main project image import reference",
+  "slug": "project-slug-for-url",
+  "description": "Detailed description of the project, its purpose, main features, and technologies used. This should be comprehensive and explain what makes the project unique.",
+  "tech": [
+    "Technology 1",
+    "Technology 2",
+    "Technology 3",
+    "VPS",
+    "Nginx",
+    "Responsive Design"
+  ],
+  "date": "YYYY-MM-DD",
+  "images": [
+    {
+      "url": "image1.src",
+      "alt": "Descriptive alt text for image 1"
+    },
+    {
+      "url": "image2.src",
+      "alt": "Descriptive alt text for image 2"
+    }
+  ],
+  "videos": [
+    {
+      "url": "video1",
+      "poster": "video-poster1.src"
+    }
+  ],
+  "features": [
+    {
+      "title": "Feature Title",
+      "description": "Detailed description of the feature, explaining what it does, how it works, and its benefits.",
+      "image": "featureImage (optional)",
+      "video": "featureVideo (optional)",
+      "videoPoster": "featureVideoPoster (optional, used with video)",
+      "autoplay": true,
+      "muted": true,
+      "loop": true,
+      "carousel": [
+        "carouselImage1",
+        "carouselImage2"
+      ],
+      "key": "feature_key (optional, for specific identification)"
+    }
+  ]
+}

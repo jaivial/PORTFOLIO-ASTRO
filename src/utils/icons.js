@@ -236,6 +236,42 @@ export const getIcon = (tech) => {
             src: "https://jaimedigitalstudio.com/assets/images/pm2-logo-1-1.png",
             classes: "h-8 w-auto brightness-200",
         },
+        // Hero Budget technologies
+        "i18next": {
+            type: "img",
+            src: "/src/assets/images/tecnologies/i18next.png",
+            classes: "h-8 w-auto brightness-[500]",
+        },
+        "jest": {
+            type: "img",
+            src: "/src/assets/images/tecnologies/jest.svg",
+            classes: "h-8 w-auto brightness-[500]",
+        },
+        "jotai": {
+            type: "img",
+            src: "/src/assets/images/tecnologies/jotai.png",
+            classes: "h-8 w-auto",
+        },
+        "oauth 2.0": {
+            type: "img",
+            src: "/src/assets/images/tecnologies/oauth2.webp",
+            classes: "h-8 w-auto invert brightness-200",
+        },
+        "react navigation": {
+            type: "img",
+            src: "/src/assets/images/tecnologies/react-navigation.svg",
+            classes: "h-8 w-auto invert brightness-200",
+        },
+        "restful api": {
+            type: "img",
+            src: "/src/assets/images/tecnologies/rest-api.svg",
+            classes: "h-8 w-auto invert brightness-200",
+        },
+        "sqlite": {
+            type: "img",
+            src: "/src/assets/images/tecnologies/sqlite.svg",
+            classes: "h-8 w-auto invert brightness-200",
+        },
     };
 
     // Primero intentar con el nombre exacto (case-insensitive)
