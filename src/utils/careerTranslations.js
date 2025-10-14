@@ -85,6 +85,22 @@ export const careerTranslations = {
         "Optimización de rendimiento en aplicaciones web"
       ],
       details: "En mis prácticas como Frontend React Developer, he participado en el desarrollo de aplicaciones web empresariales, colaborando con equipos multidisciplinares en metodologías ágiles. Mi trabajo se ha centrado en la creación de componentes reutilizables, la implementación de flujos de datos reactivos y la mejora del rendimiento de aplicaciones existentes. He aplicado buenas prácticas de desarrollo como testing, documentación y código limpio."
+    },
+    7: {
+      title: "Hero Budget",
+      role: "Developer",
+      company: "Hero Budget App",
+      period: "Marzo 2025 - Octubre 2025",
+      description: "Aplicación móvil completa de gestión de finanzas personales desarrollada con React Native y TypeScript. Arquitectura offline-first con sincronización en tiempo real entre múltiples dispositivos, backend en Go con microservicios en VPS.",
+      highlights: [
+        "Soporte multiidioma completo con más de 20 idiomas incluyendo i18next",
+        "Arquitectura offline-first con sincronización delta-sync en tiempo real",
+        "Autenticación social con Google y Apple Sign-In usando OAuth 2.0",
+        "Backend en Go con arquitectura de microservicios desplegada en VPS",
+        "Sistema completo de gestión de ingresos, gastos, facturas recurrentes y metas de ahorro",
+        "Suite de pruebas completa con Jest para pruebas unitarias y Detox para E2E"
+      ],
+      details: "Hero Budget es una aplicación móvil completa que proporciona herramientas potentes para rastrear finanzas personales. Presenta una interfaz moderna con soporte para temas claro y oscuro, localización en más de 20 idiomas, y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad. La aplicación incluye dashboard con analíticas completas, seguimiento de ingresos y gastos, gestión de facturas recurrentes, metas de ahorro con seguimiento de progreso, y diseño responsive optimizado para tablets."
     }
   },
   en: {
@@ -172,6 +188,22 @@ export const careerTranslations = {
         "Performance optimization in web applications"
       ],
       details: "In my internship as a Frontend React Developer, I have participated in the development of enterprise web applications, collaborating with multidisciplinary teams in agile methodologies. My work has focused on creating reusable components, implementing reactive data flows and improving the performance of existing applications. I have applied development best practices such as testing, documentation and clean code."
+    },
+    7: {
+      title: "Hero Budget",
+      role: "Developer",
+      company: "Hero Budget App",
+      period: "March 2025 - October 2025",
+      description: "Complete personal finance management mobile application developed with React Native and TypeScript. Offline-first architecture with real-time synchronization across multiple devices, Go backend with microservices on VPS.",
+      highlights: [
+        "Complete multilingual support with over 20 languages including i18next",
+        "Offline-first architecture with real-time delta-sync synchronization",
+        "Social authentication with Google and Apple Sign-In using OAuth 2.0",
+        "Go backend with microservices architecture deployed on VPS",
+        "Complete system for managing income, expenses, recurring bills and savings goals",
+        "Complete test suite with Jest for unit tests and Detox for E2E"
+      ],
+      details: "Hero Budget is a complete mobile application that provides powerful tools for tracking personal finances. It features a modern interface with support for light and dark themes, localization in over 20 languages, and offline-first architecture with automatic cloud synchronization. The backend is powered by a robust Go microservices architecture deployed on VPS with NGINX reverse proxy, ensuring high performance and reliability. The application includes a dashboard with comprehensive analytics, income and expense tracking, recurring bill management, savings goals with progress tracking, and responsive design optimized for tablets."
     }
   },
   de: {
@@ -259,6 +291,22 @@ export const careerTranslations = {
         "Leistungsoptimierung in Webanwendungen"
       ],
       details: "In meinem Praktikum als Frontend React Developer habe ich an der Entwicklung von Unternehmens-Webanwendungen teilgenommen und mit multidisziplinären Teams in agilen Methoden zusammengearbeitet. Meine Arbeit konzentrierte sich auf die Erstellung wiederverwendbarer Komponenten, die Implementierung reaktiver Datenflüsse und die Verbesserung der Leistung bestehender Anwendungen. Ich habe bewährte Entwicklungspraktiken wie Testing, Dokumentation und sauberen Code angewendet."
+    },
+    7: {
+      title: "Hero Budget",
+      role: "Entwickler",
+      company: "Hero Budget App",
+      period: "März 2025 - Oktober 2025",
+      description: "Vollständige mobile Anwendung zur Verwaltung persönlicher Finanzen, entwickelt mit React Native und TypeScript. Offline-First-Architektur mit Echtzeit-Synchronisation über mehrere Geräte, Go-Backend mit Microservices auf VPS.",
+      highlights: [
+        "Vollständige mehrsprachige Unterstützung mit über 20 Sprachen einschließlich i18next",
+        "Offline-First-Architektur mit Echtzeit-Delta-Sync-Synchronisation",
+        "Soziale Authentifizierung mit Google und Apple Sign-In unter Verwendung von OAuth 2.0",
+        "Go-Backend mit Microservices-Architektur auf VPS bereitgestellt",
+        "Vollständiges System zur Verwaltung von Einnahmen, Ausgaben, wiederkehrenden Rechnungen und Sparzielen",
+        "Vollständige Test-Suite mit Jest für Unit-Tests und Detox für E2E"
+      ],
+      details: "Hero Budget ist eine vollständige mobile Anwendung, die leistungsstarke Tools zur Verfolgung persönlicher Finanzen bietet. Sie verfügt über eine moderne Benutzeroberfläche mit Unterstützung für helle und dunkle Themen, Lokalisierung in über 20 Sprachen und Offline-First-Architektur mit automatischer Cloud-Synchronisation. Das Backend wird von einer robusten Go-Microservices-Architektur auf VPS mit NGINX-Reverse-Proxy angetrieben, die hohe Leistung und Zuverlässigkeit gewährleistet. Die Anwendung umfasst ein Dashboard mit umfassenden Analysen, Einnahmen- und Ausgabenverfolgung, Verwaltung wiederkehrender Rechnungen, Sparziele mit Fortschrittsverfolgung und responsives Design, das für Tablets optimiert ist."
     }
   }
 };

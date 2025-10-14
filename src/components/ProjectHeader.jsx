@@ -14,6 +14,21 @@ function ProjectHeader({ project }) {
     }
   };
 
+  // Determinar el estilo de la imagen según el proyecto
+  const getImageClassName = () => {
+    if (project.slug === "hero-budget") {
+      return "h-auto object-contain rounded-lg transition-transform duration-300 hover:scale-105 max-[500px]:w-full min-[500px]:h-[70vh] min-[500px]:w-auto";
+    }
+    return "w-full h-auto object-cover rounded-lg transition-transform duration-300 hover:scale-105";
+  };
+
+  const getImageContainerClassName = () => {
+    if (project.slug === "hero-budget") {
+      return "rounded-lg overflow-hidden shadow-lg flex justify-center items-center";
+    }
+    return "rounded-lg overflow-hidden shadow-lg";
+  };
+
   return (
     <>
       {/* Breadcrumb navigation */}
@@ -92,14 +107,14 @@ function ProjectHeader({ project }) {
 
           {/* Main project image */}
           <div className="order-1 lg:order-2 lg:col-span-3">
-            <div className="rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src={project.image.src} 
-                alt={project.name} 
-                className="w-full h-auto object-cover rounded-lg transition-transform duration-300 hover:scale-105" 
-                width={600} 
-                height={400} 
-                loading="eager" 
+            <div className={getImageContainerClassName()}>
+              <img
+                src={project.image.src}
+                alt={project.name}
+                className={getImageClassName()}
+                width={600}
+                height={400}
+                loading="eager"
               />
             </div>
           </div>

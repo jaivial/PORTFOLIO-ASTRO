@@ -23,7 +23,7 @@ const customStyles = `
   }
 `;
 
-export default function FeatureImageModal({ image, title }) {
+export default function FeatureImageModal({ image, title, projectSlug }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Determinar la URL de la imagen
@@ -31,6 +31,29 @@ export default function FeatureImageModal({ image, title }) {
     typeof image === "string"
       ? image // Si es una ruta de imagen directa (string)
       : image.src || (image.default && image.default.src) || ""; // Si es un objeto de Astro u otro tipo de objeto
+
+  // Determinar si la imagen es un SVG
+  const isSvg = imgSrc.endsWith('.svg');
+
+  // Determinar el estilo de altura según el proyecto
+  const getImageClassName = () => {
+    if (projectSlug === "hero-budget") {
+      const baseClasses = "h-auto object-contain max-[500px]:w-full min-[500px]:h-[70vh] min-[500px]:w-auto";
+      // Añadir padding y fondo blanco si es SVG
+      if (isSvg) {
+        return `${baseClasses} bg-white p-4 rounded-lg`;
+      }
+      return baseClasses;
+    }
+    return "w-full h-auto object-cover";
+  };
+
+  const getContainerClassName = () => {
+    if (projectSlug === "hero-budget") {
+      return "cursor-pointer flex justify-center items-center";
+    }
+    return "cursor-pointer";
+  };
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -46,8 +69,8 @@ export default function FeatureImageModal({ image, title }) {
       <style>{customStyles}</style>
 
       {/* Imagen en miniatura que activa el modal */}
-      <div onClick={openModal} className="cursor-pointer">
-        <img src={imgSrc} alt={title} className="w-full h-auto object-cover" />
+      <div onClick={openModal} className={getContainerClassName()}>
+        <img src={imgSrc} alt={title} className={getImageClassName()} />
       </div>
 
       {/* Modal que muestra la imagen en grande */}

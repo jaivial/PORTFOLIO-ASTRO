@@ -1,0 +1,141 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1795" width="1400" height="1795"><defs><linearGradient id="P" gradientUnits="userSpaceOnUse"/><linearGradient id="g1" x2="1" href="#P" gradientTransform="matrix(1300,0,0,80,50,20)"><stop stop-color="#1e40af"/><stop offset="1" stop-color="#3b82f6"/></linearGradient><linearGradient id="g2" x2="1" href="#P" gradientTransform="matrix(48,48,-48,48,76,126)"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1e40af"/></linearGradient><linearGradient id="g3" x2="1" href="#P" gradientTransform="matrix(520,0,0,45,150,120)"><stop stop-color="#1e40af"/><stop offset="1" stop-color="#3b82f6"/></linearGradient><linearGradient id="g4" x2="1" href="#P" gradientTransform="matrix(48,48,-48,48,76,406)"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1e40af"/></linearGradient><linearGradient id="g5" x2="1" href="#P" gradientTransform="matrix(520,0,0,45,150,380)"><stop stop-color="#0c4a6e"/><stop offset="1" stop-color="#0369a1"/></linearGradient><linearGradient id="g6" x2="1" href="#P" gradientTransform="matrix(48,48,-48,48,76,726)"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1e40af"/></linearGradient><linearGradient id="g7" x2="1" href="#P" gradientTransform="matrix(520,0,0,45,150,700)"><stop stop-color="#1e3a8a"/><stop offset="1" stop-color="#2563eb"/></linearGradient><linearGradient id="g8" x2="1" href="#P" gradientTransform="matrix(48,48,-48,48,76,1126)"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1e40af"/></linearGradient><linearGradient id="g9" x2="1" href="#P" gradientTransform="matrix(520,0,0,45,150,1100)"><stop stop-color="#1e293b"/><stop offset="1" stop-color="#334155"/></linearGradient><linearGradient id="g10" x2="1" href="#P" gradientTransform="matrix(48,48,-48,48,76,1466)"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1e40af"/></linearGradient><linearGradient id="g11" x2="1" href="#P" gradientTransform="matrix(520,0,0,45,150,1440)"><stop stop-color="#1e40af"/><stop offset="1" stop-color="#3b82f6"/></linearGradient><linearGradient id="g12" x2="1" href="#P" gradientTransform="matrix(1300,0,0,100,50,1670)"><stop stop-color="#1e40af"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs><style>tspan{white-space:pre}.a{fill:#0f172a}.b{fill:url(#g1)}.c{font-size: 28px;fill: #ffffff;font-family: "' Arial'"}.d{font-size: 12px;fill: #cbd5e1;font-family: "' Arial'"}.e{fill:url(#g2)}.f{font-size: 18px;fill: #ffffff;font-family: "' Arial'"}.g{fill:#1e293b;stroke:#334155;stroke-width:2}.h{fill:url(#g3)}.i{font-size: 16px;fill: #ffffff;font-family: "' Arial'"}.j{font-size: 14px;fill: #f1f5f9;font-family: "' Arial'"}.k{fill:#0f172a;stroke:#3b82f6}.l{font-size: 11px;fill: #e2e8f0;font-family: "' Courier  New'"}.m{fill:none;stroke:#3b82f6;stroke-width:3}.n{fill:url(#g4)}.o{fill:url(#g5)}.p{fill:#0f172a;stroke:#0369a1}.q{font-size: 14px;fill: #3b82f6;font-family: "' Arial'"}.r{fill:url(#g6)}.s{fill:url(#g7)}.t{fill:#0f172a;stroke:#2563eb}.u{fill:url(#g8)}.v{fill:url(#g9)}.w{fill:#1e293b;stroke:#3b82f6;stroke-width:2}.x{font-size: 12px;fill: #3b82f6;font-family: "' Arial'"}.y{fill:url(#g10)}.z{fill:url(#g11)}.A{fill:#0f172a;stroke:#10b981}.B{fill:#fff;stroke:#e2e8f0;stroke-width:2}.C{fill:#1e293b}.D{font-size: 16px;fill: #3b82f6;font-family: "' Arial'"}.E{fill:#f8fafc;stroke:#3b82f6;stroke-width:2}.F{font-size: 14px;fill: #334155;font-family: "' Arial'"}.G{font-size: 12px;fill: #64748b;font-family: "' Arial'"}.H{fill:#0f172a;stroke:#3b82f6;stroke-width:2}.I{fill:#f8fafc;stroke:#e2e8f0}.J{fill:#eff6ff;stroke:#3b82f6}.K{font-size: 28px;fill: #3b82f6;font-family: "' Arial'"}.L{font-size: 10px;fill: #64748b;font-family: "' Arial'"}.M{fill:url(#g12)}</style><path fill-rule="evenodd" class="a" d="m0 0h1400v2000h-1400z"/><path fill-rule="evenodd" class="b" d="m62 20h1276c6.6 0 12 5.4 12 12v56c0 6.6-5.4 12-12 12h-1276c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12z"/><text style="transform:matrix(1,0,0,1,700,55)" ><tspan x="-249.6" y="0" class="c">Backend Microservices Architecture
+</tspan></text><text style="transform:matrix(1,0,0,1,700,80)" ><tspan x="-168.5" y="0" class="d">Go-Based Multi-Module Workspace with NGINX Gateway
+</tspan></text><path fill-rule="evenodd" class="e" d="m100 174c-13.3 0-24-10.7-24-24 0-13.3 10.7-24 24-24 13.3 0 24 10.7 24 24 0 13.3-10.7 24-24 24z"/><text style="transform:matrix(1,0,0,1,100,157)" ><tspan x="-5.7" y="0" class="f">1
+</tspan></text><path fill-rule="evenodd" class="g" d="m162 120h496c6.6 0 12 5.4 12 12v176c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-176c0-6.6 5.4-12 12-12z"/><path fill-rule="evenodd" class="h" d="m162 120h496c6.6 0 12 5.4 12 12v21c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-21c0-6.6 5.4-12 12-12z"/><text style="transform:matrix(1,0,0,1,180,148)" ><tspan x="0" y="0" class="i">📱 Client Request
+</tspan></text><text style="transform:matrix(1,0,0,1,180,190)" ><tspan x="0" y="0" class="j">React Native App
+</tspan></text><text style="transform:matrix(1,0,0,1,180,210)" ><tspan x="0" y="0" class="d">POST /expenses/add
+</tspan></text><path fill-rule="evenodd" class="k" d="m186 225h448c3.3 0 6 2.7 6 6v68c0 3.3-2.7 6-6 6h-448c-3.3 0-6-2.7-6-6v-68c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,200,245)" ><tspan x="0" y="0" class="l">Headers:
+</tspan></text><text style="transform:matrix(1,0,0,1,210,263)" ><tspan x="0" y="0" class="l">Authorization: Bearer {token}
+</tspan></text><text style="transform:matrix(1,0,0,1,200,280)" ><tspan x="0" y="0" class="l">Body:
+</tspan></text><text style="transform:matrix(1,0,0,1,210,298)" ><tspan x="0" y="0" class="l">{&quot;amount&quot;: 50.00, &quot;category&quot;: &quot;Food&quot;}
+</tspan></text><path fill-rule="evenodd" class="m" d="m410 320v60"/><path fill-rule="evenodd" class="n" d="m100 454c-13.3 0-24-10.7-24-24 0-13.3 10.7-24 24-24 13.3 0 24 10.7 24 24 0 13.3-10.7 24-24 24z"/><text style="transform:matrix(1,0,0,1,100,437)" ><tspan x="-5.7" y="0" class="f">2
+</tspan></text><path fill-rule="evenodd" class="g" d="m162 380h496c6.6 0 12 5.4 12 12v236c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-236c0-6.6 5.4-12 12-12z"/><path fill-rule="evenodd" class="o" d="m162 380h496c6.6 0 12 5.4 12 12v21c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-21c0-6.6 5.4-12 12-12z"/><text style="transform:matrix(1,0,0,1,180,408)" ><tspan x="0" y="0" class="i">🌐 NGINX Reverse Proxy
+</tspan></text><text style="transform:matrix(1,0,0,1,180,450)" ><tspan x="0" y="0" class="j">Gateway Functions:
+</tspan></text><path fill-rule="evenodd" class="p" d="m186 465h448c3.3 0 6 2.7 6 6v148c0 3.3-2.7 6-6 6h-448c-3.3 0-6-2.7-6-6v-148c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,200,488)" ><tspan x="0" y="0" class="q">1. SSL/TLS Termination
+</tspan></text><text style="transform:matrix(1,0,0,1,210,506)" ><tspan x="0" y="0" class="d">Decrypt HTTPS traffic (Port 443)
+</tspan></text><text style="transform:matrix(1,0,0,1,200,530)" ><tspan x="0" y="0" class="q">2. Route Matching
+</tspan></text><text style="transform:matrix(1,0,0,1,210,548)" ><tspan x="0" y="0" class="d">location /expenses/ → backend_expense
+</tspan></text><text style="transform:matrix(1,0,0,1,200,572)" ><tspan x="0" y="0" class="q">3. Load Balancing
+</tspan></text><text style="transform:matrix(1,0,0,1,210,590)" ><tspan x="0" y="0" class="d">Upstream: 127.0.0.1:8094 (max_fails=3)
+</tspan></text><text style="transform:matrix(1,0,0,1,210,608)" ><tspan x="0" y="0" class="d">Keepalive: 32 connections
+</tspan></text><path fill-rule="evenodd" class="m" d="m410 640v60"/><path fill-rule="evenodd" class="r" d="m100 774c-13.3 0-24-10.7-24-24 0-13.3 10.7-24 24-24 13.3 0 24 10.7 24 24 0 13.3-10.7 24-24 24z"/><text style="transform:matrix(1,0,0,1,100,757)" ><tspan x="-5.7" y="0" class="f">3
+</tspan></text><path fill-rule="evenodd" class="g" d="m162 700h496c6.6 0 12 5.4 12 12v316c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-316c0-6.6 5.4-12 12-12z"/><path fill-rule="evenodd" class="s" d="m162 700h496c6.6 0 12 5.4 12 12v21c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-21c0-6.6 5.4-12 12-12z"/><text style="transform:matrix(1,0,0,1,180,728)" ><tspan x="0" y="0" class="i">⚙️ Expense Management Service
+</tspan></text><text style="transform:matrix(1,0,0,1,580,728)" ><tspan x="0" y="0" class="d">Port: 8094
+</tspan></text><text style="transform:matrix(1,0,0,1,180,770)" ><tspan x="0" y="0" class="j">HTTP Handler Processing:
+</tspan></text><path fill-rule="evenodd" class="t" d="m186 785h448c3.3 0 6 2.7 6 6v228c0 3.3-2.7 6-6 6h-448c-3.3 0-6-2.7-6-6v-228c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,200,808)" ><tspan x="0" y="0" class="q">handleAddExpense(w, r)
+</tspan></text><text style="transform:matrix(1,0,0,1,210,830)" ><tspan x="0" y="0" class="d">1. Parse JSON request body
+</tspan></text><text style="transform:matrix(1,0,0,1,210,850)" ><tspan x="0" y="0" class="d">2. Validate required fields
+</tspan></text><text style="transform:matrix(1,0,0,1,220,868)" ><tspan x="0" y="0" class="l">• user_id, amount, date, category
+</tspan></text><text style="transform:matrix(1,0,0,1,220,884)" ><tspan x="0" y="0" class="l">• payment_method in ['cash', 'bank']
+</tspan></text><text style="transform:matrix(1,0,0,1,210,906)" ><tspan x="0" y="0" class="d">3. Create context with timeout (10s)
+</tspan></text><text style="transform:matrix(1,0,0,1,210,926)" ><tspan x="0" y="0" class="d">4. Begin database transaction
+</tspan></text><text style="transform:matrix(1,0,0,1,210,946)" ><tspan x="0" y="0" class="d">5. Insert expense record
+</tspan></text><text style="transform:matrix(1,0,0,1,210,966)" ><tspan x="0" y="0" class="d">6. Update monthly balance
+</tspan></text><text style="transform:matrix(1,0,0,1,210,986)" ><tspan x="0" y="0" class="d">7. Record sync operation
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1006)" ><tspan x="0" y="0" class="d">8. Invalidate Redis cache
+</tspan></text><path fill-rule="evenodd" class="m" d="m410 1040v60"/><path fill-rule="evenodd" class="u" d="m100 1174c-13.3 0-24-10.7-24-24 0-13.3 10.7-24 24-24 13.3 0 24 10.7 24 24 0 13.3-10.7 24-24 24z"/><text style="transform:matrix(1,0,0,1,100,1157)" ><tspan x="-5.7" y="0" class="f">4
+</tspan></text><path fill-rule="evenodd" class="g" d="m162 1100h496c6.6 0 12 5.4 12 12v256c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-256c0-6.6 5.4-12 12-12z"/><path fill-rule="evenodd" class="v" d="m162 1100h496c6.6 0 12 5.4 12 12v21c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-21c0-6.6 5.4-12 12-12z"/><text style="transform:matrix(1,0,0,1,180,1128)" ><tspan x="0" y="0" class="i">💾 Database &amp; Cache Layer
+</tspan></text><path fill-rule="evenodd" class="w" d="m188 1160h204c4.4 0 8 3.6 8 8v184c0 4.4-3.6 8-8 8h-204c-4.4 0-8-3.6-8-8v-184c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,290,1185)" ><tspan x="-58.5" y="0" class="q">SQLite Database
+</tspan></text><text style="transform:matrix(1,0,0,1,200,1210)" ><tspan x="0" y="0" class="d">hero_budget.db
+</tspan></text><text style="transform:matrix(1,0,0,1,200,1235)" ><tspan x="0" y="0" class="l">Tables:
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1253)" ><tspan x="0" y="0" class="l">• expenses
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1270)" ><tspan x="0" y="0" class="l">• incomes
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1287)" ><tspan x="0" y="0" class="l">• bills
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1304)" ><tspan x="0" y="0" class="l">• savings_goals
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1321)" ><tspan x="0" y="0" class="l">• sync_operations
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1338)" ><tspan x="0" y="0" class="l">• monthly_balance
+</tspan></text><path fill-rule="evenodd" class="w" d="m428 1160h204c4.4 0 8 3.6 8 8v184c0 4.4-3.6 8-8 8h-204c-4.4 0-8-3.6-8-8v-184c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,530,1185)" ><tspan x="-42.9" y="0" class="q">Redis Cache
+</tspan></text><text style="transform:matrix(1,0,0,1,440,1210)" ><tspan x="0" y="0" class="d">Port: 6379
+</tspan></text><text style="transform:matrix(1,0,0,1,440,1235)" ><tspan x="0" y="0" class="l">Cache Keys:
+</tspan></text><text style="transform:matrix(1,0,0,1,450,1253)" ><tspan x="0" y="0" class="l">• expense:user:*
+</tspan></text><text style="transform:matrix(1,0,0,1,450,1270)" ><tspan x="0" y="0" class="l">• income:user:*
+</tspan></text><text style="transform:matrix(1,0,0,1,450,1287)" ><tspan x="0" y="0" class="l">• dashboard:*
+</tspan></text><text style="transform:matrix(1,0,0,1,450,1304)" ><tspan x="0" y="0" class="l">• bills:*
+</tspan></text><text style="transform:matrix(1,0,0,1,440,1330)" ><tspan x="0" y="0" class="x">TTL: 5-60 minutes
+</tspan></text><text style="transform:matrix(1,0,0,1,440,1348)" ><tspan x="0" y="0" class="x">Invalidate on write
+</tspan></text><path fill-rule="evenodd" class="m" d="m410 1380v60"/><path fill-rule="evenodd" class="y" d="m100 1514c-13.3 0-24-10.7-24-24 0-13.3 10.7-24 24-24 13.3 0 24 10.7 24 24 0 13.3-10.7 24-24 24z"/><text style="transform:matrix(1,0,0,1,100,1497)" ><tspan x="-5.7" y="0" class="f">5
+</tspan></text><path fill-rule="evenodd" class="g" d="m162 1440h496c6.6 0 12 5.4 12 12v156c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-156c0-6.6 5.4-12 12-12z"/><path fill-rule="evenodd" class="z" d="m162 1440h496c6.6 0 12 5.4 12 12v21c0 6.6-5.4 12-12 12h-496c-6.6 0-12-5.4-12-12v-21c0-6.6 5.4-12 12-12z"/><text style="transform:matrix(1,0,0,1,180,1468)" ><tspan x="0" y="0" class="i">✅ Success Response
+</tspan></text><path fill-rule="evenodd" class="A" d="m186 1500h448c3.3 0 6 2.7 6 6v88c0 3.3-2.7 6-6 6h-448c-3.3 0-6-2.7-6-6v-88c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,200,1520)" ><tspan x="0" y="0" class="l">HTTP 200 OK
+</tspan></text><text style="transform:matrix(1,0,0,1,200,1540)" ><tspan x="0" y="0" class="l">{
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1558)" ><tspan x="0" y="0" class="l">  &quot;success&quot;: true,
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1576)" ><tspan x="0" y="0" class="l">  &quot;message&quot;: &quot;Expense added successfully&quot;,
+</tspan></text><text style="transform:matrix(1,0,0,1,210,1594)" ><tspan x="0" y="0" class="l">  &quot;data&quot;: {&quot;expense_id&quot;: 789, ...}
+</tspan></text><text style="transform:matrix(1,0,0,1,200,1608)" ><tspan x="0" y="0" class="l">}
+</tspan></text><path fill-rule="evenodd" class="B" d="m742 120h576c6.6 0 12 5.4 12 12v1476c0 6.6-5.4 12-12 12h-576c-6.6 0-12-5.4-12-12v-1476c0-6.6 5.4-12 12-12z"/><path fill-rule="evenodd" class="C" d="m742 120h576c6.6 0 12 5.4 12 12v21c0 6.6-5.4 12-12 12h-576c-6.6 0-12-5.4-12-12v-21c0-6.6 5.4-12 12-12z"/><text style="transform:matrix(1,0,0,1,760,148)" ><tspan x="0" y="0" class="i">🏗️ Microservices Architecture
+</tspan></text><text style="transform:matrix(1,0,0,1,760,200)" ><tspan x="0" y="0" class="D">NGINX Gateway (Port 443/80)
+</tspan></text><path fill-rule="evenodd" class="E" d="m768 210h524c4.4 0 8 3.6 8 8v104c0 4.4-3.6 8-8 8h-524c-4.4 0-8-3.6-8-8v-104c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,780,235)" ><tspan x="0" y="0" class="F">Route Configuration:
+</tspan></text><text style="transform:matrix(1,0,0,1,790,255)" ><tspan x="0" y="0" class="G">• /expenses/* → Expense Service (8094)
+</tspan></text><text style="transform:matrix(1,0,0,1,790,273)" ><tspan x="0" y="0" class="G">• /incomes/* → Income Service (8093)
+</tspan></text><text style="transform:matrix(1,0,0,1,790,291)" ><tspan x="0" y="0" class="G">• /bills/* → Bills Service (8091)
+</tspan></text><text style="transform:matrix(1,0,0,1,790,309)" ><tspan x="0" y="0" class="G">• /signin → Sign In Service (8084)
+</tspan></text><text style="transform:matrix(1,0,0,1,760,360)" ><tspan x="0" y="0" class="D">Independent Microservices
+</tspan></text><path fill-rule="evenodd" class="w" d="m766 375h148c3.3 0 6 2.7 6 6v58c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-58c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,840,398)" ><tspan x="-29.7" y="0" class="j">Expense
+</tspan></text><text style="transform:matrix(1,0,0,1,840,415)" ><tspan x="-31.1" y="0" class="d">Port: 8094
+</tspan></text><text style="transform:matrix(1,0,0,1,840,432)" ><tspan x="-50.1" y="0" class="x">CRUD + Balance
+</tspan></text><path fill-rule="evenodd" class="w" d="m946 375h148c3.3 0 6 2.7 6 6v58c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-58c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,1020,398)" ><tspan x="-25.8" y="0" class="j">Income
+</tspan></text><text style="transform:matrix(1,0,0,1,1020,415)" ><tspan x="-31.1" y="0" class="d">Port: 8093
+</tspan></text><text style="transform:matrix(1,0,0,1,1020,432)" ><tspan x="-50.1" y="0" class="x">CRUD + Balance
+</tspan></text><path fill-rule="evenodd" class="w" d="m1126 375h148c3.3 0 6 2.7 6 6v58c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-58c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,1200,398)" ><tspan x="-14.3" y="0" class="j">Bills
+</tspan></text><text style="transform:matrix(1,0,0,1,1200,415)" ><tspan x="-31.1" y="0" class="d">Port: 8091
+</tspan></text><text style="transform:matrix(1,0,0,1,1200,432)" ><tspan x="-48.2" y="0" class="x">Recurring + Pay
+</tspan></text><path fill-rule="evenodd" class="w" d="m766 460h148c3.3 0 6 2.7 6 6v58c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-58c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,840,483)" ><tspan x="-27.3" y="0" class="j">Savings
+</tspan></text><text style="transform:matrix(1,0,0,1,840,500)" ><tspan x="-31.1" y="0" class="d">Port: 8089
+</tspan></text><text style="transform:matrix(1,0,0,1,840,517)" ><tspan x="-51.2" y="0" class="x">Goals + Progress
+</tspan></text><path fill-rule="evenodd" class="w" d="m946 460h148c3.3 0 6 2.7 6 6v58c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-58c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,1020,483)" ><tspan x="-37.7" y="0" class="j">Categories
+</tspan></text><text style="transform:matrix(1,0,0,1,1020,500)" ><tspan x="-31.1" y="0" class="d">Port: 8096
+</tspan></text><text style="transform:matrix(1,0,0,1,1020,517)" ><tspan x="-41.8" y="0" class="x">Type Changes
+</tspan></text><path fill-rule="evenodd" class="w" d="m1126 460h148c3.3 0 6 2.7 6 6v58c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-58c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,1200,483)" ><tspan x="-37.2" y="0" class="j">Cash/Bank
+</tspan></text><text style="transform:matrix(1,0,0,1,1200,500)" ><tspan x="-31.1" y="0" class="d">Port: 8090
+</tspan></text><text style="transform:matrix(1,0,0,1,1200,517)" ><tspan x="-27.3" y="0" class="x">Transfers
+</tspan></text><path fill-rule="evenodd" class="w" d="m766 545h148c3.3 0 6 2.7 6 6v58c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-58c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,840,568)" ><tspan x="-24" y="0" class="j">Sign In
+</tspan></text><text style="transform:matrix(1,0,0,1,840,585)" ><tspan x="-31.1" y="0" class="d">Port: 8084
+</tspan></text><text style="transform:matrix(1,0,0,1,840,602)" ><tspan x="-44" y="0" class="x">Authentication
+</tspan></text><path fill-rule="evenodd" class="w" d="m946 545h148c3.3 0 6 2.7 6 6v58c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-58c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,1020,568)" ><tspan x="-27.1" y="0" class="j">Sign Up
+</tspan></text><text style="transform:matrix(1,0,0,1,1020,585)" ><tspan x="-31.1" y="0" class="d">Port: 8082
+</tspan></text><text style="transform:matrix(1,0,0,1,1020,602)" ><tspan x="-36.2" y="0" class="x">Registration
+</tspan></text><path fill-rule="evenodd" class="w" d="m1126 545h148c3.3 0 6 2.7 6 6v58c0 3.3-2.7 6-6 6h-148c-3.3 0-6-2.7-6-6v-58c0-3.3 2.7-6 6-6z"/><text style="transform:matrix(1,0,0,1,1200,568)" ><tspan x="-38" y="0" class="j">Dashboard
+</tspan></text><text style="transform:matrix(1,0,0,1,1200,585)" ><tspan x="-31.1" y="0" class="d">Port: 8087
+</tspan></text><text style="transform:matrix(1,0,0,1,1200,602)" ><tspan x="-27.2" y="0" class="x">Analytics
+</tspan></text><text style="transform:matrix(1,0,0,1,760,650)" ><tspan x="0" y="0" class="D">Go Workspace (go.work)
+</tspan></text><path fill-rule="evenodd" class="H" d="m768 665h524c4.4 0 8 3.6 8 8v134c0 4.4-3.6 8-8 8h-524c-4.4 0-8-3.6-8-8v-134c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,780,690)" ><tspan x="0" y="0" class="j">Multi-Module Monorepo
+</tspan></text><text style="transform:matrix(1,0,0,1,790,715)" ><tspan x="0" y="0" class="d">✓ Independent service modules
+</tspan></text><text style="transform:matrix(1,0,0,1,790,735)" ><tspan x="0" y="0" class="d">✓ Shared dependencies management
+</tspan></text><text style="transform:matrix(1,0,0,1,790,755)" ><tspan x="0" y="0" class="d">✓ Local development without git commits
+</tspan></text><text style="transform:matrix(1,0,0,1,790,775)" ><tspan x="0" y="0" class="d">✓ Cross-module imports
+</tspan></text><text style="transform:matrix(1,0,0,1,790,795)" ><tspan x="0" y="0" class="d">✓ Common utilities (cache, auth, errors)
+</tspan></text><text style="transform:matrix(1,0,0,1,760,845)" ><tspan x="0" y="0" class="D">🎯 Key Features
+</tspan></text><path fill-rule="evenodd" class="I" d="m768 860h524c4.4 0 8 3.6 8 8v54c0 4.4-3.6 8-8 8h-524c-4.4 0-8-3.6-8-8v-54c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,780,885)" ><tspan x="0" y="0" class="F">⚡ Context-Based Timeouts
+</tspan></text><text style="transform:matrix(1,0,0,1,780,903)" ><tspan x="0" y="0" class="G">10-second timeout protection prevents hanging requests
+</tspan></text><text style="transform:matrix(1,0,0,1,780,920)" ><tspan x="0" y="0" class="G">Automatic cancellation on timeout or client disconnect
+</tspan></text><path fill-rule="evenodd" class="I" d="m768 945h524c4.4 0 8 3.6 8 8v54c0 4.4-3.6 8-8 8h-524c-4.4 0-8-3.6-8-8v-54c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,780,970)" ><tspan x="0" y="0" class="F">🔄 Redis Caching Layer
+</tspan></text><text style="transform:matrix(1,0,0,1,780,988)" ><tspan x="0" y="0" class="G">Cache frequently accessed data with TTL-based expiration
+</tspan></text><text style="transform:matrix(1,0,0,1,780,1005)" ><tspan x="0" y="0" class="G">Automatic invalidation on write operations
+</tspan></text><path fill-rule="evenodd" class="I" d="m768 1030h524c4.4 0 8 3.6 8 8v54c0 4.4-3.6 8-8 8h-524c-4.4 0-8-3.6-8-8v-54c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,780,1055)" ><tspan x="0" y="0" class="F">🔐 Transaction Safety
+</tspan></text><text style="transform:matrix(1,0,0,1,780,1073)" ><tspan x="0" y="0" class="G">All database operations wrapped in transactions
+</tspan></text><text style="transform:matrix(1,0,0,1,780,1090)" ><tspan x="0" y="0" class="G">Rollback on error ensures data consistency
+</tspan></text><path fill-rule="evenodd" class="I" d="m768 1115h524c4.4 0 8 3.6 8 8v54c0 4.4-3.6 8-8 8h-524c-4.4 0-8-3.6-8-8v-54c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,780,1140)" ><tspan x="0" y="0" class="F">📊 Structured Logging
+</tspan></text><text style="transform:matrix(1,0,0,1,780,1158)" ><tspan x="0" y="0" class="G">Comprehensive logging for debugging and monitoring
+</tspan></text><text style="transform:matrix(1,0,0,1,780,1175)" ><tspan x="0" y="0" class="G">Performance metrics for database operations
+</tspan></text><text style="transform:matrix(1,0,0,1,760,1220)" ><tspan x="0" y="0" class="D">💡 Architecture Benefits
+</tspan></text><path fill-rule="evenodd" class="J" d="m768 1235h244c4.4 0 8 3.6 8 8v74c0 4.4-3.6 8-8 8h-244c-4.4 0-8-3.6-8-8v-74c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,890,1265)" ><tspan x="-29.5" y="0" class="K">15+
+</tspan></text><text style="transform:matrix(1,0,0,1,890,1290)" ><tspan x="-65.2" y="0" class="G">Independent Services
+</tspan></text><text style="transform:matrix(1,0,0,1,890,1310)" ><tspan x="-63.2" y="0" class="L">Microservice architecture
+</tspan></text><path fill-rule="evenodd" class="J" d="m1048 1235h244c4.4 0 8 3.6 8 8v74c0 4.4-3.6 8-8 8h-244c-4.4 0-8-3.6-8-8v-74c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,1170,1265)" ><tspan x="-48.7" y="0" class="K">Instant
+</tspan></text><text style="transform:matrix(1,0,0,1,1170,1290)" ><tspan x="-51.1" y="0" class="G">Database Access
+</tspan></text><text style="transform:matrix(1,0,0,1,1170,1310)" ><tspan x="-66.6" y="0" class="L">No HTTP inter-service calls
+</tspan></text><path fill-rule="evenodd" class="J" d="m768 1340h244c4.4 0 8 3.6 8 8v74c0 4.4-3.6 8-8 8h-244c-4.4 0-8-3.6-8-8v-74c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,890,1370)" ><tspan x="-25.1" y="0" class="K">60s
+</tspan></text><text style="transform:matrix(1,0,0,1,890,1395)" ><tspan x="-42.9" y="0" class="G">Proxy Timeout
+</tspan></text><text style="transform:matrix(1,0,0,1,890,1415)" ><tspan x="-68.7" y="0" class="L">NGINX connection handling
+</tspan></text><path fill-rule="evenodd" class="J" d="m1048 1340h244c4.4 0 8 3.6 8 8v74c0 4.4-3.6 8-8 8h-244c-4.4 0-8-3.6-8-8v-74c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,1170,1370)" ><tspan x="-17.8" y="0" class="K">32
+</tspan></text><text style="transform:matrix(1,0,0,1,1170,1395)" ><tspan x="-68.1" y="0" class="G">Keepalive Connections
+</tspan></text><text style="transform:matrix(1,0,0,1,1170,1415)" ><tspan x="-48.3" y="0" class="L">Connection pooling
+</tspan></text><text style="transform:matrix(1,0,0,1,760,1465)" ><tspan x="0" y="0" class="D">🚀 Production Deployment
+</tspan></text><path fill-rule="evenodd" class="H" d="m768 1480h524c4.4 0 8 3.6 8 8v104c0 4.4-3.6 8-8 8h-524c-4.4 0-8-3.6-8-8v-104c0-4.4 3.6-8 8-8z"/><text style="transform:matrix(1,0,0,1,780,1505)" ><tspan x="0" y="0" class="j">VPS Server Configuration
+</tspan></text><text style="transform:matrix(1,0,0,1,790,1530)" ><tspan x="0" y="0" class="d">• Ubuntu/Debian Linux
+</tspan></text><text style="transform:matrix(1,0,0,1,790,1550)" ><tspan x="0" y="0" class="d">• NGINX with SSL/TLS (Let's Encrypt)
+</tspan></text><text style="transform:matrix(1,0,0,1,790,1570)" ><tspan x="0" y="0" class="d">• 15 independent Go processes
+</tspan></text><text style="transform:matrix(1,0,0,1,790,1590)" ><tspan x="0" y="0" class="d">• Shared SQLite database + Redis cache
+</tspan></text><path fill-rule="evenodd" class="M" d="m62 1670h1276c6.6 0 12 5.4 12 12v76c0 6.6-5.4 12-12 12h-1276c-6.6 0-12-5.4-12-12v-76c0-6.6 5.4-12 12-12z"/><text style="transform:matrix(1,0,0,1,700,1710)" ><tspan x="-203.1" y="0" class="c">🎯 High-Performance Backend
+</tspan></text><text style="transform:matrix(1,0,0,1,700,1738)" ><tspan x="-242.4" y="0" class="j">15+ Independent Microservices • Redis Caching • Transaction Safety
+</tspan></text><text style="transform:matrix(1,0,0,1,700,1758)" ><tspan x="-171.5" y="0" class="d">Built with Go 1.21+ • SQLite Database • NGINX Gateway
+</tspan></text></svg>

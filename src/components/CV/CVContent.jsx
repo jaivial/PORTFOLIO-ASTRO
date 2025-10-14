@@ -565,16 +565,16 @@ const CVContent = ({ data, activeSection, darkMode }) => {
               {/* Project Image */}
               {project.thumbnail && (
                 <div className="relative h-48 sm:h-56 overflow-hidden">
-                  <img 
-                    src={project.thumbnail} 
+                  <img
+                    src={project.thumbnail}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    className={`w-full h-full ${project.title === "Hero Budget" ? "object-scale-down" : "object-cover"} transition-transform duration-300 hover:scale-110`}
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute top-4 left-4">
                     <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
-                      Proyecto {index + 1}
+                      {t('cv.project_label')} {index + 1}
                     </span>
                   </div>
                 </div>

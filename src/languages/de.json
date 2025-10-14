@@ -10,16 +10,16 @@
   "hero": {
     "greeting": "Hallo! 👋 Ich bin",
     "name": "Jaime Villanueva",
-    "title": "Full Stack Web Entwickler",
-    "description": "Spezialisiert auf die Erstellung moderner und skalierbarer Web-Erfahrungen mit den neuesten Technologien",
+    "title": "Full Stack Web-Entwickler & Mobile-App-Entwickler",
+    "description": "Spezialisiert auf die Erstellung moderner und skalierbarer Web-Erfahrungen und mobiler Anwendungen mit den neuesten Technologien",
     "cta_projects": "Projekte ansehen",
     "cta_contact": "Kontakt"
   },
   "about": {
     "title": "Lerne mich kennen!",
-    "description_p1": "Ich bin Jaime Villanueva, ein FullStack-Entwickler, der sich auf Webdesign und -entwicklung spezialisiert hat. Mein Ansatz kombiniert solide Frontend-Erfahrung zur Erstellung attraktiver Benutzeroberflächen mit Backend-Fähigkeiten zum Aufbau funktionaler und dynamischer Lösungen.",
-    "description_p2": "Ich biete komplette Lösungen, die dynamische Menüs, Verwaltungssysteme, ERPs, Kundenbereiche, E-Commerce und Zahlungsgateways umfassen. Ich verwalte auch Inhalte für soziale Medien und verbessere die Online-Sichtbarkeit von Unternehmen.",
-    "description_p3": "Mein Ziel ist es, Ideen in erfolgreiche digitale Produkte zu verwandeln. Erkunden Sie meine Projekte und kontaktieren Sie mich, um Ihre Vision auf die nächste Stufe zu heben.",
+    "description_p1": "Ich bin Jaime Villanueva, ein FullStack-Entwickler, der sich auf Web- und Mobile-Design und -Entwicklung spezialisiert hat. Mein Ansatz kombiniert solide Frontend-Erfahrung zur Erstellung attraktiver Benutzeroberflächen mit Backend-Fähigkeiten zum Aufbau funktionaler und dynamischer Lösungen.",
+    "description_p2": "Ich entwickle plattformübergreifende mobile Anwendungen mit React Native für iOS und Android unter Verwendung eines Offline-First-Ansatzes mit Backend-Synchronisierung und dualer Datenbankarchitektur (Server und lokale SQLite). Ich biete komplette Lösungen, die dynamische Menüs, Verwaltungssysteme, ERPs, Kundenbereiche, E-Commerce und Zahlungsgateways umfassen. Ich verwalte auch Inhalte für soziale Medien und verbessere die Online-Sichtbarkeit von Unternehmen.",
+    "description_p3": "Mein Ziel ist es, Ideen in erfolgreiche digitale Produkte sowohl für Web als auch für mobile Geräte zu verwandeln. Erkunden Sie meine Projekte und kontaktieren Sie mich, um Ihre Vision auf die nächste Stufe zu heben.",
     "technologies_title": "Sprachen und Frameworks",
     "experience_years": "Jahre Erfahrung",
     "projects_completed": "abgeschlossene Projekte",
@@ -367,6 +367,7 @@
       "visit_website": "Website besuchen"
     },
     "achievements": "Wichtige Erfolge:",
+    "project_label": "Projekt",
     "footer_download_reminder": "Vergessen Sie nicht, diesen Lebenslauf mit der Schaltfläche oben auf der Seite herunterzuladen.",
     "pdf": {
       "professional_summary": "Berufszusammenfassung",

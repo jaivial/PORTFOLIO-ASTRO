@@ -44,9 +44,13 @@ function Project({ data }) {
                   className="relative mx-auto overflow-hidden rounded-xl bg-transparent border border-1 border-primary border-opacity-25 shadow-xl group transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] w-full"
                 >
                   <div className="bg-transparent relative overflow-hidden h-80 xl:h-[500px] w-full">
-                    <img 
-                      src={item.image.src} 
-                      className="object-cover object-top w-full h-full bg-cover rounded-t-xl transition-transform duration-500 group-hover:scale-105" 
+                    <img
+                      src={item.image.src}
+                      className={`w-full h-full bg-cover rounded-t-xl transition-transform duration-500 group-hover:scale-105 ${
+                        item.slug === "hero-budget"
+                          ? "object-scale-down object-center"
+                          : "object-cover object-top"
+                      }`}
                       alt={`${t('projects.view_details')} ${item.name}`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">

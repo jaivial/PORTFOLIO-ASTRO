@@ -127,6 +127,28 @@ export const careerData = [
         category: "job",
         location: "Remoto",
         details: "En mis prácticas como Frontend React Developer, he participado en el desarrollo de aplicaciones web empresariales, colaborando con equipos multidisciplinares en metodologías ágiles. Mi trabajo se ha centrado en la creación de componentes reutilizables, la implementación de flujos de datos reactivos y la mejora del rendimiento de aplicaciones existentes. He aplicado buenas prácticas de desarrollo como testing, documentación y código limpio."
+    },
+    {
+        id: 7,
+        title: "Hero Budget",
+        role: "Developer",
+        company: "Hero Budget App",
+        period: "Marzo 2025 - Octubre 2025",
+        description: "Aplicación móvil completa de gestión de finanzas personales desarrollada con React Native y TypeScript. Arquitectura offline-first con sincronización en tiempo real entre múltiples dispositivos, backend en Go con microservicios en VPS.",
+        link: "https://apps.apple.com/es/app/hero-budget/id6746946502?l=en-GB",
+        image: "/images/herobudget/herobudgetimg1.webp",
+        skills: ["React Native", "TypeScript", "Go", "SQLite", "OAuth 2.0", "Jest", "Detox", "RESTful API", "VPS", "Nginx"],
+        highlights: [
+            "Soporte multiidioma completo con más de 20 idiomas incluyendo i18next",
+            "Arquitectura offline-first con sincronización delta-sync en tiempo real",
+            "Autenticación social con Google y Apple Sign-In usando OAuth 2.0",
+            "Backend en Go con arquitectura de microservicios desplegada en VPS",
+            "Sistema completo de gestión de ingresos, gastos, facturas recurrentes y metas de ahorro",
+            "Suite de pruebas completa con Jest para pruebas unitarias y Detox para E2E"
+        ],
+        category: "project",
+        location: "Valencia, España",
+        details: "Hero Budget es una aplicación móvil completa que proporciona herramientas potentes para rastrear finanzas personales. Presenta una interfaz moderna con soporte para temas claro y oscuro, localización en más de 20 idiomas, y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad. La aplicación incluye dashboard con analíticas completas, seguimiento de ingresos y gastos, gestión de facturas recurrentes, metas de ahorro con seguimiento de progreso, y diseño responsive optimizado para tablets."
     }
 ];
 

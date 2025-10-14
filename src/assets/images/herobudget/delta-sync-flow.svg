@@ -1,0 +1,83 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400"><style>tspan{white-space:pre}.a{fill:#fff}.b{font-size: 24px;fill: #333333;font-weight: 700;font-family: "LiberationSans-Bold", "Liberation Sans"}.c{fill:#e3e3e3}.d{font-size: 18px;fill: #333333;font-weight: 700;font-family: "LiberationSans-Bold", "Liberation Sans"}.e{font-size: 14px;fill: #1976d2;font-weight: 700;font-family: "LiberationSans-Bold", "Liberation Sans"}.f{font-size: 13px;fill: #666666;font-weight: 400;font-family: "LiberationSans", "Liberation Sans"}.g{fill:#fff;stroke:#90caf9;stroke-width:1.5}.h{font-size: 12px;fill: #555555;font-family: "monospace"}.i{fill:none;stroke:#333;stroke-width:2}.j{fill:#fff;stroke:#ffb74d;stroke-width:1.5}.k{font-size: 12px;fill: #d32f2f;font-family: "monospace"}.l{fill:#fff;stroke:#ce93d8;stroke-width:1.5}.m{fill:none;stroke:#1976d2;stroke-width:2}.n{font-size: 12px;fill: #2e7d32;font-family: "monospace"}.o{font-size: 12px;fill: #c62828;font-family: "monospace"}.p{fill:#fff;stroke:#333;stroke-width:2}.q{font-size: 18px;fill: #2e7d32;font-weight: 700;font-family: "LiberationSans-Bold", "Liberation Sans"}.r{font-size: 14px;fill: #333333;font-family: "Arial"}</style><path fill-rule="evenodd" class="a" d="m1491-63v1593h-1673v-1593z"/><text style="transform:matrix(1,0,0,1,600,30)" ><tspan x="-196" y="0" class="b">Delta-Sync Multi-Device Data Flow
+</tspan></text><path fill-rule="evenodd" class="c" d="m55 70h490c2.8 0 5 2.2 5 5v230c0 2.8-2.2 5-5 5h-490c-2.8 0-5-2.2-5-5v-230c0-2.8 2.2-5 5-5z"/><text style="transform:matrix(1,0,0,1,300,95)" ><tspan x="-65.8" y="0" class="d">DEVICE A (iOS)
+</tspan></text><text style="transform:matrix(1,0,0,1,70,120)" ><tspan x="0" y="0" class="e">1
+</tspan></text><text style="transform:matrix(1,0,0,1,100,120)" ><tspan x="0" y="0" class="f">User Creates Expense
+</tspan></text><path fill-rule="evenodd" class="g" d="m73 130h454c1.7 0 3 1.3 3 3v79c0 1.7-1.3 3-3 3h-454c-1.7 0-3-1.3-3-3v-79c0-1.7 1.3-3 3-3z"/><text style="transform:matrix(1,0,0,1,80,150)" ><tspan x="0" y="0" class="h">• Generate operation_id = uuidv4()
+</tspan></text><text style="transform:matrix(1,0,0,1,80,170)" ><tspan x="0" y="0" class="h">  &quot;a1b2c3d4-e5f6-7890-abcd-ef1234567890&quot;
+</tspan></text><text style="transform:matrix(1,0,0,1,80,190)" ><tspan x="0" y="0" class="h">• device_id: &quot;ios_1703123456789_a1b2c3d4&quot;
+</tspan></text><text style="transform:matrix(1,0,0,1,80,210)" ><tspan x="0" y="0" class="h">• timestamp: 1703123456789
+</tspan></text><text style="transform:matrix(1,0,0,1,70,240)" ><tspan x="0" y="0" class="e">2
+</tspan></text><text style="transform:matrix(1,0,0,1,100,240)" ><tspan x="0" y="0" class="f">POST /expenses/add
+</tspan></text><path fill-rule="evenodd" class="g" d="m73 250h454c1.7 0 3 1.3 3 3v39c0 1.7-1.3 3-3 3h-454c-1.7 0-3-1.3-3-3v-39c0-1.7 1.3-3 3-3z"/><text style="transform:matrix(1,0,0,1,80,270)" ><tspan x="0" y="0" class="h">Send operation with device_id + operation_id
+</tspan></text><text style="transform:matrix(1,0,0,1,80,287)" ><tspan x="0" y="0" class="h">to backend sync endpoint
+</tspan></text><path fill-rule="evenodd" class="i" d="m300 310v60"/><text style="transform:matrix(1,0,0,1,310,345)" ><tspan x="0" y="0" class="f">API Call
+</tspan></text><path fill-rule="evenodd" class="c" d="m155 370h890c2.8 0 5 2.2 5 5v250c0 2.8-2.2 5-5 5h-890c-2.8 0-5-2.2-5-5v-250c0-2.8 2.2-5 5-5z"/><text style="transform:matrix(1,0,0,1,600,395)" ><tspan x="-96.5" y="0" class="d">BACKEND (Go Server)
+</tspan></text><text style="transform:matrix(1,0,0,1,170,425)" ><tspan x="0" y="0" class="e">3
+</tspan></text><text style="transform:matrix(1,0,0,1,200,425)" ><tspan x="0" y="0" class="f">Insert Expense Record
+</tspan></text><path fill-rule="evenodd" class="j" d="m173 435h294c1.7 0 3 1.3 3 3v54c0 1.7-1.3 3-3 3h-294c-1.7 0-3-1.3-3-3v-54c0-1.7 1.3-3 3-3z"/><text style="transform:matrix(1,0,0,1,180,455)" ><tspan x="0" y="0" class="h">• Insert into expenses table
+</tspan></text><text style="transform:matrix(1,0,0,1,180,475)" ><tspan x="0" y="0" class="h">• Get new expense_id = 42
+</tspan></text><text style="transform:matrix(1,0,0,1,520,425)" ><tspan x="0" y="0" class="e">4
+</tspan></text><text style="transform:matrix(1,0,0,1,550,425)" ><tspan x="0" y="0" class="f">Create Sync Operation
+</tspan></text><path fill-rule="evenodd" class="j" d="m523 435h494c1.7 0 3 1.3 3 3v174c0 1.7-1.3 3-3 3h-494c-1.7 0-3-1.3-3-3v-174c0-1.7 1.3-3 3-3z"/><text style="transform:matrix(1,0,0,1,530,455)" ><tspan x="0" y="0" class="h">INSERT INTO sync_operations:
+</tspan></text><text style="transform:matrix(1,0,0,1,540,475)" ><tspan x="0" y="0" class="h">• operation_id: &quot;a1b2c3d4...&quot;
+</tspan></text><text style="transform:matrix(1,0,0,1,540,495)" ><tspan x="0" y="0" class="h">• operation_type: &quot;create&quot;
+</tspan></text><text style="transform:matrix(1,0,0,1,540,515)" ><tspan x="0" y="0" class="h">• entity_type: &quot;expense&quot;
+</tspan></text><text style="transform:matrix(1,0,0,1,540,535)" ><tspan x="0" y="0" class="h">• entity_id: &quot;42&quot;
+</tspan></text><text style="transform:matrix(1,0,0,1,540,555)" ><tspan x="0" y="0" class="h">• operation_data: &quot;{...complete data}&quot;
+</tspan></text><text style="transform:matrix(1,0,0,1,540,575)" ><tspan x="0" y="0" class="k">• device_ids: [&quot;ios_1703123456789_a1b2c3d4&quot;]
+</tspan></text><text style="transform:matrix(1,0,0,1,540,595)" ><tspan x="0" y="0" class="h">• created_at: 1703123456790 (adjusted)
+</tspan></text><path fill-rule="evenodd" class="i" d="m770 630v50"/><path fill-rule="evenodd" class="c" d="m605 680h330c2.8 0 5 2.2 5 5v70c0 2.8-2.2 5-5 5h-330c-2.8 0-5-2.2-5-5v-70c0-2.8 2.2-5 5-5z"/><text style="transform:matrix(1,0,0,1,770,705)" ><tspan x="-96.9" y="0" class="d">sync_operations Table
+</tspan></text><text style="transform:matrix(1,0,0,1,620,730)" ><tspan x="0" y="0" class="h">Stores all operations with device_ids array
+</tspan></text><text style="transform:matrix(1,0,0,1,620,750)" ><tspan x="0" y="0" class="h">Indexed by user_id and created_at
+</tspan></text><path fill-rule="evenodd" class="c" d="m55 810h490c2.8 0 5 2.2 5 5v540c0 2.8-2.2 5-5 5h-490c-2.8 0-5-2.2-5-5v-540c0-2.8 2.2-5 5-5z"/><path fill-rule="evenodd" class="c" d="m471-44v1h-1v-1z"/><text style="transform:matrix(1,0,0,1,300,835)" ><tspan x="-85.5" y="0" class="d">DEVICE B (Android)
+</tspan></text><text style="transform:matrix(1,0,0,1,70,860)" ><tspan x="0" y="0" class="e">5
+</tspan></text><text style="transform:matrix(1,0,0,1,100,860)" ><tspan x="0" y="0" class="f">App Returns to Foreground
+</tspan></text><path fill-rule="evenodd" class="l" d="m73 870h454c1.7 0 3 1.3 3 3v39c0 1.7-1.3 3-3 3h-454c-1.7 0-3-1.3-3-3v-39c0-1.7 1.3-3 3-3z"/><text style="transform:matrix(1,0,0,1,80,890)" ><tspan x="0" y="0" class="h">Trigger: RNAppState 'background' → 'active'
+</tspan></text><text style="transform:matrix(1,0,0,1,80,907)" ><tspan x="0" y="0" class="h">Call: incrementalSyncService.backgroundSync()
+</tspan></text><text style="transform:matrix(1,0,0,1,70,935)" ><tspan x="0" y="0" class="e">6
+</tspan></text><text style="transform:matrix(1,0,0,1,100,935)" ><tspan x="0" y="0" class="f">Fetch Delta Operations
+</tspan></text><path fill-rule="evenodd" class="l" d="m73 945h454c1.7 0 3 1.3 3 3v59c0 1.7-1.3 3-3 3h-454c-1.7 0-3-1.3-3-3v-59c0-1.7 1.3-3 3-3z"/><text style="transform:matrix(1,0,0,1,80,965)" ><tspan x="0" y="0" class="h">GET /delta-sync/fetch
+</tspan></text><text style="transform:matrix(1,0,0,1,80,985)" ><tspan x="0" y="0" class="h">• user_id + last_operation_id
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1002)" ><tspan x="0" y="0" class="h">• Returns operations with device_ids arrays
+</tspan></text><path fill-rule="evenodd" class="m" d="m300 810v-50h470"/><text style="transform:matrix(1,0,0,1,450,755)" ><tspan x="0" y="0" class="f">Sync Request
+</tspan></text><text style="transform:matrix(1,0,0,1,70,1030)" ><tspan x="0" y="0" class="e">7
+</tspan></text><text style="transform:matrix(1,0,0,1,100,1030)" ><tspan x="0" y="0" class="f">Filter by Device ID
+</tspan></text><path fill-rule="evenodd" class="l" d="m73 1040h454c1.7 0 3 1.3 3 3v79c0 1.7-1.3 3-3 3h-454c-1.7 0-3-1.3-3-3v-79c0-1.7 1.3-3 3-3z"/><text style="transform:matrix(1,0,0,1,80,1060)" ><tspan x="0" y="0" class="h">current_device = &quot;android_1703123999999_x9y8z7&quot;
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1080)" ><tspan x="0" y="0" class="n">✓ Process: device NOT in device_ids array
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1100)" ><tspan x="0" y="0" class="o">✗ Skip: device FOUND in device_ids array
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1117)" ><tspan x="0" y="0" class="h">Result: 8 operations to process (skip 2)
+</tspan></text><text style="transform:matrix(1,0,0,1,70,1145)" ><tspan x="0" y="0" class="e">8
+</tspan></text><text style="transform:matrix(1,0,0,1,100,1145)" ><tspan x="0" y="0" class="f">Execute Operations Locally
+</tspan></text><path fill-rule="evenodd" class="l" d="m73 1155h454c1.7 0 3 1.3 3 3v79c0 1.7-1.3 3-3 3h-454c-1.7 0-3-1.3-3-3v-79c0-1.7 1.3-3 3-3z"/><text style="transform:matrix(1,0,0,1,80,1175)" ><tspan x="0" y="0" class="h">• Sort by operation_id (chronological)
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1195)" ><tspan x="0" y="0" class="h">• Route by entity_type + operation_type
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1215)" ><tspan x="0" y="0" class="h">• Execute: expense.create → AddExpenseService
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1232)" ><tspan x="0" y="0" class="h">• Track: Successfully executed 7 operations
+</tspan></text><text style="transform:matrix(1,0,0,1,70,1260)" ><tspan x="0" y="0" class="e">9
+</tspan></text><text style="transform:matrix(1,0,0,1,100,1260)" ><tspan x="0" y="0" class="f">Batch Update Device IDs
+</tspan></text><path fill-rule="evenodd" class="l" d="m73 1270h454c1.7 0 3 1.3 3 3v69c0 1.7-1.3 3-3 3h-454c-1.7 0-3-1.3-3-3v-69c0-1.7 1.3-3 3-3z"/><text style="transform:matrix(1,0,0,1,80,1290)" ><tspan x="0" y="0" class="h">POST /delta-sync/batch-update-device
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1310)" ><tspan x="0" y="0" class="h">• Send all successful operation_ids
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1327)" ><tspan x="0" y="0" class="h">• Backend adds device_id to arrays
+</tspan></text><text style="transform:matrix(1,0,0,1,80,1344)" ><tspan x="0" y="0" class="k">  [&quot;ios_...&quot;, &quot;android_...&quot;]
+</tspan></text><path fill-rule="evenodd" class="m" d="m300 1270v-30h300v-480"/><text style="transform:matrix(1,0,0,1,380,1255)" ><tspan x="0" y="0" class="f">Update Request
+</tspan></text><path fill-rule="evenodd" class="p" d="m605 810h440c2.8 0 5 2.2 5 5v200c0 2.8-2.2 5-5 5h-440c-2.8 0-5-2.2-5-5v-200c0-2.8 2.2-5 5-5z"/><text style="transform:matrix(1,0,0,1,825,835)" ><tspan x="-86.8" y="0" class="q">✓ SYNC COMPLETE
+</tspan></text><text style="transform:matrix(1,0,0,1,620,865)" ><tspan x="0" y="0" class="r">Device A:
+</tspan></text><text style="transform:matrix(1,0,0,1,620,885)" ><tspan x="0" y="0" class="h">device_ids: [&quot;ios_1703123456789_a1b2c3d4&quot;]
+</tspan></text><text style="transform:matrix(1,0,0,1,620,915)" ><tspan x="0" y="0" class="r">Device B:
+</tspan></text><text style="transform:matrix(1,0,0,1,620,935)" ><tspan x="0" y="0" class="h">• Received 10 operations
+</tspan></text><text style="transform:matrix(1,0,0,1,620,955)" ><tspan x="0" y="0" class="h">• Filtered to 8 (skipped 2 from Device B)
+</tspan></text><text style="transform:matrix(1,0,0,1,620,975)" ><tspan x="0" y="0" class="h">• Executed 7 successfully
+</tspan></text><text style="transform:matrix(1,0,0,1,620,995)" ><tspan x="0" y="0" class="h">• Updated device_ids arrays on server
+</tspan></text><text style="transform:matrix(1,0,0,1,620,1015)" ><tspan x="0" y="0" class="h">  [&quot;ios_...&quot;, &quot;android_...&quot;]
+</tspan></text><path fill-rule="evenodd" class="p" d="m605 1050h440c2.8 0 5 2.2 5 5v300c0 2.8-2.2 5-5 5h-440c-2.8 0-5-2.2-5-5v-300c0-2.8 2.2-5 5-5z"/><text style="transform:matrix(1,0,0,1,825,1075)" ><tspan x="-54.5" y="0" class="d">Key Benefits
+</tspan></text><text style="transform:matrix(1,0,0,1,620,1105)" ><tspan x="0" y="0" class="r">✓ Real-time sync across unlimited devices
+</tspan></text><text style="transform:matrix(1,0,0,1,620,1130)" ><tspan x="0" y="0" class="r">✓ No duplicate operations
+</tspan></text><text style="transform:matrix(1,0,0,1,635,1150)" ><tspan x="0" y="0" class="h">Device filtering prevents re-processing
+</tspan></text><text style="transform:matrix(1,0,0,1,620,1175)" ><tspan x="0" y="0" class="r">✓ Offline-first architecture
+</tspan></text><text style="transform:matrix(1,0,0,1,635,1195)" ><tspan x="0" y="0" class="h">Operations queued locally, synced when online
+</tspan></text><text style="transform:matrix(1,0,0,1,620,1220)" ><tspan x="0" y="0" class="r">✓ Automatic background sync
+</tspan></text><text style="transform:matrix(1,0,0,1,635,1240)" ><tspan x="0" y="0" class="h">Triggers on app foreground automatically
+</tspan></text><text style="transform:matrix(1,0,0,1,620,1265)" ><tspan x="0" y="0" class="r">✓ Operation-based tracking
+</tspan></text><text style="transform:matrix(1,0,0,1,635,1285)" ><tspan x="0" y="0" class="h">Each operation has unique ID + device tracking
+</tspan></text><text style="transform:matrix(1,0,0,1,620,1310)" ><tspan x="0" y="0" class="r">✓ Chronological consistency
+</tspan></text><text style="transform:matrix(1,0,0,1,635,1330)" ><tspan x="0" y="0" class="h">Backend adjusts timestamps to maintain order
+</tspan></text><path class="a" d=""/></svg>

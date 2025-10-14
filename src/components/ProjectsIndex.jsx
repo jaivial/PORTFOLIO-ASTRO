@@ -238,7 +238,11 @@ function ProjectsIndex({ projects, allTechnologies }) {
               >
                 <a href={`/projects/${item.slug}`} className="block overflow-hidden">
                   <img
-                    className="w-full object-cover h-80 xl:h-[700px] hover:opacity-90 transition-opacity object-top"
+                    className={`w-full h-80 xl:h-[700px] hover:opacity-90 transition-opacity ${
+                      item.slug === "hero-budget"
+                        ? "object-scale-down object-center"
+                        : "object-cover object-top"
+                    }`}
                     src={item.image.src}
                     alt={item.name}
                     loading="lazy"

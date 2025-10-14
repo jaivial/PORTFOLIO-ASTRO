@@ -10,16 +10,16 @@
   "hero": {
     "greeting": "Hello! 👋 I'm",
     "name": "Jaime Villanueva",
-    "title": "Full Stack Web Developer",
-    "description": "Specialized in creating modern and scalable web experiences using the latest technologies",
+    "title": "Full Stack Web Developer & Mobile App Developer",
+    "description": "Specialized in creating modern and scalable web experiences and mobile applications using the latest technologies",
     "cta_projects": "View Projects",
     "cta_contact": "Contact"
   },
   "about": {
     "title": "Get to know me!",
-    "description_p1": "I'm Jaime Villanueva, a FullStack developer specialized in web design and development. My approach combines solid front-end experience to create attractive interfaces, with back-end skills to build functional and dynamic solutions.",
-    "description_p2": "I offer complete solutions that include dynamic menus, management systems, ERPs, client areas, e-commerce and payment gateways. I also manage content for social media, improving companies' online visibility.",
-    "description_p3": "My goal is to transform ideas into successful digital products. Explore my projects and contact me to take your vision to the next level.",
+    "description_p1": "I'm Jaime Villanueva, a FullStack developer specialized in web and mobile design and development. My approach combines solid front-end experience to create attractive interfaces, with back-end skills to build functional and dynamic solutions.",
+    "description_p2": "I develop cross-platform mobile applications with React Native for iOS and Android, using an offline-first approach with backend synchronization and dual database architecture (server and local SQLite). I offer complete solutions that include dynamic menus, management systems, ERPs, client areas, e-commerce and payment gateways. I also manage content for social media, improving companies' online visibility.",
+    "description_p3": "My goal is to transform ideas into successful digital products for both web and mobile devices. Explore my projects and contact me to take your vision to the next level.",
     "technologies_title": "Languages and Frameworks",
     "experience_years": "years of experience",
     "projects_completed": "projects completed",
@@ -367,6 +367,7 @@
       "visit_website": "Visit Website"
     },
     "achievements": "Key Achievements:",
+    "project_label": "Project",
     "footer_download_reminder": "Don't forget to download this CV using the button at the top of the page.",
     "pdf": {
       "professional_summary": "Professional Summary",

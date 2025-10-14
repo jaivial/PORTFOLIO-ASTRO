@@ -10,16 +10,16 @@
   "hero": {
     "greeting": "¡Hola! 👋 Soy",
     "name": "Jaime Villanueva",
-    "title": "Desarrollador Web Full Stack",
-    "description": "Especializado en crear experiencias web modernas y escalables utilizando las últimas tecnologías",
+    "title": "Desarrollador Web Full Stack & Desarrollador de Apps Móviles",
+    "description": "Especializado en crear experiencias web y aplicaciones móviles modernas y escalables utilizando las últimas tecnologías",
     "cta_projects": "Ver Proyectos",
     "cta_contact": "Contactar"
   },
   "about": {
     "title": "¡Conóceme!",
-    "description_p1": "Soy Jaime Villanueva, desarrollador FullStack especializado en diseño y desarrollo web. Mi enfoque combina una sólida experiencia en front-end para crear interfaces atractivas, con habilidades de back-end para construir soluciones funcionales y dinámicas.",
-    "description_p2": "Ofrezco soluciones completas que incluyen menús dinámicos, sistemas de gestión, ERPs, áreas de clientes, e-commerce y pasarelas de pago. También gestiono contenido para redes sociales, mejorando la visibilidad online de las empresas.",
-    "description_p3": "Mi objetivo es transformar ideas en productos digitales exitosos. Explora mis proyectos y contáctame para llevar tu visión al siguiente nivel.",
+    "description_p1": "Soy Jaime Villanueva, desarrollador FullStack especializado en diseño y desarrollo web y móvil. Mi enfoque combina una sólida experiencia en front-end para crear interfaces atractivas, con habilidades de back-end para construir soluciones funcionales y dinámicas.",
+    "description_p2": "Desarrollo aplicaciones móviles multiplataforma con React Native para iOS y Android, utilizando una arquitectura offline-first con sincronización de backend y doble base de datos (servidor y SQLite local). Ofrezco soluciones completas que incluyen menús dinámicos, sistemas de gestión, ERPs, áreas de clientes, e-commerce y pasarelas de pago. También gestiono contenido para redes sociales, mejorando la visibilidad online de las empresas.",
+    "description_p3": "Mi objetivo es transformar ideas en productos digitales exitosos tanto para web como para dispositivos móviles. Explora mis proyectos y contáctame para llevar tu visión al siguiente nivel.",
     "technologies_title": "Lenguajes y Frameworks",
     "experience_years": "años de experiencia",
     "projects_completed": "proyectos completados",
@@ -367,6 +367,7 @@
       "visit_website": "Visitar Sitio Web"
     },
     "achievements": "Logros Principales:",
+    "project_label": "Proyecto",
     "footer_download_reminder": "No olvides descargar este CV utilizando el botón en la parte superior de la página.",
     "pdf": {
       "professional_summary": "Resumen Profesional",

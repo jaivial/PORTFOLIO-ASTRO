@@ -252,6 +252,7 @@ const getTechIcon = (techName) => {
 // Function to get company website URL
 const getCompanyWebsite = (companyName) => {
   const companyUrls = {
+    "hero budget app": "https://herobudgetapp.jaimedigitalstudio.com",
     "tour to valencia": "https://www.tourtovalencia.com/",
     "centro neuro expresion": "https://centroneuroexpresion.com/",
     "guillermo fernandez nutrition": "https://guillermofernandeznutricion.es/",
@@ -290,7 +291,6 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     borderBottomWidth: 2,
     borderBottomColor: "#6366f1",
-    paddingBottom: 0,
     backgroundColor: "#f8fafc",
     paddingTop: 20,
     paddingBottom: 10,

@@ -5,6 +5,7 @@ import AlqueriaVillaCarmen from "../assets/images/villacarmen/villacarmen-18.jpg
 import CatStore from "../assets/images/catstore/catstore1.jpg";
 import GuillermoFernandezNutricion from "../assets/images/guillermofernandeznutricion.webp";
 import TourToValencia from "../assets/images/tourtovalencia/tourtovalencia11.jpg";
+import HeroBudget from "../assets/images/herobudget/herobudgeticon.png";
 
 const cvData = {
     en: {
@@ -35,6 +36,20 @@ const cvData = {
             ]
         },
         experience: [
+            {
+                position: "Developer",
+                company: "Hero Budget App",
+                location: "Valencia, Spain",
+                period: "March 2025 - October 2025",
+                description: "Complete personal finance management mobile application developed with React Native and TypeScript. Offline-first architecture with real-time synchronization across multiple devices, Go backend with microservices on VPS.",
+                achievements: [
+                    "Complete multilingual support with over 20 languages including i18next",
+                    "Offline-first architecture with real-time delta-sync synchronization",
+                    "Social authentication with Google and Apple Sign-In using OAuth 2.0",
+                    "Go backend with microservices architecture deployed on VPS",
+                    "Complete system for managing income, expenses, recurring bills and savings goals"
+                ]
+            },
             {
                 position: "Frontend React Developer",
                 company: "Knowmad Mood",
@@ -153,6 +168,13 @@ const cvData = {
         },
         projects: [
             {
+                title: "Hero Budget",
+                description: "Complete personal finance management mobile application with offline-first architecture, real-time synchronization, multilingual support (20+ languages), and comprehensive features for tracking income, expenses, bills and savings goals.",
+                technologies: ["React Native", "TypeScript", "Go", "SQLite", "OAuth 2.0", "Jest", "Detox", "RESTful API", "VPS", "Nginx"],
+                link: "https://herobudgetapp.jaimedigitalstudio.com",
+                thumbnail: HeroBudget.src
+            },
+            {
                 title: "Frases Marcos Alcón",
                 description: "Interactive web application built with Go that displays a collection of phrases and poems by Marcos Alcón in an elegant book format with page flip animations.",
                 technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
@@ -232,6 +254,20 @@ const cvData = {
             ]
         },
         experience: [
+            {
+                position: "Developer",
+                company: "Hero Budget App",
+                location: "Valencia, España",
+                period: "Marzo 2025 - Octubre 2025",
+                description: "Aplicación móvil completa de gestión de finanzas personales desarrollada con React Native y TypeScript. Arquitectura offline-first con sincronización en tiempo real entre múltiples dispositivos, backend en Go con microservicios en VPS.",
+                achievements: [
+                    "Soporte multiidioma completo con más de 20 idiomas incluyendo i18next",
+                    "Arquitectura offline-first con sincronización delta-sync en tiempo real",
+                    "Autenticación social con Google y Apple Sign-In usando OAuth 2.0",
+                    "Backend en Go con arquitectura de microservicios desplegada en VPS",
+                    "Sistema completo de gestión de ingresos, gastos, facturas recurrentes y metas de ahorro"
+                ]
+            },
             {
                 position: "Frontend React Developer",
                 company: "Knowmad Mood",
@@ -350,6 +386,13 @@ const cvData = {
         },
         projects: [
             {
+                title: "Hero Budget",
+                description: "Aplicación móvil completa de gestión de finanzas personales con arquitectura offline-first, sincronización en tiempo real, soporte multiidioma (más de 20 idiomas) y funcionalidades completas para rastrear ingresos, gastos, facturas y metas de ahorro.",
+                technologies: ["React Native", "TypeScript", "Go", "SQLite", "OAuth 2.0", "Jest", "Detox", "RESTful API", "VPS", "Nginx"],
+                link: "https://herobudgetapp.jaimedigitalstudio.com",
+                thumbnail: HeroBudget.src
+            },
+            {
                 title: "Frases Marcos Alcón",
                 description: "Aplicación web interactiva construida con Go que muestra una colección de frases y poemas de Marcos Alcón en un elegante formato de libro con animaciones de paso de página.",
                 technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
@@ -429,6 +472,20 @@ const cvData = {
             ]
         },
         experience: [
+            {
+                position: "Entwickler",
+                company: "Hero Budget App",
+                location: "Valencia, Spanien",
+                period: "März 2025 - Oktober 2025",
+                description: "Vollständige mobile Anwendung zur Verwaltung persönlicher Finanzen, entwickelt mit React Native und TypeScript. Offline-First-Architektur mit Echtzeit-Synchronisation über mehrere Geräte, Go-Backend mit Microservices auf VPS.",
+                achievements: [
+                    "Vollständige mehrsprachige Unterstützung mit über 20 Sprachen einschließlich i18next",
+                    "Offline-First-Architektur mit Echtzeit-Delta-Sync-Synchronisation",
+                    "Soziale Authentifizierung mit Google und Apple Sign-In unter Verwendung von OAuth 2.0",
+                    "Go-Backend mit Microservices-Architektur auf VPS bereitgestellt",
+                    "Vollständiges System zur Verwaltung von Einnahmen, Ausgaben, wiederkehrenden Rechnungen und Sparzielen"
+                ]
+            },
             {
                 position: "Frontend React Entwickler",
                 company: "Knowmad Mood",
@@ -546,6 +603,13 @@ const cvData = {
             ]
         },
         projects: [
+            {
+                title: "Hero Budget",
+                description: "Vollständige mobile Anwendung zur Verwaltung persönlicher Finanzen mit Offline-First-Architektur, Echtzeit-Synchronisation, mehrsprachiger Unterstützung (über 20 Sprachen) und umfassenden Funktionen zur Verfolgung von Einnahmen, Ausgaben, Rechnungen und Sparzielen.",
+                technologies: ["React Native", "TypeScript", "Go", "SQLite", "OAuth 2.0", "Jest", "Detox", "RESTful API", "VPS", "Nginx"],
+                link: "https://herobudgetapp.jaimedigitalstudio.com",
+                thumbnail: HeroBudget.src
+            },
             {
                 title: "Marcos Alcón Frases",
                 description: "Digitales Buchprojekt mit interaktiven Seiten und responsivem Design.",

@@ -23,7 +23,7 @@ const customStyles = `
   }
 `;
 
-export default function ImageCarouselModal({ images, title }) {
+export default function ImageCarouselModal({ images, title, projectSlug }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -33,6 +33,21 @@ export default function ImageCarouselModal({ images, title }) {
 
   // Determinar la URL de la imagen actual
   const imageSrc = typeof currentImage === "string" ? currentImage : currentImage.url || currentImage.src || (currentImage.default && currentImage.default.src) || "";
+
+  // Determinar el estilo de la imagen según el proyecto
+  const getImageClassName = () => {
+    if (projectSlug === "hero-budget") {
+      return "h-auto object-contain rounded-lg max-[500px]:w-full min-[500px]:h-[70vh] min-[500px]:w-auto";
+    }
+    return "w-full h-auto object-cover rounded-lg";
+  };
+
+  const getImageContainerClassName = () => {
+    if (projectSlug === "hero-budget") {
+      return "cursor-pointer relative flex justify-center items-center";
+    }
+    return "cursor-pointer relative";
+  };
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
@@ -58,8 +73,8 @@ export default function ImageCarouselModal({ images, title }) {
       {/* Carousel de imágenes principal */}
       <div className="relative group">
         {/* Imagen principal */}
-        <div onClick={openModal} className="cursor-pointer relative">
-          <img src={imageSrc} alt={currentImage.alt || `${title} - Imagen ${currentImageIndex + 1}`} className="w-full h-auto object-cover rounded-lg" />
+        <div onClick={openModal} className={getImageContainerClassName()}>
+          <img src={imageSrc} alt={currentImage.alt || `${title} - Imagen ${currentImageIndex + 1}`} className={getImageClassName()} />
           {/* Overlay sutil para indicar que es clickeable */}
           <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center">
             <div className="bg-white bg-opacity-0 group-hover:bg-opacity-90 rounded-full p-3 group-hover:scale-110 transition-all duration-300">

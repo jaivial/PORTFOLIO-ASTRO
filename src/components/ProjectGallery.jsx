@@ -37,7 +37,7 @@ function ProjectGallery({ project }) {
             </h2>
           </div>
           <div className="rounded-lg overflow-hidden shadow-lg">
-            <ImageCarouselModal images={project.images} title={project.title} />
+            <ImageCarouselModal images={project.images} title={project.title} projectSlug={project.slug} />
           </div>
         </div>
       )}

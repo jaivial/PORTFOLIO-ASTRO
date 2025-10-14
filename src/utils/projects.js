@@ -111,17 +111,30 @@ import CentroNeuroExpresionVideo3 from "../assets/videos/centroneuroexpresion/ce
 import CentroNeuroExpresionVideo4 from "../assets/videos/centroneuroexpresion/centroneuroexpresion4.mov";
 
 // Importaciones para Hero Budget (usando imagen temporal - reemplazar con imágenes reales)
-import HeroBudget from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg1 from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg2 from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg3 from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg4 from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg5 from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg6 from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg7 from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg8 from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg9 from "../assets/images/portfolioweb.webp";
-import HeroBudgetImg10 from "../assets/images/portfolioweb.webp";
+import HeroBudget from "../assets/images/herobudget/herobudgetimg1.webp";
+import HeroBudgetIcon from "../assets/images/herobudget/herobudgeticon.png";
+import HeroBudgetImg1 from "../assets/images/herobudget/herobudgetimg1.webp";
+import herobudgetimg1ligh from "../assets/images/herobudget/herobudgetimg1ligh.png";
+import HeroBudgetImg2 from "../assets/images/herobudget/herobudgetimg2.webp";
+import HeroBudgetImg3 from "../assets/images/herobudget/herobudgetimg3.webp";
+import HeroBudgetImg4 from "../assets/images/herobudget/herobudgetimg4.webp";
+import HeroBudgetImg5 from "../assets/images/herobudget/herobudgetimg5.webp";
+import HeroBudgetImg6 from "../assets/images/herobudget/herobudgetimg6.webp";
+import HeroBudgetImg7 from "../assets/images/herobudget/herobudgetimg7.webp";
+import HeroBudgetImg8 from "../assets/images/herobudget/herobudgetimg8.webp";
+import HeroBudgetImg9 from "../assets/images/herobudget/herobudgetimg9.webp";
+import HeroBudgetImg10 from "../assets/images/herobudget/herobudgetimg10.webp";
+import deltaSyncFlow from "../assets/images/herobudget/delta-sync-flow.svg";
+import offlineFirstInfographic from "../assets/images/herobudget/offline-first-infographic.svg";
+import backendMicroservicesDiagram from "../assets/images/herobudget/backend-microservices-diagram.svg";
+import herobudgetbills from "../assets/images/herobudget/herobudgetbills.png";
+import herobudgetdark2 from "../assets/images/herobudget/herobudgetdark2.png";
+import herobudgetlight2 from "../assets/images/herobudget/herobudgetlight2.png";
+import herobudgetdark3 from "../assets/images/herobudget/herobudgetdark3.png";
+import herobudgetdark4 from "../assets/images/herobudget/herobudgetdark4.png";
+import herobudgetgoals from "../assets/images/herobudget/herobudgetgoals.png";
+import herobudgetlight3 from "../assets/images/herobudget/herobudgetlight3.png";
+import herobudgetlight4 from "../assets/images/herobudget/herobudgetlight4.png";
 
 // Placeholder para imágenes y videos
 // En un entorno real, estas URLs apuntarían a recursos reales
@@ -488,62 +501,62 @@ const heroBudgetFeatures = [
     {
         title: "Soporte Multiidioma (20+ Idiomas)",
         description: "Soporte completo de internacionalización con más de 20 traducciones de idiomas incluyendo inglés (US, GB), español (ES, MX, AR), portugués (PT, BR), francés, alemán, italiano, japonés, chino, ruso, holandés, danés, noruego, griego, hindi y catalán. Utiliza i18next para cambio de idioma fluido y localización con soporte de respaldo.",
-        image: HeroBudgetImg1
+        image: HeroBudgetImg9
     },
     {
         title: "Autenticación Social Integrada",
         description: "Autenticación sin problemas mediante Google Sign-In y Apple Sign-In utilizando protocolos OAuth 2.0. Soporta registro tradicional con email/contraseña y verificación OTP para mayor seguridad. Implementa autenticación basada en tokens con gestión automática de sesión y funcionalidad de 'recordarme'.",
-        image: HeroBudgetImg2
+        image: HeroBudgetImg1
     },
     {
         title: "Sincronización en Tiempo Real entre Dispositivos",
         description: "Protocolo avanzado de delta-sync que permite sincronización de datos en tiempo real entre múltiples dispositivos. Utiliza sincronización basada en operaciones con seguimiento de ID de dispositivo para prevenir operaciones duplicadas. La sincronización en segundo plano se ejecuta automáticamente cuando la aplicación vuelve al primer plano.",
-        image: HeroBudgetImg3
+        image: deltaSyncFlow
     },
     {
         title: "Arquitectura Offline-First",
         description: "Funcionalidad completa offline con base de datos local SQLite que soporta todas las operaciones CRUD sin conectividad de red. La cola de sincronización automática gestiona operaciones pendientes cuando se restaura la conexión. Los usuarios pueden rastrear sus finanzas sin problemas incluso sin acceso a internet.",
-        image: HeroBudgetImg4
+        image: offlineFirstInfographic
     },
     {
         title: "Dashboard con Analíticas Completas",
         description: "Dashboard interactivo que muestra resúmenes financieros mensuales con visualización de ingresos vs gastos. Seguimiento de balance en tiempo real para cuentas de efectivo y banco. Indicadores visuales de progreso para metas de ahorro y adherencia al presupuesto con indicadores de estado codificados por colores.",
-        image: HeroBudgetImg5
+        image: HeroBudgetImg3
     },
     {
         title: "Seguimiento y Gestión de Ingresos",
         description: "Añade y categoriza transacciones de ingresos con categorías personalizadas, métodos de pago (efectivo/banco) y descripciones detalladas. Visualiza el historial de ingresos con filtrado por rango de fechas, categoría y método de pago. Actualizaciones automáticas de balance y resúmenes mensuales de ingresos con análisis de tendencias.",
-        image: HeroBudgetImg6
+        image: HeroBudgetImg5
     },
     {
         title: "Gestión y Categorización de Gastos",
         description: "Rastrea todos los gastos con categorías personalizadas, métodos de pago y notas. Sistema inteligente de categorización con iconos emoji para identificación visual. Historial de gastos con capacidades completas de filtrado y búsqueda. Impacto automático en balances de efectivo/banco y resúmenes mensuales de gastos.",
-        carousel: [HeroBudgetImg7, HeroBudgetImg8]
+        carousel: [HeroBudgetImg2, HeroBudgetImg7]
     },
     {
         title: "Gestión de Facturas Recurrentes",
         description: "Crea y gestiona facturas recurrentes con horarios de pago flexibles (mensual, semanal, trimestral). Establece días de pago, fechas de vencimiento y duración en meses. Rastrea el estado de pago para cada período con funcionalidad de pago rápido. Recordatorios automáticos para facturas próximas y notificaciones de vencimiento.",
-        image: HeroBudgetImg9
+        image: herobudgetbills
     },
     {
         title: "Metas de Ahorro y Seguimiento de Progreso",
         description: "Establece metas de ahorro personalizadas con cantidades objetivo y períodos de seguimiento. Los indicadores visuales de progreso muestran el porcentaje de finalización con estado codificado por colores (en camino, en riesgo, retrasado). Comparación de balance disponible vs meta con métricas detalladas de progreso y celebraciones de hitos.",
-        image: HeroBudgetImg10
+        image: herobudgetgoals
     },
     {
         title: "Gestión de Categorías Personalizadas",
         description: "Crea categorías personalizadas ilimitadas para ingresos y gastos con iconos emoji para distinción visual. Edita nombres de categorías, tipos y emojis en cualquier momento. Los cambios de tipo de categoría activan el recálculo automático de todas las transacciones y balances afectados con actualizaciones en cascada.",
-        image: HeroBudgetImg1
+        image: HeroBudgetImg2
     },
     {
         title: "Modo Oscuro y Modo Claro",
         description: "Soporte completo para temas oscuro y claro con transiciones suaves. La preferencia de tema persiste a través de sesiones de la aplicación. Esquemas de colores optimizados para legibilidad en todas las condiciones de iluminación. Aplicación automática del tema a todos los componentes de UI y hojas inferiores.",
-        carousel: [HeroBudgetImg2, HeroBudgetImg3]
+        carousel: [HeroBudgetImg3, herobudgetimg1ligh, herobudgetdark2, herobudgetlight2, herobudgetdark3, herobudgetlight3, herobudgetdark4, herobudgetlight4]
     },
     {
         title: "Microservicios Backend en Go",
         description: "Backend construido con Go usando arquitectura de espacio de trabajo multi-módulo (go.work). Microservicios separados para gestión de presupuesto, ahorros, datos de dashboard, gastos e ingresos. API RESTful con manejo de errores estructurado y gestión de tiempo de espera basada en contexto. Registro completo para depuración y monitoreo.",
-        image: HeroBudgetImg4
+        image: backendMicroservicesDiagram
     }
 ];
 
@@ -553,7 +566,7 @@ const data = [
         type: "Aplicación Móvil - Gestión de Finanzas Personales",
         url: "https://apps.apple.com/es/app/hero-budget/id6746946502?l=en-GB",
         github: "https://github.com/jaivial/HerobudgetReact",
-        image: HeroBudget,
+        image: HeroBudgetIcon,
         slug: "hero-budget",
         description: "Hero Budget es una aplicación móvil completa de gestión de finanzas personales desarrollada con React Native y TypeScript. La aplicación proporciona a los usuarios herramientas potentes para rastrear ingresos, gastos, facturas recurrentes y metas de ahorro con sincronización en tiempo real entre múltiples dispositivos. Presenta una interfaz moderna e intuitiva con soporte para temas claro y oscuro, localización multiidioma (más de 20 idiomas), y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad.",
         tech: ["React Native", "TypeScript", "Go", "SQLite", "React Navigation", "Jotai", "i18next", "OAuth 2.0", "Jest", "RESTful API", "VPS", "Nginx", "Responsive Design"],
@@ -568,7 +581,19 @@ const data = [
             { url: HeroBudgetImg7.src, alt: 'Historial de transacciones' },
             { url: HeroBudgetImg8.src, alt: 'Análisis de categorías principales' },
             { url: HeroBudgetImg9.src, alt: 'Perfil de usuario' },
-            { url: HeroBudgetImg10.src, alt: 'Modo oscuro y claro' }
+            { url: HeroBudgetImg10.src, alt: 'Modo oscuro y claro' },
+            { url: deltaSyncFlow.src, alt: 'Sincronización en tiempo real' },
+            { url: offlineFirstInfographic.src, alt: 'Arquitectura offline-first' },
+            { url: backendMicroservicesDiagram.src, alt: 'Arquitectura de microservicios en backend' },
+            { url: herobudgetbills.src, alt: 'Gestión de facturas recurrentes' },
+            { url: herobudgetgoals.src, alt: 'Gestión de metas de ahorro' },
+            { url: herobudgetimg1ligh.src, alt: 'Dashboard modo claro' },
+            { url: herobudgetdark2.src, alt: 'Dashboard modo oscuro' },
+            { url: herobudgetlight2.src, alt: 'Dashboard modo claro' },
+            { url: herobudgetdark3.src, alt: 'Dashboard modo oscuro' },
+            { url: herobudgetlight3.src, alt: 'Dashboard modo claro' },
+            { url: herobudgetdark4.src, alt: 'Dashboard modo oscuro' },
+            { url: herobudgetlight4.src, alt: 'Dashboard modo claro' },
         ],
         videos: [],
         features: heroBudgetFeatures
