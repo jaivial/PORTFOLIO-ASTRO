@@ -6,6 +6,7 @@ import markdownConfig from './markdown.config';
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
 import robotsTxt from "astro-robots-txt";
+import node from "@astrojs/node";
 
 import playformCompress from "@playform/compress";
 
@@ -28,6 +29,9 @@ export default defineConfig({
     sitemap: ['https://www.jaimedigitalstudio.com/sitemap-0.xml', 'http://www.www.jaimedigitalstudio.com/sitemap-index.xml']
   }), playformCompress()],
   output: "server",
+  adapter: node({
+    mode: "standalone"
+  }),
   // adapter: vercel({
   //   webAnalytics: {
   //     enabled: true
