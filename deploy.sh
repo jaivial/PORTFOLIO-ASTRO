@@ -22,7 +22,7 @@ ssh root@178.16.130.178 << 'EOF'
     git pull
 
     echo "📦 Installing dependencies..."
-    npm install
+    npm install --legacy-peer-deps
 
     echo "🏗️  Building project..."
     npm run build
