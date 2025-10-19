@@ -26,8 +26,8 @@ export default defineConfig({
     }
   }), robotsTxt({
     sitemap: ['https://www.jaimedigitalstudio.com/sitemap-0.xml', 'http://www.www.jaimedigitalstudio.com/sitemap-index.xml']
-  }), playformCompress()]
-  // output: "server",
+  }), playformCompress()],
+  output: "server",
   // adapter: vercel({
   //   webAnalytics: {
   //     enabled: true

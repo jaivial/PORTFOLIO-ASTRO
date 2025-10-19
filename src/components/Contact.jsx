@@ -25,7 +25,7 @@ export default function Contact() {
 
     axios.defaults.headers.post["Content-Type"] = "application/json";
     axios
-      .post("https://formsubmit.co/ajax/jaimevillalcon@hotmail.com", {
+      .post("/api/contact", {
         name: name,
         message: message,
         email: email,
@@ -36,13 +36,19 @@ export default function Contact() {
           toast.success(t("contact.success_message"), {
             style: { backgroundColor: "#303030", color: "#fff" },
           });
+          // Clear form
+          setName("");
+          setEmail("");
+          setMessage("");
+          setPhone("");
         }
       })
-      .catch((error) =>
-        toast.error(t("contact.error_message"), {
+      .catch((error) => {
+        const errorMessage = error.response?.data?.error || t("contact.error_message");
+        toast.error(errorMessage, {
           style: { backgroundColor: "#303030", color: "#fff" },
-        })
-      );
+        });
+      });
   }
   return (
     <>
