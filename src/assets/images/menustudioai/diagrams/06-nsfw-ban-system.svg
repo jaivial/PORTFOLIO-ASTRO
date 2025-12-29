@@ -1,0 +1,158 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="banGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <filter id="shadow6" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arr6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="650" fill="#f1f5f9"/>
+  <text x="400" y="35" text-anchor="middle" font-family="system-ui" font-size="20" font-weight="bold" fill="#1e293b">3-Strike NSFW Ban System</text>
+
+  <!-- Strike Flow -->
+  <g filter="url(#shadow6)">
+    <rect x="30" y="60" width="740" height="120" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="30" y="60" width="740" height="30" rx="10" fill="url(#banGrad)"/>
+    <text x="400" y="80" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Progressive Strike System</text>
+  </g>
+
+  <!-- Strike 1 -->
+  <g>
+    <rect x="50" y="105" width="200" height="60" rx="8" fill="#fef3c7" stroke="#f59e0b"/>
+    <text x="150" y="125" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="600" fill="#92400e">1st Strike</text>
+    <text x="150" y="145" text-anchor="middle" font-family="system-ui" font-size="9" fill="#b45309">WARNING level</text>
+    <text x="150" y="158" text-anchor="middle" font-family="system-ui" font-size="9" fill="#b45309">Image blocked + notification</text>
+  </g>
+
+  <!-- Strike 2 -->
+  <g>
+    <rect x="290" y="105" width="200" height="60" rx="8" fill="#fed7aa" stroke="#f97316"/>
+    <text x="390" y="125" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="600" fill="#c2410c">2nd Strike</text>
+    <text x="390" y="145" text-anchor="middle" font-family="system-ui" font-size="9" fill="#ea580c">TEMPORARY level</text>
+    <text x="390" y="158" text-anchor="middle" font-family="system-ui" font-size="9" fill="#ea580c">Final warning issued</text>
+  </g>
+
+  <!-- Strike 3 -->
+  <g>
+    <rect x="530" y="105" width="220" height="60" rx="8" fill="#fee2e2" stroke="#ef4444"/>
+    <text x="640" y="125" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="600" fill="#991b1b">3rd Strike - BANNED</text>
+    <text x="640" y="145" text-anchor="middle" font-family="system-ui" font-size="9" fill="#dc2626">PERMANENT level</text>
+    <text x="640" y="158" text-anchor="middle" font-family="system-ui" font-size="9" fill="#dc2626">All sessions deleted</text>
+  </g>
+
+  <!-- Arrows between strikes -->
+  <path d="M 250 135 L 288 135" stroke="#64748b" stroke-width="2" marker-end="url(#arr6)"/>
+  <path d="M 490 135 L 528 135" stroke="#64748b" stroke-width="2" marker-end="url(#arr6)"/>
+
+  <!-- Atomic Transaction -->
+  <g filter="url(#shadow6)">
+    <rect x="30" y="200" width="360" height="200" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="30" y="200" width="360" height="30" rx="10" fill="#7c3aed"/>
+    <text x="210" y="220" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Atomic Transaction (Race Condition Prevention)</text>
+  </g>
+
+  <g font-family="monospace" font-size="9">
+    <text x="50" y="250" fill="#7c3aed">prisma.$transaction(async (tx) => {</text>
+    <text x="60" y="270" fill="#64748b">// 1. Atomic increment</text>
+    <text x="60" y="285" fill="#64748b">const user = await tx.user.update({</text>
+    <text x="70" y="300" fill="#64748b">  data: { violationCount: { increment: 1 } }</text>
+    <text x="60" y="315" fill="#64748b">});</text>
+    <text x="60" y="335" fill="#64748b">// 2. Update suspension level</text>
+    <text x="60" y="350" fill="#64748b">// 3. Create moderation log</text>
+    <text x="60" y="365" fill="#64748b">// 4. If 3rd: BannedUser + delete sessions</text>
+    <text x="50" y="385" fill="#7c3aed">})</text>
+  </g>
+
+  <!-- Actions on Ban -->
+  <g filter="url(#shadow6)">
+    <rect x="410" y="200" width="360" height="200" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="410" y="200" width="360" height="30" rx="10" fill="#dc2626"/>
+    <text x="590" y="220" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">3rd Strike Actions (All Atomic)</text>
+  </g>
+
+  <g font-family="system-ui" font-size="10">
+    <rect x="425" y="245" width="330" height="25" rx="4" fill="#fee2e2"/>
+    <text x="435" y="262" fill="#991b1b">1. Set isBanned = true, bannedAt = now()</text>
+
+    <rect x="425" y="280" width="330" height="25" rx="4" fill="#fee2e2"/>
+    <text x="435" y="297" fill="#991b1b">2. Create BannedUser record (email blocked)</text>
+
+    <rect x="425" y="315" width="330" height="25" rx="4" fill="#fee2e2"/>
+    <text x="435" y="332" fill="#991b1b">3. DELETE ALL sessions (instant logout)</text>
+
+    <rect x="425" y="350" width="330" height="25" rx="4" fill="#fef3c7"/>
+    <text x="435" y="367" fill="#92400e">4. Send ban email (fire-and-forget)</text>
+  </g>
+
+  <!-- WebSocket Notifications -->
+  <g filter="url(#shadow6)">
+    <rect x="30" y="420" width="360" height="110" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="30" y="420" width="360" height="30" rx="10" fill="#10b981"/>
+    <text x="210" y="440" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Real-time WebSocket Notifications</text>
+  </g>
+
+  <g font-family="monospace" font-size="9">
+    <text x="50" y="470" fill="#10b981">// IMAGE_BLOCKED message</text>
+    <text x="50" y="485" fill="#64748b">{ type: 'IMAGE_BLOCKED',</text>
+    <text x="60" y="500" fill="#64748b">  imageId, reason, violationCount,</text>
+    <text x="60" y="515" fill="#64748b">  suspensionLevel: 'warning'|'final_warning' }</text>
+  </g>
+
+  <!-- Login Protection -->
+  <g filter="url(#shadow6)">
+    <rect x="410" y="420" width="360" height="110" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="410" y="420" width="360" height="30" rx="10" fill="#3b82f6"/>
+    <text x="590" y="440" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Login Protection (Double Check)</text>
+  </g>
+
+  <g font-family="system-ui" font-size="10">
+    <rect x="425" y="465" width="330" height="22" rx="4" fill="#dbeafe"/>
+    <text x="435" y="480" fill="#1e40af">1. Check user.isBanned flag</text>
+
+    <rect x="425" y="495" width="330" height="22" rx="4" fill="#dbeafe"/>
+    <text x="435" y="510" fill="#1e40af">2. Check BannedUser table (prevents re-register)</text>
+  </g>
+
+  <!-- Database Models -->
+  <g filter="url(#shadow6)">
+    <rect x="30" y="550" width="230" height="80" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="30" y="550" width="230" height="25" rx="10" fill="#6366f1"/>
+    <text x="145" y="567" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">User Ban Fields</text>
+  </g>
+
+  <g font-family="monospace" font-size="8">
+    <text x="45" y="590" fill="#64748b">isBanned, violationCount,</text>
+    <text x="45" y="605" fill="#64748b">suspensionLevel, banReason</text>
+    <text x="45" y="620" fill="#64748b">bannedAt, lastViolationAt</text>
+  </g>
+
+  <g filter="url(#shadow6)">
+    <rect x="285" y="550" width="230" height="80" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="285" y="550" width="230" height="25" rx="10" fill="#6366f1"/>
+    <text x="400" y="567" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">BannedUser Table</text>
+  </g>
+
+  <g font-family="monospace" font-size="8">
+    <text x="300" y="590" fill="#64748b">email (unique), reason,</text>
+    <text x="300" y="605" fill="#64748b">totalViolations, isPermanent</text>
+    <text x="300" y="620" fill="#64748b">appealStatus, appealReason</text>
+  </g>
+
+  <g filter="url(#shadow6)">
+    <rect x="540" y="550" width="230" height="80" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="540" y="550" width="230" height="25" rx="10" fill="#6366f1"/>
+    <text x="655" y="567" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">ModerationLog</text>
+  </g>
+
+  <g font-family="monospace" font-size="8">
+    <text x="555" y="590" fill="#64748b">actionType, severity,</text>
+    <text x="555" y="605" fill="#64748b">nsfwLabel, nsfwConfidence,</text>
+    <text x="555" y="620" fill="#64748b">violationNumber, performedBy</text>
+  </g>
+</svg>

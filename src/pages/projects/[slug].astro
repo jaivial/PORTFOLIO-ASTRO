@@ -8,7 +8,10 @@ import ProjectHeader from "../../components/ProjectHeader.jsx";
 import ProjectLinks from "../../components/ProjectLinks.jsx";
 import ProjectTechCategories from "../../components/ProjectTechCategories.jsx";
 import ProjectFeatures from "../../components/ProjectFeatures.jsx";
+import ProjectTechnicalArchitecture from "../../components/ProjectTechnicalArchitecture.jsx";
 import ProjectGallery from "../../components/ProjectGallery.jsx";
+
+export const prerender = true;
 
 export async function getStaticPaths() {
   const projects = getData();
@@ -46,6 +49,12 @@ const { project } = Astro.props;
             <!-- Contenido principal más ancho -->
             <div class="lg:col-span-10 space-y-6">
               <ProjectFeatures project={project} client:load />
+              {project.technicalArchitecture && (
+                <ProjectTechnicalArchitecture
+                  architecture={project.technicalArchitecture}
+                  client:load
+                />
+              )}
               <ProjectGallery project={project} client:load />
             </div>
           </div>

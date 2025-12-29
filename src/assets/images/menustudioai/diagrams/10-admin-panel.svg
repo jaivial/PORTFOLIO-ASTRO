@@ -1,0 +1,264 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="superAdminGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+    <linearGradient id="modGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="viewerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#4ade80"/>
+    </linearGradient>
+    <linearGradient id="authGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="auditGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="analyticsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0891b2"/>
+      <stop offset="100%" style="stop-color:#22d3ee"/>
+    </linearGradient>
+    <filter id="shadow10" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arr10" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <marker id="arrRed10" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <marker id="arrBlue10" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="800" fill="#f1f5f9"/>
+  <text x="450" y="35" text-anchor="middle" font-family="system-ui" font-size="20" font-weight="bold" fill="#1e293b">Admin Panel Architecture</text>
+
+  <!-- RBAC Section -->
+  <g filter="url(#shadow10)">
+    <rect x="30" y="55" width="270" height="180" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="30" y="55" width="270" height="30" rx="10" fill="#1e293b"/>
+    <text x="165" y="75" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Role-Based Access Control</text>
+  </g>
+
+  <!-- Super Admin -->
+  <g>
+    <rect x="45" y="100" width="240" height="35" rx="6" fill="url(#superAdminGrad)"/>
+    <text x="165" y="122" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="600" fill="white">SUPER_ADMIN</text>
+    <text x="55" y="122" font-family="system-ui" font-size="11" fill="white">🔑</text>
+  </g>
+  <text x="55" y="148" font-family="system-ui" font-size="9" fill="#64748b">Full access • System config • Audit logs</text>
+
+  <!-- Moderator -->
+  <g>
+    <rect x="45" y="155" width="240" height="35" rx="6" fill="url(#modGrad)"/>
+    <text x="165" y="177" text-anchor="middle" font-family="system-ui" font-size="11" font-weight="600" fill="white">MODERATOR</text>
+    <text x="55" y="177" font-family="system-ui" font-size="11" fill="white">🛡️</text>
+  </g>
+  <text x="55" y="203" font-family="system-ui" font-size="9" fill="#64748b">Ban/warn users • Delete images • Appeals</text>
+
+  <!-- Viewer -->
+  <text x="55" y="228" font-family="system-ui" font-size="9" fill="#64748b">VIEWER: Dashboard read-only access</text>
+
+  <!-- Authentication Flow -->
+  <g filter="url(#shadow10)">
+    <rect x="320" y="55" width="270" height="180" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="320" y="55" width="270" height="30" rx="10" fill="url(#authGrad)"/>
+    <text x="455" y="75" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Admin Authentication</text>
+  </g>
+
+  <g font-family="system-ui" font-size="9">
+    <rect x="335" y="100" width="240" height="20" rx="4" fill="#dbeafe"/>
+    <text x="345" y="114" fill="#1e40af">1. Verify email + password (bcrypt)</text>
+
+    <rect x="335" y="125" width="240" height="20" rx="4" fill="#dbeafe"/>
+    <text x="345" y="139" fill="#1e40af">2. Check isAdmin + adminRole</text>
+
+    <rect x="335" y="150" width="240" height="20" rx="4" fill="#dbeafe"/>
+    <text x="345" y="164" fill="#1e40af">3. Create 8-hour session (not 30d)</text>
+
+    <rect x="335" y="175" width="240" height="20" rx="4" fill="#dbeafe"/>
+    <text x="345" y="189" fill="#1e40af">4. UAParser → device tracking</text>
+
+    <rect x="335" y="200" width="240" height="20" rx="4" fill="#dbeafe"/>
+    <text x="345" y="214" fill="#1e40af">5. DeviceSession + IP logging</text>
+  </g>
+
+  <!-- Device Session Box -->
+  <g filter="url(#shadow10)">
+    <rect x="610" y="55" width="260" height="180" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="610" y="55" width="260" height="30" rx="10" fill="#6366f1"/>
+    <text x="740" y="75" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Device Session Tracking</text>
+  </g>
+
+  <g font-family="monospace" font-size="8" fill="#64748b">
+    <text x="625" y="100">DeviceSession {</text>
+    <text x="635" y="115">sessionId: "clxyz..."</text>
+    <text x="635" y="130">deviceName: "Chrome on macOS"</text>
+    <text x="635" y="145">deviceType: "desktop"</text>
+    <text x="635" y="160">browser: "Chrome 120"</text>
+    <text x="635" y="175">os: "macOS 14.2"</text>
+    <text x="635" y="190">ip: "192.168.1.100"</text>
+    <text x="635" y="205">isRevoked: false</text>
+    <text x="625" y="220">}</text>
+  </g>
+
+  <!-- User Management Section -->
+  <g filter="url(#shadow10)">
+    <rect x="30" y="260" width="420" height="180" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="30" y="260" width="420" height="30" rx="10" fill="#ec4899"/>
+    <text x="240" y="280" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">User Management Operations</text>
+  </g>
+
+  <!-- Ban Flow -->
+  <g>
+    <rect x="45" y="305" width="195" height="120" rx="8" fill="#fee2e2" stroke="#fca5a5"/>
+    <text x="142" y="325" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#991b1b">Ban User (Atomic)</text>
+    <text x="55" y="345" font-family="system-ui" font-size="8" fill="#b91c1c">1. user.isBanned = true</text>
+    <text x="55" y="360" font-family="system-ui" font-size="8" fill="#b91c1c">2. user.violationCount++</text>
+    <text x="55" y="375" font-family="system-ui" font-size="8" fill="#b91c1c">3. Create BannedUser record</text>
+    <text x="55" y="390" font-family="system-ui" font-size="8" fill="#b91c1c">4. Revoke all sessions</text>
+    <text x="55" y="405" font-family="system-ui" font-size="8" fill="#b91c1c">5. Log USER_BANNED action</text>
+  </g>
+
+  <!-- Credit Modification -->
+  <g>
+    <rect x="250" y="305" width="185" height="120" rx="8" fill="#dcfce7" stroke="#86efac"/>
+    <text x="342" y="325" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#166534">Credit Modification</text>
+    <text x="260" y="350" font-family="system-ui" font-size="8" fill="#15803d">• mode: add | subtract | set</text>
+    <text x="260" y="368" font-family="system-ui" font-size="8" fill="#15803d">• amount: number</text>
+    <text x="260" y="386" font-family="system-ui" font-size="8" fill="#15803d">• reason: string (required)</text>
+    <text x="260" y="410" font-family="system-ui" font-size="8" fill="#15803d" font-weight="600">→ Logs old/new balance</text>
+  </g>
+
+  <!-- Audit Logging -->
+  <g filter="url(#shadow10)">
+    <rect x="470" y="260" width="400" height="180" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="470" y="260" width="400" height="30" rx="10" fill="url(#auditGrad)"/>
+    <text x="670" y="280" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Admin Audit Log (All Actions)</text>
+  </g>
+
+  <g font-family="monospace" font-size="8">
+    <text x="485" y="310" fill="#7c3aed">AdminLog {</text>
+    <text x="495" y="325" fill="#64748b">adminId: "clm..."</text>
+    <text x="495" y="340" fill="#64748b">action: "USER_BANNED"</text>
+    <text x="495" y="355" fill="#64748b">targetType: "user"</text>
+    <text x="495" y="370" fill="#64748b">targetId: "clx..."</text>
+    <text x="495" y="385" fill="#64748b">ipAddress: "192.168.1.100"</text>
+    <text x="495" y="400" fill="#64748b">details: { reason, ... }</text>
+    <text x="485" y="415" fill="#7c3aed">}</text>
+  </g>
+
+  <!-- Action Types -->
+  <g font-family="system-ui" font-size="8">
+    <rect x="660" y="300" width="195" height="125" rx="6" fill="#f3e8ff"/>
+    <text x="757" y="315" text-anchor="middle" font-weight="600" fill="#7c3aed">AdminAction Enum</text>
+    <text x="670" y="332" fill="#6b21a8">USER_VIEWED</text>
+    <text x="670" y="346" fill="#6b21a8">USER_UPDATED</text>
+    <text x="670" y="360" fill="#6b21a8">USER_BANNED / UNBANNED</text>
+    <text x="670" y="374" fill="#6b21a8">USER_CREDITS_MODIFIED</text>
+    <text x="670" y="388" fill="#6b21a8">SESSION_REVOKED</text>
+    <text x="670" y="402" fill="#6b21a8">IMAGE_DELETED / UNBLOCKED</text>
+    <text x="670" y="416" fill="#6b21a8">APPEAL_APPROVED / REJECTED</text>
+  </g>
+
+  <!-- Analytics Dashboard -->
+  <g filter="url(#shadow10)">
+    <rect x="30" y="465" width="840" height="155" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="30" y="465" width="840" height="35" rx="10" fill="url(#analyticsGrad)"/>
+    <text x="450" y="488" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="600" fill="white">Real-Time Analytics Dashboard</text>
+  </g>
+
+  <!-- Analytics Cards -->
+  <g>
+    <!-- Users Card -->
+    <rect x="50" y="515" width="150" height="90" rx="8" fill="#dbeafe" stroke="#93c5fd"/>
+    <text x="125" y="535" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#1e40af">Users</text>
+    <text x="60" y="555" font-family="system-ui" font-size="8" fill="#3b82f6">• Total users</text>
+    <text x="60" y="570" font-family="system-ui" font-size="8" fill="#3b82f6">• New today/week/month</text>
+    <text x="60" y="585" font-family="system-ui" font-size="8" fill="#3b82f6">• Active sessions now</text>
+    <text x="60" y="600" font-family="system-ui" font-size="8" fill="#3b82f6">• OAuth vs email</text>
+  </g>
+
+  <g>
+    <!-- Revenue Card -->
+    <rect x="215" y="515" width="150" height="90" rx="8" fill="#dcfce7" stroke="#86efac"/>
+    <text x="290" y="535" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#166534">Revenue</text>
+    <text x="225" y="555" font-family="system-ui" font-size="8" fill="#22c55e">• 24h / 7d / 30d totals</text>
+    <text x="225" y="570" font-family="system-ui" font-size="8" fill="#22c55e">• Moving averages</text>
+    <text x="225" y="585" font-family="system-ui" font-size="8" fill="#22c55e">• Trend prediction</text>
+    <text x="225" y="600" font-family="system-ui" font-size="8" fill="#22c55e">• Linear regression</text>
+  </g>
+
+  <g>
+    <!-- Generations Card -->
+    <rect x="380" y="515" width="150" height="90" rx="8" fill="#fef3c7" stroke="#fcd34d"/>
+    <text x="455" y="535" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#92400e">Generations</text>
+    <text x="390" y="555" font-family="system-ui" font-size="8" fill="#d97706">• Text-to-image count</text>
+    <text x="390" y="570" font-family="system-ui" font-size="8" fill="#d97706">• Edit image count</text>
+    <text x="390" y="585" font-family="system-ui" font-size="8" fill="#d97706">• Video count</text>
+    <text x="390" y="600" font-family="system-ui" font-size="8" fill="#d97706">• NSFW blocked</text>
+  </g>
+
+  <g>
+    <!-- Transactions Card -->
+    <rect x="545" y="515" width="150" height="90" rx="8" fill="#fce7f3" stroke="#f9a8d4"/>
+    <text x="620" y="535" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#9d174d">Transactions</text>
+    <text x="555" y="555" font-family="system-ui" font-size="8" fill="#db2777">• Paginated list</text>
+    <text x="555" y="570" font-family="system-ui" font-size="8" fill="#db2777">• User details</text>
+    <text x="555" y="585" font-family="system-ui" font-size="8" fill="#db2777">• Currency info</text>
+    <text x="555" y="600" font-family="system-ui" font-size="8" fill="#db2777">• Credits added</text>
+  </g>
+
+  <g>
+    <!-- Admin Logs Card -->
+    <rect x="710" y="515" width="145" height="90" rx="8" fill="#f3e8ff" stroke="#c4b5fd"/>
+    <text x="782" y="535" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="#7c3aed">Admin Logs</text>
+    <text x="720" y="555" font-family="system-ui" font-size="8" fill="#8b5cf6">• SUPER_ADMIN only</text>
+    <text x="720" y="570" font-family="system-ui" font-size="8" fill="#8b5cf6">• Filter by admin</text>
+    <text x="720" y="585" font-family="system-ui" font-size="8" fill="#8b5cf6">• Filter by action</text>
+    <text x="720" y="600" font-family="system-ui" font-size="8" fill="#8b5cf6">• Full audit trail</text>
+  </g>
+
+  <!-- Security Features -->
+  <g filter="url(#shadow10)">
+    <rect x="30" y="640" width="420" height="140" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="30" y="640" width="420" height="30" rx="10" fill="#dc2626"/>
+    <text x="240" y="660" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Security Features</text>
+  </g>
+
+  <g font-family="system-ui" font-size="9">
+    <text x="50" y="690" fill="#64748b">🔐 <tspan font-weight="600">8h Sessions</tspan>: Admin sessions expire in 8 hours (not 30 days)</text>
+    <text x="50" y="710" fill="#64748b">📱 <tspan font-weight="600">Device Tracking</tspan>: UAParser extracts browser, OS, device type</text>
+    <text x="50" y="730" fill="#64748b">🌐 <tspan font-weight="600">IP Logging</tspan>: Every action logged with client IP address</text>
+    <text x="50" y="750" fill="#64748b">⚔️ <tspan font-weight="600">Privilege Guard</tspan>: Cannot modify higher-role admins</text>
+    <text x="50" y="770" fill="#64748b">📝 <tspan font-weight="600">Full Audit</tspan>: Every action tracked with details in AdminLog</text>
+  </g>
+
+  <!-- API Routes -->
+  <g filter="url(#shadow10)">
+    <rect x="470" y="640" width="400" height="140" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="470" y="640" width="400" height="30" rx="10" fill="#0891b2"/>
+    <text x="670" y="660" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">Admin API Routes (/admin)</text>
+  </g>
+
+  <g font-family="monospace" font-size="8" fill="#64748b">
+    <text x="485" y="690">/auth      → login, logout, me</text>
+    <text x="485" y="707">/users     → list, get, ban, unban, credits</text>
+    <text x="485" y="724">/sessions  → list, stats, revoke</text>
+    <text x="485" y="741">/images    → browse, delete, unblock</text>
+    <text x="485" y="758">/moderation → flagged, appeals</text>
+    <text x="485" y="775">/analytics → overview, users, revenue, ...</text>
+  </g>
+
+  <!-- Arrows -->
+  <path d="M 300 145 L 318 145" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr10)"/>
+  <path d="M 590 145 L 608 145" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr10)"/>
+</svg>

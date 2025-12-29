@@ -101,6 +101,24 @@ export const careerTranslations = {
         "Suite de pruebas completa con Jest para pruebas unitarias y Detox para E2E"
       ],
       details: "Hero Budget es una aplicación móvil completa que proporciona herramientas potentes para rastrear finanzas personales. Presenta una interfaz moderna con soporte para temas claro y oscuro, localización en más de 20 idiomas, y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad. La aplicación incluye dashboard con analíticas completas, seguimiento de ingresos y gastos, gestión de facturas recurrentes, metas de ahorro con seguimiento de progreso, y diseño responsive optimizado para tablets."
+    },
+    8: {
+      title: "MenuStudio AI",
+      role: "Full-Stack Developer",
+      company: "MenuStudio AI",
+      period: "Diciembre 2025",
+      description: "Plataforma SaaS completa para generación de fotografía gastronómica profesional mediante IA. Desarrollada con React + Vite en frontend y Elysia.js en backend con runtime Bun. Incluye generación de imágenes, edición con IA, creación de vídeos y soporte multiidioma para 40+ idiomas.",
+      highlights: [
+        "Generación de imágenes profesionales en menos de 30 segundos con IA",
+        "Sistema de edición de imágenes con inteligencia artificial",
+        "Creación de vídeos cinemáticos 4K a partir de imágenes estáticas",
+        "Soporte multiidioma completo con traducción de interfaz en 40+ idiomas",
+        "Sistema de créditos flexible con integración de pagos Stripe multi-moneda",
+        "WebSocket real-time para actualizaciones de procesamiento en vivo",
+        "Moderación de contenido automática con detección NSFW",
+        "Panel de administración completo con analíticas y gestión de usuarios"
+      ],
+      details: "MenuStudio AI es una plataforma SaaS completa que aprovecha la inteligencia artificial para generar fotografía gastronómica profesional para restaurantes y negocios de hostelería. Construida con un stack tecnológico moderno que incluye React + Vite en frontend y Elysia.js con runtime Bun en backend, ofrece generación text-to-image, edición con IA, creación de vídeos y soporte multiidioma en más de 40 lenguas. La plataforma incluye un sistema de precios flexible basado en créditos con integración de Stripe, actualizaciones WebSocket en tiempo real para feedback de procesamiento en vivo, moderación de contenido con detección NSFW y un panel de administración completo para analíticas y gestión de usuarios."
     }
   },
   en: {
@@ -204,6 +222,24 @@ export const careerTranslations = {
         "Complete test suite with Jest for unit tests and Detox for E2E"
       ],
       details: "Hero Budget is a complete mobile application that provides powerful tools for tracking personal finances. It features a modern interface with support for light and dark themes, localization in over 20 languages, and offline-first architecture with automatic cloud synchronization. The backend is powered by a robust Go microservices architecture deployed on VPS with NGINX reverse proxy, ensuring high performance and reliability. The application includes a dashboard with comprehensive analytics, income and expense tracking, recurring bill management, savings goals with progress tracking, and responsive design optimized for tablets."
+    },
+    8: {
+      title: "MenuStudio AI",
+      role: "Full-Stack Developer",
+      company: "MenuStudio AI",
+      period: "December 2025",
+      description: "Complete SaaS platform for generating professional food photography using AI. Built with React + Vite frontend and Elysia.js backend with Bun runtime. Features image generation, AI editing, video creation, and multilingual support for 40+ languages.",
+      highlights: [
+        "Professional image generation in under 30 seconds using AI",
+        "AI-powered image editing system",
+        "4K cinematic video creation from static images",
+        "Complete multilingual support with interface translation in 40+ languages",
+        "Flexible credit system with multi-currency Stripe payment integration",
+        "Real-time WebSocket updates for live processing feedback",
+        "Automatic content moderation with NSFW detection",
+        "Comprehensive admin panel with analytics and user management"
+      ],
+      details: "MenuStudio AI is a comprehensive SaaS platform that leverages artificial intelligence to generate professional food photography for restaurants and hospitality businesses. Built with a modern tech stack including React + Vite frontend and Elysia.js backend on Bun runtime, it offers text-to-image generation, AI-powered editing, video creation, and multi-language support in over 40 languages. The platform includes a flexible credit-based pricing system with Stripe integration, real-time WebSocket updates for live processing feedback, content moderation with NSFW detection, and a comprehensive admin panel for analytics and user management."
     }
   },
   de: {
@@ -307,6 +343,24 @@ export const careerTranslations = {
         "Vollständige Test-Suite mit Jest für Unit-Tests und Detox für E2E"
       ],
       details: "Hero Budget ist eine vollständige mobile Anwendung, die leistungsstarke Tools zur Verfolgung persönlicher Finanzen bietet. Sie verfügt über eine moderne Benutzeroberfläche mit Unterstützung für helle und dunkle Themen, Lokalisierung in über 20 Sprachen und Offline-First-Architektur mit automatischer Cloud-Synchronisation. Das Backend wird von einer robusten Go-Microservices-Architektur auf VPS mit NGINX-Reverse-Proxy angetrieben, die hohe Leistung und Zuverlässigkeit gewährleistet. Die Anwendung umfasst ein Dashboard mit umfassenden Analysen, Einnahmen- und Ausgabenverfolgung, Verwaltung wiederkehrender Rechnungen, Sparziele mit Fortschrittsverfolgung und responsives Design, das für Tablets optimiert ist."
+    },
+    8: {
+      title: "MenuStudio AI",
+      role: "Full-Stack-Entwickler",
+      company: "MenuStudio AI",
+      period: "Dezember 2025",
+      description: "Vollständige SaaS-Plattform zur Erstellung professioneller Food-Fotografie mit KI. Entwickelt mit React + Vite Frontend und Elysia.js Backend mit Bun Runtime. Bietet Bildgenerierung, KI-Bearbeitung, Videoerstellung und mehrsprachige Unterstützung für über 40 Sprachen.",
+      highlights: [
+        "Professionelle Bildgenerierung in unter 30 Sekunden mit KI",
+        "KI-gestütztes Bildbearbeitungssystem",
+        "4K-Kinematografische Videoerstellung aus statischen Bildern",
+        "Vollständige mehrsprachige Unterstützung mit Oberflächenübersetzung in über 40 Sprachen",
+        "Flexibles Credit-System mit Multi-Währungs-Stripe-Zahlungsintegration",
+        "Echtzeit-WebSocket-Updates für Live-Verarbeitungs-Feedback",
+        "Automatische Content-Moderation mit NSFW-Erkennung",
+        "Umfassendes Admin-Panel mit Analysen und Benutzerverwaltung"
+      ],
+      details: "MenuStudio AI ist eine umfassende SaaS-Plattform, die künstliche Intelligenz nutzt, um professionelle Food-Fotografie für Restaurants und Gastronomiebetriebe zu generieren. Entwickelt mit einem modernen Tech-Stack, einschließlich React + Vite Frontend und Elysia.js Backend auf Bun Runtime, bietet sie Text-zu-Bild-Generierung, KI-gestützte Bearbeitung, Videoerstellung und mehrsprachige Unterstützung in über 40 Sprachen. Die Plattform umfasst ein flexibles kreditbasiertes Preissystem mit Stripe-Integration, Echtzeit-WebSocket-Updates für Live-Verarbeitungs-Feedback, Content-Moderation mit NSFW-Erkennung und ein umfassendes Admin-Panel für Analysen und Benutzerverwaltung."
     }
   }
 };

@@ -149,6 +149,30 @@ export const careerData = [
         category: "project",
         location: "Valencia, España",
         details: "Hero Budget es una aplicación móvil completa que proporciona herramientas potentes para rastrear finanzas personales. Presenta una interfaz moderna con soporte para temas claro y oscuro, localización en más de 20 idiomas, y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad. La aplicación incluye dashboard con analíticas completas, seguimiento de ingresos y gastos, gestión de facturas recurrentes, metas de ahorro con seguimiento de progreso, y diseño responsive optimizado para tablets."
+    },
+    {
+        id: 8,
+        title: "MenuStudio AI",
+        role: "Full-Stack Developer",
+        company: "MenuStudio AI",
+        period: "Diciembre 2025",
+        description: "Plataforma SaaS completa para generación de fotografía gastronómica profesional mediante IA. Desarrollada con React + Vite en frontend y Elysia.js en backend con runtime Bun. Incluye generación de imágenes, edición con IA, creación de vídeos y soporte multiidioma para 40+ idiomas.",
+        link: "https://menustudioai.com",
+        image: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-09-home-hero.png",
+        skills: ["React", "Vite", "TypeScript", "Jotai", "Tailwind CSS", "Elysia.js", "Bun", "Prisma ORM", "MySQL", "WaveSpeed API", "Cloudflare R2", "OpenAI API", "Stripe", "JWT", "WebSocket", "i18n"],
+        highlights: [
+            "Generación de imágenes profesionales en menos de 30 segundos con IA",
+            "Sistema de edición de imágenes con inteligencia artificial",
+            "Creación de vídeos cinemáticos 4K a partir de imágenes estáticas",
+            "Soporte multiidioma completo con traducción de interfaz en 40+ idiomas",
+            "Sistema de créditos flexible con integración de pagos Stripe multi-moneda",
+            "WebSocket real-time para actualizaciones de procesamiento en vivo",
+            "Moderación de contenido automática con detección NSFW",
+            "Panel de administración completo con analíticas y gestión de usuarios"
+        ],
+        category: "project",
+        location: "Valencia, España",
+        details: "MenuStudio AI es una plataforma SaaS completa que aprovecha la inteligencia artificial para generar fotografía gastronómica profesional para restaurantes y negocios de hostelería. Construida con un stack tecnológico moderno que incluye React + Vite en frontend y Elysia.js con runtime Bun en backend, ofrece generación text-to-image, edición con IA, creación de vídeos y soporte multiidioma en más de 40 lenguas. La plataforma incluye un sistema de precios flexible basado en créditos con integración de Stripe, actualizaciones WebSocket en tiempo real para feedback de procesamiento en vivo, moderación de contenido con detección NSFW y un panel de administración completo para analíticas y gestión de usuarios."
     }
 ];
 

@@ -35,11 +35,11 @@ import CatStoreImg11 from "../assets/images/catstore/catstore11.jpg";
 import CatStoreImg12 from "../assets/images/catstore/catstore12.jpg";
 import CatStoreImg13 from "../assets/images/catstore/catstore13.jpg";
 import CatStoreImg14 from "../assets/images/catstore/catstore14.jpg";
-// import CatStoreVideo1 from "../assets/videos/catstore/catstore1.mov";
-// import CatStoreVideo2 from "../assets/videos/catstore/catstore2.mov";
-// import CatStoreVideo3 from "../assets/videos/catstore/catstore3.mov";
-// import CatStoreVideo4 from "../assets/videos/catstore/catstore4.mov";
-// import CatStoreVideo5 from "../assets/videos/catstore/catstore5.mov";
+import CatStoreVideo1 from "../assets/videos/catstore/catstore1.mov";
+import CatStoreVideo2 from "../assets/videos/catstore/catstore2.mov";
+import CatStoreVideo3 from "../assets/videos/catstore/catstore3.mov";
+import CatStoreVideo4 from "../assets/videos/catstore/catstore4.mov";
+import CatStoreVideo5 from "../assets/videos/catstore/catstore5.mov";
 
 // Importaciones para Alqueria Villacarmen
 import VillacarmenImg1 from "../assets/images/villacarmen/villacarmen-1.jpg"
@@ -60,7 +60,7 @@ import VillacarmenImg15 from "../assets/images/villacarmen/villacarmen-15.jpg"
 import VillacarmenImg16 from "../assets/images/villacarmen/villacarmen-16.jpg"
 import VillacarmenImg17 from "../assets/images/villacarmen/villacarmen-17.jpg"
 import VillacarmenImg18 from "../assets/images/villacarmen/villacarmen-18.jpg"
-// import VillacarmenVideo from "../assets/videos/villacarmen/villacarmen-video.mov"
+import VillacarmenVideo from "../assets/videos/villacarmen/villacarmen-video.mov"
 
 // Importaciones para Tour To Valencia
 import TourToValencia from "../assets/images/tourtovalencia/tourtovalencia11.jpg";
@@ -79,14 +79,14 @@ import TourToValenciaImg12 from "../assets/images/tourtovalencia/tourtovalencia1
 import TourToValenciaImg13 from "../assets/images/tourtovalencia/tourtovalencia13.jpg";
 import TourToValenciaImg14 from "../assets/images/tourtovalencia/tourtovalencia14.jpg";
 import TourToValenciaImg15 from "../assets/images/tourtovalencia/tourtovalencia15.jpg";
-// import TourToValenciaVideo1 from "../assets/videos/tourtovalencia/tourtovalencia1.mov";
-// import TourToValenciaVideo2 from "../assets/videos/tourtovalencia/tourtovalencia2.mov";
-// import TourToValenciaVideo3 from "../assets/videos/tourtovalencia/tourtovalencia3.mov";
-// import TourToValenciaVideo4 from "../assets/videos/tourtovalencia/tourtovalencia4.mov";
-// import TourToValenciaVideo5 from "../assets/videos/tourtovalencia/tourtovalencia5.mov";
-// import TourToValenciaVideo6 from "../assets/videos/tourtovalencia/tourtovalencia6.mov";
-// import TourToValenciaVideo7 from "../assets/videos/tourtovalencia/tourtovalencia7.mov";
-// import TourToValenciaVideo8 from "../assets/videos/tourtovalencia/tourtovalencia8.mov";
+import TourToValenciaVideo1 from "../assets/videos/tourtovalencia/tourtovalencia1.mov";
+import TourToValenciaVideo2 from "../assets/videos/tourtovalencia/tourtovalencia2.mov";
+import TourToValenciaVideo3 from "../assets/videos/tourtovalencia/tourtovalencia3.mov";
+import TourToValenciaVideo4 from "../assets/videos/tourtovalencia/tourtovalencia4.mov";
+import TourToValenciaVideo5 from "../assets/videos/tourtovalencia/tourtovalencia5.mov";
+import TourToValenciaVideo6 from "../assets/videos/tourtovalencia/tourtovalencia6.mov";
+import TourToValenciaVideo7 from "../assets/videos/tourtovalencia/tourtovalencia7.mov";
+import TourToValenciaVideo8 from "../assets/videos/tourtovalencia/tourtovalencia8.mov";
 
 // Importaciones para Centro Neuro Expresion
 import CentroNeuroExpresion from "../assets/images/centroneuroexpresion/centroneuroexpresion1.jpg";
@@ -105,10 +105,10 @@ import CentroNeuroExpresionImg12 from "../assets/images/centroneuroexpresion/cen
 import CentroNeuroExpresionImg13 from "../assets/images/centroneuroexpresion/centroneuroexpresion13.jpg";
 import CentroNeuroExpresionImg14 from "../assets/images/centroneuroexpresion/centroneuroexpresion14.jpg";
 import CentroNeuroExpresionImg15 from "../assets/images/centroneuroexpresion/centroneuroexpresion15.jpg";
-// import CentroNeuroExpresionVideo1 from "../assets/videos/centroneuroexpresion/centroneuroexpresion1.mov";
-// import CentroNeuroExpresionVideo2 from "../assets/videos/centroneuroexpresion/centroneuroexpresion2.mov";
-// import CentroNeuroExpresionVideo3 from "../assets/videos/centroneuroexpresion/centroneuroexpresion3.mov";
-// import CentroNeuroExpresionVideo4 from "../assets/videos/centroneuroexpresion/centroneuroexpresion4.mov";
+import CentroNeuroExpresionVideo1 from "../assets/videos/centroneuroexpresion/centroneuroexpresion1.mov";
+import CentroNeuroExpresionVideo2 from "../assets/videos/centroneuroexpresion/centroneuroexpresion2.mov";
+import CentroNeuroExpresionVideo3 from "../assets/videos/centroneuroexpresion/centroneuroexpresion3.mov";
+import CentroNeuroExpresionVideo4 from "../assets/videos/centroneuroexpresion/centroneuroexpresion4.mov";
 
 // Importaciones para Hero Budget (usando imagen temporal - reemplazar con imágenes reales)
 import HeroBudget from "../assets/images/herobudget/herobudgetimg1.webp";
@@ -160,7 +160,7 @@ const menuStudioFeatures = [
   {
     title: "AI Image Generation in <30 Seconds",
     description: "Generate professional food photography from text descriptions instantly. No photographer needed, no expensive equipment, just describe what you want and MenuStudio AI creates it.",
-    image: { src: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-09-home-hero.png" },
+    image: MenuStudioF01,
     videos: [
       { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-generate-desktop-dark.webm" },
       { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-generate-desktop-light.webm" },
@@ -480,17 +480,17 @@ import TodoListImg2 from "../assets/images/todolist/todolist2.jpg"
 import TodoListImg3 from "../assets/images/todolist/todolist3.jpg"
 import TodoListImg4 from "../assets/images/todolist/todolist4.jpg"
 import TodoListImg5 from "../assets/images/todolist/todolist5.jpg"
-// import TodoListVideo1 from "../assets/videos/todolist/todolist1.mov"
-// import TodoListVideo2 from "../assets/videos/todolist/todolist2.mov"
-// import TodoListVideo3 from "../assets/videos/todolist/todolist3.mov"
-// import TodoListVideo4 from "../assets/videos/todolist/todolist4.mov"
+import TodoListVideo1 from "../assets/videos/todolist/todolist1.mov"
+import TodoListVideo2 from "../assets/videos/todolist/todolist2.mov"
+import TodoListVideo3 from "../assets/videos/todolist/todolist3.mov"
+import TodoListVideo4 from "../assets/videos/todolist/todolist4.mov"
 
 // Funcionalidades para Todo List
 const todoListFeatures = [
     {
         title: "Autenticación de usuarios",
         description: "Sistema completo de autenticación con formulario de inicio de sesión conectado a base de datos PostgreSQL, validación de errores, registro de nuevos usuarios y soporte para múltiples idiomas mediante selector integrado. La funcionalidad multilingual está implementada con useContext de React y archivos JSON para las traducciones.",
-        // video: TodoListVideo1, // Commented out - video file missing
+        video: TodoListVideo1,
         autoplay: true,
         muted: true,
         loop: true
@@ -498,7 +498,7 @@ const todoListFeatures = [
     {
         title: "Gestión de tareas con calendario",
         description: "Dashboard con calendario integrado para seleccionar fechas específicas a las que añadir tareas. Las tareas se agregan a la sección de no completadas y el sistema muestra un indicador visual (punto rojo) en las fechas que contienen tareas pendientes. Cada día almacena sus propias tareas de forma independiente.",
-        // video: TodoListVideo2, // Commented out - video file missing
+        video: TodoListVideo2,
         autoplay: true,
         muted: true,
         loop: true
@@ -506,7 +506,7 @@ const todoListFeatures = [
     {
         title: "Edición y eliminación de tareas",
         description: "Funcionalidad para editar y personalizar tareas existentes, así como para eliminar tareas que ya no son necesarias, manteniendo la lista organizada y actualizada según las necesidades del usuario.",
-        // video: TodoListVideo3, // Commented out - video file missing
+        video: TodoListVideo3,
         autoplay: true,
         muted: true,
         loop: true
@@ -514,7 +514,7 @@ const todoListFeatures = [
     {
         title: "Completar tareas y organización por Drag & Drop",
         description: "Las tareas pueden marcarse como completadas mediante el checkbox o utilizando la funcionalidad de arrastrar y soltar (drag & drop) entre las secciones de completadas y pendientes. El sistema actualiza visualmente el estado del día en el calendario, cambiando de punto rojo a verde cuando todas las tareas están completadas.",
-        // video: TodoListVideo4, // Commented out - video file missing
+        video: TodoListVideo4,
         autoplay: true,
         muted: true,
         loop: true
@@ -526,7 +526,7 @@ const tourToValenciaFeatures = [
     {
         title: "Diseño Responsive y Multilingüe",
         description: "Diseño web responsive adaptado a todas las pantallas con un estilo elegante implementado con Tailwind CSS. La página inicial incluye un hero section moderno con imágenes intuitivas relacionadas con excursiones. El sitio está configurado con i18n para soporte multilingüe completo (español e inglés) mediante archivos JSON, ofreciendo una experiencia de usuario intuitiva y bien estructurada.",
-        // video: TourToValenciaVideo1, // Commented out - video file missing
+        video: TourToValenciaVideo1,
         autoplay: true,
         muted: true,
         loop: true
@@ -534,7 +534,7 @@ const tourToValenciaFeatures = [
     {
         title: "Páginas de Tour Detalladas",
         description: "Páginas individuales para cada tour con UI/UX de alto estándar para captar clientes. Incluyen información sintetizada pero informativa, imágenes de alta calidad, y una sección con diseño excepcional que muestra el itinerario de la excursión etapa por etapa. Finaliza con una tarjeta resumen de características y un botón de llamada a la acción para reservar.",
-        // video: TourToValenciaVideo2, // Commented out - video file missing
+        video: TourToValenciaVideo2,
         autoplay: true,
         muted: true,
         loop: true
@@ -542,7 +542,7 @@ const tourToValenciaFeatures = [
     {
         title: "Sistema de Reservas Avanzado",
         description: "Sistema de reservas en 4 pasos más pasarela de pago con PayPal. El proceso incluye: 1) Selección de tour y fecha (con fechas sin disponibilidad bloqueadas), 2) Elección del número de personas (actualizado dinámicamente según disponibilidad), 3) Recogida de datos personales, y 4) Resumen de compra. Tras confirmar, se procede al pago mediante PayPal, se registra la reserva en base de datos y se envían emails de confirmación al cliente y al negocio.",
-        // video: TourToValenciaVideo3, // Commented out - video file missing
+        video: TourToValenciaVideo3,
         autoplay: true,
         muted: true,
         loop: true
@@ -550,7 +550,7 @@ const tourToValenciaFeatures = [
     {
         title: "Optimización SEO",
         description: "Página con diseño UI optimizada para cumplir con los estándares SEO, asegurando que las palabras clave relevantes para el negocio aparezcan correctamente posicionadas para mejorar la visibilidad en motores de búsqueda.",
-        // video: TourToValenciaVideo4, // Commented out - video file missing
+        video: TourToValenciaVideo4,
         autoplay: true,
         muted: true,
         loop: true
@@ -558,7 +558,7 @@ const tourToValenciaFeatures = [
     {
         title: "Panel de Administración - Gestión de Reservas",
         description: "Área de administración protegida por usuario y contraseña para gestionar reservas y tours. Incluye un calendario para seleccionar fechas, opciones de filtrado por tour y fecha, y ajuste de límites de reservas para adaptarse a fluctuaciones de aforo. Muestra una tabla detallada con información de reservas, estado de pago y método de pago, con opción de filtrado por nombre.",
-        // video: TourToValenciaVideo5, // Commented out - video file missing
+        video: TourToValenciaVideo5,
         autoplay: true,
         muted: true,
         loop: true
@@ -566,7 +566,7 @@ const tourToValenciaFeatures = [
     {
         title: "Gestión de Cancelaciones y Reembolsos",
         description: "Sistema para cancelar reservas con opción de reembolso automático a través de PayPal mediante ID de transacción. Incluye una pestaña específica para visualizar reservas canceladas, facilitando el seguimiento y evitando errores de cancelación o malentendidos con los clientes.",
-        // video: TourToValenciaVideo6, // Commented out - video file missing
+        video: TourToValenciaVideo6,
         autoplay: true,
         muted: true,
         loop: true
@@ -574,7 +574,7 @@ const tourToValenciaFeatures = [
     {
         title: "Gestor de Tours",
         description: "Sección de administración para crear nuevos tours o editar los existentes. Incluye un editor de páginas que permite activar/desactivar disponibilidad de tours, cambiar precios, actualizar imágenes y GIFs animados, y editar textos de todas las secciones directamente haciendo clic en ellos.",
-        // video: TourToValenciaVideo7, // Commented out - video file missing
+        video: TourToValenciaVideo7,
         autoplay: true,
         muted: true,
         loop: true
@@ -582,7 +582,7 @@ const tourToValenciaFeatures = [
     {
         title: "Sistema de Edición con IA",
         description: "Sistema avanzado para editar/crear páginas que optimiza automáticamente las imágenes subidas a formato WebP con tamaño máximo de 100KB. Además, procesa textos mediante inteligencia artificial con API de OpenRouter a un modelo de Gemini, permitiendo al dueño del negocio crear contenido en un solo idioma (español) y traducirlo automáticamente al inglés.",
-        // video: TourToValenciaVideo8, // Commented out - video file missing
+        video: TourToValenciaVideo8,
         autoplay: true,
         muted: true,
         loop: true
@@ -594,7 +594,7 @@ const catStoreFeatures = [
     {
         title: "Página Principal y Carrito de Compra",
         description: "Se muestra la página inical de la tienda tras haber iniciado sesión. Se muesta un navbar con las opciones para navegar, el hero section y un grid con los productos (gatos) en la tienda. También se muestra como los productos se añaden al carrito conforme los seleccionas y como al hacer click en el navegador del carrito se abre un drawer para previsualizar el carrito de compra.",
-        // video: CatStoreVideo1, // Commented out - video file missing
+        video: CatStoreVideo1,
         autoplay: true,
         muted: true,
         loop: true
@@ -602,7 +602,7 @@ const catStoreFeatures = [
     {
         title: "Sistema de Filtros de Productos",
         description: "Se muestra la funcionalidad de aplicar filtros a los productos del grid de la página incial. Cuando se hace click en el icono de filtro se abre un drawer con las diferentes opciones de filtros, los cuales hacen que se actualice el listado de productos. También se pueden ordenar los productos por criterios como nombre, precio y antiguedad.",
-        // video: CatStoreVideo2, // Commented out - video file missing
+        video: CatStoreVideo2,
         autoplay: true,
         muted: true,
         loop: true
@@ -610,7 +610,7 @@ const catStoreFeatures = [
     {
         title: "Perfil de Usuario",
         description: "Se muestra el area de perfil de usuario. Donde se pueden modificar los datos personales y cambiar la contraseña. También se muestra las estadísticas de compra del usuario y se permite ver el historial de compras del usuario, abriendo una pagina con una tabla del historial de compras de ese usuario.",
-        // video: CatStoreVideo3, // Commented out - video file missing
+        video: CatStoreVideo3,
         autoplay: true,
         muted: true,
         loop: true
@@ -618,7 +618,7 @@ const catStoreFeatures = [
     {
         title: "Panel de Administración",
         description: "Se muestra el área de administración donde el administrador puede gestionar los productos de la tienda. Se puede ver los productos existentes en una tabla a la cual se le pueden aplicar filtros de búsqueda. También se puede editar un producto existente, añadir un producto o eliminar un producto.",
-        // video: CatStoreVideo4, // Commented out - video file missing
+        video: CatStoreVideo4,
         autoplay: true,
         muted: true,
         loop: true
@@ -626,7 +626,7 @@ const catStoreFeatures = [
     {
         title: "Proceso de Compra",
         description: "Se muestra el flujo para finalizar una compra. Se hace click en el carrito de la compra, el cual abre el drawer del carrito de compra. Accedemos al area de checkout y vemos el resumen de nuestro carrito de compra con la opción de modificar los elementos de nuestro carrito o vaciar el carrito. Cuando se procede a completar la compra se simula una compra exitosa sin necesidad de pago. Aparece una pantalla de exito.",
-        // video: CatStoreVideo5, // Commented out - video file missing
+        video: CatStoreVideo5,
         autoplay: true,
         muted: true,
         loop: true
@@ -651,8 +651,8 @@ const centroNeuroExpresionFeatures = [
     {
         title: "Landing Page Optimizada",
         description: "Interfaz de usuario y experiencia de usuario perfectamente diseñadas para publicitar el centro de Intervención Temprana para niños. Incluye secciones esenciales como el enfoque de la empresa, servicios ofrecidos, testimonios de casos de éxito y llamadas a la acción para contacto.",
-        // video: CentroNeuroExpresionVideo1, // Commented out - video file missing
-        // videoPoster: CentroNeuroExpresionImg1, // Commented out - video file missing
+        video: CentroNeuroExpresionVideo1,
+        videoPoster: CentroNeuroExpresionImg1,
         autoplay: true,
         muted: true,
         loop: true
@@ -660,8 +660,8 @@ const centroNeuroExpresionFeatures = [
     {
         title: "Página 'Sobre Nosotros'",
         description: "Sección fundamental para empresas de atención al público como este centro de psicopedagogía. Presenta de manera clara y atractiva la misión del centro, su enfoque profesional, el equipo de especialistas y las instalaciones donde se realizan las intervenciones.",
-        // video: CentroNeuroExpresionVideo2, // Commented out - video file missing
-        // videoPoster: CentroNeuroExpresionImg2, // Commented out - video file missing
+        video: CentroNeuroExpresionVideo2,
+        videoPoster: CentroNeuroExpresionImg2,
         autoplay: true,
         muted: true,
         loop: true
@@ -669,8 +669,8 @@ const centroNeuroExpresionFeatures = [
     {
         title: "Página de Contacto",
         description: "Página indispensable que incluye un formulario de contacto intuitivo para los clientes, información detallada sobre la localización del negocio, horario de atención, teléfono, email y un formulario de contacto para consultas específicas.",
-        // video: CentroNeuroExpresionVideo3, // Commented out - video file missing
-        // videoPoster: CentroNeuroExpresionImg3, // Commented out - video file missing
+        video: CentroNeuroExpresionVideo3,
+        videoPoster: CentroNeuroExpresionImg3,
         autoplay: true,
         muted: true,
         loop: true
@@ -678,8 +678,8 @@ const centroNeuroExpresionFeatures = [
     {
         title: "Página de Servicio Especializado",
         description: "Una de las cuatro páginas dedicadas a explicar los servicios especializados del centro. Este ejemplo muestra el servicio de Intervención Cognitiva Temprana, presentado de forma visual con imágenes representativas de los servicios para familias y niños, explicando en qué consiste y sus beneficios.",
-        // video: CentroNeuroExpresionVideo4, // Commented out - video file missing
-        // videoPoster: CentroNeuroExpresionImg4, // Commented out - video file missing
+        video: CentroNeuroExpresionVideo4,
+        videoPoster: CentroNeuroExpresionImg4,
         autoplay: true,
         muted: true,
         loop: true
@@ -793,9 +793,9 @@ const data = [
         type: "Full-Stack SaaS Platform - AI Image Generation",
         url: "https://menustudioai.com",
         github: "https://github.com/jaivial/menustudioai",
-        image: { src: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-09-home-hero.png" },
+        image: MenuStudioIcon,
         slug: "menustudio-ai",
-        date: "2025-12-29",
+        date: "2024-12-15",
         description: "MenuStudio AI is a comprehensive SaaS platform that leverages artificial intelligence to generate professional food photography for restaurants and hospitality businesses. Built with a modern tech stack including React + Vite frontend and Elysia.js backend on Bun runtime, it offers text-to-image generation, AI-powered editing, video creation, and multi-language support for 40+ languages. The platform includes a flexible credit-based pricing system with Stripe integration, real-time WebSocket updates for live processing feedback, content moderation with NSFW detection, and a comprehensive admin panel for analytics and user management.",
         tech: [
             "React", "Vite", "TypeScript", "Jotai", "Tailwind CSS",
@@ -805,57 +805,16 @@ const data = [
             "WebSocket", "i18n", "REST API", "VPS Deployment"
         ],
         images: [
-            // Main hero image
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-09-home-hero.png", alt: "MenuStudio AI Home Hero" },
-
-            // Instagram post images - Light theme
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-01-text-to-image.png", alt: "Text to Image Generation" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-02-ai-editing.png", alt: "AI-Powered Editing" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-03-generate-video.png", alt: "Video Generation" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-04-gallery.png", alt: "Gallery Management" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-05-multi-language.png", alt: "Multi-Language Support" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-06-share-modal.png", alt: "Share & Collaborate" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-07-credits-pricing.png", alt: "Credit Pricing System" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-08-realtime-processing.png", alt: "Real-Time Processing" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-10-professional-results.png", alt: "Professional Results" },
-
-            // Instagram post images - Dark theme
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-01-text-to-image-dark.png", alt: "Text to Image Generation (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-02-edit-image-dark.png", alt: "AI Image Editing (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-03-generate-video-dark.png", alt: "Video Generation (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-04-gallery-dark.png", alt: "Gallery Management (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-05-multi-language-dark.png", alt: "Multi-Language Support (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-06-share-modal-dark.png", alt: "Share & Collaborate (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-07-credits-pricing-dark.png", alt: "Credit Pricing System (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-08-realtime-processing-dark.png", alt: "Real-Time Processing (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-09-home-hero-dark.png", alt: "Home Hero (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-10-professional-results-dark.png", alt: "Professional Results (Dark)" },
-
-            // iPhone mobile screenshots - Dark theme
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-01-text-to-image-dark.png", alt: "Mobile: Text to Image (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-02-edit-image-dark.png", alt: "Mobile: Edit Image (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-03-generate-video-dark.png", alt: "Mobile: Generate Video (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-04-gallery-dark.png", alt: "Mobile: Gallery (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-05-share-modal-dark.png", alt: "Mobile: Share Modal (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-06-credits-pricing-dark.png", alt: "Mobile: Credits Pricing (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-07-home-hero-dark.png", alt: "Mobile: Home Hero (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-08-language-selector-dark.png", alt: "Mobile: Language Selector (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-09-features-bento-dark.png", alt: "Mobile: Features Bento (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-10-features-more-dark.png", alt: "Mobile: More Features (Dark)" },
-
-            // iPhone mobile screenshots - Light theme
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-01-text-to-image-light.png", alt: "Mobile: Text to Image (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-02-edit-image-light.png", alt: "Mobile: Edit Image (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-03-generate-video-light.png", alt: "Mobile: Generate Video (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-04-gallery-light.png", alt: "Mobile: Gallery (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-05-share-modal-light.png", alt: "Mobile: Share Modal (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-06-credits-pricing-light.png", alt: "Mobile: Credits Pricing (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-07-home-hero-light.png", alt: "Mobile: Home Hero (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-08-language-selector-light.png", alt: "Mobile: Language Selector (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-09-features-bento-light.png", alt: "Mobile: Features Bento (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-10-features-more-light.png", alt: "Mobile: More Features (Light)" },
-
-            // Technical diagrams
+            { url: MenuStudioF01.src, alt: "AI Image Generation" },
+            { url: MenuStudioF02.src, alt: "Professional Editing" },
+            { url: MenuStudioF03.src, alt: "Video Creation" },
+            { url: MenuStudioF04.src, alt: "Gallery Management" },
+            { url: MenuStudioF05.src, alt: "Multi-Language Support" },
+            { url: MenuStudioF06.src, alt: "Share & Collaborate" },
+            { url: MenuStudioF07.src, alt: "Credit System" },
+            { url: MenuStudioF08.src, alt: "Real-Time Processing" },
+            { url: MenuStudioF09.src, alt: "Beautiful UI" },
+            { url: MenuStudioF10.src, alt: "Professional Results" },
             { url: TechDiagram01.src, alt: "REST API Architecture" },
             { url: TechDiagram02.src, alt: "WebSocket Real-Time" },
             { url: TechDiagram03.src, alt: "Session Authentication" },
@@ -916,14 +875,14 @@ const data = [
             { url: TourToValenciaImg15.src, alt: 'Vista adicional 7' }
         ],
         videos: [
-            // { url: TourToValenciaVideo1, poster: TourToValenciaImg1.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo2, poster: TourToValenciaImg2.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo3, poster: TourToValenciaImg3.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo4, poster: TourToValenciaImg4.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo5, poster: TourToValenciaImg5.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo6, poster: TourToValenciaImg6.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo7, poster: TourToValenciaImg7.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo8, poster: TourToValenciaImg8.src } // Commented out - video file missing
+            { url: TourToValenciaVideo1, poster: TourToValenciaImg1.src },
+            { url: TourToValenciaVideo2, poster: TourToValenciaImg2.src },
+            { url: TourToValenciaVideo3, poster: TourToValenciaImg3.src },
+            { url: TourToValenciaVideo4, poster: TourToValenciaImg4.src },
+            { url: TourToValenciaVideo5, poster: TourToValenciaImg5.src },
+            { url: TourToValenciaVideo6, poster: TourToValenciaImg6.src },
+            { url: TourToValenciaVideo7, poster: TourToValenciaImg7.src },
+            { url: TourToValenciaVideo8, poster: TourToValenciaImg8.src }
         ],
         features: tourToValenciaFeatures
     },
@@ -980,7 +939,7 @@ const data = [
             { url: VillacarmenImg18.src, alt: 'Imagen Principal del Proyecto' }
         ],
         videos: [
-            // { url: VillacarmenVideo, poster: VillacarmenImg1.src } // Commented out - video file missing
+            { url: VillacarmenVideo, poster: VillacarmenImg1.src }
         ],
         features: alqueriaFeatures
     },
@@ -1016,10 +975,10 @@ const data = [
             { url: TodoListImg5.src, alt: 'Vista móvil responsiva' }
         ],
         videos: [
-            // { url: TodoListVideo1, poster: TodoListImg1.src }, // Commented out - video file missing
-            // { url: TodoListVideo2, poster: TodoListImg2.src }, // Commented out - video file missing
-            // { url: TodoListVideo3, poster: TodoListImg3.src }, // Commented out - video file missing
-            // { url: TodoListVideo4, poster: TodoListImg4.src } // Commented out - video file missing
+            { url: TodoListVideo1, poster: TodoListImg1.src },
+            { url: TodoListVideo2, poster: TodoListImg2.src },
+            { url: TodoListVideo3, poster: TodoListImg3.src },
+            { url: TodoListVideo4, poster: TodoListImg4.src }
         ],
         features: todoListFeatures
     },
@@ -1050,11 +1009,11 @@ const data = [
             { url: CatStoreImg14.src, alt: 'Vista adicional 9' }
         ],
         videos: [
-            // { url: CatStoreVideo1, poster: CatStoreImg1.src }, // Commented out - video file missing
-            // { url: CatStoreVideo2, poster: CatStoreImg2.src }, // Commented out - video file missing
-            // { url: CatStoreVideo3, poster: CatStoreImg3.src }, // Commented out - video file missing
-            // { url: CatStoreVideo4, poster: CatStoreImg4.src }, // Commented out - video file missing
-            // { url: CatStoreVideo5, poster: CatStoreImg5.src } // Commented out - video file missing
+            { url: CatStoreVideo1, poster: CatStoreImg1.src },
+            { url: CatStoreVideo2, poster: CatStoreImg2.src },
+            { url: CatStoreVideo3, poster: CatStoreImg3.src },
+            { url: CatStoreVideo4, poster: CatStoreImg4.src },
+            { url: CatStoreVideo5, poster: CatStoreImg5.src }
         ],
         features: catStoreFeatures
     },
@@ -1088,10 +1047,10 @@ const data = [
             { url: CentroNeuroExpresionImg15.src, alt: 'Vista General' }
         ],
         videos: [
-            // { url: CentroNeuroExpresionVideo1, poster: CentroNeuroExpresionImg1.src }, // Commented out - video file missing
-            // { url: CentroNeuroExpresionVideo2, poster: CentroNeuroExpresionImg2.src }, // Commented out - video file missing
-            // { url: CentroNeuroExpresionVideo3, poster: CentroNeuroExpresionImg3.src }, // Commented out - video file missing
-            // { url: CentroNeuroExpresionVideo4, poster: CentroNeuroExpresionImg4.src } // Commented out - video file missing
+            { url: CentroNeuroExpresionVideo1, poster: CentroNeuroExpresionImg1.src },
+            { url: CentroNeuroExpresionVideo2, poster: CentroNeuroExpresionImg2.src },
+            { url: CentroNeuroExpresionVideo3, poster: CentroNeuroExpresionImg3.src },
+            { url: CentroNeuroExpresionVideo4, poster: CentroNeuroExpresionImg4.src }
         ]
     }
 ]
