@@ -31,7 +31,7 @@ ssh root@178.16.130.178 << 'EOF'
     if pm2 list | grep -q jaimedigitalstudio; then
         pm2 restart jaimedigitalstudio
     else
-        pm2 start dist/server/entry.mjs --name jaimedigitalstudio --env production
+        PORT=4322 HOST=127.0.0.1 pm2 start dist/server/entry.mjs --name jaimedigitalstudio --env production
     fi
     pm2 save
     pm2 startup
