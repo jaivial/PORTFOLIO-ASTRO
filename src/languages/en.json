@@ -199,6 +199,94 @@
         }
       }
     },
+    "menustudio-ai": {
+      "description": "MenuStudio AI is a comprehensive SaaS platform that leverages artificial intelligence to generate professional food photography for restaurants and hospitality businesses. Built with a modern tech stack including React + Vite frontend and Elysia.js backend on Bun runtime, it offers text-to-image generation, AI-powered editing, video creation, and multi-language support for 40+ languages. The platform includes a flexible credit-based pricing system with Stripe integration, real-time WebSocket updates for live processing feedback, content moderation with NSFW detection, and a comprehensive admin panel for analytics and user management.",
+      "type": "Full-Stack SaaS Platform - AI Image Generation",
+      "features": {
+        "0": {
+          "title": "AI Image Generation in <30 Seconds",
+          "description": "Generate professional food photography from text descriptions instantly. No photographer needed, no expensive equipment, just describe what you want and MenuStudio AI creates it."
+        },
+        "1": {
+          "title": "AI-Powered Editing in Seconds",
+          "description": "Remove unwanted objects, enhance lighting, adjust colors, and perfect compositions with AI assistance. Fix 'almost perfect' photos without expensive editing software or design skills."
+        },
+        "2": {
+          "title": "Turn Photos into 4K Videos",
+          "description": "Transform static images into engaging cinematic videos with realistic camera movements. 10x higher engagement compared to static images, generated in under 2 minutes."
+        },
+        "3": {
+          "title": "Smart Gallery Management",
+          "description": "All your content in one place, searchable, categorized, and accessible from any device. Never lose track of your visual assets or use the same photo repeatedly."
+        },
+        "4": {
+          "title": "40+ Languages for Global Reach",
+          "description": "Complete interface translation including prompts, menus, and results. Reach international customers with culturally adapted content in their native language."
+        },
+        "5": {
+          "title": "One-Click Distribution",
+          "description": "Share via link, embed code, or direct download. Platform-optimized formats for social media, websites, and print. Collaborate with team members seamlessly."
+        },
+        "6": {
+          "title": "Pay Only for What You Use",
+          "description": "No monthly subscriptions, no commitment. Credits start at $10 and never expire. Transparent pricing: 2 credits per image, 14 per edit, 80 per video."
+        },
+        "7": {
+          "title": "Live Progress Updates",
+          "description": "Watch your images generate in real-time with WebSocket updates. See progress across all your devices simultaneously. Know exactly when your content is ready."
+        },
+        "8": {
+          "title": "Intuitive Design, Zero Learning Curve",
+          "description": "Glassmorphism aesthetics, spring-based animations, light/dark mode support. Powerful features that feel simple to use - maximum 3 clicks to any action."
+        },
+        "9": {
+          "title": "Brand-Safe, Print-Ready Quality",
+          "description": "NSFW content detection with three-strike ban system. High-resolution outputs optimized for print and digital. Trained specifically on gastronomy imagery."
+        }
+      },
+      "technicalArchitecture": {
+        "0": {
+          "title": "High-Performance REST API Architecture",
+          "description": "Built on Elysia.js with Bun runtime achieving 2.5x faster request handling than Node.js. Implements macro-based authorization for route-level access control, TypeBox validation for compile-time type safety, and plugin architecture for Prisma ORM, JWT sessions, WaveSpeed API, and Cloudflare R2 storage."
+        },
+        "1": {
+          "title": "Real-Time Multi-Device Synchronization",
+          "description": "WebSocket server supporting concurrent connections per user across multiple devices. Implements fire-and-forget async processing with background task manager, broadcasting status updates for image generation, credit balance changes, and admin notifications."
+        },
+        "2": {
+          "title": "Secure Session-Based Authentication",
+          "description": "Hybrid JWT + database session system with 30-day user sessions and 8-hour admin sessions. Supports OAuth 2.0 integration with Google and Apple Sign-In. Includes device session tracking for security auditing and instant session revocation for banned users."
+        },
+        "3": {
+          "title": "Asynchronous AI Image Processing",
+          "description": "WaveSpeed API integration with background polling mechanism (up to 5 minutes). Implements pre-deduction credit strategy with automatic rollback on failure, retry logic (max 3 attempts), and timeout cleanup to prevent zombie processes."
+        },
+        "4": {
+          "title": "AI-Powered Content Safety",
+          "description": "OpenAI Moderation API integration with configurable thresholds for adult content, violence, and explicit material. Fire-and-forget processing pattern allows immediate user access while moderation runs asynchronously in background."
+        },
+        "5": {
+          "title": "Progressive Three-Strike Ban Enforcement",
+          "description": "Atomic database transactions for ban creation, session revocation, and BannedUser table updates. Prevents re-registration via email/deviceId tracking. Includes appeal system with admin review workflow."
+        },
+        "6": {
+          "title": "Multi-Currency Payment Processing",
+          "description": "Stripe Checkout Sessions supporting 39 locales with European Central Bank exchange rates (updated daily). Handles zero-decimal currencies (JPY, KRW, VND) correctly. Implements idempotent webhook processing with signature verification and duplicate prevention."
+        },
+        "7": {
+          "title": "Transparent Credit Economics",
+          "description": "Pre-deduction pattern with automatic refunds on API failures. 3.33x markup over WaveSpeed API costs for sustainable margins. Includes timeout cleanup for abandoned processes and double-refund prevention with 'checked' flag."
+        },
+        "8": {
+          "title": "Prisma ORM with MySQL",
+          "description": "15 models organized into 5 domains: Authentication (User, Session, BannedUser), Content (Image, BackgroundProcess), Payments (Transaction, StripeSession), Moderation (ModerationResult), and Administration (AdminActivityLog, DeviceSession). 40+ strategic indexes for query optimization."
+        },
+        "9": {
+          "title": "Role-Based Administration Dashboard",
+          "description": "Three privilege levels (SUPER_ADMIN, MODERATOR, VIEWER) with privilege escalation prevention. Features include 13-parallel analytics queries, revenue prediction with linear regression, device session tracking with UAParser, and comprehensive audit logging for compliance."
+        }
+      }
+    },
     "hero-budget": {
       "description": "Hero Budget is a comprehensive personal finance management mobile application built with React Native and TypeScript. The app provides users with powerful tools to track income, expenses, recurring bills, and savings goals with real-time synchronization across multiple devices. It features a modern, intuitive interface with support for both light and dark themes, multi-language localization (20+ languages), and offline-first architecture with automatic cloud sync. The backend is powered by a robust Go microservices architecture deployed on VPS with NGINX reverse proxy, ensuring high performance and reliability.",
       "type": "Mobile Application - Personal Finance Management",

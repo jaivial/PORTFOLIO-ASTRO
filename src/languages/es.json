@@ -199,6 +199,94 @@
         }
       }
     },
+    "menustudio-ai": {
+      "description": "MenuStudio AI es una plataforma SaaS integral que aprovecha la inteligencia artificial para generar fotografía gastronómica profesional para restaurantes y negocios de hostelería. Construida con una pila tecnológica moderna que incluye React + Vite en el frontend y Elysia.js en el backend con runtime Bun, ofrece generación de texto a imagen, edición potenciada por IA, creación de videos y soporte multilingüe para más de 40 idiomas. La plataforma incluye un sistema flexible de precios basado en créditos con integración de Stripe, actualizaciones en tiempo real mediante WebSocket para feedback de procesamiento en vivo, moderación de contenido con detección NSFW, y un panel de administración completo para analíticas y gestión de usuarios.",
+      "type": "Plataforma SaaS Full-Stack - Generación de Imágenes con IA",
+      "features": {
+        "0": {
+          "title": "Generación de Imágenes con IA en <30 Segundos",
+          "description": "Genera fotografía gastronómica profesional a partir de descripciones de texto al instante. Sin necesidad de fotógrafo, sin equipos costosos, solo describe lo que quieres y MenuStudio AI lo crea."
+        },
+        "1": {
+          "title": "Edición Potenciada por IA en Segundos",
+          "description": "Elimina objetos no deseados, mejora la iluminación, ajusta colores y perfecciona composiciones con asistencia de IA. Arregla fotos 'casi perfectas' sin software de edición costoso ni habilidades de diseño."
+        },
+        "2": {
+          "title": "Convierte Fotos en Videos 4K",
+          "description": "Transforma imágenes estáticas en videos cinematográficos atractivos con movimientos de cámara realistas. 10 veces más engagement comparado con imágenes estáticas, generado en menos de 2 minutos."
+        },
+        "3": {
+          "title": "Gestión Inteligente de Galería",
+          "description": "Todo tu contenido en un solo lugar, buscable, categorizado y accesible desde cualquier dispositivo. Nunca pierdas el control de tus activos visuales ni uses la misma foto repetidamente."
+        },
+        "4": {
+          "title": "40+ Idiomas para Alcance Global",
+          "description": "Traducción completa de la interfaz incluyendo prompts, menús y resultados. Alcanza clientes internacionales con contenido culturalmente adaptado en su idioma nativo."
+        },
+        "5": {
+          "title": "Distribución con Un Clic",
+          "description": "Comparte mediante enlace, código de inserción o descarga directa. Formatos optimizados para redes sociales, sitios web e impresión. Colabora con miembros del equipo sin problemas."
+        },
+        "6": {
+          "title": "Paga Solo por Lo Que Usas",
+          "description": "Sin suscripciones mensuales, sin compromiso. Los créditos empiezan en $10 y nunca caducan. Precios transparentes: 2 créditos por imagen, 14 por edición, 80 por video."
+        },
+        "7": {
+          "title": "Actualizaciones de Progreso en Vivo",
+          "description": "Observa cómo se generan tus imágenes en tiempo real con actualizaciones WebSocket. Ve el progreso en todos tus dispositivos simultáneamente. Sabe exactamente cuándo tu contenido está listo."
+        },
+        "8": {
+          "title": "Diseño Intuitivo, Cero Curva de Aprendizaje",
+          "description": "Estética glassmorphism, animaciones basadas en spring, soporte para modo claro/oscuro. Funciones potentes que se sienten simples de usar - máximo 3 clics para cualquier acción."
+        },
+        "9": {
+          "title": "Calidad Segura para Marca, Lista para Impresión",
+          "description": "Detección de contenido NSFW con sistema de tres strikes para baneo. Salidas de alta resolución optimizadas para impresión y digital. Entrenado específicamente en imágenes gastronómicas."
+        }
+      },
+      "technicalArchitecture": {
+        "0": {
+          "title": "Arquitectura REST API de Alto Rendimiento",
+          "description": "Construida sobre Elysia.js con runtime Bun logrando un manejo de peticiones 2.5 veces más rápido que Node.js. Implementa autorización basada en macros para control de acceso a nivel de ruta, validación TypeBox para seguridad de tipos en tiempo de compilación, y arquitectura de plugins para Prisma ORM, sesiones JWT, API WaveSpeed y almacenamiento Cloudflare R2."
+        },
+        "1": {
+          "title": "Sincronización Multi-Dispositivo en Tiempo Real",
+          "description": "Servidor WebSocket que soporta conexiones concurrentes por usuario en múltiples dispositivos. Implementa procesamiento asíncrono fire-and-forget con gestor de tareas en segundo plano, transmitiendo actualizaciones de estado para generación de imágenes, cambios de saldo de créditos y notificaciones de administrador."
+        },
+        "2": {
+          "title": "Autenticación Segura Basada en Sesiones",
+          "description": "Sistema híbrido JWT + sesión de base de datos con sesiones de usuario de 30 días y sesiones de administrador de 8 horas. Soporta integración OAuth 2.0 con Google y Apple Sign-In. Incluye seguimiento de sesiones de dispositivo para auditoría de seguridad y revocación instantánea de sesiones para usuarios baneados."
+        },
+        "3": {
+          "title": "Procesamiento Asíncrono de Imágenes con IA",
+          "description": "Integración con API WaveSpeed con mecanismo de polling en segundo plano (hasta 5 minutos). Implementa estrategia de pre-deducción de créditos con rollback automático en caso de fallo, lógica de reintentos (máximo 3 intentos) y limpieza de timeouts para prevenir procesos zombie."
+        },
+        "4": {
+          "title": "Seguridad de Contenido Potenciada por IA",
+          "description": "Integración con API de Moderación de OpenAI con umbrales configurables para contenido adulto, violencia y material explícito. Patrón de procesamiento fire-and-forget permite acceso inmediato del usuario mientras la moderación se ejecuta de forma asíncrona en segundo plano."
+        },
+        "5": {
+          "title": "Aplicación Progresiva de Baneo de Tres Strikes",
+          "description": "Transacciones atómicas de base de datos para creación de baneos, revocación de sesiones y actualizaciones de la tabla BannedUser. Previene re-registro mediante seguimiento de email/deviceId. Incluye sistema de apelación con flujo de revisión de administrador."
+        },
+        "6": {
+          "title": "Procesamiento de Pagos Multi-Moneda",
+          "description": "Sesiones de Checkout de Stripe soportando 39 locales con tipos de cambio del Banco Central Europeo (actualizados diariamente). Maneja correctamente monedas sin decimales (JPY, KRW, VND). Implementa procesamiento idempotente de webhooks con verificación de firma y prevención de duplicados."
+        },
+        "7": {
+          "title": "Economía de Créditos Transparente",
+          "description": "Patrón de pre-deducción con reembolsos automáticos en fallos de API. Margen de 3.33x sobre costos de API WaveSpeed para márgenes sostenibles. Incluye limpieza de timeouts para procesos abandonados y prevención de doble reembolso con flag 'checked'."
+        },
+        "8": {
+          "title": "Prisma ORM con MySQL",
+          "description": "15 modelos organizados en 5 dominios: Autenticación (User, Session, BannedUser), Contenido (Image, BackgroundProcess), Pagos (Transaction, StripeSession), Moderación (ModerationResult) y Administración (AdminActivityLog, DeviceSession). Más de 40 índices estratégicos para optimización de consultas."
+        },
+        "9": {
+          "title": "Panel de Administración Basado en Roles",
+          "description": "Tres niveles de privilegio (SUPER_ADMIN, MODERATOR, VIEWER) con prevención de escalada de privilegios. Características incluyen 13 consultas de analíticas en paralelo, predicción de ingresos con regresión lineal, seguimiento de sesiones de dispositivo con UAParser y registro de auditoría completo para cumplimiento."
+        }
+      }
+    },
     "hero-budget": {
       "description": "Hero Budget es una aplicación móvil completa de gestión de finanzas personales desarrollada con React Native y TypeScript. La aplicación proporciona a los usuarios herramientas potentes para rastrear ingresos, gastos, facturas recurrentes y metas de ahorro con sincronización en tiempo real entre múltiples dispositivos. Presenta una interfaz moderna e intuitiva con soporte para temas claro y oscuro, localización multiidioma (más de 20 idiomas), y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad.",
       "type": "Aplicación Móvil - Gestión de Finanzas Personales",

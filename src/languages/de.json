@@ -199,6 +199,94 @@
         }
       }
     },
+    "menustudio-ai": {
+      "description": "MenuStudio AI ist eine umfassende SaaS-Plattform, die künstliche Intelligenz nutzt, um professionelle Food-Fotografie für Restaurants und Gastgewerbe zu generieren. Entwickelt mit einem modernen Tech-Stack, einschließlich React + Vite Frontend und Elysia.js Backend auf Bun Runtime, bietet es Text-zu-Bild-Generierung, KI-gestützte Bearbeitung, Videoerstellung und mehrsprachige Unterstützung für über 40 Sprachen. Die Plattform umfasst ein flexibles kreditbasiertes Preissystem mit Stripe-Integration, Echtzeit-WebSocket-Updates für Live-Verarbeitungs-Feedback, Inhaltsmoderation mit NSFW-Erkennung und ein umfassendes Admin-Panel für Analysen und Benutzerverwaltung.",
+      "type": "Full-Stack SaaS-Plattform - KI-Bildgenerierung",
+      "features": {
+        "0": {
+          "title": "KI-Bildgenerierung in <30 Sekunden",
+          "description": "Generieren Sie professionelle Food-Fotografie aus Textbeschreibungen sofort. Kein Fotograf nötig, keine teure Ausrüstung, beschreiben Sie einfach, was Sie möchten, und MenuStudio AI erstellt es."
+        },
+        "1": {
+          "title": "KI-gestützte Bearbeitung in Sekunden",
+          "description": "Entfernen Sie unerwünschte Objekte, verbessern Sie die Beleuchtung, passen Sie Farben an und perfektionieren Sie Kompositionen mit KI-Unterstützung. Reparieren Sie 'fast perfekte' Fotos ohne teure Bearbeitungssoftware oder Designkenntnisse."
+        },
+        "2": {
+          "title": "Fotos in 4K-Videos verwandeln",
+          "description": "Verwandeln Sie statische Bilder in fesselnde cinematische Videos mit realistischen Kamerabewegungen. 10-fach höheres Engagement im Vergleich zu statischen Bildern, generiert in unter 2 Minuten."
+        },
+        "3": {
+          "title": "Intelligente Galerieverwaltung",
+          "description": "Alle Ihre Inhalte an einem Ort, durchsuchbar, kategorisiert und von jedem Gerät aus zugänglich. Verlieren Sie nie den Überblick über Ihre visuellen Assets oder verwenden Sie dasselbe Foto wiederholt."
+        },
+        "4": {
+          "title": "40+ Sprachen für globale Reichweite",
+          "description": "Vollständige Interface-Übersetzung einschließlich Prompts, Menüs und Ergebnisse. Erreichen Sie internationale Kunden mit kulturell angepassten Inhalten in ihrer Muttersprache."
+        },
+        "5": {
+          "title": "Ein-Klick-Verteilung",
+          "description": "Teilen Sie per Link, Einbettungscode oder direktem Download. Plattformoptimierte Formate für Social Media, Websites und Druck. Arbeiten Sie nahtlos mit Teammitgliedern zusammen."
+        },
+        "6": {
+          "title": "Zahlen Sie nur, was Sie nutzen",
+          "description": "Keine monatlichen Abonnements, keine Verpflichtung. Credits beginnen bei $10 und verfallen nie. Transparente Preise: 2 Credits pro Bild, 14 pro Bearbeitung, 80 pro Video."
+        },
+        "7": {
+          "title": "Live-Fortschrittsaktualisierungen",
+          "description": "Beobachten Sie, wie Ihre Bilder in Echtzeit mit WebSocket-Updates generiert werden. Sehen Sie den Fortschritt auf allen Ihren Geräten gleichzeitig. Wissen Sie genau, wann Ihr Inhalt fertig ist."
+        },
+        "8": {
+          "title": "Intuitives Design, keine Lernkurve",
+          "description": "Glasmorphismus-Ästhetik, Spring-basierte Animationen, Unterstützung für Hell-/Dunkelmodus. Leistungsstarke Funktionen, die sich einfach anfühlen - maximal 3 Klicks zu jeder Aktion."
+        },
+        "9": {
+          "title": "Markensichere, druckfertige Qualität",
+          "description": "NSFW-Inhaltserkennung mit Drei-Strike-Sperrsystem. Hochauflösende Ausgaben optimiert für Druck und Digital. Speziell auf Gastronomiebilder trainiert."
+        }
+      },
+      "technicalArchitecture": {
+        "0": {
+          "title": "Hochleistungs-REST-API-Architektur",
+          "description": "Entwickelt auf Elysia.js mit Bun Runtime, das 2,5-mal schnellere Anfrageverarbeitung als Node.js erreicht. Implementiert makrobasierte Autorisierung für Routenebenen-Zugangskontrolle, TypeBox-Validierung für Compile-Time-Typsicherheit und Plugin-Architektur für Prisma ORM, JWT-Sessions, WaveSpeed API und Cloudflare R2 Speicher."
+        },
+        "1": {
+          "title": "Echtzeit-Multi-Geräte-Synchronisierung",
+          "description": "WebSocket-Server unterstützt gleichzeitige Verbindungen pro Benutzer über mehrere Geräte. Implementiert Fire-and-Forget-Async-Verarbeitung mit Hintergrund-Task-Manager, Broadcasting von Statusaktualisierungen für Bildgenerierung, Kredit-Saldo-Änderungen und Admin-Benachrichtigungen."
+        },
+        "2": {
+          "title": "Sichere sitzungsbasierte Authentifizierung",
+          "description": "Hybrides JWT + Datenbank-Session-System mit 30-Tage-Benutzer-Sessions und 8-Stunden-Admin-Sessions. Unterstützt OAuth 2.0-Integration mit Google und Apple Sign-In. Beinhaltet Geräte-Session-Tracking für Sicherheitsaudits und sofortige Session-Widerrufung für gesperrte Benutzer."
+        },
+        "3": {
+          "title": "Asynchrone KI-Bildverarbeitung",
+          "description": "WaveSpeed API-Integration mit Hintergrund-Polling-Mechanismus (bis zu 5 Minuten). Implementiert Pre-Deduction-Kreditstrategie mit automatischem Rollback bei Fehler, Wiederholungslogik (max. 3 Versuche) und Timeout-Bereinigung zur Verhinderung von Zombie-Prozessen."
+        },
+        "4": {
+          "title": "KI-gestützte Inhaltssicherheit",
+          "description": "OpenAI Moderation API-Integration mit konfigurierbaren Schwellenwerten für Erwachseneninhalte, Gewalt und explizites Material. Fire-and-Forget-Verarbeitungsmuster ermöglicht sofortigen Benutzerzugriff, während die Moderation asynchron im Hintergrund läuft."
+        },
+        "5": {
+          "title": "Progressive Drei-Strike-Sperrdurchsetzung",
+          "description": "Atomare Datenbanktransaktionen für Sperrerstellung, Session-Widerrufung und BannedUser-Tabellen-Updates. Verhindert Neuregistrierung via Email/DeviceId-Tracking. Beinhaltet Einspruchssystem mit Admin-Review-Workflow."
+        },
+        "6": {
+          "title": "Multi-Währungs-Zahlungsverarbeitung",
+          "description": "Stripe Checkout Sessions unterstützen 39 Locales mit Wechselkursen der Europäischen Zentralbank (täglich aktualisiert). Behandelt Nulldezimalwährungen (JPY, KRW, VND) korrekt. Implementiert idempotente Webhook-Verarbeitung mit Signaturverifizierung und Duplikatprävention."
+        },
+        "7": {
+          "title": "Transparente Kreditökonomie",
+          "description": "Pre-Deduction-Muster mit automatischen Rückerstattungen bei API-Fehlern. 3,33-facher Aufschlag über WaveSpeed API-Kosten für nachhaltige Margen. Beinhaltet Timeout-Bereinigung für abgebrochene Prozesse und Doppelrückerstattungsprävention mit 'checked'-Flag."
+        },
+        "8": {
+          "title": "Prisma ORM mit MySQL",
+          "description": "15 Modelle organisiert in 5 Domänen: Authentifizierung (User, Session, BannedUser), Inhalt (Image, BackgroundProcess), Zahlungen (Transaction, StripeSession), Moderation (ModerationResult) und Administration (AdminActivityLog, DeviceSession). Über 40 strategische Indizes für Abfrageoptimierung."
+        },
+        "9": {
+          "title": "Rollenbasiertes Administrations-Dashboard",
+          "description": "Drei Privilegstufen (SUPER_ADMIN, MODERATOR, VIEWER) mit Privilegeskalationsprävention. Funktionen umfassen 13 parallele Analyseabfragen, Umsatzprognose mit linearer Regression, Geräte-Session-Tracking mit UAParser und umfassende Audit-Protokollierung für Compliance."
+        }
+      }
+    },
     "hero-budget": {
       "description": "Hero Budget ist eine umfassende mobile Anwendung zur Verwaltung persönlicher Finanzen, entwickelt mit React Native und TypeScript. Die App bietet Benutzern leistungsstarke Tools zur Verfolgung von Einnahmen, Ausgaben, wiederkehrenden Rechnungen und Sparzielen mit Echtzeit-Synchronisierung über mehrere Geräte hinweg. Sie verfügt über eine moderne, intuitive Benutzeroberfläche mit Unterstützung für helle und dunkle Themes, mehrsprachige Lokalisierung (20+ Sprachen) und Offline-First-Architektur mit automatischer Cloud-Synchronisierung. Das Backend wird von einer robusten Go-Microservice-Architektur angetrieben, die auf VPS mit NGINX Reverse Proxy bereitgestellt wird und hohe Leistung und Zuverlässigkeit gewährleistet.",
       "type": "Mobile Anwendung - Verwaltung persönlicher Finanzen",
