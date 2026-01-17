@@ -365,7 +365,7 @@ const alqueriaFeatures = [
         key: "reservation_system",
         title: "Gestor de Reservas Online",
         description: "Sistema avanzado de reservas con calendario que muestra días cerrados, abiertos y completos. El número de personas es condicional según el límite y número de reservas para cada día. Proceso en 4 pasos: selección de fecha y personas, opción de reservar arroz de la base de datos, datos personales con envío de confirmación por email y WhatsApp, y confirmación final con selección de tronas/carros y aceptación de condiciones.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-1.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-2.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-3.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-4.jpg" }]
+        carousel: [VillacarmenImg1, VillacarmenImg2, VillacarmenImg3, VillacarmenImg4]
     },
     {
         title: "Carta Dinámica de Platos",
@@ -405,12 +405,12 @@ const alqueriaFeatures = [
     {
         title: "Gestión de Menús y Platos",
         description: "Panel de administración para añadir, activar/desactivar y editar platos en la base de datos según categorías (entrantes, principales, arroces, postres), con selección personalizada de alérgenos para cada plato.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-12.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-13.jpg" }]
+        carousel: [VillacarmenImg12, VillacarmenImg13]
     },
     {
         title: "Administración de Carta de Vinos",
         description: "Sistema para gestionar la bodega con opciones para añadir, editar, activar o desactivar vinos de la carta, permitiendo actualizar la oferta sin necesidad de eliminar registros.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-14.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-15.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-16.jpg" }]
+        carousel: [VillacarmenImg14, VillacarmenImg15, VillacarmenImg16]
     }
 ];
 
@@ -639,7 +639,7 @@ const frasesMarcosAlconFeatures = [
         title: "Lector de libro interactivo",
         description: "Se muestra la página de frases de Marcos Alcón. Un proyecto hecho para mi abuelo por su 95 cumpleaños recopilando las frases que ha ido escribiendo. Se ha creado una app web para crear un lector de libro con animación de pase de páginas. El sitio es responsive y con una UI y UX excepcional.",
         // video: FrasesMarcosAlconVideo1, // Commented out - video file missing
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/frasesmarcosalcon/frasesmarcosalcon1.jpg" },
+        image: FrasesMarcosAlconImg1,
         autoplay: true,
         muted: true,
         loop: true
@@ -721,7 +721,7 @@ const heroBudgetFeatures = [
     {
         title: "Gestión y Categorización de Gastos",
         description: "Rastrea todos los gastos con categorías personalizadas, métodos de pago y notas. Sistema inteligente de categorización con iconos emoji para identificación visual. Historial de gastos con capacidades completas de filtrado y búsqueda. Impacto automático en balances de efectivo/banco y resúmenes mensuales de gastos.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetimg2.webp" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetimg7.webp" }]
+        carousel: [HeroBudgetImg2, HeroBudgetImg7]
     },
     {
         title: "Gestión de Facturas Recurrentes",
@@ -741,7 +741,7 @@ const heroBudgetFeatures = [
     {
         title: "Modo Oscuro y Modo Claro",
         description: "Soporte completo para temas oscuro y claro con transiciones suaves. La preferencia de tema persiste a través de sesiones de la aplicación. Esquemas de colores optimizados para legibilidad en todas las condiciones de iluminación. Aplicación automática del tema a todos los componentes de UI y hojas inferiores.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetimg3.webp" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetimg1ligh.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetdark2.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetlight2.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetdark3.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetlight3.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetdark4.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetlight4.png" }]
+        carousel: [HeroBudgetImg3, herobudgetimg1ligh, herobudgetdark2, herobudgetlight2, herobudgetdark3, herobudgetlight3, herobudgetdark4, herobudgetlight4]
     },
     {
         title: "Microservicios Backend en Go",
@@ -756,7 +756,7 @@ const data = [
         type: "Aplicación Móvil - Gestión de Finanzas Personales",
         url: "https://apps.apple.com/es/app/hero-budget/id6746946502?l=en-GB",
         github: "https://github.com/jaivial/HerobudgetReact",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgeticon.png" },
+        image: HeroBudgetIcon,
         slug: "hero-budget",
         description: "Hero Budget es una aplicación móvil completa de gestión de finanzas personales desarrollada con React Native y TypeScript. La aplicación proporciona a los usuarios herramientas potentes para rastrear ingresos, gastos, facturas recurrentes y metas de ahorro con sincronización en tiempo real entre múltiples dispositivos. Presenta una interfaz moderna e intuitiva con soporte para temas claro y oscuro, localización multiidioma (más de 20 idiomas), y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad.",
         tech: ["React Native", "TypeScript", "Go", "SQLite", "React Navigation", "Jotai", "i18next", "OAuth 2.0", "Jest", "RESTful API", "VPS", "Nginx", "Responsive Design"],
@@ -872,7 +872,7 @@ const data = [
         type: "Aplicación Web Interactiva",
         url: "https://frasesmarcosalcon.com",
         github: "https://github.com/jaivial/frasesmarcosalcon.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/frasesmarcosalcon/frasesmarcosalcon1.jpg" },
+        image: FrasesMarcosAlcon,
         slug: "frases-marcos-alcon",
         description: "MarcosGoWeb es una elegante aplicación web construida con Go que muestra una colección de frases y poemas de Marcos Alcón. La aplicación presenta el contenido en un hermoso formato de libro interactivo con animaciones de paso de página, creando una experiencia de lectura inmersiva. Desarrollada como un regalo especial para el 95 cumpleaños de mi abuelo.",
         tech: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "VPS", "Nginx", "Responsive Design"],
@@ -893,7 +893,7 @@ const data = [
         type: "Página Web + Sistema de Reservas + Back Office",
         url: "https://www.tourtovalencia.com",
         github: "https://github.com/jaivial/tourtovalencia.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/tourtovalencia/tourtovalencia11.jpg" },
+        image: TourToValencia,
         slug: "tour-to-valencia",
         description: "Tour To Valencia es una aplicación web moderna y multilingüe (inglés/español) construida con Remix y React que permite a los usuarios descubrir, explorar y reservar tours y experiencias en Valencia, España. La plataforma ofrece una experiencia de reserva fluida con procesamiento de pagos integrado a través de PayPal y Stripe, confirmaciones por correo electrónico y un completo panel de administración para gestionar reservas y contenido de tours.",
         tech: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Nodemailer", "Shadcn UI", "Framer Motion", "i18n", "PM2", "VPS", "Nginx", "OpenAI", "Responsive Design"],
@@ -932,7 +932,7 @@ const data = [
         type: "Página Web + Email",
         url: "https://guillermofernandeznutricion.es/",
         github: "https://github.com/jaivial/astrowebsite.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/guillermofernandeznutricion.webp" },
+        image: GuillermoFernandezNutricion,
         slug: "guillermo-fernandez-nutricion",
         description: "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes. Permite que los clientes realicen una primera consulta por un formulario de contacto. Diseño responsivo adaptable a tamaños de escritorio, tablet y móviles. Desarrollado con Astro para el front end y PHP para el backend del formulario de contacto. Las fotos y el contenido creativo fue elaborado por mi.",
         tech: ['Javascript', 'CSS', 'Astro', 'Express js', 'VPS', 'Nginx', 'Responsive Design'],
@@ -954,7 +954,7 @@ const data = [
         type: "Página Web + Gestor de Reservas + Back Office",
         url: "https://alqueriavillacarmen.com/",
         github: "https://github.com/jaivial/villacarmen.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-18.jpg" },
+        image: VillacarmenImg18,
         slug: "alqueria-villacarmen",
         description: "Creación de página web para promocionar Alqueria Villa Carmen, un restaurante y salón de eventos. Destaca por mostrar los Menús del Día, de Fin de Semana y la carta de vinos, además de permitir reservas online. Incluye un gestor de reservas con funciones como límite diario de reservas, confirmación por correo electrónico y administración de reservas. La reserva online aumenta en un 300% la clientela. Además, las cartas son editables en tiempo real y desde dispositivos móviles, permitiendo cambios en fotos, descripciones y platos.",
         tech: ['PHP', 'HTML', 'Javascript', 'CSS', 'MySQL', 'VPS', 'Nginx', 'Responsive Design'],
@@ -989,7 +989,7 @@ const data = [
         type: "Página Web",
         url: "https://carhubpi.000webhostapp.com/index.php",
         github: "/",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/carhub.webp" },
+        image: Carhub,
         slug: "car-hub",
         description: "Descubre nuestro sitio web dedicado a presentar el software Car Hub, un portal de compra y venta de coches. Se destacan las funcionalidades del software, resaltando sus virtudes y su utilidad para nuestros clientes. Desarrollada con las últimas tecnologías en HTML y PHP, ofrece un diseño responsive que se adapta a cualquier dispositivo. Además, facilitamos la comunicación mediante un formulario de contacto vía email con nuestro equipo de desarrolladores.",
         tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'VPS', 'Nginx', 'Responsive Design'],
@@ -1003,7 +1003,7 @@ const data = [
         type: "Aplicación Web Full-Stack",
         url: "https://todolist.jaimedigitalstudio.com/",
         github: "https://github.com/jaivial/to-do-list",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/todolist/todolist6.jpg" },
+        image: TodoList,
         slug: "todo-list",
         description: "Aplicación completa de gestión de tareas desarrollada con Next.js 15, TypeScript, Tailwind CSS 4 y PostgreSQL. Ofrece autenticación de usuarios, gestión de tareas con un sistema de arrastrar y soltar (drag & drop), integración con calendario, y soporte multilingüe. La aplicación permite crear, editar, eliminar y marcar tareas como completadas, con una visualización clara del estado de las tareas por día en el calendario.",
         tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "NextAuth.js", "next-intl", "VPS", "Nginx", "Responsive Design"],
@@ -1028,7 +1028,7 @@ const data = [
         type: "Tienda Online",
         url: "https://catstore.jaimedigitalstudio.com",
         github: "https://github.com/jaivial/CATSTORE.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/catstore/catstore1.jpg" },
+        image: CatStore,
         slug: "cat-store",
         description: "Aplicación web para una tienda online de gatos desarrollada con PHP, MySQL, HTML, CSS y JavaScript. Incluye sistema de autenticación, persistencia de sesión mediante cookies, catálogo de productos con filtros, carrito de compra, gestión de perfil de usuario, historial de compras, panel de administración y diseño responsive.",
         tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'MySQL', 'VPS', 'Nginx', 'Responsive Design'],
@@ -1062,7 +1062,7 @@ const data = [
         id: 1,
         name: "Centro Neuro Expresión",
         slug: "centro-neuro-expresion",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/centroneuroexpresion/centroneuroexpresion1.jpg" },
+        image: CentroNeuroExpresion,
         description: "Sitio web moderno y accesible para un centro de intervención temprana enfocado en niños desde el nacimiento hasta los seis años. Proporciona información completa sobre servicios especializados en cuatro áreas clave del desarrollo: Intervención Cognitiva, Lingüística, Prenatal y Sensoriomotora.",
         type: "Sitio Web Corporativo",
         tech: ["Astro", "Tailwind CSS", "JavaScript", "Responsive Design", "SEO", "VPS", "Nginx"],
