@@ -53,8 +53,8 @@ const getTechCategory = (tech) => {
 
 <Layout title="Projects | Jaime Villanueva">
   <LanguageProvider client:load>
-    <ProjectsIndex projects={translatedData} allTechnologies={allTechnologies} client:load />
-    <Footer client:load />
+    <ProjectsIndex projects={translatedData} allTechnologies={allTechnologies} client:visible />
+    <Footer client:visible />
   </LanguageProvider>
 </Layout>
 

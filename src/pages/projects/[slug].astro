@@ -29,18 +29,18 @@ const { project } = Astro.props;
     <main class="relative min-h-screen overflow-x-hidden pt-16">
       <!-- Container principal responsive -->
       <div class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <!-- <PageNav title="PROYECTO" previousLink="/projects" client:load /> -->
+        <!-- <PageNav title="PROYECTO" previousLink="/projects" client:visible /> -->
 
         <ProjectHeader project={project} client:load />
 
         <!-- Enlaces solo visibles en pantallas pequeñas y medianas -->
         <div class="mt-8 lg:hidden">
-          <ProjectLinks project={project} client:load />
+          <ProjectLinks project={project} client:visible />
         </div>
 
         <!-- Tecnologías categorizadas con todo el ancho -->
         <div class="mt-8">
-          <ProjectTechCategories project={project} client:load />
+          <ProjectTechCategories project={project} client:visible />
         </div>
 
         <!-- Layout principal responsive -->
@@ -48,20 +48,20 @@ const { project } = Astro.props;
           <div class="grid grid-cols-1 lg:grid-cols-10 gap-6 lg:gap-8">
             <!-- Contenido principal más ancho -->
             <div class="lg:col-span-10 space-y-6">
-              <ProjectFeatures project={project} client:load />
+              <ProjectFeatures project={project} client:visible />
               {project.technicalArchitecture && (
                 <ProjectTechnicalArchitecture
                   architecture={project.technicalArchitecture}
-                  client:load
+                  client:visible
                 />
               )}
-              <ProjectGallery project={project} client:load />
+              <ProjectGallery project={project} client:visible />
             </div>
           </div>
         </section>
       </div>
     </main>
-    <Footer client:load />
+    <Footer client:visible />
   </LanguageProvider>
 </Layout>
 

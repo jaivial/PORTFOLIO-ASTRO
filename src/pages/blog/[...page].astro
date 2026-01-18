@@ -26,7 +26,7 @@ const nextPagination = page.url.next ? "cursor-pointer" : "cursor-not-allowed";
 
 <Layout title="Blog | Jaime Digital Studio">
   <section class="relative w-5/6 mx-auto">
-    <PageNav title="/blog" client:load />
+    <PageNav title="/blog" client:visible />
     <h1 class="sm:mt-24 py-8 text-primary text-center text-4xl font-extrabold">
       The Blog
     </h1>
@@ -146,5 +146,5 @@ const nextPagination = page.url.next ? "cursor-pointer" : "cursor-not-allowed";
       </div>
     </div>
   </section>
-  <Footer client:load />
+  <Footer client:visible />
 </Layout>

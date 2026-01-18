@@ -2,7 +2,7 @@
 # Post-build Brotli compression script
 # Comprime archivos JS, CSS y HTML con Brotli estático
 
-SOURCE_DIR="dist/client"
+SOURCE_DIR="dist"
 LEVEL=11  # Maximum compression
 
 echo "=== Compressing JS files with Brotli ==="

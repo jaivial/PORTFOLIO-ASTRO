@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = 4321;
-const STATIC_DIR = 'dist/client';
+const STATIC_DIR = 'dist';
 
 const mimeTypes = {
   '.js': 'application/javascript',

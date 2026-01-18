@@ -19,11 +19,11 @@ import LanguageProvider from "../components/LanguageProvider";
       <NavBar client:only="react" />
       <Header transition:animate="fade" />
       <Hero />
-      <About client:load />
-      <Project data={getData()} client:load />
+      <About client:visible />
+      <Project data={getData()} client:visible />
       <Timeline client:only="react" />
-      <Contact client:load />
-      <Footer client:load />
+      <Contact client:visible />
+      <Footer client:visible />
       <!-- <Education/> -->
     </main>
   </LanguageProvider>
