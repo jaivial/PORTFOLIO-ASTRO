@@ -1,7 +1,5 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "preact/hooks";
 import { motion, AnimatePresence } from "framer-motion";
-import { Tooltip } from "rsuite";
-import "rsuite/dist/rsuite.min.css";
 import { useTranslations } from "../utils/translations";
 import { getCurrentLanguage } from "../utils/languageManager";
 import { getTranslatedCareerData } from "../utils/careerTranslations";
@@ -43,7 +41,37 @@ const customStyles = `
     background-color: rgba(209, 213, 219, 0.2);
     transform: scale(1.05);
   }
-  
+
+  /* Native tooltip styles */
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip-container .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 50;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+  }
+
+  .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .timeline-connector {
     position: absolute;
     left: -25px;
@@ -248,9 +276,10 @@ export default function TimelineInteractive() {
                   {/* Sección de habilidades */}
                   <div className="skills-container mt-3 flex flex-wrap">
                     {item.skills.map((skill, idx) => (
-                      <Tooltip key={idx} placement="top" content={`${t('timeline.interactive.tooltip_skill')} ${skill}`}>
+                      <span key={idx} className="tooltip-container">
                         <span className="skill-tag">{skill}</span>
-                      </Tooltip>
+                        <span className="tooltip-text">{`${t('timeline.interactive.tooltip_skill')} ${skill}`}</span>
+                      </span>
                     ))}
                   </div>
 

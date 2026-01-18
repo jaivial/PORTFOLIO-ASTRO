@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import react from "@astrojs/react";
+import preact from "@astrojs/preact";
 import markdownConfig from './markdown.config';
 // import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
@@ -27,6 +27,13 @@ export default defineConfig({
   },
   compressHTML: true,
   vite: {
+    resolve: {
+      alias: {
+        react: 'preact/compat',
+        'react-dom': 'preact/compat',
+        'react-dom/test-utils': 'preact/test-utils',
+      }
+    },
     build: {
       // Aggressive code splitting
       rollupOptions: {
@@ -48,7 +55,7 @@ export default defineConfig({
     config: {
       applyBaseStyles: false
     }
-  }), react(), sitemap(), partytown({
+  }), preact(), sitemap(), partytown({
     config: {
       forward: ["dataLayer.push"]
     }

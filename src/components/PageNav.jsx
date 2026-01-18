@@ -1,5 +1,5 @@
 import { isOpen, goBack } from "../utils/nav";
-import { useStore } from "@nanostores/react";
+import { useStore } from "@nanostores/preact";
 export default function PageNav(props) {
   const $isOpen = useStore(isOpen);
 
