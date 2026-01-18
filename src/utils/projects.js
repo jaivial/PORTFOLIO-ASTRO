@@ -1,171 +1,174 @@
-import ras from "../assets/images/ras.webp";
-import joke from "../assets/images/joke.webp";
-import lofi from "../assets/images/lofi.webp";
-import blog from "../assets/images/blog.webp";
-import Carhub from "../assets/images/carhub.webp";
-import AlqueriaVillacarmen from "../assets/images/villacarmendoble.webp";
-import Portfolio from "../assets/images/portfolioweb.webp"
-import GuillermoFernandezNutricion from "../assets/images/guillermofernandeznutricion.webp"
-import GuilleImg1 from "../assets/images/guilleromofernandeznutricion/guille1.jpg"
-import GuilleImg2 from "../assets/images/guilleromofernandeznutricion/guille2.jpg"
-import GuilleImg3 from "../assets/images/guilleromofernandeznutricion/guille3.jpg"
+import { toWebPCached, addCacheBusting } from './images.js';
+
+// Base image URLs - automatically converted to WebP with cache-busting
+const ras = toWebPCached("https://cdn.jaimedigitalstudio.com/ras.webp");
+const joke = toWebPCached("https://cdn.jaimedigitalstudio.com/joke.webp");
+const lofi = toWebPCached("https://cdn.jaimedigitalstudio.com/lofi.webp");
+const blog = toWebPCached("https://cdn.jaimedigitalstudio.com/blog.webp");
+const Carhub = toWebPCached("https://cdn.jaimedigitalstudio.com/carhub.webp");
+const AlqueriaVillacarmen = toWebPCached("https://cdn.jaimedigitalstudio.com/villacarmendoble.webp");
+const Portfolio = toWebPCached("https://cdn.jaimedigitalstudio.com/portfolioweb.webp")
+const GuillermoFernandezNutricion = toWebPCached("https://cdn.jaimedigitalstudio.com/images/guillermofernandeznutricion.webp")
+const GuilleImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/guilleromofernandeznutricion/guille1.jpg")
+const GuilleImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/guilleromofernandeznutricion/guille2.jpg")
+const GuilleImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/guilleromofernandeznutricion/guille3.jpg")
 // import GuilleVideo from "../assets/videos/guillermofernandeznutricion/videoguille.mov" // Commented out - video file missing
 
 // Importaciones para Frases Marcos Alcón
-import FrasesMarcosAlcon from "../assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg";
-import FrasesMarcosAlconImg1 from "../assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg";
-import FrasesMarcosAlconImg2 from "../assets/images/frasesmarcosalcon/frasesmarcosalcon2.jpg";
-import FrasesMarcosAlconImg3 from "../assets/images/frasesmarcosalcon/frasesmarcosalcon3.jpg";
-import FrasesMarcosAlconImg4 from "../assets/images/frasesmarcosalcon/frasesmarcosalcon4.jpg";
-// import FrasesMarcosAlconVideo1 from "../assets/videos/frasesmarcosalcon/frasesmarcosalcon1.mov"; // Commented out - video file missing
+const FrasesMarcosAlcon = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg");
+const FrasesMarcosAlconImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg");
+const FrasesMarcosAlconImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon2.jpg");
+const FrasesMarcosAlconImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon3.jpg");
+const FrasesMarcosAlconImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon4.jpg");
+// import FrasesMarcosAlconVideo1 from "../assets/videos/frasesmarcosalcon/frasesmarcosalcon1.mov" // Commented out - video file missing
 
 // Importaciones para Cat Store
-import CatStore from "../assets/images/catstore/catstore1.jpg";
-import CatStoreImg1 from "../assets/images/catstore/catstore1.jpg";
-import CatStoreImg2 from "../assets/images/catstore/catstore2.jpg";
-import CatStoreImg3 from "../assets/images/catstore/catstore3.jpg";
-import CatStoreImg4 from "../assets/images/catstore/catstore4.jpg";
-import CatStoreImg5 from "../assets/images/catstore/catstore5.jpg";
-import CatStoreImg6 from "../assets/images/catstore/catstore6.jpg";
-import CatStoreImg7 from "../assets/images/catstore/catstore7.jpg";
-import CatStoreImg8 from "../assets/images/catstore/catstore8.jpg";
-import CatStoreImg9 from "../assets/images/catstore/catstore9.jpg";
-import CatStoreImg10 from "../assets/images/catstore/catstore10.jpg";
-import CatStoreImg11 from "../assets/images/catstore/catstore11.jpg";
-import CatStoreImg12 from "../assets/images/catstore/catstore12.jpg";
-import CatStoreImg13 from "../assets/images/catstore/catstore13.jpg";
-import CatStoreImg14 from "../assets/images/catstore/catstore14.jpg";
-// import CatStoreVideo1 from "../assets/videos/catstore/catstore1.mov";
-// import CatStoreVideo2 from "../assets/videos/catstore/catstore2.mov";
-// import CatStoreVideo3 from "../assets/videos/catstore/catstore3.mov";
-// import CatStoreVideo4 from "../assets/videos/catstore/catstore4.mov";
-// import CatStoreVideo5 from "../assets/videos/catstore/catstore5.mov";
+const CatStore = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore1.jpg");
+const CatStoreImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore1.jpg");
+const CatStoreImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore2.jpg");
+const CatStoreImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore3.jpg");
+const CatStoreImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore4.jpg");
+const CatStoreImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore5.jpg");
+const CatStoreImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore6.jpg");
+const CatStoreImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore7.jpg");
+const CatStoreImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore8.jpg");
+const CatStoreImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore9.jpg");
+const CatStoreImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore10.jpg");
+const CatStoreImg11 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore11.jpg");
+const CatStoreImg12 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore12.jpg");
+const CatStoreImg13 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore13.jpg");
+const CatStoreImg14 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore14.jpg");
+// import CatStoreVideo1 from "../assets/videos/catstore/catstore1.mov"
+// import CatStoreVideo2 from "../assets/videos/catstore/catstore2.mov"
+// import CatStoreVideo3 from "../assets/videos/catstore/catstore3.mov"
+// import CatStoreVideo4 from "../assets/videos/catstore/catstore4.mov"
+// import CatStoreVideo5 from "../assets/videos/catstore/catstore5.mov"
 
 // Importaciones para Alqueria Villacarmen
-import VillacarmenImg1 from "../assets/images/villacarmen/villacarmen-1.jpg"
-import VillacarmenImg2 from "../assets/images/villacarmen/villacarmen-2.jpg"
-import VillacarmenImg3 from "../assets/images/villacarmen/villacarmen-3.jpg"
-import VillacarmenImg4 from "../assets/images/villacarmen/villacarmen-4.jpg"
-import VillacarmenImg5 from "../assets/images/villacarmen/villacarmen-5.jpg"
-import VillacarmenImg6 from "../assets/images/villacarmen/villacarmen-6.jpg"
-import VillacarmenImg7 from "../assets/images/villacarmen/villacarmen-7.jpg"
-import VillacarmenImg8 from "../assets/images/villacarmen/villacarmen-8.jpg"
-import VillacarmenImg9 from "../assets/images/villacarmen/villacarmen-9.jpg"
-import VillacarmenImg10 from "../assets/images/villacarmen/villacarmen-10.jpg"
-import VillacarmenImg11 from "../assets/images/villacarmen/villacarmen-11.jpg"
-import VillacarmenImg12 from "../assets/images/villacarmen/villacarmen-12.jpg"
-import VillacarmenImg13 from "../assets/images/villacarmen/villacarmen-13.jpg"
-import VillacarmenImg14 from "../assets/images/villacarmen/villacarmen-14.jpg"
-import VillacarmenImg15 from "../assets/images/villacarmen/villacarmen-15.jpg"
-import VillacarmenImg16 from "../assets/images/villacarmen/villacarmen-16.jpg"
-import VillacarmenImg17 from "../assets/images/villacarmen/villacarmen-17.jpg"
-import VillacarmenImg18 from "../assets/images/villacarmen/villacarmen-18.jpg"
+const VillacarmenImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-1.jpg")
+const VillacarmenImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-2.jpg")
+const VillacarmenImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-3.jpg")
+const VillacarmenImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-4.jpg")
+const VillacarmenImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-5.jpg")
+const VillacarmenImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-6.jpg")
+const VillacarmenImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-7.jpg")
+const VillacarmenImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-8.jpg")
+const VillacarmenImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-9.jpg")
+const VillacarmenImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-10.jpg")
+const VillacarmenImg11 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-11.jpg")
+const VillacarmenImg12 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-12.jpg")
+const VillacarmenImg13 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-13.jpg")
+const VillacarmenImg14 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-14.jpg")
+const VillacarmenImg15 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-15.jpg")
+const VillacarmenImg16 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-16.jpg")
+const VillacarmenImg17 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-17.jpg")
+const VillacarmenImg18 = addCacheBusting("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-18.jpg")
 // import VillacarmenVideo from "../assets/videos/villacarmen/villacarmen-video.mov"
 
 // Importaciones para Tour To Valencia
-import TourToValencia from "../assets/images/tourtovalencia/tourtovalencia11.jpg";
-import TourToValenciaImg1 from "../assets/images/tourtovalencia/tourtovalencia1.jpg";
-import TourToValenciaImg2 from "../assets/images/tourtovalencia/tourtovalencia2.jpg";
-import TourToValenciaImg3 from "../assets/images/tourtovalencia/tourtovalencia3.jpg";
-import TourToValenciaImg4 from "../assets/images/tourtovalencia/tourtovalencia4.jpg";
-import TourToValenciaImg5 from "../assets/images/tourtovalencia/tourtovalencia5.jpg";
-import TourToValenciaImg6 from "../assets/images/tourtovalencia/tourtovalencia6.jpg";
-import TourToValenciaImg7 from "../assets/images/tourtovalencia/tourtovalencia7.jpg";
-import TourToValenciaImg8 from "../assets/images/tourtovalencia/tourtovalencia8.jpg";
-import TourToValenciaImg9 from "../assets/images/tourtovalencia/tourtovalencia9.jpg";
-import TourToValenciaImg10 from "../assets/images/tourtovalencia/tourtovalencia10.jpg";
-import TourToValenciaImg11 from "../assets/images/tourtovalencia/tourtovalencia11.jpg";
-import TourToValenciaImg12 from "../assets/images/tourtovalencia/tourtovalencia12.jpg";
-import TourToValenciaImg13 from "../assets/images/tourtovalencia/tourtovalencia13.jpg";
-import TourToValenciaImg14 from "../assets/images/tourtovalencia/tourtovalencia14.jpg";
-import TourToValenciaImg15 from "../assets/images/tourtovalencia/tourtovalencia15.jpg";
-// import TourToValenciaVideo1 from "../assets/videos/tourtovalencia/tourtovalencia1.mov";
-// import TourToValenciaVideo2 from "../assets/videos/tourtovalencia/tourtovalencia2.mov";
-// import TourToValenciaVideo3 from "../assets/videos/tourtovalencia/tourtovalencia3.mov";
-// import TourToValenciaVideo4 from "../assets/videos/tourtovalencia/tourtovalencia4.mov";
-// import TourToValenciaVideo5 from "../assets/videos/tourtovalencia/tourtovalencia5.mov";
-// import TourToValenciaVideo6 from "../assets/videos/tourtovalencia/tourtovalencia6.mov";
-// import TourToValenciaVideo7 from "../assets/videos/tourtovalencia/tourtovalencia7.mov";
-// import TourToValenciaVideo8 from "../assets/videos/tourtovalencia/tourtovalencia8.mov";
+const TourToValencia = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia11.jpg");
+const TourToValenciaImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia1.jpg");
+const TourToValenciaImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia2.jpg");
+const TourToValenciaImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia3.jpg");
+const TourToValenciaImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia4.jpg");
+const TourToValenciaImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia5.jpg");
+const TourToValenciaImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia6.jpg");
+const TourToValenciaImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia7.jpg");
+const TourToValenciaImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia8.jpg");
+const TourToValenciaImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia9.jpg");
+const TourToValenciaImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia10.jpg");
+const TourToValenciaImg11 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia11.jpg");
+const TourToValenciaImg12 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia12.jpg");
+const TourToValenciaImg13 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia13.jpg");
+const TourToValenciaImg14 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia14.jpg");
+const TourToValenciaImg15 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia15.jpg");
+// import TourToValenciaVideo1 from "../assets/videos/tourtovalencia/tourtovalencia1.mov"
+// import TourToValenciaVideo2 from "../assets/videos/tourtovalencia/tourtovalencia2.mov"
+// import TourToValenciaVideo3 from "../assets/videos/tourtovalencia/tourtovalencia3.mov"
+// import TourToValenciaVideo4 from "../assets/videos/tourtovalencia/tourtovalencia4.mov"
+// import TourToValenciaVideo5 from "../assets/videos/tourtovalencia/tourtovalencia5.mov"
+// import TourToValenciaVideo6 from "../assets/videos/tourtovalencia/tourtovalencia6.mov"
+// import TourToValenciaVideo7 from "../assets/videos/tourtovalencia/tourtovalencia7.mov"
+// import TourToValenciaVideo8 from "../assets/videos/tourtovalencia/tourtovalencia8.mov"
 
 // Importaciones para Centro Neuro Expresion
-import CentroNeuroExpresion from "../assets/images/centroneuroexpresion/centroneuroexpresion1.jpg";
-import CentroNeuroExpresionImg1 from "../assets/images/centroneuroexpresion/centroneuroexpresion1.jpg";
-import CentroNeuroExpresionImg2 from "../assets/images/centroneuroexpresion/centroneuroexpresion2.jpg";
-import CentroNeuroExpresionImg3 from "../assets/images/centroneuroexpresion/centroneuroexpresion3.jpg";
-import CentroNeuroExpresionImg4 from "../assets/images/centroneuroexpresion/centroneuroexpresion4.jpg";
-import CentroNeuroExpresionImg5 from "../assets/images/centroneuroexpresion/centroneuroexpresion5.jpg";
-import CentroNeuroExpresionImg6 from "../assets/images/centroneuroexpresion/centroneuroexpresion6.jpg";
-import CentroNeuroExpresionImg7 from "../assets/images/centroneuroexpresion/centroneuroexpresion7.jpg";
-import CentroNeuroExpresionImg8 from "../assets/images/centroneuroexpresion/centroneuroexpresion8.jpg";
-import CentroNeuroExpresionImg9 from "../assets/images/centroneuroexpresion/centroneuroexpresion9.jpg";
-import CentroNeuroExpresionImg10 from "../assets/images/centroneuroexpresion/centroneuroexpresion10.jpg";
-import CentroNeuroExpresionImg11 from "../assets/images/centroneuroexpresion/centroneuroexpresion11.jpg";
-import CentroNeuroExpresionImg12 from "../assets/images/centroneuroexpresion/centroneuroexpresion12.jpg";
-import CentroNeuroExpresionImg13 from "../assets/images/centroneuroexpresion/centroneuroexpresion13.jpg";
-import CentroNeuroExpresionImg14 from "../assets/images/centroneuroexpresion/centroneuroexpresion14.jpg";
-import CentroNeuroExpresionImg15 from "../assets/images/centroneuroexpresion/centroneuroexpresion15.jpg";
-// import CentroNeuroExpresionVideo1 from "../assets/videos/centroneuroexpresion/centroneuroexpresion1.mov";
-// import CentroNeuroExpresionVideo2 from "../assets/videos/centroneuroexpresion/centroneuroexpresion2.mov";
-// import CentroNeuroExpresionVideo3 from "../assets/videos/centroneuroexpresion/centroneuroexpresion3.mov";
-// import CentroNeuroExpresionVideo4 from "../assets/videos/centroneuroexpresion/centroneuroexpresion4.mov";
+const CentroNeuroExpresion = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion1.jpg");
+const CentroNeuroExpresionImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion1.jpg");
+const CentroNeuroExpresionImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion2.jpg");
+const CentroNeuroExpresionImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion3.jpg");
+const CentroNeuroExpresionImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion4.jpg");
+const CentroNeuroExpresionImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion5.jpg");
+const CentroNeuroExpresionImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion6.jpg");
+const CentroNeuroExpresionImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion7.jpg");
+const CentroNeuroExpresionImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion8.jpg");
+const CentroNeuroExpresionImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion9.jpg");
+const CentroNeuroExpresionImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion10.jpg");
+const CentroNeuroExpresionImg11 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion11.jpg");
+const CentroNeuroExpresionImg12 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion12.jpg");
+const CentroNeuroExpresionImg13 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion13.jpg");
+const CentroNeuroExpresionImg14 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion14.jpg");
+const CentroNeuroExpresionImg15 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion15.jpg");
+// import CentroNeuroExpresionVideo1 from "../assets/videos/centroneuroexpresion/centroneuroexpresion1.mov"
+// import CentroNeuroExpresionVideo2 from "../assets/videos/centroneuroexpresion/centroneuroexpresion2.mov"
+// import CentroNeuroExpresionVideo3 from "../assets/videos/centroneuroexpresion/centroneuroexpresion3.mov"
+// import CentroNeuroExpresionVideo4 from "../assets/videos/centroneuroexpresion/centroneuroexpresion4.mov"
 
 // Importaciones para Hero Budget (usando imagen temporal - reemplazar con imágenes reales)
-import HeroBudget from "../assets/images/herobudget/herobudgetimg1.webp";
-import HeroBudgetIcon from "../assets/images/herobudget/herobudgeticon.png";
-import HeroBudgetImg1 from "../assets/images/herobudget/herobudgetimg1.webp";
-import herobudgetimg1ligh from "../assets/images/herobudget/herobudgetimg1ligh.png";
-import HeroBudgetImg2 from "../assets/images/herobudget/herobudgetimg2.webp";
-import HeroBudgetImg3 from "../assets/images/herobudget/herobudgetimg3.webp";
-import HeroBudgetImg4 from "../assets/images/herobudget/herobudgetimg4.webp";
-import HeroBudgetImg5 from "../assets/images/herobudget/herobudgetimg5.webp";
-import HeroBudgetImg6 from "../assets/images/herobudget/herobudgetimg6.webp";
-import HeroBudgetImg7 from "../assets/images/herobudget/herobudgetimg7.webp";
-import HeroBudgetImg8 from "../assets/images/herobudget/herobudgetimg8.webp";
-import HeroBudgetImg9 from "../assets/images/herobudget/herobudgetimg9.webp";
-import HeroBudgetImg10 from "../assets/images/herobudget/herobudgetimg10.webp";
-import deltaSyncFlow from "../assets/images/herobudget/delta-sync-flow.svg";
-import offlineFirstInfographic from "../assets/images/herobudget/offline-first-infographic.svg";
-import backendMicroservicesDiagram from "../assets/images/herobudget/backend-microservices-diagram.svg";
-import herobudgetbills from "../assets/images/herobudget/herobudgetbills.png";
-import herobudgetdark2 from "../assets/images/herobudget/herobudgetdark2.png";
-import herobudgetlight2 from "../assets/images/herobudget/herobudgetlight2.png";
-import herobudgetdark3 from "../assets/images/herobudget/herobudgetdark3.png";
-import herobudgetdark4 from "../assets/images/herobudget/herobudgetdark4.png";
-import herobudgetgoals from "../assets/images/herobudget/herobudgetgoals.png";
-import herobudgetlight3 from "../assets/images/herobudget/herobudgetlight3.png";
-import herobudgetlight4 from "../assets/images/herobudget/herobudgetlight4.png";
+const HeroBudget = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1.webp");
+const HeroBudgetIcon = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgeticon.png");
+const HeroBudgetImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1.webp");
+const herobudgetimg1ligh = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1ligh.png");
+const HeroBudgetImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg2.webp");
+const HeroBudgetImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg3.webp");
+const HeroBudgetImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg4.webp");
+const HeroBudgetImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg5.webp");
+const HeroBudgetImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg6.webp");
+const HeroBudgetImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg7.webp");
+const HeroBudgetImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg8.webp");
+const HeroBudgetImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg9.webp");
+const HeroBudgetImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg10.webp");
+const deltaSyncFlow = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/delta-sync-flow.svg");
+const offlineFirstInfographic = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/offline-first-infographic.svg");
+const backendMicroservicesDiagram = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/backend-microservices-diagram.svg");
+const herobudgetbills = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetbills.png");
+const herobudgetdark2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark2.png");
+const herobudgetlight2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight2.png");
+const herobudgetdark3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark3.png");
+const herobudgetdark4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark4.png");
+const herobudgetgoals = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetgoals.png");
+const herobudgetlight3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight3.png");
+const herobudgetlight4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight4.png");
 
 // Importaciones para MenuStudio AI
-import MenuStudioIcon from "../assets/images/menustudioai/icon.png";
-import MenuStudioF01 from "../assets/images/menustudioai/feature-01.png";
-import MenuStudioF02 from "../assets/images/menustudioai/feature-02.png";
-import MenuStudioF03 from "../assets/images/menustudioai/feature-03.png";
-import MenuStudioF04 from "../assets/images/menustudioai/feature-04.png";
-import MenuStudioF05 from "../assets/images/menustudioai/feature-05.png";
-import MenuStudioF06 from "../assets/images/menustudioai/feature-06.png";
-import MenuStudioF07 from "../assets/images/menustudioai/feature-07.png";
-import MenuStudioF08 from "../assets/images/menustudioai/feature-08.png";
-import MenuStudioF09 from "../assets/images/menustudioai/feature-09.png";
-import MenuStudioF10 from "../assets/images/menustudioai/feature-10.png";
-import TechDiagram01 from "../assets/images/menustudioai/diagrams/01-rest-api-architecture.svg";
-import TechDiagram02 from "../assets/images/menustudioai/diagrams/02-websocket-realtime.svg";
-import TechDiagram03 from "../assets/images/menustudioai/diagrams/03-session-authentication.svg";
-import TechDiagram06 from "../assets/images/menustudioai/diagrams/06-nsfw-ban-system.svg";
-import TechDiagram07 from "../assets/images/menustudioai/diagrams/07-stripe-integration.svg";
-import TechDiagram10 from "../assets/images/menustudioai/diagrams/10-admin-panel.svg";
+const MenuStudioIcon = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/icon.png");
+const MenuStudioF01 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-01.png");
+const MenuStudioF02 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-02.png");
+const MenuStudioF03 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-03.png");
+const MenuStudioF04 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-04.png");
+const MenuStudioF05 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-05.png");
+const MenuStudioF06 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-06.png");
+const MenuStudioF07 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-07.png");
+const MenuStudioF08 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-08.png");
+const MenuStudioF09 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-09.png");
+const MenuStudioF10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-10.png");
+const TechDiagram01 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/01-rest-api-architecture.svg");
+const TechDiagram02 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/02-websocket-realtime.svg");
+const TechDiagram03 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/03-session-authentication.svg");
+const TechDiagram06 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/06-nsfw-ban-system.svg");
+const TechDiagram07 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/07-stripe-integration.svg");
+const TechDiagram10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/10-admin-panel.svg");
 
 // MenuStudio AI Features (10 user-facing features from LinkedIn posts)
 const menuStudioFeatures = [
   {
     title: "AI Image Generation in <30 Seconds",
     description: "Generate professional food photography from text descriptions instantly. No photographer needed, no expensive equipment, just describe what you want and MenuStudio AI creates it.",
-    image: { src: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-09-home-hero.png" },
+    image: { src: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-home-hero.png" },
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-generate-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-generate-desktop-light.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-generate-iphone-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-generate-iphone-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-light.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-iphone-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-iphone-light.webm" }
     ]
   },
   {
@@ -173,10 +176,10 @@ const menuStudioFeatures = [
     description: "Remove unwanted objects, enhance lighting, adjust colors, and perfect compositions with AI assistance. Fix 'almost perfect' photos without expensive editing software or design skills.",
     image: MenuStudioF02,
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-edit-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-edit-desktop-light.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-edit-iphone-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-edit-iphone-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-desktop-light.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-iphone-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-iphone-light.webm" }
     ]
   },
   {
@@ -184,10 +187,10 @@ const menuStudioFeatures = [
     description: "Transform static images into engaging cinematic videos with realistic camera movements. 10x higher engagement compared to static images, generated in under 2 minutes.",
     image: MenuStudioF03,
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-video-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-video-desktop-light.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-video-iphone-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-video-iphone-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-desktop-light.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-iphone-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-iphone-light.webm" }
     ]
   },
   {
@@ -195,10 +198,10 @@ const menuStudioFeatures = [
     description: "All your content in one place, searchable, categorized, and accessible from any device. Never lose track of your visual assets or use the same photo repeatedly.",
     image: MenuStudioF04,
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-gallery-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-gallery-desktop-light.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-gallery-iphone-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-gallery-iphone-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-desktop-light.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-iphone-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-iphone-light.webm" }
     ]
   },
   {
@@ -206,10 +209,10 @@ const menuStudioFeatures = [
     description: "Complete interface translation including prompts, menus, and results. Reach international customers with culturally adapted content in their native language.",
     image: MenuStudioF05,
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/profile-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/profile-desktop-light.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/profile-iphone-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/profile-iphone-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/profile-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/profile-desktop-light.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/profile-iphone-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/profile-iphone-light.webm" }
     ]
   },
   {
@@ -217,8 +220,8 @@ const menuStudioFeatures = [
     description: "Share via link, embed code, or direct download. Platform-optimized formats for social media, websites, and print. Collaborate with team members seamlessly.",
     image: MenuStudioF06,
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/home-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/home-desktop-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-light.webm" }
     ]
   },
   {
@@ -226,10 +229,10 @@ const menuStudioFeatures = [
     description: "No monthly subscriptions, no commitment. Credits start at $10 and never expire. Transparent pricing: 2 credits per image, 14 per edit, 80 per video.",
     image: MenuStudioF07,
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/credits-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/credits-desktop-light.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/credits-iphone-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/credits-iphone-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/credits-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/credits-desktop-light.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/credits-iphone-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/credits-iphone-light.webm" }
     ]
   },
   {
@@ -237,8 +240,8 @@ const menuStudioFeatures = [
     description: "Watch your images generate in real-time with WebSocket updates. See progress across all your devices simultaneously. Know exactly when your content is ready.",
     image: MenuStudioF08,
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-generate-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/dashboard-generate-desktop-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-light.webm" }
     ]
   },
   {
@@ -246,12 +249,12 @@ const menuStudioFeatures = [
     description: "Glassmorphism aesthetics, spring-based animations, light/dark mode support. Powerful features that feel simple to use - maximum 3 clicks to any action.",
     image: MenuStudioF09,
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/home-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/home-desktop-light.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/login-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/login-desktop-light.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/register-desktop-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/register-desktop-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-light.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/login-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/login-desktop-light.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/register-desktop-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/register-desktop-light.webm" }
     ]
   },
   {
@@ -259,8 +262,8 @@ const menuStudioFeatures = [
     description: "NSFW content detection with three-strike ban system. High-resolution outputs optimized for print and digital. Trained specifically on gastronomy imagery.",
     image: MenuStudioF10,
     videos: [
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/home-iphone-dark.webm" },
-      { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/videos/home-iphone-light.webm" }
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-iphone-dark.webm" },
+      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-iphone-light.webm" }
     ]
   }
 ];
@@ -365,7 +368,7 @@ const alqueriaFeatures = [
         key: "reservation_system",
         title: "Gestor de Reservas Online",
         description: "Sistema avanzado de reservas con calendario que muestra días cerrados, abiertos y completos. El número de personas es condicional según el límite y número de reservas para cada día. Proceso en 4 pasos: selección de fecha y personas, opción de reservar arroz de la base de datos, datos personales con envío de confirmación por email y WhatsApp, y confirmación final con selección de tronas/carros y aceptación de condiciones.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-1.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-2.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-3.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-4.jpg" }]
+        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-1.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-2.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-3.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-4.jpg" }]
     },
     {
         title: "Carta Dinámica de Platos",
@@ -405,12 +408,12 @@ const alqueriaFeatures = [
     {
         title: "Gestión de Menús y Platos",
         description: "Panel de administración para añadir, activar/desactivar y editar platos en la base de datos según categorías (entrantes, principales, arroces, postres), con selección personalizada de alérgenos para cada plato.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-12.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-13.jpg" }]
+        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-12.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-13.jpg" }]
     },
     {
         title: "Administración de Carta de Vinos",
         description: "Sistema para gestionar la bodega con opciones para añadir, editar, activar o desactivar vinos de la carta, permitiendo actualizar la oferta sin necesidad de eliminar registros.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-14.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-15.jpg" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-16.jpg" }]
+        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-14.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-15.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-16.jpg" }]
     }
 ];
 
@@ -474,12 +477,12 @@ const guillermoFernandezFeatures = [
 ];
 
 // Importacion de imagenes y videos para TodoList
-import TodoList from "../assets/images/todolist/todolist6.jpg"
-import TodoListImg1 from "../assets/images/todolist/todolist1.jpg"
-import TodoListImg2 from "../assets/images/todolist/todolist2.jpg"
-import TodoListImg3 from "../assets/images/todolist/todolist3.jpg"
-import TodoListImg4 from "../assets/images/todolist/todolist4.jpg"
-import TodoListImg5 from "../assets/images/todolist/todolist5.jpg"
+const TodoList = addCacheBusting("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist6.jpg")
+const TodoListImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist1.jpg")
+const TodoListImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist2.jpg")
+const TodoListImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist3.jpg")
+const TodoListImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist4.jpg")
+const TodoListImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist5.jpg")
 // import TodoListVideo1 from "../assets/videos/todolist/todolist1.mov"
 // import TodoListVideo2 from "../assets/videos/todolist/todolist2.mov"
 // import TodoListVideo3 from "../assets/videos/todolist/todolist3.mov"
@@ -637,9 +640,9 @@ const catStoreFeatures = [
 const frasesMarcosAlconFeatures = [
     {
         title: "Lector de libro interactivo",
-        description: "Se muestra la página de frases de Marcos Alcón. Un proyecto hecho para mi abuelo por su 95 cumpleaños recopilando las frases que ha ido escribiendo. Se ha creado una app web para crear un lector de libro con animación de pase de páginas. El sitio es responsive y con una UI y UX excepcional.",
+        description: "Se muestra la página de frases de Marcos Alcón. Un proyecto hecho para mi abuelo por su 95 cumpleaños recopilando las frases que ha ir escribiendo. Se ha creado una app web para crear un lector de libro con animación de pase de páginas. El sitio es responsive y con una UI y UX excepcional.",
         // video: FrasesMarcosAlconVideo1, // Commented out - video file missing
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/frasesmarcosalcon/frasesmarcosalcon1.jpg" },
+        image: { src: FrasesMarcosAlcon },
         autoplay: true,
         muted: true,
         loop: true
@@ -721,7 +724,7 @@ const heroBudgetFeatures = [
     {
         title: "Gestión y Categorización de Gastos",
         description: "Rastrea todos los gastos con categorías personalizadas, métodos de pago y notas. Sistema inteligente de categorización con iconos emoji para identificación visual. Historial de gastos con capacidades completas de filtrado y búsqueda. Impacto automático en balances de efectivo/banco y resúmenes mensuales de gastos.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetimg2.webp" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetimg7.webp" }]
+        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg2.webp" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg7.webp" }]
     },
     {
         title: "Gestión de Facturas Recurrentes",
@@ -741,7 +744,7 @@ const heroBudgetFeatures = [
     {
         title: "Modo Oscuro y Modo Claro",
         description: "Soporte completo para temas oscuro y claro con transiciones suaves. La preferencia de tema persiste a través de sesiones de la aplicación. Esquemas de colores optimizados para legibilidad en todas las condiciones de iluminación. Aplicación automática del tema a todos los componentes de UI y hojas inferiores.",
-        carousel: [{ src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetimg3.webp" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetimg1ligh.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetdark2.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetlight2.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetdark3.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetlight3.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetdark4.png" }, { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgetlight4.png" }]
+        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg3.webp" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1ligh.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark2.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight2.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark3.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight3.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark4.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight4.png" }]
     },
     {
         title: "Microservicios Backend en Go",
@@ -756,34 +759,34 @@ const data = [
         type: "Aplicación Móvil - Gestión de Finanzas Personales",
         url: "https://apps.apple.com/es/app/hero-budget/id6746946502?l=en-GB",
         github: "https://github.com/jaivial/HerobudgetReact",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/herobudget/herobudgeticon.png" },
+        image: { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgeticon.png" },
         slug: "hero-budget",
         description: "Hero Budget es una aplicación móvil completa de gestión de finanzas personales desarrollada con React Native y TypeScript. La aplicación proporciona a los usuarios herramientas potentes para rastrear ingresos, gastos, facturas recurrentes y metas de ahorro con sincronización en tiempo real entre múltiples dispositivos. Presenta una interfaz moderna e intuitiva con soporte para temas claro y oscuro, localización multiidioma (más de 20 idiomas), y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad.",
         tech: ["React Native", "TypeScript", "Go", "SQLite", "React Navigation", "Jotai", "i18next", "OAuth 2.0", "Jest", "RESTful API", "VPS", "Nginx", "Responsive Design"],
         date: "2024-11-15",
         images: [
-            { url: HeroBudgetImg1.src, alt: 'Pantalla principal con dashboard de Hero Budget' },
-            { url: HeroBudgetImg2.src, alt: 'Gestión de ingresos y gastos' },
-            { url: HeroBudgetImg3.src, alt: 'Sistema de facturas recurrentes' },
-            { url: HeroBudgetImg4.src, alt: 'Metas de ahorro y progreso' },
-            { url: HeroBudgetImg5.src, alt: 'Panel de administración de categorías' },
-            { url: HeroBudgetImg6.src, alt: 'Gestión de cuentas y balances' },
-            { url: HeroBudgetImg7.src, alt: 'Historial de transacciones' },
-            { url: HeroBudgetImg8.src, alt: 'Análisis de categorías principales' },
-            { url: HeroBudgetImg9.src, alt: 'Perfil de usuario' },
-            { url: HeroBudgetImg10.src, alt: 'Modo oscuro y claro' },
-            { url: deltaSyncFlow.src, alt: 'Sincronización en tiempo real' },
-            { url: offlineFirstInfographic.src, alt: 'Arquitectura offline-first' },
-            { url: backendMicroservicesDiagram.src, alt: 'Arquitectura de microservicios en backend' },
-            { url: herobudgetbills.src, alt: 'Gestión de facturas recurrentes' },
-            { url: herobudgetgoals.src, alt: 'Gestión de metas de ahorro' },
-            { url: herobudgetimg1ligh.src, alt: 'Dashboard modo claro' },
-            { url: herobudgetdark2.src, alt: 'Dashboard modo oscuro' },
-            { url: herobudgetlight2.src, alt: 'Dashboard modo claro' },
-            { url: herobudgetdark3.src, alt: 'Dashboard modo oscuro' },
-            { url: herobudgetlight3.src, alt: 'Dashboard modo claro' },
-            { url: herobudgetdark4.src, alt: 'Dashboard modo oscuro' },
-            { url: herobudgetlight4.src, alt: 'Dashboard modo claro' },
+            { url: HeroBudgetImg1, alt: 'Pantalla principal con dashboard de Hero Budget' },
+            { url: HeroBudgetImg2, alt: 'Gestión de ingresos y gastos' },
+            { url: HeroBudgetImg3, alt: 'Sistema de facturas recurrentes' },
+            { url: HeroBudgetImg4, alt: 'Metas de ahorro y progreso' },
+            { url: HeroBudgetImg5, alt: 'Panel de administración de categorías' },
+            { url: HeroBudgetImg6, alt: 'Gestión de cuentas y balances' },
+            { url: HeroBudgetImg7, alt: 'Historial de transacciones' },
+            { url: HeroBudgetImg8, alt: 'Análisis de categorías principales' },
+            { url: HeroBudgetImg9, alt: 'Perfil de usuario' },
+            { url: HeroBudgetImg10, alt: 'Modo oscuro y claro' },
+            { url: deltaSyncFlow, alt: 'Sincronización en tiempo real' },
+            { url: offlineFirstInfographic, alt: 'Arquitectura offline-first' },
+            { url: backendMicroservicesDiagram, alt: 'Arquitectura de microservicios en backend' },
+            { url: herobudgetbills, alt: 'Gestión de facturas recurrentes' },
+            { url: herobudgetgoals, alt: 'Gestión de metas de ahorro' },
+            { url: herobudgetimg1ligh, alt: 'Dashboard modo claro' },
+            { url: herobudgetdark2, alt: 'Dashboard modo oscuro' },
+            { url: herobudgetlight2, alt: 'Dashboard modo claro' },
+            { url: herobudgetdark3, alt: 'Dashboard modo oscuro' },
+            { url: herobudgetlight3, alt: 'Dashboard modo claro' },
+            { url: herobudgetdark4, alt: 'Dashboard modo oscuro' },
+            { url: herobudgetlight4, alt: 'Dashboard modo claro' },
         ],
         videos: [],
         features: heroBudgetFeatures
@@ -793,7 +796,7 @@ const data = [
         type: "Full-Stack SaaS Platform - AI Image Generation",
         url: "https://menustudioai.com",
         github: "https://github.com/jaivial/menustudioai",
-        image: { src: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-09-home-hero.png" },
+        image: { src: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-home-hero.png" },
         slug: "menustudio-ai",
         date: "2025-12-29",
         description: "MenuStudio AI is a comprehensive SaaS platform that leverages artificial intelligence to generate professional food photography for restaurants and hospitality businesses. Built with a modern tech stack including React + Vite frontend and Elysia.js backend on Bun runtime, it offers text-to-image generation, AI-powered editing, video creation, and multi-language support for 40+ languages. The platform includes a flexible credit-based pricing system with Stripe integration, real-time WebSocket updates for live processing feedback, content moderation with NSFW detection, and a comprehensive admin panel for analytics and user management.",
@@ -806,62 +809,62 @@ const data = [
         ],
         images: [
             // Main hero image
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-09-home-hero.png", alt: "MenuStudio AI Home Hero" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-home-hero.png", alt: "MenuStudio AI Home Hero" },
 
             // Instagram post images - Light theme
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-01-text-to-image.png", alt: "Text to Image Generation" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-02-ai-editing.png", alt: "AI-Powered Editing" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-03-generate-video.png", alt: "Video Generation" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-04-gallery.png", alt: "Gallery Management" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-05-multi-language.png", alt: "Multi-Language Support" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-06-share-modal.png", alt: "Share & Collaborate" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-07-credits-pricing.png", alt: "Credit Pricing System" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-08-realtime-processing.png", alt: "Real-Time Processing" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-10-professional-results.png", alt: "Professional Results" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-text-to-image.png", alt: "Text to Image Generation" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-ai-editing.png", alt: "AI-Powered Editing" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-generate-video.png", alt: "Video Generation" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-gallery.png", alt: "Gallery Management" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-multi-language.png", alt: "Multi-Language Support" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-share-modal.png", alt: "Share & Collaborate" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-credits-pricing.png", alt: "Credit Pricing System" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-realtime-processing.png", alt: "Real-Time Processing" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-professional-results.png", alt: "Professional Results" },
 
             // Instagram post images - Dark theme
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-01-text-to-image-dark.png", alt: "Text to Image Generation (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-02-edit-image-dark.png", alt: "AI Image Editing (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-03-generate-video-dark.png", alt: "Video Generation (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-04-gallery-dark.png", alt: "Gallery Management (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-05-multi-language-dark.png", alt: "Multi-Language Support (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-06-share-modal-dark.png", alt: "Share & Collaborate (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-07-credits-pricing-dark.png", alt: "Credit Pricing System (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-08-realtime-processing-dark.png", alt: "Real-Time Processing (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-09-home-hero-dark.png", alt: "Home Hero (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/instagram-post-10-professional-results-dark.png", alt: "Professional Results (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-text-to-image-dark.png", alt: "Text to Image Generation (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-edit-image-dark.png", alt: "AI Image Editing (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-generate-video-dark.png", alt: "Video Generation (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-gallery-dark.png", alt: "Gallery Management (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-multi-language-dark.png", alt: "Multi-Language Support (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-share-modal-dark.png", alt: "Share & Collaborate (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-credits-pricing-dark.png", alt: "Credit Pricing System (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-realtime-processing-dark.png", alt: "Real-Time Processing (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-home-hero-dark.png", alt: "Home Hero (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-professional-results-dark.png", alt: "Professional Results (Dark)" },
 
             // iPhone mobile screenshots - Dark theme
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-01-text-to-image-dark.png", alt: "Mobile: Text to Image (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-02-edit-image-dark.png", alt: "Mobile: Edit Image (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-03-generate-video-dark.png", alt: "Mobile: Generate Video (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-04-gallery-dark.png", alt: "Mobile: Gallery (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-05-share-modal-dark.png", alt: "Mobile: Share Modal (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-06-credits-pricing-dark.png", alt: "Mobile: Credits Pricing (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-07-home-hero-dark.png", alt: "Mobile: Home Hero (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-08-language-selector-dark.png", alt: "Mobile: Language Selector (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-09-features-bento-dark.png", alt: "Mobile: Features Bento (Dark)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-10-features-more-dark.png", alt: "Mobile: More Features (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-text-to-image-dark.png", alt: "Mobile: Text to Image (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-edit-image-dark.png", alt: "Mobile: Edit Image (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-generate-video-dark.png", alt: "Mobile: Generate Video (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-gallery-dark.png", alt: "Mobile: Gallery (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-share-modal-dark.png", alt: "Mobile: Share Modal (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-credits-pricing-dark.png", alt: "Mobile: Credits Pricing (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-home-hero-dark.png", alt: "Mobile: Home Hero (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-language-selector-dark.png", alt: "Mobile: Language Selector (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-features-bento-dark.png", alt: "Mobile: Features Bento (Dark)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-features-more-dark.png", alt: "Mobile: More Features (Dark)" },
 
             // iPhone mobile screenshots - Light theme
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-01-text-to-image-light.png", alt: "Mobile: Text to Image (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-02-edit-image-light.png", alt: "Mobile: Edit Image (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-03-generate-video-light.png", alt: "Mobile: Generate Video (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-04-gallery-light.png", alt: "Mobile: Gallery (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-05-share-modal-light.png", alt: "Mobile: Share Modal (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-06-credits-pricing-light.png", alt: "Mobile: Credits Pricing (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-07-home-hero-light.png", alt: "Mobile: Home Hero (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-08-language-selector-light.png", alt: "Mobile: Language Selector (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-09-features-bento-light.png", alt: "Mobile: Features Bento (Light)" },
-            { url: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/iphone/images/iphone-10-features-more-light.png", alt: "Mobile: More Features (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-text-to-image-light.png", alt: "Mobile: Text to Image (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-edit-image-light.png", alt: "Mobile: Edit Image (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-generate-video-light.png", alt: "Mobile: Generate Video (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-gallery-light.png", alt: "Mobile: Gallery (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-share-modal-light.png", alt: "Mobile: Share Modal (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-credits-pricing-light.png", alt: "Mobile: Credits Pricing (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-home-hero-light.png", alt: "Mobile: Home Hero (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-language-selector-light.png", alt: "Mobile: Language Selector (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-features-bento-light.png", alt: "Mobile: Features Bento (Light)" },
+            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-features-more-light.png", alt: "Mobile: More Features (Light)" },
 
             // Technical diagrams
-            { url: TechDiagram01.src, alt: "REST API Architecture" },
-            { url: TechDiagram02.src, alt: "WebSocket Real-Time" },
-            { url: TechDiagram03.src, alt: "Session Authentication" },
-            { url: TechDiagram06.src, alt: "NSFW Ban System" },
-            { url: TechDiagram07.src, alt: "Stripe Integration" },
-            { url: TechDiagram10.src, alt: "Admin Panel" }
+            { url: TechDiagram01, alt: "REST API Architecture" },
+            { url: TechDiagram02, alt: "WebSocket Real-Time" },
+            { url: TechDiagram03, alt: "Session Authentication" },
+            { url: TechDiagram06, alt: "NSFW Ban System" },
+            { url: TechDiagram07, alt: "Stripe Integration" },
+            { url: TechDiagram10, alt: "Admin Panel" }
         ],
         videos: [],
         features: menuStudioFeatures,
@@ -872,19 +875,19 @@ const data = [
         type: "Aplicación Web Interactiva",
         url: "https://frasesmarcosalcon.com",
         github: "https://github.com/jaivial/frasesmarcosalcon.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/frasesmarcosalcon/frasesmarcosalcon1.jpg" },
+        image: { src: FrasesMarcosAlcon },
         slug: "frases-marcos-alcon",
         description: "MarcosGoWeb es una elegante aplicación web construida con Go que muestra una colección de frases y poemas de Marcos Alcón. La aplicación presenta el contenido en un hermoso formato de libro interactivo con animaciones de paso de página, creando una experiencia de lectura inmersiva. Desarrollada como un regalo especial para el 95 cumpleaños de mi abuelo.",
         tech: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "VPS", "Nginx", "Responsive Design"],
         date: "2024-07-01",
         images: [
-            { url: FrasesMarcosAlconImg1.src, alt: 'Página principal de Frases Marcos Alcón' },
-            { url: FrasesMarcosAlconImg2.src, alt: 'Vista del libro interactivo' },
-            { url: FrasesMarcosAlconImg3.src, alt: 'Detalle de frases y poemas' },
-            { url: FrasesMarcosAlconImg4.src, alt: 'Vista responsiva en dispositivo móvil' }
+            { url: FrasesMarcosAlconImg1, alt: 'Página principal de Frases Marcos Alcón' },
+            { url: FrasesMarcosAlconImg2, alt: 'Vista del libro interactivo' },
+            { url: FrasesMarcosAlconImg3, alt: 'Detalle de frases y poemas' },
+            { url: FrasesMarcosAlconImg4, alt: 'Vista responsiva en dispositivo móvil' }
         ],
         videos: [
-            // { url: FrasesMarcosAlconVideo1, poster: FrasesMarcosAlconImg1.src } // Commented out - video file missing
+            // { url: FrasesMarcosAlconVideo1, poster: FrasesMarcosAlconImg1 } // Commented out - video file missing
         ],
         features: frasesMarcosAlconFeatures
     },
@@ -893,37 +896,37 @@ const data = [
         type: "Página Web + Sistema de Reservas + Back Office",
         url: "https://www.tourtovalencia.com",
         github: "https://github.com/jaivial/tourtovalencia.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/tourtovalencia/tourtovalencia11.jpg" },
+        image: { src: TourToValencia },
         slug: "tour-to-valencia",
         description: "Tour To Valencia es una aplicación web moderna y multilingüe (inglés/español) construida con Remix y React que permite a los usuarios descubrir, explorar y reservar tours y experiencias en Valencia, España. La plataforma ofrece una experiencia de reserva fluida con procesamiento de pagos integrado a través de PayPal y Stripe, confirmaciones por correo electrónico y un completo panel de administración para gestionar reservas y contenido de tours.",
         tech: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Nodemailer", "Shadcn UI", "Framer Motion", "i18n", "PM2", "VPS", "Nginx", "OpenAI", "Responsive Design"],
         date: "2024-06-01",
         images: [
-            { url: TourToValenciaImg1.src, alt: 'Página principal de Tour To Valencia' },
-            { url: TourToValenciaImg2.src, alt: 'Detalle de tour' },
-            { url: TourToValenciaImg3.src, alt: 'Sistema de reservas' },
-            { url: TourToValenciaImg4.src, alt: 'Página SEO optimizada' },
-            { url: TourToValenciaImg5.src, alt: 'Panel de administración' },
-            { url: TourToValenciaImg6.src, alt: 'Gestión de cancelaciones' },
-            { url: TourToValenciaImg7.src, alt: 'Editor de tours' },
-            { url: TourToValenciaImg8.src, alt: 'Sistema de edición con IA' },
-            { url: TourToValenciaImg9.src, alt: 'Vista adicional 1' },
-            { url: TourToValenciaImg10.src, alt: 'Vista adicional 2' },
-            { url: TourToValenciaImg11.src, alt: 'Vista adicional 3' },
-            { url: TourToValenciaImg12.src, alt: 'Vista adicional 4' },
-            { url: TourToValenciaImg13.src, alt: 'Vista adicional 5' },
-            { url: TourToValenciaImg14.src, alt: 'Vista adicional 6' },
-            { url: TourToValenciaImg15.src, alt: 'Vista adicional 7' }
+            { url: TourToValenciaImg1, alt: 'Página principal de Tour To Valencia' },
+            { url: TourToValenciaImg2, alt: 'Detalle de tour' },
+            { url: TourToValenciaImg3, alt: 'Sistema de reservas' },
+            { url: TourToValenciaImg4, alt: 'Página SEO optimizada' },
+            { url: TourToValenciaImg5, alt: 'Panel de administración' },
+            { url: TourToValenciaImg6, alt: 'Gestión de cancelaciones' },
+            { url: TourToValenciaImg7, alt: 'Editor de tours' },
+            { url: TourToValenciaImg8, alt: 'Sistema de edición con IA' },
+            { url: TourToValenciaImg9, alt: 'Vista adicional 1' },
+            { url: TourToValenciaImg10, alt: 'Vista adicional 2' },
+            { url: TourToValenciaImg11, alt: 'Vista adicional 3' },
+            { url: TourToValenciaImg12, alt: 'Vista adicional 4' },
+            { url: TourToValenciaImg13, alt: 'Vista adicional 5' },
+            { url: TourToValenciaImg14, alt: 'Vista adicional 6' },
+            { url: TourToValenciaImg15, alt: 'Vista adicional 7' }
         ],
         videos: [
-            // { url: TourToValenciaVideo1, poster: TourToValenciaImg1.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo2, poster: TourToValenciaImg2.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo3, poster: TourToValenciaImg3.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo4, poster: TourToValenciaImg4.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo5, poster: TourToValenciaImg5.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo6, poster: TourToValenciaImg6.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo7, poster: TourToValenciaImg7.src }, // Commented out - video file missing
-            // { url: TourToValenciaVideo8, poster: TourToValenciaImg8.src } // Commented out - video file missing
+            // { url: TourToValenciaVideo1, poster: TourToValenciaImg1 }, // Commented out - video file missing
+            // { url: TourToValenciaVideo2, poster: TourToValenciaImg2 }, // Commented out - video file missing
+            // { url: TourToValenciaVideo3, poster: TourToValenciaImg3 }, // Commented out - video file missing
+            // { url: TourToValenciaVideo4, poster: TourToValenciaImg4 }, // Commented out - video file missing
+            // { url: TourToValenciaVideo5, poster: TourToValenciaImg5 }, // Commented out - video file missing
+            // { url: TourToValenciaVideo6, poster: TourToValenciaImg6 }, // Commented out - video file missing
+            // { url: TourToValenciaVideo7, poster: TourToValenciaImg7 }, // Commented out - video file missing
+            // { url: TourToValenciaVideo8, poster: TourToValenciaImg8 } // Commented out - video file missing
         ],
         features: tourToValenciaFeatures
     },
@@ -932,19 +935,19 @@ const data = [
         type: "Página Web + Email",
         url: "https://guillermofernandeznutricion.es/",
         github: "https://github.com/jaivial/astrowebsite.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/guillermofernandeznutricion.webp" },
+        image: { src: "https://cdn.jaimedigitalstudio.com/images/guillermofernandeznutricion.webp" },
         slug: "guillermo-fernandez-nutricion",
         description: "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes. Permite que los clientes realicen una primera consulta por un formulario de contacto. Diseño responsivo adaptable a tamaños de escritorio, tablet y móviles. Desarrollado con Astro para el front end y PHP para el backend del formulario de contacto. Las fotos y el contenido creativo fue elaborado por mi.",
         tech: ['Javascript', 'CSS', 'Astro', 'Express js', 'VPS', 'Nginx', 'Responsive Design'],
         date: "2023-08-15",
         // Galería de imágenes del proyecto
         images: [
-            { url: GuilleImg1.src, alt: 'Servicios Nutricionales Especializados' },
-            { url: GuilleImg2.src, alt: 'Solicitud de Consulta Online' },
-            { url: GuilleImg3.src, alt: 'Presentación Profesional del Nutricionista' },
+            { url: GuilleImg1, alt: 'Servicios Nutricionales Especializados' },
+            { url: GuilleImg2, alt: 'Solicitud de Consulta Online' },
+            { url: GuilleImg3, alt: 'Presentación Profesional del Nutricionista' },
         ],
         videos: [
-            // { url: GuilleVideo, poster: GuilleImg1.src } // Commented out - video file missing
+            // { url: GuilleVideo, poster: GuilleImg1 } // Commented out - video file missing
         ],
         // Funcionalidades del proyecto con imágenes o videos explicativos
         features: guillermoFernandezFeatures
@@ -954,33 +957,33 @@ const data = [
         type: "Página Web + Gestor de Reservas + Back Office",
         url: "https://alqueriavillacarmen.com/",
         github: "https://github.com/jaivial/villacarmen.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/villacarmen/villacarmen-18.jpg" },
+        image: { src: VillacarmenImg18 },
         slug: "alqueria-villacarmen",
         description: "Creación de página web para promocionar Alqueria Villa Carmen, un restaurante y salón de eventos. Destaca por mostrar los Menús del Día, de Fin de Semana y la carta de vinos, además de permitir reservas online. Incluye un gestor de reservas con funciones como límite diario de reservas, confirmación por correo electrónico y administración de reservas. La reserva online aumenta en un 300% la clientela. Además, las cartas son editables en tiempo real y desde dispositivos móviles, permitiendo cambios en fotos, descripciones y platos.",
         tech: ['PHP', 'HTML', 'Javascript', 'CSS', 'MySQL', 'VPS', 'Nginx', 'Responsive Design'],
         date: "2022-11-10",
         images: [
-            { url: VillacarmenImg1.src, alt: 'Gestor de Reservas - Selección Fecha y Personas' },
-            { url: VillacarmenImg2.src, alt: 'Gestor de Reservas - Selección de Arroz' },
-            { url: VillacarmenImg3.src, alt: 'Gestor de Reservas - Datos Personales' },
-            { url: VillacarmenImg4.src, alt: 'Gestor de Reservas - Confirmación' },
-            { url: VillacarmenImg5.src, alt: 'Carta Dinámica de Platos' },
-            { url: VillacarmenImg6.src, alt: 'Carta de Vinos Dinámica' },
-            { url: VillacarmenImg7.src, alt: 'Administración - Calendario de Reservas' },
-            { url: VillacarmenImg8.src, alt: 'Administración - Tabla de Gestión de Reservas' },
-            { url: VillacarmenImg9.src, alt: 'Administración - Control de Aforo' },
-            { url: VillacarmenImg10.src, alt: 'Administración - Gestión de Horarios' },
-            { url: VillacarmenImg11.src, alt: 'Administración - Reservas Manuales' },
-            { url: VillacarmenImg12.src, alt: 'Administración - Gestión de Platos' },
-            { url: VillacarmenImg13.src, alt: 'Administración - Edición de Platos y Alérgenos' },
-            { url: VillacarmenImg14.src, alt: 'Administración - Gestión de Vinos' },
-            { url: VillacarmenImg15.src, alt: 'Administración - Lista de Vinos' },
-            { url: VillacarmenImg16.src, alt: 'Administración - Edición de Vinos' },
-            { url: VillacarmenImg17.src, alt: 'Vista General del Restaurante' },
-            { url: VillacarmenImg18.src, alt: 'Imagen Principal del Proyecto' }
+            { url: VillacarmenImg1, alt: 'Gestor de Reservas - Selección Fecha y Personas' },
+            { url: VillacarmenImg2, alt: 'Gestor de Reservas - Selección de Arroz' },
+            { url: VillacarmenImg3, alt: 'Gestor de Reservas - Datos Personales' },
+            { url: VillacarmenImg4, alt: 'Gestor de Reservas - Confirmación' },
+            { url: VillacarmenImg5, alt: 'Carta Dinámica de Platos' },
+            { url: VillacarmenImg6, alt: 'Carta de Vinos Dinámica' },
+            { url: VillacarmenImg7, alt: 'Administración - Calendario de Reservas' },
+            { url: VillacarmenImg8, alt: 'Administración - Tabla de Gestión de Reservas' },
+            { url: VillacarmenImg9, alt: 'Administración - Control de Aforo' },
+            { url: VillacarmenImg10, alt: 'Administración - Gestión de Horarios' },
+            { url: VillacarmenImg11, alt: 'Administración - Reservas Manuales' },
+            { url: VillacarmenImg12, alt: 'Administración - Gestión de Platos' },
+            { url: VillacarmenImg13, alt: 'Administración - Edición de Platos y Alérgenos' },
+            { url: VillacarmenImg14, alt: 'Administración - Gestión de Vinos' },
+            { url: VillacarmenImg15, alt: 'Administración - Lista de Vinos' },
+            { url: VillacarmenImg16, alt: 'Administración - Edición de Vinos' },
+            { url: VillacarmenImg17, alt: 'Vista General del Restaurante' },
+            { url: VillacarmenImg18, alt: 'Imagen Principal del Proyecto' }
         ],
         videos: [
-            // { url: VillacarmenVideo, poster: VillacarmenImg1.src } // Commented out - video file missing
+            // { url: VillacarmenVideo, poster: VillacarmenImg1 } // Commented out - video file missing
         ],
         features: alqueriaFeatures
     },
@@ -989,7 +992,7 @@ const data = [
         type: "Página Web",
         url: "https://carhubpi.000webhostapp.com/index.php",
         github: "/",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/carhub.webp" },
+        image: { src: "https://cdn.jaimedigitalstudio.com/carhub.webp" },
         slug: "car-hub",
         description: "Descubre nuestro sitio web dedicado a presentar el software Car Hub, un portal de compra y venta de coches. Se destacan las funcionalidades del software, resaltando sus virtudes y su utilidad para nuestros clientes. Desarrollada con las últimas tecnologías en HTML y PHP, ofrece un diseño responsive que se adapta a cualquier dispositivo. Además, facilitamos la comunicación mediante un formulario de contacto vía email con nuestro equipo de desarrolladores.",
         tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'VPS', 'Nginx', 'Responsive Design'],
@@ -1003,23 +1006,23 @@ const data = [
         type: "Aplicación Web Full-Stack",
         url: "https://todolist.jaimedigitalstudio.com/",
         github: "https://github.com/jaivial/to-do-list",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/todolist/todolist6.jpg" },
+        image: { src: TodoList },
         slug: "todo-list",
         description: "Aplicación completa de gestión de tareas desarrollada con Next.js 15, TypeScript, Tailwind CSS 4 y PostgreSQL. Ofrece autenticación de usuarios, gestión de tareas con un sistema de arrastrar y soltar (drag & drop), integración con calendario, y soporte multilingüe. La aplicación permite crear, editar, eliminar y marcar tareas como completadas, con una visualización clara del estado de las tareas por día en el calendario.",
         tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "NextAuth.js", "next-intl", "VPS", "Nginx", "Responsive Design"],
         date: "2023-10-15",
         images: [
-            { url: TodoListImg1.src, alt: 'Pantalla de inicio de sesión' },
-            { url: TodoListImg2.src, alt: 'Dashboard con calendario' },
-            { url: TodoListImg3.src, alt: 'Gestión de tareas' },
-            { url: TodoListImg4.src, alt: 'Tareas completadas' },
-            { url: TodoListImg5.src, alt: 'Vista móvil responsiva' }
+            { url: TodoListImg1, alt: 'Pantalla de inicio de sesión' },
+            { url: TodoListImg2, alt: 'Dashboard con calendario' },
+            { url: TodoListImg3, alt: 'Gestión de tareas' },
+            { url: TodoListImg4, alt: 'Tareas completadas' },
+            { url: TodoListImg5, alt: 'Vista móvil responsiva' }
         ],
         videos: [
-            // { url: TodoListVideo1, poster: TodoListImg1.src }, // Commented out - video file missing
-            // { url: TodoListVideo2, poster: TodoListImg2.src }, // Commented out - video file missing
-            // { url: TodoListVideo3, poster: TodoListImg3.src }, // Commented out - video file missing
-            // { url: TodoListVideo4, poster: TodoListImg4.src } // Commented out - video file missing
+            // { url: TodoListVideo1, poster: TodoListImg1 }, // Commented out - video file missing
+            // { url: TodoListVideo2, poster: TodoListImg2 }, // Commented out - video file missing
+            // { url: TodoListVideo3, poster: TodoListImg3 }, // Commented out - video file missing
+            // { url: TodoListVideo4, poster: TodoListImg4 } // Commented out - video file missing
         ],
         features: todoListFeatures
     },
@@ -1028,33 +1031,33 @@ const data = [
         type: "Tienda Online",
         url: "https://catstore.jaimedigitalstudio.com",
         github: "https://github.com/jaivial/CATSTORE.git",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/catstore/catstore1.jpg" },
+        image: { src: CatStore },
         slug: "cat-store",
         description: "Aplicación web para una tienda online de gatos desarrollada con PHP, MySQL, HTML, CSS y JavaScript. Incluye sistema de autenticación, persistencia de sesión mediante cookies, catálogo de productos con filtros, carrito de compra, gestión de perfil de usuario, historial de compras, panel de administración y diseño responsive.",
         tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'MySQL', 'VPS', 'Nginx', 'Responsive Design'],
         date: "2021-05-15",
         images: [
-            { url: CatStoreImg1.src, alt: 'Página principal de Cat Store' },
-            { url: CatStoreImg2.src, alt: 'Sistema de filtros' },
-            { url: CatStoreImg3.src, alt: 'Perfil de usuario' },
-            { url: CatStoreImg4.src, alt: 'Panel de administración' },
-            { url: CatStoreImg5.src, alt: 'Proceso de compra' },
-            { url: CatStoreImg6.src, alt: 'Vista adicional 1' },
-            { url: CatStoreImg7.src, alt: 'Vista adicional 2' },
-            { url: CatStoreImg8.src, alt: 'Vista adicional 3' },
-            { url: CatStoreImg9.src, alt: 'Vista adicional 4' },
-            { url: CatStoreImg10.src, alt: 'Vista adicional 5' },
-            { url: CatStoreImg11.src, alt: 'Vista adicional 6' },
-            { url: CatStoreImg12.src, alt: 'Vista adicional 7' },
-            { url: CatStoreImg13.src, alt: 'Vista adicional 8' },
-            { url: CatStoreImg14.src, alt: 'Vista adicional 9' }
+            { url: CatStoreImg1, alt: 'Página principal de Cat Store' },
+            { url: CatStoreImg2, alt: 'Sistema de filtros' },
+            { url: CatStoreImg3, alt: 'Perfil de usuario' },
+            { url: CatStoreImg4, alt: 'Panel de administración' },
+            { url: CatStoreImg5, alt: 'Proceso de compra' },
+            { url: CatStoreImg6, alt: 'Vista adicional 1' },
+            { url: CatStoreImg7, alt: 'Vista adicional 2' },
+            { url: CatStoreImg8, alt: 'Vista adicional 3' },
+            { url: CatStoreImg9, alt: 'Vista adicional 4' },
+            { url: CatStoreImg10, alt: 'Vista adicional 5' },
+            { url: CatStoreImg11, alt: 'Vista adicional 6' },
+            { url: CatStoreImg12, alt: 'Vista adicional 7' },
+            { url: CatStoreImg13, alt: 'Vista adicional 8' },
+            { url: CatStoreImg14, alt: 'Vista adicional 9' }
         ],
         videos: [
-            // { url: CatStoreVideo1, poster: CatStoreImg1.src }, // Commented out - video file missing
-            // { url: CatStoreVideo2, poster: CatStoreImg2.src }, // Commented out - video file missing
-            // { url: CatStoreVideo3, poster: CatStoreImg3.src }, // Commented out - video file missing
-            // { url: CatStoreVideo4, poster: CatStoreImg4.src }, // Commented out - video file missing
-            // { url: CatStoreVideo5, poster: CatStoreImg5.src } // Commented out - video file missing
+            // { url: CatStoreVideo1, poster: CatStoreImg1 }, // Commented out - video file missing
+            // { url: CatStoreVideo2, poster: CatStoreImg2 }, // Commented out - video file missing
+            // { url: CatStoreVideo3, poster: CatStoreImg3 }, // Commented out - video file missing
+            // { url: CatStoreVideo4, poster: CatStoreImg4 }, // Commented out - video file missing
+            // { url: CatStoreVideo5, poster: CatStoreImg5 } // Commented out - video file missing
         ],
         features: catStoreFeatures
     },
@@ -1062,7 +1065,7 @@ const data = [
         id: 1,
         name: "Centro Neuro Expresión",
         slug: "centro-neuro-expresion",
-        image: { src: "https://pub-3f3df663d2474027a18d8724429156ba.r2.dev/jaimedigitalstudio/centroneuroexpresion/centroneuroexpresion1.jpg" },
+        image: { src: CentroNeuroExpresion },
         description: "Sitio web moderno y accesible para un centro de intervención temprana enfocado en niños desde el nacimiento hasta los seis años. Proporciona información completa sobre servicios especializados en cuatro áreas clave del desarrollo: Intervención Cognitiva, Lingüística, Prenatal y Sensoriomotora.",
         type: "Sitio Web Corporativo",
         tech: ["Astro", "Tailwind CSS", "JavaScript", "Responsive Design", "SEO", "VPS", "Nginx"],
@@ -1071,27 +1074,27 @@ const data = [
         features: centroNeuroExpresionFeatures,
         date: "2024-05-01",
         images: [
-            { url: CentroNeuroExpresionImg1.src, alt: 'Landing Page' },
-            { url: CentroNeuroExpresionImg2.src, alt: 'Sobre Nosotros' },
-            { url: CentroNeuroExpresionImg3.src, alt: 'Página de Contacto' },
-            { url: CentroNeuroExpresionImg4.src, alt: 'Intervención Cognitiva' },
-            { url: CentroNeuroExpresionImg5.src, alt: 'Servicios Especializados' },
-            { url: CentroNeuroExpresionImg6.src, alt: 'Equipo Profesional' },
-            { url: CentroNeuroExpresionImg7.src, alt: 'Instalaciones' },
-            { url: CentroNeuroExpresionImg8.src, alt: 'Testimonios' },
-            { url: CentroNeuroExpresionImg9.src, alt: 'Intervención Lingüística' },
-            { url: CentroNeuroExpresionImg10.src, alt: 'Intervención Prenatal' },
-            { url: CentroNeuroExpresionImg11.src, alt: 'Intervención Sensoriomotora' },
-            { url: CentroNeuroExpresionImg12.src, alt: 'Enfoque Terapéutico' },
-            { url: CentroNeuroExpresionImg13.src, alt: 'Metodología' },
-            { url: CentroNeuroExpresionImg14.src, alt: 'Recursos Educativos' },
-            { url: CentroNeuroExpresionImg15.src, alt: 'Vista General' }
+            { url: CentroNeuroExpresionImg1, alt: 'Landing Page' },
+            { url: CentroNeuroExpresionImg2, alt: 'Sobre Nosotros' },
+            { url: CentroNeuroExpresionImg3, alt: 'Página de Contacto' },
+            { url: CentroNeuroExpresionImg4, alt: 'Intervención Cognitiva' },
+            { url: CentroNeuroExpresionImg5, alt: 'Servicios Especializados' },
+            { url: CentroNeuroExpresionImg6, alt: 'Equipo Profesional' },
+            { url: CentroNeuroExpresionImg7, alt: 'Instalaciones' },
+            { url: CentroNeuroExpresionImg8, alt: 'Testimonios' },
+            { url: CentroNeuroExpresionImg9, alt: 'Intervención Lingüística' },
+            { url: CentroNeuroExpresionImg10, alt: 'Intervención Prenatal' },
+            { url: CentroNeuroExpresionImg11, alt: 'Intervención Sensoriomotora' },
+            { url: CentroNeuroExpresionImg12, alt: 'Enfoque Terapéutico' },
+            { url: CentroNeuroExpresionImg13, alt: 'Metodología' },
+            { url: CentroNeuroExpresionImg14, alt: 'Recursos Educativos' },
+            { url: CentroNeuroExpresionImg15, alt: 'Vista General' }
         ],
         videos: [
-            // { url: CentroNeuroExpresionVideo1, poster: CentroNeuroExpresionImg1.src }, // Commented out - video file missing
-            // { url: CentroNeuroExpresionVideo2, poster: CentroNeuroExpresionImg2.src }, // Commented out - video file missing
-            // { url: CentroNeuroExpresionVideo3, poster: CentroNeuroExpresionImg3.src }, // Commented out - video file missing
-            // { url: CentroNeuroExpresionVideo4, poster: CentroNeuroExpresionImg4.src } // Commented out - video file missing
+            // { url: CentroNeuroExpresionVideo1, poster: CentroNeuroExpresionImg1 }, // Commented out - video file missing
+            // { url: CentroNeuroExpresionVideo2, poster: CentroNeuroExpresionImg2 }, // Commented out - video file missing
+            // { url: CentroNeuroExpresionVideo3, poster: CentroNeuroExpresionImg3 }, // Commented out - video file missing
+            // { url: CentroNeuroExpresionVideo4, poster: CentroNeuroExpresionImg4 } // Commented out - video file missing
         ]
     }
 ]

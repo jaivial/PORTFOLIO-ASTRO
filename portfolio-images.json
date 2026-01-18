@@ -1,0 +1,4240 @@
+{
+  "version": "20260118_120000",
+  "cache_busting": true,
+  "description": "Portfolio media assets with verified CDN URLs from Bunny CDN storage",
+  "last_updated": "2026-01-18",
+  "cdn_base_url": "https://cdn.jaimedigitalstudio.com",
+  "total_images": 538,
+  "total_videos": 32,
+  "total_icons": 33,
+  "images": [
+    {
+      "id": "image-background",
+      "name": "background.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/background.webp"
+    },
+    {
+      "id": "image-catstore8",
+      "name": "catstore8.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore8.jpg"
+    },
+    {
+      "id": "image-catstore6",
+      "name": "catstore6.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore6.jpg"
+    },
+    {
+      "id": "image-frasesmarcosalcon3",
+      "name": "frasesmarcosalcon3.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon3.jpg"
+    },
+    {
+      "id": "image-catstore2",
+      "name": "catstore2.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore2.jpg"
+    },
+    {
+      "id": "image-catstore11",
+      "name": "catstore11.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore11.jpg"
+    },
+    {
+      "id": "image-catstore13",
+      "name": "catstore13.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore13.jpg"
+    },
+    {
+      "id": "image-guille2",
+      "name": "guille2.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/guilleromofernandeznutricion/guille2.jpg"
+    },
+    {
+      "id": "image-frasesmarcosalcon4",
+      "name": "frasesmarcosalcon4.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon4.jpg"
+    },
+    {
+      "id": "image-catstore5",
+      "name": "catstore5.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore5.jpg"
+    },
+    {
+      "id": "icon-backend-microservices-diagram",
+      "name": "backend-microservices-diagram.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/backend-microservices-diagram.svg"
+    },
+    {
+      "id": "image-herobudgetimg2",
+      "name": "herobudgetimg2.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg2.webp"
+    },
+    {
+      "id": "image-herobudgetbills",
+      "name": "herobudgetbills.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetbills.png"
+    },
+    {
+      "id": "image-catstore10",
+      "name": "catstore10.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore10.jpg"
+    },
+    {
+      "id": "image-catstore3",
+      "name": "catstore3.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore3.jpg"
+    },
+    {
+      "id": "image-catstore7",
+      "name": "catstore7.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore7.jpg"
+    },
+    {
+      "id": "image-herobudgetimg4",
+      "name": "herobudgetimg4.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg4.webp"
+    },
+    {
+      "id": "image-herobudgeticon",
+      "name": "herobudgeticon.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgeticon.png"
+    },
+    {
+      "id": "image-catstore12",
+      "name": "catstore12.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore12.jpg"
+    },
+    {
+      "id": "image-catstore1",
+      "name": "catstore1.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore1.jpg"
+    },
+    {
+      "id": "image-frasesmarcosalcon2",
+      "name": "frasesmarcosalcon2.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon2.jpg"
+    },
+    {
+      "id": "image-guillermofernandeznutricion",
+      "name": "guillermofernandeznutricion.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/guillermofernandeznutricion.png"
+    },
+    {
+      "id": "image-herobudgetimg10",
+      "name": "herobudgetimg10.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg10.webp"
+    },
+    {
+      "id": "image-herobudgetdark2",
+      "name": "herobudgetdark2.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark2.png"
+    },
+    {
+      "id": "image-herobudgetimg8",
+      "name": "herobudgetimg8.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg8.webp"
+    },
+    {
+      "id": "image-herobudgetimg6",
+      "name": "herobudgetimg6.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg6.webp"
+    },
+    {
+      "id": "image-frasesmarcosalcon1",
+      "name": "frasesmarcosalcon1.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg"
+    },
+    {
+      "id": "icon-Go-Logo_Black",
+      "name": "Go-Logo_Black.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/Go-Logo_Black.svg"
+    },
+    {
+      "id": "icon-delta-sync-flow",
+      "name": "delta-sync-flow.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/delta-sync-flow.svg"
+    },
+    {
+      "id": "image-herobudgetimg7",
+      "name": "herobudgetimg7.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg7.webp"
+    },
+    {
+      "id": "image-herobudgetimg9",
+      "name": "herobudgetimg9.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg9.webp"
+    },
+    {
+      "id": "image-herobudgetdark4",
+      "name": "herobudgetdark4.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark4.png"
+    },
+    {
+      "id": "image-herobudgetimg1",
+      "name": "herobudgetimg1.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1.webp"
+    },
+    {
+      "id": "image-guille3",
+      "name": "guille3.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/guilleromofernandeznutricion/guille3.jpg"
+    },
+    {
+      "id": "image-guille1",
+      "name": "guille1.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/guilleromofernandeznutricion/guille1.jpg"
+    },
+    {
+      "id": "image-herobudgetdark3",
+      "name": "herobudgetdark3.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark3.png"
+    },
+    {
+      "id": "image-catstore14",
+      "name": "catstore14.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore14.jpg"
+    },
+    {
+      "id": "image-herobudgetlight3",
+      "name": "herobudgetlight3.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight3.png"
+    },
+    {
+      "id": "image-herobudgetimg3",
+      "name": "herobudgetimg3.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg3.webp"
+    },
+    {
+      "id": "image-herobudgetimg1ligh",
+      "name": "herobudgetimg1ligh.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1ligh.png"
+    },
+    {
+      "id": "image-herobudgetlight4",
+      "name": "herobudgetlight4.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight4.png"
+    },
+    {
+      "id": "icon-logo-vercel-svgrepo-com",
+      "name": "logo-vercel-svgrepo-com.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/logo-vercel-svgrepo-com.svg"
+    },
+    {
+      "id": "image-catstore4",
+      "name": "catstore4.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore4.jpg"
+    },
+    {
+      "id": "image-catstore9",
+      "name": "catstore9.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore9.jpg"
+    },
+    {
+      "id": "icon-01-rest-api-architecture",
+      "name": "01-rest-api-architecture.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/01-rest-api-architecture.svg"
+    },
+    {
+      "id": "image-herobudgetlight2",
+      "name": "herobudgetlight2.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight2.png"
+    },
+    {
+      "id": "icon-logo-vercel",
+      "name": "logo-vercel.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/logo-vercel.svg"
+    },
+    {
+      "id": "icon-offline-first-infographic",
+      "name": "offline-first-infographic.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/offline-first-infographic.svg"
+    },
+    {
+      "id": "image-herobudgetgoals",
+      "name": "herobudgetgoals.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetgoals.png"
+    },
+    {
+      "id": "image-herobudgetimg5",
+      "name": "herobudgetimg5.webp",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg5.webp"
+    },
+    {
+      "id": "icon-02-websocket-realtime",
+      "name": "02-websocket-realtime.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/02-websocket-realtime.svg"
+    },
+    {
+      "id": "icon-07-stripe-integration",
+      "name": "07-stripe-integration.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/07-stripe-integration.svg"
+    },
+    {
+      "id": "icon-03-session-authentication",
+      "name": "03-session-authentication.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/03-session-authentication.svg"
+    },
+    {
+      "id": "icon-06-nsfw-ban-system",
+      "name": "06-nsfw-ban-system.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/06-nsfw-ban-system.svg"
+    },
+    {
+      "id": "icon-postgresql-svgrepo-com",
+      "name": "postgresql-svgrepo-com.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/postgresql-svgrepo-com.svg"
+    },
+    {
+      "id": "icon-postman-svgrepo-com",
+      "name": "postman-svgrepo-com.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/postman-svgrepo-com.svg"
+    },
+    {
+      "id": "image-feature-05",
+      "name": "feature-05.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-05.png"
+    },
+    {
+      "id": "image-feature-02",
+      "name": "feature-02.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-02.png"
+    },
+    {
+      "id": "image-feature-06",
+      "name": "feature-06.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-06.png"
+    },
+    {
+      "id": "image-feature-09",
+      "name": "feature-09.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-09.png"
+    },
+    {
+      "id": "icon-mongodb-icon-1",
+      "name": "mongodb-icon-1.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/mongodb-icon-1.svg"
+    },
+    {
+      "id": "image-feature-08",
+      "name": "feature-08.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-08.png"
+    },
+    {
+      "id": "image-todolist2",
+      "name": "todolist2.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist2.jpg"
+    },
+    {
+      "id": "icon-10-admin-panel",
+      "name": "10-admin-panel.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/10-admin-panel.svg"
+    },
+    {
+      "id": "image-feature-04",
+      "name": "feature-04.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-04.png"
+    },
+    {
+      "id": "image-feature-01",
+      "name": "feature-01.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-01.png"
+    },
+    {
+      "id": "image-todolist3",
+      "name": "todolist3.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist3.jpg"
+    },
+    {
+      "id": "image-feature-03",
+      "name": "feature-03.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-03.png"
+    },
+    {
+      "id": "image-icon",
+      "name": "icon.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/icon.png"
+    },
+    {
+      "id": "image-feature-10",
+      "name": "feature-10.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-10.png"
+    },
+    {
+      "id": "image-tourtovalencia12",
+      "name": "tourtovalencia12.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia12.jpg"
+    },
+    {
+      "id": "icon-netlify-original",
+      "name": "netlify-original.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/netlify-original.svg"
+    },
+    {
+      "id": "image-profilephoto",
+      "name": "profilephoto.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/profilephoto.png"
+    },
+    {
+      "id": "image-todolist1",
+      "name": "todolist1.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist1.jpg"
+    },
+    {
+      "id": "image-todolist6",
+      "name": "todolist6.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist6.jpg"
+    },
+    {
+      "id": "image-tourtovalencia9",
+      "name": "tourtovalencia9.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia9.jpg"
+    },
+    {
+      "id": "image-tourtovalencia10",
+      "name": "tourtovalencia10.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia10.jpg"
+    },
+    {
+      "id": "image-tourtovalencia2",
+      "name": "tourtovalencia2.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia2.jpg"
+    },
+    {
+      "id": "image-tourtovalencia6",
+      "name": "tourtovalencia6.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia6.jpg"
+    },
+    {
+      "id": "icon-Vercel_favicon",
+      "name": "Vercel_favicon.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/Vercel_favicon.svg"
+    },
+    {
+      "id": "image-tourtovalencia8",
+      "name": "tourtovalencia8.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia8.jpg"
+    },
+    {
+      "id": "image-tourtovalencia15",
+      "name": "tourtovalencia15.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia15.jpg"
+    },
+    {
+      "id": "image-tourtovalencia11",
+      "name": "tourtovalencia11.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia11.jpg"
+    },
+    {
+      "id": "icon-remix-letter-glowing",
+      "name": "remix-letter-glowing.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/remix-letter-glowing.svg"
+    },
+    {
+      "id": "image-tourtovalencia7",
+      "name": "tourtovalencia7.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia7.jpg"
+    },
+    {
+      "id": "image-villacarmen-10",
+      "name": "villacarmen-10.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-10.jpg"
+    },
+    {
+      "id": "image-tourtovalencia4",
+      "name": "tourtovalencia4.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia4.jpg"
+    },
+    {
+      "id": "image-todolist4",
+      "name": "todolist4.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist4.jpg"
+    },
+    {
+      "id": "image-todolist5",
+      "name": "todolist5.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist5.jpg"
+    },
+    {
+      "id": "image-villacarmen-11",
+      "name": "villacarmen-11.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-11.jpg"
+    },
+    {
+      "id": "image-villacarmen-12",
+      "name": "villacarmen-12.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-12.jpg"
+    },
+    {
+      "id": "image-villacarmen-13",
+      "name": "villacarmen-13.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-13.jpg"
+    },
+    {
+      "id": "image-villacarmen-14",
+      "name": "villacarmen-14.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-14.jpg"
+    },
+    {
+      "id": "image-villacarmen-1",
+      "name": "villacarmen-1.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-1.jpg"
+    },
+    {
+      "id": "image-tourtovalencia3",
+      "name": "tourtovalencia3.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia3.jpg"
+    },
+    {
+      "id": "image-tourtovalencia14",
+      "name": "tourtovalencia14.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia14.jpg"
+    },
+    {
+      "id": "image-tourtovalencia1",
+      "name": "tourtovalencia1.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia1.jpg"
+    },
+    {
+      "id": "image-tourtovalencia5",
+      "name": "tourtovalencia5.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia5.jpg"
+    },
+    {
+      "id": "image-villacarmen-15",
+      "name": "villacarmen-15.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-15.jpg"
+    },
+    {
+      "id": "image-feature-07",
+      "name": "feature-07.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-07.png"
+    },
+    {
+      "id": "image-tourtovalencia13",
+      "name": "tourtovalencia13.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia13.jpg"
+    },
+    {
+      "id": "icon-postman",
+      "name": "postman.svg",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/postman.svg"
+    },
+    {
+      "id": "image-villacarmen-17",
+      "name": "villacarmen-17.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-17.jpg"
+    },
+    {
+      "id": "image-villacarmen-18",
+      "name": "villacarmen-18.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-18.jpg"
+    },
+    {
+      "id": "image-villacarmen-16",
+      "name": "villacarmen-16.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-16.jpg"
+    },
+    {
+      "id": "image-villacarmen-2",
+      "name": "villacarmen-2.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-2.jpg"
+    },
+    {
+      "id": "image-villacarmen-3",
+      "name": "villacarmen-3.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-3.jpg"
+    },
+    {
+      "id": "image-villacarmen-5",
+      "name": "villacarmen-5.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-5.jpg"
+    },
+    {
+      "id": "image-villacarmen-4",
+      "name": "villacarmen-4.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-4.jpg"
+    },
+    {
+      "id": "image-villacarmen-8",
+      "name": "villacarmen-8.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-8.jpg"
+    },
+    {
+      "id": "image-centroneuroexpresion11",
+      "name": "centroneuroexpresion11.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion11.jpg"
+    },
+    {
+      "id": "image-carhub",
+      "name": "carhub.webp",
+      "type": "image",
+      "component_reference": "carhub.webp",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/carhub.webp"
+    },
+    {
+      "id": "other-favicon",
+      "name": "favicon.ico",
+      "type": "other",
+      "component_reference": "favicon.ico",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/favicon.ico"
+    },
+    {
+      "id": "image-centroneuroexpresion12",
+      "name": "centroneuroexpresion12.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion12.jpg"
+    },
+    {
+      "id": "image-villacarmen-6",
+      "name": "villacarmen-6.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-6.jpg"
+    },
+    {
+      "id": "image-centroneuroexpresion8",
+      "name": "centroneuroexpresion8.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion8.jpg"
+    },
+    {
+      "id": "image-centroneuroexpresion9",
+      "name": "centroneuroexpresion9.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion9.jpg"
+    },
+    {
+      "id": "image-centroneuroexpresion10",
+      "name": "centroneuroexpresion10.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion10.jpg"
+    },
+    {
+      "id": "image-cursor",
+      "name": "cursor.png",
+      "type": "image",
+      "component_reference": "cursor.png",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/cursor.png"
+    },
+    {
+      "id": "image-alqueriavillacarmen",
+      "name": "alqueriavillacarmen.webp",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/alqueriavillacarmen.webp"
+    },
+    {
+      "id": "image-blog",
+      "name": "blog.webp",
+      "type": "image",
+      "component_reference": "blog.webp",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/blog.webp"
+    },
+    {
+      "id": "image-centroneuroexpresion3",
+      "name": "centroneuroexpresion3.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion3.jpg"
+    },
+    {
+      "id": "image-waving_hand",
+      "name": "waving_hand.png",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/waving_hand.png"
+    },
+    {
+      "id": "image-centroneuroexpresion1",
+      "name": "centroneuroexpresion1.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion1.jpg"
+    },
+    {
+      "id": "image-image",
+      "name": "image.jpeg",
+      "type": "image",
+      "component_reference": "image.jpeg",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/image.jpeg"
+    },
+    {
+      "id": "image-centroneuroexpresion15",
+      "name": "centroneuroexpresion15.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion15.jpg"
+    },
+    {
+      "id": "image-centroneuroexpresion13",
+      "name": "centroneuroexpresion13.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion13.jpg"
+    },
+    {
+      "id": "image-nodemailer",
+      "name": "nodemailer.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/nodemailer.png"
+    },
+    {
+      "id": "image-villacarmen-7",
+      "name": "villacarmen-7.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-7.jpg"
+    },
+    {
+      "id": "icon-framermotion",
+      "name": "framermotion.svg",
+      "type": "icon",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/framermotion.svg"
+    },
+    {
+      "id": "image-seo",
+      "name": "seo.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/seo.png"
+    },
+    {
+      "id": "image-herobudgetimg1",
+      "name": "herobudgetimg1.webp",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/herobudget/herobudgetimg1.webp"
+    },
+    {
+      "id": "image-villacarmen-9",
+      "name": "villacarmen-9.jpg",
+      "type": "image",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-9.jpg"
+    },
+    {
+      "id": "image-centroneuroexpresion2",
+      "name": "centroneuroexpresion2.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion2.jpg"
+    },
+    {
+      "id": "image-guillermofernandeznutricion",
+      "name": "guillermofernandeznutricion.webp",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/guillermofernandeznutricion.webp"
+    },
+    {
+      "id": "image-paypal",
+      "name": "paypal.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/paypal.png"
+    },
+    {
+      "id": "image-stripe",
+      "name": "stripe.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/stripe.png"
+    },
+    {
+      "id": "image-vps",
+      "name": "vps.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/vps.png"
+    },
+    {
+      "id": "icon-next-intl",
+      "name": "next-intl.svg",
+      "type": "icon",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/next-intl.svg"
+    },
+    {
+      "id": "image-nextauth",
+      "name": "nextauth.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/nextauth.png"
+    },
+    {
+      "id": "image-centroneuroexpresion7",
+      "name": "centroneuroexpresion7.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion7.jpg"
+    },
+    {
+      "id": "icon-nextjs-icon",
+      "name": "nextjs-icon.svg",
+      "type": "icon",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/nextjs-icon.svg"
+    },
+    {
+      "id": "image-expressjs",
+      "name": "expressjs.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/expressjs.png"
+    },
+    {
+      "id": "image-tailwind-css-seeklogo",
+      "name": "tailwind-css-seeklogo.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/tailwind-css-seeklogo.png"
+    },
+    {
+      "id": "image-centroneuroexpresion14",
+      "name": "centroneuroexpresion14.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion14.jpg"
+    },
+    {
+      "id": "image-i18n",
+      "name": "i18n.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/i18n.png"
+    },
+    {
+      "id": "image-pfp",
+      "name": "pfp.webp",
+      "type": "image",
+      "component_reference": "pfp.webp",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/pfp.webp"
+    },
+    {
+      "id": "image-responsivedesign",
+      "name": "responsivedesign.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/responsivedesign.png"
+    },
+    {
+      "id": "image-centroneuroexpresion4",
+      "name": "centroneuroexpresion4.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion4.jpg"
+    },
+    {
+      "id": "image-centroneuroexpresion6",
+      "name": "centroneuroexpresion6.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion6.jpg"
+    },
+    {
+      "id": "image-tourtovalencia11",
+      "name": "tourtovalencia11.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/tourtovalencia/tourtovalencia11.jpg"
+    },
+    {
+      "id": "image-openai",
+      "name": "openai.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/openai.png"
+    },
+    {
+      "id": "image-centroneuroexpresion5",
+      "name": "centroneuroexpresion5.jpg",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion5.jpg"
+    },
+    {
+      "id": "image-shadcnui",
+      "name": "shadcnui.png",
+      "type": "image",
+      "component_reference": "images",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/images/newlanguagesicons/shadcnui.png"
+    },
+    {
+      "id": "image-ig-post-01-ai-editing",
+      "name": "ig-post-01-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-ai-editing.png"
+    },
+    {
+      "id": "image-joke",
+      "name": "joke.webp",
+      "type": "image",
+      "component_reference": "joke.webp",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/joke.webp"
+    },
+    {
+      "id": "image-lofi",
+      "name": "lofi.webp",
+      "type": "image",
+      "component_reference": "lofi.webp",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/lofi.webp"
+    },
+    {
+      "id": "image-portfolioweb",
+      "name": "portfolioweb.webp",
+      "type": "image",
+      "component_reference": "portfolioweb.webp",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/portfolioweb.webp"
+    },
+    {
+      "id": "image-ig-post-01-home-hero",
+      "name": "ig-post-01-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-home-hero.png"
+    },
+    {
+      "id": "image-ig-post-01-gallery",
+      "name": "ig-post-01-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-gallery.png"
+    },
+    {
+      "id": "image-ig-post-01-multi-language",
+      "name": "ig-post-01-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-01-credits-pricing",
+      "name": "ig-post-01-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-01-share-modal",
+      "name": "ig-post-01-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-share-modal.png"
+    },
+    {
+      "id": "image-ig-post-01-professional-results",
+      "name": "ig-post-01-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-01-generate-video",
+      "name": "ig-post-01-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-generate-video.png"
+    },
+    {
+      "id": "image-ig-post-02-generate-video",
+      "name": "ig-post-02-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-generate-video.png"
+    },
+    {
+      "id": "image-ig-post-02-gallery",
+      "name": "ig-post-02-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-gallery.png"
+    },
+    {
+      "id": "image-ig-post-01-realtime-processing",
+      "name": "ig-post-01-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-02-professional-results",
+      "name": "ig-post-02-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-01-text-to-image",
+      "name": "ig-post-01-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-text-to-image.png"
+    },
+    {
+      "id": "image-ig-post-04-home-hero",
+      "name": "ig-post-04-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-home-hero.png"
+    },
+    {
+      "id": "image-ig-post-02-multi-language",
+      "name": "ig-post-02-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-02-text-to-image",
+      "name": "ig-post-02-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-text-to-image.png"
+    },
+    {
+      "id": "image-ig-post-03-professional-results",
+      "name": "ig-post-03-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-04-ai-editing",
+      "name": "ig-post-04-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-ai-editing.png"
+    },
+    {
+      "id": "image-ig-post-04-professional-results",
+      "name": "ig-post-04-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-03-gallery",
+      "name": "ig-post-03-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-gallery.png"
+    },
+    {
+      "id": "image-ig-post-02-home-hero",
+      "name": "ig-post-02-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-home-hero.png"
+    },
+    {
+      "id": "image-ig-post-03-realtime-processing",
+      "name": "ig-post-03-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-03-text-to-image",
+      "name": "ig-post-03-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-text-to-image.png"
+    },
+    {
+      "id": "image-ig-post-02-ai-editing",
+      "name": "ig-post-02-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-ai-editing.png"
+    },
+    {
+      "id": "image-ig-post-03-home-hero",
+      "name": "ig-post-03-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-home-hero.png"
+    },
+    {
+      "id": "image-ig-post-04-text-to-image",
+      "name": "ig-post-04-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-text-to-image.png"
+    },
+    {
+      "id": "image-ig-post-04-realtime-processing",
+      "name": "ig-post-04-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-03-share-modal",
+      "name": "ig-post-03-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-share-modal.png"
+    },
+    {
+      "id": "image-ig-post-05-multi-language",
+      "name": "ig-post-05-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-05-realtime-processing",
+      "name": "ig-post-05-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-02-realtime-processing",
+      "name": "ig-post-02-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-04-gallery",
+      "name": "ig-post-04-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-gallery.png"
+    },
+    {
+      "id": "image-ig-post-02-share-modal",
+      "name": "ig-post-02-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-share-modal.png"
+    },
+    {
+      "id": "image-ig-post-04-multi-language",
+      "name": "ig-post-04-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-04-credits-pricing",
+      "name": "ig-post-04-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-02-credits-pricing",
+      "name": "ig-post-02-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-05-professional-results",
+      "name": "ig-post-05-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-05-credits-pricing",
+      "name": "ig-post-05-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-04-generate-video",
+      "name": "ig-post-04-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-generate-video.png"
+    },
+    {
+      "id": "image-ig-post-05-ai-editing",
+      "name": "ig-post-05-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-ai-editing.png"
+    },
+    {
+      "id": "image-ig-post-05-share-modal",
+      "name": "ig-post-05-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-share-modal.png"
+    },
+    {
+      "id": "image-ig-post-03-multi-language",
+      "name": "ig-post-03-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-05-home-hero",
+      "name": "ig-post-05-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-home-hero.png"
+    },
+    {
+      "id": "image-ig-post-05-gallery",
+      "name": "ig-post-05-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-gallery.png"
+    },
+    {
+      "id": "image-ig-post-06-ai-editing",
+      "name": "ig-post-06-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-ai-editing.png"
+    },
+    {
+      "id": "image-ig-post-03-generate-video",
+      "name": "ig-post-03-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-generate-video.png"
+    },
+    {
+      "id": "image-ig-post-03-ai-editing",
+      "name": "ig-post-03-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-ai-editing.png"
+    },
+    {
+      "id": "image-ig-post-04-share-modal",
+      "name": "ig-post-04-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-share-modal.png"
+    },
+    {
+      "id": "image-ig-post-03-credits-pricing",
+      "name": "ig-post-03-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-05-generate-video",
+      "name": "ig-post-05-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-generate-video.png"
+    },
+    {
+      "id": "image-ig-post-06-credits-pricing",
+      "name": "ig-post-06-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-06-multi-language",
+      "name": "ig-post-06-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-06-share-modal",
+      "name": "ig-post-06-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-share-modal.png"
+    },
+    {
+      "id": "image-ig-post-06-gallery",
+      "name": "ig-post-06-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-gallery.png"
+    },
+    {
+      "id": "image-ig-post-05-text-to-image",
+      "name": "ig-post-05-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-text-to-image.png"
+    },
+    {
+      "id": "image-ig-post-06-generate-video",
+      "name": "ig-post-06-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-generate-video.png"
+    },
+    {
+      "id": "image-ig-post-06-home-hero",
+      "name": "ig-post-06-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-home-hero.png"
+    },
+    {
+      "id": "image-ig-post-06-professional-results",
+      "name": "ig-post-06-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-07-ai-editing",
+      "name": "ig-post-07-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-ai-editing.png"
+    },
+    {
+      "id": "image-ig-post-06-realtime-processing",
+      "name": "ig-post-06-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-06-text-to-image",
+      "name": "ig-post-06-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-text-to-image.png"
+    },
+    {
+      "id": "image-ig-post-07-credits-pricing",
+      "name": "ig-post-07-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-08-share-modal",
+      "name": "ig-post-08-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-share-modal.png"
+    },
+    {
+      "id": "image-ig-post-07-generate-video",
+      "name": "ig-post-07-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-generate-video.png"
+    },
+    {
+      "id": "image-ig-post-07-gallery",
+      "name": "ig-post-07-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-gallery.png"
+    },
+    {
+      "id": "image-ig-post-09-generate-video",
+      "name": "ig-post-09-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-generate-video.png"
+    },
+    {
+      "id": "image-ig-post-08-ai-editing",
+      "name": "ig-post-08-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-ai-editing.png"
+    },
+    {
+      "id": "image-ig-post-09-home-hero",
+      "name": "ig-post-09-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-home-hero.png"
+    },
+    {
+      "id": "image-ig-post-09-gallery",
+      "name": "ig-post-09-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-gallery.png"
+    },
+    {
+      "id": "image-ig-post-07-text-to-image",
+      "name": "ig-post-07-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-text-to-image.png"
+    },
+    {
+      "id": "image-ig-post-07-multi-language",
+      "name": "ig-post-07-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-08-professional-results",
+      "name": "ig-post-08-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-07-share-modal",
+      "name": "ig-post-07-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-share-modal.png"
+    },
+    {
+      "id": "image-ig-post-07-realtime-processing",
+      "name": "ig-post-07-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-10-multi-language",
+      "name": "ig-post-10-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-09-multi-language",
+      "name": "ig-post-09-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-08-text-to-image",
+      "name": "ig-post-08-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-text-to-image.png"
+    },
+    {
+      "id": "image-ig-post-08-home-hero",
+      "name": "ig-post-08-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-home-hero.png"
+    },
+    {
+      "id": "image-ig-post-09-credits-pricing",
+      "name": "ig-post-09-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-07-professional-results",
+      "name": "ig-post-07-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-07-home-hero",
+      "name": "ig-post-07-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-home-hero.png"
+    },
+    {
+      "id": "image-ig-post-10-professional-results",
+      "name": "ig-post-10-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-08-realtime-processing",
+      "name": "ig-post-08-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-10-text-to-image",
+      "name": "ig-post-10-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-text-to-image.png"
+    },
+    {
+      "id": "image-ig-post-08-gallery",
+      "name": "ig-post-08-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-gallery.png"
+    },
+    {
+      "id": "image-ig-post-10-ai-editing",
+      "name": "ig-post-10-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-ai-editing.png"
+    },
+    {
+      "id": "image-instagram-post-01-edit-image-dark",
+      "name": "instagram-post-01-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-edit-image-dark.png"
+    },
+    {
+      "id": "image-ig-post-09-ai-editing",
+      "name": "ig-post-09-ai-editing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-ai-editing.png"
+    },
+    {
+      "id": "image-ig-post-10-gallery",
+      "name": "ig-post-10-gallery.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-gallery.png"
+    },
+    {
+      "id": "image-ig-post-10-realtime-processing",
+      "name": "ig-post-10-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-10-generate-video",
+      "name": "ig-post-10-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-generate-video.png"
+    },
+    {
+      "id": "image-instagram-post-01-gallery-dark",
+      "name": "instagram-post-01-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-gallery-dark.png"
+    },
+    {
+      "id": "image-instagram-post-01-professional-results-dark",
+      "name": "instagram-post-01-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-professional-results-dark.png"
+    },
+    {
+      "id": "image-ig-post-09-share-modal",
+      "name": "ig-post-09-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-share-modal.png"
+    },
+    {
+      "id": "image-instagram-post-01-share-modal-dark",
+      "name": "instagram-post-01-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-share-modal-dark.png"
+    },
+    {
+      "id": "image-ig-post-08-credits-pricing",
+      "name": "ig-post-08-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-08-multi-language",
+      "name": "ig-post-08-multi-language.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-multi-language.png"
+    },
+    {
+      "id": "image-ig-post-10-credits-pricing",
+      "name": "ig-post-10-credits-pricing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-credits-pricing.png"
+    },
+    {
+      "id": "image-ig-post-10-home-hero",
+      "name": "ig-post-10-home-hero.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-home-hero.png"
+    },
+    {
+      "id": "image-instagram-post-01-realtime-processing-dark",
+      "name": "instagram-post-01-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-01-credits-pricing-dark",
+      "name": "instagram-post-01-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-ig-post-09-realtime-processing",
+      "name": "ig-post-09-realtime-processing.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-realtime-processing.png"
+    },
+    {
+      "id": "image-ig-post-10-share-modal",
+      "name": "ig-post-10-share-modal.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-share-modal.png"
+    },
+    {
+      "id": "image-ig-post-09-professional-results",
+      "name": "ig-post-09-professional-results.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-professional-results.png"
+    },
+    {
+      "id": "image-ig-post-09-text-to-image",
+      "name": "ig-post-09-text-to-image.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-text-to-image.png"
+    },
+    {
+      "id": "image-instagram-post-01-multi-language-dark",
+      "name": "instagram-post-01-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-multi-language-dark.png"
+    },
+    {
+      "id": "image-instagram-post-01-home-hero-dark",
+      "name": "instagram-post-01-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-home-hero-dark.png"
+    },
+    {
+      "id": "image-ig-post-08-generate-video",
+      "name": "ig-post-08-generate-video.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-generate-video.png"
+    },
+    {
+      "id": "image-instagram-post-01-generate-video-dark",
+      "name": "instagram-post-01-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-edit-image-dark",
+      "name": "instagram-post-02-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-edit-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-01-text-to-image-dark",
+      "name": "instagram-post-01-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-text-to-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-generate-video-dark",
+      "name": "instagram-post-02-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-home-hero-dark",
+      "name": "instagram-post-02-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-home-hero-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-multi-language-dark",
+      "name": "instagram-post-02-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-multi-language-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-credits-pricing-dark",
+      "name": "instagram-post-03-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-credits-pricing-dark",
+      "name": "instagram-post-02-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-realtime-processing-dark",
+      "name": "instagram-post-02-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-multi-language-dark",
+      "name": "instagram-post-03-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-multi-language-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-generate-video-dark",
+      "name": "instagram-post-03-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-gallery-dark",
+      "name": "instagram-post-02-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-gallery-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-professional-results-dark",
+      "name": "instagram-post-03-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-professional-results-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-professional-results-dark",
+      "name": "instagram-post-02-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-professional-results-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-share-modal-dark",
+      "name": "instagram-post-02-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-share-modal-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-home-hero-dark",
+      "name": "instagram-post-03-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-home-hero-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-professional-results-dark",
+      "name": "instagram-post-04-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-professional-results-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-credits-pricing-dark",
+      "name": "instagram-post-04-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-realtime-processing-dark",
+      "name": "instagram-post-03-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-edit-image-dark",
+      "name": "instagram-post-03-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-edit-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-text-to-image-dark",
+      "name": "instagram-post-03-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-text-to-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-05-edit-image-dark",
+      "name": "instagram-post-05-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-edit-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-multi-language-dark",
+      "name": "instagram-post-04-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-multi-language-dark.png"
+    },
+    {
+      "id": "image-instagram-post-05-professional-results-dark",
+      "name": "instagram-post-05-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-professional-results-dark.png"
+    },
+    {
+      "id": "image-instagram-post-05-realtime-processing-dark",
+      "name": "instagram-post-05-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-05-credits-pricing-dark",
+      "name": "instagram-post-05-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-gallery-dark",
+      "name": "instagram-post-04-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-gallery-dark.png"
+    },
+    {
+      "id": "image-instagram-post-02-text-to-image-dark",
+      "name": "instagram-post-02-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-text-to-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-text-to-image-dark",
+      "name": "instagram-post-04-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-text-to-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-professional-results-dark",
+      "name": "instagram-post-06-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-professional-results-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-share-modal-dark",
+      "name": "instagram-post-03-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-share-modal-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-text-to-image-dark",
+      "name": "instagram-post-06-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-text-to-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-05-text-to-image-dark",
+      "name": "instagram-post-05-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-text-to-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-credits-pricing-dark",
+      "name": "instagram-post-06-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-gallery-dark",
+      "name": "instagram-post-06-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-gallery-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-share-modal-dark",
+      "name": "instagram-post-04-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-share-modal-dark.png"
+    },
+    {
+      "id": "image-instagram-post-05-multi-language-dark",
+      "name": "instagram-post-05-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-multi-language-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-generate-video-dark",
+      "name": "instagram-post-04-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-edit-image-dark",
+      "name": "instagram-post-06-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-edit-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-multi-language-dark",
+      "name": "instagram-post-06-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-multi-language-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-home-hero-dark",
+      "name": "instagram-post-04-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-home-hero-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-share-modal-dark",
+      "name": "instagram-post-06-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-share-modal-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-generate-video-dark",
+      "name": "instagram-post-06-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-home-hero-dark",
+      "name": "instagram-post-06-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-home-hero-dark.png"
+    },
+    {
+      "id": "image-instagram-post-05-home-hero-dark",
+      "name": "instagram-post-05-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-home-hero-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-credits-pricing-dark",
+      "name": "instagram-post-07-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-gallery-dark",
+      "name": "instagram-post-07-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-gallery-dark.png"
+    },
+    {
+      "id": "image-instagram-post-05-generate-video-dark",
+      "name": "instagram-post-05-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-06-realtime-processing-dark",
+      "name": "instagram-post-06-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-edit-image-dark",
+      "name": "instagram-post-07-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-edit-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-05-share-modal-dark",
+      "name": "instagram-post-05-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-share-modal-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-realtime-processing-dark",
+      "name": "instagram-post-04-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-03-gallery-dark",
+      "name": "instagram-post-03-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-gallery-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-professional-results-dark",
+      "name": "instagram-post-07-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-professional-results-dark.png"
+    },
+    {
+      "id": "image-instagram-post-08-gallery-dark",
+      "name": "instagram-post-08-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-gallery-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-home-hero-dark",
+      "name": "instagram-post-07-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-home-hero-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-multi-language-dark",
+      "name": "instagram-post-07-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-multi-language-dark.png"
+    },
+    {
+      "id": "image-instagram-post-09-realtime-processing-dark",
+      "name": "instagram-post-09-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-09-credits-pricing-dark",
+      "name": "instagram-post-09-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-09-home-hero-dark",
+      "name": "instagram-post-09-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-home-hero-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-text-to-image-dark",
+      "name": "instagram-post-07-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-text-to-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-realtime-processing-dark",
+      "name": "instagram-post-07-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-09-multi-language-dark",
+      "name": "instagram-post-09-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-multi-language-dark.png"
+    },
+    {
+      "id": "image-instagram-post-08-credits-pricing-dark",
+      "name": "instagram-post-08-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-share-modal-dark",
+      "name": "instagram-post-07-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-share-modal-dark.png"
+    },
+    {
+      "id": "image-instagram-post-10-gallery-dark",
+      "name": "instagram-post-10-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-gallery-dark.png"
+    },
+    {
+      "id": "image-instagram-post-07-generate-video-dark",
+      "name": "instagram-post-07-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-10-generate-video-dark",
+      "name": "instagram-post-10-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-09-professional-results-dark",
+      "name": "instagram-post-09-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-professional-results-dark.png"
+    },
+    {
+      "id": "image-instagram-post-10-credits-pricing-dark",
+      "name": "instagram-post-10-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-08-generate-video-dark",
+      "name": "instagram-post-08-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-08-professional-results-dark",
+      "name": "instagram-post-08-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-professional-results-dark.png"
+    },
+    {
+      "id": "image-instagram-post-09-edit-image-dark",
+      "name": "instagram-post-09-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-edit-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-08-text-to-image-dark",
+      "name": "instagram-post-08-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-text-to-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-08-multi-language-dark",
+      "name": "instagram-post-08-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-multi-language-dark.png"
+    },
+    {
+      "id": "image-instagram-post-08-home-hero-dark",
+      "name": "instagram-post-08-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-home-hero-dark.png"
+    },
+    {
+      "id": "image-instagram-post-08-share-modal-dark",
+      "name": "instagram-post-08-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-01-features-more-dark",
+      "name": "iphone-01-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-features-more-dark.png"
+    },
+    {
+      "id": "image-instagram-post-10-edit-image-dark",
+      "name": "instagram-post-10-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-edit-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-09-generate-video-dark",
+      "name": "instagram-post-09-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-01-features-more-light",
+      "name": "iphone-01-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-01-credits-pricing-light",
+      "name": "iphone-01-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-credits-pricing-light.png"
+    },
+    {
+      "id": "image-instagram-post-10-multi-language-dark",
+      "name": "instagram-post-10-multi-language-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-multi-language-dark.png"
+    },
+    {
+      "id": "image-iphone-01-edit-image-dark",
+      "name": "iphone-01-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-01-gallery-light",
+      "name": "iphone-01-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-gallery-light.png"
+    },
+    {
+      "id": "image-instagram-post-09-text-to-image-dark",
+      "name": "instagram-post-09-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-01-credits-pricing-dark",
+      "name": "iphone-01-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-01-edit-image-light",
+      "name": "iphone-01-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-edit-image-light.png"
+    },
+    {
+      "id": "image-instagram-post-10-home-hero-dark",
+      "name": "instagram-post-10-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-01-features-bento-dark",
+      "name": "iphone-01-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-features-bento-dark.png"
+    },
+    {
+      "id": "image-instagram-post-10-text-to-image-dark",
+      "name": "instagram-post-10-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-text-to-image-dark.png"
+    },
+    {
+      "id": "image-instagram-post-09-gallery-dark",
+      "name": "instagram-post-09-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-01-gallery-dark",
+      "name": "iphone-01-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-gallery-dark.png"
+    },
+    {
+      "id": "image-instagram-post-10-professional-results-dark",
+      "name": "instagram-post-10-professional-results-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-professional-results-dark.png"
+    },
+    {
+      "id": "image-instagram-post-09-share-modal-dark",
+      "name": "instagram-post-09-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-share-modal-dark.png"
+    },
+    {
+      "id": "image-instagram-post-10-share-modal-dark",
+      "name": "instagram-post-10-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-01-features-bento-light",
+      "name": "iphone-01-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-01-language-selector-dark",
+      "name": "iphone-01-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-01-home-hero-light",
+      "name": "iphone-01-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-home-hero-light.png"
+    },
+    {
+      "id": "image-instagram-post-10-realtime-processing-dark",
+      "name": "instagram-post-10-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-instagram-post-08-realtime-processing-dark",
+      "name": "instagram-post-08-realtime-processing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-realtime-processing-dark.png"
+    },
+    {
+      "id": "image-iphone-01-generate-video-dark",
+      "name": "iphone-01-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-01-generate-video-light",
+      "name": "iphone-01-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-generate-video-light.png"
+    },
+    {
+      "id": "image-instagram-post-08-edit-image-dark",
+      "name": "instagram-post-08-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-01-text-to-image-dark",
+      "name": "iphone-01-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-02-credits-pricing-light",
+      "name": "iphone-02-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-credits-pricing-light.png"
+    },
+    {
+      "id": "image-iphone-02-features-bento-light",
+      "name": "iphone-02-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-01-home-hero-dark",
+      "name": "iphone-01-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-01-text-to-image-light",
+      "name": "iphone-01-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-text-to-image-light.png"
+    },
+    {
+      "id": "image-iphone-01-language-selector-light",
+      "name": "iphone-01-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-02-credits-pricing-dark",
+      "name": "iphone-02-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-01-share-modal-dark",
+      "name": "iphone-01-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-02-features-bento-dark",
+      "name": "iphone-02-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-features-bento-dark.png"
+    },
+    {
+      "id": "image-iphone-01-share-modal-light",
+      "name": "iphone-01-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-02-edit-image-dark",
+      "name": "iphone-02-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-02-generate-video-dark",
+      "name": "iphone-02-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-02-gallery-light",
+      "name": "iphone-02-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-gallery-light.png"
+    },
+    {
+      "id": "image-iphone-02-share-modal-dark",
+      "name": "iphone-02-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-02-gallery-dark",
+      "name": "iphone-02-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-02-edit-image-light",
+      "name": "iphone-02-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-edit-image-light.png"
+    },
+    {
+      "id": "image-iphone-02-home-hero-dark",
+      "name": "iphone-02-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-02-features-more-light",
+      "name": "iphone-02-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-02-generate-video-light",
+      "name": "iphone-02-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-generate-video-light.png"
+    },
+    {
+      "id": "image-iphone-02-language-selector-dark",
+      "name": "iphone-02-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-02-share-modal-light",
+      "name": "iphone-02-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-02-text-to-image-dark",
+      "name": "iphone-02-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-03-features-more-dark",
+      "name": "iphone-03-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-features-more-dark.png"
+    },
+    {
+      "id": "image-iphone-02-features-more-dark",
+      "name": "iphone-02-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-features-more-dark.png"
+    },
+    {
+      "id": "image-iphone-02-home-hero-light",
+      "name": "iphone-02-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-home-hero-light.png"
+    },
+    {
+      "id": "image-iphone-03-edit-image-light",
+      "name": "iphone-03-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-edit-image-light.png"
+    },
+    {
+      "id": "image-iphone-03-credits-pricing-dark",
+      "name": "iphone-03-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-03-features-more-light",
+      "name": "iphone-03-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-03-features-bento-light",
+      "name": "iphone-03-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-03-share-modal-dark",
+      "name": "iphone-03-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-03-home-hero-dark",
+      "name": "iphone-03-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-04-edit-image-dark",
+      "name": "iphone-04-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-02-text-to-image-light",
+      "name": "iphone-02-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-text-to-image-light.png"
+    },
+    {
+      "id": "image-iphone-03-credits-pricing-light",
+      "name": "iphone-03-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-credits-pricing-light.png"
+    },
+    {
+      "id": "image-iphone-04-credits-pricing-dark",
+      "name": "iphone-04-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-03-gallery-dark",
+      "name": "iphone-03-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-03-edit-image-dark",
+      "name": "iphone-03-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-03-gallery-light",
+      "name": "iphone-03-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-gallery-light.png"
+    },
+    {
+      "id": "image-instagram-post-05-gallery-dark",
+      "name": "instagram-post-05-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-03-generate-video-dark",
+      "name": "iphone-03-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-generate-video-dark.png"
+    },
+    {
+      "id": "image-instagram-post-04-edit-image-dark",
+      "name": "instagram-post-04-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-03-language-selector-dark",
+      "name": "iphone-03-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-04-credits-pricing-light",
+      "name": "iphone-04-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-credits-pricing-light.png"
+    },
+    {
+      "id": "image-iphone-02-language-selector-light",
+      "name": "iphone-02-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-03-features-bento-dark",
+      "name": "iphone-03-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-features-bento-dark.png"
+    },
+    {
+      "id": "image-iphone-03-home-hero-light",
+      "name": "iphone-03-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-home-hero-light.png"
+    },
+    {
+      "id": "image-iphone-04-features-bento-light",
+      "name": "iphone-04-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-04-generate-video-light",
+      "name": "iphone-04-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-generate-video-light.png"
+    },
+    {
+      "id": "image-iphone-04-features-bento-dark",
+      "name": "iphone-04-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-features-bento-dark.png"
+    },
+    {
+      "id": "image-iphone-03-text-to-image-dark",
+      "name": "iphone-03-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-03-share-modal-light",
+      "name": "iphone-03-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-03-language-selector-light",
+      "name": "iphone-03-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-03-generate-video-light",
+      "name": "iphone-03-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-generate-video-light.png"
+    },
+    {
+      "id": "image-iphone-04-features-more-light",
+      "name": "iphone-04-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-03-text-to-image-light",
+      "name": "iphone-03-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-text-to-image-light.png"
+    },
+    {
+      "id": "image-iphone-04-features-more-dark",
+      "name": "iphone-04-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-features-more-dark.png"
+    },
+    {
+      "id": "image-iphone-04-home-hero-dark",
+      "name": "iphone-04-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-04-generate-video-dark",
+      "name": "iphone-04-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-04-edit-image-light",
+      "name": "iphone-04-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-edit-image-light.png"
+    },
+    {
+      "id": "image-iphone-04-gallery-dark",
+      "name": "iphone-04-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-04-share-modal-light",
+      "name": "iphone-04-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-04-language-selector-dark",
+      "name": "iphone-04-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-04-gallery-light",
+      "name": "iphone-04-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-gallery-light.png"
+    },
+    {
+      "id": "image-iphone-04-home-hero-light",
+      "name": "iphone-04-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-home-hero-light.png"
+    },
+    {
+      "id": "image-iphone-04-text-to-image-dark",
+      "name": "iphone-04-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-04-language-selector-light",
+      "name": "iphone-04-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-05-edit-image-dark",
+      "name": "iphone-05-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-04-text-to-image-light",
+      "name": "iphone-04-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-text-to-image-light.png"
+    },
+    {
+      "id": "image-iphone-04-share-modal-dark",
+      "name": "iphone-04-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-05-features-bento-light",
+      "name": "iphone-05-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-05-gallery-light",
+      "name": "iphone-05-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-gallery-light.png"
+    },
+    {
+      "id": "image-iphone-05-credits-pricing-dark",
+      "name": "iphone-05-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-05-share-modal-dark",
+      "name": "iphone-05-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-05-generate-video-light",
+      "name": "iphone-05-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-generate-video-light.png"
+    },
+    {
+      "id": "image-iphone-05-edit-image-light",
+      "name": "iphone-05-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-edit-image-light.png"
+    },
+    {
+      "id": "image-iphone-06-edit-image-light",
+      "name": "iphone-06-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-edit-image-light.png"
+    },
+    {
+      "id": "image-iphone-05-home-hero-light",
+      "name": "iphone-05-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-home-hero-light.png"
+    },
+    {
+      "id": "image-iphone-05-credits-pricing-light",
+      "name": "iphone-05-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-credits-pricing-light.png"
+    },
+    {
+      "id": "image-iphone-05-generate-video-dark",
+      "name": "iphone-05-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-05-features-more-light",
+      "name": "iphone-05-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-05-features-bento-dark",
+      "name": "iphone-05-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-features-bento-dark.png"
+    },
+    {
+      "id": "image-iphone-05-gallery-dark",
+      "name": "iphone-05-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-06-features-bento-dark",
+      "name": "iphone-06-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-features-bento-dark.png"
+    },
+    {
+      "id": "image-iphone-05-home-hero-dark",
+      "name": "iphone-05-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-05-features-more-dark",
+      "name": "iphone-05-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-features-more-dark.png"
+    },
+    {
+      "id": "image-iphone-06-features-more-dark",
+      "name": "iphone-06-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-features-more-dark.png"
+    },
+    {
+      "id": "image-iphone-05-text-to-image-light",
+      "name": "iphone-05-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-text-to-image-light.png"
+    },
+    {
+      "id": "image-iphone-06-gallery-light",
+      "name": "iphone-06-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-gallery-light.png"
+    },
+    {
+      "id": "image-iphone-05-language-selector-light",
+      "name": "iphone-05-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-06-home-hero-light",
+      "name": "iphone-06-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-home-hero-light.png"
+    },
+    {
+      "id": "image-iphone-06-credits-pricing-dark",
+      "name": "iphone-06-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-05-language-selector-dark",
+      "name": "iphone-05-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-06-generate-video-light",
+      "name": "iphone-06-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-generate-video-light.png"
+    },
+    {
+      "id": "image-iphone-05-text-to-image-dark",
+      "name": "iphone-05-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-06-features-bento-light",
+      "name": "iphone-06-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-06-language-selector-dark",
+      "name": "iphone-06-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-06-gallery-dark",
+      "name": "iphone-06-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-05-share-modal-light",
+      "name": "iphone-05-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-06-language-selector-light",
+      "name": "iphone-06-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-07-edit-image-light",
+      "name": "iphone-07-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-edit-image-light.png"
+    },
+    {
+      "id": "image-iphone-06-text-to-image-light",
+      "name": "iphone-06-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-text-to-image-light.png"
+    },
+    {
+      "id": "image-iphone-06-text-to-image-dark",
+      "name": "iphone-06-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-06-share-modal-dark",
+      "name": "iphone-06-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-06-credits-pricing-light",
+      "name": "iphone-06-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-credits-pricing-light.png"
+    },
+    {
+      "id": "image-iphone-06-home-hero-dark",
+      "name": "iphone-06-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-06-edit-image-dark",
+      "name": "iphone-06-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-07-credits-pricing-dark",
+      "name": "iphone-07-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-06-features-more-light",
+      "name": "iphone-06-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-07-features-bento-dark",
+      "name": "iphone-07-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-features-bento-dark.png"
+    },
+    {
+      "id": "image-iphone-07-features-bento-light",
+      "name": "iphone-07-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-06-share-modal-light",
+      "name": "iphone-06-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-07-edit-image-dark",
+      "name": "iphone-07-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-07-credits-pricing-light",
+      "name": "iphone-07-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-credits-pricing-light.png"
+    },
+    {
+      "id": "image-iphone-06-generate-video-dark",
+      "name": "iphone-06-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-07-features-more-dark",
+      "name": "iphone-07-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-features-more-dark.png"
+    },
+    {
+      "id": "image-iphone-07-features-more-light",
+      "name": "iphone-07-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-07-generate-video-dark",
+      "name": "iphone-07-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-07-gallery-light",
+      "name": "iphone-07-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-gallery-light.png"
+    },
+    {
+      "id": "image-iphone-07-home-hero-dark",
+      "name": "iphone-07-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-08-edit-image-dark",
+      "name": "iphone-08-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-08-credits-pricing-dark",
+      "name": "iphone-08-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-07-home-hero-light",
+      "name": "iphone-07-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-home-hero-light.png"
+    },
+    {
+      "id": "image-iphone-07-share-modal-light",
+      "name": "iphone-07-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-07-gallery-dark",
+      "name": "iphone-07-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-07-text-to-image-dark",
+      "name": "iphone-07-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-07-share-modal-dark",
+      "name": "iphone-07-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-08-features-bento-dark",
+      "name": "iphone-08-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-features-bento-dark.png"
+    },
+    {
+      "id": "image-iphone-08-credits-pricing-light",
+      "name": "iphone-08-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-credits-pricing-light.png"
+    },
+    {
+      "id": "image-iphone-07-language-selector-light",
+      "name": "iphone-07-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-08-features-more-dark",
+      "name": "iphone-08-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-features-more-dark.png"
+    },
+    {
+      "id": "image-iphone-08-features-bento-light",
+      "name": "iphone-08-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-07-generate-video-light",
+      "name": "iphone-07-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-generate-video-light.png"
+    },
+    {
+      "id": "image-iphone-08-share-modal-light",
+      "name": "iphone-08-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-08-home-hero-light",
+      "name": "iphone-08-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-home-hero-light.png"
+    },
+    {
+      "id": "image-iphone-08-edit-image-light",
+      "name": "iphone-08-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-edit-image-light.png"
+    },
+    {
+      "id": "image-iphone-07-text-to-image-light",
+      "name": "iphone-07-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-text-to-image-light.png"
+    },
+    {
+      "id": "image-iphone-07-language-selector-dark",
+      "name": "iphone-07-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-08-home-hero-dark",
+      "name": "iphone-08-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-09-credits-pricing-light",
+      "name": "iphone-09-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-credits-pricing-light.png"
+    },
+    {
+      "id": "image-iphone-08-language-selector-light",
+      "name": "iphone-08-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-08-generate-video-dark",
+      "name": "iphone-08-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-08-gallery-light",
+      "name": "iphone-08-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-gallery-light.png"
+    },
+    {
+      "id": "image-iphone-08-share-modal-dark",
+      "name": "iphone-08-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-08-features-more-light",
+      "name": "iphone-08-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-08-text-to-image-light",
+      "name": "iphone-08-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-text-to-image-light.png"
+    },
+    {
+      "id": "image-iphone-09-features-bento-light",
+      "name": "iphone-09-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-08-generate-video-light",
+      "name": "iphone-08-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-generate-video-light.png"
+    },
+    {
+      "id": "image-iphone-08-text-to-image-dark",
+      "name": "iphone-08-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-09-edit-image-light",
+      "name": "iphone-09-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-edit-image-light.png"
+    },
+    {
+      "id": "image-iphone-09-credits-pricing-dark",
+      "name": "iphone-09-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-08-language-selector-dark",
+      "name": "iphone-08-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-09-generate-video-light",
+      "name": "iphone-09-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-generate-video-light.png"
+    },
+    {
+      "id": "image-iphone-09-features-more-light",
+      "name": "iphone-09-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-09-edit-image-dark",
+      "name": "iphone-09-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-08-gallery-dark",
+      "name": "iphone-08-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-09-gallery-light",
+      "name": "iphone-09-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-gallery-light.png"
+    },
+    {
+      "id": "image-iphone-09-features-more-dark",
+      "name": "iphone-09-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-features-more-dark.png"
+    },
+    {
+      "id": "image-iphone-09-features-bento-dark",
+      "name": "iphone-09-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-features-bento-dark.png"
+    },
+    {
+      "id": "image-iphone-09-text-to-image-dark",
+      "name": "iphone-09-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-text-to-image-dark.png"
+    },
+    {
+      "id": "image-iphone-09-home-hero-dark",
+      "name": "iphone-09-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-09-gallery-dark",
+      "name": "iphone-09-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-09-share-modal-light",
+      "name": "iphone-09-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-09-generate-video-dark",
+      "name": "iphone-09-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-09-language-selector-light",
+      "name": "iphone-09-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-09-language-selector-dark",
+      "name": "iphone-09-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-09-home-hero-light",
+      "name": "iphone-09-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-home-hero-light.png"
+    },
+    {
+      "id": "image-iphone-09-text-to-image-light",
+      "name": "iphone-09-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-text-to-image-light.png"
+    },
+    {
+      "id": "image-iphone-09-share-modal-dark",
+      "name": "iphone-09-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-share-modal-dark.png"
+    },
+    {
+      "id": "image-iphone-10-features-bento-light",
+      "name": "iphone-10-features-bento-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-features-bento-light.png"
+    },
+    {
+      "id": "image-iphone-10-home-hero-light",
+      "name": "iphone-10-home-hero-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-home-hero-light.png"
+    },
+    {
+      "id": "image-iphone-10-features-bento-dark",
+      "name": "iphone-10-features-bento-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-features-bento-dark.png"
+    },
+    {
+      "id": "image-iphone-10-edit-image-light",
+      "name": "iphone-10-edit-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-edit-image-light.png"
+    },
+    {
+      "id": "image-iphone-10-credits-pricing-light",
+      "name": "iphone-10-credits-pricing-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-credits-pricing-light.png"
+    },
+    {
+      "id": "image-iphone-10-credits-pricing-dark",
+      "name": "iphone-10-credits-pricing-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-credits-pricing-dark.png"
+    },
+    {
+      "id": "image-iphone-10-features-more-dark",
+      "name": "iphone-10-features-more-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-features-more-dark.png"
+    },
+    {
+      "id": "image-iphone-10-gallery-dark",
+      "name": "iphone-10-gallery-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-gallery-dark.png"
+    },
+    {
+      "id": "image-iphone-10-gallery-light",
+      "name": "iphone-10-gallery-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-gallery-light.png"
+    },
+    {
+      "id": "image-iphone-10-edit-image-dark",
+      "name": "iphone-10-edit-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-edit-image-dark.png"
+    },
+    {
+      "id": "image-iphone-10-share-modal-light",
+      "name": "iphone-10-share-modal-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-share-modal-light.png"
+    },
+    {
+      "id": "image-iphone-10-language-selector-dark",
+      "name": "iphone-10-language-selector-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-language-selector-dark.png"
+    },
+    {
+      "id": "image-iphone-10-home-hero-dark",
+      "name": "iphone-10-home-hero-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-home-hero-dark.png"
+    },
+    {
+      "id": "image-iphone-10-features-more-light",
+      "name": "iphone-10-features-more-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-features-more-light.png"
+    },
+    {
+      "id": "image-iphone-10-generate-video-dark",
+      "name": "iphone-10-generate-video-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-generate-video-dark.png"
+    },
+    {
+      "id": "image-iphone-10-language-selector-light",
+      "name": "iphone-10-language-selector-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-language-selector-light.png"
+    },
+    {
+      "id": "image-iphone-10-text-to-image-dark",
+      "name": "iphone-10-text-to-image-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-text-to-image-dark.png"
+    },
+    {
+      "id": "video-credits-iphone-dark",
+      "name": "credits-iphone-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/credits-iphone-dark.webm"
+    },
+    {
+      "id": "video-credits-iphone-light",
+      "name": "credits-iphone-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/credits-iphone-light.webm"
+    },
+    {
+      "id": "image-iphone-10-share-modal-dark",
+      "name": "iphone-10-share-modal-dark.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-share-modal-dark.png"
+    },
+    {
+      "id": "video-dashboard-generate-desktop-dark",
+      "name": "dashboard-generate-desktop-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-dark.webm"
+    },
+    {
+      "id": "video-dashboard-video-desktop-dark",
+      "name": "dashboard-video-desktop-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-desktop-dark.webm"
+    },
+    {
+      "id": "video-credits-desktop-dark",
+      "name": "credits-desktop-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/credits-desktop-dark.webm"
+    },
+    {
+      "id": "video-dashboard-edit-iphone-light",
+      "name": "dashboard-edit-iphone-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-iphone-light.webm"
+    },
+    {
+      "id": "video-dashboard-edit-iphone-dark",
+      "name": "dashboard-edit-iphone-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-iphone-dark.webm"
+    },
+    {
+      "id": "video-dashboard-gallery-iphone-light",
+      "name": "dashboard-gallery-iphone-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-iphone-light.webm"
+    },
+    {
+      "id": "video-dashboard-gallery-desktop-dark",
+      "name": "dashboard-gallery-desktop-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-desktop-dark.webm"
+    },
+    {
+      "id": "video-dashboard-edit-desktop-dark",
+      "name": "dashboard-edit-desktop-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-desktop-dark.webm"
+    },
+    {
+      "id": "video-profile-desktop-light",
+      "name": "profile-desktop-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/profile-desktop-light.webm"
+    },
+    {
+      "id": "image-iphone-10-generate-video-light",
+      "name": "iphone-10-generate-video-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-generate-video-light.png"
+    },
+    {
+      "id": "video-home-iphone-dark",
+      "name": "home-iphone-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/home-iphone-dark.webm"
+    },
+    {
+      "id": "video-dashboard-generate-iphone-light",
+      "name": "dashboard-generate-iphone-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-iphone-light.webm"
+    },
+    {
+      "id": "video-credits-desktop-light",
+      "name": "credits-desktop-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/credits-desktop-light.webm"
+    },
+    {
+      "id": "image-iphone-10-text-to-image-light",
+      "name": "iphone-10-text-to-image-light.png",
+      "type": "image",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-text-to-image-light.png"
+    },
+    {
+      "id": "video-dashboard-video-iphone-dark",
+      "name": "dashboard-video-iphone-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-iphone-dark.webm"
+    },
+    {
+      "id": "video-home-iphone-light",
+      "name": "home-iphone-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/home-iphone-light.webm"
+    },
+    {
+      "id": "video-dashboard-generate-iphone-dark",
+      "name": "dashboard-generate-iphone-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-iphone-dark.webm"
+    },
+    {
+      "id": "video-home-desktop-dark",
+      "name": "home-desktop-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-dark.webm"
+    },
+    {
+      "id": "video-dashboard-generate-desktop-light",
+      "name": "dashboard-generate-desktop-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-light.webm"
+    },
+    {
+      "id": "video-home-desktop-light",
+      "name": "home-desktop-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-light.webm"
+    },
+    {
+      "id": "video-dashboard-video-desktop-light",
+      "name": "dashboard-video-desktop-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-desktop-light.webm"
+    },
+    {
+      "id": "video-profile-iphone-light",
+      "name": "profile-iphone-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/profile-iphone-light.webm"
+    },
+    {
+      "id": "video-profile-iphone-dark",
+      "name": "profile-iphone-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/profile-iphone-dark.webm"
+    },
+    {
+      "id": "video-dashboard-edit-desktop-light",
+      "name": "dashboard-edit-desktop-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-desktop-light.webm"
+    },
+    {
+      "id": "video-dashboard-video-iphone-light",
+      "name": "dashboard-video-iphone-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-iphone-light.webm"
+    },
+    {
+      "id": "video-login-desktop-dark",
+      "name": "login-desktop-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/login-desktop-dark.webm"
+    },
+    {
+      "id": "video-profile-desktop-dark",
+      "name": "profile-desktop-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/profile-desktop-dark.webm"
+    },
+    {
+      "id": "video-dashboard-gallery-desktop-light",
+      "name": "dashboard-gallery-desktop-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-desktop-light.webm"
+    },
+    {
+      "id": "video-login-desktop-light",
+      "name": "login-desktop-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/login-desktop-light.webm"
+    },
+    {
+      "id": "video-dashboard-gallery-iphone-dark",
+      "name": "dashboard-gallery-iphone-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-iphone-dark.webm"
+    },
+    {
+      "id": "image-profilephoto",
+      "name": "profilephoto.webp",
+      "type": "image",
+      "component_reference": "profilephoto.webp",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/profilephoto.webp"
+    },
+    {
+      "id": "image-profilephoto",
+      "name": "profilephoto.png",
+      "type": "image",
+      "component_reference": "profilephoto.png",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/profilephoto.png"
+    },
+    {
+      "id": "image-ras",
+      "name": "ras.webp",
+      "type": "image",
+      "component_reference": "ras.webp",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/ras.webp"
+    },
+    {
+      "id": "video-register-desktop-dark",
+      "name": "register-desktop-dark.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/register-desktop-dark.webm"
+    },
+    {
+      "id": "video-register-desktop-light",
+      "name": "register-desktop-light.webm",
+      "type": "video",
+      "component_reference": "posts",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/posts/videos/register-desktop-light.webm"
+    },
+    {
+      "id": "image-villacarmendoble",
+      "name": "villacarmendoble.webp",
+      "type": "image",
+      "component_reference": "villacarmendoble.webp",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/villacarmendoble.webp"
+    },
+    {
+      "id": "icon-react-native-logo-png",
+      "name": "React-Native-Logo.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/React-Native-Logo.png"
+    },
+    {
+      "id": "icon-prismalogo-png",
+      "name": "prismalogo.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/prismalogo.png"
+    },
+    {
+      "id": "icon-nextjs-logo-png",
+      "name": "nextjs-logo.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/nextjs-logo.png"
+    },
+    {
+      "id": "icon-php-logo-svg-png",
+      "name": "PHP-logo.svg.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/PHP-logo.svg.png"
+    },
+    {
+      "id": "icon-mysql-logo-png",
+      "name": "mysql-logo.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/mysql-logo.png"
+    },
+    {
+      "id": "icon-postgresql-logo-png",
+      "name": "POSTGRESQL-LOGO.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/POSTGRESQL-LOGO.png"
+    },
+    {
+      "id": "icon-go-logo-png",
+      "name": "go-logo.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/go-logo.png"
+    },
+    {
+      "id": "icon-flutter-logo-png",
+      "name": "flutter-logo.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/flutter-logo.png"
+    },
+    {
+      "id": "icon-api-logo-png",
+      "name": "api-logo.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/api-logo.png"
+    },
+    {
+      "id": "icon-htmx-logo-png_seeklogo-554504-png",
+      "name": "htmx-logo-png_seeklogo-554504.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/htmx-logo-png_seeklogo-554504.png"
+    },
+    {
+      "id": "icon-pm2-logo-1-1-png",
+      "name": "pm2-logo-1-1.png",
+      "type": "icon",
+      "component_reference": "assets",
+      "cdn_url": "https://cdn.jaimedigitalstudio.com/assets/images/pm2-logo-1-1.png"
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 // Ya no necesitamos importar las imágenes como módulos
 // porque ahora estamos usando rutas públicas
 
+import { toWebPCached } from './images.js';
+
 /**
  * Datos de experiencia profesional y proyectos para la sección de trayectoria
  * Cada entrada contiene información detallada sobre un proyecto o experiencia laboral
@@ -75,7 +77,7 @@ export const careerData = [
         period: "2025",
         description: "Desarrollo de plataforma de turismo local con enfoque en experiencias personalizadas y reservas online.",
         link: "/",
-        image: "/images/tourtovalencia/tourtovalencia11.jpg",
+        image: toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia11.jpg"),
         skills: ["React", "Tailwind CSS", "Firebase", "Next.js", "OpenRouter API", "PayPal API"],
         highlights: [
             "Gestor de reservas dinámico para tours",
@@ -96,7 +98,7 @@ export const careerData = [
         period: "2025",
         description: "Desarrollo de sitio web informativo para centro de psicopedagogía con formulario de contacto integrado.",
         link: "/",
-        image: "/images/centroneuroexpresion/centroneuroexpresion1.jpg",
+        image: toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion1.jpg"),
         skills: ["React", "Tailwind CSS", "Responsive Design", "Email API"],
         highlights: [
             "Página informativa sobre servicios de psicopedagogía",
@@ -158,7 +160,7 @@ export const careerData = [
         period: "Diciembre 2025",
         description: "Plataforma SaaS completa para generación de fotografía gastronómica profesional mediante IA. Desarrollada con React + Vite en frontend y Elysia.js en backend con runtime Bun. Incluye generación de imágenes, edición con IA, creación de vídeos y soporte multiidioma para 40+ idiomas.",
         link: "https://menustudioai.com",
-        image: "https://pub-a359d46493704152ad4fa443453f3be4.r2.dev/posts/instagram/posts/images/ig-post-09-home-hero.png",
+        image: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-home-hero.png",
         skills: ["React", "Vite", "TypeScript", "Jotai", "Tailwind CSS", "Elysia.js", "Bun", "Prisma ORM", "MySQL", "WaveSpeed API", "Cloudflare R2", "OpenAI API", "Stripe", "JWT", "WebSocket", "i18n"],
         highlights: [
             "Generación de imágenes profesionales en menos de 30 segundos con IA",

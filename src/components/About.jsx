@@ -71,11 +71,11 @@ function About() {
                   <p className="mt-2 text-sm text-gray-200 text-center">React</p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <img src="https://jaimedigitalstudio.com/assets/images/React-Native-Logo.png" alt="React Native" className="fill-primary h-[3.5rem] mr-2 brightness-[500]" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/React-Native-Logo.png" alt="React Native" className="fill-primary h-[3.5rem] mr-2 brightness-[500]" />
                   <p className="mt-0 text-sm text-gray-200 text-center">React Native</p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <img src="https://jaimedigitalstudio.com/assets/images/prismalogo.png" alt="Prisma" className="fill-primary h-[3.5rem] mr-2 brightness-[500]" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/prismalogo.png" alt="Prisma" className="fill-primary h-[3.5rem] mr-2 brightness-[500]" />
                   <p className="mt-0 text-sm text-gray-200 text-center">Prisma</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">
@@ -110,35 +110,35 @@ function About() {
                 </div>
 
                 <div className="flex flex-row items-center">
-                  <img src="https://jaimedigitalstudio.com/assets/images/nextjs-logo.png" alt="Next.js" className="fill-primary h-16 mr-2" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/nextjs-logo.png" alt="Next.js" className="fill-primary h-16 mr-2" />
                   <p className="mt-0 text-sm text-gray-200 text-center">Next.js</p>
                 </div>
 
                 <div className="flex flex-row items-center">
-                  <img src="https://jaimedigitalstudio.com/assets/images/PHP-logo.svg.png" alt="PHP" className="fill-primary h-12 mr-2" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/PHP-logo.svg.png" alt="PHP" className="fill-primary h-12 mr-2" />
                   <p className="mt-0 text-sm text-gray-200 text-center">PHP</p>
                 </div>
 
                 <div className="flex flex-row items-center">
-                  <img src="https://jaimedigitalstudio.com/assets/images/mongodb-icon-1.svg" alt="MongoDB" className="fill-primary h-16 brightness-150" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/mongodb-icon-1.svg" alt="MongoDB" className="fill-primary h-16 brightness-150" />
                   <p className="mt-0 text-sm text-gray-200 text-center">MongoDB</p>
                 </div>
 
                 <div className="flex flex-row items-center">
-                  <img src="https://jaimedigitalstudio.com/assets/images/mysql-logo.png" alt="MySQL" className="fill-primary h-[5rem] mr-2 brightness-200" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/mysql-logo.png" alt="MySQL" className="fill-primary h-[5rem] mr-2 brightness-200" />
                   <p className="mt-0 text-sm text-gray-200 text-center">MySQL</p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <img src="https://jaimedigitalstudio.com/assets/images/go-logo.png" alt="GO" className="fill-primary h-[3rem] mr-2 brightness-200" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/go-logo.png" alt="GO" className="fill-primary h-[3rem] mr-2 brightness-200" />
                   <p className="mt-0 text-sm text-gray-200 text-center">GO</p>
                 </div>
 
                 <div className="flex flex-row items-center">
-                  <img src="https://jaimedigitalstudio.com/assets/images/POSTGRESQL-LOGO.png" alt="PostgreSQL" className="fill-primary h-[3.5rem] mr-2 brightness-200" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/POSTGRESQL-LOGO.png" alt="PostgreSQL" className="fill-primary h-[3.5rem] mr-2 brightness-200" />
                   <p className="mt-0 text-sm text-gray-200 text-center">PostgreSQL</p>
                 </div>
                 <div className="flex flex-row items-center">
-                  <img src="https://jaimedigitalstudio.com/assets/images/flutter-logo.png" alt="Flutter" className="fill-primary h-[3.5rem] mr-2 brightness-200" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/flutter-logo.png" alt="Flutter" className="fill-primary h-[3.5rem] mr-2 brightness-200" />
                   <p className="mt-0 text-sm text-gray-200 text-center">Flutter</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">
@@ -169,31 +169,31 @@ function About() {
                   <p className="mt-2 text-sm text-gray-200 text-center">Figma</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                  <img src="https://jaimedigitalstudio.com/assets/images/logo-vercel-svgrepo-com.svg" alt="Vercel" className="fill-primary h-12 text-primary" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/logo-vercel-svgrepo-com.svg" alt="Vercel" className="fill-primary h-12 text-primary" />
                   <p className="mt-2 text-sm text-gray-200 text-center">Vercel</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                  <img src="https://jaimedigitalstudio.com/assets/images/netlify-original.svg" alt="Vercel" className="fill-primary h-12 text-primary brightness-200" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/netlify-original.svg" alt="Vercel" className="fill-primary h-12 text-primary brightness-200" />
                   <p className="mt-2 text-sm text-gray-200 text-center">Netlify</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                  <img src="https://jaimedigitalstudio.com/assets/images/postman.svg" alt="Postman" className="fill-primary h-14" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/postman.svg" alt="Postman" className="fill-primary h-14" />
                   <p className="mt-2 text-sm text-gray-200 text-center">Postman</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                  <img src="https://jaimedigitalstudio.com/assets/images/api-logo.png" alt="API" className="h-16 fill-primary brightness-200" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/api-logo.png" alt="API" className="h-16 fill-primary brightness-200" />
                   <p className="mt-2 text-sm text-gray-200 text-center">API</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                  <img src="https://jaimedigitalstudio.com/assets/images/htmx-logo-png_seeklogo-554504.png" alt="HTMX" className="fill-primary h-14 brightness-200" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/htmx-logo-png_seeklogo-554504.png" alt="HTMX" className="fill-primary h-14 brightness-200" />
                   <p className="mt-2 text-sm text-gray-200 text-center">HTMX</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                  <img src="https://jaimedigitalstudio.com/assets/images/remix-letter-glowing.svg" alt="REMIX" className="fill-primary h-14 brightness-200" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/remix-letter-glowing.svg" alt="REMIX" className="fill-primary h-14 brightness-200" />
                   <p className="mt-2 text-sm text-gray-200 text-center">REMIX</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                  <img src="https://jaimedigitalstudio.com/assets/images/pm2-logo-1-1.png" alt="PM2" className="fill-primary h-14 brightness-200" />
+                  <img src="https://cdn.jaimedigitalstudio.com/assets/images/pm2-logo-1-1.png" alt="PM2" className="fill-primary h-14 brightness-200" />
                   <p className="mt-2 text-sm text-gray-200 text-center">PM2</p>
                 </div>
                 <div className="flex flex-row items-center gap-4">

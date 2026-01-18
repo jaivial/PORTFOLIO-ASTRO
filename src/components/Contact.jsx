@@ -4,7 +4,7 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslations } from "../utils/translations";
 
-import backgroundImg from "../assets/images/background.webp";
+const backgroundImg = "https://cdn.jaimedigitalstudio.com/assets/images/background.webp";
 export default function Contact() {
   const t = useTranslations();
   const [name, setName] = useState("");
@@ -63,7 +63,7 @@ export default function Contact() {
       </h1>
       <section
         className="w-5/6 rounded-xl mx-auto bg-fit"
-        style={{ backgroundImage: `url(${backgroundImg.src})` }}
+        style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         <div className="sm:p-24 p-8 mx-auto mb-24">
           <div className="pb-8 text-center">

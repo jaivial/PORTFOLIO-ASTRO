@@ -1,11 +1,13 @@
+import { toWebPCached } from '../utils/images.js';
+
 // Import project images
-import FrasesMarcosAlcon from "../assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg";
-import TodoList from "../assets/images/todolist/todolist6.jpg";
-import AlqueriaVillaCarmen from "../assets/images/villacarmen/villacarmen-18.jpg";
-import CatStore from "../assets/images/catstore/catstore1.jpg";
-import GuillermoFernandezNutricion from "../assets/images/guillermofernandeznutricion.webp";
-import TourToValencia from "../assets/images/tourtovalencia/tourtovalencia11.jpg";
-import HeroBudget from "../assets/images/herobudget/herobudgeticon.png";
+const FrasesMarcosAlcon = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg");
+const TodoList = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist6.jpg");
+const AlqueriaVillaCarmen = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-18.jpg");
+const CatStore = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore1.jpg");
+const GuillermoFernandezNutricion = toWebPCached("https://cdn.jaimedigitalstudio.com/images/guillermofernandeznutricion.webp");
+const TourToValencia = toWebPCached("https://cdn.jaimedigitalstudio.com/images/tourtovalencia/tourtovalencia11.jpg");
+const HeroBudget = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgeticon.png");
 
 const cvData = {
     en: {
@@ -172,49 +174,49 @@ const cvData = {
                 description: "Complete personal finance management mobile application with offline-first architecture, real-time synchronization, multilingual support (20+ languages), and comprehensive features for tracking income, expenses, bills and savings goals.",
                 technologies: ["React Native", "TypeScript", "Go", "SQLite", "OAuth 2.0", "Jest", "Detox", "RESTful API", "VPS", "Nginx"],
                 link: "https://herobudgetapp.jaimedigitalstudio.com",
-                thumbnail: HeroBudget.src
+                thumbnail: HeroBudget
             },
             {
                 title: "Frases Marcos Alcón",
                 description: "Interactive web application built with Go that displays a collection of phrases and poems by Marcos Alcón in an elegant book format with page flip animations.",
                 technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
                 link: "https://frasesmarcosalcon.com",
-                thumbnail: FrasesMarcosAlcon.src
+                thumbnail: FrasesMarcosAlcon
             },
             {
                 title: "Tour To Valencia",
                 description: "Modern, multilingual web application built with Remix and React for discovering, exploring, and booking tours and experiences in Valencia, Spain.",
                 technologies: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Responsive Design"],
                 link: "https://www.tourtovalencia.com",
-                thumbnail: TourToValencia.src
+                thumbnail: TourToValencia
             },
             {
                 title: "Todo List",
                 description: "Complete task management application developed with Next.js 15, TypeScript, Tailwind CSS 4 and PostgreSQL with user authentication, drag & drop task management, and multilingual support.",
                 technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Responsive Design"],
                 link: "https://todolist.jaimedigitalstudio.com/",
-                thumbnail: TodoList.src
+                thumbnail: TodoList
             },
             {
                 title: "Guillermo Fernandez Nutrición",
                 description: "Website to advertise nutritional consultation services and increase customer acquisition with responsive design adaptable to desktop, tablet, and mobile sizes.",
                 technologies: ["Javascript", "CSS", "Astro", "Express.js", "Responsive Design"],
                 link: "https://guillermofernandeznutricion.es/",
-                thumbnail: GuillermoFernandezNutricion.src
+                thumbnail: GuillermoFernandezNutricion
             },
             {
                 title: "Alqueria Villa Carmen",
                 description: "Website creation to promote Alqueria Villa Carmen, a restaurant and event hall, featuring daily menus, weekend menus and wine list, plus online reservation capability.",
                 technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL", "Responsive Design"],
                 link: "https://alqueriavillacarmen.com/",
-                thumbnail: AlqueriaVillaCarmen.src
+                thumbnail: AlqueriaVillaCarmen
             },
             {
                 title: "Cat Store",
                 description: "Web application for an online cat store developed with PHP, MySQL, HTML, CSS and JavaScript with authentication system, session persistence through cookies, and mobile-responsive design.",
                 technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL", "Responsive Design"],
                 link: "https://catstore.jaimedigitalstudio.com",
-                thumbnail: CatStore.src
+                thumbnail: CatStore
             }
         ],
         certifications: [
@@ -390,49 +392,49 @@ const cvData = {
                 description: "Aplicación móvil completa de gestión de finanzas personales con arquitectura offline-first, sincronización en tiempo real, soporte multiidioma (más de 20 idiomas) y funcionalidades completas para rastrear ingresos, gastos, facturas y metas de ahorro.",
                 technologies: ["React Native", "TypeScript", "Go", "SQLite", "OAuth 2.0", "Jest", "Detox", "RESTful API", "VPS", "Nginx"],
                 link: "https://herobudgetapp.jaimedigitalstudio.com",
-                thumbnail: HeroBudget.src
+                thumbnail: HeroBudget
             },
             {
                 title: "Frases Marcos Alcón",
                 description: "Aplicación web interactiva construida con Go que muestra una colección de frases y poemas de Marcos Alcón en un elegante formato de libro con animaciones de paso de página.",
                 technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
                 link: "https://frasesmarcosalcon.com",
-                thumbnail: FrasesMarcosAlcon.src
+                thumbnail: FrasesMarcosAlcon
             },
             {
                 title: "Tour To Valencia",
                 description: "Aplicación web moderna y multilingüe construida con Remix y React para descubrir, explorar y reservar tours y experiencias en Valencia, España.",
                 technologies: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Responsive Design"],
                 link: "https://www.tourtovalencia.com",
-                thumbnail: TourToValencia.src
+                thumbnail: TourToValencia
             },
             {
                 title: "Todo List",
                 description: "Aplicación completa de gestión de tareas desarrollada con Next.js 15, TypeScript, Tailwind CSS 4 y PostgreSQL con autenticación de usuarios, gestión de tareas con sistema de arrastrar y soltar, y soporte multilingüe.",
                 technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Responsive Design"],
                 link: "https://todolist.jaimedigitalstudio.com/",
-                thumbnail: TodoList.src
+                thumbnail: TodoList
             },
             {
                 title: "Guillermo Fernandez Nutrición",
                 description: "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes con diseño responsivo adaptable a tamaños de escritorio, tablet y móviles.",
                 technologies: ["Javascript", "CSS", "Astro", "Express.js", "Responsive Design"],
                 link: "https://guillermofernandeznutricion.es/",
-                thumbnail: GuillermoFernandezNutricion.src
+                thumbnail: GuillermoFernandezNutricion
             },
             {
                 title: "Alqueria Villa Carmen",
                 description: "Creación de página web para promocionar Alqueria Villa Carmen, un restaurante y salón de eventos, mostrando los Menús del Día, de Fin de Semana y la carta de vinos, además de permitir reservas online.",
                 technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL", "Responsive Design"],
                 link: "https://alqueriavillacarmen.com/",
-                thumbnail: AlqueriaVillaCarmen.src
+                thumbnail: AlqueriaVillaCarmen
             },
             {
                 title: "Cat Store",
                 description: "Aplicación web para una tienda online de gatos desarrollada con PHP, MySQL, HTML, CSS y JavaScript con sistema de autenticación, persistencia de sesión mediante cookies y diseño adaptable a dispositivos móviles.",
                 technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL", "Responsive Design"],
                 link: "https://catstore.jaimedigitalstudio.com",
-                thumbnail: CatStore.src
+                thumbnail: CatStore
             }
         ],
         certifications: [
@@ -608,49 +610,49 @@ const cvData = {
                 description: "Vollständige mobile Anwendung zur Verwaltung persönlicher Finanzen mit Offline-First-Architektur, Echtzeit-Synchronisation, mehrsprachiger Unterstützung (über 20 Sprachen) und umfassenden Funktionen zur Verfolgung von Einnahmen, Ausgaben, Rechnungen und Sparzielen.",
                 technologies: ["React Native", "TypeScript", "Go", "SQLite", "OAuth 2.0", "Jest", "Detox", "RESTful API", "VPS", "Nginx"],
                 link: "https://herobudgetapp.jaimedigitalstudio.com",
-                thumbnail: HeroBudget.src
+                thumbnail: HeroBudget
             },
             {
                 title: "Marcos Alcón Frases",
                 description: "Digitales Buchprojekt mit interaktiven Seiten und responsivem Design.",
                 technologies: ["Go", "HTML", "Javascript", "CSS", "StPageFlip", "Responsive Design"],
                 link: "https://frasesmarcosalcon.com",
-                thumbnail: FrasesMarcosAlcon.src
+                thumbnail: FrasesMarcosAlcon
             },
             {
                 title: "Tour To Valencia",
                 description: "Tourismusplattform mit Zahlungsintegration und Buchungssystem.",
                 technologies: ["React", "Remix", "TypeScript", "Tailwind CSS", "MongoDB", "PayPal", "Stripe", "Responsive Design"],
                 link: "https://www.tourtovalencia.com",
-                thumbnail: TourToValencia.src
+                thumbnail: TourToValencia
             },
             {
                 title: "Todo List",
                 description: "Aufgabenverwaltungsanwendung mit Benutzerauthentifizierung und Datenbank.",
                 technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Responsive Design"],
                 link: "https://todolist.jaimedigitalstudio.com/",
-                thumbnail: TodoList.src
+                thumbnail: TodoList
             },
             {
                 title: "Guillermo Fernandez Ernährung",
                 description: "Informative Website für Ernährungsberatung mit Kontaktformular.",
                 technologies: ["Javascript", "CSS", "Astro", "Express.js", "Responsive Design"],
                 link: "https://guillermofernandeznutricion.es/",
-                thumbnail: GuillermoFernandezNutricion.src
+                thumbnail: GuillermoFernandezNutricion
             },
             {
                 title: "Alqueria Villa Carmen",
                 description: "Website für ein ländliches Tourismusunternehmen mit Buchungssystem.",
                 technologies: ["PHP", "HTML", "Javascript", "CSS", "MySQL", "Responsive Design"],
                 link: "https://alqueriavillacarmen.com/",
-                thumbnail: AlqueriaVillaCarmen.src
+                thumbnail: AlqueriaVillaCarmen
             },
             {
                 title: "Cat Store",
                 description: "E-Commerce-Plattform für Katzenprodukte mit Warenkorb und Zahlungssystem.",
                 technologies: ["HTML", "Javascript", "CSS", "PHP", "MySQL", "Responsive Design"],
                 link: "https://catstore.jaimedigitalstudio.com",
-                thumbnail: CatStore.src
+                thumbnail: CatStore
             }
         ],
         certifications: [
