@@ -22,8 +22,25 @@ export default defineConfig({
   build: {
     assetsPrefix: isProduction && CDN_URL ? CDN_URL : undefined,
     inlineStylesheets: 'auto',
+    // More aggressive code splitting
+    splitFactory: true,
   },
   compressHTML: true,
+  vite: {
+    build: {
+      // Aggressive code splitting
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'framer-motion': ['framer-motion'],
+            'rsuite': ['rsuite'],
+            'react-icons': ['react-icons/fa', 'react-icons/di', 'react-icons/ai'],
+            'apexcharts': ['react-apexcharts', 'apexcharts'],
+          }
+        }
+      }
+    }
+  },
   markdown: {
     ...markdownConfig
   },
