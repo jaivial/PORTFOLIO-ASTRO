@@ -1,13 +1,25 @@
-import { useState, useEffect } from "react";
-import CVViewer from "./CV/CVViewer";
+import { useState, useEffect, lazy, Suspense } from "react";
 import { openCVModal } from "../utils/cvUtils";
-import { 
-  getCurrentLanguage, 
-  setCurrentLanguage, 
-  AVAILABLE_LANGUAGES, 
-  getLanguageInfo 
+import {
+  getCurrentLanguage,
+  setCurrentLanguage,
+  AVAILABLE_LANGUAGES,
+  getLanguageInfo
 } from "../utils/languageManager";
 import { useTranslations } from "../utils/translations";
+
+// Lazy load CVViewer to avoid loading framer-motion until needed
+const CVViewer = lazy(() => import("./CV/CVViewer"));
+
+// Simple loading fallback
+const CVLoadingFallback = () => (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 backdrop-blur-sm">
+    <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-2xl">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+      <p className="text-gray-600 dark:text-gray-300 mt-4 text-center">Cargando CV...</p>
+    </div>
+  </div>
+);
 
 function NavBar() {
   const [isIndexPage, setIsIndexPage] = useState(false);
@@ -299,7 +311,9 @@ function NavBar() {
       </nav>
 
       {/* CV Viewer Modal with parameters */}
-      {isCVOpen && <CVViewer onClose={handleCloseCV} initialLanguage={cvParams.language} initialSection={cvParams.section} />}
+      <Suspense fallback={<CVLoadingFallback />}>
+        {isCVOpen && <CVViewer onClose={handleCloseCV} initialLanguage={cvParams.language} initialSection={cvParams.section} />}
+      </Suspense>
     </>
   );
 }
