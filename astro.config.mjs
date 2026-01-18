@@ -6,7 +6,6 @@ import markdownConfig from './markdown.config';
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
 import robotsTxt from "astro-robots-txt";
-import node from "@astrojs/node";
 
 import playformCompress from "@playform/compress";
 
@@ -16,10 +15,15 @@ const CDN_URL = process.env.CDN_URL || '';
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.jaimedigitalstudio.com",
-  prefetch: true,
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'viewport'
+  },
   build: {
     assetsPrefix: isProduction && CDN_URL ? CDN_URL : undefined,
+    inlineStylesheets: 'auto',
   },
+  compressHTML: true,
   markdown: {
     ...markdownConfig
   },
@@ -47,17 +51,7 @@ export default defineConfig({
     Brotli: true,
     Gzip: false
   })],
-  output: "server",
-  adapter: node({
-    mode: "standalone"
-  }),
-  // adapter: vercel({
-  //   webAnalytics: {
-  //     enabled: true
-  //   },
-  //   speedInsights: {
-  //     enabled: true
-  //   },
-  //   imageService: true
-  // })
+  output: "static",
+  // SSG mode - no server adapter needed
+  // API routes handled by external FastAPI backend
 });

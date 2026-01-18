@@ -5,7 +5,7 @@
 STORAGE_NAME="jaimedigitalstudio"
 ACCESS_KEY="0ad9ada0-7f63-4cf5-a19ba8fd8404-0c0a-40fb"
 BASE_URL="https://storage.bunnycdn.com/${STORAGE_NAME}"
-SOURCE_DIR="dist/client"
+SOURCE_DIR="dist"
 
 echo "Uploading ${SOURCE_DIR} to Bunny CDN..."
 
