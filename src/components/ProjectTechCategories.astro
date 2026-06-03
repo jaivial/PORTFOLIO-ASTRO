@@ -32,7 +32,7 @@ const categorizedTech = categorizeTech(project.tech);
               const icon = getIcon(tech);
               return (
                 <div class="flex items-center gap-2 bg-purple-500/15 text-purple-300 px-3 py-2 rounded-lg text-sm font-medium hover:bg-purple-500/25 transition-colors duration-200">
-                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes} />)}
+                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes}  loading="lazy" decoding="async" />)}
                   <span class="truncate">{tech}</span>
                 </div>
               );
@@ -56,7 +56,7 @@ const categorizedTech = categorizeTech(project.tech);
               const icon = getIcon(tech);
               return (
                 <div class="flex items-center gap-2 bg-blue-500/15 text-blue-300 px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-500/25 transition-colors duration-200">
-                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes} />)}
+                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes}  loading="lazy" decoding="async" />)}
                   <span class="truncate">{tech}</span>
                 </div>
               );
@@ -80,7 +80,7 @@ const categorizedTech = categorizeTech(project.tech);
               const icon = getIcon(tech);
               return (
                 <div class="flex items-center gap-2 bg-green-500/15 text-green-300 px-3 py-2 rounded-lg text-sm font-medium hover:bg-green-500/25 transition-colors duration-200">
-                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes} />)}
+                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes}  loading="lazy" decoding="async" />)}
                   <span class="truncate">{tech}</span>
                 </div>
               );
@@ -104,7 +104,7 @@ const categorizedTech = categorizeTech(project.tech);
               const icon = getIcon(tech);
               return (
                 <div class="flex items-center gap-2 bg-yellow-500/15 text-yellow-300 px-3 py-2 rounded-lg text-sm font-medium hover:bg-yellow-500/25 transition-colors duration-200">
-                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes} />)}
+                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes}  loading="lazy" decoding="async" />)}
                   <span class="truncate">{tech}</span>
                 </div>
               );
@@ -128,7 +128,7 @@ const categorizedTech = categorizeTech(project.tech);
               const icon = getIcon(tech);
               return (
                 <div class="flex items-center gap-2 bg-orange-500/15 text-orange-300 px-3 py-2 rounded-lg text-sm font-medium hover:bg-orange-500/25 transition-colors duration-200">
-                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes} />)}
+                  {icon && (icon.type === "svg" ? <Fragment set:html={icon.content} /> : <img src={icon.src} alt={tech} class={icon.classes}  loading="lazy" decoding="async" />)}
                   <span class="truncate">{tech}</span>
                 </div>
               );
@@ -155,7 +155,7 @@ const categorizedTech = categorizeTech(project.tech);
                   {icon?.type === "svg" ? (
                     <Fragment set:html={icon.content} />
                   ) : icon?.type === "img" ? (
-                    <img src={icon.src} alt={tech} class={icon.classes} />
+                    <img src={icon.src} alt={tech} class={icon.classes}  loading="lazy" decoding="async" />
                   ) : (
                     <div class="w-8 h-8 bg-indigo-500/20 rounded flex items-center justify-center">
                       <span class="text-xs font-bold text-indigo-400">{tech.charAt(0)}</span>

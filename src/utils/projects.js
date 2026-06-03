@@ -1,43 +1,43 @@
 import { toWebPCached, addCacheBusting } from './images.js';
 
 // Base image URLs - automatically converted to WebP with cache-busting
-const ras = toWebPCached("https://cdn.jaimedigitalstudio.com/ras.webp");
-const joke = toWebPCached("https://cdn.jaimedigitalstudio.com/joke.webp");
-const lofi = toWebPCached("https://cdn.jaimedigitalstudio.com/lofi.webp");
-const blog = toWebPCached("https://cdn.jaimedigitalstudio.com/blog.webp");
-const Carhub = toWebPCached("https://cdn.jaimedigitalstudio.com/carhub.webp");
-const AlqueriaVillacarmen = toWebPCached("https://cdn.jaimedigitalstudio.com/villacarmendoble.webp");
-const Portfolio = toWebPCached("https://cdn.jaimedigitalstudio.com/portfolioweb.webp")
-const GuillermoFernandezNutricion = toWebPCached("https://cdn.jaimedigitalstudio.com/images/guillermofernandeznutricion.webp")
-const GuilleImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/guilleromofernandeznutricion/guille1.jpg")
-const GuilleImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/guilleromofernandeznutricion/guille2.jpg")
-const GuilleImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/guilleromofernandeznutricion/guille3.jpg")
+const ras = toWebPCached(`${__CDN_URL__}/ras.webp`);
+const joke = toWebPCached(`${__CDN_URL__}/joke.webp`);
+const lofi = toWebPCached(`${__CDN_URL__}/lofi.webp`);
+const blog = toWebPCached(`${__CDN_URL__}/blog.webp`);
+const Carhub = toWebPCached(`${__CDN_URL__}/carhub.webp`);
+const AlqueriaVillacarmen = toWebPCached(`${__CDN_URL__}/villacarmendoble.webp`);
+const Portfolio = toWebPCached(`${__CDN_URL__}/portfolioweb.webp`)
+const GuillermoFernandezNutricion = toWebPCached(`${__CDN_URL__}/images/guillermofernandeznutricion.webp`)
+const GuilleImg1 = toWebPCached(`${__CDN_URL__}/assets/images/guilleromofernandeznutricion/guille1.jpg`)
+const GuilleImg2 = toWebPCached(`${__CDN_URL__}/assets/images/guilleromofernandeznutricion/guille2.jpg`)
+const GuilleImg3 = toWebPCached(`${__CDN_URL__}/assets/images/guilleromofernandeznutricion/guille3.jpg`)
 // import GuilleVideo from "../assets/videos/guillermofernandeznutricion/videoguille.mov" // Commented out - video file missing
 
 // Importaciones para Frases Marcos Alcón
-const FrasesMarcosAlcon = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg");
-const FrasesMarcosAlconImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg");
-const FrasesMarcosAlconImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon2.jpg");
-const FrasesMarcosAlconImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon3.jpg");
-const FrasesMarcosAlconImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon4.jpg");
+const FrasesMarcosAlcon = toWebPCached(`${__CDN_URL__}/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg`);
+const FrasesMarcosAlconImg1 = toWebPCached(`${__CDN_URL__}/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg`);
+const FrasesMarcosAlconImg2 = toWebPCached(`${__CDN_URL__}/assets/images/frasesmarcosalcon/frasesmarcosalcon2.jpg`);
+const FrasesMarcosAlconImg3 = toWebPCached(`${__CDN_URL__}/assets/images/frasesmarcosalcon/frasesmarcosalcon3.jpg`);
+const FrasesMarcosAlconImg4 = toWebPCached(`${__CDN_URL__}/assets/images/frasesmarcosalcon/frasesmarcosalcon4.jpg`);
 // import FrasesMarcosAlconVideo1 from "../assets/videos/frasesmarcosalcon/frasesmarcosalcon1.mov" // Commented out - video file missing
 
 // Importaciones para Cat Store
-const CatStore = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore1.jpg");
-const CatStoreImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore1.jpg");
-const CatStoreImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore2.jpg");
-const CatStoreImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore3.jpg");
-const CatStoreImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore4.jpg");
-const CatStoreImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore5.jpg");
-const CatStoreImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore6.jpg");
-const CatStoreImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore7.jpg");
-const CatStoreImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore8.jpg");
-const CatStoreImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore9.jpg");
-const CatStoreImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore10.jpg");
-const CatStoreImg11 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore11.jpg");
-const CatStoreImg12 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore12.jpg");
-const CatStoreImg13 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore13.jpg");
-const CatStoreImg14 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore14.jpg");
+const CatStore = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore1.jpg`);
+const CatStoreImg1 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore1.jpg`);
+const CatStoreImg2 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore2.jpg`);
+const CatStoreImg3 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore3.jpg`);
+const CatStoreImg4 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore4.jpg`);
+const CatStoreImg5 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore5.jpg`);
+const CatStoreImg6 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore6.jpg`);
+const CatStoreImg7 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore7.jpg`);
+const CatStoreImg8 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore8.jpg`);
+const CatStoreImg9 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore9.jpg`);
+const CatStoreImg10 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore10.jpg`);
+const CatStoreImg11 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore11.jpg`);
+const CatStoreImg12 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore12.jpg`);
+const CatStoreImg13 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore13.jpg`);
+const CatStoreImg14 = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore14.jpg`);
 // import CatStoreVideo1 from "../assets/videos/catstore/catstore1.mov"
 // import CatStoreVideo2 from "../assets/videos/catstore/catstore2.mov"
 // import CatStoreVideo3 from "../assets/videos/catstore/catstore3.mov"
@@ -45,43 +45,43 @@ const CatStoreImg14 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/im
 // import CatStoreVideo5 from "../assets/videos/catstore/catstore5.mov"
 
 // Importaciones para Alqueria Villacarmen
-const VillacarmenImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-1.jpg")
-const VillacarmenImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-2.jpg")
-const VillacarmenImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-3.jpg")
-const VillacarmenImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-4.jpg")
-const VillacarmenImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-5.jpg")
-const VillacarmenImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-6.jpg")
-const VillacarmenImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-7.jpg")
-const VillacarmenImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-8.jpg")
-const VillacarmenImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-9.jpg")
-const VillacarmenImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-10.jpg")
-const VillacarmenImg11 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-11.jpg")
-const VillacarmenImg12 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-12.jpg")
-const VillacarmenImg13 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-13.jpg")
-const VillacarmenImg14 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-14.jpg")
-const VillacarmenImg15 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-15.jpg")
-const VillacarmenImg16 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-16.jpg")
-const VillacarmenImg17 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-17.jpg")
-const VillacarmenImg18 = addCacheBusting("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-18.jpg")
+const VillacarmenImg1 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-1.jpg`)
+const VillacarmenImg2 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-2.jpg`)
+const VillacarmenImg3 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-3.jpg`)
+const VillacarmenImg4 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-4.jpg`)
+const VillacarmenImg5 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-5.jpg`)
+const VillacarmenImg6 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-6.jpg`)
+const VillacarmenImg7 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-7.jpg`)
+const VillacarmenImg8 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-8.jpg`)
+const VillacarmenImg9 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-9.jpg`)
+const VillacarmenImg10 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-10.jpg`)
+const VillacarmenImg11 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-11.jpg`)
+const VillacarmenImg12 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-12.jpg`)
+const VillacarmenImg13 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-13.jpg`)
+const VillacarmenImg14 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-14.jpg`)
+const VillacarmenImg15 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-15.jpg`)
+const VillacarmenImg16 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-16.jpg`)
+const VillacarmenImg17 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-17.jpg`)
+const VillacarmenImg18 = addCacheBusting(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-18.jpg`)
 // import VillacarmenVideo from "../assets/videos/villacarmen/villacarmen-video.mov"
 
 // Importaciones para Tour To Valencia
-const TourToValencia = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia11.jpg");
-const TourToValenciaImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia1.jpg");
-const TourToValenciaImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia2.jpg");
-const TourToValenciaImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia3.jpg");
-const TourToValenciaImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia4.jpg");
-const TourToValenciaImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia5.jpg");
-const TourToValenciaImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia6.jpg");
-const TourToValenciaImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia7.jpg");
-const TourToValenciaImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia8.jpg");
-const TourToValenciaImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia9.jpg");
-const TourToValenciaImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia10.jpg");
-const TourToValenciaImg11 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia11.jpg");
-const TourToValenciaImg12 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia12.jpg");
-const TourToValenciaImg13 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia13.jpg");
-const TourToValenciaImg14 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia14.jpg");
-const TourToValenciaImg15 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/tourtovalencia/tourtovalencia15.jpg");
+const TourToValencia = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia11.jpg`);
+const TourToValenciaImg1 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia1.jpg`);
+const TourToValenciaImg2 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia2.jpg`);
+const TourToValenciaImg3 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia3.jpg`);
+const TourToValenciaImg4 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia4.jpg`);
+const TourToValenciaImg5 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia5.jpg`);
+const TourToValenciaImg6 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia6.jpg`);
+const TourToValenciaImg7 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia7.jpg`);
+const TourToValenciaImg8 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia8.jpg`);
+const TourToValenciaImg9 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia9.jpg`);
+const TourToValenciaImg10 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia10.jpg`);
+const TourToValenciaImg11 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia11.jpg`);
+const TourToValenciaImg12 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia12.jpg`);
+const TourToValenciaImg13 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia13.jpg`);
+const TourToValenciaImg14 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia14.jpg`);
+const TourToValenciaImg15 = toWebPCached(`${__CDN_URL__}/assets/images/tourtovalencia/tourtovalencia15.jpg`);
 // import TourToValenciaVideo1 from "../assets/videos/tourtovalencia/tourtovalencia1.mov"
 // import TourToValenciaVideo2 from "../assets/videos/tourtovalencia/tourtovalencia2.mov"
 // import TourToValenciaVideo3 from "../assets/videos/tourtovalencia/tourtovalencia3.mov"
@@ -92,83 +92,83 @@ const TourToValenciaImg15 = toWebPCached("https://cdn.jaimedigitalstudio.com/ass
 // import TourToValenciaVideo8 from "../assets/videos/tourtovalencia/tourtovalencia8.mov"
 
 // Importaciones para Centro Neuro Expresion
-const CentroNeuroExpresion = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion1.jpg");
-const CentroNeuroExpresionImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion1.jpg");
-const CentroNeuroExpresionImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion2.jpg");
-const CentroNeuroExpresionImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion3.jpg");
-const CentroNeuroExpresionImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion4.jpg");
-const CentroNeuroExpresionImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion5.jpg");
-const CentroNeuroExpresionImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion6.jpg");
-const CentroNeuroExpresionImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion7.jpg");
-const CentroNeuroExpresionImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion8.jpg");
-const CentroNeuroExpresionImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion9.jpg");
-const CentroNeuroExpresionImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion10.jpg");
-const CentroNeuroExpresionImg11 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion11.jpg");
-const CentroNeuroExpresionImg12 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion12.jpg");
-const CentroNeuroExpresionImg13 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion13.jpg");
-const CentroNeuroExpresionImg14 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion14.jpg");
-const CentroNeuroExpresionImg15 = toWebPCached("https://cdn.jaimedigitalstudio.com/images/centroneuroexpresion/centroneuroexpresion15.jpg");
+const CentroNeuroExpresion = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion1.jpg`);
+const CentroNeuroExpresionImg1 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion1.jpg`);
+const CentroNeuroExpresionImg2 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion2.jpg`);
+const CentroNeuroExpresionImg3 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion3.jpg`);
+const CentroNeuroExpresionImg4 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion4.jpg`);
+const CentroNeuroExpresionImg5 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion5.jpg`);
+const CentroNeuroExpresionImg6 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion6.jpg`);
+const CentroNeuroExpresionImg7 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion7.jpg`);
+const CentroNeuroExpresionImg8 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion8.jpg`);
+const CentroNeuroExpresionImg9 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion9.jpg`);
+const CentroNeuroExpresionImg10 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion10.jpg`);
+const CentroNeuroExpresionImg11 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion11.jpg`);
+const CentroNeuroExpresionImg12 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion12.jpg`);
+const CentroNeuroExpresionImg13 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion13.jpg`);
+const CentroNeuroExpresionImg14 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion14.jpg`);
+const CentroNeuroExpresionImg15 = toWebPCached(`${__CDN_URL__}/images/centroneuroexpresion/centroneuroexpresion15.jpg`);
 // import CentroNeuroExpresionVideo1 from "../assets/videos/centroneuroexpresion/centroneuroexpresion1.mov"
 // import CentroNeuroExpresionVideo2 from "../assets/videos/centroneuroexpresion/centroneuroexpresion2.mov"
 // import CentroNeuroExpresionVideo3 from "../assets/videos/centroneuroexpresion/centroneuroexpresion3.mov"
 // import CentroNeuroExpresionVideo4 from "../assets/videos/centroneuroexpresion/centroneuroexpresion4.mov"
 
 // Importaciones para Hero Budget (usando imagen temporal - reemplazar con imágenes reales)
-const HeroBudget = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1.webp");
-const HeroBudgetIcon = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgeticon.png");
-const HeroBudgetImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1.webp");
-const herobudgetimg1ligh = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1ligh.png");
-const HeroBudgetImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg2.webp");
-const HeroBudgetImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg3.webp");
-const HeroBudgetImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg4.webp");
-const HeroBudgetImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg5.webp");
-const HeroBudgetImg6 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg6.webp");
-const HeroBudgetImg7 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg7.webp");
-const HeroBudgetImg8 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg8.webp");
-const HeroBudgetImg9 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg9.webp");
-const HeroBudgetImg10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg10.webp");
-const deltaSyncFlow = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/delta-sync-flow.svg");
-const offlineFirstInfographic = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/offline-first-infographic.svg");
-const backendMicroservicesDiagram = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/backend-microservices-diagram.svg");
-const herobudgetbills = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetbills.png");
-const herobudgetdark2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark2.png");
-const herobudgetlight2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight2.png");
-const herobudgetdark3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark3.png");
-const herobudgetdark4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark4.png");
-const herobudgetgoals = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetgoals.png");
-const herobudgetlight3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight3.png");
-const herobudgetlight4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight4.png");
+const HeroBudget = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg1.webp`);
+const HeroBudgetIcon = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgeticon.png`);
+const HeroBudgetImg1 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg1.webp`);
+const herobudgetimg1ligh = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg1ligh.png`);
+const HeroBudgetImg2 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg2.webp`);
+const HeroBudgetImg3 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg3.webp`);
+const HeroBudgetImg4 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg4.webp`);
+const HeroBudgetImg5 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg5.webp`);
+const HeroBudgetImg6 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg6.webp`);
+const HeroBudgetImg7 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg7.webp`);
+const HeroBudgetImg8 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg8.webp`);
+const HeroBudgetImg9 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg9.webp`);
+const HeroBudgetImg10 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetimg10.webp`);
+const deltaSyncFlow = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/delta-sync-flow.svg`);
+const offlineFirstInfographic = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/offline-first-infographic.svg`);
+const backendMicroservicesDiagram = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/backend-microservices-diagram.svg`);
+const herobudgetbills = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetbills.png`);
+const herobudgetdark2 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetdark2.png`);
+const herobudgetlight2 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetlight2.png`);
+const herobudgetdark3 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetdark3.png`);
+const herobudgetdark4 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetdark4.png`);
+const herobudgetgoals = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetgoals.png`);
+const herobudgetlight3 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetlight3.png`);
+const herobudgetlight4 = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgetlight4.png`);
 
 // Importaciones para MenuStudio AI
-const MenuStudioIcon = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/icon.png");
-const MenuStudioF01 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-01.png");
-const MenuStudioF02 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-02.png");
-const MenuStudioF03 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-03.png");
-const MenuStudioF04 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-04.png");
-const MenuStudioF05 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-05.png");
-const MenuStudioF06 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-06.png");
-const MenuStudioF07 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-07.png");
-const MenuStudioF08 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-08.png");
-const MenuStudioF09 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-09.png");
-const MenuStudioF10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/feature-10.png");
-const TechDiagram01 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/01-rest-api-architecture.svg");
-const TechDiagram02 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/02-websocket-realtime.svg");
-const TechDiagram03 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/03-session-authentication.svg");
-const TechDiagram06 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/06-nsfw-ban-system.svg");
-const TechDiagram07 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/07-stripe-integration.svg");
-const TechDiagram10 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/menustudioai/diagrams/10-admin-panel.svg");
+const MenuStudioIcon = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/icon.png`);
+const MenuStudioF01 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-01.png`);
+const MenuStudioF02 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-02.png`);
+const MenuStudioF03 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-03.png`);
+const MenuStudioF04 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-04.png`);
+const MenuStudioF05 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-05.png`);
+const MenuStudioF06 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-06.png`);
+const MenuStudioF07 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-07.png`);
+const MenuStudioF08 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-08.png`);
+const MenuStudioF09 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-09.png`);
+const MenuStudioF10 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/feature-10.png`);
+const TechDiagram01 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/diagrams/01-rest-api-architecture.svg`);
+const TechDiagram02 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/diagrams/02-websocket-realtime.svg`);
+const TechDiagram03 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/diagrams/03-session-authentication.svg`);
+const TechDiagram06 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/diagrams/06-nsfw-ban-system.svg`);
+const TechDiagram07 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/diagrams/07-stripe-integration.svg`);
+const TechDiagram10 = toWebPCached(`${__CDN_URL__}/assets/images/menustudioai/diagrams/10-admin-panel.svg`);
 
 // MenuStudio AI Features (10 user-facing features from LinkedIn posts)
 const menuStudioFeatures = [
   {
     title: "AI Image Generation in <30 Seconds",
     description: "Generate professional food photography from text descriptions instantly. No photographer needed, no expensive equipment, just describe what you want and MenuStudio AI creates it.",
-    image: { src: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-home-hero.png" },
+    image: { src: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-09-home-hero.png` },
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-light.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-iphone-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-iphone-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/dashboard-generate-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-generate-desktop-light.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-generate-iphone-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-generate-iphone-light.webm` }
     ]
   },
   {
@@ -176,10 +176,10 @@ const menuStudioFeatures = [
     description: "Remove unwanted objects, enhance lighting, adjust colors, and perfect compositions with AI assistance. Fix 'almost perfect' photos without expensive editing software or design skills.",
     image: MenuStudioF02,
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-desktop-light.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-iphone-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-edit-iphone-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/dashboard-edit-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-edit-desktop-light.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-edit-iphone-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-edit-iphone-light.webm` }
     ]
   },
   {
@@ -187,10 +187,10 @@ const menuStudioFeatures = [
     description: "Transform static images into engaging cinematic videos with realistic camera movements. 10x higher engagement compared to static images, generated in under 2 minutes.",
     image: MenuStudioF03,
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-desktop-light.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-iphone-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-video-iphone-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/dashboard-video-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-video-desktop-light.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-video-iphone-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-video-iphone-light.webm` }
     ]
   },
   {
@@ -198,10 +198,10 @@ const menuStudioFeatures = [
     description: "All your content in one place, searchable, categorized, and accessible from any device. Never lose track of your visual assets or use the same photo repeatedly.",
     image: MenuStudioF04,
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-desktop-light.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-iphone-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-gallery-iphone-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/dashboard-gallery-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-gallery-desktop-light.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-gallery-iphone-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-gallery-iphone-light.webm` }
     ]
   },
   {
@@ -209,10 +209,10 @@ const menuStudioFeatures = [
     description: "Complete interface translation including prompts, menus, and results. Reach international customers with culturally adapted content in their native language.",
     image: MenuStudioF05,
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/profile-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/profile-desktop-light.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/profile-iphone-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/profile-iphone-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/profile-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/profile-desktop-light.webm` },
+      { url: `${__CDN_URL__}/posts/videos/profile-iphone-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/profile-iphone-light.webm` }
     ]
   },
   {
@@ -220,8 +220,8 @@ const menuStudioFeatures = [
     description: "Share via link, embed code, or direct download. Platform-optimized formats for social media, websites, and print. Collaborate with team members seamlessly.",
     image: MenuStudioF06,
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/home-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/home-desktop-light.webm` }
     ]
   },
   {
@@ -229,10 +229,10 @@ const menuStudioFeatures = [
     description: "No monthly subscriptions, no commitment. Credits start at $10 and never expire. Transparent pricing: 2 credits per image, 14 per edit, 80 per video.",
     image: MenuStudioF07,
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/credits-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/credits-desktop-light.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/credits-iphone-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/credits-iphone-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/credits-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/credits-desktop-light.webm` },
+      { url: `${__CDN_URL__}/posts/videos/credits-iphone-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/credits-iphone-light.webm` }
     ]
   },
   {
@@ -240,8 +240,8 @@ const menuStudioFeatures = [
     description: "Watch your images generate in real-time with WebSocket updates. See progress across all your devices simultaneously. Know exactly when your content is ready.",
     image: MenuStudioF08,
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/dashboard-generate-desktop-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/dashboard-generate-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/dashboard-generate-desktop-light.webm` }
     ]
   },
   {
@@ -249,12 +249,12 @@ const menuStudioFeatures = [
     description: "Glassmorphism aesthetics, spring-based animations, light/dark mode support. Powerful features that feel simple to use - maximum 3 clicks to any action.",
     image: MenuStudioF09,
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-desktop-light.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/login-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/login-desktop-light.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/register-desktop-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/register-desktop-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/home-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/home-desktop-light.webm` },
+      { url: `${__CDN_URL__}/posts/videos/login-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/login-desktop-light.webm` },
+      { url: `${__CDN_URL__}/posts/videos/register-desktop-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/register-desktop-light.webm` }
     ]
   },
   {
@@ -262,8 +262,8 @@ const menuStudioFeatures = [
     description: "NSFW content detection with three-strike ban system. High-resolution outputs optimized for print and digital. Trained specifically on gastronomy imagery.",
     image: MenuStudioF10,
     videos: [
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-iphone-dark.webm" },
-      { url: "https://cdn.jaimedigitalstudio.com/posts/videos/home-iphone-light.webm" }
+      { url: `${__CDN_URL__}/posts/videos/home-iphone-dark.webm` },
+      { url: `${__CDN_URL__}/posts/videos/home-iphone-light.webm` }
     ]
   }
 ];
@@ -368,7 +368,7 @@ const alqueriaFeatures = [
         key: "reservation_system",
         title: "Gestor de Reservas Online",
         description: "Sistema avanzado de reservas con calendario que muestra días cerrados, abiertos y completos. El número de personas es condicional según el límite y número de reservas para cada día. Proceso en 4 pasos: selección de fecha y personas, opción de reservar arroz de la base de datos, datos personales con envío de confirmación por email y WhatsApp, y confirmación final con selección de tronas/carros y aceptación de condiciones.",
-        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-1.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-2.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-3.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-4.jpg" }]
+        carousel: [{ src: `${__CDN_URL__}/assets/images/villacarmen/villacarmen-1.jpg` }, { src: `${__CDN_URL__}/assets/images/villacarmen/villacarmen-2.jpg` }, { src: `${__CDN_URL__}/assets/images/villacarmen/villacarmen-3.jpg` }, { src: `${__CDN_URL__}/assets/images/villacarmen/villacarmen-4.jpg` }]
     },
     {
         title: "Carta Dinámica de Platos",
@@ -408,34 +408,18 @@ const alqueriaFeatures = [
     {
         title: "Gestión de Menús y Platos",
         description: "Panel de administración para añadir, activar/desactivar y editar platos en la base de datos según categorías (entrantes, principales, arroces, postres), con selección personalizada de alérgenos para cada plato.",
-        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-12.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-13.jpg" }]
+        carousel: [{ src: `${__CDN_URL__}/assets/images/villacarmen/villacarmen-12.jpg` }, { src: `${__CDN_URL__}/assets/images/villacarmen/villacarmen-13.jpg` }]
     },
     {
         title: "Administración de Carta de Vinos",
         description: "Sistema para gestionar la bodega con opciones para añadir, editar, activar o desactivar vinos de la carta, permitiendo actualizar la oferta sin necesidad de eliminar registros.",
-        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-14.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-15.jpg" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-16.jpg" }]
+        carousel: [{ src: `${__CDN_URL__}/assets/images/villacarmen/villacarmen-14.jpg` }, { src: `${__CDN_URL__}/assets/images/villacarmen/villacarmen-15.jpg` }, { src: `${__CDN_URL__}/assets/images/villacarmen/villacarmen-16.jpg` }]
     }
 ];
 
 // Funcionalidades para Car Hub
-const carHubFeatures = [
-    {
-        title: "Presentación del Software",
-        description: "Sección dedicada a mostrar las características principales del software de compra-venta de coches, con explicaciones detalladas de su funcionamiento.",
-        image: "/img/features/carhub-software.jpg"
-    },
-    {
-        title: "Diseño Responsive",
-        description: "Interfaz adaptable a cualquier dispositivo (escritorio, tablet o móvil) para garantizar una experiencia de usuario óptima en cualquier pantalla.",
-        image: "/img/features/carhub-responsive.jpg"
-    },
-    {
-        title: "Formulario de Contacto",
-        description: "Sistema de contacto directo con el equipo de desarrollo mediante un formulario que envía las consultas por email para una rápida respuesta.",
-        video: "/videos/features/carhub-contact.mp4",
-        videoPoster: "/img/features/carhub-poster.jpg"
-    }
-];
+// Source assets for these features were never created; entry left empty to avoid broken refs.
+const carHubFeatures = [];
 
 // Funcionalidades para Portfolio
 const portfolioFeatures = [
@@ -477,12 +461,12 @@ const guillermoFernandezFeatures = [
 ];
 
 // Importacion de imagenes y videos para TodoList
-const TodoList = addCacheBusting("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist6.jpg")
-const TodoListImg1 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist1.jpg")
-const TodoListImg2 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist2.jpg")
-const TodoListImg3 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist3.jpg")
-const TodoListImg4 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist4.jpg")
-const TodoListImg5 = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist5.jpg")
+const TodoList = addCacheBusting(`${__CDN_URL__}/assets/images/todolist/todolist6.jpg`)
+const TodoListImg1 = toWebPCached(`${__CDN_URL__}/assets/images/todolist/todolist1.jpg`)
+const TodoListImg2 = toWebPCached(`${__CDN_URL__}/assets/images/todolist/todolist2.jpg`)
+const TodoListImg3 = toWebPCached(`${__CDN_URL__}/assets/images/todolist/todolist3.jpg`)
+const TodoListImg4 = toWebPCached(`${__CDN_URL__}/assets/images/todolist/todolist4.jpg`)
+const TodoListImg5 = toWebPCached(`${__CDN_URL__}/assets/images/todolist/todolist5.jpg`)
 // import TodoListVideo1 from "../assets/videos/todolist/todolist1.mov"
 // import TodoListVideo2 from "../assets/videos/todolist/todolist2.mov"
 // import TodoListVideo3 from "../assets/videos/todolist/todolist3.mov"
@@ -724,7 +708,7 @@ const heroBudgetFeatures = [
     {
         title: "Gestión y Categorización de Gastos",
         description: "Rastrea todos los gastos con categorías personalizadas, métodos de pago y notas. Sistema inteligente de categorización con iconos emoji para identificación visual. Historial de gastos con capacidades completas de filtrado y búsqueda. Impacto automático en balances de efectivo/banco y resúmenes mensuales de gastos.",
-        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg2.webp" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg7.webp" }]
+        carousel: [{ src: `${__CDN_URL__}/assets/images/herobudget/herobudgetimg2.webp` }, { src: `${__CDN_URL__}/assets/images/herobudget/herobudgetimg7.webp` }]
     },
     {
         title: "Gestión de Facturas Recurrentes",
@@ -744,7 +728,7 @@ const heroBudgetFeatures = [
     {
         title: "Modo Oscuro y Modo Claro",
         description: "Soporte completo para temas oscuro y claro con transiciones suaves. La preferencia de tema persiste a través de sesiones de la aplicación. Esquemas de colores optimizados para legibilidad en todas las condiciones de iluminación. Aplicación automática del tema a todos los componentes de UI y hojas inferiores.",
-        carousel: [{ src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg3.webp" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetimg1ligh.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark2.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight2.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark3.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight3.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetdark4.png" }, { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgetlight4.png" }]
+        carousel: [{ src: `${__CDN_URL__}/assets/images/herobudget/herobudgetimg3.webp` }, { src: `${__CDN_URL__}/assets/images/herobudget/herobudgetimg1ligh.png` }, { src: `${__CDN_URL__}/assets/images/herobudget/herobudgetdark2.png` }, { src: `${__CDN_URL__}/assets/images/herobudget/herobudgetlight2.png` }, { src: `${__CDN_URL__}/assets/images/herobudget/herobudgetdark3.png` }, { src: `${__CDN_URL__}/assets/images/herobudget/herobudgetlight3.png` }, { src: `${__CDN_URL__}/assets/images/herobudget/herobudgetdark4.png` }, { src: `${__CDN_URL__}/assets/images/herobudget/herobudgetlight4.png` }]
     },
     {
         title: "Microservicios Backend en Go",
@@ -753,13 +737,249 @@ const heroBudgetFeatures = [
     }
 ];
 
+// ===== Importaciones GR Cup Backoffice =====
+const GrCupBackoffice = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/02-dashboard.webp');
+const GrCupBackoffice01login = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/01-login.webp');
+const GrCupBackoffice02dashboard = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/02-dashboard.webp');
+const GrCupBackoffice03inscripciones = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/03-inscripciones.webp');
+const GrCupBackoffice04participantes = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/04-participantes.webp');
+const GrCupBackoffice05sorteo = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/05-sorteo.webp');
+const GrCupBackoffice06raffleconfig = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/06-raffle-config.webp');
+const GrCupBackoffice07horarios = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/07-horarios.webp');
+const GrCupBackoffice08cupones = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/08-cupones.webp');
+const GrCupBackoffice09qrreader = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/09-qr-reader.webp');
+const GrCupBackoffice10checkin = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/10-checkin.webp');
+const GrCupBackoffice11judgetable = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/11-judge-table.webp');
+const GrCupBackoffice12workspaces = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/12-workspaces.webp');
+const GrCupBackoffice13users = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/13-users.webp');
+const GrCupBackoffice14roles = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/14-roles.webp');
+const GrCupBackoffice15configuracion = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/15-configuracion.webp');
+const GrCupBackoffice16inscripcionconfig = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/16-inscripcion-config.webp');
+const GrCupBackoffice17dashboardscroll = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/17-dashboard-scroll.webp');
+const GrCupBackoffice18inscripcionesdetail = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/18-inscripciones-detail.webp');
+const GrCupBackoffice19userslist = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/19-users-list.webp');
+const GrCupBackoffice20dashboardmobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/20-dashboard-mobile.webp');
+const GrCupBackoffice21loginhero = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-backoffice/21-login-hero.webp');
+
+// ===== Importaciones FER Web (fercup.com) =====
+const FerWeb = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/11-landing-hero.webp');
+const FerWeb01landing = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/01-landing.webp');
+const FerWeb02modalidades = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/02-modalidades.webp');
+const FerWeb03horarios = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/03-horarios.webp');
+const FerWeb04ubicacion = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/04-ubicacion.webp');
+const FerWeb05galeria = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/05-galeria.webp');
+const FerWeb06sobrenosotros = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/06-sobre-nosotros.webp');
+const FerWeb07tutoriales = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/07-tutoriales.webp');
+const FerWeb08inscripcion = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/08-inscripcion.webp');
+const FerWeb09terminos = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/09-terminos.webp');
+const FerWeb10privacidad = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/10-privacidad.webp');
+const FerWeb11landinghero = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/11-landing-hero.webp');
+const FerWeb12landingscroll1 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/12-landing-scroll-1.webp');
+const FerWeb13landingscroll2 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/13-landing-scroll-2.webp');
+const FerWeb14landingscroll3 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/14-landing-scroll-3.webp');
+const FerWeb15inscripcionform = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/15-inscripcion-form.webp');
+const FerWeb16modalidadesdetail = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/16-modalidades-detail.webp');
+const FerWeb17galeriasscroll = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/17-galeria-scroll.webp');
+const FerWeb18equipo = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/18-equipo.webp');
+const FerWeb19landingmobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/19-landing-mobile.webp');
+const FerWeb20inscripcionmobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/20-inscripcion-mobile.webp');
+const FerWeb21ubicaciondetail = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/21-ubicacion-detail.webp');
+
+// ===== Importaciones GR Cup Frontend (sorteo) =====
+const GrCupFrontend = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/05-raffle.webp');
+const GrCupFrontend02inscripcion = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/02-inscripcion.webp');
+const GrCupFrontend03checkout = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/03-checkout.webp');
+const GrCupFrontend04success = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/04-success.webp');
+const GrCupFrontend05raffle = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/05-raffle.webp');
+const GrCupFrontend06horarios = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/06-horarios.webp');
+const GrCupFrontend07ubicacion = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/07-ubicacion.webp');
+const GrCupFrontend08backofficelogin = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/08-backoffice-login.webp');
+const GrCupFrontend09politicaconcurso = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/09-politica-concurso.webp');
+const GrCupFrontend10terminos = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/10-terminos.webp');
+const GrCupFrontend11privacidad = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/11-privacidad.webp');
+const GrCupFrontend12consentimiento = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/12-consentimiento.webp');
+const GrCupFrontend17raffleframes = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/17-raffle-frames.webp');
+const GrCupFrontend18raffledetail = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/18-raffle-detail.webp');
+const GrCupFrontend19checkoutform = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/19-checkout-form.webp');
+const GrCupFrontend20successdetail = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/20-success-detail.webp');
+const GrCupFrontend21inscripcionform = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/21-inscripcion-form.webp');
+const GrCupFrontend23backofficehero = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/23-backoffice-hero.webp');
+const GrCupFrontend24politicascroll = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/24-politica-scroll.webp');
+const GrCupFrontend30raffle1 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/30-raffle-1.webp');
+const GrCupFrontend31raffle2 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/31-raffle-2.webp');
+const GrCupFrontend32raffle3 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/32-raffle-3.webp');
+const GrCupFrontend33raffle4 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/33-raffle-4.webp');
+const GrCupFrontend34checkout = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/34-checkout.webp');
+const GrCupFrontend35politica = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/35-politica.webp');
+const GrCupFrontend36mapa = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/36-mapa.webp');
+const GrCupFrontend37success = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/37-success.webp');
+
+const grCupBackofficeFeatures = [
+  {
+    title: "Dashboard con KPIs financieros",
+    description: "Vista general del estado de cada competicion: ingresos por Stripe, efectivo y banco, total de participantes, tickets vendidos y metricas clave en tiempo real.",
+    image: { src: GrCupBackoffice02dashboard }
+  },
+  {
+    title: "Gestion de inscripciones y atletas",
+    description: "Tabla con busqueda, filtros por competicion, exportacion a CSV/PDF, edicion en linea de lift entries, atletas y categorias de peso.",
+    image: { src: GrCupBackoffice03inscripciones }
+  },
+  {
+    title: "Lector QR para check-in de atletas",
+    description: "Escaneo en vivo con html5-qrcode. Valida identidad del atleta, marca asistencia y registra el pago de tickets desde un solo lugar.",
+    image: { src: GrCupBackoffice09qrreader }
+  },
+  {
+    title: "Mesa de jueces con votaciones en vivo",
+    description: "Pantalla tactil para jueces con intentos, pesos propuestos y votacion individual. Sincronizacion en tiempo real entre todos los jueces.",
+    image: { src: GrCupBackoffice11judgetable }
+  },
+  {
+    title: "Check-in masivo y validacion",
+    description: "Validacion por QR o DNI, registro de hora de entrada, lista negra automatica y marcaje automatico en Inscripciones.",
+    image: { src: GrCupBackoffice10checkin }
+  },
+  {
+    title: "Sistema de sorteo y premios",
+    description: "Gestion de productos rifados, numeros ganadores, animacion de sorteo y notificacion automatica a ganadores por email.",
+    image: { src: GrCupBackoffice05sorteo }
+  },
+  {
+    title: "Cupones de descuento y referidos",
+    description: "Codigos personalizados, plan de referidos con tracking, descuento porcentual o fijo y limite de uso por cupon.",
+    image: { src: GrCupBackoffice08cupones }
+  },
+  {
+    title: "Bloques horarios publicables",
+    description: "Configuracion de bloques por competicion, categoria de peso y dia. Publicacion controlada para que los atletas solo vean lo aprobado.",
+    image: { src: GrCupBackoffice07horarios }
+  },
+  {
+    title: "Miembros del workspace con roles",
+    description: "Gestion de usuarios, asignacion de roles por competicion, permisos granulares (system:* y comp:N:*) y detalle por miembro.",
+    image: { src: GrCupBackoffice13users }
+  },
+  {
+    title: "Configuracion, email y Stripe",
+    description: "Ajustes de email (SMTP/Gmail), claves de Stripe, parametrizacion general del evento y personalizacion de marca.",
+    image: { src: GrCupBackoffice15configuracion }
+  }
+];
+
+const ferWebFeatures = [
+  {
+    title: "Hero animado con Framer Motion",
+    description: "Animaciones de entrada, scroll-linked effects, paleta mistica FER con tipografia Fugaz One. Diseno cinematico que marca el tono del evento desde el primer pixel.",
+    image: { src: FerWeb11landinghero }
+  },
+  {
+    title: "Modalidades de powerlifting",
+    description: "Detalle de sentadilla, press de banca y peso muerto con reglamento IPF/equipado, categorias y records por division.",
+    image: { src: FerWeb02modalidades }
+  },
+  {
+    title: "Calendario y horarios del evento",
+    description: "Bloques por dia, plataforma de salida, calentamiento y breaks. Datos en vivo desde el backend para reflejar cambios de ultima hora.",
+    image: { src: FerWeb03horarios }
+  },
+  {
+    title: "Mapa interactivo y como llegar",
+    description: "Google Maps embebido, direccion del pabellon, parking, transporte publico y hoteles cercanos.",
+    image: { src: FerWeb04ubicacion }
+  },
+  {
+    title: "Galeria de ediciones anteriores",
+    description: "Carrusel de imagenes en alta resolucion con lazy load y lightbox. Memorias visuales de cada FER Cup.",
+    image: { src: FerWeb05galeria }
+  },
+  {
+    title: "Historia del equipo y comunidad",
+    description: "Seccion con timeline, equipo organizador, valores y como FER Powerlifting nacio como evento independiente.",
+    image: { src: FerWeb06sobrenosotros }
+  },
+  {
+    title: "Tutoriales y normativa visual",
+    description: "Guias paso a paso para atletas novatos: como inscribirse, equipacion valida, comandos en plataforma y sanciones.",
+    image: { src: FerWeb07tutoriales }
+  },
+  {
+    title: "Formulario de inscripcion con Zod",
+    description: "Validacion robusta de cada paso (datos personales, categoria de peso, modalidad, pago) con Zod + react-hook-form.",
+    image: { src: FerWeb08inscripcion }
+  },
+  {
+    title: "Inscripcion multi-paso responsive",
+    description: "Wizard mobile-first con guardado automatico, resumen lateral y soporte para pago via Stripe o transferencia.",
+    image: { src: FerWeb15inscripcionform }
+  },
+  {
+    title: "Vista movil optimizada",
+    description: "Diseno mobile-first con menu hamburguesa, secciones colapsables y CTAs accesibles en cualquier pantalla.",
+    image: { src: FerWeb19landingmobile }
+  }
+];
+
+const grCupFrontendFeatures = [
+  {
+    title: "Composicion cinematica con scroll frames",
+    description: "313 frames de un trofeo dibujado a mano desplegados segun el progreso de scroll. Compositor Remotion + HyperFrames que da al sorteo un look de trailer.",
+    image: { src: GrCupFrontend05raffle }
+  },
+  {
+    title: "Animacion frame-by-frame con FrameAnimator",
+    description: "Preload inteligente de frames, sincronizacion con scroll progress, transiciones suaves entre estados del trofeo.",
+    image: { src: GrCupFrontend30raffle1 }
+  },
+  {
+    title: "Detalle de tickets y numeros del sorteo",
+    description: "Listado completo de numeros asignados, comprados y disponibles con busqueda y filtros por participante.",
+    image: { src: GrCupFrontend18raffledetail }
+  },
+  {
+    title: "Checkout con Stripe y validacion",
+    description: "Seleccion de cantidad, formulario de datos, validacion con Zod, redireccion a Stripe Checkout y webhook de confirmacion.",
+    image: { src: GrCupFrontend19checkoutform }
+  },
+  {
+    title: "Pasarela de pago integrada",
+    description: "Stripe Checkout, soporte para tarjeta, Apple Pay y Google Pay. Comprobante enviado por email y recordatorio en el perfil.",
+    image: { src: GrCupFrontend03checkout }
+  },
+  {
+    title: "Pantalla de exito con QR del ticket",
+    description: "Codigo QR unico por compra, botones de compartir en redes sociales, descarga de PDF con todos los numeros asignados.",
+    image: { src: GrCupFrontend04success }
+  },
+  {
+    title: "Inscripcion publica al sorteo",
+    description: "Formulario accesible con prefill, validacion de email y telefono, y resumen de compra antes de pagar.",
+    image: { src: GrCupFrontend02inscripcion }
+  },
+  {
+    title: "Horarios publicos de la competicion",
+    description: "Calendario por dia, plataforma y categoria. Datos en vivo del backend con cache y revalidacion periodica.",
+    image: { src: GrCupFrontend06horarios }
+  },
+  {
+    title: "Como llegar al evento",
+    description: "Mapa, direccion, transporte y enlaces a Google Maps / Waze con un solo tap.",
+    image: { src: GrCupFrontend07ubicacion }
+  },
+  {
+    title: "Bases legales del concurso",
+    description: "Texto legal completo: bases, requisitos de participacion, fechas, premios, fiscalidad y contacto del organizador.",
+    image: { src: GrCupFrontend09politicaconcurso }
+  }
+];
+
 const data = [
     {
         name: "Hero Budget",
         type: "Aplicación Móvil - Gestión de Finanzas Personales",
         url: "https://apps.apple.com/es/app/hero-budget/id6746946502?l=en-GB",
         github: "https://github.com/jaivial/HerobudgetReact",
-        image: { src: "https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgeticon.png" },
+        image: { src: `${__CDN_URL__}/assets/images/herobudget/herobudgeticon.png` },
         slug: "hero-budget",
         description: "Hero Budget es una aplicación móvil completa de gestión de finanzas personales desarrollada con React Native y TypeScript. La aplicación proporciona a los usuarios herramientas potentes para rastrear ingresos, gastos, facturas recurrentes y metas de ahorro con sincronización en tiempo real entre múltiples dispositivos. Presenta una interfaz moderna e intuitiva con soporte para temas claro y oscuro, localización multiidioma (más de 20 idiomas), y arquitectura offline-first con sincronización automática en la nube. El backend está impulsado por una robusta arquitectura de microservicios en Go desplegada en VPS con proxy inverso NGINX, asegurando alto rendimiento y fiabilidad.",
         tech: ["React Native", "TypeScript", "Go", "SQLite", "React Navigation", "Jotai", "i18next", "OAuth 2.0", "Jest", "RESTful API", "VPS", "Nginx", "Responsive Design"],
@@ -796,7 +1016,7 @@ const data = [
         type: "Full-Stack SaaS Platform - AI Image Generation",
         url: "https://menustudioai.com",
         github: "https://github.com/jaivial/menustudioai",
-        image: { src: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-home-hero.png" },
+        image: { src: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-09-home-hero.png` },
         slug: "menustudio-ai",
         date: "2025-12-29",
         description: "MenuStudio AI is a comprehensive SaaS platform that leverages artificial intelligence to generate professional food photography for restaurants and hospitality businesses. Built with a modern tech stack including React + Vite frontend and Elysia.js backend on Bun runtime, it offers text-to-image generation, AI-powered editing, video creation, and multi-language support for 40+ languages. The platform includes a flexible credit-based pricing system with Stripe integration, real-time WebSocket updates for live processing feedback, content moderation with NSFW detection, and a comprehensive admin panel for analytics and user management.",
@@ -809,54 +1029,54 @@ const data = [
         ],
         images: [
             // Main hero image
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-09-home-hero.png", alt: "MenuStudio AI Home Hero" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-09-home-hero.png`, alt: "MenuStudio AI Home Hero" },
 
             // Instagram post images - Light theme
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-01-text-to-image.png", alt: "Text to Image Generation" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-02-ai-editing.png", alt: "AI-Powered Editing" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-03-generate-video.png", alt: "Video Generation" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-04-gallery.png", alt: "Gallery Management" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-05-multi-language.png", alt: "Multi-Language Support" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-06-share-modal.png", alt: "Share & Collaborate" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-07-credits-pricing.png", alt: "Credit Pricing System" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-08-realtime-processing.png", alt: "Real-Time Processing" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/ig-post-10-professional-results.png", alt: "Professional Results" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-01-text-to-image.png`, alt: "Text to Image Generation" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-02-ai-editing.png`, alt: "AI-Powered Editing" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-03-generate-video.png`, alt: "Video Generation" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-04-gallery.png`, alt: "Gallery Management" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-05-multi-language.png`, alt: "Multi-Language Support" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-06-share-modal.png`, alt: "Share & Collaborate" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-07-credits-pricing.png`, alt: "Credit Pricing System" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-08-realtime-processing.png`, alt: "Real-Time Processing" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/ig-post-10-professional-results.png`, alt: "Professional Results" },
 
             // Instagram post images - Dark theme
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-01-text-to-image-dark.png", alt: "Text to Image Generation (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-02-edit-image-dark.png", alt: "AI Image Editing (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-03-generate-video-dark.png", alt: "Video Generation (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-04-gallery-dark.png", alt: "Gallery Management (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-05-multi-language-dark.png", alt: "Multi-Language Support (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-06-share-modal-dark.png", alt: "Share & Collaborate (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-07-credits-pricing-dark.png", alt: "Credit Pricing System (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-08-realtime-processing-dark.png", alt: "Real-Time Processing (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-09-home-hero-dark.png", alt: "Home Hero (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/instagram/posts/images/instagram-post-10-professional-results-dark.png", alt: "Professional Results (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-01-text-to-image-dark.png`, alt: "Text to Image Generation (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-02-edit-image-dark.png`, alt: "AI Image Editing (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-03-generate-video-dark.png`, alt: "Video Generation (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-04-gallery-dark.png`, alt: "Gallery Management (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-05-multi-language-dark.png`, alt: "Multi-Language Support (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-06-share-modal-dark.png`, alt: "Share & Collaborate (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-07-credits-pricing-dark.png`, alt: "Credit Pricing System (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-08-realtime-processing-dark.png`, alt: "Real-Time Processing (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-09-home-hero-dark.png`, alt: "Home Hero (Dark)" },
+            { url: `${__CDN_URL__}/posts/instagram/posts/images/instagram-post-10-professional-results-dark.png`, alt: "Professional Results (Dark)" },
 
             // iPhone mobile screenshots - Dark theme
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-text-to-image-dark.png", alt: "Mobile: Text to Image (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-edit-image-dark.png", alt: "Mobile: Edit Image (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-generate-video-dark.png", alt: "Mobile: Generate Video (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-gallery-dark.png", alt: "Mobile: Gallery (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-share-modal-dark.png", alt: "Mobile: Share Modal (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-credits-pricing-dark.png", alt: "Mobile: Credits Pricing (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-home-hero-dark.png", alt: "Mobile: Home Hero (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-language-selector-dark.png", alt: "Mobile: Language Selector (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-features-bento-dark.png", alt: "Mobile: Features Bento (Dark)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-features-more-dark.png", alt: "Mobile: More Features (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-01-text-to-image-dark.png`, alt: "Mobile: Text to Image (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-02-edit-image-dark.png`, alt: "Mobile: Edit Image (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-03-generate-video-dark.png`, alt: "Mobile: Generate Video (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-04-gallery-dark.png`, alt: "Mobile: Gallery (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-05-share-modal-dark.png`, alt: "Mobile: Share Modal (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-06-credits-pricing-dark.png`, alt: "Mobile: Credits Pricing (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-07-home-hero-dark.png`, alt: "Mobile: Home Hero (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-08-language-selector-dark.png`, alt: "Mobile: Language Selector (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-09-features-bento-dark.png`, alt: "Mobile: Features Bento (Dark)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-10-features-more-dark.png`, alt: "Mobile: More Features (Dark)" },
 
             // iPhone mobile screenshots - Light theme
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-01-text-to-image-light.png", alt: "Mobile: Text to Image (Light)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-02-edit-image-light.png", alt: "Mobile: Edit Image (Light)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-03-generate-video-light.png", alt: "Mobile: Generate Video (Light)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-04-gallery-light.png", alt: "Mobile: Gallery (Light)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-05-share-modal-light.png", alt: "Mobile: Share Modal (Light)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-06-credits-pricing-light.png", alt: "Mobile: Credits Pricing (Light)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-07-home-hero-light.png", alt: "Mobile: Home Hero (Light)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-08-language-selector-light.png", alt: "Mobile: Language Selector (Light)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-09-features-bento-light.png", alt: "Mobile: Features Bento (Light)" },
-            { url: "https://cdn.jaimedigitalstudio.com/posts/iphone/images/iphone-10-features-more-light.png", alt: "Mobile: More Features (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-01-text-to-image-light.png`, alt: "Mobile: Text to Image (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-02-edit-image-light.png`, alt: "Mobile: Edit Image (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-03-generate-video-light.png`, alt: "Mobile: Generate Video (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-04-gallery-light.png`, alt: "Mobile: Gallery (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-05-share-modal-light.png`, alt: "Mobile: Share Modal (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-06-credits-pricing-light.png`, alt: "Mobile: Credits Pricing (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-07-home-hero-light.png`, alt: "Mobile: Home Hero (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-08-language-selector-light.png`, alt: "Mobile: Language Selector (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-09-features-bento-light.png`, alt: "Mobile: Features Bento (Light)" },
+            { url: `${__CDN_URL__}/posts/iphone/images/iphone-10-features-more-light.png`, alt: "Mobile: More Features (Light)" },
 
             // Technical diagrams
             { url: TechDiagram01, alt: "REST API Architecture" },
@@ -935,7 +1155,7 @@ const data = [
         type: "Página Web + Email",
         url: "https://guillermofernandeznutricion.es/",
         github: "https://github.com/jaivial/astrowebsite.git",
-        image: { src: "https://cdn.jaimedigitalstudio.com/images/guillermofernandeznutricion.webp" },
+        image: { src: `${__CDN_URL__}/images/guillermofernandeznutricion.webp` },
         slug: "guillermo-fernandez-nutricion",
         description: "Página web para anunciar los servicios de consulta nutricional y aumentar la captación de clientes. Permite que los clientes realicen una primera consulta por un formulario de contacto. Diseño responsivo adaptable a tamaños de escritorio, tablet y móviles. Desarrollado con Astro para el front end y PHP para el backend del formulario de contacto. Las fotos y el contenido creativo fue elaborado por mi.",
         tech: ['Javascript', 'CSS', 'Astro', 'Express js', 'VPS', 'Nginx', 'Responsive Design'],
@@ -992,7 +1212,7 @@ const data = [
         type: "Página Web",
         url: "https://carhubpi.000webhostapp.com/index.php",
         github: "/",
-        image: { src: "https://cdn.jaimedigitalstudio.com/carhub.webp" },
+        image: { src: `${__CDN_URL__}/carhub.webp` },
         slug: "car-hub",
         description: "Descubre nuestro sitio web dedicado a presentar el software Car Hub, un portal de compra y venta de coches. Se destacan las funcionalidades del software, resaltando sus virtudes y su utilidad para nuestros clientes. Desarrollada con las últimas tecnologías en HTML y PHP, ofrece un diseño responsive que se adapta a cualquier dispositivo. Además, facilitamos la comunicación mediante un formulario de contacto vía email con nuestro equipo de desarrolladores.",
         tech: ['HTML', 'Javascript', 'CSS', 'PHP', 'VPS', 'Nginx', 'Responsive Design'],
@@ -1096,6 +1316,122 @@ const data = [
             // { url: CentroNeuroExpresionVideo3, poster: CentroNeuroExpresionImg3 }, // Commented out - video file missing
             // { url: CentroNeuroExpresionVideo4, poster: CentroNeuroExpresionImg4 } // Commented out - video file missing
         ]
+    },
+    {
+        id: 1,
+        name: "GR Cup Backoffice",
+        slug: "gr-cup-backoffice",
+        image: { src: GrCupBackoffice },
+        description: "Panel de administracion para la plataforma GR Cup / FER Powerlifting. Gestiona multiples competiciones (GR Cup 2026 y FER CUP II), inscripciones de atletas, sorteos, cupones, miembros, horarios, configuracion de pagos (Stripe) y email. Construido con React 18, Vite, TypeScript, Tailwind CSS y un backend .NET 8 + MySQL con autenticacion JWT y SignalR para actualizaciones en vivo (mesa de jueces, check-in, sorteos).",
+        type: "Panel de Administracion - Competiciones y Sorteos",
+        tech: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Jotai", "wouter", "Microsoft SignalR", "html5-qrcode", "jsPDF", "Drizzle ORM", ".NET 8", "C#", "MySQL", "Stripe", "JWT", "VPS", "Nginx", "Responsive Design"],
+        github: "https://github.com/jaivial/grweb",
+        url: "https://backoffice.fercup.com",
+        features: grCupBackofficeFeatures,
+        date: "2026-06-03",
+        images: [
+            { url: GrCupBackoffice01login, alt: "Pantalla de inicio de sesion con diseno oscuro y branding GR Cup" },
+            { url: GrCupBackoffice02dashboard, alt: "Dashboard principal con KPIs y resumen financiero" },
+            { url: GrCupBackoffice03inscripciones, alt: "Gestion de inscripciones de atletas con tabla y filtros" },
+            { url: GrCupBackoffice04participantes, alt: "Listado de participantes y tickets del sorteo" },
+            { url: GrCupBackoffice05sorteo, alt: "Configuracion y gestion del sorteo y premios" },
+            { url: GrCupBackoffice06raffleconfig, alt: "Configuracion del sistema de rifa" },
+            { url: GrCupBackoffice07horarios, alt: "Bloques horarios y publicaciones de la competicion" },
+            { url: GrCupBackoffice08cupones, alt: "Gestion de cupones de descuento" },
+            { url: GrCupBackoffice09qrreader, alt: "Lector de codigos QR para check-in de atletas" },
+            { url: GrCupBackoffice10checkin, alt: "Pantalla de check-in y validacion de asistentes" },
+            { url: GrCupBackoffice11judgetable, alt: "Mesa de jueces con intentos, pesos y votaciones" },
+            { url: GrCupBackoffice12workspaces, alt: "Listado de workspaces y competiciones" },
+            { url: GrCupBackoffice13users, alt: "Gestion de miembros del workspace con roles" },
+            { url: GrCupBackoffice14roles, alt: "Detalle de rol con permisos por competicion" },
+            { url: GrCupBackoffice15configuracion, alt: "Configuracion general, email y pasarela de pagos" },
+            { url: GrCupBackoffice16inscripcionconfig, alt: "Configuracion de formulario de inscripcion" },
+            { url: GrCupBackoffice17dashboardscroll, alt: "Dashboard con graficos y metricas detalladas" },
+            { url: GrCupBackoffice18inscripcionesdetail, alt: "Detalle de inscripcion con datos del atleta" },
+            { url: GrCupBackoffice19userslist, alt: "Lista de miembros con busqueda y filtros" },
+            { url: GrCupBackoffice20dashboardmobile, alt: "Dashboard adaptado a vista movil" },
+            { url: GrCupBackoffice21loginhero, alt: "Pantalla de login en alta resolucion" }
+        ],
+        videos: []
+    },
+    {
+        id: 2,
+        name: "FER Web",
+        slug: "fer-web",
+        image: { src: FerWeb },
+        description: "Landing publica del evento FER CUP II 2026 en Almussafes. Presenta modalidades, horarios, ubicacion, galeria, tutoriales, equipo y formulario de inscripcion multi-paso. Construido con React 18, Vite, TypeScript, Tailwind CSS y Framer Motion para un diseno cinematico con paleta mistica FER. Validacion robusta con Zod y gestion de pagos via Stripe.",
+        type: "Landing Publica - FER Powerlifting",
+        tech: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Zod", "Jotai", "wouter", "Lucide React", "react-hot-toast", "react-intersection-observer", "VPS", "Nginx", "Responsive Design"],
+        github: "https://github.com/jaivial/grweb",
+        url: "https://fercup.com",
+        features: ferWebFeatures,
+        date: "2026-06-03",
+        images: [
+            { url: FerWeb01landing, alt: "Landing principal FER CUP II 2026 con hero animado" },
+            { url: FerWeb02modalidades, alt: "Modalidades de competicion: sentadilla, press y peso muerto" },
+            { url: FerWeb03horarios, alt: "Calendario y horarios de la competicion" },
+            { url: FerWeb04ubicacion, alt: "Ubicacion del evento en Almussafes con mapa interactivo" },
+            { url: FerWeb05galeria, alt: "Galeria de imagenes de ediciones anteriores" },
+            { url: FerWeb06sobrenosotros, alt: "Historia del equipo y comunidad FER" },
+            { url: FerWeb07tutoriales, alt: "Tutoriales y normativa de competicion" },
+            { url: FerWeb08inscripcion, alt: "Formulario de inscripcion multi-paso con validacion Zod" },
+            { url: FerWeb09terminos, alt: "Terminos y condiciones del evento" },
+            { url: FerWeb10privacidad, alt: "Politica de privacidad y proteccion de datos" },
+            { url: FerWeb11landinghero, alt: "Hero principal FER CUP II 2026 en alta resolucion" },
+            { url: FerWeb12landingscroll1, alt: "Seccion de caracteristicas y modalidades" },
+            { url: FerWeb13landingscroll2, alt: "Seccion de patrocinadores y comunidad" },
+            { url: FerWeb14landingscroll3, alt: "Footer y enlaces de interes" },
+            { url: FerWeb15inscripcionform, alt: "Formulario de inscripcion paso 1" },
+            { url: FerWeb16modalidadesdetail, alt: "Detalle de cada modalidad de powerlifting" },
+            { url: FerWeb17galeriasscroll, alt: "Galeria scrolleable de ediciones previas" },
+            { url: FerWeb18equipo, alt: "Equipo y comunidad FER Powerlifting" },
+            { url: FerWeb19landingmobile, alt: "Landing FER adaptado a vista movil" },
+            { url: FerWeb20inscripcionmobile, alt: "Formulario de inscripcion en vista movil" },
+            { url: FerWeb21ubicaciondetail, alt: "Mapa y direcciones del evento" }
+        ],
+        videos: []
+    },
+    {
+        id: 3,
+        name: "GR Cup Frontend",
+        slug: "gr-cup-frontend",
+        image: { src: GrCupFrontend },
+        description: "Frontend publico para el sorteo del GR Cup 2026. Combina una landing con animaciones de scroll frame-by-frame (313 frames desplegados progresivamente), un compositor de video Remotion + HyperFrames y un sistema completo de compra de tickets con Stripe. Construido con React 18, Vite, TypeScript, Tailwind CSS, Three.js, html5-qrcode y jsPDF. Accesible, responsive y preparado para soportar miles de usuarios concurrentes.",
+        type: "Sorteo Publico - Experiencia Cinematica",
+        tech: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Three.js", "@react-three/fiber", "@react-three/drei", "Remotion", "HyperFrames", "wouter", "Jotai", "Microsoft SignalR", "html5-qrcode", "jsPDF", "Storybook", "Playwright", "VPS", "Nginx", "Responsive Design"],
+        github: "https://github.com/jaivial/grweb",
+        url: "https://fercup.com/sorteo",
+        features: grCupFrontendFeatures,
+        date: "2026-06-03",
+        images: [
+            { url: GrCupFrontend02inscripcion, alt: "Formulario publico de inscripcion para sorteo" },
+            { url: GrCupFrontend03checkout, alt: "Checkout y seleccion de tickets con Stripe" },
+            { url: GrCupFrontend04success, alt: "Confirmacion de compra exitosa con opciones de compartir" },
+            { url: GrCupFrontend05raffle, alt: "Visualizacion del sorteo con frames de scroll cinematicos" },
+            { url: GrCupFrontend06horarios, alt: "Horarios publicos de la competicion" },
+            { url: GrCupFrontend07ubicacion, alt: "Como llegar al evento con mapa" },
+            { url: GrCupFrontend08backofficelogin, alt: "Acceso al panel de administracion" },
+            { url: GrCupFrontend09politicaconcurso, alt: "Politica del concurso y bases legales" },
+            { url: GrCupFrontend10terminos, alt: "Terminos de servicio del sorteo" },
+            { url: GrCupFrontend11privacidad, alt: "Politica de privacidad del sorteo" },
+            { url: GrCupFrontend12consentimiento, alt: "Consentimiento de tratamiento de datos" },
+            { url: GrCupFrontend17raffleframes, alt: "Composicion cinematica con scroll frames del sorteo" },
+            { url: GrCupFrontend18raffledetail, alt: "Detalle de tickets y numeros del sorteo" },
+            { url: GrCupFrontend19checkoutform, alt: "Formulario de checkout y seleccion de tickets" },
+            { url: GrCupFrontend20successdetail, alt: "Confirmacion de compra con botones de compartir" },
+            { url: GrCupFrontend21inscripcionform, alt: "Formulario publico de inscripcion al sorteo" },
+            { url: GrCupFrontend23backofficehero, alt: "Login del backoffice integrado en alta resolucion" },
+            { url: GrCupFrontend24politicascroll, alt: "Bases legales del concurso en formato largo" },
+            { url: GrCupFrontend30raffle1, alt: "Composicion cinematica del sorteo en frame 1" },
+            { url: GrCupFrontend31raffle2, alt: "Composicion cinematica del sorteo en frame 2" },
+            { url: GrCupFrontend32raffle3, alt: "Composicion cinematica del sorteo en frame 3" },
+            { url: GrCupFrontend33raffle4, alt: "Detalle de tickets asignados en el sorteo" },
+            { url: GrCupFrontend34checkout, alt: "Checkout con selector de cantidad de tickets" },
+            { url: GrCupFrontend35politica, alt: "Bases legales completas del concurso" },
+            { url: GrCupFrontend36mapa, alt: "Mapa interactivo de ubicacion del evento" },
+            { url: GrCupFrontend37success, alt: "Confirmacion de compra con codigo QR" }
+        ],
+        videos: []
     }
 ]
 

@@ -246,7 +246,7 @@ function ProjectsIndex({ projects, allTechnologies }) {
                     src={item.image.src}
                     alt={item.name}
                     loading="lazy"
-                  />
+                   decoding="async" />
                 </a>
 
                 <div className="flex flex-col gap-3 p-5">

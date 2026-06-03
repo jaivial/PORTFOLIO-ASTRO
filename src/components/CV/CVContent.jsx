@@ -221,7 +221,7 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                         ? { filter: 'brightness(0) saturate(100%)' }
                         : {}
                     }
-                  />
+                   loading="lazy" decoding="async" />
                 )}
               </div>
             )}
@@ -300,10 +300,10 @@ const CVContent = ({ data, activeSection, darkMode }) => {
             {/* Profile Image */}
             <div className="flex-shrink-0">
               <img 
-                src="https://cdn.jaimedigitalstudio.com/profilephoto.webp" 
+                src={`${__CDN_URL__}/profilephoto.webp`} 
                 alt="Profile Photo" 
                 className="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-none object-contain shadow-2xl"
-              />
+               fetchpriority="high" />
             </div>
             
             {/* Content */}
@@ -570,7 +570,7 @@ const CVContent = ({ data, activeSection, darkMode }) => {
                     alt={project.title}
                     className={`w-full h-full ${project.title === "Hero Budget" ? "object-scale-down" : "object-cover"} transition-transform duration-300 hover:scale-110`}
                     loading="lazy"
-                  />
+                   decoding="async" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute top-4 left-4">
                     <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
@@ -645,7 +645,7 @@ const CVContent = ({ data, activeSection, darkMode }) => {
                     src="https://florida.floridawp.florida.es/wp-content/uploads/sites/25/2017/04/logo.jpg" 
                     alt="Florida Universitaria Logo" 
                     className="w-full h-full object-contain"
-                  />
+                   loading="lazy" decoding="async" />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-gray-800 dark:text-gray-100">{cert.name}</h3>

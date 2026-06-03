@@ -1,13 +1,13 @@
 import { toWebPCached } from '../utils/images.js';
 
 // Import project images
-const FrasesMarcosAlcon = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg");
-const TodoList = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/todolist/todolist6.jpg");
-const AlqueriaVillaCarmen = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/villacarmen/villacarmen-18.jpg");
-const CatStore = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/catstore/catstore1.jpg");
-const GuillermoFernandezNutricion = toWebPCached("https://cdn.jaimedigitalstudio.com/images/guillermofernandeznutricion.webp");
-const TourToValencia = toWebPCached("https://cdn.jaimedigitalstudio.com/images/tourtovalencia/tourtovalencia11.jpg");
-const HeroBudget = toWebPCached("https://cdn.jaimedigitalstudio.com/assets/images/herobudget/herobudgeticon.png");
+const FrasesMarcosAlcon = toWebPCached(`${__CDN_URL__}/assets/images/frasesmarcosalcon/frasesmarcosalcon1.jpg`);
+const TodoList = toWebPCached(`${__CDN_URL__}/assets/images/todolist/todolist6.jpg`);
+const AlqueriaVillaCarmen = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-18.jpg`);
+const CatStore = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore1.jpg`);
+const GuillermoFernandezNutricion = toWebPCached(`${__CDN_URL__}/images/guillermofernandeznutricion.webp`);
+const TourToValencia = toWebPCached(`${__CDN_URL__}/images/tourtovalencia/tourtovalencia11.jpg`);
+const HeroBudget = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgeticon.png`);
 
 const cvData = {
     en: {

@@ -115,7 +115,7 @@ function ProjectHeader({ project }) {
                 width={600}
                 height={400}
                 loading="eager"
-              />
+               decoding="async" />
             </div>
           </div>
         </div>

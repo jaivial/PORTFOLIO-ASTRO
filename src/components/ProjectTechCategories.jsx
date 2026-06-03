@@ -36,7 +36,7 @@ function ProjectTechCategories({ project }) {
                       icon.type === "svg" ? (
                         <div dangerouslySetInnerHTML={{ __html: icon.content }} />
                       ) : (
-                        <img src={icon.src} alt={tech} className={icon.classes} />
+                        <img src={icon.src} alt={tech} className={icon.classes}  loading="lazy" decoding="async" />
                       )
                     )}
                     <span className="truncate">{tech}</span>
@@ -64,7 +64,7 @@ function ProjectTechCategories({ project }) {
                       icon.type === "svg" ? (
                         <div dangerouslySetInnerHTML={{ __html: icon.content }} />
                       ) : (
-                        <img src={icon.src} alt={tech} className={icon.classes} />
+                        <img src={icon.src} alt={tech} className={icon.classes}  loading="lazy" decoding="async" />
                       )
                     )}
                     <span className="truncate">{tech}</span>
@@ -92,7 +92,7 @@ function ProjectTechCategories({ project }) {
                       icon.type === "svg" ? (
                         <div dangerouslySetInnerHTML={{ __html: icon.content }} />
                       ) : (
-                        <img src={icon.src} alt={tech} className={icon.classes} />
+                        <img src={icon.src} alt={tech} className={icon.classes}  loading="lazy" decoding="async" />
                       )
                     )}
                     <span className="truncate">{tech}</span>
@@ -120,7 +120,7 @@ function ProjectTechCategories({ project }) {
                       icon.type === "svg" ? (
                         <div dangerouslySetInnerHTML={{ __html: icon.content }} />
                       ) : (
-                        <img src={icon.src} alt={tech} className={icon.classes} />
+                        <img src={icon.src} alt={tech} className={icon.classes}  loading="lazy" decoding="async" />
                       )
                     )}
                     <span className="truncate">{tech}</span>
@@ -148,7 +148,7 @@ function ProjectTechCategories({ project }) {
                       icon.type === "svg" ? (
                         <div dangerouslySetInnerHTML={{ __html: icon.content }} />
                       ) : (
-                        <img src={icon.src} alt={tech} className={icon.classes} />
+                        <img src={icon.src} alt={tech} className={icon.classes}  loading="lazy" decoding="async" />
                       )
                     )}
                     <span className="truncate">{tech}</span>
@@ -175,7 +175,7 @@ function ProjectTechCategories({ project }) {
                     {icon?.type === "svg" ? (
                       <div dangerouslySetInnerHTML={{ __html: icon.content }} />
                     ) : icon?.type === "img" ? (
-                      <img src={icon.src} alt={tech} className={icon.classes} />
+                      <img src={icon.src} alt={tech} className={icon.classes}  loading="lazy" decoding="async" />
                     ) : (
                       <div className="w-8 h-8 bg-indigo-500/20 rounded flex items-center justify-center">
                         <span className="text-xs font-bold text-indigo-400">{tech.charAt(0)}</span>

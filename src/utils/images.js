@@ -15,7 +15,7 @@ export function toWebP(url) {
     if (!url) return url;
 
     // Only convert CDN URLs that point to images
-    if (!url.includes('cdn.jaimedigitalstudio.com')) {
+    if (!url.includes('jaimedigitalstudio.b-cdn.net')) {
         return url;
     }
 

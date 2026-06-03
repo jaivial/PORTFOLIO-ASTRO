@@ -148,7 +148,7 @@ export default function ImageCarouselModal({ images, title, projectSlug }) {
       <div className="image-carousel-container">
         <div className="relative group">
           <div onClick={openModal} className={getImageContainerClassName()}>
-            <img src={imageSrc} alt={currentImage.alt || `${title} - Imagen ${currentImageIndex + 1}`} className={getImageClassName()} />
+            <img src={imageSrc} alt={currentImage.alt || `${title} - Imagen ${currentImageIndex + 1}`} className={getImageClassName()}  loading="lazy" decoding="async" />
             <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-lg flex items-center justify-center">
               <div className="bg-white bg-opacity-0 group-hover:bg-opacity-90 rounded-full p-3 group-hover:scale-110 transition-all duration-300">
                 <svg className="w-6 h-6 text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -201,7 +201,7 @@ export default function ImageCarouselModal({ images, title, projectSlug }) {
                 </>
               )}
 
-              <img src={imageSrc} alt={currentImage.alt || `${title} - Imagen ${currentImageIndex + 1}`} className="max-w-full max-h-[85vh] object-contain rounded-lg" />
+              <img src={imageSrc} alt={currentImage.alt || `${title} - Imagen ${currentImageIndex + 1}`} className="max-w-full max-h-[85vh] object-contain rounded-lg"  loading="lazy" decoding="async" />
 
               {images.length > 1 && (
                 <div className="image-carousel-counter">

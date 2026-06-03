@@ -59,7 +59,7 @@ export default function ProjectTechnicalArchitecture({ architecture }) {
                       alt={`${arch.title} diagram`}
                       className="w-full max-w-4xl mx-auto rounded-lg"
                       loading="lazy"
-                    />
+                     decoding="async" />
                   </div>
                 )}
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">

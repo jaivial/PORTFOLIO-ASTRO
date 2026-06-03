@@ -43,6 +43,9 @@ const makeTitle = title ? title : "Jaime Digital Studio";
     <meta name="theme-color" content="#0a0a0a" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://jaimedigitalstudio.b-cdn.net" crossorigin />
+    <link rel="dns-prefetch" href="https://jaimedigitalstudio.b-cdn.net" />
+    <link rel="preload" as="image" href="https://jaimedigitalstudio.b-cdn.net/profilephoto.webp" fetchpriority="high" />
     <meta name="google-site-verification" content="AuMlxg6HJG3Rwtp1H81O3OmPVW4WaI5jrk1X4Onm0hU" />
     <meta name="generator" content={Astro.generator} />
     <SEO
@@ -82,8 +85,8 @@ const makeTitle = title ? title : "Jaime Digital Studio";
     <title>{title}</title>
   </head>
   <body style="background-color: #0a0a0a;">
-    <Glow client:only />
-    <NavBar client:only="react" />
+    <Glow client:idle />
+    <NavBar client:visible />
     <slot />
 
     <style is:global>

@@ -71,7 +71,7 @@ const ProjectDetail = ({ projectData }) => {
 
                     {feature.image && (
                       <div className="mb-3 rounded-md overflow-hidden">
-                        <img src={feature.image} alt={feature.title} className="w-full h-auto" />
+                        <img src={feature.image} alt={feature.title} className="w-full h-auto"  loading="lazy" decoding="async" />
                       </div>
                     )}
                   </motion.div>
@@ -100,7 +100,7 @@ const ProjectDetail = ({ projectData }) => {
                   {projectData.images.map((image, index) => (
                     <SwiperSlide key={index}>
                       <div className="aspect-video">
-                        <img src={image.url || image} alt={image.alt || `Imagen ${index + 1}`} className="w-full h-full object-cover" />
+                        <img src={image.url || image} alt={image.alt || `Imagen ${index + 1}`} className="w-full h-full object-cover"  loading="lazy" decoding="async" />
                       </div>
                     </SwiperSlide>
                   ))}
@@ -121,7 +121,7 @@ const ProjectDetail = ({ projectData }) => {
     <div ref={containerRef} className="project-detail-container mt-8">
       {/* Imagen principal del proyecto */}
       <motion.div className="project-image-container rounded-lg overflow-hidden relative" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-        <img src={projectData.image} alt={projectData.name} className="w-full h-auto object-cover" />
+        <img src={projectData.image} alt={projectData.name} className="w-full h-auto object-cover"  loading="lazy" decoding="async" />
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
         <div className="absolute bottom-0 left-0 p-6">
           <h2 className="text-white text-2xl md:text-3xl font-bold">{projectData.name}</h2>

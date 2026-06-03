@@ -8,10 +8,10 @@ function HeroContent() {
       <div className="w-40 text-center mx-auto">
         <img 
           className="rounded-full text-center stroke-slate-50 stroke-2 bg-gray-300 pt-4" 
-          src="https://cdn.jaimedigitalstudio.com/profilephoto.webp" 
+          src={`${__CDN_URL__}/profilephoto.webp`} 
           alt="Jaime Villanueva Alcon" 
           loading="eager" 
-        />
+         fetchpriority="high" />
       </div>
       <div className="text-center">
         <h1 className="font-light py-4 tracking-tight text-primary flex flex-col md:flex-row items-center gap-2 justify-center">

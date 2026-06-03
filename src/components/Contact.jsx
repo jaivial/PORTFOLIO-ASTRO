@@ -68,7 +68,7 @@ function ToastContainer({ toasts, onClose }) {
   );
 }
 
-const backgroundImg = "https://cdn.jaimedigitalstudio.com/assets/images/background.webp";
+const backgroundImg = `${__CDN_URL__}/assets/images/background.webp`;
 
 export default function Contact() {
   const t = useTranslations();

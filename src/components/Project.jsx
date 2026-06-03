@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslations } from '../utils/translations';
 
-function Project({ data }) {
+function Project() {
   const t = useTranslations();
+  const [data, setData] = useState(null);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/api/projects-summary.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(j => { if (!cancelled) { setData(j); setLoaded(true); } })
+      .catch(() => { if (!cancelled) setLoaded(true); });
+    return () => { cancelled = true; };
+  }, []);
 
   // Helper function to get translated text with fallback
   const getTranslatedText = (key, fallback) => {
@@ -52,7 +63,7 @@ function Project({ data }) {
                           : "object-cover object-top"
                       }`}
                       alt={`${t('projects.view_details')} ${item.name}`}
-                    />
+                     loading="lazy" decoding="async" />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                       <div className="p-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         <p className="font-medium text-sm mb-2">

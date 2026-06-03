@@ -1,8 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { useTranslations } from "../utils/translations";
-import TimelineInteractive from "./TimelineInteractive";
-import ReactApexChart from "react-apexcharts";
 import { getIcon } from "../utils/icons";
+
+// Lazy-load heavy subcomponents. SSR will render a placeholder via Suspense fallback.
+const TimelineInteractive = lazy(() => import("./TimelineInteractive"));
+const ReactApexChart = lazy(() =>
+  import("react-apexcharts").then(m => ({ default: m.default }))
+);
 
 // Component for individual skill radial chart
 const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) => {
@@ -105,7 +109,9 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
     <div className="flex flex-col items-center p-1 xs:p-2 bg-primary bg-opacity-5 rounded-lg border border-primary border-opacity-10 hover:bg-opacity-10 transition-all">
       <div className="text-xs xs:text-sm md:text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400 mb-1">{Math.round(currentPercentage)}%</div>
       <div className="relative scale-75 xs:scale-100">
-        <ReactApexChart options={chartOptions} series={series} type="radialBar" height={120} width={120} />
+        <Suspense fallback={<div style={{ width: 120, height: 120 }} />}>
+          <ReactApexChart options={chartOptions} series={series} type="radialBar" height={120} width={120} />
+        </Suspense>
         <div className="absolute inset-0 flex items-center justify-center">
           <div
             className={`flex flex-col items-center ${
@@ -201,7 +207,7 @@ const SkillRadialChart = ({ skillName, percentage = 100, isVisible = false }) =>
                         : "w-2 h-2 xs:w-5 xs:h-5 md:w-6 md:h-6"
                     }`}
                     style={skillName.toLowerCase() === "next.js" ? { filter: "brightness(5) invert(1)" } : {}}
-                  />
+                   loading="lazy" decoding="async" />
                 )}
               </div>
             )}
@@ -272,7 +278,9 @@ function Timeline() {
         </p>
 
         {/* Componente React interactivo */}
-        <TimelineInteractive />
+        <Suspense fallback={<div className="min-h-[200px]" />}>
+          <TimelineInteractive />
+        </Suspense>
 
         {/* Sección de habilidades */}
         <div data-aos="fade-up" className="mt-20 max-w-7xl mx-auto">

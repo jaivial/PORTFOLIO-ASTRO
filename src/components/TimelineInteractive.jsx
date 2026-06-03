@@ -290,7 +290,7 @@ export default function TimelineInteractive() {
                         {/* Imagen del proyecto si existe */}
                         {item.image && (
                           <div className="mb-4 rounded-md overflow-hidden">
-                            <img src={getImageUrl(item)} alt={item.title} className="w-full h-auto object-cover rounded-md" />
+                            <img src={getImageUrl(item)} alt={item.title} className="w-full h-auto object-cover rounded-md"  loading="lazy" decoding="async" />
                           </div>
                         )}
 

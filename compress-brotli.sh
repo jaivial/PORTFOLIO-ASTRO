@@ -9,6 +9,9 @@ GZIP_LEVEL=9     # High gzip compression
 echo "=== Compressing HTML with Gzip ==="
 find "${SOURCE_DIR}" -name "*.html" -type f -print0 | xargs -0 -P 4 -I {} gzip -"${GZIP_LEVEL}" -k -f {}
 
+echo "=== Compressing HTML with Brotli ==="
+find "${SOURCE_DIR}" -name "*.html" -type f -print0 | xargs -0 -P 4 -I {} brotli -q $BROTLI_LEVEL -f {}
+
 echo "=== Compressing JS files with Gzip ==="
 find "${SOURCE_DIR}" -name "*.js" -type f -print0 | xargs -0 -P 4 -I {} gzip -"${GZIP_LEVEL}" -k -f {}
 

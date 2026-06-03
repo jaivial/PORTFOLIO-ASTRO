@@ -39,7 +39,7 @@ const { Content, remarkPluginFrontmatter } = await entry.render();
         class="rounded-2xl mx-auto sm:w-4/6 w-full"
         src={entry.data.image.url}
         alt={entry.data.image.alt}
-      />
+       loading="lazy" decoding="async" />
       <div class="py-5">
         <span
           class="px-4 py-3 bg-primary bg-opacity-10 text-primary rounded-full"

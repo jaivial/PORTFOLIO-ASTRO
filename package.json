@@ -6,7 +6,7 @@
     "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
-    "build:production": "NODE_ENV=production CDN_URL=https://cdn.jaimedigitalstudio.com astro build",
+    "build:production": "NODE_ENV=production CDN_URL=https://jaimedigitalstudio.b-cdn.net astro build",
     "preview": "astro preview --host",
     "upload:cdn": "bash upload-bunny.sh",
     "compress:brotli": "bash compress-brotli.sh",

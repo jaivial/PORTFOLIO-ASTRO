@@ -95,7 +95,7 @@ export default function FeatureImageModal({ image, title, projectSlug }) {
 
       <div className="feature-image-container">
         <div onClick={openModal} className={getContainerClassName()}>
-          <img src={imgSrc} alt={title} className={getImageClassName()} />
+          <img src={imgSrc} alt={title} className={getImageClassName()}  loading="lazy" decoding="async" />
         </div>
 
         {isModalOpen && (
@@ -106,7 +106,7 @@ export default function FeatureImageModal({ image, title, projectSlug }) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
-              <img src={imgSrc} alt={title} className="max-w-full max-h-[85vh] object-contain rounded-lg" />
+              <img src={imgSrc} alt={title} className="max-w-full max-h-[85vh] object-contain rounded-lg"  loading="lazy" decoding="async" />
             </div>
           </div>
         )}
