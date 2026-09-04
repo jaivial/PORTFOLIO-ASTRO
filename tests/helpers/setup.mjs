@@ -12,7 +12,11 @@ afterEach((ctx) => {
   const dir = join(process.cwd(), "test-results", "failure-bundles");
   mkdirSync(dir, { recursive: true });
   const file = join(dir, `${state.corrId}.json`);
-  const err = state.error ?? { message: "test failed (error not captured)" };
+  const vitestErr = ctx.task.result?.errors?.[0];
+  const err =
+    state.error ??
+    (vitestErr ? { message: vitestErr.message, stack: vitestErr.stack } : null) ??
+    { message: "test failed (error not captured)" };
   writeFileSync(
     file,
     JSON.stringify({ corrId: state.corrId, test: ctx.task.fullName, checkpoints: state.checkpoints, error: err }, null, 2)
