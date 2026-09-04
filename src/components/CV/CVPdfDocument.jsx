@@ -869,3 +869,7 @@ const CVPdfDocument = ({ data }) => {
 };
 
 export default CVPdfDocument;
+
+// Root element must be created with the same (real) React that react-pdf's
+// reconciler uses, not the preact/compat shim used by CVViewer.
+export const createCVPdfElement = (data) => <CVPdfDocument data={data} />;
