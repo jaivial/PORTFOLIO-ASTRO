@@ -11,6 +11,9 @@
     "upload:cdn": "bash upload-bunny.sh",
     "compress:brotli": "bash compress-brotli.sh",
     "preview:brotli": "node preview-brotli.js",
+    "test:pipeline": "vitest run --config vitest.config.mjs",
+    "test:dom": "vitest run --config vitest.dom.config.mjs",
+    "test:integration": "vitest run --config vitest.config.mjs && vitest run --config vitest.dom.config.mjs",
     "deploy": "npm run build:production && npm run compress:brotli && npm run upload:cdn",
     "astro": "astro"
   },
@@ -62,5 +65,12 @@
   },
   "overrides": {
     "sharp": "0.33.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^14.3.1",
+    "@testing-library/user-event": "^14.6.7",
+    "jsdom": "^24.1.3",
+    "vitest": "^1.6.1"
   }
 }
