@@ -587,6 +587,17 @@ const styles = StyleSheet.create({
     padding: "2 4",
     borderRadius: 2,
   },
+  projectSlug: {
+    fontSize: 8,
+    color: "#9ca3af",
+    marginBottom: 5,
+    fontFamily: "Courier",
+  },
+  projectLink: {
+    fontSize: 8,
+    color: "#6366f1",
+    marginTop: 3,
+  },
   techRow: {
     flexDirection: "row",
     flexWrap: "wrap",
@@ -863,6 +874,30 @@ const CVPdfDocument = ({ data }) => {
           </View>
         </View>
 
+      </Page>
+
+      {/* Fourth Page(s) - Full Projects Catalog */}
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>{t("cv.sections.projects")}</Text>
+          {(data.projects ?? []).map((p, i) => {
+            const link = [p.url, p.github].find((u) => typeof u === "string" && u.startsWith("http"));
+            return (
+              <View key={`proj-${i}`} style={styles.projectItem}>
+                <Text style={styles.projectTitle}>{p.name}</Text>
+                {p.type ? <Text style={styles.projectType}>{p.type}</Text> : null}
+                <Text style={styles.projectSlug}>slug: {p.slug}</Text>
+                <Text style={styles.projectDescription}>{p.description}</Text>
+                <View style={styles.techRow}>
+                  {(p.tech ?? []).map((tech, j) => (
+                    <Text key={`proj-${i}-tech-${j}`} style={styles.projectTech}>{tech}</Text>
+                  ))}
+                </View>
+                {link && <Text style={styles.projectLink}>{link}</Text>}
+              </View>
+            );
+          })}
+        </View>
       </Page>
     </Document>
   );
