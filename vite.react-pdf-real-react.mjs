@@ -47,6 +47,13 @@ export function reactPdfRealReact() {
     },
     resolveId(source, importer) {
       if (isServerBuild) return;
+      // @preact/preset-vite's babel rewrites ALL src JSX (including
+      // CVPdfDocument.jsx) to `preact/jsx-runtime` imports. For the PDF
+      // document those elements must be real React objects, so redirect the
+      // runtime import back to react's identical API (jsx/jsxs/Fragment).
+      if (importer && PDF_REAL_REACT_RE.test(importer) && source.startsWith('preact/jsx-')) {
+        return nodeRequire.resolve('react' + source.slice('preact'.length), { paths: [process.cwd()] });
+      }
       const isReactish = source === 'react' || source.startsWith('react/') || source === 'react-dom' || source.startsWith('react-dom/');
       if (!isReactish) return;
       if (importer && PDF_REAL_REACT_RE.test(importer)) {
