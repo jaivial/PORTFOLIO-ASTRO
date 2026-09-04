@@ -8,12 +8,14 @@ import { publishTracker } from "../helpers/setup.mjs";
 let createCVPdfElement;
 let pdf;
 let cvData;
+let allProjects;
 
 beforeAll(async () => {
   globalThis.window = { location: { origin: "http://localhost:4321" } };
   ({ createCVPdfElement } = await import("../../src/components/CV/CVPdfDocument.jsx"));
   ({ pdf } = await import("@react-pdf/renderer"));
   cvData = (await import("../../src/data/cvData.js")).default;
+  allProjects = (await import("../../src/utils/projects.js")).getData();
 });
 
 function validateCVData(data) {
@@ -40,9 +42,14 @@ describe.each(["es", "en"])("CV PDF vertical pipeline [lang=%s]", (lang) => {
 
     t.ckpt("stage_loaded", { engine: "@react-pdf/renderer", component: "CVPdfDocument" });
 
-    const data = { ...cvData[lang], language: lang };
+    const data = { ...cvData[lang], language: lang, projects: allProjects };
     validateCVData(data);
-    t.ckpt("input_validated", { experience: data.experience.length, education: data.education.length });
+    assert(Array.isArray(allProjects) && allProjects.length >= 15, `projects catalog too small: ${allProjects.length}`);
+    for (const p of allProjects) {
+      assert(p.slug, `project missing slug: ${p.name}`);
+      assert(p.description, `project missing description: ${p.slug}`);
+    }
+    t.ckpt("input_validated", { experience: data.experience.length, education: data.education.length, projects: allProjects.length });
 
     const element = createCVPdfElement(data);
     assert(element, "createCVPdfElement returned falsy");

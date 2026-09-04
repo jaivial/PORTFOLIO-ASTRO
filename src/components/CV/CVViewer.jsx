@@ -4,6 +4,7 @@ import { FaDownload, FaArrowLeft, FaTimes, FaMoon, FaSun, FaChevronRight, FaChev
 import CVContent from "./CVContent";
 import LanguageSelector from "./LanguageSelector";
 import { createCVPdfElement } from "./CVPdfDocument";
+import { getData as getAllProjects } from "../../utils/projects";
 import { pdf } from "@react-pdf/renderer";
 import useCV from "../../hooks/useCV";
 import { useTranslations } from "../../utils/translations";
@@ -192,7 +193,7 @@ const CVViewer = ({ onClose, initialLanguage = null, initialSection = null }) =>
       setDownloadError(null);
 
       // Crear el documento PDF con los datos actuales
-      const pdfDoc = createCVPdfElement({ ...data, language });
+      const pdfDoc = createCVPdfElement({ ...data, language, projects: getAllProjects() });
 
       // Generar el blob del documento
       const blob = await pdf(pdfDoc).toBlob();
