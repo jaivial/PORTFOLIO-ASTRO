@@ -973,6 +973,65 @@ const grCupFrontendFeatures = [
   }
 ];
 
+
+// ===== Importaciones mini-tui Web (capturas subidas a BunnyCDN) =====
+const MtwChat = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-01-chat.webp');
+const MtwNotes = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-02-notes.webp');
+const MtwPanes = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-03-panes.webp');
+const MtwByFolder = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-04-by-folder.webp');
+const MtwFolderPicker = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-05-folder-picker.webp');
+const MtwResume = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-06-resume.webp');
+const MtwToast = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-07-finished-toast.webp');
+const MtwSettingsSize = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-08-settings-size.webp');
+const MtwLightPanes = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-09-light-panes-notes.webp');
+const MtwPhoneTabs = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-10-phone-chat-tabs.webp');
+const MtwPhoneByFolder = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-11-phone-by-folder.webp');
+const MtwPhoneNotes = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-12-phone-notes.webp');
+
+// Funcionalidades para mini-tui Web
+const miniTuiWebFeatures = [
+    {
+        title: "Chat en el navegador para el agente",
+        description: "La misma sesion del agente que en la terminal, en una interfaz web: el transcript se transmite en vivo por un WebSocket por sesion (snapshot y despues deltas), con tarjetas por cada comando, el razonamiento plegado ('Thought for 6s') y la respuesta final en markdown. Reconexion automatica con backoff y heartbeat.",
+        image: { src: MtwChat }
+    },
+    {
+        title: "Paneles estilo tmux",
+        description: "Divide la ventana a la derecha o hacia abajo (Ctrl+\\), cada panel es su propio chat con su propia sesion y todos trabajan y transmiten a la vez. Divisores redimensionables con raton o teclado, Alt+1..6 para moverse, la disposicion se recuerda y en movil los paneles pasan a ser pestanas.",
+        carousel: [{ src: MtwPanes }, { src: MtwLightPanes }, { src: MtwPhoneTabs }]
+    },
+    {
+        title: "Notas por sesion, en vivo",
+        description: "Una barra lateral derecha con notas para cada sesion que se guardan solas mientras escribes. Todo va por un unico WebSocket por pestana (sin REST ni polling): una edicion desde otro dispositivo aparece al instante, y si estas escribiendo se detiene y te deja elegir entre tu version o la suya, sin perder texto nunca.",
+        carousel: [{ src: MtwNotes }, { src: MtwPhoneNotes }]
+    },
+    {
+        title: "Sesiones organizadas por carpeta",
+        description: "La barra lateral agrupa todo el historial por proyecto: cada carpeta con su numero de sesiones, un indicador de las que estan ejecutandose, carpetas fijadas arriba y un boton para abrir un chat nuevo directamente en esa carpeta. Carga perezosa desde un indice de SQLite (0,1 ms) y sin peticiones mientras esta inactiva.",
+        carousel: [{ src: MtwByFolder }, { src: MtwPhoneByFolder }]
+    },
+    {
+        title: "Selector de carpeta local y remota",
+        description: "Un chat nuevo elige en que carpeta trabajar navegando las carpetas de la maquina donde se ejecutara: este servidor o un host remoto por SSH, con migas de pan, ruta escrita, carpetas ocultas, repositorios git marcados y carpetas recientes.",
+        image: { src: MtwFolderPicker }
+    },
+    {
+        title: "/resume desde cualquier chat",
+        description: "Retoma cualquier sesion guardada en la base de datos (tambien las de la terminal), agrupadas por fecha y con busqueda por titulo, primer mensaje y carpeta. Al enviar un mensaje la conversacion continua con todo su contexto.",
+        image: { src: MtwResume }
+    },
+    {
+        title: "Avisos al terminar y memoria de prompts",
+        description: "Cuando termina una sesion que no estas mirando aparece un aviso con un boton 'View' que la abre y enfoca. Las flechas del prompt recuperan los mensajes anteriores de ese chat, con los comandos y skills como chips.",
+        image: { src: MtwToast }
+    },
+    {
+        title: "Tamano de interfaz y de texto",
+        description: "Dos controles independientes: el tamano de toda la interfaz (85-140%) y solo el del texto que lees y escribes (90-150%), con vista previa, atajos Ctrl +/- y un minimo de 100% en pantallas tactiles para que los botones sigan midiendo 44 px.",
+        image: { src: MtwSettingsSize }
+    }
+];
+
 const data = [
     {
         name: "Hero Budget",
@@ -1430,6 +1489,34 @@ const data = [
             { url: GrCupFrontend35politica, alt: "Bases legales completas del concurso" },
             { url: GrCupFrontend36mapa, alt: "Mapa interactivo de ubicacion del evento" },
             { url: GrCupFrontend37success, alt: "Confirmacion de compra con codigo QR" }
+        ],
+        videos: []
+    },
+    {
+        id: 91,
+        name: "mini-tui Web",
+        slug: "mini-tui-web",
+        image: { src: MtwPanes },
+        description: "La aplicacion web de mini-tui: el mismo agente de codigo que en la terminal, en el navegador y pensado para trabajar en varias cosas a la vez. Paneles estilo tmux con una sesion por panel transmitiendo en vivo por su propio WebSocket, notas por sesion sincronizadas en tiempo real a traves de un unico socket, historial organizado por carpeta, selector de carpeta local o remoto por SSH, /resume desde cualquier chat, avisos al terminar una sesion y controles de tamano de interfaz y texto. Construida con Svelte 5, Tailwind CSS 4 y un servidor Bun con SQLite, responsive de movil a escritorio y probada con cinco suites end-to-end en navegador real.",
+        type: "Aplicacion Web - Interfaz para agentes de codigo",
+        tech: ["Svelte 5", "TypeScript", "Tailwind CSS", "Bun", "WebSockets", "SQLite", "Vite", "Playwright", "SSH", "Nginx", "VPS", "Responsive Design"],
+        github: "https://github.com/jaivial/mini-tui",
+        url: "https://github.com/jaivial/mini-tui/releases/tag/v0.20.0",
+        features: miniTuiWebFeatures,
+        date: "2026-09-29",
+        images: [
+            { url: MtwPanes, alt: "Tres paneles estilo tmux, cada uno con su sesion, y la barra lateral organizada por carpeta" },
+            { url: MtwChat, alt: "Chat con el agente: razonamiento plegado, tarjetas de comandos y respuesta en markdown" },
+            { url: MtwNotes, alt: "Notas de la sesion en la barra lateral derecha junto al chat" },
+            { url: MtwByFolder, alt: "Sesiones agrupadas por carpeta con recuento, carpeta fijada y chat nuevo" },
+            { url: MtwFolderPicker, alt: "Selector de carpeta para un chat nuevo con repositorios git marcados" },
+            { url: MtwResume, alt: "Panel /resume con las sesiones guardadas agrupadas por fecha" },
+            { url: MtwToast, alt: "Aviso de sesion terminada con el boton View" },
+            { url: MtwSettingsSize, alt: "Ajustes de tamano de interfaz y de texto con vista previa" },
+            { url: MtwLightPanes, alt: "Tema claro con dos paneles y las notas abiertas" },
+            { url: MtwPhoneTabs, alt: "Vista movil: los paneles se muestran como pestanas" },
+            { url: MtwPhoneByFolder, alt: "Vista movil: barra lateral con las sesiones por carpeta" },
+            { url: MtwPhoneNotes, alt: "Vista movil: notas de la sesion a pantalla completa" }
         ],
         videos: []
     }
