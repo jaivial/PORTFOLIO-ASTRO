@@ -45,15 +45,15 @@ function ProjectFeatures({ project }) {
               <div className="lg:col-span-1">
                 {feature.image && (
                   <div className="rounded-md overflow-hidden">
-                    <FeatureImageModal image={feature.image} title={feature.title} projectSlug={project.slug} />
+                    <FeatureImageModal image={feature.image} title={getTranslatedText(`projects.${project.slug}.features.${index}.title`, feature.title)} projectSlug={project.slug} />
                   </div>
                 )}
 
                 {feature.carousel && (
                   <div className="rounded-md overflow-hidden">
                     <ImageCarouselModal
-                      images={feature.carousel.map((img) => ({ url: img.src, alt: feature.title }))}
-                      title={feature.title}
+                      images={feature.carousel.map((img) => ({ url: img.src, alt: getTranslatedText(`projects.${project.slug}.features.${index}.title`, feature.title) }))}
+                      title={getTranslatedText(`projects.${project.slug}.features.${index}.title`, feature.title)}
                       projectSlug={project.slug}
                     />
                   </div>

@@ -340,6 +340,44 @@
           "description": "Backend built with Go using multi-module workspace (go.work) architecture. Separate microservices for budget management, savings, dashboard data, expenses, and incomes. RESTful API with structured error handling and context-based timeout management. Comprehensive logging for debugging and monitoring."
         }
       }
+    },
+    "mini-tui-web": {
+      "description": "The mini-tui web app: the same coding agent as in the terminal, now in the browser and built for working on several things at once. tmux-style panes with one session per pane, each streaming live over its own WebSocket; per-session notes synced in real time through a single socket; history organized by folder; a local or remote (SSH) folder picker; /resume from any chat; notifications when a session finishes; and interface and text size controls. Built with Svelte 5, Tailwind CSS 4 and a Bun server with SQLite, responsive from phone to desktop and covered by five end-to-end suites in a real browser.",
+      "type": "Web Application - Interface for coding agents",
+      "features": {
+        "0": {
+          "title": "In-browser chat for the agent",
+          "description": "The same agent session as in the terminal, in a web interface: the transcript streams live over one WebSocket per session (a snapshot, then deltas), with a card for every command, collapsed reasoning ('Thought for 6s') and the final answer in markdown. Automatic reconnection with backoff and a heartbeat."
+        },
+        "1": {
+          "title": "tmux-style panes",
+          "description": "Split the window to the right or downwards (Ctrl+\\): each pane is its own chat with its own session, and all of them work and stream at the same time. Resizable dividers with the mouse or the keyboard, Alt+1..6 to move between panes, the layout is remembered, and on a phone the panes become tabs."
+        },
+        "2": {
+          "title": "Live per-session notes",
+          "description": "A right sidebar with notes for each session that save themselves as you type. Everything goes through a single WebSocket per tab (no REST, no polling): an edit from another device shows up instantly, and if you are typing it stops and lets you choose between your version and theirs, so no text is ever lost."
+        },
+        "3": {
+          "title": "Sessions organized by folder",
+          "description": "The sidebar groups the whole history by project: each folder with its session count, an indicator for the ones running, pinned folders on top and a button to start a new chat right in that folder. Lazy loading from a SQLite index (0.1 ms) and no requests while it is idle."
+        },
+        "4": {
+          "title": "Local and remote folder picker",
+          "description": "A new chat chooses the folder to work in by browsing the folders of the machine it will run on: this server or a remote host over SSH, with breadcrumbs, typed paths, hidden folders, git repositories marked and recent folders."
+        },
+        "5": {
+          "title": "/resume from any chat",
+          "description": "Resume any session saved in the database (including the terminal ones), grouped by date and searchable by title, first message and folder. Sending a message continues the conversation with its full context."
+        },
+        "6": {
+          "title": "Finish notifications and prompt memory",
+          "description": "When a session you are not watching finishes, a notification appears with a 'View' button that opens and focuses it. The arrow keys in the prompt bring back that chat's earlier messages, with commands and skills as chips."
+        },
+        "7": {
+          "title": "Interface and text size",
+          "description": "Two independent controls: the size of the whole interface (85-140%) and the size of just the text you read and write (90-150%), with a live preview, Ctrl +/- shortcuts and a 100% minimum on touch screens so buttons stay 44 px."
+        }
+      }
     }
   },
   "contact": {

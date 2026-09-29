@@ -8,6 +8,7 @@ const CatStore = toWebPCached(`${__CDN_URL__}/assets/images/catstore/catstore1.j
 const GuillermoFernandezNutricion = toWebPCached(`${__CDN_URL__}/images/guillermofernandeznutricion.webp`);
 const TourToValencia = toWebPCached(`${__CDN_URL__}/images/tourtovalencia/tourtovalencia11.jpg`);
 const HeroBudget = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgeticon.png`);
+const MiniTuiThumb = "/images/mini-tui/run.png";
 
 const cvData = {
     en: {
@@ -169,6 +170,13 @@ const cvData = {
             ]
         },
         projects: [
+            {
+                title: "mini-tui",
+                description: "A pretty terminal UI for mini-swe-agent built with OpenTUI (React + Bun): Claude Code-style multiline prompt bar, command palette, one clean card per bash step, sessions saved in SQLite with /resume, BYOK providers with /connect and real markdown rendering for final answers - the agent harness runs completely untouched.",
+                technologies: ["TypeScript", "React 19", "OpenTUI", "Bun", "SQLite", "Python", "mini-swe-agent", "litellm", "TUI"],
+                link: "https://github.com/jaivial/mini-tui",
+                thumbnail: MiniTuiThumb
+            },
             {
                 title: "Hero Budget",
                 description: "Complete personal finance management mobile application with offline-first architecture, real-time synchronization, multilingual support (20+ languages), and comprehensive features for tracking income, expenses, bills and savings goals.",
@@ -388,6 +396,13 @@ const cvData = {
         },
         projects: [
             {
+                title: "mini-tui",
+                description: "Terminal UI bonita para mini-swe-agent construida con OpenTUI (React + Bun): prompt bar multilinea estilo Claude Code, command palette, una tarjeta limpia por paso de bash, sesiones guardadas en SQLite con /resume, proveedores BYOK con /connect y renderizado real de markdown en la respuesta final - el harness del agente corre completamente intacto.",
+                technologies: ["TypeScript", "React 19", "OpenTUI", "Bun", "SQLite", "Python", "mini-swe-agent", "litellm", "TUI"],
+                link: "https://github.com/jaivial/mini-tui",
+                thumbnail: MiniTuiThumb
+            },
+            {
                 title: "Hero Budget",
                 description: "Aplicación móvil completa de gestión de finanzas personales con arquitectura offline-first, sincronización en tiempo real, soporte multiidioma (más de 20 idiomas) y funcionalidades completas para rastrear ingresos, gastos, facturas y metas de ahorro.",
                 technologies: ["React Native", "TypeScript", "Go", "SQLite", "OAuth 2.0", "Jest", "Detox", "RESTful API", "VPS", "Nginx"],
@@ -605,6 +620,13 @@ const cvData = {
             ]
         },
         projects: [
+            {
+                title: "mini-tui",
+                description: "Schone Terminal-UI fur mini-swe-agent, gebaut mit OpenTUI (React + Bun): mehrzeilige Prompt-Leiste im Claude-Code-Stil, Command-Palette, eine saubere Karte pro Bash-Schritt, SQLite-Sitzungen mit /resume, BYOK-Provider mit /connect und echtes Markdown-Rendering fur Antworten - der Agent-Harness bleibt vollstandig unverandert.",
+                technologies: ["TypeScript", "React 19", "OpenTUI", "Bun", "SQLite", "Python", "mini-swe-agent", "litellm", "TUI"],
+                link: "https://github.com/jaivial/mini-tui",
+                thumbnail: MiniTuiThumb
+            },
             {
                 title: "Hero Budget",
                 description: "Vollständige mobile Anwendung zur Verwaltung persönlicher Finanzen mit Offline-First-Architektur, Echtzeit-Synchronisation, mehrsprachiger Unterstützung (über 20 Sprachen) und umfassenden Funktionen zur Verfolgung von Einnahmen, Ausgaben, Rechnungen und Sparzielen.",

@@ -340,6 +340,44 @@
           "description": "Backend erstellt mit Go unter Verwendung einer Multi-Modul-Workspace-Architektur (go.work). Separate Microservices für Budgetverwaltung, Ersparnisse, Dashboard-Daten, Ausgaben und Einnahmen. RESTful API mit strukturierter Fehlerbehandlung und kontextbasiertem Timeout-Management. Umfassendes Logging für Debugging und Monitoring."
         }
       }
+    },
+    "mini-tui-web": {
+      "description": "Die Web-App von mini-tui: derselbe Coding-Agent wie im Terminal, jetzt im Browser und dafür gemacht, an mehreren Dingen gleichzeitig zu arbeiten. Panes im tmux-Stil mit einer Sitzung pro Pane, die jeweils live über ihren eigenen WebSocket gestreamt wird; Notizen pro Sitzung, in Echtzeit über einen einzigen Socket synchronisiert; ein nach Ordnern organisierter Verlauf; eine lokale oder entfernte (SSH) Ordnerauswahl; /resume aus jedem Chat; Benachrichtigungen, wenn eine Sitzung fertig ist; sowie Einstellungen für Oberflächen- und Textgröße. Gebaut mit Svelte 5, Tailwind CSS 4 und einem Bun-Server mit SQLite, responsiv vom Smartphone bis zum Desktop und durch fünf End-to-End-Testsuiten in einem echten Browser abgesichert.",
+      "type": "Webanwendung - Oberfläche für Coding-Agents",
+      "features": {
+        "0": {
+          "title": "Chat mit dem Agenten im Browser",
+          "description": "Dieselbe Agenten-Sitzung wie im Terminal, in einer Weboberfläche: Das Transkript wird live über einen WebSocket pro Sitzung gestreamt (zuerst ein Snapshot, dann Deltas), mit einer Karte für jeden Befehl, eingeklapptem Denkprozess ('Thought for 6s') und der finalen Antwort in Markdown. Automatische Wiederverbindung mit Backoff und Heartbeat."
+        },
+        "1": {
+          "title": "Panes im tmux-Stil",
+          "description": "Teile das Fenster nach rechts oder nach unten (Strg+\\): Jedes Pane ist ein eigener Chat mit eigener Sitzung, und alle arbeiten und streamen gleichzeitig. Die Trennlinien lassen sich mit Maus oder Tastatur verschieben, Alt+1..6 wechselt zwischen den Panes, das Layout wird gespeichert, und auf dem Smartphone werden die Panes zu Tabs."
+        },
+        "2": {
+          "title": "Live-Notizen pro Sitzung",
+          "description": "Eine rechte Seitenleiste mit Notizen für jede Sitzung, die sich beim Tippen selbst speichern. Alles läuft über einen einzigen WebSocket pro Tab (kein REST, kein Polling): Eine Änderung von einem anderen Gerät erscheint sofort, und wenn du gerade schreibst, hält sie an und lässt dich zwischen deiner und der anderen Version wählen, damit nie Text verloren geht."
+        },
+        "3": {
+          "title": "Sitzungen nach Ordnern organisiert",
+          "description": "Die Seitenleiste gruppiert den gesamten Verlauf nach Projekt: jeder Ordner mit der Anzahl seiner Sitzungen, einer Anzeige für laufende Sitzungen, angehefteten Ordnern oben und einem Button, um direkt in diesem Ordner einen neuen Chat zu starten. Lazy Loading aus einem SQLite-Index (0,1 ms) und keine Anfragen im Leerlauf."
+        },
+        "4": {
+          "title": "Lokale und entfernte Ordnerauswahl",
+          "description": "Ein neuer Chat wählt seinen Arbeitsordner, indem er die Ordner der Maschine durchsucht, auf der er laufen wird: dieser Server oder ein entfernter Host über SSH, mit Breadcrumbs, eingegebenen Pfaden, versteckten Ordnern, markierten Git-Repositories und zuletzt verwendeten Ordnern."
+        },
+        "5": {
+          "title": "/resume aus jedem Chat",
+          "description": "Setze jede in der Datenbank gespeicherte Sitzung fort (auch die aus dem Terminal), nach Datum gruppiert und durchsuchbar nach Titel, erster Nachricht und Ordner. Beim Senden einer Nachricht geht die Unterhaltung mit ihrem vollständigen Kontext weiter."
+        },
+        "6": {
+          "title": "Benachrichtigungen und Prompt-Verlauf",
+          "description": "Wenn eine Sitzung fertig ist, die du gerade nicht ansiehst, erscheint eine Benachrichtigung mit einem 'View'-Button, der sie öffnet und fokussiert. Mit den Pfeiltasten im Prompt holst du frühere Nachrichten dieses Chats zurück, Befehle und Skills als Chips."
+        },
+        "7": {
+          "title": "Oberflächen- und Textgröße",
+          "description": "Zwei unabhängige Regler: die Größe der gesamten Oberfläche (85-140 %) und nur die Größe des Textes, den du liest und schreibst (90-150 %), mit Live-Vorschau, Strg +/- als Tastenkürzel und mindestens 100 % auf Touchscreens, damit Buttons 44 px groß bleiben."
+        }
+      }
     }
   },
   "contact": {

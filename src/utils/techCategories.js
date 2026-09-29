@@ -1,10 +1,10 @@
 // Categorización de tecnologías
 export const techCategories = {
-    frameworks: ["Astro", "Next.js", "Remix"],
-    frontend: ["React", "React Native", "Tailwind CSS", "Javascript", "Responsive Design", "TypeScript", "Shadcn UI", "Framer Motion", "CSS", "HTML", "Tailwind", "Flutter"],
-    backend: ["MongoDB", "Nodemailer", "PostgreSQL", "Prisma", "Express js", "PHP", "MySQL", "Go", "NextAuth.js", "Node.js", "API"],
+    frameworks: ["Astro", "Next.js", "Remix", "Vite", "Vike"],
+    frontend: ["React", "React 19", "React Native", "Preact", "Tailwind CSS", "Javascript", "Responsive Design", "TypeScript", "Shadcn UI", "Framer Motion", "CSS", "HTML", "Tailwind", "Flutter", "Jotai"],
+    backend: ["MongoDB", "Nodemailer", "PostgreSQL", "Prisma", "Express js", "PHP", "MySQL", "Go", "NextAuth.js", "Node.js", "API", "REST API"],
     integrations: ["PayPal", "Stripe", "OpenAI", "SEO", "next-intl", "HTMX", "i18n"],
-    devops: ["PM2", "Nginx", "VPS", "Vercel", "Netlify"],
+    devops: ["PM2", "Nginx", "VPS", "Vercel", "Netlify", "Docker"],
     tools: ["VS Code", "Figma", "Postman"],
 };
 

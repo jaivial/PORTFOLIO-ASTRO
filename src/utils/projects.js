@@ -63,6 +63,28 @@ const VillacarmenImg15 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/
 const VillacarmenImg16 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-16.jpg`)
 const VillacarmenImg17 = toWebPCached(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-17.jpg`)
 const VillacarmenImg18 = addCacheBusting(`${__CDN_URL__}/assets/images/villacarmen/villacarmen-18.jpg`)
+
+
+// Importaciones para Nueva Alqueria Villa Carmen (capturas cuadradas 1:1)
+const NewVillaCarmenHomeHero = '/images/newvillacarmen/01-home-hero.webp';
+const NewVillaCarmenHomeMenus = '/images/newvillacarmen/02-home-menus.webp';
+const NewVillaCarmenHomeEvents = '/images/newvillacarmen/03-home-events.webp';
+const NewVillaCarmenReservasCalendar = '/images/newvillacarmen/04-reservas-calendar.webp';
+const NewVillaCarmenReservasForm = '/images/newvillacarmen/05-reservas-form.webp';
+const NewVillaCarmenMenuFinde = '/images/newvillacarmen/06-menu-finde.webp';
+const NewVillaCarmenMenuDishes = '/images/newvillacarmen/07-menu-finde-dishes.webp';
+const NewVillaCarmenMenuDia = '/images/newvillacarmen/08-menu-dia.webp';
+const NewVillaCarmenVinos = '/images/newvillacarmen/09-vinos.webp';
+const NewVillaCarmenVinosList = '/images/newvillacarmen/10-vinos-list.webp';
+const NewVillaCarmenPostres = '/images/newvillacarmen/11-postres.webp';
+const NewVillaCarmenMenusGrupos = '/images/newvillacarmen/12-menus-grupos.webp';
+const NewVillaCarmenEventosHero = '/images/newvillacarmen/13-eventos-hero.webp';
+const NewVillaCarmenEventosSections = '/images/newvillacarmen/14-eventos-sections.webp';
+const NewVillaCarmenContacto = '/images/newvillacarmen/15-contacto.webp';
+const NewVillaCarmenMobileHome = '/images/newvillacarmen/16-mobile-home.webp';
+const NewVillaCarmenMobileMenu = '/images/newvillacarmen/17-mobile-menu.webp';
+const NewVillaCarmenMobileReservas = '/images/newvillacarmen/18-mobile-reservas.webp';
+const NewVillaCarmenBackofficeLogin = '/images/newvillacarmen/19-backoffice-login.webp';
 // import VillacarmenVideo from "../assets/videos/villacarmen/villacarmen-video.mov"
 
 // Importaciones para Tour To Valencia
@@ -363,6 +385,53 @@ const placeholderFeatures = [
 ];
 
 // Funcionalidades para Alqueria Villa Carmen
+
+const newVillaCarmenFeatures = [
+    {
+        title: "Frontend Preact ultra rapido",
+        description: "Nueva web publica reconstruida con Preact, Vite y TypeScript, con rutas estaticas para home, menus, eventos, contacto y reservas. Prioriza carga rapida, animaciones suaves y experiencia responsive.",
+        image: { src: NewVillaCarmenHomeHero }
+    },
+    {
+        title: "Reservas online paso a paso",
+        description: "Flujo de reserva con calendario, seleccion de personas, datos del cliente, validacion de politicas y conexion con el backend para disponibilidad y confirmaciones.",
+        carousel: [
+            { src: NewVillaCarmenReservasCalendar },
+            { src: NewVillaCarmenReservasForm },
+            { src: NewVillaCarmenMobileReservas }
+        ]
+    },
+    {
+        title: "Menus y cartas dinamicas",
+        description: "Cartas publicas para menu del dia, fin de semana, postres, vinos, cafes, bebidas y menus de grupos renderizadas desde datos del backend, con alergenos y precios claros.",
+        carousel: [
+            { src: NewVillaCarmenMenuFinde },
+            { src: NewVillaCarmenMenuDishes },
+            { src: NewVillaCarmenVinos },
+            { src: NewVillaCarmenPostres }
+        ]
+    },
+    {
+        title: "Eventos y salones para celebraciones",
+        description: "Landing de eventos con imagenes grandes, narrativa visual y secciones para bodas, comuniones y celebraciones privadas, manteniendo la identidad mediterranea del restaurante.",
+        carousel: [
+            { src: NewVillaCarmenHomeEvents },
+            { src: NewVillaCarmenEventosHero },
+            { src: NewVillaCarmenEventosSections }
+        ]
+    },
+    {
+        title: "Backoffice moderno en produccion",
+        description: "Panel administrativo independiente con React 19, Vike SSR y autenticacion por cookie para gestionar reservas, carta, horarios y operaciones internas contra el backend Go.",
+        image: { src: NewVillaCarmenBackofficeLogin }
+    },
+    {
+        title: "Backend Go con API y despliegue VPS",
+        description: "Servidor Go net/http con endpoints JSON, MySQL, timeouts, cache/ETag donde aplica, Nginx y Docker en produccion. El backend sirve la SPA y centraliza los contratos publicos y admin.",
+        image: { src: NewVillaCarmenContacto }
+    }
+];
+
 const alqueriaFeatures = [
     {
         key: "reservation_system",
@@ -784,35 +853,56 @@ const FerWeb18equipo = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images
 const FerWeb19landingmobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/19-landing-mobile.webp');
 const FerWeb20inscripcionmobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/20-inscripcion-mobile.webp');
 const FerWeb21ubicaciondetail = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/21-ubicacion-detail.webp');
+const FerWeb22emailconfirm = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/22-email-confirm.webp');
+const FerWeb23emailpayment = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/23-email-payment.webp');
+const FerWeb24qrstandalone = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/24-qr-standalone.webp');
+const FerWeb25paymenterror = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/25-payment-error.webp');
+const FerWeb26stripecheckout = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/26-stripe-checkout.webp');
+const FerWeb27inscripcionsuccess = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/fercup-ferweb/27-inscripcion-success.webp');
 
 // ===== Importaciones GR Cup Frontend (sorteo) =====
-const GrCupFrontend = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/05-raffle.webp');
-const GrCupFrontend02inscripcion = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/02-inscripcion.webp');
-const GrCupFrontend03checkout = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/03-checkout.webp');
-const GrCupFrontend04success = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/04-success.webp');
-const GrCupFrontend05raffle = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/05-raffle.webp');
-const GrCupFrontend06horarios = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/06-horarios.webp');
-const GrCupFrontend07ubicacion = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/07-ubicacion.webp');
-const GrCupFrontend08backofficelogin = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/08-backoffice-login.webp');
-const GrCupFrontend09politicaconcurso = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/09-politica-concurso.webp');
-const GrCupFrontend10terminos = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/10-terminos.webp');
-const GrCupFrontend11privacidad = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/11-privacidad.webp');
-const GrCupFrontend12consentimiento = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/12-consentimiento.webp');
-const GrCupFrontend17raffleframes = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/17-raffle-frames.webp');
-const GrCupFrontend18raffledetail = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/18-raffle-detail.webp');
-const GrCupFrontend19checkoutform = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/19-checkout-form.webp');
-const GrCupFrontend20successdetail = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/20-success-detail.webp');
-const GrCupFrontend21inscripcionform = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/21-inscripcion-form.webp');
-const GrCupFrontend23backofficehero = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/23-backoffice-hero.webp');
-const GrCupFrontend24politicascroll = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/24-politica-scroll.webp');
-const GrCupFrontend30raffle1 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/30-raffle-1.webp');
-const GrCupFrontend31raffle2 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/31-raffle-2.webp');
-const GrCupFrontend32raffle3 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/32-raffle-3.webp');
-const GrCupFrontend33raffle4 = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/33-raffle-4.webp');
-const GrCupFrontend34checkout = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/34-checkout.webp');
-const GrCupFrontend35politica = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/35-politica.webp');
-const GrCupFrontend36mapa = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/36-mapa.webp');
-const GrCupFrontend37success = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/37-success.webp');
+const GrCupFrontend = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-01-raffle-hero.webp');
+const GrcRaffleDetail = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-02-raffle-detail.webp');
+const GrcCheckout = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-04-checkout.webp');
+const GrcInscripcion = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-05-inscripcion.webp');
+const GrcHorarios = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-06-horarios.webp');
+const GrcComoLlegar = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-07-como-llegar.webp');
+const GrcPolitica = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-08-politica.webp');
+const GrcTerms = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-09-terms.webp');
+const GrcPrivacy = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-10-privacy.webp');
+const GrcConsentimiento = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-11-consentimiento.webp');
+const GrcRaffleMobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-12-raffle-mobile.webp');
+const GrcCheckoutMobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-13-checkout-mobile.webp');
+const GrcHomeCampeonato = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-14-home-campeonato.webp');
+const GrcHomePrices = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-16-home-prices.webp');
+const GrcHomeOrganization = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-17-home-organization.webp');
+const GrcHomeWeightCategories = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/grcup-frontend/v2-18-home-weight-categories.webp');
+
+// ===== Importaciones Desayuno con Princesas =====
+const DcpHero = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/01-hero-2.webp');
+const DcpGaleria = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/02-galeria-2.webp');
+const DcpHorarios = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/03-horarios-2.webp');
+const DcpIncluye = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/04-incluye-2.webp');
+const DcpPacks = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/05-packs-2.webp');
+const DcpEntradas = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/06-entradas-2.webp');
+const DcpUbicacion = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/07-ubicacion-2.webp');
+const DcpFaq = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/08-faq-2.webp');
+const DcpBookingEntradas = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/09-booking-entradas-2.webp');
+const DcpBookingDatos = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/10-booking-datos-2.webp');
+const DcpBookingAlergias = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/11-booking-alergias-2.webp');
+const DcpBookingConfirmar = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/12-booking-confirmar-2.webp');
+const DcpTerminos = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/13-terminos-2.webp');
+const DcpPrivacidad = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/14-privacidad-2.webp');
+const DcpHeroMobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/15-hero-mobile-2.webp');
+const DcpPacksMobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/16-packs-mobile-2.webp');
+const DcpLogin = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/20-login.webp');
+const DcpDashboard = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/21-dashboard.webp');
+const DcpInscripciones = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/22-inscripciones.webp');
+const DcpEditBooking = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/23-edit-booking.webp');
+const DcpQrReader = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/24-qr-reader.webp');
+const DcpSettings = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/25-settings.webp');
+const DcpEmailSettings = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/26-email-settings.webp');
+const DcpDashboardMobile = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/desayunoprincesas/27-dashboard-mobile.webp');
 
 const grCupBackofficeFeatures = [
   {
@@ -914,6 +1004,36 @@ const ferWebFeatures = [
     image: { src: FerWeb15inscripcionform }
   },
   {
+    title: "Pago seguro con Stripe Checkout",
+    description: "Pasarela de pago Stripe Checkout en modo hosted: tarjeta, Apple Pay y Google Pay. Webhook server-side confirma el pago y libera la plaza automaticamente.",
+    image: { src: FerWeb26stripecheckout }
+  },
+  {
+    title: "QR unico generado al inscribirse",
+    description: "QRCoder del backend genera un QR firmado por competicion (HMAC con QrSecret) que se almacena en BunnyCDN y se incrusta tanto en el email de confirmacion como en la pagina de exito para check-in en la mesa de registro.",
+    image: { src: FerWeb24qrstandalone }
+  },
+  {
+    title: "Emails transaccionales automaticos",
+    description: "MailKit envia emails HTML branded para cada hito: confirmacion de inscripcion con QR embebido, confirmacion de pago y notificacion al admin. Configurable SMTP/Gmail por competicion desde el backoffice.",
+    image: { src: FerWeb22emailconfirm }
+  },
+  {
+    title: "Pantalla de inscripcion confirmada con QR",
+    description: "Tras pagar por Stripe, el atleta llega a una pantalla de exito con su codigo QR descargable, instrucciones para el dia del evento y resumen completo de su inscripcion.",
+    image: { src: FerWeb27inscripcionsuccess }
+  },
+  {
+    title: "Email de confirmacion de pago",
+    description: "Email HTML branded con detalle del pago, modalidad inscrita, categoria de peso, horarios y siguiente paso. Se envia automaticamente cuando el webhook de Stripe confirma el cargo.",
+    image: { src: FerWeb23emailpayment }
+  },
+  {
+    title: "Manejo robusto de errores de pago",
+    description: "Estados tipados para cada fase del pago: loading, redirecting, already_paid, stripe_unavailable y error. Mensajes claros y opcion de reintentar sin perder el progreso de inscripcion.",
+    image: { src: FerWeb25paymenterror }
+  },
+  {
     title: "Vista movil optimizada",
     description: "Diseno mobile-first con menu hamburguesa, secciones colapsables y CTAs accesibles en cualquier pantalla.",
     image: { src: FerWeb19landingmobile }
@@ -922,57 +1042,222 @@ const ferWebFeatures = [
 
 const grCupFrontendFeatures = [
   {
-    title: "Composicion cinematica con scroll frames",
-    description: "313 frames de un trofeo dibujado a mano desplegados segun el progreso de scroll. Compositor Remotion + HyperFrames que da al sorteo un look de trailer.",
-    image: { src: GrCupFrontend05raffle }
+    title: "Landing cinematica del sorteo",
+    description: "Hero del sorteo benefico de un cinturon SBD con composicion cinematica scroll-driven (313 frames de un trofeo desplegados con Remotion + HyperFrames). Look de trailer para captar participantes.",
+    image: { src: GrCupFrontend }
   },
   {
-    title: "Animacion frame-by-frame con FrameAnimator",
-    description: "Preload inteligente de frames, sincronizacion con scroll progress, transiciones suaves entre estados del trofeo.",
-    image: { src: GrCupFrontend30raffle1 }
+    title: "Como participar en 3 pasos",
+    description: "Timeline visual del flujo: elige tus boletos (0,50 € cada uno), rellena tus datos y sigue la cuenta en Instagram para ser elegible.",
+    image: { src: GrcRaffleDetail }
   },
   {
-    title: "Detalle de tickets y numeros del sorteo",
-    description: "Listado completo de numeros asignados, comprados y disponibles con busqueda y filtros por participante.",
-    image: { src: GrCupFrontend18raffledetail }
+    title: "Compra de tickets con Stripe",
+    description: "Selector de cantidad con precio total en vivo, formulario de datos y pago seguro con Stripe Checkout, mas confirmacion de seguir en Instagram.",
+    image: { src: GrcCheckout }
   },
   {
-    title: "Checkout con Stripe y validacion",
-    description: "Seleccion de cantidad, formulario de datos, validacion con Zod, redireccion a Stripe Checkout y webhook de confirmacion.",
-    image: { src: GrCupFrontend19checkoutform }
+    title: "Inscripcion al sorteo",
+    description: "Pantalla de inscripcion con el estado del evento (proximamente) y enlace directo a Instagram para mantenerse informado.",
+    image: { src: GrcInscripcion }
   },
   {
-    title: "Pasarela de pago integrada",
-    description: "Stripe Checkout, soporte para tarjeta, Apple Pay y Google Pay. Comprobante enviado por email y recordatorio en el perfil.",
-    image: { src: GrCupFrontend03checkout }
+    title: "Horarios de la competicion",
+    description: "Tabla de horarios por dia, categoria y peso (masculino/femenino) con franjas horarias claras.",
+    image: { src: GrcHorarios }
   },
   {
-    title: "Pantalla de exito con QR del ticket",
-    description: "Codigo QR unico por compra, botones de compartir en redes sociales, descarga de PDF con todos los numeros asignados.",
-    image: { src: GrCupFrontend04success }
-  },
-  {
-    title: "Inscripcion publica al sorteo",
-    description: "Formulario accesible con prefill, validacion de email y telefono, y resumen de compra antes de pagar.",
-    image: { src: GrCupFrontend02inscripcion }
-  },
-  {
-    title: "Horarios publicos de la competicion",
-    description: "Calendario por dia, plataforma y categoria. Datos en vivo del backend con cache y revalidacion periodica.",
-    image: { src: GrCupFrontend06horarios }
-  },
-  {
-    title: "Como llegar al evento",
-    description: "Mapa, direccion, transporte y enlaces a Google Maps / Waze con un solo tap.",
-    image: { src: GrCupFrontend07ubicacion }
+    title: "Como llegar - localizacion",
+    description: "Pabellon Municipal de Almusafes con galeria de fotos del recinto e indicaciones para llegar.",
+    image: { src: GrcComoLlegar }
   },
   {
     title: "Bases legales del concurso",
-    description: "Texto legal completo: bases, requisitos de participacion, fechas, premios, fiscalidad y contacto del organizador.",
-    image: { src: GrCupFrontend09politicaconcurso }
+    description: "Politica del concurso, terminos de servicio, privacidad y consentimiento de datos en paginas dedicadas.",
+    image: { src: GrcPolitica }
+  },
+  {
+    title: "Diseno responsive",
+    description: "Experiencia mobile-first: navbar con menu, hero del sorteo y checkout adaptados a cualquier pantalla.",
+    image: { src: GrcRaffleMobile }
+  },
+  {
+    title: "Campeonato AEP2 regional",
+    description: "Seccion del home que presenta el campeonato de powerlifting AEP2 regional de Valencia, Murcia y Baleares (1-2 mayo 2026) con sus patrocinadores.",
+    image: { src: GrcHomeCampeonato }
+  },
+  {
+    title: "Premios por movimiento",
+    description: "Premio para los mejores en cada movimiento (sentadilla, press de banca y peso muerto) con fotografias de competicion.",
+    image: { src: GrcHomePrices }
+  },
+  {
+    title: "Organizacion y equipamiento",
+    description: "Jueces y cargadores certificados AEP, plataforma y rack de competicion con acceso para el publico, y estructura para que cada entrenador siga de cerca a sus atletas.",
+    image: { src: GrcHomeOrganization }
+  },
+  {
+    title: "Categorias de peso",
+    description: "Categorias de peso masculinas y femeninas de la competicion, con acceso a las marcas minimas para clasificar.",
+    image: { src: GrcHomeWeightCategories }
   }
 ];
 
+const desayunoConPrincesasFeatures = [
+  {
+    title: "Landing inmersiva del evento",
+    description: "Pagina publica con hero a pantalla completa, paleta magica y tipografia de cuento. Presenta 'El Desayuno Real' en Alqueria Villa Carmen con llamadas a la accion claras hacia la compra de entradas.",
+    image: { src: DcpHero }
+  },
+  {
+    title: "Calendario de reserva con aforo en vivo",
+    description: "Primer paso del asistente de reserva: seleccion de fecha del evento con disponibilidad y aforo actualizados en tiempo real mediante WebSocket. Los dias completos se bloquean automaticamente.",
+    image: { src: DcpEntradas }
+  },
+  {
+    title: "Packs tematicos y entradas individuales",
+    description: "Catalogo de packs (Encantado, Reino Encantado, Recuerdo Real y Cuento de Ensueno) con fotografo y experiencias premium, combinables con entradas sueltas de adulto y nino en una misma compra.",
+    image: { src: DcpBookingEntradas }
+  },
+  {
+    title: "Datos del comprador",
+    description: "Formulario de contacto con nombre, apellidos, email y telefono con prefijo internacional, validado antes de avanzar al siguiente paso del asistente.",
+    image: { src: DcpBookingDatos }
+  },
+  {
+    title: "Alergias por asistente (14 alergenos UE)",
+    description: "Cada asistente declara sus alergias e intolerancias seleccionando entre los 14 alergenos de declaracion obligatoria de la UE, garantizando un servicio gastronomico seguro.",
+    image: { src: DcpBookingAlergias }
+  },
+  {
+    title: "Resumen y pago seguro con Stripe",
+    description: "Resumen completo de la reserva (fecha, comprador, desglose y total) con aceptacion de privacidad y terminos, y pago mediante Stripe Checkout. El webhook server-side confirma el pago y libera la plaza.",
+    image: { src: DcpBookingConfirmar }
+  },
+  {
+    title: "Packs y precios",
+    description: "Seccion comercial que detalla cada pack con su precio, composicion (adultos y ninos) y extras, pensada para maximizar la conversion y el ticket medio.",
+    image: { src: DcpPacks }
+  },
+  {
+    title: "Itinerario del Desayuno Real",
+    description: "Horario paso a paso de la manana magica: recepcion y coronacion, desayuno en el salon, tour por escenarios tematicos con talleres y cierre musical.",
+    image: { src: DcpHorarios }
+  },
+  {
+    title: "Que incluye la experiencia",
+    description: "Resumen visual de todo lo que ofrece la entrada: encuentro con las princesas, corona de regalo, talleres, brunch y fotografo profesional.",
+    image: { src: DcpIncluye }
+  },
+  {
+    title: "Galeria del evento",
+    description: "Carrusel de imagenes de alta resolucion del entorno y las ediciones anteriores, transmitiendo la magia del evento antes de reservar.",
+    image: { src: DcpGaleria }
+  },
+  {
+    title: "Ubicacion y como llegar",
+    description: "Direccion de Alqueria Villa Carmen con mapa y referencias para que las familias localicen el evento facilmente.",
+    image: { src: DcpUbicacion }
+  },
+  {
+    title: "Acceso al back office",
+    description: "Panel de administracion protegido con autenticacion JWT y bcrypt. Login dedicado para el equipo organizador.",
+    image: { src: DcpLogin }
+  },
+  {
+    title: "Dashboard de KPIs",
+    description: "Vista general del evento: entradas vendidas, ingresos totales, desglose online/efectivo, numero de adultos y ninos, aforo disponible y asistencia confirmada.",
+    image: { src: DcpDashboard }
+  },
+  {
+    title: "Gestion de inscripciones",
+    description: "Tabla completa de reservas con filtros, estado de pago, metodo, importe y alergias. Acciones por fila para editar, reenviar el email de confirmacion o eliminar.",
+    image: { src: DcpInscripciones }
+  },
+  {
+    title: "Edicion de inscripcion",
+    description: "Detalle editable de cada reserva: composicion de la compra, datos personales, asistentes y alergias, con reenvio del email de confirmacion y su QR.",
+    image: { src: DcpEditBooking }
+  },
+  {
+    title: "Lector QR para check-in",
+    description: "Escaneo por camara (ZXing) o entrada manual del codigo para validar la entrada de cada familia el dia del evento y marcar la asistencia.",
+    image: { src: DcpQrReader }
+  },
+  {
+    title: "Configuracion del evento, packs y fechas",
+    description: "Gestion del calendario de fechas, aforo maximo, precios de adulto y nino y configuracion de cada pack por fecha desde el back office.",
+    image: { src: DcpSettings }
+  },
+  {
+    title: "Configuracion de email (SMTP/Gmail)",
+    description: "Ajustes del proveedor de correo transaccional (SMTP o Gmail) usado para confirmaciones de reserva y pago, con credenciales cifradas.",
+    image: { src: DcpEmailSettings }
+  }
+];
+
+// Rusty — agente de código en Rust (imágenes en BunnyCDN)
+const RustyHero = toWebPCached(`${__CDN_URL__}/assets/images/rusty/rusty-hero.webp`);
+const RustyTui = toWebPCached(`${__CDN_URL__}/assets/images/rusty/rusty-tui-main.webp`);
+const RustyTuiPopover = toWebPCached(`${__CDN_URL__}/assets/images/rusty/rusty-tui-popover.webp`);
+const RustyBenchTimes = toWebPCached(`${__CDN_URL__}/assets/images/rusty/rusty-bench-times.webp`);
+const RustyBenchBands = toWebPCached(`${__CDN_URL__}/assets/images/rusty/rusty-bench-bands.webp`);
+const RustyBenchSuccess = toWebPCached(`${__CDN_URL__}/assets/images/rusty/rusty-bench-success.webp`);
+const RustyRam = toWebPCached(`${__CDN_URL__}/assets/images/rusty/rusty-ram-compare.webp`);
+const RustyBench300Times = `${__CDN_URL__}/assets/images/rusty/bench300_times_h.png`;
+const RustyBench300Success = `${__CDN_URL__}/assets/images/rusty/bench300_success_h.png`;
+const RustyBench300Overall = `${__CDN_URL__}/assets/images/rusty/bench300_overall_h.png`;
+const RustyBench300PerTask = `${__CDN_URL__}/assets/images/rusty/bench300_per_task_h.png`;
+
+const rustyFeatures = [
+  {
+    title: "TUI de streaming en la terminal",
+    description: "La interfaz de terminal renderiza texto y razonamiento en streaming con tok/s en vivo a la derecha del prompt, panel de actividad de subagentes, historial con Ctrl+P/Ctrl+N, y un popover de comandos con '/' para cambiar de modelo, reanudar sesiones o limpiar la conversación sin salir del flujo.",
+    image: { src: RustyTui }
+  },
+  {
+    title: "Popover de comandos '/'",
+    description: "Escribir '/' despliega la lista de comandos slash inline sobre el input: flechas para mover el resaltado, Tab para autocompletar, Enter para ejecutar y Esc para cerrar. El mismo menú está disponible en la UI web sobre su prompt.",
+    image: { src: RustyTuiPopover }
+  },
+  {
+    title: "Benchmark de 200 tareas contra pi",
+    description: "Los mismos 200 encargos de código en Python ejecutados por rusty y por pi en tmux con verificación determinista y deadline de 150 s por tarea. rusty resolvió las 200 sin ningún timeout con una mediana de 6,3 s por tarea; pi resolvió 199 con mediana de 8,0 s (1 timeout y 1 fallo). El gráfico muestra la latencia por tarea: rusty por debajo de pi en casi todo el rango, incluida la banda difícil 101-200.",
+    image: { src: RustyBenchTimes }
+  },
+  {
+    title: "Éxito por banda de dificultad",
+    description: "Las tareas 1-100 mantienen la banda original de mini-encargos y las 101-200 suben en dificultad incremental: formato exacto, multipaquete, con estado, algorítmicas, parsing, código+tests, reparación de bugs, CLIs, concurrencia y capstones. rusty logró el 100% en todas las bandas, incluida la banda de concurrencia donde pi encajó su único timeout.",
+    image: { src: RustyBenchBands }
+  },
+  {
+    title: "41 veces menos memoria que pi",
+    description: "En la misma tarea one-shot medida con VmHWM (7 ejecuciones por agente), rusty alcanza un pico de ~4,3 MiB frente a ~177 MiB de pi: 41x menos RAM. Es el resultado del perfil de release (LTO fat, panic=abort, strip), rustls en lugar de OpenSSL y serializar las peticiones directamente desde estado prestado.",
+    image: { src: RustyRam }
+  },
+  {
+    title: "Historial de tokens eficiente",
+    description: "El historial de conversación deduplica salidas de herramientas repetidas (−70% a −88% de bytes en el cable), aplica elisión de bloques intermedios sobre el límite de 8 000 caracteres, compacta a partir de 200 000 y solo reenvía el razonamiento del último turno. Frente a v0.3.0, los wire bytes caen entre −16% y −40% en los escenarios con palanca real.",
+    image: { src: RustyBenchSuccess }
+  },
+  {
+    title: "Tier difícil: 100 tareas más duras que la 200",
+    description: "Una segunda pasada independiente con 100 tareas deliberadamente más difíciles y extensas que la tarea 200 del primer benchmark: intérpretes de Brainfuck/Lisp/máquina de Turing, max-flow y Held-Karp, B-trees y segment trees con lazy, una shell virtual y un FAT, servidores TCP/HTTP reales, WAL y MVCC, lexer/parser/typechecker/cálculo lambda, y capstones como un git-lite y un gestor de paquetes. Deadline de 300 s por tarea, verificación determinista. Ambos agentes resolvieron las 100: la separación salió en velocidad y estabilidad.",
+    image: { src: RustyBench300Times }
+  },
+  {
+    title: "Barras horizontales: latencia por categoría",
+    description: "El gráfico de barras horizontales compara la mediana y la cola p90 de cada categoría del tier difícil: rusty gana en 9 de las 10 bandas (intérpretes 17,3 s vs 41,2 s, estructuras de datos 13,5 s vs 27,1 s, apps 18,3 s vs 32,5 s) y empata en algoritmos duros. Su mediana global es un 35% menor (17,6 s vs 27,2 s) y su p90 es 2,8 veces menor (32 s vs 91 s).",
+    image: { src: RustyBench300Overall }
+  },
+  {
+    title: "Cero timeouts en el tier difícil",
+    description: "Con el deadline de 300 s, rusty no alcanzó el límite ni una sola vez; pi lo agotó dos veces (tareas 203 y 222) cuando sus propios bucles de auto-test no terminaban — un JMP 0 en su VM de pila y una lectura en bucle del skiplist. Los programas entregados verificaron tras el kill, pero las ejecuciones cuentan como timeouts. Gráficos independientes del primer benchmark, en horizontal.",
+    image: { src: RustyBench300Success }
+  }
+];
+
+// Funcionalidades para mini-tui
 
 // ===== Importaciones mini-tui Web (capturas subidas a BunnyCDN) =====
 const MtwChat = toWebPCached('https://jaimedigitalstudio.b-cdn.net/images/mini-tui-web/mini-tui-web-01-chat.webp');
@@ -1032,7 +1317,157 @@ const miniTuiWebFeatures = [
     }
 ];
 
+const miniTuiFeatures = [
+    {
+        title: "Prompt bar estilo Claude Code",
+        description: "Barra multi-linea fijada abajo: el texto largo envuelve a la siguiente fila y la caja crece con tu texto (hasta 8 filas). Escribes la tarea (Alt+Enter o Ctrl+J para salto de linea) y sigues escribiendo seguimientos mientras el agente trabaja o despues de terminar: continuan la misma conversacion.",
+        image: { src: "/images/mini-tui/prompt.png" }
+    },
+    {
+        title: "Command palette con /",
+        description: "Al teclear / se abre autocompletado en tiempo real sobre los comandos disponibles (/model, /settings, /help, /resume, /connect): filtras mientras escribes, navegas con flechas o raton y Enter/Tab rellena el comando sin enviarlo nunca por ti.",
+        image: { src: "/images/mini-tui/command-palette.png" }
+    },
+    {
+        title: "Una tarjeta tranquila por paso de bash",
+        description: "Cada tool call (comando + salida) en una tarjeta shadcn-style: neutros zinc, superficies redondeadas, un unico acento sutil y colores semanticos usados con moderacion. Bajo el prompt, un estado de carga animado mientras el agente trabaja, seguido del modelo, la ruta, la rama de git y las estadisticas del run.",
+        image: { src: "/images/mini-tui/run.png" }
+    },
+    {
+        title: "Modos de salida: collapsed / trimmed / expanded",
+        description: "Elige como se muestran las salidas (solo una linea de contador, 2 lineas recortadas o todo expandido) desde el panel /settings; la preferencia se persiste entre runs y cada bloque se expande o contrae individualmente con la tecla e.",
+        image: { src: "/images/mini-tui/settings.png" }
+    },
+    {
+        title: "/resume - sesiones guardadas en SQLite",
+        description: "Cada conversacion se guarda en ~/.config/mini-tui/sessions.db con un titulo generado por IA (con fallback a tu prompt). /resume abre un modal con las sesiones iniciadas en la carpeta actual, paginadas y buscables por titulo; al restaurar, el siguiente prompt continua la misma conversacion con contexto completo via mini --resume.",
+        image: { src: "/images/mini-tui/resume.png" }
+    },
+    {
+        title: "/connect - proveedores BYOK",
+        description: "Todo el catalogo de MiniMax Code (Xiaomi MiMo, DeepSeek, OpenCode Go, Z.AI con GLM coding, MiniMax) mas OpenAI, Anthropic, Moonshot, Zhipu, Groq y OpenRouter. Pegas tu API key, eliges modelo y la conexion se prueba de verdad (un token consultando la propia capa litellm de mini) antes de guardarse en local.",
+        image: { src: "/images/mini-tui/connect.png" }
+    },
+    {
+        title: "Selector de modelo /model",
+        description: "Todos los modelos de los proveedores conectados se unen al picker: navegas con flechas o raton y el modelo seleccionado se aplica desde el siguiente paso. Tambien puedes escribir /model <id> para ir directo.",
+        image: { src: "/images/mini-tui/model-picker.png" }
+    },
+    {
+        title: "Markdown real en la respuesta final",
+        description: "El transcript muestra tu prompt tal cual como lo escribiste (nunca el template de tarea del harness), la respuesta final se renderiza como markdown de verdad (negrita, codigo, enlaces) y el echo redundante exit Submitted nunca se muestra.",
+        image: { src: "/images/mini-tui/final-answer.png" }
+    },
+    {
+        title: "/help - todo en un panel",
+        description: "Un unico panel con todos los comandos y teclas disponibles: /model, /resume, /connect, /settings, /help, /quit y los atajos de navegacion, para tener el mapa completo sin salir de la TUI.",
+        image: { src: "/images/mini-tui/help.png" }
+    }
+];
+
 const data = [
+  {
+    id: 2,
+    name: "Rusty",
+    slug: "rusty",
+    image: { src: RustyHero },
+    description: "rusty es un agente de código minimalista escrito en Rust: TUI de streaming, cuatro herramientas (read, bash, edit, write), subagentes en procesos ligeros, persistencia de sesiones en SQLite y un historial de conversación diseñado para gastar pocos tokens. Unos 4k líneas y ~5 MiB de RSS pico. En el benchmark de 200 tareas de código verificadas de forma determinista y ejecutadas en tmux contra el agente pi con el mismo modelo gateway, rusty resolvió las 200 sin timeouts (mediana 6,3 s) frente a 199/200 de pi (mediana 8,0 s), con 41 veces menos uso de memoria (4,3 MiB vs 177 MiB de RSS pico). En el tier difícil posterior — otras 100 tareas más duras que la 200 (intérpretes, compiladores, servidores, WAL/MVCC, git-lite) con deadline de 300 s — ambos resolvieron las 100 y rusty fue un 35% más rápido de mediana (17,6 s vs 27,2 s) con p90 2,8 veces menor y cero timeouts frente a 2 de pi.",
+    type: "Agente de código en Rust (CLI + TUI + web)",
+    tech: ["Rust", "Tokio", "ratatui", "reqwest", "rustls", "serde", "SQLite", "Anthropic Messages API", "OpenAI Responses API", "SSE", "React 19", "TypeScript", "Vite", "Tailwind CSS", "RLM"],
+    github: "https://github.com/jaivial/rusty",
+    url: "/",
+    features: rustyFeatures,
+    date: "2026-08-16",
+    images: [
+      { url: RustyHero, alt: "Portada ilustrada de rusty" },
+      { url: RustyTui, alt: "TUI de rusty con streaming y actividad de herramientas" },
+      { url: RustyTuiPopover, alt: "Popover de comandos slash en la TUI" },
+      { url: RustyBenchTimes, alt: "Latencia por tarea: rusty vs pi en 200 tareas" },
+      { url: RustyBenchBands, alt: "Tasa de éxito por banda de dificultad" },
+      { url: RustyBenchSuccess, alt: "Resumen de éxitos, fallos y timeouts por segmento" },
+      { url: RustyRam, alt: "Comparativa de RSS pico: rusty 4,3 MiB vs pi 177 MiB" },
+      { url: RustyBench300Times, alt: "Tier difícil 201-300: latencia mediana y p90 por categoría en barras horizontales" },
+      { url: RustyBench300Overall, alt: "Tier difícil: comparativa global en barras horizontales" },
+      { url: RustyBench300Success, alt: "Tier difícil: tasa de éxito por categoría en barras horizontales" },
+      { url: RustyBench300PerTask, alt: "Tier difícil: latencia por tarea 201-300 en barras horizontales" }
+    ],
+    videos: []
+  },
+    {
+        id: 4,
+        name: "Nueva Alqueria Villa Carmen",
+        slug: "new-villa-carmen",
+        image: { src: NewVillaCarmenHomeHero },
+        description: "Nueva plataforma de Alqueria Villa Carmen desarrollada sobre Preact + Vite para el frontend publico, Go net/http para la API y React 19 + Vike SSR para el backoffice. Sustituye la web legacy PHP por una experiencia rapida y responsive con home visual, menus dinamicos, carta de vinos, reservas online, paginas legales y contacto. El backend Go sirve la SPA en produccion, expone endpoints JSON con MySQL, cache y timeouts, y se despliega en VPS con Nginx y Docker. El backoffice independiente permite gestionar operaciones internas con sesion por cookie.",
+        type: "Web Restaurante + Reservas + Backoffice",
+        tech: ["Preact", "Vite", "TypeScript", "React 19", "Vike", "Jotai", "Go", "MySQL", "REST API", "Docker", "Nginx", "VPS", "Responsive Design", "SEO"],
+        github: "https://github.com/jaivial/newvillacarmen",
+        url: "https://alqueriavillacarmen.com/",
+        features: newVillaCarmenFeatures,
+        date: "2026-09-04",
+        images: [
+            { url: NewVillaCarmenHomeHero, alt: "Home hero de Alqueria Villa Carmen" },
+            { url: NewVillaCarmenHomeMenus, alt: "Home con llamada a menus y reserva" },
+            { url: NewVillaCarmenHomeEvents, alt: "Seccion de eventos y salones" },
+            { url: NewVillaCarmenReservasCalendar, alt: "Reservas online con calendario" },
+            { url: NewVillaCarmenReservasForm, alt: "Formulario de reservas paso a paso" },
+            { url: NewVillaCarmenMenuFinde, alt: "Menu de fin de semana dinamico" },
+            { url: NewVillaCarmenMenuDishes, alt: "Listado de platos con alergenos" },
+            { url: NewVillaCarmenMenuDia, alt: "Menu del dia" },
+            { url: NewVillaCarmenVinos, alt: "Carta de vinos dinamica" },
+            { url: NewVillaCarmenVinosList, alt: "Listado de vinos" },
+            { url: NewVillaCarmenPostres, alt: "Carta de postres" },
+            { url: NewVillaCarmenMenusGrupos, alt: "Menus de grupos" },
+            { url: NewVillaCarmenEventosHero, alt: "Hero de eventos" },
+            { url: NewVillaCarmenEventosSections, alt: "Historias y secciones de eventos" },
+            { url: NewVillaCarmenContacto, alt: "Contacto con horarios y mapa" },
+            { url: NewVillaCarmenMobileHome, alt: "Home adaptada a movil" },
+            { url: NewVillaCarmenMobileMenu, alt: "Menu adaptado a movil" },
+            { url: NewVillaCarmenMobileReservas, alt: "Reservas adaptadas a movil" },
+            { url: NewVillaCarmenBackofficeLogin, alt: "Login del backoffice" }
+        ],
+        videos: []
+    },
+    {
+        id: 0,
+        name: "Desayuno con Princesas",
+        slug: "desayuno-con-princesas",
+        image: { src: DcpHero },
+        description: "Desayuno con Princesas es una plataforma full-stack de venta de entradas para un evento infantil tematico ('El Desayuno Real') celebrado en Alqueria Villa Carmen. Incluye una landing publica inmersiva con un asistente de reserva multi-paso (seleccion de fecha con aforo en tiempo real via WebSocket, packs y entradas individuales, datos del comprador, alergias por asistente segun los 14 alergenos de la UE y pago seguro con Stripe Checkout) y un back office de administracion con dashboard de KPIs, gestion de inscripciones (busqueda, filtros, edicion, reenvio de email y exportacion), lector de codigos QR para el check-in de asistentes y configuracion del evento, packs, fechas y email. Frontend y backoffice construidos con React 19, Vite, Redux Toolkit y Tailwind CSS; backend en Go con MySQL, autenticacion JWT, generacion de QR firmados, WebSockets para aforo en vivo y emails transaccionales. Desplegado en VPS con Nginx.",
+        type: "Plataforma de Venta de Entradas + Back Office",
+        tech: ["React 19", "Vite", "Redux Toolkit", "Tailwind CSS", "React Router", "Go", "MySQL", "WebSocket", "Stripe", "JWT", "bcrypt", "ZXing", "go-qrcode", "BunnyCDN", "VPS", "Nginx", "Responsive Design"],
+        github: "/",
+        url: "https://desayunoprincesas.com",
+        features: desayunoConPrincesasFeatures,
+        date: "2026-06-22",
+        images: [
+            { url: DcpHero, alt: "Landing principal de Desayuno con Princesas con hero inmersivo" },
+            { url: DcpEntradas, alt: "Asistente de reserva: calendario de fechas con aforo en vivo" },
+            { url: DcpBookingEntradas, alt: "Seleccion de packs tematicos y entradas individuales" },
+            { url: DcpBookingDatos, alt: "Formulario de datos del comprador" },
+            { url: DcpBookingAlergias, alt: "Declaracion de alergias por asistente (14 alergenos UE)" },
+            { url: DcpBookingConfirmar, alt: "Resumen de la reserva y pago con Stripe Checkout" },
+            { url: DcpPacks, alt: "Seccion de packs y precios del evento" },
+            { url: DcpHorarios, alt: "Itinerario del Desayuno Real paso a paso" },
+            { url: DcpIncluye, alt: "Que incluye la experiencia" },
+            { url: DcpGaleria, alt: "Galeria de imagenes del evento" },
+            { url: DcpUbicacion, alt: "Ubicacion y como llegar a Alqueria Villa Carmen" },
+            { url: DcpFaq, alt: "Preguntas frecuentes del evento" },
+            { url: DcpTerminos, alt: "Terminos y condiciones de participacion" },
+            { url: DcpPrivacidad, alt: "Politica de privacidad" },
+            { url: DcpHeroMobile, alt: "Landing adaptada a vista movil" },
+            { url: DcpPacksMobile, alt: "Seccion de packs en vista movil" },
+            { url: DcpLogin, alt: "Back office: acceso de administracion" },
+            { url: DcpDashboard, alt: "Back office: dashboard de KPIs del evento" },
+            { url: DcpInscripciones, alt: "Back office: gestion de inscripciones con filtros" },
+            { url: DcpEditBooking, alt: "Back office: edicion de inscripcion" },
+            { url: DcpQrReader, alt: "Back office: lector QR para check-in de asistentes" },
+            { url: DcpSettings, alt: "Back office: configuracion del evento, packs y fechas" },
+            { url: DcpEmailSettings, alt: "Back office: configuracion de email transaccional" },
+            { url: DcpDashboardMobile, alt: "Back office: dashboard en vista movil" }
+        ],
+        videos: []
+    },
     {
         name: "Hero Budget",
         type: "Aplicación Móvil - Gestión de Finanzas Personales",
@@ -1446,7 +1881,13 @@ const data = [
             { url: FerWeb18equipo, alt: "Equipo y comunidad FER Powerlifting" },
             { url: FerWeb19landingmobile, alt: "Landing FER adaptado a vista movil" },
             { url: FerWeb20inscripcionmobile, alt: "Formulario de inscripcion en vista movil" },
-            { url: FerWeb21ubicaciondetail, alt: "Mapa y direcciones del evento" }
+            { url: FerWeb21ubicaciondetail, alt: "Mapa y direcciones del evento" },
+            { url: FerWeb22emailconfirm, alt: "Email de confirmacion de inscripcion FER CUP II con QR embebido" },
+            { url: FerWeb23emailpayment, alt: "Email de confirmacion de pago con detalles de la inscripcion" },
+            { url: FerWeb24qrstandalone, alt: "Codigo QR generado al completar la inscripcion con datos del atleta" },
+            { url: FerWeb25paymenterror, alt: "Pantalla de error en proceso de pago con opcion de reintentar" },
+            { url: FerWeb26stripecheckout, alt: "Pasarela de pago Stripe Checkout integrada" },
+            { url: FerWeb27inscripcionsuccess, alt: "Pantalla de inscripcion confirmada con QR y resumen" }
         ],
         videos: []
     },
@@ -1463,34 +1904,52 @@ const data = [
         features: grCupFrontendFeatures,
         date: "2026-06-03",
         images: [
-            { url: GrCupFrontend02inscripcion, alt: "Formulario publico de inscripcion para sorteo" },
-            { url: GrCupFrontend03checkout, alt: "Checkout y seleccion de tickets con Stripe" },
-            { url: GrCupFrontend04success, alt: "Confirmacion de compra exitosa con opciones de compartir" },
-            { url: GrCupFrontend05raffle, alt: "Visualizacion del sorteo con frames de scroll cinematicos" },
-            { url: GrCupFrontend06horarios, alt: "Horarios publicos de la competicion" },
-            { url: GrCupFrontend07ubicacion, alt: "Como llegar al evento con mapa" },
-            { url: GrCupFrontend08backofficelogin, alt: "Acceso al panel de administracion" },
-            { url: GrCupFrontend09politicaconcurso, alt: "Politica del concurso y bases legales" },
-            { url: GrCupFrontend10terminos, alt: "Terminos de servicio del sorteo" },
-            { url: GrCupFrontend11privacidad, alt: "Politica de privacidad del sorteo" },
-            { url: GrCupFrontend12consentimiento, alt: "Consentimiento de tratamiento de datos" },
-            { url: GrCupFrontend17raffleframes, alt: "Composicion cinematica con scroll frames del sorteo" },
-            { url: GrCupFrontend18raffledetail, alt: "Detalle de tickets y numeros del sorteo" },
-            { url: GrCupFrontend19checkoutform, alt: "Formulario de checkout y seleccion de tickets" },
-            { url: GrCupFrontend20successdetail, alt: "Confirmacion de compra con botones de compartir" },
-            { url: GrCupFrontend21inscripcionform, alt: "Formulario publico de inscripcion al sorteo" },
-            { url: GrCupFrontend23backofficehero, alt: "Login del backoffice integrado en alta resolucion" },
-            { url: GrCupFrontend24politicascroll, alt: "Bases legales del concurso en formato largo" },
-            { url: GrCupFrontend30raffle1, alt: "Composicion cinematica del sorteo en frame 1" },
-            { url: GrCupFrontend31raffle2, alt: "Composicion cinematica del sorteo en frame 2" },
-            { url: GrCupFrontend32raffle3, alt: "Composicion cinematica del sorteo en frame 3" },
-            { url: GrCupFrontend33raffle4, alt: "Detalle de tickets asignados en el sorteo" },
-            { url: GrCupFrontend34checkout, alt: "Checkout con selector de cantidad de tickets" },
-            { url: GrCupFrontend35politica, alt: "Bases legales completas del concurso" },
-            { url: GrCupFrontend36mapa, alt: "Mapa interactivo de ubicacion del evento" },
-            { url: GrCupFrontend37success, alt: "Confirmacion de compra con codigo QR" }
+            { url: GrCupFrontend, alt: "Hero del sorteo de un cinturon SBD (GR Strength CUP)" },
+            { url: GrcRaffleDetail, alt: "Como participar: pasos del sorteo" },
+            { url: GrcCheckout, alt: "Compra de tickets con Stripe Checkout" },
+            { url: GrcInscripcion, alt: "Inscripcion al sorteo" },
+            { url: GrcHorarios, alt: "Horarios de la competicion por categoria y peso" },
+            { url: GrcComoLlegar, alt: "Localizacion: Pabellon Municipal de Almusafes" },
+            { url: GrcPolitica, alt: "Politica del concurso y bases legales" },
+            { url: GrcTerms, alt: "Terminos de servicio del sorteo" },
+            { url: GrcPrivacy, alt: "Politica de privacidad del sorteo" },
+            { url: GrcConsentimiento, alt: "Consentimiento de tratamiento de datos" },
+            { url: GrcRaffleMobile, alt: "Vista movil del sorteo" },
+            { url: GrcCheckoutMobile, alt: "Vista movil del checkout" },
+            { url: GrcHomeCampeonato, alt: "Home: campeonato AEP2 regional y patrocinadores" },
+            { url: GrcHomePrices, alt: "Home: premios para los mejores en cada movimiento" },
+            { url: GrcHomeOrganization, alt: "Home: organizacion y equipamiento de competicion" },
+            { url: GrcHomeWeightCategories, alt: "Home: categorias de peso (hombres y mujeres)" }
         ],
         videos: []
+    },
+    {
+        id: 90,
+        name: "mini-tui",
+        slug: "mini-tui",
+        image: { src: "/images/mini-tui/run.png" },
+        description: "mini-tui es una terminal UI bonita para mini-swe-agent construida con OpenTUI (React + Bun). Solo parsea y reformatea lo que mini ya produce -tool calls (comandos bash) y sus salidas- en tarjetas, badges y banners: el harness corre completamente intacto, mini-tui spawnea mini como subproceso y lee el JSON de trayectoria que reescribe tras cada paso. Prompt bar multilinea estilo Claude Code, command palette con /, tarjetas shadcn-style por paso de bash, modos de salida collapsed/trimmed/expanded, /resume con sesiones en SQLite y titulo generado por IA, /connect BYOK con test de conexion real, selector de modelo y renderizado de markdown en la respuesta final.",
+        type: "Terminal UI para agentes de codigo (TUI)",
+        tech: ["TypeScript", "React 19", "OpenTUI", "Bun", "SQLite", "Python", "mini-swe-agent", "litellm", "TUI"],
+        github: "https://github.com/jaivial/mini-tui",
+        url: "https://github.com/jaivial/mini-tui",
+        features: miniTuiFeatures,
+        date: "2026-09-22",
+        images: [
+            { url: "/images/mini-tui/run.png", alt: "mini-tui ejecutando una tarea con tarjetas de tool calls" },
+            { url: "/images/mini-tui/prompt.png", alt: "Prompt bar estilo Claude Code con texto envolviendo" },
+            { url: "/images/mini-tui/command-palette.png", alt: "Command palette con autocompletado al teclear /" },
+            { url: "/images/mini-tui/settings.png", alt: "Panel de settings con modos de salida y selector de tema" },
+            { url: "/images/mini-tui/resume.png", alt: "Modal /resume con sesiones guardadas en SQLite" },
+            { url: "/images/mini-tui/connect.png", alt: "Wizard /connect para proveedores BYOK" },
+            { url: "/images/mini-tui/model-picker.png", alt: "Selector de modelo /model con el catalogo conectado" },
+            { url: "/images/mini-tui/final-answer.png", alt: "Respuesta final renderizada como markdown" },
+            { url: "/images/mini-tui/help.png", alt: "Panel /help con todos los comandos y teclas" }
+        ],
+        videos: [
+            { url: "/videos/mini-tui/mini-tui-demo.mp4" },
+            { url: "/videos/mini-tui/mini-tui-gallery.mp4" }
+        ]
     },
     {
         id: 91,
