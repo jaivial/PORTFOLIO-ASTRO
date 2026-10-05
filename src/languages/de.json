@@ -378,6 +378,28 @@
           "description": "Zwei unabhängige Regler: die Größe der gesamten Oberfläche (85-140 %) und nur die Größe des Textes, den du liest und schreibst (90-150 %), mit Live-Vorschau, Strg +/- als Tastenkürzel und mindestens 100 % auf Touchscreens, damit Buttons 44 px groß bleiben."
         }
       }
+    },
+    "qaspec": {
+      "description": "qaspec ist ein agentisches E2E-Testwerkzeug in Rust: Du beschreibst, was eine QA-Person pruefen wuerde (Ziele und Erwartungen an Bildschirm, Konsole, Netzwerk und Zustand), und ein Agent steuert einen echten Browser, klickt wie ein Mensch und prueft wie ein Test. Eine einzige Binaerdatei unter MIT-Lizenz. Auch fuer Coding-Agenten gebaut: AGENTS.md, qaspec new, check --json, run --format ndjson, report --failed, JSON-Fehler und klare Exit-Codes. Replay-Cache ohne Modellaufrufe, Passwoerter erreichen nie das Modell und ein Chromium pro Lauf.",
+      "type": "Agentisches E2E-Test-CLI (Rust)",
+      "features": {
+        "0": {
+          "title": "Tests, die sich wie eine QA-Checkliste lesen",
+          "description": "Du deklarierst Ziele mit goal() und Erwartungen mit expect() an Bildschirm, Netzwerk und Konsole; der Agent fuehrt sie in einem echten Browser aus und beurteilt das Ergebnis wie ein Mensch."
+        },
+        "1": {
+          "title": "Der Agent sieht Konsole und Netzwerk",
+          "description": "Neben dem Bildschirm prueft qaspec Konsolenfehler und nicht abgefangene Ausnahmen, Netzwerkanfragen und deren Status. Eine Seite, die gut aussieht, aber einen 500er liefert, faellt trotzdem durch."
+        },
+        "2": {
+          "title": "Fuer Coding-Agenten gebaut",
+          "description": "AGENTS.md und maschinenfreundliche Befehle: qaspec new, check --json, run --format ndjson und report --failed. Claude Code, Codex oder jeder Agent kann Specs schreiben, ausfuehren und debuggen."
+        },
+        "3": {
+          "title": "Schnell und privat",
+          "description": "Ein Replay-Cache mit null Modellaufrufen, Passwoerter, die nie das Modell erreichen, und ein Chromium pro Lauf, alles in einer einzigen Binaerdatei."
+        }
+      }
     }
   },
   "contact": {

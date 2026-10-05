@@ -378,6 +378,28 @@
           "description": "Dos controles independientes: el tamano de toda la interfaz (85-140%) y solo el del texto que lees y escribes (90-150%), con vista previa, atajos Ctrl +/- y un minimo de 100% en pantallas tactiles para que los botones sigan midiendo 44 px."
         }
       }
+    },
+    "qaspec": {
+      "description": "qaspec es una herramienta de tests E2E agenticos escrita en Rust: describes lo que revisaria una persona de QA (objetivos y expectativas sobre pantalla, consola, red y estado) y un agente maneja un navegador real, hace clic como una persona e inspecciona como un test. Un unico binario con licencia MIT. Pensada tambien para agentes de codigo: AGENTS.md, qaspec new, check --json, run --format ndjson, report --failed, errores en JSON y codigos de salida claros. Cache de replay sin llamadas al modelo, las contrasenas nunca llegan al modelo y un Chromium por ejecucion.",
+      "type": "Herramienta CLI de tests E2E agenticos (Rust)",
+      "features": {
+        "0": {
+          "title": "Tests que se leen como un checklist de QA",
+          "description": "Declaras objetivos con goal() y expectativas con expect() sobre la pantalla, la red y la consola; el agente los ejecuta en un navegador real y juzga el resultado como lo haria una persona."
+        },
+        "1": {
+          "title": "El agente ve consola y red",
+          "description": "Ademas de la pantalla, qaspec comprueba errores de consola y excepciones no capturadas, peticiones de red y su estado. Una pagina que parece correcta pero devuelve un 500 falla igualmente."
+        },
+        "2": {
+          "title": "Hecho para agentes de codigo",
+          "description": "AGENTS.md y comandos pensados para maquinas: qaspec new, check --json, run --format ndjson y report --failed. Claude Code, Codex u otro agente pueden escribir, ejecutar y depurar specs."
+        },
+        "3": {
+          "title": "Rapido y privado",
+          "description": "Cache de replay con cero llamadas al modelo, las contrasenas no llegan nunca al modelo y se usa un Chromium por ejecucion, todo en un unico binario."
+        }
+      }
     }
   },
   "contact": {
