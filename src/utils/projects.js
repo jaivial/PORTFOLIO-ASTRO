@@ -2007,7 +2007,13 @@ const data = [
         id: 92,
         name: "qaspec",
         slug: "qaspec",
-        image: { src: "/images/qaspec/li-1.png" },
+        image: { src: "/images/qaspec/cover-4x3.webp" },
+        covers: {
+            square: "/images/qaspec/cover-1x1.webp",
+            wide: "/images/qaspec/cover-16x9.webp",
+            standard: "/images/qaspec/cover-4x3.webp",
+            portrait: "/images/qaspec/cover-3x4.webp"
+        },
         description: "qaspec es una herramienta de tests E2E agenticos escrita en Rust: describes lo que revisaria una persona de QA (objetivos y expectativas sobre pantalla, consola, red y estado) y un agente maneja un navegador real, hace clic como una persona e inspecciona como un test. Un unico binario con licencia MIT. Pensada tambien para agentes de codigo: AGENTS.md, qaspec new, check --json, run --format ndjson, report --failed, errores en JSON y codigos de salida claros. Cache de replay sin llamadas al modelo, las contrasenas nunca llegan al modelo y un Chromium por ejecucion.",
         type: "Herramienta CLI de tests E2E agenticos (Rust)",
         tech: ["Rust", "Chromium", "CDP", "CLI", "ndjson", "E2E Testing", "AI Agents", "GitHub Actions", "MIT"],

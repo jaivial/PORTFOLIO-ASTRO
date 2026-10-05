@@ -237,16 +237,28 @@ function ProjectsIndex({ projects, allTechnologies }) {
                 data-slug={item.slug}
               >
                 <a href={`/projects/${item.slug}`} className="block overflow-hidden">
-                  <img
-                    className={`w-full h-80 xl:h-[700px] hover:opacity-90 transition-opacity ${
-                      item.slug === "hero-budget"
-                        ? "object-scale-down object-center"
-                        : "object-cover object-top"
-                    }`}
-                    src={item.image.src}
-                    alt={item.name}
-                    loading="lazy"
-                   decoding="async" />
+                  <picture>
+                    {item.covers && (
+                      <>
+                        <source media="(max-width: 639px)" srcSet={item.covers.square} />
+                        <source media="(max-width: 1023px)" srcSet={item.covers.wide} />
+                        <source media="(max-width: 1279px)" srcSet={item.covers.standard} />
+                        <source media="(min-width: 1280px)" srcSet={item.covers.portrait} />
+                      </>
+                    )}
+                    <img
+                      className={`w-full h-80 xl:h-[700px] hover:opacity-90 transition-opacity ${
+                        item.slug === "hero-budget"
+                          ? "object-scale-down object-center"
+                          : item.covers
+                            ? "object-cover object-center"
+                            : "object-cover object-top"
+                      }`}
+                      src={item.image.src}
+                      alt={item.name}
+                      loading="lazy"
+                      decoding="async" />
+                  </picture>
                 </a>
 
                 <div className="flex flex-col gap-3 p-5">
