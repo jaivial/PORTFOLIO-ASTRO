@@ -9,6 +9,7 @@ const GuillermoFernandezNutricion = toWebPCached(`${__CDN_URL__}/images/guillerm
 const TourToValencia = toWebPCached(`${__CDN_URL__}/images/tourtovalencia/tourtovalencia11.jpg`);
 const HeroBudget = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgeticon.png`);
 const MiniTuiThumb = "/images/mini-tui/run.png";
+const QaspecThumb = "/images/qaspec/li-1.png";
 
 const cvData = {
     en: {
@@ -170,6 +171,13 @@ const cvData = {
             ]
         },
         projects: [
+            {
+                title: "qaspec",
+                description: "A single-binary Rust CLI for agentic end-to-end tests: declare goals and expectations like a QA checklist and an agent drives a real browser, checking screen, console, network and state. Built for coding agents too (AGENTS.md, JSON/ndjson output, clear exit codes).",
+                technologies: ["Rust", "Chromium", "CDP", "CLI", "E2E Testing", "AI Agents", "ndjson"],
+                link: "https://github.com/jaivial/qaspec",
+                thumbnail: QaspecThumb
+            },
             {
                 title: "mini-tui",
                 description: "A pretty terminal UI for mini-swe-agent built with OpenTUI (React + Bun): Claude Code-style multiline prompt bar, command palette, one clean card per bash step, sessions saved in SQLite with /resume, BYOK providers with /connect and real markdown rendering for final answers - the agent harness runs completely untouched.",
@@ -396,6 +404,13 @@ const cvData = {
         },
         projects: [
             {
+                title: "qaspec",
+                description: "CLI en Rust de un unico binario para tests end-to-end agenticos: declaras objetivos y expectativas como un checklist de QA y un agente maneja un navegador real revisando pantalla, consola, red y estado. Pensado tambien para agentes de codigo (AGENTS.md, salida JSON/ndjson, codigos de salida claros).",
+                technologies: ["Rust", "Chromium", "CDP", "CLI", "E2E Testing", "AI Agents", "ndjson"],
+                link: "https://github.com/jaivial/qaspec",
+                thumbnail: QaspecThumb
+            },
+            {
                 title: "mini-tui",
                 description: "Terminal UI bonita para mini-swe-agent construida con OpenTUI (React + Bun): prompt bar multilinea estilo Claude Code, command palette, una tarjeta limpia por paso de bash, sesiones guardadas en SQLite con /resume, proveedores BYOK con /connect y renderizado real de markdown en la respuesta final - el harness del agente corre completamente intacto.",
                 technologies: ["TypeScript", "React 19", "OpenTUI", "Bun", "SQLite", "Python", "mini-swe-agent", "litellm", "TUI"],
@@ -620,6 +635,13 @@ const cvData = {
             ]
         },
         projects: [
+            {
+                title: "qaspec",
+                description: "Ein Rust-CLI als einzelne Binaerdatei fuer agentische End-to-End-Tests: Ziele und Erwartungen wie eine QA-Checkliste deklarieren, ein Agent steuert einen echten Browser und prueft Bildschirm, Konsole, Netzwerk und Zustand. Auch fuer Coding-Agenten gebaut (AGENTS.md, JSON/ndjson-Ausgabe, klare Exit-Codes).",
+                technologies: ["Rust", "Chromium", "CDP", "CLI", "E2E Testing", "AI Agents", "ndjson"],
+                link: "https://github.com/jaivial/qaspec",
+                thumbnail: QaspecThumb
+            },
             {
                 title: "mini-tui",
                 description: "Schone Terminal-UI fur mini-swe-agent, gebaut mit OpenTUI (React + Bun): mehrzeilige Prompt-Leiste im Claude-Code-Stil, Command-Palette, eine saubere Karte pro Bash-Schritt, SQLite-Sitzungen mit /resume, BYOK-Provider mit /connect und echtes Markdown-Rendering fur Antworten - der Agent-Harness bleibt vollstandig unverandert.",

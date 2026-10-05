@@ -378,6 +378,28 @@
           "description": "Two independent controls: the size of the whole interface (85-140%) and the size of just the text you read and write (90-150%), with a live preview, Ctrl +/- shortcuts and a 100% minimum on touch screens so buttons stay 44 px."
         }
       }
+    },
+    "qaspec": {
+      "description": "qaspec is an agentic E2E testing tool written in Rust: you describe what a QA person would check (goals and expectations over screen, console, network and state) and an agent drives a real browser, clicks like a person and inspects like a test. A single MIT-licensed binary. Also built for coding agents: AGENTS.md, qaspec new, check --json, run --format ndjson, report --failed, JSON errors and clear exit codes. A replay cache with no model calls, passwords that never reach the model and one Chromium per run.",
+      "type": "Agentic E2E testing CLI (Rust)",
+      "features": {
+        "0": {
+          "title": "Tests that read like a QA checklist",
+          "description": "You declare goals with goal() and expectations with expect() over the screen, network and console; the agent runs them in a real browser and judges the result like a person would."
+        },
+        "1": {
+          "title": "The agent sees console and network",
+          "description": "Besides the screen, qaspec checks console errors and uncaught exceptions, network requests and their status. A page that looks fine but returns a 500 still fails."
+        },
+        "2": {
+          "title": "Built for coding agents",
+          "description": "AGENTS.md and machine-friendly commands: qaspec new, check --json, run --format ndjson and report --failed. Claude Code, Codex or any agent can write, run and debug specs."
+        },
+        "3": {
+          "title": "Fast and private",
+          "description": "A replay cache with zero model calls, passwords that never reach the model and one Chromium per run, all in a single binary."
+        }
+      }
     }
   },
   "contact": {

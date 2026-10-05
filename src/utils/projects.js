@@ -1317,6 +1317,30 @@ const miniTuiWebFeatures = [
     }
 ];
 
+// Funcionalidades para qaspec
+const qaspecFeatures = [
+    {
+        title: "Tests que se leen como un checklist de QA",
+        description: "Declaras objetivos con goal() y expectativas con expect() sobre la pantalla, la red y la consola; el agente los ejecuta en un navegador real y juzga el resultado como lo haria una persona.",
+        image: { src: "/images/qaspec/li-1.png" }
+    },
+    {
+        title: "El agente ve consola y red",
+        description: "Ademas de la pantalla, qaspec comprueba errores de consola y excepciones no capturadas, peticiones de red y su estado. Una pagina que parece correcta pero devuelve un 500 falla igualmente.",
+        image: { src: "/images/qaspec/li-3.png" }
+    },
+    {
+        title: "Hecho para agentes de codigo",
+        description: "AGENTS.md y comandos pensados para maquinas: qaspec new, check --json, run --format ndjson y report --failed. Claude Code, Codex u otro agente pueden escribir, ejecutar y depurar specs.",
+        image: { src: "/images/qaspec/li-2.png" }
+    },
+    {
+        title: "Rapido y privado",
+        description: "Cache de replay con cero llamadas al modelo, las contrasenas no llegan nunca al modelo y se usa un Chromium por ejecucion, todo en un unico binario.",
+        image: { src: "/images/qaspec/ig-story-3.png" }
+    }
+];
+
 const miniTuiFeatures = [
     {
         title: "Prompt bar estilo Claude Code",
@@ -1978,6 +2002,36 @@ const data = [
             { url: MtwPhoneNotes, alt: "Vista movil: notas de la sesion a pantalla completa" }
         ],
         videos: []
+    },
+    {
+        id: 92,
+        name: "qaspec",
+        slug: "qaspec",
+        image: { src: "/images/qaspec/li-1.png" },
+        description: "qaspec es una herramienta de tests E2E agenticos escrita en Rust: describes lo que revisaria una persona de QA (objetivos y expectativas sobre pantalla, consola, red y estado) y un agente maneja un navegador real, hace clic como una persona e inspecciona como un test. Un unico binario con licencia MIT. Pensada tambien para agentes de codigo: AGENTS.md, qaspec new, check --json, run --format ndjson, report --failed, errores en JSON y codigos de salida claros. Cache de replay sin llamadas al modelo, las contrasenas nunca llegan al modelo y un Chromium por ejecucion.",
+        type: "Herramienta CLI de tests E2E agenticos (Rust)",
+        tech: ["Rust", "Chromium", "CDP", "CLI", "ndjson", "E2E Testing", "AI Agents", "GitHub Actions", "MIT"],
+        github: "https://github.com/jaivial/qaspec",
+        url: "https://jaivial.github.io/qaspec/",
+        features: qaspecFeatures,
+        date: "2026-10-06",
+        images: [
+            { url: "/images/qaspec/ig-feed-1.png", alt: "Post de Instagram: tests E2E que se leen como un checklist de QA" },
+            { url: "/images/qaspec/ig-feed-2.png", alt: "Post de Instagram: qaspec hecho para agentes de codigo" },
+            { url: "/images/qaspec/li-1.png", alt: "LinkedIn: lanzamiento de qaspec" },
+            { url: "/images/qaspec/li-2.png", alt: "LinkedIn: construido para agentes de codigo" },
+            { url: "/images/qaspec/li-3.png", alt: "LinkedIn: el agente ve consola y red" },
+            { url: "/images/qaspec/ig-story-1.png", alt: "Story: specs E2E agenticos" },
+            { url: "/images/qaspec/ig-story-2.png", alt: "Story: un paso que falla con error de consola y POST 500" },
+            { url: "/images/qaspec/ig-story-3.png", alt: "Story: rapido y privado" },
+            { url: "/images/qaspec/ig-story-4.png", alt: "Story: modo agente con comandos de CLI" },
+            { url: "/images/qaspec/ig-story-5.png", alt: "Story: prueba qaspec" }
+        ],
+        videos: [
+            { url: "/videos/qaspec/qaspec-feed-1.mp4" },
+            { url: "/videos/qaspec/qaspec-linkedin-1.mp4" },
+            { url: "/videos/qaspec/qaspec-story-1.mp4" }
+        ]
     }
 ]
 
