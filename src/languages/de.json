@@ -376,6 +376,10 @@
         "7": {
           "title": "Oberflächen- und Textgröße",
           "description": "Zwei unabhängige Regler: die Größe der gesamten Oberfläche (85-140 %) und nur die Größe des Textes, den du liest und schreibst (90-150 %), mit Live-Vorschau, Strg +/- als Tastenkürzel und mindestens 100 % auf Touchscreens, damit Buttons 44 px groß bleiben."
+        },
+        "8": {
+          "title": "Geteilter Kontext zwischen Subagenten",
+          "description": "Wenn eine Sitzung Subagenten orchestriert, wird das Erkunden einmal bezahlt und weitergegeben. Der Orchestrator schreibt, was er gefunden hat (Symbole, Dateien, Zeilen), den Integrationsvertrag, seine Entscheidungen und die Oberflaeche jedes Repos in einen gemeinsamen Speicher; jeder Subagent erhaelt danach genau diese Dokumente, zugeschnitten auf das Repo, an dem er arbeitet, ohne selbst zu erkunden. Wenn ein Subagent endet, meldet er zurueck, was er angefasst hat, welches Vertragsfeld er ausgegeben hat und was dem Auftrag widerspricht, und eine mechanische Vertragspruefung verifiziert seine Angaben ohne Modell dazwischen. An echten Orchestrierungen gemessen: 54% weniger Erkunden in den Kindern, 55% weniger im Orchestrator."
         }
       }
     },

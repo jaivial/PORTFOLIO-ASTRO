@@ -376,6 +376,10 @@
         "7": {
           "title": "Interface and text size",
           "description": "Two independent controls: the size of the whole interface (85-140%) and the size of just the text you read and write (90-150%), with a live preview, Ctrl +/- shortcuts and a 100% minimum on touch screens so buttons stay 44 px."
+        },
+        "8": {
+          "title": "Shared context across subagents",
+          "description": "When a session orchestrates subagents, the exploration is paid for once and handed over. The orchestrator writes what it found (symbols, files, lines), the integration contract, its decisions and the surface of each repo into a shared store; every subagent then receives those documents scoped to the repo it works in, without having to re-explore. When a subagent finishes, it reports back what it touched, which contract field it emitted and anything that contradicted the brief, and a mechanical contract check verifies its claims with no model in the loop. Measured on real orchestrations: 54% less discovery in the children, 55% less in the orchestrator."
         }
       }
     },
