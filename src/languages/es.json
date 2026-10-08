@@ -404,6 +404,43 @@
           "description": "Cache de replay con cero llamadas al modelo, las contrasenas no llegan nunca al modelo y se usa un Chromium por ejecucion, todo en un unico binario."
         }
       }
+    },
+    "evo-weai": {
+      "description": "evo-weai es una API REST de WhatsApp escrita en Rust y compatible con Evolution API: implementa el protocolo de WhatsApp Web (Noise, Signal, vinculación por QR o código, LID) en un único binario con SQLite cifrado. Sustituye al fork de Evolution API basado en Baileys sin cambiar el cliente: mismas rutas, mismos webhooks y los mismos eventos por WebSocket, RabbitMQ, SQS, NATS, Kafka y Pusher. En producción para weai y para el bot de reservas de un restaurante.",
+      "type": "API REST de WhatsApp (Rust)",
+      "features": {
+        "0": {
+          "title": "Sustituto directo de Evolution API",
+          "description": "Las mismas rutas REST y los mismos webhooks que Evolution API: weai (SaaS multi-tenant) y el bot de WhatsApp de un restaurante en Go migraron cambiando solo la URL del servidor, sin reescribir su integración."
+        },
+        "1": {
+          "title": "WhatsApp Web implementado en Rust",
+          "description": "Protocolo de WhatsApp Web desde cero: Noise, Signal (sesiones, sender keys, pre-keys), vinculación por QR y por código, app-state y direccionamiento por LID. Un único binario sin Node ni Baileys."
+        },
+        "2": {
+          "title": "Eventos en todos los transportes",
+          "description": "Cada evento se publica en webhooks (con base64 de los adjuntos), WebSocket, RabbitMQ, SQS, NATS, Kafka y Pusher, con las mismas cargas que el fork: remoteJidAlt, pushName, qrcode.base64."
+        },
+        "3": {
+          "title": "Probado en producción",
+          "description": "Corre en producción para un bot de reservas: indicador de escritura, botones interactivos y chats por LID entregados a la primera. Releases con binario verificado por SHA-256 y documentación en seis idiomas."
+        }
+      },
+      "animations": {
+        "title": "Animaciones",
+        "whatsapp-typing": {
+          "question": "¿Y para Navidad?",
+          "typing": "Escribiendo",
+          "answer": "El 25 de diciembre es nuestra Comida de Navidad: 60 € por persona.",
+          "button": "Pre-reserva"
+        },
+        "drop-in": {
+          "caption": "el mismo cliente, otro servidor"
+        },
+        "event-fanout": {
+          "caption": "un evento, todos los transportes"
+        }
+      }
     }
   },
   "contact": {

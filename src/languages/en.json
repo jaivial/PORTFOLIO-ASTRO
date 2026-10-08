@@ -404,6 +404,43 @@
           "description": "A replay cache with zero model calls, passwords that never reach the model and one Chromium per run, all in a single binary."
         }
       }
+    },
+    "evo-weai": {
+      "description": "evo-weai is a WhatsApp REST API written in Rust and compatible with Evolution API: it implements the WhatsApp Web protocol (Noise, Signal, QR or code linking, LID) in a single binary with encrypted SQLite. It replaces the Baileys-based Evolution API fork without changing the client: same routes, same webhooks and the same events over WebSocket, RabbitMQ, SQS, NATS, Kafka and Pusher. In production for weai and for a restaurant's booking bot.",
+      "type": "WhatsApp REST API (Rust)",
+      "features": {
+        "0": {
+          "title": "Drop-in replacement for Evolution API",
+          "description": "The same REST routes and webhooks as Evolution API: weai (a multi-tenant SaaS) and a restaurant's WhatsApp bot in Go migrated by changing only the server URL, without rewriting their integration."
+        },
+        "1": {
+          "title": "WhatsApp Web implemented in Rust",
+          "description": "The WhatsApp Web protocol from scratch: Noise, Signal (sessions, sender keys, pre-keys), QR and code linking, app state and LID addressing. A single binary, no Node, no Baileys."
+        },
+        "2": {
+          "title": "Events on every transport",
+          "description": "Every event goes out on webhooks (with attachments as base64), WebSocket, RabbitMQ, SQS, NATS, Kafka and Pusher, with the same payloads as the fork: remoteJidAlt, pushName, qrcode.base64."
+        },
+        "3": {
+          "title": "Proven in production",
+          "description": "Runs in production for a booking bot: typing indicator, interactive buttons and LID chats delivered on the first try. Releases with a SHA-256-verified binary and docs in six languages."
+        }
+      },
+      "animations": {
+        "title": "Animations",
+        "whatsapp-typing": {
+          "question": "And for Christmas?",
+          "typing": "Typing",
+          "answer": "December 25th is our Christmas Lunch: €60 per person.",
+          "button": "Pre-book"
+        },
+        "drop-in": {
+          "caption": "the same client, another server"
+        },
+        "event-fanout": {
+          "caption": "one event, every transport"
+        }
+      }
     }
   },
   "contact": {

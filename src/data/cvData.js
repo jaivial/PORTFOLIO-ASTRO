@@ -10,6 +10,7 @@ const TourToValencia = toWebPCached(`${__CDN_URL__}/images/tourtovalencia/tourto
 const HeroBudget = toWebPCached(`${__CDN_URL__}/assets/images/herobudget/herobudgeticon.png`);
 const MiniTuiThumb = "/images/mini-tui/run.png";
 const QaspecThumb = "/images/qaspec/li-1.png";
+const EvoWeaiThumb = "/images/evo-weai/cover-4x3.webp";
 
 const cvData = {
     en: {
@@ -171,6 +172,13 @@ const cvData = {
             ]
         },
         projects: [
+            {
+                title: "evo-weai",
+                description: "A WhatsApp REST API in Rust, compatible with Evolution API: the WhatsApp Web protocol (Noise, Signal, QR or code linking, LID) in a single binary with encrypted SQLite, and events over webhooks, WebSocket, RabbitMQ, SQS, NATS, Kafka and Pusher. Replaced a Baileys-based Evolution API fork in production without changing its clients.",
+                technologies: ["Rust", "Tokio", "Axum", "SQLite", "WhatsApp Web", "Signal Protocol", "WebSocket", "Webhooks"],
+                link: "https://github.com/jaivial/evo-weai",
+                thumbnail: EvoWeaiThumb
+            },
             {
                 title: "qaspec",
                 description: "A single-binary Rust CLI for agentic end-to-end tests: declare goals and expectations like a QA checklist and an agent drives a real browser, checking screen, console, network and state. Built for coding agents too (AGENTS.md, JSON/ndjson output, clear exit codes).",
@@ -404,6 +412,13 @@ const cvData = {
         },
         projects: [
             {
+                title: "evo-weai",
+                description: "API REST de WhatsApp en Rust, compatible con Evolution API: el protocolo de WhatsApp Web (Noise, Signal, vinculación por QR o código, LID) en un único binario con SQLite cifrado, y eventos por webhooks, WebSocket, RabbitMQ, SQS, NATS, Kafka y Pusher. Sustituyó en producción a un fork de Evolution API basado en Baileys sin cambiar sus clientes.",
+                technologies: ["Rust", "Tokio", "Axum", "SQLite", "WhatsApp Web", "Signal Protocol", "WebSocket", "Webhooks"],
+                link: "https://github.com/jaivial/evo-weai",
+                thumbnail: EvoWeaiThumb
+            },
+            {
                 title: "qaspec",
                 description: "CLI en Rust de un unico binario para tests end-to-end agenticos: declaras objetivos y expectativas como un checklist de QA y un agente maneja un navegador real revisando pantalla, consola, red y estado. Pensado tambien para agentes de codigo (AGENTS.md, salida JSON/ndjson, codigos de salida claros).",
                 technologies: ["Rust", "Chromium", "CDP", "CLI", "E2E Testing", "AI Agents", "ndjson"],
@@ -635,6 +650,13 @@ const cvData = {
             ]
         },
         projects: [
+            {
+                title: "evo-weai",
+                description: "WhatsApp-REST-API in Rust, kompatibel mit Evolution API: das WhatsApp-Web-Protokoll (Noise, Signal, Verknüpfung per QR oder Code, LID) in einer einzigen Binärdatei mit verschlüsseltem SQLite, und Events über Webhooks, WebSocket, RabbitMQ, SQS, NATS, Kafka und Pusher. Ersetzte in Produktion einen Baileys-basierten Evolution-API-Fork, ohne die Clients zu ändern.",
+                technologies: ["Rust", "Tokio", "Axum", "SQLite", "WhatsApp Web", "Signal Protocol", "WebSocket", "Webhooks"],
+                link: "https://github.com/jaivial/evo-weai",
+                thumbnail: EvoWeaiThumb
+            },
             {
                 title: "qaspec",
                 description: "Ein Rust-CLI als einzelne Binaerdatei fuer agentische End-to-End-Tests: Ziele und Erwartungen wie eine QA-Checkliste deklarieren, ein Agent steuert einen echten Browser und prueft Bildschirm, Konsole, Netzwerk und Zustand. Auch fuer Coding-Agenten gebaut (AGENTS.md, JSON/ndjson-Ausgabe, klare Exit-Codes).",
