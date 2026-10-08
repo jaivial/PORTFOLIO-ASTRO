@@ -10,6 +10,7 @@ import ProjectTechCategories from "../../components/ProjectTechCategories.jsx";
 import ProjectFeatures from "../../components/ProjectFeatures.jsx";
 import ProjectTechnicalArchitecture from "../../components/ProjectTechnicalArchitecture.jsx";
 import ProjectGallery from "../../components/ProjectGallery.jsx";
+import ProjectAnimations from "../../components/ProjectAnimations.jsx";
 
 export const prerender = true;
 
@@ -54,6 +55,9 @@ const { project } = Astro.props;
                   architecture={project.technicalArchitecture}
                   client:visible
                 />
+              )}
+              {project.animations && (
+                <ProjectAnimations project={project} client:only="preact" />
               )}
               <ProjectGallery project={project} client:visible />
             </div>

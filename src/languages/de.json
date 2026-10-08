@@ -404,6 +404,43 @@
           "description": "Ein Replay-Cache mit null Modellaufrufen, Passwoerter, die nie das Modell erreichen, und ein Chromium pro Lauf, alles in einer einzigen Binaerdatei."
         }
       }
+    },
+    "evo-weai": {
+      "description": "evo-weai ist eine in Rust geschriebene WhatsApp-REST-API, kompatibel mit Evolution API: Sie implementiert das WhatsApp-Web-Protokoll (Noise, Signal, Verknüpfung per QR oder Code, LID) in einer einzigen Binärdatei mit verschlüsseltem SQLite. Sie ersetzt den Baileys-basierten Evolution-API-Fork, ohne den Client zu ändern: dieselben Routen, dieselben Webhooks und dieselben Events über WebSocket, RabbitMQ, SQS, NATS, Kafka und Pusher. In Produktion für weai und für den Reservierungsbot eines Restaurants.",
+      "type": "WhatsApp-REST-API (Rust)",
+      "features": {
+        "0": {
+          "title": "Direkter Ersatz für Evolution API",
+          "description": "Dieselben REST-Routen und Webhooks wie Evolution API: weai (ein Multi-Tenant-SaaS) und der WhatsApp-Bot eines Restaurants in Go wurden migriert, indem nur die Server-URL geändert wurde, ohne ihre Integration neu zu schreiben."
+        },
+        "1": {
+          "title": "WhatsApp Web in Rust implementiert",
+          "description": "Das WhatsApp-Web-Protokoll von Grund auf: Noise, Signal (Sitzungen, Sender Keys, Pre-Keys), Verknüpfung per QR und Code, App-State und LID-Adressierung. Eine einzige Binärdatei, ohne Node und ohne Baileys."
+        },
+        "2": {
+          "title": "Events auf allen Transporten",
+          "description": "Jedes Event geht an Webhooks (mit Anhängen als Base64), WebSocket, RabbitMQ, SQS, NATS, Kafka und Pusher, mit denselben Payloads wie der Fork: remoteJidAlt, pushName, qrcode.base64."
+        },
+        "3": {
+          "title": "In Produktion bewährt",
+          "description": "Läuft in Produktion für einen Reservierungsbot: Tippanzeige, interaktive Buttons und LID-Chats werden beim ersten Versuch zugestellt. Releases mit per SHA-256 geprüfter Binärdatei und Dokumentation in sechs Sprachen."
+        }
+      },
+      "animations": {
+        "title": "Animationen",
+        "whatsapp-typing": {
+          "question": "Und für Weihnachten?",
+          "typing": "Schreibt",
+          "answer": "Am 25. Dezember gibt es unser Weihnachtsessen: 60 € pro Person.",
+          "button": "Vorreservieren"
+        },
+        "drop-in": {
+          "caption": "derselbe Client, ein anderer Server"
+        },
+        "event-fanout": {
+          "caption": "ein Event, alle Transporte"
+        }
+      }
     }
   },
   "contact": {

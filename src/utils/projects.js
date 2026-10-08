@@ -1341,6 +1341,30 @@ const qaspecFeatures = [
     }
 ];
 
+// Funcionalidades para evo-weai
+const evoWeaiFeatures = [
+    {
+        title: "Sustituto directo de Evolution API",
+        description: "Las mismas rutas REST y los mismos webhooks que Evolution API: weai (SaaS multi-tenant) y el bot de WhatsApp de un restaurante en Go migraron cambiando solo la URL del servidor, sin reescribir su integracion.",
+        image: { src: "/images/evo-weai/docs-migration.webp" }
+    },
+    {
+        title: "WhatsApp Web implementado en Rust",
+        description: "Protocolo de WhatsApp Web desde cero: Noise, Signal (sesiones, sender keys, pre-keys), vinculacion por QR y por codigo, app-state y direccionamiento por LID. Un unico binario sin Node ni Baileys.",
+        image: { src: "/images/evo-weai/docs-architecture.webp" }
+    },
+    {
+        title: "Eventos en todos los transportes",
+        description: "Cada evento se publica en webhooks (con base64 de los adjuntos), WebSocket, RabbitMQ, SQS, NATS, Kafka y Pusher, con las mismas cargas que el fork: remoteJidAlt, pushName, qrcode.base64.",
+        image: { src: "/images/evo-weai/docs-events.webp" }
+    },
+    {
+        title: "Probado en produccion",
+        description: "Corre en produccion para un bot de reservas: indicador de escritura, botones interactivos y chats por LID entregados a la primera. Releases con binario firmado por SHA-256 y documentacion en seis idiomas.",
+        image: { src: "/images/evo-weai/docs-getting-started.webp" }
+    }
+];
+
 const miniTuiFeatures = [
     {
         title: "Prompt bar estilo Claude Code",
@@ -2037,6 +2061,48 @@ const data = [
             { url: "/videos/qaspec/qaspec-feed-1.mp4" },
             { url: "/videos/qaspec/qaspec-linkedin-1.mp4" },
             { url: "/videos/qaspec/qaspec-story-1.mp4" }
+        ]
+    },
+    {
+        id: 93,
+        name: "evo-weai",
+        slug: "evo-weai",
+        image: { src: "/images/evo-weai/cover-4x3.webp" },
+        covers: {
+            square: "/images/evo-weai/cover-1x1.webp",
+            wide: "/images/evo-weai/cover-16x9.webp",
+            standard: "/images/evo-weai/cover-4x3.webp",
+            portrait: "/images/evo-weai/cover-3x4.webp"
+        },
+        description: "evo-weai es una API REST de WhatsApp escrita en Rust y compatible con Evolution API: implementa el protocolo de WhatsApp Web (Noise, Signal, vinculacion por QR o codigo, LID) en un unico binario con SQLite cifrado. Sustituye al fork de Evolution API basado en Baileys sin cambiar el cliente: mismas rutas, mismos webhooks y los mismos eventos por WebSocket, RabbitMQ, SQS, NATS, Kafka y Pusher. En produccion para weai y para el bot de reservas de un restaurante.",
+        type: "API REST de WhatsApp (Rust)",
+        tech: ["Rust", "Tokio", "Axum", "SQLite", "WhatsApp Web", "Signal Protocol", "Noise Protocol", "WebSocket", "Webhooks", "SvelteKit"],
+        github: "https://github.com/jaivial/evo-weai",
+        url: "https://evo-weai-docs.menustudioai.com/",
+        features: evoWeaiFeatures,
+        date: "2026-10-08",
+        animations: [
+            { scene: "whatsapp-typing", text: { question: "Y para Navidad?", typing: "Escribiendo", answer: "El 25 de diciembre es nuestra Comida de Navidad: 60 € por persona.", button: "Pre-reserva" } },
+            { scene: "drop-in", text: { caption: "el mismo cliente, otro servidor" } },
+            { scene: "event-fanout", text: { caption: "un evento, todos los transportes" } }
+        ],
+        images: [
+            { url: "/images/evo-weai/docs-landing.webp", alt: "Portada de la documentacion con el telefono 3D" },
+            { url: "/images/evo-weai/docs-landing-features.webp", alt: "Lo que puedes construir con evo-weai" },
+            { url: "/images/evo-weai/docs-getting-started.webp", alt: "Primeros pasos" },
+            { url: "/images/evo-weai/docs-events.webp", alt: "Eventos y webhooks" },
+            { url: "/images/evo-weai/docs-architecture.webp", alt: "Arquitectura" },
+            { url: "/images/evo-weai/docs-migration.webp", alt: "Migrar desde Evolution API" },
+            { url: "/images/evo-weai/evo-weai-motion-whatsapp-typing-1x1.webp", alt: "Animacion: el bot escribe y responde con un boton" },
+            { url: "/images/evo-weai/evo-weai-motion-drop-in-1x1.webp", alt: "Animacion: el mismo cliente contra otro servidor" },
+            { url: "/images/evo-weai/evo-weai-motion-event-fanout-1x1.webp", alt: "Animacion: un evento en todos los transportes" }
+        ],
+        videos: [
+            { url: "/videos/evo-weai/evo-weai-promo-1x1.mp4" },
+            { url: "/videos/evo-weai/evo-weai-docs-tour-1x1.mp4" },
+            { url: "/videos/evo-weai/evo-weai-motion-whatsapp-typing-1x1.mp4" },
+            { url: "/videos/evo-weai/evo-weai-motion-drop-in-1x1.mp4" },
+            { url: "/videos/evo-weai/evo-weai-motion-event-fanout-1x1.mp4" }
         ]
     }
 ]
