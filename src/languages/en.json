@@ -441,6 +441,40 @@
           "caption": "one event, every transport"
         }
       }
+    },
+    "cu": {
+      "description": "cu (computer use) is a persistent browser for AI agents: one live Chromium behind a local HTTP server, with a CLI, a Rust SDK and a skill. The agent gets the page in a few hundred bytes (a 350-token snapshot in 3.7 ms), acts by ref and in batches (10 clicks in 25 ms), and every test gets its own leased tab in the shared Chrome: 50 tests in parallel on one Chrome at ~18 MB per tab. Passwords are typed into a local form and never pass through the model. Benchmarked against agent-browser and Playwright MCP, and against a real production app.",
+      "type": "Browser tool for AI agents (Rust)",
+      "features": {
+        "0": {
+          "title": "One Chrome that never shuts down",
+          "description": "A persistent Chromium behind a loopback-only HTTP server (127.0.0.1, bearer token), one daemon per machine. The agent finds it warm from any session or project, with its profile and cookies: no browser launched per action or per test."
+        },
+        "1": {
+          "title": "350-token snapshots in 3.7 ms",
+          "description": "Instead of screenshots, one line per interactive element with a stable ref that survives actions (cu click e3, cu type e2 \"text\"). Walks iframes and open shadow roots. 3.8x fewer tokens than Playwright MCP per look at the page."
+        },
+        "2": {
+          "title": "CLI, HTTP and Rust SDK, with batches",
+          "description": "cu act runs a whole form on one connection and returns the resulting page in the same call; cu batch sends many commands at once. Ten clicks in a batch: 25 ms."
+        },
+        "3": {
+          "title": "Speed vs agent-browser and Playwright MCP",
+          "description": "Same Chrome binary, same site, same agent tasks, median of 10 rounds: cold start 206 ms (Playwright MCP 2,437), full form 73 ms (727), login 81 ms (670), 10 clicks 25 ms (5,491)."
+        },
+        "4": {
+          "title": "50 parallel tests on one Chrome",
+          "description": "One leased tab per test: if the test dies, the daemon closes it. 50/50 green at 50-way concurrency in 2.1 s wall, 1.84 GB Chrome RSS (~18 MB per tab), under 0.4 cores and 11 MB for the daemon."
+        },
+        "5": {
+          "title": "Measured against a real production app",
+          "description": "Real agent flows at 1, 10 and 25 in parallel with a shared session. Versus agent-browser at 10 flows: 27 processes vs 113 and 6.3 GB vs 12.8 GB of RAM, with a 0.1 s open vs 12 s. Failures are published as measured."
+        },
+        "6": {
+          "title": "Skill, native tool, passwords kept from the model",
+          "description": "SKILL.md teaches the agent the whole flow and mini-tui exposes cu as a native tool next to bash, no MCP server in between. cu login opens a local form: the daemon types what the human enters, and credentials are never logged, returned or passed as arguments."
+        }
+      }
     }
   },
   "contact": {

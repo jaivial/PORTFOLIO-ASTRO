@@ -441,6 +441,40 @@
           "caption": "ein Event, alle Transporte"
         }
       }
+    },
+    "cu": {
+      "description": "cu (computer use) ist ein persistenter Browser fuer KI-Agenten: ein einziges laufendes Chromium hinter einem lokalen HTTP-Server, mit CLI, Rust-SDK und einem Skill. Der Agent bekommt die Seite in wenigen hundert Bytes (ein Snapshot mit 350 Tokens in 3,7 ms), handelt per Ref und in Batches (10 Klicks in 25 ms), und jeder Test erhaelt einen eigenen Tab mit Lease im gemeinsamen Chrome: 50 parallele Tests in einem Chrome mit ~18 MB pro Tab. Passwoerter werden in ein lokales Formular eingegeben und gehen nie durch das Modell. Gemessen gegen agent-browser und Playwright MCP sowie gegen eine echte Produktions-App.",
+      "type": "Browser-Werkzeug fuer KI-Agenten (Rust)",
+      "features": {
+        "0": {
+          "title": "Ein Chrome, das nie ausgeht",
+          "description": "Ein persistentes Chromium hinter einem HTTP-Server nur auf Loopback (127.0.0.1 mit Bearer-Token), ein Daemon pro Maschine. Der Agent findet es aus jeder Sitzung warm vor, mit Profil und Cookies: kein Browserstart pro Aktion oder Test."
+        },
+        "1": {
+          "title": "Snapshots mit 350 Tokens in 3,7 ms",
+          "description": "Statt Screenshots eine Zeile pro interaktivem Element mit einer stabilen Ref, die Aktionen ueberlebt (cu click e3, cu type e2 \"Text\"). Durchlaeuft iframes und offene Shadow Roots. 3,8x weniger Tokens als Playwright MCP pro Blick auf die Seite."
+        },
+        "2": {
+          "title": "CLI, HTTP und Rust-SDK, mit Batches",
+          "description": "cu act fuehrt ein ganzes Formular ueber eine Verbindung aus und liefert die resultierende Seite im selben Aufruf; cu batch sendet viele Befehle auf einmal. Zehn Klicks im Batch: 25 ms."
+        },
+        "3": {
+          "title": "Tempo gegen agent-browser und Playwright MCP",
+          "description": "Gleiches Chrome-Binary, gleiche Seite, gleiche Agentenaufgaben, Median aus 10 Runden: Kaltstart 206 ms (Playwright MCP 2.437), Formular 73 ms (727), Login 81 ms (670), 10 Klicks 25 ms (5.491)."
+        },
+        "4": {
+          "title": "50 parallele Tests in einem Chrome",
+          "description": "Ein Tab mit Lease pro Test: stirbt der Test, schliesst ihn der Daemon. 50/50 gruen bei 50 parallel in 2,1 s, 1,84 GB Chrome-RSS (~18 MB pro Tab), unter 0,4 Kernen und 11 MB fuer den Daemon."
+        },
+        "5": {
+          "title": "Gemessen an einer echten Produktions-App",
+          "description": "Echte Agenten-Flows mit 1, 10 und 25 parallel und geteilter Sitzung. Gegen agent-browser bei 10 Flows: 27 statt 113 Prozesse und 6,3 statt 12,8 GB RAM, Oeffnen in 0,1 s statt 12 s. Fehler werden so veroeffentlicht, wie sie gemessen wurden."
+        },
+        "6": {
+          "title": "Skill, native Tool, Passwoerter fern vom Modell",
+          "description": "SKILL.md bringt dem Agenten den ganzen Ablauf bei und mini-tui stellt cu als native Tool neben bash bereit, ohne MCP-Server dazwischen. cu login oeffnet ein lokales Formular: Der Daemon tippt, was der Mensch eingibt; Zugangsdaten werden nie geloggt, zurueckgegeben oder als Argumente uebergeben."
+        }
+      }
     }
   },
   "contact": {

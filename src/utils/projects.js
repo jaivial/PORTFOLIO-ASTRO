@@ -1365,6 +1365,44 @@ const evoWeaiFeatures = [
     }
 ];
 
+const cuFeatures = [
+    {
+        title: "Un Chrome que no se apaga",
+        description: "Un Chromium persistente detras de un servidor HTTP solo en loopback (127.0.0.1 con token bearer), un daemon por maquina. El agente lo encuentra caliente desde cualquier sesion o proyecto, con su perfil y sus cookies: no se lanza un navegador por accion ni por test.",
+        image: { src: "/images/cu/cu-02-que-es.webp" }
+    },
+    {
+        title: "Snapshots de 350 tokens en 3,7 ms",
+        description: "En vez de capturas, una linea por elemento interactivo con un ref estable que sobrevive a las acciones (cu click e3, cu type e2 \"texto\"). Recorre iframes y shadow roots abiertos. 3,8x menos tokens que Playwright MCP por cada vistazo a la pagina.",
+        image: { src: "/images/cu/cu-05-tokens.webp" }
+    },
+    {
+        title: "CLI, HTTP y SDK de Rust, con lotes",
+        description: "cu act ejecuta un formulario entero en una sola conexion y devuelve la pagina resultante en la misma llamada; cu batch envia muchos comandos a la vez. Diez clicks en lote: 25 ms.",
+        image: { src: "/images/cu/cu-03-api-cli.webp" }
+    },
+    {
+        title: "Velocidad frente a agent-browser y Playwright MCP",
+        description: "Mismo binario de Chrome, mismo sitio y mismas tareas de agente, mediana de 10 rondas: arranque en frio 206 ms (Playwright MCP 2 437), formulario completo 73 ms (727), login 81 ms (670), 10 clicks 25 ms (5 491).",
+        image: { src: "/images/cu/cu-04-velocidad.webp" }
+    },
+    {
+        title: "50 tests en paralelo en un solo Chrome",
+        description: "Una pestana con lease por test: si el test muere, el daemon la cierra. 50/50 en verde a 50 en paralelo en 2,1 s de pared, 1,84 GB de RSS de Chrome (~18 MB por pestana), menos de 0,4 cores y 11 MB para el daemon.",
+        image: { src: "/images/cu/cu-06-recursos.webp" }
+    },
+    {
+        title: "Medido contra una app real de produccion",
+        description: "Flujos de agente de verdad a 1, 10 y 25 en paralelo con sesion compartida. Frente a agent-browser a 10 flujos: 27 procesos contra 113 y 6,3 GB contra 12,8 GB de RAM, con apertura de 0,1 s contra 12 s. Los fallos se publican tal cual se midieron.",
+        image: { src: "/images/cu/cu-07-sitio-real.webp" }
+    },
+    {
+        title: "Skill, tool nativa y contrasenas fuera del modelo",
+        description: "SKILL.md ensena al agente el flujo completo y mini-tui expone cu como tool nativa junto a bash, sin servidor MCP en medio. cu login abre un formulario local: el daemon escribe lo que introduce la persona y las credenciales nunca se registran, devuelven ni pasan como argumentos.",
+        image: { src: "/images/cu/cu-08-agentes.webp" }
+    }
+];
+
 const miniTuiFeatures = [
     {
         title: "Prompt bar estilo Claude Code",
@@ -2104,6 +2142,30 @@ const data = [
             { url: "/videos/evo-weai/evo-weai-motion-drop-in-1x1.mp4" },
             { url: "/videos/evo-weai/evo-weai-motion-event-fanout-1x1.mp4" }
         ]
+    },
+    {
+        id: 94,
+        name: "cu",
+        slug: "cu",
+        image: { src: "/images/cu/cu-01-hero.webp" },
+        description: "cu (computer use) es un navegador persistente para agentes de IA: un unico Chromium vivo detras de un servidor HTTP local, con CLI, SDK de Rust y una skill. El agente obtiene la pagina en unos cientos de bytes (snapshot de 350 tokens en 3,7 ms), actua por refs y en lotes (10 clicks en 25 ms) y cada test usa su propia pestana con lease en el Chrome compartido: 50 tests en paralelo en un solo Chrome con ~18 MB por pestana. Las contrasenas se introducen en un formulario local y nunca pasan por el modelo. Comparado y medido frente a agent-browser y Playwright MCP, tambien contra una app real de produccion.",
+        type: "Herramienta de navegador para agentes de IA (Rust)",
+        tech: ["Rust", "Chromium", "CDP", "CLI", "HTTP API", "AI Agents", "Svelte", "GitHub Pages"],
+        github: "https://github.com/jaivial/cu",
+        url: "https://jaivial.github.io/cu/",
+        features: cuFeatures,
+        date: "2026-10-07",
+        images: [
+            { url: "/images/cu/cu-01-hero.webp", alt: "Landing de cu: el navegador que tu agente no tiene que esperar" },
+            { url: "/images/cu/cu-02-que-es.webp", alt: "Que es cu y para que sirve" },
+            { url: "/images/cu/cu-03-api-cli.webp", alt: "API y CLI: navegar, snapshot, click por ref y lotes" },
+            { url: "/images/cu/cu-04-velocidad.webp", alt: "Velocidad contra agent-browser y Playwright MCP" },
+            { url: "/images/cu/cu-05-tokens.webp", alt: "Tokens del snapshot comparados por herramienta" },
+            { url: "/images/cu/cu-06-recursos.webp", alt: "Recursos y concurrencia: 50 tests en un Chrome" },
+            { url: "/images/cu/cu-07-sitio-real.webp", alt: "Medido contra una app real de produccion" },
+            { url: "/images/cu/cu-08-agentes.webp", alt: "Agentes de IA en paralelo con cu" }
+        ],
+        videos: []
     }
 ]
 
