@@ -342,7 +342,7 @@
       }
     },
     "mini-tui-web": {
-      "description": "La aplicacion web de mini-tui: el mismo agente de codigo que en la terminal, en el navegador y pensado para trabajar en varias cosas a la vez. Paneles estilo tmux con una sesion por panel transmitiendo en vivo por su propio WebSocket, notas por sesion sincronizadas en tiempo real a traves de un unico socket, historial organizado por carpeta, selector de carpeta local o remoto por SSH, /resume desde cualquier chat, avisos al terminar una sesion y controles de tamano de interfaz y texto. Construida con Svelte 5, Tailwind CSS 4 y un servidor Bun con SQLite, responsive de movil a escritorio y probada con cinco suites end-to-end en navegador real.",
+      "description": "La aplicacion web de mini-tui: el mismo agente de codigo que en la terminal, en el navegador y pensado para trabajar en varias cosas a la vez. Paneles estilo tmux con una sesion por panel transmitiendo en vivo por su propio WebSocket, notas por sesion sincronizadas en tiempo real a traves de un unico socket, historial organizado por carpeta, selector de carpeta local o remoto por SSH, /resume desde cualquier chat, avisos al terminar una sesion y controles de tamano de interfaz y texto. Construida con Svelte 5, Tailwind CSS 4 y un servidor Bun con SQLite, responsive de movil a escritorio y probada con cinco suites end-to-end en navegador real. Su agente Rust gana la ronda 5 de su benchmark contra pi: 0,69x el tiempo agregado (204,5 s contra 295,0 s), 8 de 10 tareas y calidad 10/10 en ambos lados.",
       "type": "Aplicacion Web - Interfaz para agentes de codigo",
       "features": {
         "0": {
@@ -380,6 +380,10 @@
         "8": {
           "title": "Contexto compartido entre subagentes",
           "description": "Cuando una sesion orquesta subagentes, la exploracion se paga una sola vez y se entrega. El orquestador escribe lo que descubrio (simbolos, ficheros, lineas), el contrato de integracion, sus decisiones y la superficie de cada repo en un almacen compartido; cada subagente recibe despues esos documentos recortados al repo en el que trabaja, sin volver a explorar. Cuando un subagente termina, informa de lo que toco, que campo del contrato emitio y cualquier cosa que contradiga el encargo, y una comprobacion mecanica del contrato verifica sus afirmaciones sin ningun modelo en medio. Esa comprobacion se endurecio despues: ejecutando orquestaciones reales se encontraron siete formas distintas de que pudiera informar \"pass\" sin haber examinado nada, y todas estan corregidas (cinco en mini-tui 0.38.1, las dos ultimas en 0.38.2) - incluida una comprobacion de cobertura que falla, y dice \"esto NO es un pass\", cuando no se ha comprobado nada. Medido en orquestaciones reales en la web: los tokens de descubrimiento por subagente bajaron de unos 1.962 a 0, y los subagentes tardaron 28 pasos en lugar de 40 para hacer mas trabajo - porque el padre ya habia explorado, una vez."
+        },
+        "9": {
+          "title": "Mas rapido que pi: 0,69x agregado, gana 8 de 10 tareas",
+          "description": "Benchmark propio de cinco rondas contra el agente pi, con las mismas diez tareas y el mismo modelo en los dos lados, secuencial y sin orquestacion. En la ronda 5 el agente Rust de mini-tui termina las diez tareas en 204,5 s frente a los 295,0 s de pi (0,69x, un 30 % menos de tiempo) y gana 8 de 10 tareas, con la calidad intacta: 10/10 PASS en ambos lados. No fue trimming de trabajo: el tiempo de modelo bajo de 279,1 s a 179,1 s porque el modelo dejo de escribir ensayos de razonamiento para emitir una tool call de 193 caracteres. La palanca fue el techo de salida por turno, medido y fijado en 4096 tras barrer 2048/3072/8192 sobre todo el corpus."
         }
       }
     },

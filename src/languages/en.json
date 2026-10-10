@@ -342,7 +342,7 @@
       }
     },
     "mini-tui-web": {
-      "description": "The mini-tui web app: the same coding agent as in the terminal, now in the browser and built for working on several things at once. tmux-style panes with one session per pane, each streaming live over its own WebSocket; per-session notes synced in real time through a single socket; history organized by folder; a local or remote (SSH) folder picker; /resume from any chat; notifications when a session finishes; and interface and text size controls. Built with Svelte 5, Tailwind CSS 4 and a Bun server with SQLite, responsive from phone to desktop and covered by five end-to-end suites in a real browser.",
+      "description": "The mini-tui web app: the same coding agent as in the terminal, now in the browser and built for working on several things at once. tmux-style panes with one session per pane, each streaming live over its own WebSocket; per-session notes synced in real time through a single socket; history organized by folder; a local or remote (SSH) folder picker; /resume from any chat; notifications when a session finishes; and interface and text size controls. Built with Svelte 5, Tailwind CSS 4 and a Bun server with SQLite, responsive from phone to desktop and covered by five end-to-end suites in a real browser. Its Rust agent wins round 5 of its own benchmark against pi: 0.69x the aggregate wall time (204.5 s against 295.0 s), 8 of 10 tasks and 10/10 quality on both sides.",
       "type": "Web Application - Interface for coding agents",
       "features": {
         "0": {
@@ -380,6 +380,10 @@
         "8": {
           "title": "Shared context across subagents",
           "description": "When a session orchestrates subagents, the exploration is paid for once and handed over. The orchestrator writes what it found (symbols, files, lines), the integration contract, its decisions and the surface of each repo into a shared store; every subagent then receives those documents scoped to the repo it works in, without having to re-explore. When a subagent finishes, it reports back what it touched, which contract field it emitted and anything that contradicted the brief, and a mechanical contract check verifies its claims with no model in the loop. That check was then hardened: seven separate ways it could report \"pass\" while having examined nothing were found by running real orchestrations, and all are fixed (five in mini-tui 0.38.1, the last two in 0.38.2) - including a coverage check that fails, and says \"this is NOT a pass\", when nothing was checked at all. Measured on real orchestrations in the web UI: discovery tokens per subagent fell from about 1,962 to 0, and the subagents took 28 steps instead of 40 to do more work - because the parent already explored, once."
+        },
+        "9": {
+          "title": "Faster than pi: 0.69x aggregate, 8 of 10 tasks won",
+          "description": "A five-round benchmark of its own against the pi agent: the same ten tasks and the same model on both sides, sequential and with no orchestration. In round 5 mini-tui's Rust agent finishes the ten tasks in 204.5 s against pi's 295.0 s (0.69x, 30 % less wall time) and wins 8 of 10 tasks, with the quality intact: 10/10 PASS on both sides. No work was trimmed away: model time fell from 279.1 s to 179.1 s because the model stopped writing reasoning essays to emit a 193-character tool call. The lever was the per-turn output cap, measured across 2048/3072/4096/8192 over the whole corpus and settled at 4096."
         }
       }
     },

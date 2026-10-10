@@ -1314,6 +1314,11 @@ const miniTuiWebFeatures = [
         title: "Tamano de interfaz y de texto",
         description: "Dos controles independientes: el tamano de toda la interfaz (85-140%) y solo el del texto que lees y escribes (90-150%), con vista previa, atajos Ctrl +/- y un minimo de 100% en pantallas tactiles para que los botones sigan midiendo 44 px.",
         image: { src: MtwSettingsSize }
+    },
+    {
+        title: "Mas rapido que pi: 0,69x agregado, gana 8 de 10 tareas",
+        description: "Benchmark propio de cinco rondas contra el agente pi, con las mismas diez tareas y el mismo modelo en los dos lados, secuencial y sin orquestacion. En la ronda 5 el agente Rust de mini-tui termina las diez tareas en 204,5 s frente a los 295,0 s de pi (0,69x, un 30 % menos de tiempo) y gana 8 de 10 tareas, con la calidad intacta: 10/10 PASS en ambos lados. No fue trimming de trabajo: el tiempo de modelo bajo de 279,1 s a 179,1 s porque el modelo dejo de escribir ensayos de razonamiento para emitir una tool call de 193 caracteres. La palanca fue el techo de salida por turno, medido y fijado en 4096 tras barrer 2048/3072/8192 sobre todo el corpus.",
+        image: { src: MtwChat }
     }
 ];
 
@@ -1448,6 +1453,11 @@ const miniTuiFeatures = [
         title: "/help - todo en un panel",
         description: "Un unico panel con todos los comandos y teclas disponibles: /model, /resume, /connect, /settings, /help, /quit y los atajos de navegacion, para tener el mapa completo sin salir de la TUI.",
         image: { src: "/images/mini-tui/help.png" }
+    },
+    {
+        title: "Mas rapido que pi: 0,69x agregado y 8 de 10 tareas",
+        description: "Benchmark propio de cinco rondas contra el agente pi (mini-tui 0.41.0): mismas diez tareas, mismo modelo en los dos lados, secuencial y sin orquestacion. En la ronda 5 mini gana el agregado por primera vez - 204,5 s contra 295,0 s de pi (0,69x, un 30 % menos de tiempo) y 8 de 10 tareas, con la calidad intacta (10/10 PASS en ambos lados). El cuello no era el numero de turnos sino la duracion del peor: el turno mas largo de una corrida era de mediana el 30 % de su wall time, casi todo razonamiento - el peor escribio 19 427 caracteres de <think> para emitir una tool call de 193. La palanca fue el techo de salida por turno, barrido sobre todo el corpus (2048/3072/4096/8192) y fijado en 4096.",
+        image: { src: "/images/mini-tui/run.png" }
     }
 ];
 
@@ -2014,13 +2024,13 @@ const data = [
         name: "mini-tui",
         slug: "mini-tui",
         image: { src: "/images/mini-tui/run.png" },
-        description: "mini-tui es una terminal UI bonita para mini-swe-agent construida con OpenTUI (React + Bun). Solo parsea y reformatea lo que mini ya produce -tool calls (comandos bash) y sus salidas- en tarjetas, badges y banners: el harness corre completamente intacto, mini-tui spawnea mini como subproceso y lee el JSON de trayectoria que reescribe tras cada paso. Prompt bar multilinea estilo Claude Code, command palette con /, tarjetas shadcn-style por paso de bash, modos de salida collapsed/trimmed/expanded, /resume con sesiones en SQLite y titulo generado por IA, /connect BYOK con test de conexion real, selector de modelo y renderizado de markdown en la respuesta final.",
+        description: "mini-tui es una terminal UI bonita para mini-swe-agent construida con OpenTUI (React + Bun). Solo parsea y reformatea lo que mini ya produce -tool calls (comandos bash) y sus salidas- en tarjetas, badges y banners: el harness corre completamente intacto, mini-tui spawnea mini como subproceso y lee el JSON de trayectoria que reescribe tras cada paso. Prompt bar multilinea estilo Claude Code, command palette con /, tarjetas shadcn-style por paso de bash, modos de salida collapsed/trimmed/expanded, /resume con sesiones en SQLite y titulo generado por IA, /connect BYOK con test de conexion real, selector de modelo y renderizado de markdown en la respuesta final. Su agente Rust (mini-agent-rs) gana en la ronda 5 del benchmark contra pi: 0,69x el tiempo agregado (204,5 s contra 295,0 s), 8 de 10 tareas y calidad 10/10 en ambos lados (0.41.0).",
         type: "Terminal UI para agentes de codigo (TUI)",
         tech: ["TypeScript", "React 19", "OpenTUI", "Bun", "SQLite", "Python", "mini-swe-agent", "litellm", "TUI"],
         github: "https://github.com/jaivial/mini-tui",
-        url: "https://github.com/jaivial/mini-tui",
+        url: "https://github.com/jaivial/mini-tui/releases/tag/v0.41.0",
         features: miniTuiFeatures,
-        date: "2026-09-22",
+        date: "2026-10-10",
         images: [
             { url: "/images/mini-tui/run.png", alt: "mini-tui ejecutando una tarea con tarjetas de tool calls" },
             { url: "/images/mini-tui/prompt.png", alt: "Prompt bar estilo Claude Code con texto envolviendo" },
@@ -2042,13 +2052,13 @@ const data = [
         name: "mini-tui Web",
         slug: "mini-tui-web",
         image: { src: MtwPanes },
-        description: "La aplicacion web de mini-tui: el mismo agente de codigo que en la terminal, en el navegador y pensado para trabajar en varias cosas a la vez. Paneles estilo tmux con una sesion por panel transmitiendo en vivo por su propio WebSocket, notas por sesion sincronizadas en tiempo real a traves de un unico socket, historial organizado por carpeta, selector de carpeta local o remoto por SSH, /resume desde cualquier chat, avisos al terminar una sesion y controles de tamano de interfaz y texto. Construida con Svelte 5, Tailwind CSS 4 y un servidor Bun con SQLite, responsive de movil a escritorio y probada con cinco suites end-to-end en navegador real.",
+        description: "La aplicacion web de mini-tui: el mismo agente de codigo que en la terminal, en el navegador y pensado para trabajar en varias cosas a la vez. Paneles estilo tmux con una sesion por panel transmitiendo en vivo por su propio WebSocket, notas por sesion sincronizadas en tiempo real a traves de un unico socket, historial organizado por carpeta, selector de carpeta local o remoto por SSH, /resume desde cualquier chat, avisos al terminar una sesion y controles de tamano de interfaz y texto. Construida con Svelte 5, Tailwind CSS 4 y un servidor Bun con SQLite, responsive de movil a escritorio y probada con cinco suites end-to-end en navegador real. Su agente Rust gana la ronda 5 de su benchmark contra pi: 0,69x el tiempo agregado (204,5 s contra 295,0 s), 8 de 10 tareas y calidad 10/10 en ambos lados (mini-tui 0.41.0).",
         type: "Aplicacion Web - Interfaz para agentes de codigo",
         tech: ["Svelte 5", "TypeScript", "Tailwind CSS", "Bun", "WebSockets", "SQLite", "Vite", "Playwright", "SSH", "Nginx", "VPS", "Responsive Design"],
         github: "https://github.com/jaivial/mini-tui",
-        url: "https://github.com/jaivial/mini-tui/releases/tag/v0.20.0",
+        url: "https://github.com/jaivial/mini-tui/releases/tag/v0.41.0",
         features: miniTuiWebFeatures,
-        date: "2026-09-29",
+        date: "2026-10-10",
         images: [
             { url: MtwPanes, alt: "Tres paneles estilo tmux, cada uno con su sesion, y la barra lateral organizada por carpeta" },
             { url: MtwChat, alt: "Chat con el agente: razonamiento plegado, tarjetas de comandos y respuesta en markdown" },
