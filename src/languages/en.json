@@ -479,6 +479,36 @@
           "description": "SKILL.md teaches the agent the whole flow and mini-tui exposes cu as a native tool next to bash, no MCP server in between. cu login opens a local form: the daemon types what the human enters, and credentials are never logged, returned or passed as arguments."
         }
       }
+    },
+    "goaltrack": {
+      "description": "GoalTrack is a habit tracker that reduces tracking to one square per day: a Today view with the day's habits, one tap to complete, and visible streaks (current streak, best streak and a 26-week heatmap per habit). Installable PWA in five languages with the day computed in the user's timezone, not the server's. Angular 22 + Tailwind 4 frontend with a service worker; Rust backend (Axum + SQLx) on PostgreSQL, deployed with systemd and nginx.",
+      "type": "Habit tracker (Angular + Rust)",
+      "features": {
+        "0": {
+          "title": "One square per day",
+          "description": "The Today view shows the day's habits as cards with a colored square: one tap fills it and it stays filled. Day progress on top (4 of 7), frequency per habit (every day, 3× per week) and nothing else in the way. The whole tracker fits on one screen."
+        },
+        "1": {
+          "title": "Streaks you can see: a 26-week heatmap",
+          "description": "Each habit's detail gathers current streak, best streak and total check-ins, with a GitHub-style heatmap of the last 26 weeks. Streaks are computed server-side from real check-ins: one missed day breaks the streak and you see it instantly."
+        },
+        "2": {
+          "title": "Installable PWA, mobile first",
+          "description": "Angular 22 with Tailwind 4 and a service worker: installable from the browser, navigable with a bottom bar (Today, Habits, Settings) and reviewed at 390 px. Space Grotesk and Inter typography, dark theme by default and large touch targets for one-handed use."
+        },
+        "3": {
+          "title": "The user's day, not the server's",
+          "description": "\"Today\" is a calendar date in the user's timezone, never the server's: the client sends its offset (Date#getTimezoneOffset semantics) and the backend resolves the day before touching the database. A check-in at midnight in Madrid never lands on the wrong day."
+        },
+        "4": {
+          "title": "Rust backend on PostgreSQL",
+          "description": "Axum API with SQLx: register and login auth, habit CRUD and an idempotent per-day check-in toggle (unique goal_id + day in the database). A single binary behind systemd and nginx, with versioned SQL migrations and self-hosted deployment on a VPS."
+        },
+        "5": {
+          "title": "Five languages from day one",
+          "description": "English, Spanish, German, French and Portuguese with browser language detection and switching on the login screen itself. Every string goes through i18n: nothing hand-painted, no half-translated language."
+        }
+      }
     }
   },
   "contact": {

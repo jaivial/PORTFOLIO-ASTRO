@@ -479,6 +479,36 @@
           "description": "SKILL.md ensena al agente el flujo completo y mini-tui expone cu como tool nativa junto a bash, sin servidor MCP en medio. cu login abre un formulario local: el daemon escribe lo que introduce la persona y las credenciales nunca se registran, devuelven ni pasan como argumentos."
         }
       }
+    },
+    "goaltrack": {
+      "description": "GoalTrack es un seguidor de hábitos que reduce el seguimiento a un cuadrado por día: una vista Hoy con los hábitos del día, un toque para completar y rachas que se ven (racha actual, mejor racha y mapa de calor de 26 semanas por hábito). PWA instalable en cinco idiomas con el día calculado en la zona horaria del usuario, no en la del servidor. Frontend Angular 22 + Tailwind 4 con service worker; backend Rust (Axum + SQLx) sobre PostgreSQL, desplegado con systemd y nginx.",
+      "type": "Seguidor de hábitos (Angular + Rust)",
+      "features": {
+        "0": {
+          "title": "Un cuadrado por día",
+          "description": "La vista Hoy muestra los hábitos del día como tarjetas con un cuadrado de color: un toque lo rellena, marcado queda. Progreso del día arriba (4 de 7), frecuencia por hábito (cada día, 3× por semana) y nada más que estorbe. El seguimiento entero cabe en una pantalla."
+        },
+        "1": {
+          "title": "Rachas que se ven: mapa de calor de 26 semanas",
+          "description": "El detalle de cada hábito reúne racha actual, mejor racha y check-ins totales, con un mapa de calor estilo GitHub de las últimas 26 semanas. Las rachas se calculan en el servidor desde los check-ins reales: un día fallido corta la racha y se ve al instante."
+        },
+        "2": {
+          "title": "PWA instalable, pensada primero para el móvil",
+          "description": "Angular 22 con Tailwind 4 y service worker: instalable desde el navegador, navegable con una barra inferior (Hoy, Hábitos, Ajustes) y revisada a 390 px. Tipografía Space Grotesk e Inter, tema oscuro por defecto y objetivos táctiles grandes para usarlo con una mano."
+        },
+        "3": {
+          "title": "El día del usuario, no el del servidor",
+          "description": "«Hoy» es una fecha de calendario en la zona horaria del usuario, nunca la del servidor: el cliente envía su offset (semántica de Date#getTimezoneOffset) y el backend resuelve el día antes de tocar la base de datos. Un check-in a medianoche en Madrid nunca cae en el día equivocado."
+        },
+        "4": {
+          "title": "Backend en Rust sobre PostgreSQL",
+          "description": "API Axum con SQLx: auth con registro y login, CRUD de hábitos y toggle de check-in idempotente por día (único goal_id + day en la base). Binario único detrás de systemd y nginx, con migraciones SQL versionadas y despliegue propio en un VPS."
+        },
+        "5": {
+          "title": "Cinco idiomas desde el primer día",
+          "description": "Inglés, español, alemán, francés y portugués con detección de idioma del navegador y cambio en la propia pantalla de acceso. Toda la copy pasa por i18n: ninguna cadena pintada a mano, ningún idioma a medias."
+        }
+      }
     }
   },
   "contact": {
