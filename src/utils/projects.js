@@ -1408,6 +1408,39 @@ const cuFeatures = [
     }
 ];
 
+const goaltrackFeatures = [
+    {
+        title: "Un cuadrado por día",
+        description: "La vista Hoy muestra los hábitos del día como tarjetas con un cuadrado de color: un toque lo rellena, marcado queda. Progreso del día arriba (4 de 7), frecuencia por hábito (cada día, 3× por semana) y nada más que estorbe. El seguimiento entero cabe en una pantalla.",
+        image: { src: "/images/goaltrack/gt-01b-today-wide.webp" }
+    },
+    {
+        title: "Rachas que se ven: mapa de calor de 26 semanas",
+        description: "El detalle de cada hábito reúne racha actual, mejor racha y check-ins totales, con un mapa de calor estilo GitHub de las últimas 26 semanas. Las rachas se calculan en el servidor desde los check-ins reales: un día fallido corta la racha y se ve al instante.",
+        image: { src: "/images/goaltrack/gt-02-detail.webp" }
+    },
+    {
+        title: "PWA instalable, pensada primero para el móvil",
+        description: "Angular 22 con Tailwind 4 y service worker: instalable desde el navegador, navegable con una barra inferior (Hoy, Hábitos, Ajustes) y revisada a 390 px. Tipografía Space Grotesk e Inter, tema oscuro por defecto y objetivos táctiles grandes para usarlo con una mano.",
+        image: { src: "/images/goaltrack/gt-03-mobile.webp" }
+    },
+    {
+        title: "El día del usuario, no el del servidor",
+        description: "«Hoy» es una fecha de calendario en la zona horaria del usuario, nunca la del servidor: el cliente envía su offset (semántica de Date#getTimezoneOffset) y el backend resuelve el día antes de tocar la base de datos. Un check-in a medianoche en Madrid nunca cae en el día equivocado.",
+        image: { src: "/images/goaltrack/gt-02-detail.webp" }
+    },
+    {
+        title: "Backend en Rust sobre PostgreSQL",
+        description: "API Axum con SQLx: auth con registro y login, CRUD de hábitos y toggle de check-in idempotente por día (único goal_id + day en la base). Binario único detrás de systemd y nginx, con migraciones SQL versionadas y despliegue propio en un VPS.",
+        image: { src: "/images/goaltrack/gt-01b-today-wide.webp" }
+    },
+    {
+        title: "Cinco idiomas desde el primer día",
+        description: "Inglés, español, alemán, francés y portugués con detección de idioma del navegador y cambio en la propia pantalla de acceso. Toda la copy pasa por i18n: ninguna cadena pintada a mano, ningún idioma a medias.",
+        image: { src: "/images/goaltrack/gt-03-mobile.webp" }
+    }
+];
+
 const miniTuiFeatures = [
     {
         title: "Prompt bar estilo Claude Code",
@@ -2176,6 +2209,28 @@ const data = [
             { url: "/images/cu/cu-08-agentes.webp", alt: "Agentes de IA en paralelo con cu" }
         ],
         videos: []
+    },
+    {
+        id: 95,
+        name: "GoalTrack",
+        slug: "goaltrack",
+        image: { src: "/images/goaltrack/gt-01b-today-wide.webp" },
+        description: "GoalTrack es un seguidor de hábitos que reduce el seguimiento a un cuadrado por día: una vista Hoy con los hábitos del día, un toque para completar y rachas que se ven (racha actual, mejor racha y mapa de calor de 26 semanas por hábito). PWA instalable en cinco idiomas con el día calculado en la zona horaria del usuario, no en la del servidor. Frontend Angular 22 + Tailwind 4 con service worker; backend Rust (Axum + SQLx) sobre PostgreSQL, desplegado con systemd y nginx. Los vídeos promocionales del caso están generados con HyperFrames y Remotion.",
+        type: "Seguidor de hábitos (Angular + Rust)",
+        tech: ["Angular", "TypeScript", "Rust", "Axum", "SQLx", "PostgreSQL", "Tailwind CSS", "PWA"],
+        github: "https://github.com/jaivial/goaltrack",
+        url: "https://goaltrack.menustudioai.com",
+        features: goaltrackFeatures,
+        date: "2026-10-13",
+        images: [
+            { url: "/images/goaltrack/gt-01b-today-wide.webp", alt: "Vista Hoy de GoalTrack: 7 hábitos, 4 completados, rachas de 41, 16, 5 y 4 días" },
+            { url: "/images/goaltrack/gt-02-detail.webp", alt: "Detalle de un hábito: racha actual y mejor racha de 41 días con mapa de calor de 26 semanas" },
+            { url: "/images/goaltrack/gt-03-mobile.webp", alt: "GoalTrack en móvil a 390 px: barra inferior y objetivos táctiles grandes" }
+        ],
+        videos: [
+            { url: "/videos/goaltrack/goaltrack-promo-16x9.mp4" },
+            { url: "/videos/goaltrack/goaltrack-promo-4x5.mp4" }
+        ]
     }
 ]
 

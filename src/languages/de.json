@@ -479,6 +479,36 @@
           "description": "SKILL.md bringt dem Agenten den ganzen Ablauf bei und mini-tui stellt cu als native Tool neben bash bereit, ohne MCP-Server dazwischen. cu login oeffnet ein lokales Formular: Der Daemon tippt, was der Mensch eingibt; Zugangsdaten werden nie geloggt, zurueckgegeben oder als Argumente uebergeben."
         }
       }
+    },
+    "goaltrack": {
+      "description": "GoalTrack ist ein Gewohnheitstracker, der das Tracking auf ein Quadrat pro Tag reduziert: eine Heute-Ansicht mit den Gewohnheiten des Tages, ein Tipp zum Abschließen und sichtbare Serien (aktuelle Serie, beste Serie und eine 26-Wochen-Heatmap pro Gewohnheit). Installierbare PWA in fünf Sprachen, der Tag wird in der Zeitzone des Nutzers berechnet, nicht in der des Servers. Angular-22- und Tailwind-4-Frontend mit Service Worker; Rust-Backend (Axum + SQLx) auf PostgreSQL, betrieben mit systemd und nginx.",
+      "type": "Gewohnheitstracker (Angular + Rust)",
+      "features": {
+        "0": {
+          "title": "Ein Quadrat pro Tag",
+          "description": "Die Heute-Ansicht zeigt die Gewohnheiten des Tages als Karten mit einem farbigen Quadrat: ein Tipp füllt es, und es bleibt gefüllt. Tagesfortschritt oben (4 von 7), Frequenz pro Gewohnheit (jeden Tag, 3× pro Woche) und nichts, das stört. Der ganze Tracker passt auf einen Bildschirm."
+        },
+        "1": {
+          "title": "Sichtbare Serien: 26-Wochen-Heatmap",
+          "description": "Das Detail jeder Gewohnheit bündelt aktuelle Serie, beste Serie und Check-ins gesamt, mit einer GitHub-ähnlichen Heatmap der letzten 26 Wochen. Serien werden serverseitig aus echten Check-ins berechnet: ein verpasster Tag bricht die Serie, sofort sichtbar."
+        },
+        "2": {
+          "title": "Installierbare PWA, Mobile first",
+          "description": "Angular 22 mit Tailwind 4 und Service Worker: aus dem Browser installierbar, navigierbar mit einer unteren Leiste (Heute, Gewohnheiten, Einstellungen) und bei 390 px geprüft. Space Grotesk und Inter als Typografie, dunkles Standard-Theme und große Touch-Ziele für die Einhand-Nutzung."
+        },
+        "3": {
+          "title": "Der Tag des Nutzers, nicht der des Servers",
+          "description": "\"Heute\" ist ein Kalenderdatum in der Zeitzone des Nutzers, nie die des Servers: der Client sendet seinen Offset (Semantik von Date#getTimezoneOffset) und das Backend löst den Tag auf, bevor es die Datenbank berührt. Ein Check-in um Mitternacht in Madrid landet nie am falschen Tag."
+        },
+        "4": {
+          "title": "Rust-Backend auf PostgreSQL",
+          "description": "Axum-API mit SQLx: Register- und Login-Auth, CRUD für Gewohnheiten und ein idempotenter Check-in-Toggle pro Tag (eindeutiges goal_id + day in der Datenbank). Ein einzelnes Binary hinter systemd und nginx, mit versionierten SQL-Migrationen und eigenem Hosting auf einem VPS."
+        },
+        "5": {
+          "title": "Fünf Sprachen ab dem ersten Tag",
+          "description": "Englisch, Spanisch, Deutsch, Französisch und Portugiesisch mit Spracherkennung des Browsers und Wechsel direkt auf dem Login-Bildschirm. Alle Texte laufen über i18n: nichts von Hand gemalt, keine halbe Übersetzung."
+        }
+      }
     }
   },
   "contact": {
